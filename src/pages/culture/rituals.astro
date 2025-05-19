@@ -1,0 +1,22 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import rituals from '~/data/culture-rituals.json';
+const metadata = {
+  title: '祭祀禮儀',
+};
+---
+<Layout metadata={metadata}>
+  <h1 class="text-3xl font-bold mb-4">祭祀禮儀</h1>
+  <p class="mb-8">介紹台灣常見的廟宇祭祀禮儀與參拜方式。</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {rituals.map(ritual => (
+      <a href={`/culture/rituals/${ritual.id}`} class="block border rounded-lg p-6 shadow bg-white dark:bg-gray-800 hover:shadow-lg transition">
+        {ritual.images?.[0] && (
+          <img src={ritual.images[0]} alt={ritual.title['zh-TW']} class="w-full h-40 object-cover object-top rounded mb-4" />
+        )}
+        <h2 class="text-xl font-semibold mb-2">{ritual.title['zh-TW']}</h2>
+        <p class="mb-2 text-gray-700">{ritual.summary['zh-TW']}</p>
+      </a>
+    ))}
+  </div>
+</Layout> 

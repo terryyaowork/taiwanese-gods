@@ -1,0 +1,26 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import festivals from '~/data/culture-festivals.json';
+
+export async function getStaticPaths() {
+  return festivals.map(festival => ({
+    params: { id: festival.id }
+  }));
+}
+
+const { id } = Astro.params;
+const festival = festivals.find(f => f.id === id);
+if (!festival) {
+  throw new Error('Festival not found');
+}
+---
+<Layout>
+  <div class="max-w-2xl mx-auto py-8">
+    {festival.images?.[0] && (
+      <img src={festival.images[0]} alt={festival.title.en} class="w-full object-cover rounded mb-6" />
+    )}
+    <h1 class="text-3xl font-bold mb-2">{festival.title.en}</h1>
+    <div class="mb-4 text-lg whitespace-pre-line">{festival.content.en}</div>
+    <a href="/en/culture/festivals" class="text-blue-600 hover:underline">← Back to Festivals</a>
+  </div>
+</Layout> 

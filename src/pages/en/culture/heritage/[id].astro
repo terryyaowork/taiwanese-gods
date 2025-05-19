@@ -1,0 +1,27 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import heritage from '~/data/culture-heritage.json';
+
+export async function getStaticPaths() {
+  return heritage.map(item => ({
+    params: { id: item.id }
+  }));
+}
+
+const { id } = Astro.params;
+const lang = 'en';
+const item = heritage.find(c => c.id === id);
+if (!item) {
+  throw new Error('Heritage not found');
+}
+---
+<Layout>
+  <div class="max-w-2xl mx-auto py-8">
+    {item.images?.[0] && (
+      <img src={item.images[0]} alt={item.title[lang]} class="w-full object-cover rounded mb-6" />
+    )}
+    <h1 class="text-3xl font-bold mb-2">{item.title[lang]}</h1>
+    <div class="mb-4 text-lg whitespace-pre-line">{item.content[lang]}</div>
+    <a href="/en/culture/heritage" class="text-blue-600 hover:underline">← Back to Heritage List</a>
+  </div>
+</Layout> 

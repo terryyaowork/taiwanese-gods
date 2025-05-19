@@ -1,0 +1,41 @@
+[
+  {
+    "id": "handmade-incense",
+    "title": { "zh-TW": "手工製香", "en": "Handmade Incense Craft" },
+    "summary": {
+      "zh-TW": "傳統手工製香技藝，保存百年香文化。",
+      "en": "Traditional handmade incense craft, preserving a century-old culture."
+    },
+    "content": {
+      "zh-TW": "台灣部分地區仍保有手工製香的傳統，從選材、調香、搓香到曬香，每一步都講究工藝與經驗。這項技藝不僅是宗教用品，更是文化資產。",
+      "en": "Some regions in Taiwan still preserve the tradition of handmade incense, from material selection, blending, rolling, to sun-drying. Every step requires skill and experience. This craft is not only for religious use but also a cultural heritage."
+    },
+    "images": ["/assets/images/culture-heritage/heritage-incense.jpg"]
+  },
+  {
+    "id": "temple-jiannian",
+    "title": { "zh-TW": "廟宇剪黏", "en": "Temple Jiannian Art" },
+    "summary": {
+      "zh-TW": "融合陶藝與雕塑的廟宇裝飾藝術。",
+      "en": "Temple decoration art combining ceramics and sculpture."
+    },
+    "content": {
+      "zh-TW": "剪黏是台灣廟宇常見的裝飾工藝，利用彩色瓷片、玻璃等材料，剪裁黏貼成龍鳳、花鳥等圖案，展現職人巧思與宗教美學。",
+      "en": "Jiannian is a common decorative craft in Taiwanese temples, using colored ceramics and glass to create patterns of dragons, phoenixes, and flowers. It showcases artisanship and religious aesthetics."
+    },
+    "images": ["/assets/images/culture-heritage/heritage-jiannian.jpg"]
+  },
+  {
+    "id": "wangchuan-festival",
+    "title": { "zh-TW": "王船祭", "en": "Wangchuan Festival" },
+    "summary": {
+      "zh-TW": "南台灣重要的送王平安祭典。",
+      "en": "A major ritual in southern Taiwan for sending off the Plague King."
+    },
+    "content": {
+      "zh-TW": "王船祭是南台灣沿海地區的重要民俗，信眾製作大型王船，舉行送王儀式，祈求消災解厄、地方平安。這項祭典結合宗教、工藝與社區動員，是台灣無形文化資產。",
+      "en": "The Wangchuan Festival is a major folk ritual in southern coastal Taiwan. Devotees build a large wooden boat for the Plague King and hold a send-off ceremony, praying for peace and protection. This festival combines religion, craftsmanship, and community, and is an important intangible cultural heritage of Taiwan."
+    },
+    "images": ["/assets/images/culture-heritage/heritage-wangchuan.jpg"]
+  }
+] 

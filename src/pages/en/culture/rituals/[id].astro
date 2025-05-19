@@ -1,0 +1,26 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import rituals from '~/data/culture-rituals.json';
+
+export async function getStaticPaths() {
+  return rituals.map(ritual => ({
+    params: { id: ritual.id }
+  }));
+}
+
+const { id } = Astro.params;
+const ritual = rituals.find(r => r.id === id);
+if (!ritual) {
+  throw new Error('Ritual not found');
+}
+---
+<Layout>
+  <div class="max-w-2xl mx-auto py-8">
+    {ritual.images?.[0] && (
+      <img src={ritual.images[0]} alt={ritual.title.en} class="w-full object-cover rounded mb-6" />
+    )}
+    <h1 class="text-3xl font-bold mb-2">{ritual.title.en}</h1>
+    <div class="mb-4 text-lg whitespace-pre-line">{ritual.content.en}</div>
+    <a href="/en/culture/rituals" class="text-blue-600 hover:underline">← Back to Rituals</a>
+  </div>
+</Layout> 

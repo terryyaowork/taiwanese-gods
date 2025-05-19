@@ -1,0 +1,79 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import { siteTitle } from '~/navigation';
+const lang = Astro.params.lang || 'zh-TW';
+const metadata = { title: siteTitle[lang] };
+const sections = [
+  {
+    title: {
+      'zh-TW': '神明介紹',
+      'en': 'Deities Introduction'
+    },
+    desc: {
+      'zh-TW': '認識台灣多元的神明信仰與神祇故事。',
+      'en': 'Discover the diverse pantheon of Taiwanese deities and their stories.'
+    },
+    href: '/gods/taoism',
+    img: '/assets/images/home-gods.jpg',
+  },
+  {
+    title: {
+      'zh-TW': '廟宇巡禮',
+      'en': 'Temple Pilgrimage'
+    },
+    desc: {
+      'zh-TW': '探索台灣各地著名廟宇與信仰中心。',
+      'en': 'Explore famous temples and religious centers across Taiwan.'
+    },
+    href: '/temples/north',
+    img: '/assets/images/home-temple.jpg',
+  },
+  {
+    title: {
+      'zh-TW': '信仰文化',
+      'en': 'Faith & Culture'
+    },
+    desc: {
+      'zh-TW': '深入了解台灣的祭祀禮儀、節慶與民俗文化。',
+      'en': 'Dive into Taiwanese religious rituals, festivals, and folk customs.'
+    },
+    href: '/culture/rituals',
+    img: '/assets/images/home-culture.jpg',
+  },
+  {
+    title: {
+      'zh-TW': '關於我們',
+      'en': 'About Us'
+    },
+    desc: {
+      'zh-TW': '網站宗旨、團隊介紹與聯絡方式。',
+      'en': 'Our mission, team introduction, and contact information.'
+    },
+    href: '/about',
+    img: '/assets/images/home-about.jpg',
+  },
+];
+
+const introText = {
+  'zh-TW': '台灣神明信仰、廟宇文化、民間習俗與文化傳承的多語言導覽平台。',
+  'en': 'A multilingual platform showcasing Taiwanese deity worship, temple culture, folk customs, and cultural heritage.'
+};
+---
+
+<Layout metadata={metadata}>
+  <div class="container mx-auto py-8">
+    <h1 class="text-4xl font-bold mb-4">{siteTitle[lang]}</h1>
+    <p class="mb-8 text-lg text-gray-700">{introText[lang]}</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+      {sections.map(section => (
+        <a href={section.href} class="block rounded-lg shadow hover:shadow-lg transition bg-white dark:bg-gray-800 overflow-hidden">
+          <img src={section.img} alt={section.title[lang]} class="w-full h-48 object-cover object-center" />
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold mb-2">{section.title[lang]}</h2>
+            <p class="text-gray-600 dark:text-gray-300">{section.desc[lang]}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</Layout>

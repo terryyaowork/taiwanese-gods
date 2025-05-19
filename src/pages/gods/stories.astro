@@ -1,0 +1,23 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import stories from '~/data/god-stories.json';
+const metadata = {
+  title: '神明故事',
+};
+---
+<Layout metadata={metadata}>
+  <h1 class="text-3xl font-bold mb-4">神明故事</h1>
+  <p class="mb-8">收錄台灣常見神明的傳奇故事與信仰淵源。</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {stories.map(story => (
+      <a href={`/gods/stories/${story.id}`} class="block border rounded-lg p-6 shadow bg-white dark:bg-gray-800 hover:shadow-lg transition">
+        {story.images?.[0] && (
+          <img src={story.images[0]} alt={story.title['zh-TW']} class="w-full h-40 object-cover object-top rounded mb-4" />
+        )}
+        <h2 class="text-xl font-semibold mb-2">{story.title['zh-TW']}</h2>
+        <div class="mb-1 text-gray-600">主角神明：{story.mainDeities.map(d => d.name['zh-TW']).join('、')}</div>
+        <p class="mb-2 text-gray-700">{story.summary['zh-TW']}</p>
+      </a>
+    ))}
+  </div>
+</Layout> 

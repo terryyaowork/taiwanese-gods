@@ -1,0 +1,27 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import heritage from '~/data/culture-heritage.json';
+
+export async function getStaticPaths() {
+  return heritage.map(item => ({
+    params: { id: item.id }
+  }));
+}
+
+const { id } = Astro.params;
+const lang = Astro.url.pathname.startsWith('/en') ? 'en' : 'zh-TW';
+const item = heritage.find(c => c.id === id);
+if (!item) {
+  throw new Error(lang === 'en' ? 'Heritage not found' : '找不到文化傳承資料');
+}
+---
+<Layout>
+  <div class="max-w-2xl mx-auto py-8">
+    {item.images?.[0] && (
+      <img src={item.images[0]} alt={item.title[lang]} class="w-full object-cover rounded mb-6" />
+    )}
+    <h1 class="text-3xl font-bold mb-2">{item.title[lang]}</h1>
+    <div class="mb-4 text-lg whitespace-pre-line">{item.content[lang]}</div>
+    <a href={`${lang === 'en' ? '/en' : ''}/culture/heritage`} class="text-blue-600 hover:underline">{lang === 'en' ? '← Back to Heritage List' : '← 回文化傳承列表'}</a>
+  </div>
+</Layout> 

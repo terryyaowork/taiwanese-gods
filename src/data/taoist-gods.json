@@ -1,0 +1,62 @@
+[
+  {
+    "id": "guansheng",
+    "name": { "zh-TW": "關聖帝君", "en": "Guansheng Dijun (Lord Guan)" },
+    "aliases": { "zh-TW": ["關公", "恩主公"], "en": ["Lord Guan", "Guan Yu"] },
+    "domain": { "zh-TW": "武財神、忠義的象徵", "en": "God of war and wealth, symbol of loyalty and righteousness" },
+    "description": { "zh-TW": "關聖帝君是三國時代的名將，象徵忠義與財富。", "en": "Guansheng Dijun is a famous general from the Three Kingdoms, symbolizing loyalty and wealth." },
+    "story": { "zh-TW": "傳說他忠義無雙，受人敬仰。", "en": "Legend says he is the symbol of loyalty and is highly respected." },
+    "temples": [
+      { "name": { "zh-TW": "行天宮", "en": "Xingtian Temple" }, "location": "台北市", "url": "https://www.ht.org.tw/" }
+    ],
+    "image": "/assets/images/gods/guansheng.webp"
+  },
+  {
+    "id": "mazu",
+    "name": { "zh-TW": "媽祖", "en": "Mazu" },
+    "aliases": { "zh-TW": ["天上聖母"], "en": ["Heavenly Holy Mother"] },
+    "domain": { "zh-TW": "海上守護神", "en": "Goddess of the sea" },
+    "description": { "zh-TW": "媽祖是漁民與航海者的守護神。", "en": "Mazu is the protector of fishermen and sailors." },
+    "story": { "zh-TW": "相傳媽祖能夠保佑出海平安。", "en": "It is said that Mazu blesses those who go to sea." },
+    "temples": [
+      { "name": { "zh-TW": "大甲鎮瀾宮", "en": "Dajia Jenn Lann Temple" }, "location": "台中市", "url": "https://www.dajiamazu.org.tw/" }
+    ],
+    "image": "/assets/images/gods/mazu.jpg"
+  },
+  {
+    "id": "chenghuang",
+    "name": { "zh-TW": "城隍爺", "en": "Chenghuang" },
+    "aliases": { "zh-TW": ["城隍"], "en": ["City God"] },
+    "domain": { "zh-TW": "地方守護神，管理陰陽兩界", "en": "City god, guardian of local communities and the underworld" },
+    "description": { "zh-TW": "地方守護神，管理陰陽兩界。", "en": "City god, guardian of local communities and the underworld." },
+    "story": { "zh-TW": "城隍爺負責守護城池，管理陰陽。", "en": "Chenghuang is responsible for guarding the city and managing the underworld." },
+    "temples": [
+      { "name": { "zh-TW": "台北霞海城隍廟", "en": "Taipei Xia-Hai City God Temple" }, "location": "台北市", "url": "https://www.tpecitygod.org/" }
+    ],
+    "image": "/assets/images/gods/chenghuang.jpeg"
+  },
+  {
+    "id": "tudigong",
+    "name": { "zh-TW": "土地公", "en": "Tudigong (Earth God)" },
+    "aliases": { "zh-TW": ["福德正神"], "en": ["Fude Zhengshen"] },
+    "domain": { "zh-TW": "土地與農業的守護神", "en": "God of land and agriculture, protector of local fields" },
+    "description": { "zh-TW": "土地與農業的守護神。", "en": "God of land and agriculture, protector of local fields." },
+    "story": { "zh-TW": "土地公保佑地方平安、農作豐收。", "en": "Tudigong blesses local peace and good harvests." },
+    "temples": [
+      { "name": { "zh-TW": "松山慈祐宮", "en": "Songshan Ciyou Temple" }, "location": "台北市", "url": "https://www.ciyou.org.tw/" }
+    ],
+    "image": "/assets/images/gods/tudigong.webp"
+  },
+  {
+    "id": "xuantianshangdi",
+    "name": { "zh-TW": "玄天上帝", "en": "Xuantian Shangdi" },
+    "aliases": { "zh-TW": ["真武大帝"], "en": ["Zhenwu Dadi"] },
+    "domain": { "zh-TW": "北方的主神，驅邪避災", "en": "Supreme Emperor of the Dark Heaven, powerful northern deity who wards off evil" },
+    "description": { "zh-TW": "北方的主神，驅邪避災。", "en": "Supreme Emperor of the Dark Heaven, powerful northern deity who wards off evil." },
+    "story": { "zh-TW": "玄天上帝能驅邪避災，保佑信眾。", "en": "Xuantian Shangdi wards off evil and protects believers." },
+    "temples": [
+      { "name": { "zh-TW": "北投關渡宮", "en": "Guandu Temple" }, "location": "台北市", "url": "https://www.guandu-temple.org/" }
+    ],
+    "image": "/assets/images/gods/xuantianshangdi.jpeg"
+  }
+] 

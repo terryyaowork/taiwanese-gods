@@ -1,0 +1,28 @@
+[
+  {
+    "id": "baishatun-mazu-pilgrimage",
+    "title": { "zh-TW": "白沙屯媽祖進香", "en": "Baishatun Mazu Pilgrimage" },
+    "summary": {
+      "zh-TW": "台灣最具特色的媽祖進香，路線不固定，信眾徒步隨行。",
+      "en": "Taiwan's most unique Mazu pilgrimage, with an unpredictable route and thousands of devotees walking together."
+    },
+    "content": {
+      "zh-TW": "白沙屯媽祖進香由苗栗通霄白沙屯拱天宮主辦，前往雲林北港朝天宮。最大特色是進香路線完全由媽祖神轎指引，無預設路線，信眾需隨時跟隨神轎前進。\n\n全程約400公里，需徒步數天，沿途居民熱情提供食物與休息，形成「粉紅超跑」現象。進香過程充滿感動與挑戰，吸引年輕人與外國人參與，成為台灣宗教文化新亮點。",
+      "en": "The Baishatun Mazu Pilgrimage is organized by Gongtian Temple in Baishatun, Miaoli, heading to Chaotian Temple in Beigang, Yunlin. Its most unique feature is that the route is not predetermined but guided by the movements of the Mazu palanquin, so devotees must follow wherever the palanquin leads.\n\nThe journey covers about 400 kilometers and takes several days on foot. Along the way, local residents enthusiastically provide food and rest, creating the famous 'Pink Supercar' phenomenon. The pilgrimage is full of touching moments and challenges, attracting many young people and even foreigners, making it a new highlight of Taiwan's religious culture."
+    },
+    "images": ["/assets/images/culture-festivals/festival-baishatun.jpg"]
+  },
+  {
+    "id": "qingshan-king-festival",
+    "title": { "zh-TW": "艋舺青山王祭", "en": "Qingshan King Festival" },
+    "summary": {
+      "zh-TW": "台北萬華年度盛事，夜間遶境、陣頭熱鬧非凡。",
+      "en": "A major annual event in Wanhua, Taipei, featuring vibrant night processions and parade troupes."
+    },
+    "content": {
+      "zh-TW": "艋舺青山王祭為台北萬華青山宮主辦，每年農曆十月二十日至二十二日舉行。祭典重頭戲為夜間遶境，神轎、陣頭、藝閣、八家將等隊伍穿梭萬華街頭，驅邪保境。\n\n活動氣氛熱烈，吸引大量信眾與攝影愛好者。青山王信仰源自福建，象徵鎮煞除疫，是北台灣最具代表性的夜間宗教慶典。",
+      "en": "The Qingshan King Festival is organized by Qingshan Temple in Wanhua, Taipei, and is held annually from the 20th to the 22nd day of the 10th lunar month. The highlight is the night procession, with palanquins, parade troupes, folk performance groups, and Bajiajiang (Eight Generals) marching through the streets to ward off evil and protect the community.\n\nThe event is lively and attracts many devotees and photographers. The Qingshan King faith originated from Fujian and symbolizes exorcism and protection. It is the most representative night-time religious festival in northern Taiwan."
+    },
+    "images": ["/assets/images/culture-festivals/festival-qingshan.jpg"]
+  }
+] 

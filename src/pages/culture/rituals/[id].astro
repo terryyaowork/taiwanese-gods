@@ -1,0 +1,26 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import rituals from '~/data/culture-rituals.json';
+
+export async function getStaticPaths() {
+  return rituals.map(ritual => ({
+    params: { id: ritual.id }
+  }));
+}
+
+const { id } = Astro.params;
+const ritual = rituals.find(r => r.id === id);
+if (!ritual) {
+  throw new Error('禮儀資料不存在');
+}
+---
+<Layout>
+  <div class="max-w-2xl mx-auto py-8">
+    {ritual.images?.[0] && (
+      <img src={ritual.images[0]} alt={ritual.title['zh-TW']} class="w-full object-cover rounded mb-6" />
+    )}
+    <h1 class="text-3xl font-bold mb-2">{ritual.title['zh-TW']}</h1>
+    <div class="mb-4 text-lg whitespace-pre-line">{ritual.content['zh-TW']}</div>
+    <a href="/culture/rituals" class="text-blue-600 hover:underline">← 回祭祀禮儀列表</a>
+  </div>
+</Layout> 

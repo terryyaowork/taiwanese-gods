@@ -1,0 +1,39 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+const metadata = { title: 'FAQ' };
+const faqs = [
+  {
+    q: "What are the sources of the website's content?",
+    a: "Our content comes from official temple websites across Taiwan, open data from the Ministry of Culture and Religious Affairs Bureau, as well as our team's field research and reference books and papers."
+  },
+  {
+    q: 'How can I switch the website language?',
+    a: 'You can switch between Traditional Chinese and English using the language selector at the top right corner.'
+  },
+  {
+    q: 'Can I freely use the images on this website?',
+    a: 'Some images are original, some are from open resources. For commercial use, please contact us for authorization.'
+  },
+  {
+    q: 'Can I contribute or submit content?',
+    a: 'We welcome suggestions, corrections, or contributions. Please contact us via the Contact page.'
+  },
+  {
+    q: 'How do I contact the website team?',
+    a: 'Please visit the Contact page or email terry.yao.work@gmail.com.'
+  }
+];
+---
+<Layout metadata={metadata}>
+  <div class="container mx-auto py-8">
+    <h1 class="text-3xl font-bold mb-6">FAQ</h1>
+    <div class="space-y-6">
+      {faqs.map(faq => (
+        <details class="bg-white dark:bg-gray-800 rounded shadow p-4">
+          <summary class="font-semibold cursor-pointer text-lg">{faq.q}</summary>
+          <div class="mt-2 text-gray-700 dark:text-gray-200">{faq.a}</div>
+        </details>
+      ))}
+    </div>
+  </div>
+</Layout> 

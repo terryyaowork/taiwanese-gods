@@ -1,0 +1,41 @@
+[
+  {
+    "id": "red-envelope",
+    "title": { "zh-TW": "發紅包", "en": "Giving Red Envelopes" },
+    "summary": {
+      "zh-TW": "過年時長輩給晚輩壓歲錢，象徵祝福與平安。",
+      "en": "Elders give red envelopes to children during Lunar New Year as a blessing."
+    },
+    "content": {
+      "zh-TW": "紅包是台灣過年重要習俗，長輩會包紅包給晚輩，象徵壓歲、保平安。紅包金額不拘，重在心意。",
+      "en": "Red envelopes are an important custom during Lunar New Year in Taiwan. Elders give them to children as a symbol of blessing and protection. The amount is not important; it's the thought that counts."
+    },
+    "images": ["/assets/images/culture-customs/custom-red-envelope.jpg"]
+  },
+  {
+    "id": "spring-couplets",
+    "title": { "zh-TW": "貼春聯", "en": "Pasting Spring Couplets" },
+    "summary": {
+      "zh-TW": "農曆新年前夕，家家戶戶貼上春聯，祈求新年吉祥如意。",
+      "en": "Before Lunar New Year, families paste red couplets on doors to bring good fortune."
+    },
+    "content": {
+      "zh-TW": "春聯是用紅紙寫上吉祥話語，貼在門口、窗戶或牆上，象徵迎春納福、辭舊迎新。內容多為祝福語，如『招財進寶』、『平安如意』等。",
+      "en": "Spring couplets are red papers with auspicious phrases, pasted on doors and windows to welcome the new year and good luck. Common phrases include 'Wealth and Prosperity' and 'Peace and Good Fortune.'"
+    },
+    "images": ["/assets/images/culture-customs/custom-spring-couplets.jpg"]
+  },
+  {
+    "id": "first-incense",
+    "title": { "zh-TW": "搶頭香", "en": "First Incense Offering" },
+    "summary": {
+      "zh-TW": "新年子時搶頭香，祈求一年好運與平安。",
+      "en": "Offering the first incense at temples during Lunar New Year for good luck."
+    },
+    "content": {
+      "zh-TW": "搶頭香是台灣廟宇新年重要習俗，信眾在新年開始時搶先上香，象徵新的一年能得到神明庇佑、萬事如意。",
+      "en": "First incense offering is a popular custom in Taiwan. At the start of Lunar New Year, devotees rush to offer the first incense at temples, hoping for blessings and good fortune in the coming year."
+    },
+    "images": ["/assets/images/culture-customs/custom-first-incense.jpg"]
+  }
+] 

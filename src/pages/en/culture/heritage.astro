@@ -1,0 +1,23 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import heritage from '~/data/culture-heritage.json';
+const lang = 'en';
+const metadata = {
+  title: 'Heritage',
+};
+---
+<Layout metadata={metadata}>
+  <h1 class="text-3xl font-bold mb-4">Heritage</h1>
+  <p class="mb-8">Introduction to Taiwan traditional heritage and crafts.</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {heritage.map(item => (
+      <a href={`/en/culture/heritage/${item.id}`} class="block border rounded-lg p-6 shadow bg-white dark:bg-gray-800 hover:shadow-lg transition">
+        {item.images?.[0] && (
+          <img src={item.images[0]} alt={item.title[lang]} class="w-full h-40 object-cover object-top rounded mb-4" />
+        )}
+        <h2 class="text-xl font-semibold mb-2">{item.title[lang]}</h2>
+        <p class="mb-2 text-gray-700">{item.summary[lang]}</p>
+      </a>
+    ))}
+  </div>
+</Layout> 

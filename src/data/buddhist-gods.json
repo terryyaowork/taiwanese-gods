@@ -1,0 +1,62 @@
+[
+  {
+    "id": "shakyamuni",
+    "name": { "zh-TW": "釋迦牟尼佛", "en": "Shakyamuni Buddha" },
+    "aliases": { "zh-TW": ["本師佛", "釋尊"], "en": ["Sakyamuni", "The Buddha"] },
+    "domain": { "zh-TW": "佛教創立者，覺悟者", "en": "Founder of Buddhism, the Enlightened One" },
+    "description": { "zh-TW": "釋迦牟尼佛是佛教的創立者，象徵覺悟與慈悲。", "en": "Shakyamuni Buddha is the founder of Buddhism, symbolizing enlightenment and compassion." },
+    "story": { "zh-TW": "本名悉達多太子，出家修行成佛，教化眾生。", "en": "Born as Prince Siddhartha, he renounced royal life, attained enlightenment, and taught the Dharma." },
+    "temples": [
+      { "name": { "zh-TW": "法鼓山", "en": "Dharma Drum Mountain" }, "location": "新北市", "url": "https://www.ddm.org.tw/" }
+    ],
+    "image": "/assets/images/gods/shakyamuni.jpg"
+  },
+  {
+    "id": "guanyin",
+    "name": { "zh-TW": "觀世音菩薩", "en": "Guanyin Bodhisattva" },
+    "aliases": { "zh-TW": ["觀音佛祖", "觀音媽"], "en": ["Avalokitesvara", "Guanyin"] },
+    "domain": { "zh-TW": "大慈大悲，救苦救難", "en": "Great compassion, savior from suffering" },
+    "description": { "zh-TW": "觀世音菩薩以慈悲著稱，廣受信仰。", "en": "Guanyin Bodhisattva is renowned for compassion and is widely worshipped." },
+    "story": { "zh-TW": "傳說觀音菩薩千處祈求千處應，救苦救難。", "en": "Legend says Guanyin responds to every plea, saving those in distress." },
+    "temples": [
+      { "name": { "zh-TW": "龍山寺", "en": "Longshan Temple" }, "location": "台北市", "url": "https://www.lungshan.org.tw/" }
+    ],
+    "image": "/assets/images/gods/guanyin.jpg"
+  },
+  {
+    "id": "kshitigarbha",
+    "name": { "zh-TW": "地藏王菩薩", "en": "Kṣitigarbha Bodhisattva" },
+    "aliases": { "zh-TW": ["地藏菩薩"], "en": ["Ksitigarbha"] },
+    "domain": { "zh-TW": "救度亡靈，地獄不空誓不成佛", "en": "Savior of the deceased, vows not to become Buddha until hell is empty" },
+    "description": { "zh-TW": "地藏王菩薩以大願力著稱，救度亡靈。", "en": "Kṣitigarbha is known for great vows, saving souls from suffering." },
+    "story": { "zh-TW": "發願地獄不空誓不成佛，廣度眾生。", "en": "Vowed not to become Buddha until all hells are empty, saving countless beings." },
+    "temples": [
+      { "name": { "zh-TW": "地藏庵", "en": "Dizang Temple" }, "location": "台北市", "url": "https://www.dizang.org.tw/" }
+    ],
+    "image": "/assets/images/gods/kshitigarbha.jpeg"
+  },
+  {
+    "id": "manjushri",
+    "name": { "zh-TW": "文殊菩薩", "en": "Manjushri Bodhisattva" },
+    "aliases": { "zh-TW": ["文殊師利"], "en": ["Manjusri"] },
+    "domain": { "zh-TW": "智慧的象徵", "en": "Symbol of wisdom" },
+    "description": { "zh-TW": "文殊菩薩象徵大智慧，常持寶劍。", "en": "Manjushri Bodhisattva symbolizes great wisdom, often depicted with a sword." },
+    "story": { "zh-TW": "文殊菩薩以智慧度化眾生。", "en": "Manjushri uses wisdom to enlighten all beings." },
+    "temples": [
+      { "name": { "zh-TW": "法華寺", "en": "Fahua Temple" }, "location": "台中市", "url": "https://www.fahua.org.tw/" }
+    ],
+    "image": "/assets/images/gods/manjushri.jpeg"
+  },
+  {
+    "id": "samantabhadra",
+    "name": { "zh-TW": "普賢菩薩", "en": "Samantabhadra Bodhisattva" },
+    "aliases": { "zh-TW": ["普賢"], "en": ["Samantabhadra"] },
+    "domain": { "zh-TW": "實踐與願力", "en": "Practice and great vows" },
+    "description": { "zh-TW": "普賢菩薩象徵實踐與大願。", "en": "Samantabhadra Bodhisattva symbolizes practice and great vows." },
+    "story": { "zh-TW": "普賢菩薩以實踐與願力度化眾生。", "en": "Samantabhadra enlightens beings through practice and vows." },
+    "temples": [
+      { "name": { "zh-TW": "普賢寺", "en": "Puxian Temple" }, "location": "新竹市", "url": "https://www.puxian.org.tw/" }
+    ],
+    "image": "/assets/images/gods/samantabhadra.jpeg"
+  }
+] 

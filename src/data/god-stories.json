@@ -1,0 +1,34 @@
+[
+  {
+    "id": "mazu-legend",
+    "title": { "zh-TW": "媽祖的傳奇故事", "en": "The Legend of Mazu" },
+    "mainDeities": [
+      { "id": "mazu", "name": { "zh-TW": "媽祖", "en": "Mazu" } }
+    ],
+    "summary": {
+      "zh-TW": "媽祖自小聰慧，救人無數，成為海上守護神。",
+      "en": "Mazu was wise since childhood, saved many lives, and became the guardian of the seas."
+    },
+    "content": {
+      "zh-TW": "媽祖原名林默娘，生於宋朝福建莆田湄洲島。自幼聰慧善良，八歲能讀經書，十六歲時已精通醫藥與救生之術。她常在海邊觀察天象，預知風暴，並多次協助漁民脫險。\n\n傳說有一次父兄出海遇險，林默娘在夢中顯靈，手持紅燈引導船隻安全返航。她一生樂善好施，救人無數，深受鄉民愛戴。二十八歲時，林默娘於海邊坐化，鄉民感念其德，建廟奉祀，尊稱為\"媽祖\"。\n\n隨著移民與航海活動的發展，媽祖信仰傳遍中國沿海、台灣、東南亞，成為華人世界最重要的海上守護神之一。每年農曆三月廿三日為媽祖誕辰，台灣各地廟宇舉辦盛大遶境，吸引數十萬信眾參與，展現媽祖慈悲與庇佑的精神。",
+      "en": "Mazu, originally named Lin Mo-niang, was born on Meizhou Island, Putian, Fujian during the Song Dynasty. From a young age, she was known for her intelligence and kindness. By the age of eight, she could read Buddhist scriptures, and by sixteen, she was skilled in medicine and lifesaving techniques. She often watched the sea and sky, predicting storms and helping fishermen avoid danger.\n\nOne famous legend tells of her father and brothers being caught in a storm at sea. Lin Mo-niang fell into a trance, spiritually guiding their boat safely home by holding a red lantern. Throughout her life, she was devoted to helping others, saving countless lives, and was deeply loved by her community. At the age of twenty-eight, she passed away by the sea. The villagers, grateful for her virtue, built temples in her honor and worshipped her as \"Mazu\".\n\nAs migration and maritime trade expanded, Mazu's faith spread throughout coastal China, Taiwan, and Southeast Asia, making her one of the most important sea goddesses in the Chinese world. Every year on the 23rd day of the third lunar month, grand processions and pilgrimages are held in her honor across Taiwan, drawing hundreds of thousands of devotees and showcasing her spirit of compassion and protection."
+    },
+    "images": ["/assets/images/god-stories/story-mazu.png"]
+  },
+  {
+    "id": "guanyu-loyalty",
+    "title": { "zh-TW": "關公忠義的故事", "en": "The Loyalty of Guan Yu" },
+    "mainDeities": [
+      { "id": "guansheng", "name": { "zh-TW": "關聖帝君", "en": "Guansheng Dijun" } }
+    ],
+    "summary": {
+      "zh-TW": "關公以忠義聞名，成為武聖與守護神。",
+      "en": "Guan Yu is renowned for his loyalty and righteousness, becoming a martial saint and guardian deity."
+    },
+    "content": {
+      "zh-TW": "關羽，字雲長，三國時期蜀漢名將。自幼力大無窮，重情重義。與劉備、張飛結義於桃園，誓同生死，成為三國時代著名的\"桃園三結義\"。\n\n關羽一生忠心耿耿，為人剛正不阿。最著名的事蹟之一是\"過五關斬六將\"，為了護送劉備家眷，單騎闖過曹操五道關卡，斬殺六名守將，展現無比勇武與忠誠。後來在荊州被圍，寡不敵眾，壯烈犧牲。\n\n關羽死後，因其忠義精神感動世人，被歷代朝廷加封，尊為\"關聖帝君\"。民間視其為武財神、守護神，商人、警界、黑白兩道皆敬奉。廟宇遍佈華人世界，香火鼎盛，象徵忠誠、正義與守信的最高典範。",
+      "en": "Guan Yu, styled Yunchang, was a famous general of Shu Han during the Three Kingdoms period. From a young age, he was known for his great strength and deep sense of loyalty. He formed a brotherhood with Liu Bei and Zhang Fei in the famous \"Oath of the Peach Garden,\" vowing to live and die together.\n\nThroughout his life, Guan Yu was unwaveringly loyal and upright. One of his most famous feats was \"Crossing Five Passes and Slaying Six Generals,\" where he rode alone through five checkpoints, defeating six generals to escort Liu Bei's family to safety, demonstrating unmatched bravery and loyalty. Later, he was besieged in Jingzhou and died heroically in battle.\n\nAfter his death, Guan Yu's spirit of loyalty and righteousness moved generations. He was posthumously honored as \"Guansheng Dijun\" by successive dynasties. In folk belief, he is revered as the Martial God of Wealth and a guardian deity, worshipped by merchants, police, and even both sides of the law. Temples dedicated to him are found throughout the Chinese world, making him a supreme symbol of loyalty, justice, and trustworthiness."
+    },
+    "images": ["/assets/images/god-stories/story-guanyu.png"]
+  }
+] 

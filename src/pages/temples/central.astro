@@ -1,0 +1,23 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import temples from '~/data/temples-central.json';
+const metadata = {
+  title: '中部廟宇巡禮',
+};
+---
+<Layout metadata={metadata}>
+  <h1 class="text-3xl font-bold mb-4">中部廟宇巡禮</h1>
+  <p class="mb-8">介紹台灣中部代表性廟宇，包含主祀神明、歷史與文化特色。</p>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {temples.map(temple => (
+      <a href={`/temples/central/${temple.id}`} class="block border rounded-lg p-6 shadow bg-white dark:bg-gray-800 hover:shadow-lg transition">
+        {temple.images?.[0] && (
+          <img src={temple.images[0]} alt={temple.name['zh-TW']} class="w-full h-40 object-cover object-top rounded mb-4" />
+        )}
+        <h2 class="text-xl font-semibold mb-2">{temple.name['zh-TW']}</h2>
+        <div class="mb-1 text-gray-600">{temple.location['zh-TW']}</div>
+        <p class="mb-2 text-gray-700">{temple.description['zh-TW']}</p>
+      </a>
+    ))}
+  </div>
+</Layout> 

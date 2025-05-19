@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import temples from '~/data/temples-north.json';
+
+export async function getStaticPaths() {
+  return temples.map(temple => ({
+    params: { id: temple.id }
+  }));
+}
+
+const { id } = Astro.params;
+const temple = temples.find(t => t.id === id);
+if (!temple) {
+  throw new Error('廟宇資料不存在');
+}
+---
+<Layout>
+  <div class="max-w-2xl mx-auto py-8">
+    {temple.images?.[0] && (
+      <img src={temple.images[0]} alt={temple.name['zh-TW']} class="w-full object-cover rounded mb-6" />
+    )}
+    <h1 class="text-3xl font-bold mb-2">{temple.name['zh-TW']}</h1>
+    <div class="mb-2 text-gray-600">{temple.location['zh-TW']} | {temple.address['zh-TW']}</div>
+    <div class="mb-2">
+      <b>主祀神明：</b>
+      {temple.mainDeities.map(d => d.name['zh-TW']).join('、')}
+    </div>
+    <div class="mb-4"><b>簡介：</b>{temple.description['zh-TW']}</div>
+    <div class="mb-4"><b>歷史：</b>{temple.history['zh-TW']}</div>
+    <div class="mb-4">
+      <b>官網：</b>
+      <a href={temple.url} target="_blank" rel="noopener" class="text-blue-600 hover:underline">{temple.url}</a>
+    </div>
+    <div class="mb-4">
+      <b>Google Map：</b>
+      <a href={temple.googleMap} target="_blank" rel="noopener" class="text-blue-600 hover:underline">查看地圖</a>
+    </div>
+    <a href="/temples/north" class="text-blue-600 hover:underline">← 回北部廟宇列表</a>
+  </div>
+</Layout> 

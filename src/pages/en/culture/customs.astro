@@ -1,0 +1,23 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import customs from '~/data/culture-customs.json';
+const lang = 'en';
+const metadata = {
+  title: 'Folk Customs',
+};
+---
+<Layout metadata={metadata}>
+  <h1 class="text-3xl font-bold mb-4">Folk Customs</h1>
+  <p class="mb-8">Introduction to common Taiwanese folk customs and traditions.</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {customs.map(custom => (
+      <a href={`/en/culture/customs/${custom.id}`} class="block border rounded-lg p-6 shadow bg-white dark:bg-gray-800 hover:shadow-lg transition">
+        {custom.images?.[0] && (
+          <img src={custom.images[0]} alt={custom.title[lang]} class="w-full h-40 object-cover object-top rounded mb-4" />
+        )}
+        <h2 class="text-xl font-semibold mb-2">{custom.title[lang]}</h2>
+        <p class="mb-2 text-gray-700">{custom.summary[lang]}</p>
+      </a>
+    ))}
+  </div>
+</Layout> 

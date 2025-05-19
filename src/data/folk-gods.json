@@ -1,0 +1,74 @@
+[
+  {
+    "id": "wangye",
+    "name": { "zh-TW": "王爺", "en": "Wangye (Plague Lord)" },
+    "aliases": { "zh-TW": ["千歲爺", "五府千歲"], "en": ["Wangye", "Plague Lord"] },
+    "domain": { "zh-TW": "驅邪消災、保境安民", "en": "Exorcism, protection from plagues, safeguarding communities" },
+    "description": { "zh-TW": "王爺信仰盛行於台灣沿海，主祀驅邪消災。", "en": "Wangye worship is popular in coastal Taiwan, mainly for exorcism and protection." },
+    "story": { "zh-TW": "王爺多為歷史名臣或忠義之士，死後受封為神。", "en": "Wangye are often deified loyal officials or heroes, worshipped after death." },
+    "temples": [
+      { "name": { "zh-TW": "東港東隆宮", "en": "Donglong Temple" }, "location": "屏東縣", "url": "https://www.donglong.org.tw/" }
+    ],
+    "image": "/assets/images/gods/wangye.jpg"
+  },
+  {
+    "id": "baosheng",
+    "name": { "zh-TW": "保生大帝", "en": "Baosheng Dadi" },
+    "aliases": { "zh-TW": ["大道公"], "en": ["God of Medicine"] },
+    "domain": { "zh-TW": "醫藥健康、消災解厄", "en": "Medicine, health, protection from illness" },
+    "description": { "zh-TW": "保生大帝為醫藥之神，保佑健康平安。", "en": "Baosheng Dadi is the god of medicine, blessing health and safety." },
+    "story": { "zh-TW": "原為宋代名醫吳本，濟世救人，死後受祀。", "en": "Originally a famous Song dynasty doctor, deified for his benevolence." },
+    "temples": [
+      { "name": { "zh-TW": "大龍峒保安宮", "en": "Baoan Temple" }, "location": "台北市", "url": "https://www.baoan.org.tw/" }
+    ],
+    "image": "/assets/images/gods/baosheng.jpg"
+  },
+  {
+    "id": "nezha",
+    "name": { "zh-TW": "三太子", "en": "Nezha (Third Prince)" },
+    "aliases": { "zh-TW": ["哪吒"], "en": ["Nezha"] },
+    "domain": { "zh-TW": "勇敢、守護兒童、驅邪", "en": "Courage, protection of children, exorcism" },
+    "description": { "zh-TW": "三太子為勇敢的少年神，深受兒童喜愛。", "en": "Nezha is a brave young deity, beloved by children." },
+    "story": { "zh-TW": "哪吒鬧海、降妖除魔，故事廣為流傳。", "en": "Famous for subduing demons and his legendary adventures." },
+    "temples": [
+      { "name": { "zh-TW": "新港奉天宮", "en": "Fengtian Temple" }, "location": "嘉義縣", "url": "https://www.hsinkangmazu.org.tw/" }
+    ],
+    "image": "/assets/images/gods/nezha.jpeg"
+  },
+  {
+    "id": "tigerlord",
+    "name": { "zh-TW": "虎爺", "en": "Tiger Lord" },
+    "aliases": { "zh-TW": ["虎爺公"], "en": ["Tiger God"] },
+    "domain": { "zh-TW": "鎮煞、守護、保平安", "en": "Protection, warding off evil" },
+    "description": { "zh-TW": "虎爺為動物神，常見於廟宇神桌下方。", "en": "Tiger Lord is an animal deity, often found under temple altars." },
+    "story": { "zh-TW": "傳說虎爺能驅邪避凶，守護信眾。", "en": "Said to ward off evil and protect worshippers." },
+    "temples": [
+      { "name": { "zh-TW": "艋舺龍山寺", "en": "Longshan Temple" }, "location": "台北市", "url": "https://www.lungshan.org.tw/" }
+    ],
+    "image": "/assets/images/gods/tigerlord.avif"
+  },
+  {
+    "id": "zhusheng",
+    "name": { "zh-TW": "註生娘娘", "en": "Zhusheng Niangniang" },
+    "aliases": { "zh-TW": ["送子娘娘"], "en": ["Goddess of Birth"] },
+    "domain": { "zh-TW": "求子、保佑婦女生育", "en": "Fertility, childbirth, protection of women" },
+    "description": { "zh-TW": "註生娘娘主司生育，婦女常祈求子嗣。", "en": "Goddess of birth and fertility, prayed to by women for children." },
+    "story": { "zh-TW": "傳說註生娘娘能賜子送子，保佑母子平安。", "en": "Said to grant children and ensure safe childbirth." },
+    "temples": [
+      { "name": { "zh-TW": "艋舺龍山寺", "en": "Longshan Temple" }, "location": "台北市", "url": "https://www.lungshan.org.tw/" }
+    ],
+    "image": "/assets/images/gods/zhusheng.jpg"
+  },
+  {
+    "id": "tudipo",
+    "name": { "zh-TW": "土地婆", "en": "Tudipo (Earth God's Wife)" },
+    "aliases": { "zh-TW": ["土地婆婆"], "en": ["Earth God's Wife"] },
+    "domain": { "zh-TW": "家庭、婦女、土地公的配偶", "en": "Family, women, wife of Tudigong" },
+    "description": { "zh-TW": "土地婆為土地公的配偶，主司家庭與婦女。", "en": "Tudipo is the wife of Tudigong, goddess of family and women." },
+    "story": { "zh-TW": "土地婆協助土地公庇佑地方，守護家庭。", "en": "Assists Tudigong in protecting the land and families." },
+    "temples": [
+      { "name": { "zh-TW": "松山慈祐宮", "en": "Songshan Ciyou Temple" }, "location": "台北市", "url": "https://www.ciyou.org.tw/" }
+    ],
+    "image": "/assets/images/gods/tudipo.jpg"
+  }
+] 

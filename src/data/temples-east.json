@@ -1,0 +1,82 @@
+[
+  {
+    "id": "hualienchenghuang",
+    "name": { "zh-TW": "花蓮城隍廟", "en": "Hualien City God Temple" },
+    "location": { "zh-TW": "花蓮縣花蓮市", "en": "Hualien City, Hualien County" },
+    "address": { "zh-TW": "花蓮縣花蓮市成功街168號", "en": "No. 168, Chenggong St, Hualien City, Hualien County" },
+    "mainDeities": [
+      { "id": "chenghuang", "name": { "zh-TW": "城隍爺", "en": "City God" } }
+    ],
+    "description": {
+      "zh-TW": "花蓮地區重要的城隍信仰中心。",
+      "en": "A major City God temple in Hualien."
+    },
+    "history": {
+      "zh-TW": "創建於日治時期，為地方守護神。",
+      "en": "Founded during the Japanese era, serves as a local guardian temple."
+    },
+    "images": ["/assets/images/temples/temple-hualienchenghuang.jpg"],
+    "url": "https://www.facebook.com/tyoudew/",
+    "googleMap": "https://maps.app.goo.gl/HvnWZt1fsBCCnMc98"
+  },
+  {
+    "id": "taitungtianhou",
+    "name": { "zh-TW": "台東天后宮", "en": "Taitung Tianhou Temple" },
+    "location": { "zh-TW": "台東縣台東市", "en": "Taitung City, Taitung County" },
+    "address": { "zh-TW": "台東縣台東市中華路一段222號", "en": "No. 222, Zhonghua Rd Sec. 1, Taitung City, Taitung County" },
+    "mainDeities": [
+      { "id": "mazu", "name": { "zh-TW": "媽祖", "en": "Mazu" } }
+    ],
+    "description": {
+      "zh-TW": "台東地區最具代表性的媽祖廟。",
+      "en": "The most representative Mazu temple in Taitung."
+    },
+    "history": {
+      "zh-TW": "創建於清朝，地方信仰重鎮。",
+      "en": "Founded in the Qing Dynasty, a major religious site in Taitung."
+    },
+    "images": ["/assets/images/temples/temple-taitungtianhou.jpg"],
+    "url": "https://www.taitungtianhou.org.tw",
+    "googleMap": "https://maps.app.goo.gl/CqJZWcg6dvBDrEEw9"
+  },
+  {
+    "id": "yuliwunian",
+    "name": { "zh-TW": "玉里五年千歲廟", "en": "Yuli Wunian Qiansui Temple" },
+    "location": { "zh-TW": "花蓮縣玉里鎮", "en": "Yuli Township, Hualien County" },
+    "address": { "zh-TW": "花蓮縣玉里鎮中山路二段100號", "en": "No. 100, Zhongshan Rd Sec. 2, Yuli Township, Hualien County" },
+    "mainDeities": [
+      { "id": "wunianqiansui", "name": { "zh-TW": "五年千歲", "en": "Wunian Qiansui" } }
+    ],
+    "description": {
+      "zh-TW": "玉里地區重要的王爺信仰中心。",
+      "en": "A major Wangye temple in Yuli."
+    },
+    "history": {
+      "zh-TW": "創建於清朝，地方信仰重鎮。",
+      "en": "Founded in the Qing Dynasty, a major religious site in Yuli."
+    },
+    "images": ["/assets/images/temples/temple-yuliwunian.jpg"],
+    "url": "#",
+    "googleMap": "https://maps.app.goo.gl/zBWWU9BErDBhXe2r9"
+  },
+  {
+    "id": "chenggongtianhou",
+    "name": { "zh-TW": "成功天后宮", "en": "Chenggong Tianhou Temple" },
+    "location": { "zh-TW": "台東縣成功鎮", "en": "Chenggong Township, Taitung County" },
+    "address": { "zh-TW": "台東縣成功鎮中山路50號", "en": "No. 50, Zhongshan Rd, Chenggong Township, Taitung County" },
+    "mainDeities": [
+      { "id": "mazu", "name": { "zh-TW": "媽祖", "en": "Mazu" } }
+    ],
+    "description": {
+      "zh-TW": "成功鎮重要的媽祖信仰中心。",
+      "en": "A major Mazu temple in Chenggong."
+    },
+    "history": {
+      "zh-TW": "創建於日治時期，地方信仰重鎮。",
+      "en": "Founded during the Japanese era, a major religious site in Chenggong."
+    },
+    "images": ["/assets/images/temples/temple-chenggongtianhou.jpg"],
+    "url": "https://www.eastcoast-nsa.gov.tw/zh-tw/attractions/detail/280/",
+    "googleMap": "https://maps.app.goo.gl/QBr2Rep5fPMaoLS58"
+  }
+] 

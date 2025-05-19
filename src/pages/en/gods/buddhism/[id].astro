@@ -1,0 +1,62 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import gods from '~/data/buddhist-gods.json';
+
+export async function getStaticPaths() {
+  return gods.map(god => ({
+    params: { id: god.id }
+  }));
+}
+
+const labels = {
+  'zh-TW': {
+    aliases: '別名',
+    domain: '職掌',
+    description: '簡介',
+    story: '神話故事',
+    temples: '代表寺廟',
+    back: '← 回神明列表'
+  },
+  en: {
+    aliases: 'Alias',
+    domain: 'Domain',
+    description: 'Description',
+    story: 'Legend/Story',
+    temples: 'Representative Temples',
+    back: '← Back to Deities List'
+  }
+};
+
+const { id } = Astro.params;
+const lang = 'en';
+const god = gods.find(g => g.id === id);
+if (!god) {
+  throw new Error('Deity not found');
+}
+---
+<Layout>
+  <div class="max-w-2xl mx-auto py-8">
+    <img src={god.image} alt={god.name[lang]} class="w-full object-cover rounded mb-6" />
+    <h1 class="text-3xl font-bold mb-2">{god.name[lang]}</h1>
+    <div class="mb-2 text-gray-600">
+      <span>{labels[lang].aliases}:</span>
+      {god.aliases[lang]?.join(', ')}
+    </div>
+    <div class="mb-2"><b>{labels[lang].domain}:</b> {god.domain[lang]}</div>
+    <div class="mb-4"><b>{labels[lang].description}:</b> {god.description[lang]}</div>
+    <div class="mb-4"><b>{labels[lang].story}:</b> {god.story[lang]}</div>
+    <div class="mb-4">
+      <b>{labels[lang].temples}:</b>
+      <ul>
+        {god.temples.map(t => (
+          <li>
+            <a href={t.url} target="_blank" rel="noopener">{t.name[lang]} ({t.location})</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+    <a href="/en/gods/buddhism" class="text-blue-600 hover:underline">
+      {labels[lang].back}
+    </a>
+  </div>
+</Layout> 

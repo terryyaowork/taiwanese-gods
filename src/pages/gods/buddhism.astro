@@ -1,0 +1,22 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import gods from '~/data/buddhist-gods.json';
+const metadata = {
+  title: '佛教神明介紹',
+};
+---
+<Layout metadata={metadata}>
+  <h1 class="text-3xl font-bold mb-4">佛教神明介紹</h1>
+  <p class="mb-8">這裡將介紹台灣常見的佛教神明、信仰特色與相關寺廟。</p>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {gods.map(god => (
+      <a href={`/gods/buddhism/${god.id}`} class="block border rounded-lg p-6 shadow bg-white dark:bg-gray-800 hover:shadow-lg transition">
+        {god.image && (
+          <img src={god.image} alt={god.name['zh-TW']} class="w-full h-40 object-cover object-top rounded mb-4" />
+        )}
+        <h2 class="text-xl font-semibold mb-2">{god.name['zh-TW']}</h2>
+        <p>{god.description['zh-TW']}</p>
+      </a>
+    ))}
+  </div>
+</Layout> 

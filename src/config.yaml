@@ -1,0 +1,82 @@
+site:
+  name: 台灣神明介紹
+  site: 'https://taiwanese-gods.vercel.app'
+  base: '/'
+  trailingSlash: false
+
+  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+
+# Default SEO metadata
+metadata:
+  title:
+    default: 台灣神明介紹
+    template: '%s — 台灣神明介紹'
+  description: "探索台灣豐富的神明文化，了解各地方信仰、廟宇歷史與神明故事。"
+  robots:
+    index: true
+    follow: true
+  openGraph:
+    site_name: 台灣神明介紹
+    images:
+      - url: '~/assets/images/default.png'
+        width: 1200
+        height: 628
+    type: website
+  twitter:
+    handle: '@taiwanese_gods'
+    site: '@taiwanese_gods'
+    cardType: summary_large_image
+
+i18n:
+  defaultLanguage: zh-TW
+  languages:
+    zh-TW:
+      name: 繁體中文
+      path: ''
+    en:
+      name: English
+      path: 'en'
+    ja:
+      name: 日本語
+      path: 'ja'
+  textDirection: ltr
+
+apps:
+  blog:
+    isEnabled: true
+    postsPerPage: 6
+
+    post:
+      isEnabled: true
+      permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      robots:
+        index: true
+
+    list:
+      isEnabled: true
+      pathname: 'gods' # Blog main path, you can change this to "articles" (/articles)
+      robots:
+        index: true
+
+    category:
+      isEnabled: true
+      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      robots:
+        index: true
+
+    tag:
+      isEnabled: true
+      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      robots:
+        index: true
+
+    isRelatedPostsEnabled: true
+    relatedPostsCount: 4
+
+analytics:
+  vendors:
+    googleAnalytics:
+      id: null # or "G-XXXXXXXXXX"
+
+ui:
+  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"

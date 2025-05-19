@@ -1,0 +1,27 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import customs from '~/data/culture-customs.json';
+
+export async function getStaticPaths() {
+  return customs.map(custom => ({
+    params: { id: custom.id }
+  }));
+}
+
+const { id } = Astro.params;
+const lang = 'en';
+const custom = customs.find(c => c.id === id);
+if (!custom) {
+  throw new Error('Custom not found');
+}
+---
+<Layout>
+  <div class="max-w-2xl mx-auto py-8">
+    {custom.images?.[0] && (
+      <img src={custom.images[0]} alt={custom.title[lang]} class="w-full object-cover rounded mb-6" />
+    )}
+    <h1 class="text-3xl font-bold mb-2">{custom.title[lang]}</h1>
+    <div class="mb-4 text-lg whitespace-pre-line">{custom.content[lang]}</div>
+    <a href="/en/culture/customs" class="text-blue-600 hover:underline">← Back to Customs List</a>
+  </div>
+</Layout> 

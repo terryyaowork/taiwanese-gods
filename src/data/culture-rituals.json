@@ -1,0 +1,28 @@
+[
+  {
+    "id": "incense-offering",
+    "title": { "zh-TW": "上香禮儀", "en": "Incense Offering Ritual" },
+    "summary": {
+      "zh-TW": "進廟拜拜時，如何正確上香與祈福。",
+      "en": "How to properly offer incense and pray in a Taiwanese temple."
+    },
+    "content": {
+      "zh-TW": "進入廟宇時，先在香爐前鞠躬，取三炷香，依序向天公爐、主神、配祀神明上香。上香時心中默念姓名、住址與祈求事項。香插入香爐後，再次鞠躬致意。",
+      "en": "When entering a temple, bow in front of the incense burner, take three sticks of incense, and offer them in order: to the Heaven God, the main deity, and other deities. While offering incense, silently state your name, address, and wishes. After placing the incense in the burner, bow again to show respect."
+    },
+    "images": ["/assets/images/culture-rituals/ritual-incense.jpg"]
+  },
+  {
+    "id": "divination-blocks",
+    "title": { "zh-TW": "擲筊問神", "en": "Divination Blocks (Bwa Bwei)" },
+    "summary": {
+      "zh-TW": "用筊杯向神明請示，了解神意的傳統方式。",
+      "en": "A traditional way to seek answers from deities using crescent-shaped blocks."
+    },
+    "content": {
+      "zh-TW": "擲筊時，先向神明稟報姓名、住址與問題，雙手持筊杯，誠心擲出。根據筊杯落地的正反組合，分為聖筊、笑筊、陰筊等，分別代表神明的同意、玩笑或否定。",
+      "en": "To use divination blocks, first report your name, address, and question to the deity. Hold the blocks in both hands and toss them sincerely. The way the blocks land—one up, one down (Sheng Jiao), both up (Xiao Jiao), or both down (Yin Jiao)—represents different answers: approval, amusement, or denial from the deity."
+    },
+    "images": ["/assets/images/culture-rituals/ritual-divination.jpg"]
+  }
+] 

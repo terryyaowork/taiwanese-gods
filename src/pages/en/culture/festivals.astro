@@ -1,0 +1,22 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import festivals from '~/data/culture-festivals.json';
+const metadata = {
+  title: 'Festivals',
+};
+---
+<Layout metadata={metadata}>
+  <h1 class="text-3xl font-bold mb-4">Festivals</h1>
+  <p class="mb-8">Introduction to representative religious and folk festivals in Taiwan.</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {festivals.map(festival => (
+      <a href={`/en/culture/festivals/${festival.id}`} class="block border rounded-lg p-6 shadow bg-white dark:bg-gray-800 hover:shadow-lg transition">
+        {festival.images?.[0] && (
+          <img src={festival.images[0]} alt={festival.title.en} class="w-full h-40 object-cover object-top rounded mb-4" />
+        )}
+        <h2 class="text-xl font-semibold mb-2">{festival.title.en}</h2>
+        <p class="mb-2 text-gray-700">{festival.summary.en}</p>
+      </a>
+    ))}
+  </div>
+</Layout> 

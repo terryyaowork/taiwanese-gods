@@ -1,0 +1,39 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+const metadata = { title: '常見問題' };
+const faqs = [
+  {
+    q: '這個網站的資料來源是什麼？',
+    a: '本網站內容來自台灣各地廟宇官方網站、文化部、宗教事務局等公開資料，以及團隊實地採訪與參考相關書籍論文。'
+  },
+  {
+    q: '如何切換網站語言？',
+    a: '您可以在右上角選擇「繁體中文」或「English」切換網站語言。'
+  },
+  {
+    q: '網站上的圖片可以自由使用嗎？',
+    a: '部分圖片為團隊原創，部分來自公開資源。若需商業使用，請先來信洽詢授權。'
+  },
+  {
+    q: '我可以投稿或提供內容嗎？',
+    a: '歡迎來信提供建議、補充或投稿，請至「聯絡我們」頁面與我們聯繫。'
+  },
+  {
+    q: '如何聯絡網站團隊？',
+    a: '請至「聯絡我們」頁面，或來信 terry.yao.work@gmail.com。'
+  }
+];
+---
+<Layout metadata={metadata}>
+  <div class="container mx-auto py-8">
+    <h1 class="text-3xl font-bold mb-6">常見問題</h1>
+    <div class="space-y-6">
+      {faqs.map(faq => (
+        <details class="bg-white dark:bg-gray-800 rounded shadow p-4">
+          <summary class="font-semibold cursor-pointer text-lg">{faq.q}</summary>
+          <div class="mt-2 text-gray-700 dark:text-gray-200">{faq.a}</div>
+        </details>
+      ))}
+    </div>
+  </div>
+</Layout> 
