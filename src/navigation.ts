@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink } from './utils/permalinks';
 
 export const siteTitle = {
   'zh-TW': '台灣神明介紹',
@@ -89,8 +89,8 @@ export const headerData = {
           href: getPermalink('/temples/east'),
         },
       ],
-        },
-        {
+    },
+    {
       text: {
         'zh-TW': '信仰文化',
         'en': 'Culture',
@@ -225,8 +225,8 @@ export const footerData = {
           href: getPermalink('/gods/stories'),
         },
       ],
-        },
-        {
+    },
+    {
       title: {
         'zh-TW': '廟宇巡禮',
         'en': 'Temples',

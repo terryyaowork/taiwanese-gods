@@ -9,11 +9,11 @@ const isEn = currentPath.startsWith('/en');
 const currentLang = isEn ? 'en' : 'zh-TW';
 
 // 偵測是否為神明細節頁
-const detailMatch = currentPath.match(/^\/(en|zh-TW)?\/?gods\/taoism\/([^\/]+)$/);
+const detailMatch = currentPath.match(/^\/(en|zh-TW)?\/?gods\/taoism\/([^/]+)$/);
 const isDetailPage = !!detailMatch;
 const godId = isDetailPage ? detailMatch[2] : null;
 
-function getSwitchPath(lang) {
+function getSwitchPath(lang: { code: string; label: string; prefix: string }) {
   if (isDetailPage && godId) {
     // 細節頁切換語言時保留 id
     if (lang.code === 'zh-TW') {
@@ -35,17 +35,18 @@ function getSwitchPath(lang) {
 
 <nav aria-label="Language switcher" class="ml-2 content-center">
   <ul class="flex items-center gap-2">
-    {languages.map(lang => (
-      <li>
-        <a
-          href={getSwitchPath(lang)}
-          class={`px-2 py-1 rounded text-sm font-medium ${currentLang === lang.code ? 'bg-blue-600 text-white' : 'hover:bg-gray-200 dark:hover:bg-gray-700'}`}
-          aria-current={currentLang === lang.code ? 'page' : undefined}
-        >
-          {lang.label}
-        </a>
-      </li>
-    ))}
+    {
+      languages.map((lang) => (
+        <li>
+          <a
+            href={getSwitchPath(lang)}
+            class={`px-2 py-1 rounded text-sm font-medium ${currentLang === lang.code ? 'bg-blue-600 text-white' : 'hover:bg-gray-200 dark:hover:bg-gray-700'}`}
+            aria-current={currentLang === lang.code ? 'page' : undefined}
+          >
+            {lang.label}
+          </a>
+        </li>
+      ))
+    }
   </ul>
 </nav>
- 
