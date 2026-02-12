@@ -12,7 +12,7 @@ import { trimSlash, getAsset } from '~/utils/permalinks';
 import type { CallToAction } from '~/types';
 
 interface Link {
-  text?: string;
+  text?: string | Record<string, string>;
   href?: string;
   ariaLabel?: string;
   icon?: string;
@@ -22,10 +22,19 @@ interface MenuLink extends Link {
   links?: Array<MenuLink>;
 }
 
+interface ActionLink {
+  variant?: 'primary' | 'secondary' | 'tertiary' | 'link';
+  text?: string | Record<string, string>;
+  href?: string;
+  icon?: string;
+  classes?: Record<string, string>;
+  type?: 'button' | 'submit' | 'reset';
+}
+
 export interface Props {
   id?: string;
   links?: Array<MenuLink>;
-  actions?: Array<CallToAction>;
+  actions?: Array<ActionLink>;
   isSticky?: boolean;
   isDark?: boolean;
   isFullWidth?: boolean;

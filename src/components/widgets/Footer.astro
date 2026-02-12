@@ -5,14 +5,14 @@ import { getHomePermalink } from '~/utils/permalinks';
 import { siteTitle } from '~/navigation';
 
 interface Link {
-  text?: string;
+  text?: string | Record<string, string>;
   href?: string;
   ariaLabel?: string;
   icon?: string;
 }
 
 interface Links {
-  title?: string;
+  title?: string | Record<string, string>;
   links: Array<Link>;
 }
 
@@ -20,7 +20,7 @@ export interface Props {
   links: Array<Links>;
   secondaryLinks: Array<Link>;
   socialLinks: Array<Link>;
-  footNote?: string;
+  footNote?: string | Record<string, string>;
   theme?: string;
 }
 
@@ -59,7 +59,9 @@ const currentLang = isEn ? 'en' : 'zh-TW';
       {
         links.map(({ title, links }) => (
           <div class="col-span-6 md:col-span-3 lg:col-span-2">
-            <div class="dark:text-gray-300 font-medium mb-2">{typeof title === 'object' ? title[currentLang] : title}</div>
+            <div class="dark:text-gray-300 font-medium mb-2">
+              {typeof title === 'object' ? title[currentLang] : title}
+            </div>
             {links && Array.isArray(links) && links.length > 0 && (
               <ul class="text-sm">
                 {links.map(({ text, href, ariaLabel }) => (

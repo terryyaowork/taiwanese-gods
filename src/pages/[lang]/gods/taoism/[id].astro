@@ -2,14 +2,19 @@
 import Layout from '~/layouts/PageLayout.astro';
 import gods from '~/data/taoist-gods.json';
 
-const labels = {
+type Lang = 'zh-TW' | 'en';
+
+const labels: Record<
+  Lang,
+  { aliases: string; domain: string; description: string; story: string; temples: string; back: string }
+> = {
   'zh-TW': {
     aliases: '別名',
     domain: '職掌',
     description: '簡介',
     story: '神話故事',
     temples: '代表廟宇',
-    back: '← 回神明列表'
+    back: '← 回神明列表',
   },
   en: {
     aliases: 'Alias',
@@ -17,13 +22,13 @@ const labels = {
     description: 'Description',
     story: 'Legend/Story',
     temples: 'Representative Temples',
-    back: '← Back to Deities List'
-  }
+    back: '← Back to Deities List',
+  },
 };
 
 export async function getStaticPaths() {
-  const langs = ['zh-TW', 'en'];
-  let paths = [];
+  const langs: Lang[] = ['zh-TW', 'en'];
+  const paths: { params: { lang: string; id: string } }[] = [];
   for (const lang of langs) {
     for (const god of gods) {
       paths.push({ params: { lang, id: god.id } });
@@ -32,12 +37,14 @@ export async function getStaticPaths() {
   return paths;
 }
 
-const { lang, id } = Astro.params;
-const god = gods.find(g => g.id === id);
+const { lang: rawLang, id } = Astro.params;
+const lang = (rawLang || 'zh-TW') as Lang;
+const god = gods.find((g) => g.id === id);
 if (!god) {
   throw new Error('神明資料不存在');
 }
 ---
+
 <Layout>
   <div class="max-w-2xl mx-auto py-8">
     <img src={god.image} alt={god.name[lang]} class="w-full object-cover rounded mb-6" />
@@ -52,15 +59,20 @@ if (!god) {
     <div class="mb-4">
       <b>{labels[lang].temples}：</b>
       <ul>
-        {god.temples.map(t => (
-          <li>
-            <a href={t.url} target="_blank" rel="noopener">{t.name[lang]}（{t.location}）</a>
-          </li>
-        ))}
+        {
+          god.temples.map((t) => (
+            <li>
+              <a href={t.url} target="_blank" rel="noopener">
+                {t.name[lang]}（{t.location}）
+              </a>
+            </li>
+          ))
+        }
       </ul>
     </div>
     <a href={lang === 'en' ? '/en/gods/taoism' : '/gods/taoism'} class="text-blue-600 hover:underline">
       {labels[lang].back}
     </a>
   </div>
-</Layout> 
+</Layout>
+
