@@ -3,10 +3,11 @@
     "id": "lecheng",
     "name": { "zh-TW": "台中樂成宮", "en": "Lecheng Temple" },
     "location": { "zh-TW": "台中市北屯區", "en": "Beitun District, Taichung City" },
-    "address": { "zh-TW": "台中市北屯區昌平路二段161號", "en": "No. 161, Sec. 2, Changping Rd, Beitun District, Taichung City" },
-    "mainDeities": [
-      { "id": "mazu", "name": { "zh-TW": "媽祖", "en": "Mazu" } }
-    ],
+    "address": {
+      "zh-TW": "台中市北屯區昌平路二段161號",
+      "en": "No. 161, Sec. 2, Changping Rd, Beitun District, Taichung City"
+    },
+    "mainDeities": [{ "id": "mazu", "name": { "zh-TW": "媽祖", "en": "Mazu" } }],
     "description": {
       "zh-TW": "台中著名媽祖廟，香火鼎盛。",
       "en": "A famous Mazu temple in Taichung, with thriving worship."
@@ -24,9 +25,7 @@
     "name": { "zh-TW": "彰化南瑤宮", "en": "Nanyao Temple" },
     "location": { "zh-TW": "彰化市", "en": "Changhua City" },
     "address": { "zh-TW": "彰化市南瑤里南瑤路43號", "en": "No. 43, Nanyao Rd, Changhua City" },
-    "mainDeities": [
-      { "id": "mazu", "name": { "zh-TW": "媽祖", "en": "Mazu" } }
-    ],
+    "mainDeities": [{ "id": "mazu", "name": { "zh-TW": "媽祖", "en": "Mazu" } }],
     "description": {
       "zh-TW": "彰化地區重要媽祖廟，歷史悠久。",
       "en": "An important and historic Mazu temple in Changhua."
@@ -44,9 +43,7 @@
     "name": { "zh-TW": "鹿港天后宮", "en": "Lugang Mazu Temple" },
     "location": { "zh-TW": "彰化縣鹿港鎮", "en": "Lukang Township, Changhua County" },
     "address": { "zh-TW": "彰化縣鹿港鎮中山路430號", "en": "No. 430, Zhongshan Rd, Lukang Township, Changhua County" },
-    "mainDeities": [
-      { "id": "mazu", "name": { "zh-TW": "媽祖", "en": "Mazu" } }
-    ],
+    "mainDeities": [{ "id": "mazu", "name": { "zh-TW": "媽祖", "en": "Mazu" } }],
     "description": {
       "zh-TW": "鹿港最具代表性的媽祖廟，香火鼎盛。",
       "en": "The most representative Mazu temple in Lukang, with thriving worship."
@@ -64,9 +61,7 @@
     "name": { "zh-TW": "南投竹山紫南宮", "en": "Zhushan Zinan Temple" },
     "location": { "zh-TW": "南投縣竹山鎮", "en": "Zhushan Township, Nantou County" },
     "address": { "zh-TW": "南投縣竹山鎮大公街40號", "en": "No. 40, Dagong St, Zhushan Township, Nantou County" },
-    "mainDeities": [
-      { "id": "tudigong", "name": { "zh-TW": "土地公", "en": "Tudigong (Earth God)" } }
-    ],
+    "mainDeities": [{ "id": "tudigong", "name": { "zh-TW": "土地公", "en": "Tudigong (Earth God)" } }],
     "description": {
       "zh-TW": "以求發財金聞名的土地公廟。",
       "en": "Famous for its wealth-bringing rituals, dedicated to Tudigong."
@@ -84,9 +79,7 @@
     "name": { "zh-TW": "苗栗白沙屯拱天宮", "en": "Baishatun Gongtian Temple" },
     "location": { "zh-TW": "苗栗縣通霄鎮", "en": "Tongxiao Township, Miaoli County" },
     "address": { "zh-TW": "苗栗縣通霄鎮白東里8號", "en": "No. 8, Baidong Village, Tongxiao Township, Miaoli County" },
-    "mainDeities": [
-      { "id": "mazu", "name": { "zh-TW": "媽祖", "en": "Mazu" } }
-    ],
+    "mainDeities": [{ "id": "mazu", "name": { "zh-TW": "媽祖", "en": "Mazu" } }],
     "description": {
       "zh-TW": "以徒步進香聞名，每年吸引數十萬信眾參與。",
       "en": "Famous for its annual pilgrimage on foot, attracting hundreds of thousands of devotees."
@@ -99,4 +92,4 @@
     "url": "https://www.baishatun.com.tw/#google_vignette",
     "googleMap": "https://maps.app.goo.gl/WACiXRuuMRpd4Vfn6"
   }
-] 
+]

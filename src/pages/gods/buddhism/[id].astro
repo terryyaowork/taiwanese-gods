@@ -3,8 +3,8 @@ import Layout from '~/layouts/PageLayout.astro';
 import gods from '~/data/buddhist-gods.json';
 
 export async function getStaticPaths() {
-  return gods.map(god => ({
-    params: { id: god.id }
+  return gods.map((god) => ({
+    params: { id: god.id },
   }));
 }
 
@@ -15,7 +15,7 @@ const labels = {
     description: '簡介',
     story: '神話故事',
     temples: '代表寺廟',
-    back: '← 回神明列表'
+    back: '← 回神明列表',
   },
   en: {
     aliases: 'Alias',
@@ -23,17 +23,18 @@ const labels = {
     description: 'Description',
     story: 'Legend/Story',
     temples: 'Representative Temples',
-    back: '← Back to Deities List'
-  }
+    back: '← Back to Deities List',
+  },
 };
 
 const { id } = Astro.params;
 const lang = 'zh-TW';
-const god = gods.find(g => g.id === id);
+const god = gods.find((g) => g.id === id);
 if (!god) {
   throw new Error('神明資料不存在');
 }
 ---
+
 <Layout>
   <div class="max-w-2xl mx-auto py-8">
     <img src={god.image} alt={god.name[lang]} class="w-full object-cover rounded mb-6" />
@@ -48,15 +49,19 @@ if (!god) {
     <div class="mb-4">
       <b>{labels[lang].temples}：</b>
       <ul>
-        {god.temples.map(t => (
-          <li>
-            <a href={t.url} target="_blank" rel="noopener">{t.name[lang]}（{t.location}）</a>
-          </li>
-        ))}
+        {
+          god.temples.map((t) => (
+            <li>
+              <a href={t.url} target="_blank" rel="noopener">
+                {t.name[lang]}（{t.location}）
+              </a>
+            </li>
+          ))
+        }
       </ul>
     </div>
     <a href="/gods/buddhism" class="text-blue-600 hover:underline">
       {labels[lang].back}
     </a>
   </div>
-</Layout> 
+</Layout>

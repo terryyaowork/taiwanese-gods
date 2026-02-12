@@ -4,9 +4,7 @@
     "name": { "zh-TW": "艋舺龍山寺", "en": "Longshan Temple" },
     "location": { "zh-TW": "台北市萬華區", "en": "Wanhua District, Taipei City" },
     "address": { "zh-TW": "台北市萬華區廣州街211號", "en": "No. 211, Guangzhou St, Wanhua District, Taipei City" },
-    "mainDeities": [
-      { "id": "guanyin", "name": { "zh-TW": "觀世音菩薩", "en": "Guanyin Bodhisattva" } }
-    ],
+    "mainDeities": [{ "id": "guanyin", "name": { "zh-TW": "觀世音菩薩", "en": "Guanyin Bodhisattva" } }],
     "description": {
       "zh-TW": "台北最著名的古廟之一，主祀觀世音菩薩，融合多元信仰。",
       "en": "One of the most famous temples in Taipei, dedicated to Guanyin and featuring diverse religious practices."
@@ -23,10 +21,11 @@
     "id": "xingtian",
     "name": { "zh-TW": "行天宮", "en": "Xingtian Temple" },
     "location": { "zh-TW": "台北市中山區", "en": "Zhongshan District, Taipei City" },
-    "address": { "zh-TW": "台北市中山區民權東路二段109號", "en": "No. 109, Minquan E. Rd. Sec. 2, Zhongshan District, Taipei City" },
-    "mainDeities": [
-      { "id": "guansheng", "name": { "zh-TW": "關聖帝君", "en": "Guansheng Dijun (Lord Guan)" } }
-    ],
+    "address": {
+      "zh-TW": "台北市中山區民權東路二段109號",
+      "en": "No. 109, Minquan E. Rd. Sec. 2, Zhongshan District, Taipei City"
+    },
+    "mainDeities": [{ "id": "guansheng", "name": { "zh-TW": "關聖帝君", "en": "Guansheng Dijun (Lord Guan)" } }],
     "description": {
       "zh-TW": "台北著名的關聖帝君廟宇，香火鼎盛。",
       "en": "A famous temple in Taipei dedicated to Lord Guan, always bustling with worshippers."
@@ -43,10 +42,11 @@
     "id": "citygod",
     "name": { "zh-TW": "台北霞海城隍廟", "en": "Taipei Xia-Hai City God Temple" },
     "location": { "zh-TW": "台北市大同區", "en": "Datong District, Taipei City" },
-    "address": { "zh-TW": "台北市大同區迪化街一段61號", "en": "No. 61, Dihua St. Sec. 1, Datong District, Taipei City" },
-    "mainDeities": [
-      { "id": "chenghuang", "name": { "zh-TW": "城隍爺", "en": "Chenghuang" } }
-    ],
+    "address": {
+      "zh-TW": "台北市大同區迪化街一段61號",
+      "en": "No. 61, Dihua St. Sec. 1, Datong District, Taipei City"
+    },
+    "mainDeities": [{ "id": "chenghuang", "name": { "zh-TW": "城隍爺", "en": "Chenghuang" } }],
     "description": {
       "zh-TW": "以月老聞名的城隍廟，信眾眾多。",
       "en": "Famous for its Matchmaker God, attracts many worshippers."
@@ -63,10 +63,11 @@
     "id": "ciyou",
     "name": { "zh-TW": "松山慈祐宮", "en": "Songshan Ciyou Temple" },
     "location": { "zh-TW": "台北市松山區", "en": "Songshan District, Taipei City" },
-    "address": { "zh-TW": "台北市松山區八德路四段761號", "en": "No. 761, Bade Rd. Sec. 4, Songshan District, Taipei City" },
-    "mainDeities": [
-      { "id": "mazu", "name": { "zh-TW": "媽祖", "en": "Mazu" } }
-    ],
+    "address": {
+      "zh-TW": "台北市松山區八德路四段761號",
+      "en": "No. 761, Bade Rd. Sec. 4, Songshan District, Taipei City"
+    },
+    "mainDeities": [{ "id": "mazu", "name": { "zh-TW": "媽祖", "en": "Mazu" } }],
     "description": {
       "zh-TW": "松山地區重要媽祖廟，香火鼎盛。",
       "en": "A major Mazu temple in Songshan, Taipei, with thriving worship."
@@ -84,9 +85,7 @@
     "name": { "zh-TW": "大龍峒保安宮", "en": "Baoan Temple" },
     "location": { "zh-TW": "台北市大同區", "en": "Datong District, Taipei City" },
     "address": { "zh-TW": "台北市大同區哈密街61號", "en": "No. 61, Hami St, Datong District, Taipei City" },
-    "mainDeities": [
-      { "id": "baosheng", "name": { "zh-TW": "保生大帝", "en": "Baosheng Dadi" } }
-    ],
+    "mainDeities": [{ "id": "baosheng", "name": { "zh-TW": "保生大帝", "en": "Baosheng Dadi" } }],
     "description": {
       "zh-TW": "主祀保生大帝，醫藥之神，世界文化遺產潛力點。",
       "en": "Dedicated to Baosheng Dadi, god of medicine, a potential World Heritage site."
@@ -99,4 +98,4 @@
     "url": "https://www.baoan.org.tw",
     "googleMap": "https://maps.app.goo.gl/LhkSuHr4Q1As3dQh8"
   }
-] 
+]

@@ -11,7 +11,7 @@ metadata:
   title:
     default: 台灣神明介紹
     template: '%s — 台灣神明介紹'
-  description: "探索台灣豐富的神明文化，了解各地方信仰、廟宇歷史與神明故事。"
+  description: '探索台灣豐富的神明文化，了解各地方信仰、廟宇歷史與神明故事。'
   robots:
     index: true
     follow: true

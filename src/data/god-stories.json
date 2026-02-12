@@ -2,9 +2,7 @@
   {
     "id": "mazu-legend",
     "title": { "zh-TW": "媽祖的傳奇故事", "en": "The Legend of Mazu" },
-    "mainDeities": [
-      { "id": "mazu", "name": { "zh-TW": "媽祖", "en": "Mazu" } }
-    ],
+    "mainDeities": [{ "id": "mazu", "name": { "zh-TW": "媽祖", "en": "Mazu" } }],
     "summary": {
       "zh-TW": "媽祖自小聰慧，救人無數，成為海上守護神。",
       "en": "Mazu was wise since childhood, saved many lives, and became the guardian of the seas."
@@ -18,9 +16,7 @@
   {
     "id": "guanyu-loyalty",
     "title": { "zh-TW": "關公忠義的故事", "en": "The Loyalty of Guan Yu" },
-    "mainDeities": [
-      { "id": "guansheng", "name": { "zh-TW": "關聖帝君", "en": "Guansheng Dijun" } }
-    ],
+    "mainDeities": [{ "id": "guansheng", "name": { "zh-TW": "關聖帝君", "en": "Guansheng Dijun" } }],
     "summary": {
       "zh-TW": "關公以忠義聞名，成為武聖與守護神。",
       "en": "Guan Yu is renowned for his loyalty and righteousness, becoming a martial saint and guardian deity."
@@ -31,4 +27,4 @@
     },
     "images": ["/assets/images/god-stories/story-guanyu.png"]
   }
-] 
+]
