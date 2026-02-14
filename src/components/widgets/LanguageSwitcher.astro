@@ -50,3 +50,15 @@ function getSwitchPath(lang: { code: string; label: string; prefix: string }) {
     }
   </ul>
 </nav>
+
+<script is:inline>
+  document.addEventListener('astro:page-load', () => {
+    const links = document.querySelectorAll('nav[aria-label="Language switcher"] a');
+    links.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        const lang = e.target.closest('a').getAttribute('href').startsWith('/en') ? 'en' : 'zh-TW';
+        localStorage.setItem('selectedLang', lang);
+      });
+    });
+  });
+</script>

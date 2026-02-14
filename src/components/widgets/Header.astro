@@ -55,6 +55,11 @@ const {
 const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
 const isEn = currentPath.startsWith('/en');
 const currentLang = isEn ? 'en' : 'zh-TW';
+
+const getLocalizedHref = (href: string) => {
+  if (!isEn || !href.startsWith('/') || href.startsWith('/en')) return href;
+  return `/en${href === '/' ? '' : href}`;
+};
 ---
 
 <header
@@ -115,7 +120,7 @@ const currentLang = isEn ? 'en' : 'zh-TW';
                             'first:rounded-t last:rounded-b lg:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap',
                             { 'aw-link-active': href2 === currentPath },
                           ]}
-                          href={href2}
+                          href={getLocalizedHref(href2 || '#')}
                         >
                           {typeof text2 === 'object' ? text2[currentLang] : text2}
                         </a>
@@ -129,7 +134,7 @@ const currentLang = isEn ? 'en' : 'zh-TW';
                     'hover:text-link dark:hover:text-white px-4 py-3 flex items-center whitespace-nowrap',
                     { 'aw-link-active': href === currentPath },
                   ]}
-                  href={href}
+                  href={getLocalizedHref(href || '#')}
                 >
                   {typeof text === 'object' ? text[currentLang] : text}
                 </a>
