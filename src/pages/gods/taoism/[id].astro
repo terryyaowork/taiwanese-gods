@@ -1,5 +1,5 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
+import GodDetail from '~/components/gods/GodDetail.astro';
 import gods from '~/data/taoist-gods.json';
 
 export async function getStaticPaths() {
@@ -16,6 +16,8 @@ const labels = {
     description: '簡介',
     story: '神話故事',
     temples: '代表廟宇',
+    worship: '參拜方式',
+    festivals: '重要慶典',
     back: '← 回神明列表',
   },
   en: {
@@ -24,6 +26,8 @@ const labels = {
     description: 'Description',
     story: 'Legend/Story',
     temples: 'Representative Temples',
+    worship: 'Worship',
+    festivals: 'Major Festivals',
     back: '← Back to Deities List',
   },
 };
@@ -34,35 +38,52 @@ const god = gods.find((g) => g.id === id);
 if (!god) {
   throw new Error('神明資料不存在');
 }
+
+// Dynamically import all god images from src/assets
+const godImages = import.meta.glob('/src/assets/images/gods/*.{jpg,jpeg,png,webp,avif}', {
+  eager: true,
+  import: 'default',
+});
+
+// Helper to find the correct image path
+const getGodImage = (imagePath) => {
+  if (!imagePath) return null;
+  const filename = imagePath.split('/').pop();
+  const name = filename.split('.')[0];
+
+  // Try to find a match in the globbed images
+  // First try exact filename match (if feasible), but since we need to match full path key
+  // We'll search for the key ending with the filename or name.
+
+  const foundKey = Object.keys(godImages).find((key) => {
+    const keyFilename = key.split('/').pop();
+    // Check for exact match or name match (ignoring extension)
+    return keyFilename && (keyFilename === filename || keyFilename.startsWith(name + '.'));
+  });
+
+  if (foundKey) {
+    return godImages[foundKey];
+  }
+  return imagePath; // Fallback to original path
+};
+
+const godImage = getGodImage(god.image);
+const godImageSrc = typeof godImage === 'object' ? godImage.src : godImage;
+
+const metadata = {
+  title: god.name[lang],
+  description: god.description[lang].substring(0, 150) + '...',
+  openGraph: {
+    images: [
+      {
+        url: godImage,
+        width: 1200,
+        height: 630,
+        alt: god.name[lang],
+      },
+    ],
+  },
+};
 ---
 
-<Layout>
-  <div class="max-w-2xl mx-auto py-8">
-    <img src={god.image} alt={god.name[lang]} class="w-full object-cover rounded mb-6" />
-    <h1 class="text-3xl font-bold mb-2">{god.name[lang]}</h1>
-    <div class="mb-2 text-gray-600">
-      <span>{labels[lang].aliases}：</span>
-      {god.aliases[lang]?.join('、')}
-    </div>
-    <div class="mb-2"><b>{labels[lang].domain}：</b>{god.domain[lang]}</div>
-    <div class="mb-4"><b>{labels[lang].description}：</b>{god.description[lang]}</div>
-    <div class="mb-4"><b>{labels[lang].story}：</b>{god.story[lang]}</div>
-    <div class="mb-4">
-      <b>{labels[lang].temples}：</b>
-      <ul>
-        {
-          god.temples.map((t) => (
-            <li>
-              <a href={t.url} target="_blank" rel="noopener">
-                {t.name[lang]}（{t.location}）
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
-    <a href="/gods/taoism" class="text-blue-600 hover:underline">
-      {labels[lang].back}
-    </a>
-  </div>
-</Layout>
+<GodDetail god={god} imageSrc={godImageSrc} />

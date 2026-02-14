@@ -7,9 +7,22 @@
       "ja": "関聖帝君"
     },
     "aliases": {
-      "zh-TW": ["關公", "恩主公", "關帝爺", "武聖"],
-      "en": ["Lord Guan", "Guan Yu", "God of War and Wealth"],
-      "ja": ["関帝", "関羽", "武聖"]
+      "zh-TW": [
+        "關公",
+        "恩主公",
+        "關帝爺",
+        "武聖"
+      ],
+      "en": [
+        "Lord Guan",
+        "Guan Yu",
+        "God of War and Wealth"
+      ],
+      "ja": [
+        "関帝",
+        "関羽",
+        "武聖"
+      ]
     },
     "category": "taoism",
     "domain": {
@@ -44,15 +57,23 @@
           "en": "Xingtian Temple"
         },
         "location": "台北市",
-        "url": "https://www.ht.org.tw/"
+        "url": "https://www.ht.org.tw/",
+        "deityStory": {
+          "zh-TW": "行天宮是北台灣香火最鼎盛的恩主公廟，以「不焚香」聞名。信眾相信關聖帝君神威顯赫，常來此求籤、收驚。",
+          "en": "Xingtian Temple is the most popular Guan Yu temple in Northern Taiwan, famous for banning incense. Devotees come for oracle slips and 'soul-calming' rituals."
+        }
       },
       {
         "name": {
           "zh-TW": "台南祀典武廟",
-          "en": "Tainan Martial Temple"
+          "en": "Tainan Grand Martial Temple"
         },
         "location": "台南市",
-        "url": "https://www.twtainan.net/"
+        "url": "https://www.facebook.com/TainanGrandMazuTemple",
+        "deityStory": {
+          "zh-TW": "全台唯一列入官方祀典的武廟，擁有三百多年歷史。廟中的關聖帝君神像威嚴肅穆，是許多商人祈求誠信與財富的聖地。",
+          "en": "The only martial temple in Taiwan included in official sacrificial rites. Merchants visit to pray for integrity and wealth."
+        }
       }
     ],
     "image": "/assets/images/gods/guansheng.webp"
@@ -65,9 +86,22 @@
       "ja": "媽祖"
     },
     "aliases": {
-      "zh-TW": ["天上聖母", "天后", "媽祖婆", "湄洲媽"],
-      "en": ["Heavenly Holy Mother", "Empress of Heaven", "Tianhou"],
-      "ja": ["天上聖母", "天后", "媽祖婆"]
+      "zh-TW": [
+        "天上聖母",
+        "天后",
+        "媽祖婆",
+        "湄洲媽"
+      ],
+      "en": [
+        "Heavenly Holy Mother",
+        "Empress of Heaven",
+        "Tianhou"
+      ],
+      "ja": [
+        "天上聖母",
+        "天后",
+        "媽祖婆"
+      ]
     },
     "category": "taoism",
     "domain": {
@@ -99,10 +133,14 @@
       {
         "name": {
           "zh-TW": "大甲鎮瀾宮",
-          "en": "Dajia Jenn Lann Temple"
+          "en": "Dajia Zhenlan Temple"
         },
         "location": "台中市",
-        "url": "https://www.dajiamazu.org.tw/"
+        "url": "https://www.dajiamazu.org.tw/",
+        "deityStory": {
+          "zh-TW": "大甲媽祖遶境進香是台灣最盛大的宗教活動，被譽為「世界三大宗教盛事」之一，全程九天八夜，徒步三百多公里。",
+          "en": "The Dajia Mazu Pilgrimage is Taiwan's largest religious event, a 9-day, 300km journey on foot, ranking among the world's top three religious events."
+        }
       },
       {
         "name": {
@@ -110,7 +148,11 @@
           "en": "Beigang Chaotian Temple"
         },
         "location": "雲林縣",
-        "url": "https://www.matsu.org.tw/"
+        "url": "https://www.matsu.org.tw/",
+        "deityStory": {
+          "zh-TW": "北港朝天宮是台灣媽祖信仰的重鎮，分靈遍布世界各地。廟前的中山路是著名的「朝聖大道」。",
+          "en": "Beigang Chaotian Temple is a major center of Mazu worship, with branch temples worldwide. The road in front is a famous pilgrimage route."
+        }
       },
       {
         "name": {
@@ -118,7 +160,35 @@
           "en": "Baishatun Gongtian Temple"
         },
         "location": "苗栗縣",
-        "url": "https://www.baishatun.com.tw/"
+        "url": "https://www.baishatun.com.tw/",
+        "deityStory": {
+          "zh-TW": "白沙屯媽祖以「粉紅超跑」聞名，進香路線不定，全憑媽祖鑾轎指引，展現了媽祖的親民與靈驗。",
+          "en": "Famous for the 'Pink Supercar' palanquin. The pilgrimage route is unpredictable, guided solely by Mazu's will."
+        }
+      },
+      {
+        "name": {
+          "zh-TW": "鹿港天后宮",
+          "en": "Lugang Mazu Temple"
+        },
+        "location": "彰化縣",
+        "url": "https://www.lugangmazu.org/",
+        "deityStory": {
+          "zh-TW": "供奉清朝康熙皇帝御賜的「湄洲媽」，是台灣唯一奉祀湄洲祖廟開基聖母神像的廟宇。",
+          "en": "Houses the 'Meizhou Mazu' statue gifted by Emperor Kangxi, the only temple in Taiwan with an original statue from the ancestral Meizhou temple."
+        }
+      },
+      {
+        "name": {
+          "zh-TW": "台東天后宮",
+          "en": "Taitung Tianhou Temple"
+        },
+        "location": "台東縣",
+        "url": "https://www.taitungmazu.org.tw/",
+        "deityStory": {
+          "zh-TW": "東台灣歷史最悠久的媽祖廟，已有百年歷史，是台東地區的信仰中心。",
+          "en": "The oldest Mazu temple in Eastern Taiwan, with over a century of history, serving as the religious center of Taitung."
+        }
       }
     ],
     "image": "/assets/images/gods/mazu.jpg"
@@ -131,9 +201,19 @@
       "ja": "城隍爺"
     },
     "aliases": {
-      "zh-TW": ["城隍老爺", "城隍尊神", "都城隍"],
-      "en": ["City God", "Cheng Huang Ye"],
-      "ja": ["城隍神", "城隍老爺"]
+      "zh-TW": [
+        "城隍老爺",
+        "城隍尊神",
+        "都城隍"
+      ],
+      "en": [
+        "City God",
+        "Cheng Huang Ye"
+      ],
+      "ja": [
+        "城隍神",
+        "城隍老爺"
+      ]
     },
     "category": "taoism",
     "domain": {
@@ -168,18 +248,26 @@
           "en": "Taipei Xiahai City God Temple"
         },
         "location": "台北市",
-        "url": "https://www.tpecitygod.org/"
+        "url": "https://www.tpecitygod.org/",
+        "deityStory": {
+          "zh-TW": "雖然主祀城隍爺，但廟裡的月下老人卻聞名國際。每年有成千上萬對情侶帶著喜餅回來還願，是台灣最強的「脫單」聖地。",
+          "en": "Locally famous for its Matchmaker God (Yue Lao). Thousands of couples return with wedding cakes to give thanks, making it Taiwan's top spot for finding love."
+        }
       },
       {
         "name": {
-          "zh-TW": "新竹城隍廟",
-          "en": "Hsinchu City God Temple"
+          "zh-TW": "花蓮城隍廟",
+          "en": "Hualien City God Temple"
         },
-        "location": "新竹市",
-        "url": ""
+        "location": "花蓮縣",
+        "url": "https://www.hualien-citygod.org.tw/",
+        "deityStory": {
+          "zh-TW": "花蓮地區歷史最悠久的廟宇之一，守護著後山的百姓，香火鼎盛。",
+          "en": "One of the oldest temples in Hualien, protecting the people of the east coast."
+        }
       }
     ],
-    "image": "/assets/images/gods/chenghuang.webp"
+    "image": "/assets/images/gods/chenghuang.jpeg"
   },
   {
     "id": "baosheng",
@@ -189,9 +277,19 @@
       "ja": "保生大帝"
     },
     "aliases": {
-      "zh-TW": ["大道公", "吳真人", "花橋公"],
-      "en": ["Great Emperor Baosheng", "Divine Doctor Wu"],
-      "ja": ["大道公", "呉真人"]
+      "zh-TW": [
+        "大道公",
+        "吳真人",
+        "花橋公"
+      ],
+      "en": [
+        "Great Emperor Baosheng",
+        "Divine Doctor Wu"
+      ],
+      "ja": [
+        "大道公",
+        "呉真人"
+      ]
     },
     "category": "taoism",
     "domain": {
@@ -226,10 +324,14 @@
           "en": "Dalongdong Baoan Temple"
         },
         "location": "台北市",
-        "url": "https://www.baoan.org.tw/"
+        "url": "https://www.baoan.org.tw/",
+        "deityStory": {
+          "zh-TW": "榮獲聯合國教科文組織亞太文化資產保存獎，廟宇建築精美。每年舉辦的「保生文化祭」是台北重要的宗教文化活動。",
+          "en": "Winner of the UNESCO Asia-Pacific Heritage Award for its exquisite architecture. The annual Baosheng Cultural Festival is a major event in Taipei."
+        }
       }
     ],
-    "image": "/assets/images/gods/baosheng.webp"
+    "image": "/assets/images/gods/baosheng.jpg"
   },
   {
     "id": "tudigong",
@@ -239,9 +341,22 @@
       "ja": "土地公"
     },
     "aliases": {
-      "zh-TW": ["福德正神", "土地伯", "后土", "社神"],
-      "en": ["Lord of the Soil", "Fude Zhengshen", "Earth Deity"],
-      "ja": ["福徳正神", "土地神", "社神"]
+      "zh-TW": [
+        "福德正神",
+        "土地伯",
+        "后土",
+        "社神"
+      ],
+      "en": [
+        "Lord of the Soil",
+        "Fude Zhengshen",
+        "Earth Deity"
+      ],
+      "ja": [
+        "福徳正神",
+        "土地神",
+        "社神"
+      ]
     },
     "category": "taoism",
     "domain": {
@@ -272,19 +387,39 @@
     "temples": [
       {
         "name": {
-          "zh-TW": "烘爐地南山福德宮",
-          "en": "Hongludi Nanshan Fude Temple"
-        },
-        "location": "新北市",
-        "url": "https://www.nanshan-fude.org.tw/"
-      },
-      {
-        "name": {
           "zh-TW": "竹山紫南宮",
           "en": "Zhushan Zinan Temple"
         },
         "location": "南投縣",
-        "url": "https://www.紫南宮.tw/"
+        "url": "https://www.紫南宮.tw/",
+        "deityStory": {
+          "zh-TW": "以「借發財金」聞名全台。信眾擲筊獲准後可向土地公借錢當本錢，據說非常靈驗，還款時通常會加倍奉還。",
+          "en": "Famous for lending 'prosperity money.' Devotees borrow small sums from the Earth God to start businesses, often returning double the amount after success."
+        }
+      },
+      {
+        "name": {
+          "zh-TW": "車城福安宮",
+          "en": "Checheng Fu'an Temple"
+        },
+        "location": "屏東縣",
+        "url": "https://www.fuan.org.tw/",
+        "deityStory": {
+          "zh-TW": "東南亞最大的土地公廟，建築宏偉。最特別的是金爐有「神明點鈔機」之稱，金紙放風口會自動被吸入，蔚為奇觀。",
+          "en": "The largest Earth God temple in Southeast Asia. Its furnace is famously called the 'God's Money Counter' — it automatically sucks in spirit money placed at the opening."
+        }
+      },
+      {
+        "name": {
+          "zh-TW": "烘爐地南山福德宮",
+          "en": "Hongludi Nanshan Fude Temple"
+        },
+        "location": "新北市",
+        "url": "https://www.nanshan-fude.org.tw/",
+        "deityStory": {
+          "zh-TW": "北台灣最著名的求財聖地，擁有巨大的土地公像。位在山頂視野遼闊，是看夜景的好去處，24小時開放參拜。",
+          "en": "Northern Taiwan's most famous wealth temple, featuring a giant Earth God statue. Its mountain location offers stunning night views and it's open 24 hours."
+        }
       }
     ],
     "image": "/assets/images/gods/tudigong.webp"
@@ -297,9 +432,22 @@
       "ja": "玄天上帝"
     },
     "aliases": {
-      "zh-TW": ["上帝公", "北極大帝", "真武大帝", "帝爺公"],
-      "en": ["Emperor of the North", "Zhenwu", "Dark Warrior"],
-      "ja": ["真武大帝", "北極大帝", "上帝公"]
+      "zh-TW": [
+        "上帝公",
+        "北極大帝",
+        "真武大帝",
+        "帝爺公"
+      ],
+      "en": [
+        "Emperor of the North",
+        "Zhenwu",
+        "Dark Warrior"
+      ],
+      "ja": [
+        "真武大帝",
+        "北極大帝",
+        "上帝公"
+      ]
     },
     "category": "taoism",
     "domain": {
@@ -334,10 +482,14 @@
           "en": "Songboling Shoutian Temple"
         },
         "location": "南投縣",
-        "url": ""
+        "url": "https://www.shoutian.org.tw/",
+        "deityStory": {
+          "zh-TW": "全台玄天上帝分靈最多的總廟。位在八卦山脈南端，視野極佳，是台灣重要的進香中心。",
+          "en": "The head temple with the most Xuantian Shangdi branches in Taiwan. Located on the Bagua Mountain range, it offers great views and is a major pilgrimage center."
+        }
       }
     ],
-    "image": "/assets/images/gods/xuantian.webp"
+    "image": "/assets/images/gods/xuantianshangdi.jpeg"
   },
   {
     "id": "yuhuang",
@@ -347,9 +499,22 @@
       "ja": "玉皇大帝"
     },
     "aliases": {
-      "zh-TW": ["天公", "天公祖", "玉帝", "昊天上帝"],
-      "en": ["Jade Emperor", "Heavenly Grandfather", "Lord of Heaven"],
-      "ja": ["天公", "天帝", "玉帝"]
+      "zh-TW": [
+        "天公",
+        "天公祖",
+        "玉帝",
+        "昊天上帝"
+      ],
+      "en": [
+        "Jade Emperor",
+        "Heavenly Grandfather",
+        "Lord of Heaven"
+      ],
+      "ja": [
+        "天公",
+        "天帝",
+        "玉帝"
+      ]
     },
     "category": "taoism",
     "domain": {
@@ -384,10 +549,26 @@
           "en": "Tainan Tiantan Temple"
         },
         "location": "台南市",
-        "url": ""
+        "url": "https://www.tian-tan.org.tw/",
+        "deityStory": {
+          "zh-TW": "俗稱「天公廟」，是台灣首座官建的天公廟。這裡的「一」字匾名列台南三大名匾，象徵「千算萬算，不如老天一算」。",
+          "en": "Known as the 'Temple of Heaven,' it's the first official Jade Emperor temple. Its famous 'One' plaque symbolizes that human calculations are no match for Heaven's will."
+        }
+      },
+      {
+        "name": {
+          "zh-TW": "松山奉天宮",
+          "en": "Songshan Fengtian Temple"
+        },
+        "location": "台北市",
+        "url": "https://www.ftg.org.tw/",
+        "deityStory": {
+          "zh-TW": "台北規模宏大的天公廟，香火鼎盛。廟宇建築氣勢磅礴，是信眾祈求平安、消災的重要場所。",
+          "en": "A grand Temple of Heaven in Taipei with thriving worship. Its magnificent architecture makes it a key site for prayers for peace and protection."
+        }
       }
     ],
-    "image": "/assets/images/gods/yuhuang.webp"
+    "image": "/assets/images/gods/yuhuang.jpg"
   },
   {
     "id": "yuelao",
@@ -397,9 +578,20 @@
       "ja": "月下老人"
     },
     "aliases": {
-      "zh-TW": ["月老", "月老公", "月下老人星君"],
-      "en": ["Matchmaker God", "Yue Lao", "Moon Elder"],
-      "ja": ["月老", "月下老人星君"]
+      "zh-TW": [
+        "月老",
+        "月老公",
+        "月下老人星君"
+      ],
+      "en": [
+        "Matchmaker God",
+        "Yue Lao",
+        "Moon Elder"
+      ],
+      "ja": [
+        "月老",
+        "月下老人星君"
+      ]
     },
     "category": "taoism",
     "domain": {
@@ -434,7 +626,11 @@
           "en": "Taipei Xiahai City God Temple"
         },
         "location": "台北市",
-        "url": "https://www.tpecitygod.org/"
+        "url": "https://www.tpecitygod.org/",
+        "deityStory": {
+          "zh-TW": "這裡的月老是全球知名度最高的。據統計，每年有超過六千對新人帶著喜餅回來還願，效率驚人。",
+          "en": "The Matchmaker God here is globally famous. Over 6,000 couples return annually with wedding cakes to give thanks — an amazing success rate."
+        }
       },
       {
         "name": {
@@ -442,10 +638,14 @@
           "en": "Longshan Temple"
         },
         "location": "台北市",
-        "url": "https://www.lungshan.org.tw/"
+        "url": "https://www.lungshan.org.tw/",
+        "deityStory": {
+          "zh-TW": "龍山寺的月老位在後殿，同樣香火鼎盛。許多年輕人在參拜完觀音後，都會特地到後殿求一條紅線。",
+          "en": "Located in the rear hall, Longshan's Matchmaker God is also very popular. Many young people seek a red thread here after praying to Guanyin."
+        }
       }
     ],
-    "image": "/assets/images/gods/yuelao.webp"
+    "image": "/assets/images/gods/yuelao.jpg"
   },
   {
     "id": "caishen",
@@ -455,9 +655,22 @@
       "ja": "財神"
     },
     "aliases": {
-      "zh-TW": ["趙公明", "武財神", "五路財神", "玄壇真君"],
-      "en": ["Zhao Gong Ming", "Marshal Zhao", "Five Paths God of Wealth"],
-      "ja": ["趙公明", "武財神", "五路財神"]
+      "zh-TW": [
+        "趙公明",
+        "武財神",
+        "五路財神",
+        "玄壇真君"
+      ],
+      "en": [
+        "Zhao Gong Ming",
+        "Marshal Zhao",
+        "Five Paths God of Wealth"
+      ],
+      "ja": [
+        "趙公明",
+        "武財神",
+        "五路財神"
+      ]
     },
     "category": "taoism",
     "domain": {
@@ -488,11 +701,27 @@
     "temples": [
       {
         "name": {
+          "zh-TW": "北港武德宮",
+          "en": "Beigang Wude Temple"
+        },
+        "location": "雲林縣",
+        "url": "https://www.wude.org.tw/",
+        "deityStory": {
+          "zh-TW": "台灣五路財神的開基祖廟，也是最大的財神廟。巨大的「天庫」金爐號稱世界最大，象徵財庫豐盈。",
+          "en": "The ancestral temple of the Five Paths God of Wealth in Taiwan. Its massive 'Heavenly Treasury' furnace is claimed to be the world's largest, symbolizing abundant wealth."
+        }
+      },
+      {
+        "name": {
           "zh-TW": "竹山紫南宮",
           "en": "Zhushan Zinan Temple"
         },
         "location": "南投縣",
-        "url": "https://www.紫南宮.tw/"
+        "url": "https://www.紫南宮.tw/",
+        "deityStory": {
+          "zh-TW": "雖然主祀土地公，但因求財靈驗，被視為最重要的財神廟之一。借發財金的習俗讓這裡終年人潮不斷。",
+          "en": "Though dedicated to the Earth God, it's revered as a wealth temple due to its efficacy. The tradition of borrowing prosperity money draws crowds year-round."
+        }
       },
       {
         "name": {
@@ -500,10 +729,14 @@
           "en": "Hongludi Nanshan Fude Temple"
         },
         "location": "新北市",
-        "url": ""
+        "url": "https://www.nanshan-fude.org.tw/",
+        "deityStory": {
+          "zh-TW": "信眾喜歡來這裡「換錢母」，將大錢換小錢，放在皮夾裡招財。巨大的土地公像已成為北台灣的地標。",
+          "en": "Devotees come to exchange 'mother money' — swapping large bills for coins to keep in wallets as wealth charms. The giant Earth God statue is a northern Taiwan landmark."
+        }
       }
     ],
-    "image": "/assets/images/gods/caishen.webp"
+    "image": "/assets/images/gods/caishen.jpg"
   },
   {
     "id": "jigong",
@@ -513,9 +746,21 @@
       "ja": "済公"
     },
     "aliases": {
-      "zh-TW": ["濟公活佛", "濟顛和尚", "道濟禪師", "李修緣"],
-      "en": ["Living Buddha Ji Gong", "Eccentric Monk Ji", "Chan Master Daoji"],
-      "ja": ["済公活仏", "道済禅師"]
+      "zh-TW": [
+        "濟公活佛",
+        "濟顛和尚",
+        "道濟禪師",
+        "李修緣"
+      ],
+      "en": [
+        "Living Buddha Ji Gong",
+        "Eccentric Monk Ji",
+        "Chan Master Daoji"
+      ],
+      "ja": [
+        "済公活仏",
+        "道済禅師"
+      ]
     },
     "category": "taoism",
     "domain": {
@@ -550,10 +795,14 @@
           "en": "Yilan Sanqing Temple"
         },
         "location": "宜蘭縣",
-        "url": ""
+        "url": "https://www.sanching.org.tw/",
+        "deityStory": {
+          "zh-TW": "依山傍水，環境清幽。雖然是道教總廟，但也供奉濟公活佛，是許多靈修人士必訪之地。",
+          "en": "Set in a serene landscape. As a major Taoist temple, it also enshrines Ji Gong and is a must-visit for spiritual cultivators."
+        }
       }
     ],
-    "image": "/assets/images/gods/jigong.webp"
+    "image": "/assets/images/gods/jigong.jpg"
   },
   {
     "id": "lvdongbin",
@@ -563,9 +812,22 @@
       "ja": "呂洞賓"
     },
     "aliases": {
-      "zh-TW": ["呂仙祖", "呂仙公", "純陽祖師", "孚佑帝君"],
-      "en": ["Lü the Immortal", "Patriarch of Pure Yang", "First of the Eight Immortals"],
-      "ja": ["呂仙祖", "純陽祖師", "八仙の首"]
+      "zh-TW": [
+        "呂仙祖",
+        "呂仙公",
+        "純陽祖師",
+        "孚佑帝君"
+      ],
+      "en": [
+        "Lü the Immortal",
+        "Patriarch of Pure Yang",
+        "First of the Eight Immortals"
+      ],
+      "ja": [
+        "呂仙祖",
+        "純陽祖師",
+        "八仙の首"
+      ]
     },
     "category": "taoism",
     "domain": {
@@ -597,13 +859,17 @@
       {
         "name": {
           "zh-TW": "木柵指南宮",
-          "en": "Muzha Zhinan Temple"
+          "en": "Muxa Zhinan Temple"
         },
         "location": "台北市",
-        "url": "https://www.chihnan.gov.tw/"
+        "url": "https://www.chihnan.gov.tw/",
+        "deityStory": {
+          "zh-TW": "北台灣著名的呂祖廟，素有「天下第一靈山」之稱。民間傳說情侶不宜同遊，但廟方表示呂祖只會斬爛桃花，正緣反而會被保佑。",
+          "en": "Famous temple of Patriarch Lü in the north. Folk legend warns couples against visiting, but the temple clarifies that Lü only cuts bad relationships, while protecting true love."
+        }
       }
     ],
-    "image": "/assets/images/gods/lvdongbin.webp"
+    "image": "/assets/images/gods/lvdongbin.jpg"
   },
   {
     "id": "taisui",
@@ -613,9 +879,22 @@
       "ja": "太歳星君"
     },
     "aliases": {
-      "zh-TW": ["太歲爺", "值年太歲", "歲君", "太歲大將軍"],
-      "en": ["Grand Duke", "Year God", "Jupiter General"],
-      "ja": ["太歳爺", "歳君", "太歳大将軍"]
+      "zh-TW": [
+        "太歲爺",
+        "值年太歲",
+        "歲君",
+        "太歲大將軍"
+      ],
+      "en": [
+        "Grand Duke",
+        "Year God",
+        "Jupiter General"
+      ],
+      "ja": [
+        "太歳爺",
+        "歳君",
+        "太歳大将軍"
+      ]
     },
     "category": "taoism",
     "domain": {
@@ -650,7 +929,11 @@
           "en": "Songshan Ciyou Temple"
         },
         "location": "台北市",
-        "url": ""
+        "url": "https://www.sscy.org.tw/",
+        "deityStory": {
+          "zh-TW": "雖然主祀媽祖，但其太歲殿規模宏大，每年安太歲的信眾絡繹不絕。慈祐宮的太歲燈以靈驗著稱。",
+          "en": "Though primarily a Mazu temple, its Tai Sui Hall is grand and popular. The Tai Sui lamps here are renowned for their efficacy."
+        }
       },
       {
         "name": {
@@ -661,6 +944,6 @@
         "url": "https://www.lungshan.org.tw/"
       }
     ],
-    "image": "/assets/images/gods/taisui.webp"
+    "image": "/assets/images/gods/taisui.jpg"
   }
 ]

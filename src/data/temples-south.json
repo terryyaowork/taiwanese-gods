@@ -1,10 +1,27 @@
 [
   {
     "id": "fongshanlongshan",
-    "name": { "zh-TW": "鳳山龍山寺", "en": "Fongshan Longshan Temple" },
-    "location": { "zh-TW": "高雄市鳳山區", "en": "Fongshan District, Kaohsiung City" },
-    "address": { "zh-TW": "高雄市鳳山區中山路42號", "en": "No. 42, Zhongshan Rd, Fongshan District, Kaohsiung City" },
-    "mainDeities": [{ "id": "guanyin", "name": { "zh-TW": "觀世音菩薩", "en": "Guanyin Bodhisattva" } }],
+    "name": {
+      "zh-TW": "鳳山龍山寺",
+      "en": "Fongshan Longshan Temple"
+    },
+    "location": {
+      "zh-TW": "高雄市鳳山區",
+      "en": "Fongshan District, Kaohsiung City"
+    },
+    "address": {
+      "zh-TW": "高雄市鳳山區中山路42號",
+      "en": "No. 42, Zhongshan Rd, Fongshan District, Kaohsiung City"
+    },
+    "mainDeities": [
+      {
+        "id": "guanyin",
+        "name": {
+          "zh-TW": "觀世音菩薩",
+          "en": "Guanyin Bodhisattva"
+        }
+      }
+    ],
     "description": {
       "zh-TW": "高雄著名古剎，主祀觀世音菩薩。",
       "en": "A famous ancient temple in Kaohsiung, dedicated to Guanyin."
@@ -13,16 +30,35 @@
       "zh-TW": "創建於清朝，為鳳山地區信仰中心。",
       "en": "Founded in the Qing Dynasty, a major religious center in Fongshan."
     },
-    "images": ["/assets/images/temples/temple-fongshanlongshan.jpg"],
+    "images": [
+      "/assets/images/temples/temple-fongshanlongshan.jpg"
+    ],
     "url": "https://www.longshansi.org.tw",
     "googleMap": "https://maps.app.goo.gl/t2aL4w9cTetWBxy56"
   },
   {
     "id": "tainanconfucius",
-    "name": { "zh-TW": "台南孔廟", "en": "Tainan Confucius Temple" },
-    "location": { "zh-TW": "台南市中西區", "en": "West Central District, Tainan City" },
-    "address": { "zh-TW": "台南市中西區南門路2號", "en": "No. 2, Nanmen Rd, West Central District, Tainan City" },
-    "mainDeities": [{ "id": "confucius", "name": { "zh-TW": "孔子", "en": "Confucius" } }],
+    "name": {
+      "zh-TW": "台南孔廟",
+      "en": "Tainan Confucius Temple"
+    },
+    "location": {
+      "zh-TW": "台南市中西區",
+      "en": "West Central District, Tainan City"
+    },
+    "address": {
+      "zh-TW": "台南市中西區南門路2號",
+      "en": "No. 2, Nanmen Rd, West Central District, Tainan City"
+    },
+    "mainDeities": [
+      {
+        "id": "confucius",
+        "name": {
+          "zh-TW": "孔子",
+          "en": "Confucius"
+        }
+      }
+    ],
     "description": {
       "zh-TW": "台灣最早的孔廟，文化古蹟。",
       "en": "The oldest Confucius temple in Taiwan, a cultural heritage site."
@@ -31,19 +67,35 @@
       "zh-TW": "創建於1665年，台灣儒學重鎮。",
       "en": "Founded in 1665, a major center of Confucianism in Taiwan."
     },
-    "images": ["/assets/images/temples/temple-tainanconfucius.jpg"],
+    "images": [
+      "/assets/images/temples/temple-tainanconfucius.jpg"
+    ],
     "url": "https://www.tn-confucius.org.tw",
     "googleMap": "https://maps.app.goo.gl/J9fdCdqw3hMH7gNK6"
   },
   {
     "id": "chihkan",
-    "name": { "zh-TW": "台南赤崁樓", "en": "Chihkan Tower" },
-    "location": { "zh-TW": "台南市中西區", "en": "West Central District, Tainan City" },
+    "name": {
+      "zh-TW": "台南赤崁樓",
+      "en": "Chihkan Tower"
+    },
+    "location": {
+      "zh-TW": "台南市中西區",
+      "en": "West Central District, Tainan City"
+    },
     "address": {
       "zh-TW": "台南市中西區民族路二段212號",
       "en": "No. 212, Minzu Rd Sec. 2, West Central District, Tainan City"
     },
-    "mainDeities": [{ "id": "kaizhangshengwang", "name": { "zh-TW": "開漳聖王", "en": "Kaizhang Shengwang" } }],
+    "mainDeities": [
+      {
+        "id": "kaizhangshengwang",
+        "name": {
+          "zh-TW": "開漳聖王",
+          "en": "Kaizhang Shengwang"
+        }
+      }
+    ],
     "description": {
       "zh-TW": "台南著名古蹟，融合信仰與歷史。",
       "en": "A famous historical site in Tainan, blending faith and history."
@@ -52,16 +104,35 @@
       "zh-TW": "創建於1653年，歷史悠久。",
       "en": "Founded in 1653, with a long history."
     },
-    "images": ["/assets/images/temples/temple-chihkan.jpg"],
+    "images": [
+      "/assets/images/temples/temple-chihkan.jpg"
+    ],
     "url": "https://historic.tainan.gov.tw/index.php?option=module&lang=cht&task=pageinfo&id=46&index=3",
     "googleMap": "https://maps.app.goo.gl/aHmMeFAyyMKBBPFo8"
   },
   {
     "id": "donglong",
-    "name": { "zh-TW": "東港東隆宮", "en": "Donggang Donglong Temple" },
-    "location": { "zh-TW": "屏東縣東港鎮", "en": "Donggang Township, Pingtung County" },
-    "address": { "zh-TW": "屏東縣東港鎮東隆街21號", "en": "No. 21, Donglong St, Donggang Township, Pingtung County" },
-    "mainDeities": [{ "id": "wenwangye", "name": { "zh-TW": "溫王爺", "en": "Wen Wangye" } }],
+    "name": {
+      "zh-TW": "東港東隆宮",
+      "en": "Donggang Donglong Temple"
+    },
+    "location": {
+      "zh-TW": "屏東縣東港鎮",
+      "en": "Donggang Township, Pingtung County"
+    },
+    "address": {
+      "zh-TW": "屏東縣東港鎮東隆街21號",
+      "en": "No. 21, Donglong St, Donggang Township, Pingtung County"
+    },
+    "mainDeities": [
+      {
+        "id": "wenwangye",
+        "name": {
+          "zh-TW": "溫王爺",
+          "en": "Wen Wangye"
+        }
+      }
+    ],
     "description": {
       "zh-TW": "以迎王平安祭典聞名的王爺廟。",
       "en": "Famous for its Wangye festival, a major temple in Donggang."
@@ -70,8 +141,121 @@
       "zh-TW": "創建於1706年，屏東重要信仰中心。",
       "en": "Founded in 1706, a major religious center in Pingtung."
     },
-    "images": ["/assets/images/temples/temple-donglong.jpg"],
+    "images": [
+      "/assets/images/temples/temple-donglong.jpg"
+    ],
     "url": "https://www.66.org.tw",
     "googleMap": "https://maps.app.goo.gl/JkTbTvEHPTHBvjBg9"
+  },
+  {
+    "id": "nankunshen",
+    "name": {
+      "zh-TW": "南鯤鯓代天府",
+      "en": "Nankunshen Daitian Temple"
+    },
+    "location": {
+      "zh-TW": "台南市北門區",
+      "en": "Beimen District, Tainan City"
+    },
+    "address": {
+      "zh-TW": "台南市北門區鯤江里976號",
+      "en": "No. 976, Kunjiang, Beimen District, Tainan City"
+    },
+    "mainDeities": [
+      {
+        "id": "wufuqiansui",
+        "name": {
+          "zh-TW": "五府千歲",
+          "en": "Wufu Qiansui"
+        }
+      }
+    ],
+    "description": {
+      "zh-TW": "台灣王爺總廟，國定古蹟，米其林三星旅遊景點。",
+      "en": "The head temple of Wangye worship in Taiwan, a national historic site, and a Michelin 3-star attraction."
+    },
+    "history": {
+      "zh-TW": "創建於1662年，歷史悠久，建築宏偉。",
+      "en": "Founded in 1662, with a long history and magnificent architecture."
+    },
+    "images": [
+      "/assets/images/temples/temple-nankunshen.jpg"
+    ],
+    "url": "https://www.nkstemple.org.tw",
+    "googleMap": "https://maps.app.goo.gl/5Z8j7Z7Z7Z7Z7Z7Z7"
+  },
+  {
+    "id": "tainanwu",
+    "name": {
+      "zh-TW": "台南祀典武廟",
+      "en": "Tainan Grand Mazu Temple"
+    },
+    "location": {
+      "zh-TW": "台南市中西區",
+      "en": "West Central District, Tainan City"
+    },
+    "address": {
+      "zh-TW": "台南市中西區永福路二段229號",
+      "en": "No. 229, Sec. 2, Yongfu Rd, West Central District, Tainan City"
+    },
+    "mainDeities": [
+      {
+        "id": "guansheng",
+        "name": {
+          "zh-TW": "關聖帝君",
+          "en": "Guan Sheng Di Jun"
+        }
+      }
+    ],
+    "description": {
+      "zh-TW": "國定古蹟，台灣唯一列入官方祀典的武廟。",
+      "en": "A national historic site, the only martial temple in Taiwan included in official sacrificial rites."
+    },
+    "history": {
+      "zh-TW": "創建於1663年，保存大量珍貴文物。",
+      "en": "Founded in 1663, preserving many precious artifacts."
+    },
+    "images": [
+      "/assets/images/temples/temple-tainanwu.jpg"
+    ],
+    "url": "https://www.facebook.com/TainanGrandMazuTemple",
+    "googleMap": "https://maps.app.goo.gl/4Z8j7Z7Z7Z7Z7Z7Z7"
+  },
+  {
+    "id": "chechengfuan",
+    "name": {
+      "zh-TW": "車城福安宮",
+      "en": "Checheng Fu'an Temple"
+    },
+    "location": {
+      "zh-TW": "屏東縣車城鄉",
+      "en": "Checheng Township, Pingtung County"
+    },
+    "address": {
+      "zh-TW": "屏東縣車城鄉福安路51號",
+      "en": "No. 51, Fu'an Rd, Checheng Township, Pingtung County"
+    },
+    "mainDeities": [
+      {
+        "id": "tudigong",
+        "name": {
+          "zh-TW": "土地公",
+          "en": "Tudigong"
+        }
+      }
+    ],
+    "description": {
+      "zh-TW": "東南亞最大的土地公廟。",
+      "en": "The largest Tudigong temple in Southeast Asia."
+    },
+    "history": {
+      "zh-TW": "創建於1662年，信仰圈遍及全台。",
+      "en": "Founded in 1662, with a sphere of influence covering all of Taiwan."
+    },
+    "images": [
+      "/assets/images/temples/temple-chechengfuan.jpg"
+    ],
+    "url": "https://www.fuan.org.tw",
+    "googleMap": "https://maps.app.goo.gl/3Z8j7Z7Z7Z7Z7Z7Z7"
   }
 ]

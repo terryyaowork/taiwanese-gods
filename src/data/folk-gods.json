@@ -1,9 +1,24 @@
 [
   {
     "id": "wangye",
-    "name": { "zh-TW": "王爺", "en": "Wangye (Plague Lord)" },
-    "aliases": { "zh-TW": ["千歲爺", "五府千歲"], "en": ["Wangye", "Plague Lord"] },
-    "domain": { "zh-TW": "驅邪消災、保境安民", "en": "Exorcism, protection from plagues, safeguarding communities" },
+    "name": {
+      "zh-TW": "王爺",
+      "en": "Wangye (Plague Lord)"
+    },
+    "aliases": {
+      "zh-TW": [
+        "千歲爺",
+        "五府千歲"
+      ],
+      "en": [
+        "Wangye",
+        "Plague Lord"
+      ]
+    },
+    "domain": {
+      "zh-TW": "驅邪消災、保境安民",
+      "en": "Exorcism, protection from plagues, safeguarding communities"
+    },
     "description": {
       "zh-TW": "王爺信仰盛行於台灣沿海，主祀驅邪消災。",
       "en": "Wangye worship is popular in coastal Taiwan, mainly for exorcism and protection."
@@ -14,18 +29,50 @@
     },
     "temples": [
       {
-        "name": { "zh-TW": "東港東隆宮", "en": "Donglong Temple" },
+        "name": {
+          "zh-TW": "東港東隆宮",
+          "en": "Donglong Temple"
+        },
         "location": "屏東縣",
-        "url": "https://www.donglong.org.tw/"
+        "url": "https://www.donglong.org.tw/",
+        "deityStory": {
+          "zh-TW": "以三年一科的「迎王平安祭典」聞名，燒王船是祭典的高潮，象徵送走瘟神與煞氣，祈求平安。",
+          "en": "Famous for the triennial 'King Boat Ceremony'. The burning of the King Boat is the climax, symbolizing the expulsion of plague and evil spirits."
+        }
+      },
+      {
+        "name": {
+          "zh-TW": "南鯤鯓代天府",
+          "en": "Nankunshen Daitian Temple"
+        },
+        "location": "台南市",
+        "url": "https://www.nkstemple.org.tw/",
+        "deityStory": {
+          "zh-TW": "台灣王爺總廟，有「台灣第一大廟」之稱。分靈廟宇遍布全台，每年進香期人潮洶湧，乩童操寶的場面非常壯觀。",
+          "en": "Known as the head temple of Wangye in Taiwan. It has branches all over the island. During pilgrimage season, the scene of spirit mediums performing rituals is spectacular."
+        }
       }
     ],
     "image": "/assets/images/gods/wangye.jpg"
   },
   {
     "id": "baosheng",
-    "name": { "zh-TW": "保生大帝", "en": "Baosheng Dadi" },
-    "aliases": { "zh-TW": ["大道公"], "en": ["God of Medicine"] },
-    "domain": { "zh-TW": "醫藥健康、消災解厄", "en": "Medicine, health, protection from illness" },
+    "name": {
+      "zh-TW": "保生大帝",
+      "en": "Baosheng Dadi"
+    },
+    "aliases": {
+      "zh-TW": [
+        "大道公"
+      ],
+      "en": [
+        "God of Medicine"
+      ]
+    },
+    "domain": {
+      "zh-TW": "醫藥健康、消災解厄",
+      "en": "Medicine, health, protection from illness"
+    },
     "description": {
       "zh-TW": "保生大帝為醫藥之神，保佑健康平安。",
       "en": "Baosheng Dadi is the god of medicine, blessing health and safety."
@@ -36,7 +83,10 @@
     },
     "temples": [
       {
-        "name": { "zh-TW": "大龍峒保安宮", "en": "Baoan Temple" },
+        "name": {
+          "zh-TW": "大龍峒保安宮",
+          "en": "Baoan Temple"
+        },
         "location": "台北市",
         "url": "https://www.baoan.org.tw/"
       }
@@ -45,9 +95,22 @@
   },
   {
     "id": "nezha",
-    "name": { "zh-TW": "三太子", "en": "Nezha (Third Prince)" },
-    "aliases": { "zh-TW": ["哪吒"], "en": ["Nezha"] },
-    "domain": { "zh-TW": "勇敢、守護兒童、驅邪", "en": "Courage, protection of children, exorcism" },
+    "name": {
+      "zh-TW": "三太子",
+      "en": "Nezha (Third Prince)"
+    },
+    "aliases": {
+      "zh-TW": [
+        "哪吒"
+      ],
+      "en": [
+        "Nezha"
+      ]
+    },
+    "domain": {
+      "zh-TW": "勇敢、守護兒童、驅邪",
+      "en": "Courage, protection of children, exorcism"
+    },
     "description": {
       "zh-TW": "三太子為勇敢的少年神，深受兒童喜愛。",
       "en": "Nezha is a brave young deity, beloved by children."
@@ -58,7 +121,10 @@
     },
     "temples": [
       {
-        "name": { "zh-TW": "新港奉天宮", "en": "Fengtian Temple" },
+        "name": {
+          "zh-TW": "新港奉天宮",
+          "en": "Fengtian Temple"
+        },
         "location": "嘉義縣",
         "url": "https://www.hsinkangmazu.org.tw/"
       }
@@ -67,17 +133,36 @@
   },
   {
     "id": "tigerlord",
-    "name": { "zh-TW": "虎爺", "en": "Tiger Lord" },
-    "aliases": { "zh-TW": ["虎爺公"], "en": ["Tiger God"] },
-    "domain": { "zh-TW": "鎮煞、守護、保平安", "en": "Protection, warding off evil" },
+    "name": {
+      "zh-TW": "虎爺",
+      "en": "Tiger Lord"
+    },
+    "aliases": {
+      "zh-TW": [
+        "虎爺公"
+      ],
+      "en": [
+        "Tiger God"
+      ]
+    },
+    "domain": {
+      "zh-TW": "鎮煞、守護、保平安",
+      "en": "Protection, warding off evil"
+    },
     "description": {
       "zh-TW": "虎爺為動物神，常見於廟宇神桌下方。",
       "en": "Tiger Lord is an animal deity, often found under temple altars."
     },
-    "story": { "zh-TW": "傳說虎爺能驅邪避凶，守護信眾。", "en": "Said to ward off evil and protect worshippers." },
+    "story": {
+      "zh-TW": "傳說虎爺能驅邪避凶，守護信眾。",
+      "en": "Said to ward off evil and protect worshippers."
+    },
     "temples": [
       {
-        "name": { "zh-TW": "艋舺龍山寺", "en": "Longshan Temple" },
+        "name": {
+          "zh-TW": "艋舺龍山寺",
+          "en": "Longshan Temple"
+        },
         "location": "台北市",
         "url": "https://www.lungshan.org.tw/"
       }
@@ -86,9 +171,22 @@
   },
   {
     "id": "zhusheng",
-    "name": { "zh-TW": "註生娘娘", "en": "Zhusheng Niangniang" },
-    "aliases": { "zh-TW": ["送子娘娘"], "en": ["Goddess of Birth"] },
-    "domain": { "zh-TW": "求子、保佑婦女生育", "en": "Fertility, childbirth, protection of women" },
+    "name": {
+      "zh-TW": "註生娘娘",
+      "en": "Zhusheng Niangniang"
+    },
+    "aliases": {
+      "zh-TW": [
+        "送子娘娘"
+      ],
+      "en": [
+        "Goddess of Birth"
+      ]
+    },
+    "domain": {
+      "zh-TW": "求子、保佑婦女生育",
+      "en": "Fertility, childbirth, protection of women"
+    },
     "description": {
       "zh-TW": "註生娘娘主司生育，婦女常祈求子嗣。",
       "en": "Goddess of birth and fertility, prayed to by women for children."
@@ -99,7 +197,10 @@
     },
     "temples": [
       {
-        "name": { "zh-TW": "艋舺龍山寺", "en": "Longshan Temple" },
+        "name": {
+          "zh-TW": "艋舺龍山寺",
+          "en": "Longshan Temple"
+        },
         "location": "台北市",
         "url": "https://www.lungshan.org.tw/"
       }
@@ -108,9 +209,22 @@
   },
   {
     "id": "tudipo",
-    "name": { "zh-TW": "土地婆", "en": "Tudipo (Earth God's Wife)" },
-    "aliases": { "zh-TW": ["土地婆婆"], "en": ["Earth God's Wife"] },
-    "domain": { "zh-TW": "家庭、婦女、土地公的配偶", "en": "Family, women, wife of Tudigong" },
+    "name": {
+      "zh-TW": "土地婆",
+      "en": "Tudipo (Earth God's Wife)"
+    },
+    "aliases": {
+      "zh-TW": [
+        "土地婆婆"
+      ],
+      "en": [
+        "Earth God's Wife"
+      ]
+    },
+    "domain": {
+      "zh-TW": "家庭、婦女、土地公的配偶",
+      "en": "Family, women, wife of Tudigong"
+    },
     "description": {
       "zh-TW": "土地婆為土地公的配偶，主司家庭與婦女。",
       "en": "Tudipo is the wife of Tudigong, goddess of family and women."
@@ -121,7 +235,10 @@
     },
     "temples": [
       {
-        "name": { "zh-TW": "松山慈祐宮", "en": "Songshan Ciyou Temple" },
+        "name": {
+          "zh-TW": "松山慈祐宮",
+          "en": "Songshan Ciyou Temple"
+        },
         "location": "台北市",
         "url": "https://www.ciyou.org.tw/"
       }

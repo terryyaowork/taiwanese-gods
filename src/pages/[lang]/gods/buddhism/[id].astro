@@ -1,6 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import gods from '~/data/taoist-gods.json';
+import gods from '~/data/buddhist-gods.json';
 
 type Lang = 'zh-TW' | 'en';
 
@@ -77,7 +77,7 @@ const metadata = {
   <div class="max-w-3xl mx-auto py-8 px-4 sm:px-6">
     <div class="mb-6">
       <a
-        href={lang === 'en' ? '/en/gods/taoism' : '/gods/taoism'}
+        href={lang === 'en' ? '/en/gods/buddhism' : '/gods/buddhism'}
         class="text-blue-600 hover:underline inline-flex items-center"
       >
         {labels[lang].back}
@@ -168,7 +168,7 @@ const metadata = {
 
     <div class="mt-12 pt-8 border-t text-center">
       <a
-        href={lang === 'en' ? '/en/gods/taoism' : '/gods/taoism'}
+        href={lang === 'en' ? '/en/gods/buddhism' : '/gods/buddhism'}
         class="inline-flex items-center text-blue-600 hover:underline text-lg"
       >
         {labels[lang].back}

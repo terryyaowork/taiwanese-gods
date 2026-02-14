@@ -1,0 +1,341 @@
+---
+import Image from '~/components/common/Image.astro';
+
+// Import assets
+import moonBlockFlat from '~/assets/images/divination/moon_block_flat.png';
+import moonBlockRound from '~/assets/images/divination/moon_block_round.png';
+import qianshiContainer from '~/assets/images/divination/qianshi_container.png';
+
+const { class: className } = Astro.props;
+---
+
+<div class={`divination-container bg-paper-100 p-6 rounded-xl border-2 border-primary-200 shadow-lg ${className}`}>
+  <h3 class="text-2xl font-serif text-primary-800 text-center mb-6 font-bold border-b border-primary-100 pb-3">
+    誠心祈求
+  </h3>
+
+  <div class="tabs flex justify-center mb-6 border-b border-gray-200">
+    <button
+      id="tab-zhibei"
+      class="tab-btn active px-6 py-2 text-lg font-medium text-gray-500 hover:text-primary-600 border-b-2 border-transparent focus:outline-none transition-colors"
+      data-target="panel-zhibei"
+    >
+      擲筊問事
+    </button>
+    <button
+      id="tab-qianshi"
+      class="tab-btn px-6 py-2 text-lg font-medium text-gray-500 hover:text-primary-600 border-b-2 border-transparent focus:outline-none transition-colors"
+      data-target="panel-qianshi"
+    >
+      求籤解惑
+    </button>
+  </div>
+
+  <!-- Zhibei Panel -->
+  <div id="panel-zhibei" class="tab-panel space-y-6 text-center">
+    <div
+      class="monitor h-48 flex items-center justify-center bg-gray-50 rounded-lg border border-inner border-gray-200 relative overflow-hidden"
+    >
+      <div id="zhibei-result-area" class="flex gap-4 items-center justify-center transition-all duration-500">
+        <!-- Initial State: Static Icons or Empty -->
+        <div class="text-gray-400 text-sm">請默念問題後點擊下方按鈕</div>
+      </div>
+      <div
+        id="zhibei-text"
+        class="absolute bottom-2 left-0 right-0 text-center font-bold text-xl text-primary-700 opacity-0 transition-opacity duration-300"
+      >
+      </div>
+    </div>
+
+    <button
+      id="btn-zhibei"
+      class="w-full sm:w-auto px-8 py-3 bg-red-700 hover:bg-red-800 text-white rounded-full font-bold text-lg shadow-md transition-transform transform active:scale-95 flex items-center justify-center mx-auto gap-2"
+    >
+      <span>🙌</span> 誠心擲筊
+    </button>
+
+    <div id="zhibei-meaning" class="text-gray-600 text-sm mt-2 h-6"></div>
+  </div>
+
+  <!-- Qianshi Panel -->
+  <div id="panel-qianshi" class="tab-panel hidden space-y-6 text-center">
+    <div
+      class="monitor h-64 flex flex-col items-center justify-center bg-gray-50 rounded-lg border border-inner border-gray-200 relative overflow-hidden p-4"
+    >
+      <!-- Step 1: Container -->
+      <div id="qianshi-container-view" class="transition-all duration-500">
+        <img src={qianshiContainer.src} alt="Qianshi Container" class="w-32 h-auto mx-auto drop-shadow-md" />
+      </div>
+
+      <!-- Step 2: Stick Result -->
+      <div id="qianshi-stick-view" class="hidden flex-col items-center animate-fade-in-up">
+        <div
+          class="stick bg-yellow-100 border-2 border-yellow-600 text-yellow-900 px-3 py-8 rounded-full writing-vertical-rl font-serif font-bold text-xl shadow-md min-h-[160px] flex items-center justify-center border-double mb-4"
+        >
+          <span id="stick-number">第六十籤</span>
+        </div>
+        <div class="text-gray-600 mb-2">請擲筊確認是否為此籤</div>
+      </div>
+
+      <!-- Result Overlay -->
+      <div
+        id="qianshi-overlay"
+        class="absolute inset-0 bg-white/90 z-10 hidden flex-col items-center justify-center p-4 text-center"
+      >
+        <h4 class="text-2xl font-bold text-primary-800 mb-2" id="qianshi-result-title"></h4>
+        <p class="text-gray-700 mb-4" id="qianshi-result-desc"></p>
+        <button id="btn-qianshi-reset" class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded text-gray-700"
+          >重新求籤</button
+        >
+      </div>
+    </div>
+
+    <div id="qianshi-controls">
+      <button
+        id="btn-draw"
+        class="w-full sm:w-auto px-8 py-3 bg-primary-700 hover:bg-primary-800 text-white rounded-full font-bold text-lg shadow-md transition-transform transform active:scale-95 flex items-center justify-center mx-auto gap-2"
+      >
+        <span>📜</span> 開始求籤
+      </button>
+
+      <div id="confirm-controls" class="hidden flex-col gap-3">
+        <button
+          id="btn-confirm-zhibei"
+          class="w-full sm:w-auto px-8 py-3 bg-red-700 hover:bg-red-800 text-white rounded-full font-bold text-lg shadow-md transition-transform transform active:scale-95 mx-auto"
+        >
+          擲筊確認
+        </button>
+        <p class="text-xs text-gray-500">需擲出聖筊 (一正一反) 才算確認</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .tab-btn.active {
+    color: #b91c1c; /* red-700 */
+    border-bottom-color: #b91c1c;
+  }
+  .writing-vertical-rl {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+  @keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(0eg);
+    }
+    75% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .animate-shake {
+    animation: shake 0.5s ease-in-out infinite;
+  }
+  .bg-paper-100 {
+    background-color: #fcfbf7;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+  }
+</style>
+
+<script define:vars={{ moonBlockFlatSrc: moonBlockFlat.src, moonBlockRoundSrc: moonBlockRound.src }}>
+  // DOM Elements
+  const tabs = document.querySelectorAll('.tab-btn');
+  const panels = document.querySelectorAll('.tab-panel');
+
+  // Zhibei Elements
+  const btnZhibei = document.getElementById('btn-zhibei');
+  const resultArea = document.getElementById('zhibei-result-area');
+  const resultText = document.getElementById('zhibei-text');
+  const meaningText = document.getElementById('zhibei-meaning');
+
+  // Qianshi Elements
+  const btnDraw = document.getElementById('btn-draw');
+  const qianshiContainerView = document.getElementById('qianshi-container-view');
+  const qianshiStickView = document.getElementById('qianshi-stick-view');
+  const stickNumberEl = document.getElementById('stick-number');
+  const confirmControls = document.getElementById('confirm-controls');
+  const btnConfirmZhibei = document.getElementById('btn-confirm-zhibei');
+  const qianshiControls = document.getElementById('qianshi-controls');
+  const qianshiOverlay = document.getElementById('qianshi-overlay');
+  const qianshiResultTitle = document.getElementById('qianshi-result-title');
+  const qianshiResultDesc = document.getElementById('qianshi-result-desc');
+  const btnQianshiReset = document.getElementById('btn-qianshi-reset');
+
+  let currentStick = null;
+
+  // --- Tab Logic ---
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      // Deactivate all
+      tabs.forEach((t) => t.classList.remove('active'));
+      panels.forEach((p) => p.classList.add('hidden'));
+
+      // Activate current
+      tab.classList.add('active');
+      const target = tab.getAttribute('data-target');
+      document.getElementById(target).classList.remove('hidden');
+    });
+  });
+
+  // --- Zhibei Logic ---
+  function getZhibeiResult() {
+    const r = Math.random();
+    if (r < 0.5) return 'holy'; // 50%
+    if (r < 0.75) return 'laughing'; // 25%
+    return 'anger'; // 25%
+  }
+
+  function renderBlocks(result) {
+    const imgSize = 'w-12 h-12 sm:w-16 sm:h-16 shadow-sm rounded-full bg-transparent'; // Tailwind classes
+    // Flat = Yang (Positive), Round = Yin (Negative)
+    // Holy: One Flat, One Round
+    // Laughing: Two Flat
+    // Anger: Two Round
+
+    let leftSrc, rightSrc;
+
+    if (result === 'holy') {
+      leftSrc = moonBlockFlatSrc;
+      rightSrc = moonBlockRoundSrc;
+    } else if (result === 'laughing') {
+      leftSrc = moonBlockFlatSrc;
+      rightSrc = moonBlockFlatSrc;
+    } else {
+      // anger
+      leftSrc = moonBlockRoundSrc;
+      rightSrc = moonBlockRoundSrc;
+    }
+
+    return `
+        <img src="${leftSrc}" class="${imgSize} transform rotate-[-15deg]" alt="Block Left" />
+        <img src="${rightSrc}" class="${imgSize} transform rotate-[15deg]" alt="Block Right" />
+      `;
+  }
+
+  function renderText(result) {
+    if (result === 'holy') return { text: '聖筊', color: 'text-red-600', meaning: '神明同意、吉祥之兆' };
+    if (result === 'laughing') return { text: '笑筊', color: 'text-green-600', meaning: '神明一笑、狀況不明或不需要' };
+    return { text: '陰筊', color: 'text-gray-600', meaning: '神明否定、時機未到或不宜' }; // anger
+  }
+
+  btnZhibei.addEventListener('click', () => {
+    // 1. Animation state
+    btnZhibei.disabled = true;
+    resultText.style.opacity = '0';
+    meaningText.textContent = '擲筊中...';
+
+    resultArea.innerHTML = `
+        <div class="animate-spin w-10 h-10 border-4 border-red-200 border-t-red-600 rounded-full"></div>
+      `;
+
+    // 2. Delay for result
+    setTimeout(() => {
+      const result = getZhibeiResult();
+      const info = renderText(result);
+
+      resultArea.innerHTML = renderBlocks(result);
+
+      resultText.textContent = info.text;
+      resultText.className = `absolute bottom-2 left-0 right-0 text-center font-bold text-xl transition-opacity duration-300 ${info.color}`;
+      resultText.style.opacity = '1';
+
+      meaningText.textContent = info.meaning;
+
+      btnZhibei.disabled = false;
+    }, 800);
+  });
+
+  // --- Qianshi Logic ---
+  // Simple poem generation (placeholder logic, normally would pull from data)
+  const getPoem = (num) => {
+    // Just a simple logic to determine luck based on number for demo
+    // In reality this would fetch specific text
+    const quality = num % 3 === 0 ? '上上籤' : num % 3 === 1 ? '中平籤' : '下下籤';
+    return {
+      title: `第${num}籤 - ${quality}`,
+      desc: '籤詩解說：心誠則靈，此籤意指您目前的運勢正在轉變。保持正向心態，努力不懈，定能逢凶化吉，心想事成。',
+    };
+  };
+
+  btnDraw.addEventListener('click', () => {
+    btnDraw.classList.add('hidden');
+    qianshiContainerView.classList.add('animate-shake');
+
+    setTimeout(() => {
+      qianshiContainerView.classList.remove('animate-shake');
+      qianshiContainerView.classList.add('hidden');
+
+      // Generate number 1-60
+      const num = Math.floor(Math.random() * 60) + 1;
+      currentStick = num;
+      stickNumberEl.textContent = `第 ${num} 籤`; // Simplified Chinese numeral conversion logic omitted for brevity
+
+      qianshiStickView.classList.remove('hidden');
+      qianshiStickView.classList.add('flex');
+
+      qianshiControls.classList.add('hidden'); // Hide draw button container
+      confirmControls.classList.remove('hidden'); // Show confirm button
+      confirmControls.classList.add('flex');
+
+      // Move confirm controls to main controls area if not already
+      if (!qianshiControls.contains(confirmControls)) {
+        qianshiControls.appendChild(confirmControls);
+        qianshiControls.classList.remove('hidden');
+      }
+    }, 1500);
+  });
+
+  btnConfirmZhibei.addEventListener('click', () => {
+    // Reuse Zhibei logic internally
+    // Show a mini zhibei modal or just text? let's stick to text for simplicity in this flow
+    confirmControls.classList.add('opacity-50', 'pointer-events-none');
+
+    const result = getZhibeiResult();
+
+    setTimeout(() => {
+      confirmControls.classList.remove('opacity-50', 'pointer-events-none');
+
+      if (result === 'holy') {
+        // Success
+        const poem = getPoem(currentStick);
+        qianshiResultTitle.textContent = poem.title;
+        qianshiResultDesc.textContent = poem.desc;
+        qianshiOverlay.classList.remove('hidden');
+        qianshiOverlay.classList.add('flex');
+      } else {
+        // Fail
+        alert(`擲出${renderText(result).text}，非聖筊。請重新求籤。`);
+        resetQianshi();
+      }
+    }, 500);
+  });
+
+  function resetQianshi() {
+    qianshiStickView.classList.add('hidden');
+    qianshiStickView.classList.remove('flex');
+
+    qianshiContainerView.classList.remove('hidden');
+
+    confirmControls.classList.add('hidden');
+    confirmControls.classList.remove('flex');
+
+    btnDraw.classList.remove('hidden');
+    qianshiControls.classList.remove('hidden');
+
+    qianshiOverlay.classList.add('hidden');
+    qianshiOverlay.classList.remove('flex');
+
+    currentStick = null;
+  }
+
+  btnQianshiReset.addEventListener('click', resetQianshi);
+</script>

@@ -1,28 +1,72 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import gods from '~/data/buddhist-gods.json';
+
 const metadata = {
-  title: '佛教神明介紹',
+  title: '佛教信仰神明 | 台灣神明信仰',
+  description: '認識台灣佛教信仰神明，如觀世音菩薩、地藏王菩薩等慈悲神佛，感受佛教文化的平靜與智慧。',
+  openGraph: {
+    images: [
+      {
+        url: gods[0]?.image || '/assets/images/gods/default.jpg',
+        width: 1200,
+        height: 630,
+        alt: '佛教信仰神明集合',
+      },
+    ],
+  },
 };
 ---
 
 <Layout metadata={metadata}>
-  <h1 class="text-3xl font-bold mb-4">佛教神明介紹</h1>
-  <p class="mb-8">這裡將介紹台灣常見的佛教神明、信仰特色與相關寺廟。</p>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    {
-      gods.map((god) => (
-        <a
-          href={`/gods/buddhism/${god.id}`}
-          class="block border rounded-lg p-6 shadow bg-white dark:bg-gray-800 hover:shadow-lg transition"
-        >
-          {god.image && (
-            <img src={god.image} alt={god.name['zh-TW']} class="w-full h-40 object-cover object-top rounded mb-4" />
-          )}
-          <h2 class="text-xl font-semibold mb-2">{god.name['zh-TW']}</h2>
-          <p>{god.description['zh-TW']}</p>
-        </a>
-      ))
-    }
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+    <div class="mb-8 text-center">
+      <h1 class="text-4xl font-bold mb-4 text-gray-900">佛教信仰神明</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        佛教傳入台灣後與在地文化融合。這裡介紹觀世音菩薩、地藏王菩薩等廣受敬奉的佛菩薩。
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        gods.map((god) => (
+          <a
+            href={`/gods/buddhism/${god.id}`}
+            class="group block bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 transform hover:-translate-y-1"
+          >
+            <div class="relative h-64 overflow-hidden bg-gray-100">
+              {god.image ? (
+                <img
+                  src={god.image}
+                  alt={god.name['zh-TW']}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              ) : (
+                <div class="flex items-center justify-center h-full text-gray-400">No Image</div>
+              )}
+            </div>
+
+            <div class="p-6">
+              <h2 class="text-2xl font-bold mb-3 text-gray-800 group-hover:text-primary-600 transition-colors">
+                {god.name['zh-TW']}
+              </h2>
+              <p class="text-gray-600 line-clamp-3 leading-relaxed">{god.description['zh-TW']}</p>
+              <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">
+                <span class="text-sm text-gray-500 font-medium">了解更多 →</span>
+              </div>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+
+    <div class="mt-12 text-center">
+      <a
+        href="/"
+        class="inline-block px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors font-medium"
+      >
+        回首頁
+      </a>
+    </div>
   </div>
 </Layout>
