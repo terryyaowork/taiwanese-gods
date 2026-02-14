@@ -59,6 +59,7 @@ if (!god) {
 
 const metadata = {
   title: god.name[lang],
+  ignoreTitleTemplate: lang === 'en',
   description: god.description[lang].substring(0, 150) + '...',
   openGraph: {
     images: [
