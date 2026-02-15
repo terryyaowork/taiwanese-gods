@@ -21,9 +21,8 @@ const { temple } = Astro.props;
 
 // Create a map to find god category by ID
 const godCategoryMap = new Map();
-// @ts-ignore
-[...taoistGods, ...buddhistGods, ...folkGods].forEach((god) => {
-  // @ts-ignore
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+([...taoistGods, ...buddhistGods, ...folkGods] as any[]).forEach((god: any) => {
   godCategoryMap.set(
     god.id,
     god.category || (buddhistGods.includes(god) ? 'buddhism' : folkGods.includes(god) ? 'folk' : 'taoism')
@@ -34,9 +33,7 @@ const getGodLink = (godId: string) => {
   if (!godCategoryMap.has(godId)) return null;
   const category = godCategoryMap.get(godId);
   if (category) return `/gods/${category}/${godId}`;
-  // @ts-ignore
   if (buddhistGods.some((g) => g.id === godId)) return `/gods/buddhism/${godId}`;
-  // @ts-ignore
   if (folkGods.some((g) => g.id === godId)) return `/gods/folk/${godId}`;
   return `/gods/taoism/${godId}`;
 };
@@ -60,16 +57,13 @@ const getTempleImage = (imagePath: string | undefined) => {
 };
 
 const mainImage = getTempleImage(temple.images?.[0]);
-// @ts-ignore
+// @ts-expect-error -- accessing .src on untyped image object
 const mainImageSrc = mainImage && typeof mainImage === 'object' ? mainImage.src : mainImage;
 
 // Determine back link
 let backLink = '/temples/north';
-// @ts-ignore
 if (templesCentral.some((t) => t.id === temple.id)) backLink = '/temples/central';
-// @ts-ignore
 else if (templesSouth.some((t) => t.id === temple.id)) backLink = '/temples/south';
-// @ts-ignore
 else if (templesEast.some((t) => t.id === temple.id)) backLink = '/temples/east';
 
 const regionLabels: Record<string, string> = {
@@ -83,13 +77,11 @@ const metadata = {
   title: temple.name,
   description: temple.description.substring(0, 150) + '...',
   openGraph: {
-    images: mainImageSrc
-      ? [{ url: mainImageSrc, width: 1200, height: 630, alt: temple.name }]
-      : [],
+    images: mainImageSrc ? [{ url: mainImageSrc, width: 1200, height: 630, alt: temple.name }] : [],
   },
 };
 
-const siteUrl = 'https://taiwanese-gods.vercel.app';
+const siteUrl = 'https://www.taiwanese-gods.org';
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'HinduTemple',
@@ -121,15 +113,12 @@ const jsonLd = {
             class="absolute inset-0 w-full h-full object-cover blur-sm scale-110 opacity-60"
           />
         ) : (
-          <div class="absolute inset-0 bg-gradient-to-br from-red-900 via-red-800 to-amber-900"></div>
+          <div class="absolute inset-0 bg-gradient-to-br from-red-900 via-red-800 to-amber-900" />
         )
       }
       <div class="relative z-20 h-full max-w-5xl mx-auto px-4 flex flex-col justify-end pb-6 sm:pb-10">
         <div class="flex items-center gap-2 mb-2 sm:mb-3">
-          <a
-            href={backLink}
-            class="text-white/60 hover:text-white text-sm transition-colors"
-          >
+          <a href={backLink} class="text-white/60 hover:text-white text-sm transition-colors">
             {regionLabels[backLink]}
           </a>
           <span class="text-white/40">›</span>
@@ -140,11 +129,28 @@ const jsonLd = {
         </h1>
         <div class="flex flex-wrap items-center gap-4 text-white/70 text-sm">
           <span class="flex items-center gap-1.5">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg
+            >
             {temple.location}
           </span>
           <span class="flex items-center gap-1.5">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              ></path></svg
+            >
             {temple.address}
           </span>
         </div>
@@ -154,16 +160,39 @@ const jsonLd = {
     <!-- Content Area -->
     <div class="max-w-6xl mx-auto px-4 sm:px-6 -mt-4 sm:-mt-8 relative z-30">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-
         <!-- Left: Main Content -->
-        <div class="lg:col-span-2 space-y-6 sm:space-y-8 bg-white/95 dark:bg-gray-800/95 p-4 sm:p-6 md:p-8 rounded-lg shadow-xl border-t-4 border-red-800">
+        <div
+          class="lg:col-span-2 space-y-6 sm:space-y-8 bg-white/95 dark:bg-gray-800/95 p-4 sm:p-6 md:p-8 rounded-lg shadow-xl border-t-4 border-red-800"
+        >
           <!-- TOC -->
-          <nav class="bg-red-50/60 dark:bg-red-900/20 border border-red-100 dark:border-red-800/50 rounded-lg p-3 sm:p-5">
-            <h3 class="font-serif font-bold text-red-900 dark:text-red-300 mb-3 text-sm tracking-widest uppercase">本文目錄</h3>
+          <nav
+            class="bg-red-50/60 dark:bg-red-900/20 border border-red-100 dark:border-red-800/50 rounded-lg p-3 sm:p-5"
+          >
+            <h3 class="font-serif font-bold text-red-900 dark:text-red-300 mb-3 text-sm tracking-widest uppercase">
+              本文目錄
+            </h3>
             <ol class="space-y-1.5">
-              <li><a href="#deities" class="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-400 transition-colors text-[15px]"><span class="text-red-300 dark:text-red-600 text-xs font-mono">01</span> 主祀神明</a></li>
-              <li><a href="#description" class="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-400 transition-colors text-[15px]"><span class="text-red-300 dark:text-red-600 text-xs font-mono">02</span> 簡介</a></li>
-              <li><a href="#history" class="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-400 transition-colors text-[15px]"><span class="text-red-300 dark:text-red-600 text-xs font-mono">03</span> 歷史沿革</a></li>
+              <li>
+                <a
+                  href="#deities"
+                  class="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-400 transition-colors text-[15px]"
+                  ><span class="text-red-300 dark:text-red-600 text-xs font-mono">01</span> 主祀神明</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#description"
+                  class="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-400 transition-colors text-[15px]"
+                  ><span class="text-red-300 dark:text-red-600 text-xs font-mono">02</span> 簡介</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#history"
+                  class="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-400 transition-colors text-[15px]"
+                  ><span class="text-red-300 dark:text-red-600 text-xs font-mono">03</span> 歷史沿革</a
+                >
+              </li>
             </ol>
           </nav>
 
@@ -181,7 +210,9 @@ const jsonLd = {
                     >
                       <span class="text-lg">⛩️</span>
                       <span>{d.name}</span>
-                      <span class="text-xs text-red-400 opacity-0 group-hover:opacity-100 transition-opacity">→ 詳細</span>
+                      <span class="text-xs text-red-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                        → 詳細
+                      </span>
                     </a>
                   ) : (
                     <span class="flex items-center gap-2 px-5 py-2.5 bg-gray-50 dark:bg-gray-700/50 border border-gray-200 dark:border-gray-600 rounded-full text-gray-700 dark:text-gray-300 font-bold">
@@ -217,11 +248,7 @@ const jsonLd = {
           {
             mainImageSrc && (
               <div class="bg-white dark:bg-gray-800 p-2 rounded-lg shadow-lg border-2 border-gold-200">
-                <img
-                  src={mainImageSrc}
-                  alt={temple.name}
-                  class="w-full h-auto object-cover rounded-md"
-                />
+                <img src={mainImageSrc} alt={temple.name} class="w-full h-auto object-cover rounded-md" />
                 <div class="text-center py-3">
                   <p class="font-serif font-bold text-xl text-primary-900 dark:text-gray-100">{temple.name}</p>
                   <p class="text-sm text-gray-500 dark:text-gray-400">{temple.location}</p>
@@ -232,11 +259,26 @@ const jsonLd = {
 
           <!-- Info Card -->
           <div class="bg-white/95 dark:bg-gray-800/95 p-6 rounded-lg shadow-lg">
-            <h3 class="font-bold text-lg text-red-900 dark:text-red-300 mb-4 pb-2 border-b border-red-100 dark:border-red-900">參拜資訊</h3>
+            <h3
+              class="font-bold text-lg text-red-900 dark:text-red-300 mb-4 pb-2 border-b border-red-100 dark:border-red-900"
+            >
+              參拜資訊
+            </h3>
             <div class="space-y-4 text-sm">
               <div class="flex items-start gap-3">
                 <span class="text-red-600 mt-0.5">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    ><path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    ></path><path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg
+                  >
                 </span>
                 <div>
                   <p class="font-bold text-gray-800 dark:text-gray-200">地址</p>
@@ -245,7 +287,14 @@ const jsonLd = {
               </div>
               <div class="flex items-start gap-3">
                 <span class="text-red-600 mt-0.5">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    ><path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path></svg
+                  >
                 </span>
                 <div>
                   <p class="font-bold text-gray-800 dark:text-gray-200">地區</p>
@@ -258,7 +307,6 @@ const jsonLd = {
           <!-- Action Buttons -->
           <div class="space-y-3">
             {
-              // @ts-ignore
               temple.url && (
                 <a
                   href={temple.url}
@@ -266,14 +314,20 @@ const jsonLd = {
                   rel="noopener"
                   class="flex items-center justify-center gap-2 w-full px-6 py-4 bg-red-800 text-white hover:bg-red-900 rounded-lg transition-all duration-300 font-bold shadow-md hover:shadow-lg group"
                 >
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                    />
+                  </svg>
                   <span>官方網站</span>
                   <span class="inline-block transform group-hover:translate-x-1 transition-transform">→</span>
                 </a>
               )
             }
             {
-              // @ts-ignore
               temple.googleMap && (
                 <a
                   href={temple.googleMap}
@@ -281,7 +335,14 @@ const jsonLd = {
                   rel="noopener"
                   class="flex items-center justify-center gap-2 w-full px-6 py-4 bg-white dark:bg-gray-800 border-2 border-amber-600 text-amber-700 hover:bg-amber-600 hover:text-white rounded-lg transition-all duration-300 font-bold shadow-sm hover:shadow-lg"
                 >
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                    />
+                  </svg>
                   <span>Google 地圖導航</span>
                 </a>
               )

@@ -2,11 +2,7 @@
   {
     "id": "alizu",
     "name": "Alizu (Ancestral Spirit)",
-    "aliases": [
-      "Alizu",
-      "Ali-Mu",
-      "Tai-Zu"
-    ],
+    "aliases": ["Alizu", "Ali-Mu", "Tai-Zu"],
     "domain": "Siraya Ancestral Spirit, tribal guardian, rain prayer, healing",
     "description": "Alizu is the supreme ancestral spirit of the Siraya people, an indigenous group of the Taiwanese plains. Unlike Han Chinese deities represented by statues, Alizu has no anthropomorphic form and is symbolized by pots, bottles, or jars filled with water, known as 'Pot Worship.' The pot is often wrapped in red cloth, and the water inside, called 'Xiang Water,' is believed to have healing and protective powers. Worship takes place in the 'Kuwa' (public house), which serves as both a spiritual center and a tribal assembly hall. The annual 'Night Ceremony' on the 14th day of the 10th lunar month is the most significant ritual, where tribespeople offer betel nuts and rice wine, chanting 'Qian Qu' (Holding Hands Songs) to honor the ancestral spirits.",
     "story": "Alizu is not a single deity but a collective term for Siraya ancestral spirits. Legend holds that Alizu governs the tribe's life, death, and natural cycles. despite the impact of Dutch rule and Qing-era Sinicization, the Pot Worship tradition survived, becoming the most distinct marker of Siraya identity. A famous belief is the healing power of 'Xiang Water' blessed by Alizu. The 'General Pillar' in the Kuwa symbolizes Alizu's authority. Today, areas like Danei, Jiali, and Dongshan in Tainan still maintain intact Kuwa and Night Ceremony traditions, showcasing the resilience of Siraya culture.",
@@ -33,10 +29,7 @@
   {
     "id": "pastai",
     "name": "Pas-ta'ai (Short Spirit Ceremony)",
-    "aliases": [
-      "Short Spirit Festival",
-      "Pasta'ai"
-    ],
+    "aliases": ["Short Spirit Festival", "Pasta'ai"],
     "domain": "Saisiyat tribal ceremony, spirit appeasement, reconciliation",
     "description": "The Pas-ta'ai (Short Spirit Ceremony) is the most important and mysterious ritual of the Saisiyat tribe, and one of the most strictly regulated indigenous ceremonies in Taiwan. A \"minor ceremony\" is held every two years, and a \"grand ceremony\" every ten years, each lasting four days and three nights. The ceremony serves to appease the spirits of the \"Short People\" (Ta'ai) — legendary beings who taught the Saisiyat agricultural skills but were killed by the tribe through treachery, leaving a dying curse. To pacify the Short Spirits and pray for tribal peace, the Saisiyat have performed this ceremony for generations. During the ritual, participants wear \"hip bells\" (Taba'ang) — back ornaments studded with small copper bells that chime with each dance step, their sound hauntingly beautiful in the darkness. The singing and dancing continue from sunset to sunrise, the atmosphere solemn and reverential, filled with awe and remorse toward the Short Spirits.",
     "story": "Long ago, the Saisiyat people lived near a group of short, dark-skinned people (Ta'ai) separated by a river. The Short People were skilled in agriculture and magic, teaching the Saisiyat how to farm. However, they were also lecherous and frequently harassed Saisiyat women. Unable to endure this any longer, the tribe set a trap, cutting a bridge over the river and drowning nearly all the Short People. Only two survived. The survivors cursed the Saisiyat, warning of crop failures and disasters, and taught them to hold a ceremony seeking forgiveness before departing forever. Since then, the Saisiyat have performed the Pas-ta'ai to calm the Short Spirits' anger.",
@@ -59,11 +52,7 @@
   {
     "id": "tayal-utux",
     "name": "Tayal Ancestral Spirit Belief (Utux)",
-    "aliases": [
-      "Utux",
-      "Rutux",
-      "Gaga"
-    ],
+    "aliases": ["Utux", "Rutux", "Gaga"],
     "domain": "Guardian of the people, upholder of social order, moral and ethical guide",
     "description": "At the heart of Tayal spirituality are two interconnected concepts: \"Utux\" (ancestral spirits) and \"gaga\" (ancestral teachings and social norms). Utux refers to the spirits of departed ancestors, who the Tayal believe continue to watch over their descendants. Through gaga — a comprehensive system encompassing moral principles, social regulations, and ritual observances — the ancestral spirits guide the Tayal way of life. Those who follow gaga receive the blessings and protection of the ancestral spirits, while those who transgress may face spiritual consequences.",
     "story": "The Tayal origin story tells of a time in the ancient past when a great boulder on Mount Papak Waqa (present-day Dabajianshan) split open, and from within emerged the first man and woman — the progenitors of the Tayal people. These ancestors taught their descendants the skills of hunting, weaving, and cultivation, and established gaga to govern the conduct of all Tayal people. The most renowned Tayal cultural tradition is facial tattooing (ptasan): men had to prove themselves through successful headhunting expeditions, and women had to demonstrate mastery of weaving, before earning the right to receive facial tattoos marking their passage into adulthood and honor. These tattoos were far more than personal achievements — they served as a spiritual passport for the soul's journey after death. The Tayal believe that upon death, the soul must cross the Rainbow Bridge (Hongu Utux), where ancestral spirits stand guard. Only those who faithfully observed gaga and earned their facial tattoos are permitted to cross and reunite with their ancestors in the spirit realm.",
@@ -75,20 +64,14 @@
       }
     ],
     "image": "/assets/images/gods/god-tayal-utux.png",
-    "associatedTemples": [
-      "Mount Papak Waqa (Jianshi Township, Hsinchu County / Tai'an Township, Miaoli County)"
-    ],
+    "associatedTemples": ["Mount Papak Waqa (Jianshi Township, Hsinchu County / Tai'an Township, Miaoli County)"],
     "worship": "Tayal spiritual practice centers on prayer to the ancestral spirits. Rather than taking place in permanent temples, ceremonies are conducted in tribal gathering houses or in natural settings. Essential offerings include millet wine (always required), game meat (such as pork or barking deer), and millet cakes (glutinous rice cakes). During ceremonies, tribal elders lead the community in prayer to the ancestral spirits, reporting on both significant and everyday matters of tribal life and seeking guidance and protection.",
     "festivals": "The most important Tayal ceremony is the Thanksgiving Ritual (Smyus), held after the millet harvest. The entire community gathers as elders lead offerings of the newly harvested millet to the ancestral spirits, expressing gratitude for their protection throughout the year. The celebration includes traditional singing and dancing, jaw harp performances, and communal circle dances. The Ancestral Spirit Ceremony (Maho) is another vital observance dedicated to honoring departed ancestors, during which the community offers millet wine and other provisions to maintain their spiritual bond with those who came before."
   },
   {
     "id": "paiwan-hundred-pacer",
     "name": "Paiwan Hundred Pacer Snake Belief",
-    "aliases": [
-      "Vulung",
-      "Hundred Pacer Snake Spirit",
-      "Guardian Serpent Spirit"
-    ],
+    "aliases": ["Vulung", "Hundred Pacer Snake Spirit", "Guardian Serpent Spirit"],
     "domain": "Guardian of the chiefly lineage, protector of the tribe, symbol of nobility and courage",
     "description": "The Hundred Pacer Snake (Vulung) holds a position of supreme reverence in Paiwan and Rukai culture, regarded as an embodiment of the ancestors and a guardian spirit. The Paiwan people believe their forebears share an inseparable kinship with the Hundred Pacer Snake — it is the patron spirit of the chiefly families and the spiritual symbol of the entire tribe. The snake's distinctive diamond-patterned motif appears throughout Paiwan clothing, carvings, architecture, and everyday objects, making it the single most important cultural emblem of the Paiwan people.",
     "story": "In the Paiwan creation narrative, the Sun laid two eggs atop Mount Kavulungan (Dawushan). From one egg hatched the Hundred Pacer Snake, and from the other emerged the first ancestor of the Paiwan people. Thus the Hundred Pacer Snake and the Paiwan are considered siblings, with the snake guarding the people as it would its own kin. Another legend tells of a Paiwan chief's daughter who fell in love with a Hundred Pacer Snake that had taken human form. Their marriage produced the descendants of the chiefly lineage — explaining why only noble families hold the right to use the Hundred Pacer Snake motif. Within the Paiwan social hierarchy, the snake emblem signifies aristocratic status and may not be used by commoners. When encountering a Hundred Pacer Snake in the wild, Paiwan people would never harm it. Instead, they respectfully give it a wide berth, and some may offer millet wine and betel nut as a gesture of honor.",
@@ -100,20 +83,14 @@
       }
     ],
     "image": "/assets/images/gods/god-paiwan-hundred-pacer.png",
-    "associatedTemples": [
-      "Mount Kavulungan (Pingtung County / Taitung County)"
-    ],
+    "associatedTemples": ["Mount Kavulungan (Pingtung County / Taitung County)"],
     "worship": "Paiwan reverence for the Hundred Pacer Snake is woven into the fabric of daily life. During important ceremonies or family milestones, the chief offers prayers to the Hundred Pacer Snake ancestor spirit with millet wine, betel nut, and game meat. When constructing a new slate house, the snake motif is carved into the pillars to invoke spiritual protection. At weddings, the bride wears traditional garments embroidered with the Hundred Pacer Snake pattern, symbolizing the blessings of the ancestral spirits.",
     "festivals": "The most significant Paiwan ceremony is the Five-Year Ceremony (Maleveq), also known as the Covenant Between Humans and Spirits. Held once every five years over a period of roughly two weeks, the ceremony's purpose is to welcome the ancestral spirits back to the community for a reunion with the living. The climactic moment is the bamboo pole ball-piercing ritual: a shaman throws a rattan ball high into the air, and warriors attempt to pierce it with long bamboo poles. Those who succeed are believed to have received a special blessing from the ancestors. The Five-Year Ceremony has been designated a National Important Folk Custom of Taiwan."
   },
   {
     "id": "tao-anito",
     "name": "Tao Ocean Spirit Belief (Anito)",
-    "aliases": [
-      "Anito",
-      "Flying Fish Spirit",
-      "Sea Spirit Belief"
-    ],
+    "aliases": ["Anito", "Flying Fish Spirit", "Sea Spirit Belief"],
     "domain": "Ocean guardian, bestower of flying fish, protector against malevolent spirits",
     "description": "The Tao people (also known as Yami) inhabit Orchid Island (Lanyu) and are the only indigenous group in Taiwan whose culture is fundamentally centered on the ocean. The Tao spiritual system revolves around \"Anito\" (spirits or souls), reflecting a belief that all things possess a spiritual essence. The most distinctive aspect of Tao spirituality concerns the flying fish — regarded as a sacred gift from the heavenly spirits. An elaborate framework of customs governing the catching, consumption, and handling of flying fish forms the backbone of Tao cultural life.",
     "story": "The Tao flying fish legend recounts how, in ancient times, the ancestors did not know how to distinguish among different fish species and cooked flying fish together with other fish, causing widespread illness throughout the community. One night, the Flying Fish Spirit (the Black-winged Flying Fish) appeared in a dream to an elder, revealing that flying fish were a sacred gift from the heavenly spirits to the Tao people and must be cooked in dedicated pots, never mixed with other fish. The Flying Fish Spirit also taught the elder the proper methods for catching flying fish, the rules for their consumption, and the various taboos that must be observed. Upon waking, the elder shared these teachings with his people. From that time forward, the Tao established their entire cultural system around the flying fish. The strict seasonal regulations — when fishing may begin, when it must end, and how the catch is to be preserved and distributed — became the foundation of Tao social order.",
@@ -125,20 +102,14 @@
       }
     ],
     "image": "/assets/images/gods/god-tao-anito.png",
-    "associatedTemples": [
-      "Orchid Island community ceremonial grounds (Lanyu Township, Taitung County)"
-    ],
+    "associatedTemples": ["Orchid Island community ceremonial grounds (Lanyu Township, Taitung County)"],
     "worship": "Tao spiritual practice takes place not in temples but in intimate connection with the sea and the natural world. Before the flying fish season, the men of the community gather at the shore for the Summoning Ceremony, casting chicken blood upon the waves to call the flying fish. When a new boat is launched, the community offers pigs and chickens, anointing the hull with their blood to pray for safe voyages and abundant catches. The Tao observe strict food taboos — men and women eat different species of fish, and elders and children each have designated species they may or may not consume.",
     "festivals": "The Flying Fish Festival is the central ceremony of Tao life, unfolding in three seasonal phases. In spring, the Summoning Ceremony (mivanwa) takes place: men don traditional loincloths and silver helmets and gather at the shore to call the flying fish through chanting and dance. In summer, the Preservation Ceremony marks the drying and storing of the catch. In autumn, the Final Eating Ceremony closes the flying fish season — any fish remaining uneaten must be discarded and may no longer be consumed. The Boat Launching Ceremony (manawag) is another major occasion. The Tao plank boat (tatala) is hand-built from multiple types of wood by the community, its hull painted in the traditional colors of red, white, and black. The launching ceremony is both grand and deeply sacred."
   },
   {
     "id": "bunun-dihanin",
     "name": "Bunun Sky God Belief (Dihanin)",
-    "aliases": [
-      "Dihanin",
-      "Dehanin",
-      "Sky God"
-    ],
+    "aliases": ["Dihanin", "Dehanin", "Sky God"],
     "domain": "Ruler of heaven and earth, grantor of bountiful harvests, patron of the legendary sun-shooting hero",
     "description": "The Bunun people's spiritual life centers on \"Dihanin\" (the Sky God or Heaven), the supreme spiritual power governing all things between heaven and earth — the weather, the growth of crops, and the fate of humankind. Among Taiwan's indigenous peoples, the Bunun are the most devoted to calendrical observance and agricultural ritual. They developed a precise agricultural calendar based on the waxing and waning of the moon, with each month assigned its corresponding ceremonies and taboos, forming a comprehensive belief system built around the cultivation of millet.",
     "story": "The most celebrated Bunun legend is the Shooting the Sun myth. In the primordial age, two suns hung in the sky, scorching the earth until rivers ran dry, crops withered, and the people suffered terribly. A brave warrior of the tribe resolved to set out with his young son toward the place where the suns rose, determined to shoot one down. Father and son crossed mountain after mountain, enduring countless hardships. Along the way, the orange tree the father had planted grew into a towering tree — a testament to just how long the journey lasted. At last they reached the edge of the sky, and the warrior drew his bow and struck one of the suns. Blood poured from the wounded sun, staining the sky red (this, the Bunun say, is the origin of the sunset glow). The injured sun slowly dimmed and became the moon. From that day forward, one sun and one moon shared the heavens, and the earth flourished once again. Dihanin, witnessing the warrior's courage, bestowed upon the Bunun the seeds of millet and taught them how to cultivate it, ensuring the people would never go hungry.",
@@ -150,20 +121,14 @@
       }
     ],
     "image": "/assets/images/gods/god-bunun-dihanin.png",
-    "associatedTemples": [
-      "Jade Mountain (Nantou County / Chiayi County / Kaohsiung City)"
-    ],
+    "associatedTemples": ["Jade Mountain (Nantou County / Chiayi County / Kaohsiung City)"],
     "worship": "Bunun ceremonies feature millet wine and game meat as the principal offerings. Tribal elders or ritual specialists lead the community in prayer to the Sky God Dihanin. The Bunun possess a unique \"painted calendar\" — a system of pictographic symbols recording each month's agricultural tasks and ceremonies — making them the only indigenous people in Taiwan to have developed a form of written record-keeping. The most renowned element of Bunun worship is the Pasibutbut (Eight-Part Polyphony): participants form a circle and sing in layered harmonies, offering prayers for an abundant millet harvest.",
     "festivals": "The most important Bunun ceremony is the Ear-Shooting Festival (Malahtangia), held annually in April or May. The festival serves as both a coming-of-age rite and a hunting ceremony for Bunun men, who must shoot deer ears hung on a wooden rack to demonstrate their marksmanship. During the festival, participants perform the internationally celebrated Pasibutbut (Eight-Part Polyphony) — also known as the \"Prayer for a Bountiful Millet Harvest.\" Using a distinctive vocal technique in which singers produce layered harmonies, the performance creates an otherworldly sound that rises as a prayer to Dihanin. In 1952, Japanese musicologist Kurosawa Takatomo sent a recording of this singing to UNESCO, where it astonished the international music community and has since been hailed as one of the great treasures of human musical heritage."
   },
   {
     "id": "puyuma-palakuwan",
     "name": "Puyuma Ancestral Spirit Belief (Palakuwan)",
-    "aliases": [
-      "Palakuwan",
-      "Youth Gathering Hall",
-      "Ancestral Spirit House"
-    ],
+    "aliases": ["Palakuwan", "Youth Gathering Hall", "Ancestral Spirit House"],
     "domain": "Guardian of tribal youth, preserver of cultural knowledge, upholder of social order",
     "description": "Puyuma spirituality is rooted in ancestral spirit worship, with the \"Palakuwan\" (youth gathering hall) system serving as the central institution for spiritual transmission and social education. The Puyuma ceremonial system is regarded as one of the most rigorous among Taiwan's indigenous peoples, with the Grand Hunting Ritual (Mangayaw) and the Youth Monkey Ritual (Mangamangayangayam) ranking among the largest-scale indigenous ceremonies in Taiwan.",
     "story": "The Puyuma have two origin narratives: the \"Born from Stone\" and \"Born from Bamboo\" traditions. The Nanwang community tells of an ancestor who emerged from a stone, while the Jhihben community traces its origins to an ancestor born from bamboo. These founding ancestors established the communities and created the gathering hall system — upon reaching a certain age, all youths were required to leave their family homes and live in the \"Youth Hall\" (Takuban), where they received rigorous training under the guidance of elders. This training encompassed hunting skills, tribal history, ceremonial knowledge, physical conditioning, and ethical principles. Only those who passed these trials were recognized as full tribal warriors, gaining entry into the \"Palakuwan\" (young men's gathering hall). This system ensured the faithful transmission of culture from one generation to the next, while also forging the resilience and courage for which the Puyuma are known. Puyuma shamans (Temararamaw), predominantly women, possess the ability to communicate with ancestral spirits and serve the community as both healers and spiritual counselors.",

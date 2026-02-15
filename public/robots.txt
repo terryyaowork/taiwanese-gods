@@ -1,4 +1,4 @@
-# taiwanese-gods.vercel.app
+# www.taiwanese-gods.org
 User-agent: *
 Allow: /
 
@@ -17,4 +17,4 @@ Disallow: /zh-TW/
 # Block internal assets
 Disallow: /_astro/
 
-Sitemap: https://taiwanese-gods.vercel.app/sitemap-index.xml
+Sitemap: https://www.taiwanese-gods.org/sitemap-index.xml

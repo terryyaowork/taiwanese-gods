@@ -15,7 +15,13 @@ if (!story) {
 }
 ---
 
-<Layout metadata={{ title: `${story.title} — Taiwanese Gods`, ignoreTitleTemplate: true, description: story.content?.substring(0, 150) + '...' }}>
+<Layout
+  metadata={{
+    title: `${story.title} — Taiwanese Gods`,
+    ignoreTitleTemplate: true,
+    description: story.content?.substring(0, 150) + '...',
+  }}
+>
   <div class="max-w-2xl mx-auto py-8">
     {story.images?.[0] && <img src={story.images[0]} alt={story.title} class="w-full object-cover rounded mb-6" />}
     <h1 class="text-3xl font-bold mb-2">{story.title}</h1>

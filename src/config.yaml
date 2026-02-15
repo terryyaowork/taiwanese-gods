@@ -1,6 +1,6 @@
 site:
   name: 台灣神明介紹
-  site: 'https://taiwanese-gods.vercel.app'
+  site: 'https://www.taiwanese-gods.org'
   base: '/'
   trailingSlash: false
 

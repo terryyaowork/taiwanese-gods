@@ -12,9 +12,7 @@
     ],
     "description": "Baishatun Gongtian Temple is home to one of Taiwan's most unique Mazu pilgrimages. Famous for its 'Pink Supercar' (the pink-covered palanquin), the annual trek to Beigang Chaotian Temple has no fixed route; the path is divinely guided by Mazu herself. The pilgrimage is known for its speed and the deity's compassionate, unpredictable visits to schools, hospitals, and homes.",
     "history": "Established in 1863, though worship began in the Qianlong era. The tradition of walking pilgrimage to Beigang has continued for nearly 200 years and is a designated National Intangible Cultural Heritage.",
-    "images": [
-      "/assets/images/temples/temple-baishatun.png"
-    ],
+    "images": ["/assets/images/temples/temple-baishatun.png"],
     "googleMap": "https://maps.app.goo.gl/baishatun"
   },
   {
@@ -30,9 +28,7 @@
     ],
     "description": "Shanbian Mazu is unique for having 'No Temple' for decades, traditionally housed in the home of a chosen representative (Leader of the Incense) each year. A temporary temple was built in 2013. Shanbian Mazu shares a deep sisterly bond with Baishatun Mazu, and for over a century, they have shared the same palanquin during the pilgrimage to Beigang.",
     "history": "The exact origin is unknown, but Shanbian Mazu is estimated to have been in Taiwan for over 300 years. For generations, a 'Rotating Incense Leader' system was used: each year, a divinely chosen household hosted the deity. Since 1953, Shanbian Mazu has shared a palanquin with Baishatun Mazu for the annual walking pilgrimage to Beigang — a tradition unbroken for over 70 years. A temporary temple was built in 2013, ending the rotating worship tradition.",
-    "images": [
-      "/assets/images/temples/temple-baishatun.png"
-    ],
+    "images": ["/assets/images/temples/temple-baishatun.png"],
     "url": "https://www.facebook.com/shanbianmazu/",
     "googleMap": "https://maps.app.goo.gl/shanbian"
   },
@@ -49,9 +45,7 @@
     ],
     "description": "Xiangtianhu (Lake Facing Heaven), nestled in a mountain basin at 738 meters elevation, is the primary ceremonial ground for the Saisiyat people's Pasta'ay (Short Spirit Ritual) — Taiwan's most mysterious and emotionally powerful indigenous ceremony. The lake, shrouded in morning mist and surrounded by mountains, creates an ethereal setting. A minor ritual is held every 2 years and a grand one every 10 years, lasting three continuous nights of solemn chanting and slow, rhythmic dancing — a ceremony of repentance, gratitude, and prayer to the spirits of the ancient ta'ay people. The Pasta'ay is a nationally designated Important Folk Custom. A museum near the site displays sacred instruments including hip bells and ceremonial flags.",
     "history": "The Pasta'ay's origins stretch back hundreds, possibly thousands of years. Legend tells of tiny but mighty ta'ay people who lived alongside the Saisiyat, teaching them farming and songs. When the ta'ay began harassing Saisiyat women, the tribe sabotaged a loquat-tree bridge leading to their settlement, causing the ta'ay to drown. Before dying, the ta'ay cursed the Saisiyat with crop failures. To appease the vengeful spirits, the Saisiyat began performing the Pasta'ay at Xiangtianhu. The ritual songs, said to have been taught by the dying ta'ay, are a precious living artifact of oral tradition. The ceremonial ground maintains its ancient ritual practices to this day.",
-    "images": [
-      "/assets/images/temples/temple-xiangtianhu.png"
-    ]
+    "images": ["/assets/images/temples/temple-xiangtianhu.png"]
   },
   {
     "id": "lecheng",
@@ -70,9 +64,7 @@
     ],
     "description": "Known as the 'Hanxi Mazu Temple', recent Taichung City's oldest Mazu temple and a designated historic monument. It is famous for the 'Hanxi Mazu Pilgrimage around 18 Villages', which lasts for 22 days—the longest Mazu pilgrimage in Taiwan. Reconstructed by the famous master Chen Yingbin, it features exquisite carvings. Beyond Mazu, its Matchmaker (Yuelao) Hall is extremely renowned, often cited as the most effective in Central Taiwan, attracting countless young people seeking love.",
     "history": "Founded in 1753 (Qing Dynasty). Legend has it that the Mazu statue became immovable while resting near the Han River, interpreting it as a divine will to build the temple there. It has witnessed the development of Taichung for over two centuries.",
-    "images": [
-      "/assets/images/temples/temple-lecheng.jpeg"
-    ],
+    "images": ["/assets/images/temples/temple-lecheng.jpeg"],
     "url": "https://www.lecheng.org.tw",
     "googleMap": "https://maps.app.goo.gl/Exgy6BDDyBg3VWBG6"
   },
@@ -89,9 +81,7 @@
     ],
     "description": "Dajia Zhenlan Temple is one of Taiwan's most famous Mazu temples and a major center of Mazu faith. Its annual 9-day pilgrimage in the 3rd lunar month covers over 300km across four counties and attracts millions, listed by Discovery Channel as one of the world's three major religious events. The temple is magnificent, and its basement houses a solid gold Mazu statue weighing 276kg, a testament to the devotion of its followers.",
     "history": "Founded in 1730 by Fujian immigrant Lin Yongxing, who brought a Mazu statue from Meizhou. It has undergone multiple expansions, notably the major reconstruction in 1980, becoming the grand temple seen today. Dajia Mazu is renowned for miracles and serves as a key pillar of Taiwanese folk belief.",
-    "images": [
-      "/assets/images/temples/temple-dajiazhenlan.png"
-    ],
+    "images": ["/assets/images/temples/temple-dajiazhenlan.png"],
     "url": "http://www.dajiamazu.org.tw/",
     "googleMap": "https://maps.app.goo.gl/3Q8x9X5k3Y7qZ6j5"
   },
@@ -108,9 +98,7 @@
     ],
     "description": "Taichung Fahua Temple is a historic Buddhist temple enshrining Manjushri Bodhisattva, the symbol of wisdom. The tranquil grounds blend traditional and modern architecture. Students often visit to pray for wisdom and academic success. The temple regularly hosts Buddhist lectures and meditation retreats.",
     "history": "Founded during the Japanese colonial period as a Buddhist practice center. After WWII, it expanded into an important temple in Taichung's South District, dedicated to promoting Buddhist education based on the Lotus Sutra.",
-    "images": [
-      "/assets/images/temples/temple-taichung-fahua.png"
-    ]
+    "images": ["/assets/images/temples/temple-taichung-fahua.png"]
   },
   {
     "id": "nanyao",
@@ -125,9 +113,7 @@
     ],
     "description": "Changhua Nanyao Temple is a key Mazu temple in Central Taiwan, affectionately known as 'Changhua Ma'. Its architecture is unique: while the main hall is traditional Minnan style, the rear Guanyin Hall is heavily influenced by Western architecture, featuring dormer windows, Greek Doric columns, and Japanese tiles—a rare fusion style. It hosts the 'Bengang Pilgrimage', one of the oldest in Taiwan, preserving ancient rituals like 'Changing the Dragon Robe'.",
     "history": "Originating from a Mazu amulet carried by a potter named Yang Qian in the Qianlong era. The temple was built in 1738 after many miracles. It was one of the first Mazu temples to organize inter-regional pilgrimages to Bengang, pioneering Taiwan's pilgrimage culture. Its 'Mazu Association' is one of the largest and most influential lay organizations.",
-    "images": [
-      "/assets/images/temples/temple-nanyao.png"
-    ],
+    "images": ["/assets/images/temples/temple-nanyao.png"],
     "googleMap": "https://maps.app.goo.gl/1S6uE8kKjXj6JqZ8"
   },
   {
@@ -143,9 +129,7 @@
     ],
     "description": "Lugang Tianhou Temple is unique as the only temple in Taiwan enshrining an original Mazu statue from the ancestral temple in Meizhou. Due to centuries of incense smoke, the statue has turned a glossy black, earning the nickname 'Black-faced Mazu'. Its architecture is magnificent, featuring the exquisite 'Bagua Caisson Ceiling' by master craftsmen. It stands as a witness to the historical prosperity of Lukang. During Chinese New Year, it is a hotspot for lighting 'Beacon Lamps' and praying for good fortune.",
     "history": "Established in 1591. In 1683, Admiral Shi Lang brought the Mazu statue from Meizhou to protect his fleet during the conquest of Taiwan, and it was subsequently enshrined here. A National Monument and a key site for studying Mazu faith and architectural art.",
-    "images": [
-      "/assets/images/temples/temple-lugangmazu.png"
-    ],
+    "images": ["/assets/images/temples/temple-lugangmazu.png"],
     "googleMap": "https://maps.app.goo.gl/H5x8g2K4q5w6e7r9"
   },
   {
@@ -161,9 +145,7 @@
     ],
     "description": "Songboling Shoutian Temple is one of the most important ancestral temples for Xuantian Shangdi worship in Taiwan, with thousands of branch temples. Perched on the southern tip of the Bagua Plateau, it commands a spectacular panoramic view of the Jianan Plain. During the deity's birthday in the 3rd lunar month, pilgrimage groups from all over Taiwan flock here, creating a vibrant religious festival.",
     "history": "Tracing back to 1657 when early immigrants worshipped incense here. The temple was formally built in 1745. Despite damage from the 921 Earthquake and a subsequent fire, it has been beautifully reconstructed, continuing its legacy as a spiritual center.",
-    "images": [
-      "/assets/images/temples/temple-shoutian.png"
-    ],
+    "images": ["/assets/images/temples/temple-shoutian.png"],
     "url": "http://www.shoutian.org.tw/",
     "googleMap": "https://maps.app.goo.gl/shoutian"
   },
@@ -184,9 +166,7 @@
     ],
     "description": "Zhushan Zinan Temple is Taiwan's most famous 'Wealth God Temple', renowned for its 'Prosperity Money Lending' service. Devotees can 'borrow' 600 NTD from the Earth God as seed money for wealth, returning double if blessed with fortune. During Lunar New Year, queues stretch for kilometers. The temple also built the famous 'Golden Bamboo Shoot Restroom' — the most luxurious public toilet in Taiwan.",
     "history": "Founded in 1745 as a small Earth God shrine. Its 'Prosperity Money Lending' tradition gained legendary status for effectiveness, attracting devotees from across Taiwan. The temple wisely invested donations into improving facilities, becoming Zhushan's most important tourism and religious center.",
-    "images": [
-      "/assets/images/temples/temple-zhushan-zinan.png"
-    ]
+    "images": ["/assets/images/temples/temple-zhushan-zinan.png"]
   },
   {
     "id": "beigang-chaotian",
@@ -201,9 +181,7 @@
     ],
     "description": "Beigang Chaotian Temple is a major center of Mazu belief in Taiwan and a National Monument. With branches worldwide, its annual pilgrimage season in the 3rd lunar month attracts millions, a phenomenon known as 'Mazu Frenzy'. The temple architecture is magnificent, preserving rich Qing Dynasty art. As a destination for countless pilgrimages, it holds an esteemed status. The street in front is famous for traditional wedding cakes and sesame oil.",
     "history": "Established in 1694 by Monk Shubi who brought the Mazu statue from Meizhou. Originally a small shrine, it expanded over centuries to its current grandeur. As one of the earliest Mazu temples, it witnesses the history of Beigang.",
-    "images": [
-      "/assets/images/temples/temple-beigangchaotian.png"
-    ],
+    "images": ["/assets/images/temples/temple-beigangchaotian.png"],
     "url": "http://www.matsu.org.tw/",
     "googleMap": "https://maps.app.goo.gl/search/Beigang+Chaotian+Temple"
   },
@@ -220,9 +198,7 @@
     ],
     "description": "Beigang Wude Palace is the founding temple of the Five Road Wealth God faith in Taiwan and the largest of its kind. Dedicated to Zhao Gongming. The temple is majestic, featuring the world's largest 'Sky Treasury' gold furnace for burning 'Wealth Treasury' paper. It is a must-visit for entrepreneurs seeking prosperity. The 'Money Mother' coins distributed during New Year attract tens of thousands.",
     "history": "Originally worshipped in a local herbal medicine shop. Due to its efficacy, the temple was built in 1980. Despite its relatively short history, it rapidly became the center of Wealth God worship in Taiwan.",
-    "images": [
-      "/assets/images/temples/temple-beigangwude.png"
-    ],
+    "images": ["/assets/images/temples/temple-beigangwude.png"],
     "url": "https://www.wude.org.tw/",
     "googleMap": "https://maps.app.goo.gl/search/Beigang+Wude+Palace"
   }

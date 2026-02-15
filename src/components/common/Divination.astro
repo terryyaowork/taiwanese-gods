@@ -110,7 +110,8 @@ const uid = `div-${Math.random().toString(36).slice(2, 8)}`;
       <button
         class="btn-zhibei w-full px-4 sm:px-8 py-3 bg-red-700 hover:bg-red-800 text-white rounded-full font-bold text-base sm:text-lg shadow-md transition-transform transform active:scale-95 flex items-center justify-center mx-auto gap-2"
       >
-        <span>🙌</span> {labels.btnThrow}
+        <span>🙌</span>
+        {labels.btnThrow}
       </button>
 
       <div class="zhibei-meaning text-gray-600 dark:text-gray-400 text-sm mt-2 min-h-[1.5rem]"></div>
@@ -177,7 +178,8 @@ const uid = `div-${Math.random().toString(36).slice(2, 8)}`;
         <button
           class="btn-draw w-full px-4 sm:px-8 py-3 bg-red-700 hover:bg-red-800 border-2 border-red-900 text-white rounded-full font-bold text-base sm:text-lg shadow-md transition-transform transform active:scale-95 flex items-center justify-center mx-auto gap-2"
         >
-          <span>📜</span> {labels.btnDraw}
+          <span>📜</span>
+          {labels.btnDraw}
         </button>
       </div>
     </div>
@@ -190,18 +192,34 @@ const uid = `div-${Math.random().toString(36).slice(2, 8)}`;
     text-orientation: upright;
   }
   @keyframes shake {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(5deg); }
-    50% { transform: rotate(0deg); }
-    75% { transform: rotate(-5deg); }
-    100% { transform: rotate(0deg); }
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
   }
   .animate-shake {
     animation: shake 0.5s ease-in-out infinite;
   }
   @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   .animate-fade-in-up {
     animation: fadeInUp 0.4s ease-out;
@@ -256,12 +274,19 @@ const uid = `div-${Math.random().toString(36).slice(2, 8)}`;
       if (result === 'holy') imgSrc = shengJiaoSrc;
       else if (result === 'laughing') imgSrc = xiaoJiaoSrc;
       else imgSrc = yinJiaoSrc;
-      return '<img src="' + imgSrc + '" class="w-24 h-auto sm:w-32 shadow-sm rounded-full bg-transparent mx-auto" alt="' + result + '" />';
+      return (
+        '<img src="' +
+        imgSrc +
+        '" class="w-24 h-auto sm:w-32 shadow-sm rounded-full bg-transparent mx-auto" alt="' +
+        result +
+        '" />'
+      );
     }
 
     function renderText(result) {
       if (result === 'holy') return { text: labels.holy, color: 'text-red-600', meaning: labels.holyMeaning };
-      if (result === 'laughing') return { text: labels.laughing, color: 'text-green-600', meaning: labels.laughingMeaning };
+      if (result === 'laughing')
+        return { text: labels.laughing, color: 'text-green-600', meaning: labels.laughingMeaning };
       return { text: labels.angry, color: 'text-gray-600', meaning: labels.angryMeaning };
     }
 
@@ -270,14 +295,17 @@ const uid = `div-${Math.random().toString(36).slice(2, 8)}`;
       btnZhibei.disabled = true;
       resultText.style.opacity = '0';
       meaningText.textContent = labels.throwing;
-      resultArea.innerHTML = '<div class="animate-spin w-10 h-10 border-4 border-red-200 border-t-red-600 rounded-full"></div>';
+      resultArea.innerHTML =
+        '<div class="animate-spin w-10 h-10 border-4 border-red-200 border-t-red-600 rounded-full"></div>';
 
       setTimeout(function () {
-        var result = getZhibeiResult();
-        var info = renderText(result);
+        const result = getZhibeiResult();
+        const info = renderText(result);
         resultArea.innerHTML = renderBlocks(result);
         resultText.textContent = info.text;
-        resultText.className = 'zhibei-text absolute bottom-2 left-0 right-0 text-center font-bold text-xl transition-opacity duration-300 ' + info.color;
+        resultText.className =
+          'zhibei-text absolute bottom-2 left-0 right-0 text-center font-bold text-xl transition-opacity duration-300 ' +
+          info.color;
         resultText.style.opacity = '1';
         meaningText.textContent = info.meaning;
         btnZhibei.disabled = false;
@@ -294,7 +322,7 @@ const uid = `div-${Math.random().toString(36).slice(2, 8)}`;
         containerView.classList.remove('animate-shake');
         containerView.classList.add('hidden');
 
-        var num = Math.floor(Math.random() * 60) + 1;
+        const num = Math.floor(Math.random() * 60) + 1;
         currentStick = num;
         stickNumberEl.textContent = labels.stickPrefix + ' ' + num + ' ' + labels.stickSuffix;
 
@@ -313,13 +341,14 @@ const uid = `div-${Math.random().toString(36).slice(2, 8)}`;
     function autoConfirmWithBlocks() {
       // Show spinning indicator
       confirmBlockArea.classList.remove('hidden');
-      confirmBlockImg.innerHTML = '<div class="animate-spin w-8 h-8 border-4 border-red-200 border-t-red-600 rounded-full mx-auto"></div>';
+      confirmBlockImg.innerHTML =
+        '<div class="animate-spin w-8 h-8 border-4 border-red-200 border-t-red-600 rounded-full mx-auto"></div>';
       confirmBlockText.textContent = labels.confirmingBlock;
       confirmBlockText.className = 'confirm-block-text text-sm text-gray-500 mb-1';
 
       setTimeout(function () {
-        var result = getZhibeiResult();
-        var info = renderText(result);
+        const result = getZhibeiResult();
+        const info = renderText(result);
 
         confirmBlockImg.innerHTML = renderBlocks(result);
         confirmBlockText.textContent = info.text;
@@ -335,14 +364,18 @@ const uid = `div-${Math.random().toString(36).slice(2, 8)}`;
             confirmedView.classList.add('flex');
 
             // Dispatch fortune-confirmed event
-            var dataIndex = (currentStick - 1) % fortuneData.length;
-            var fortune = fortuneData[dataIndex];
-            document.dispatchEvent(new CustomEvent('fortune-confirmed', {
-              detail: { stickNumber: currentStick, fortune: fortune }
-            }));
+            const dataIndex = (currentStick - 1) % fortuneData.length;
+            const fortune = fortuneData[dataIndex];
+            document.dispatchEvent(
+              new CustomEvent('fortune-confirmed', {
+                detail: { stickNumber: currentStick, fortune: fortune },
+              })
+            );
 
             // Reset after brief delay
-            setTimeout(function () { resetQianshi(); }, 1500);
+            setTimeout(function () {
+              resetQianshi();
+            }, 1500);
           }, 1000);
         } else {
           // Failed — show fail view after brief pause

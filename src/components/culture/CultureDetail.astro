@@ -1,7 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-const { item, imageSrc, category, categoryLabel, backLink, backLabel, lang = 'zh-TW' } = Astro.props;
+const { item, imageSrc, categoryLabel, backLink, backLabel, lang = 'zh-TW' } = Astro.props;
 
 const detailLabel = lang === 'en' ? 'Detailed Introduction' : lang === 'ja' ? '詳細紹介' : '詳細介紹';
 const tocLabel = lang === 'en' ? 'Contents' : lang === 'ja' ? '目次' : '本文目錄';
@@ -107,57 +107,66 @@ if (currentSection.lines.length > 0 || currentSection.heading) {
     <div class="max-w-6xl mx-auto px-4 sm:px-6 -mt-4 sm:-mt-8 relative z-30">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
         <!-- Left Content -->
-        <div class="lg:col-span-2 space-y-6 sm:space-y-8 bg-white/95 dark:bg-gray-800/95 p-4 sm:p-6 md:p-8 rounded-lg shadow-xl border-t-4 border-red-800">
-
+        <div
+          class="lg:col-span-2 space-y-6 sm:space-y-8 bg-white/95 dark:bg-gray-800/95 p-4 sm:p-6 md:p-8 rounded-lg shadow-xl border-t-4 border-red-800"
+        >
           {/* TOC - only show when there are 2+ sections */}
-          {tocItems.length >= 2 && (
-            <nav class="bg-red-50/60 dark:bg-red-900/20 border border-red-100 dark:border-red-800/50 rounded-lg p-3 sm:p-5 mb-2">
-              <h3 class="font-serif font-bold text-red-900 dark:text-red-300 mb-3 text-sm tracking-widest uppercase">{tocLabel}</h3>
-              <ol class="space-y-1.5">
-                {tocItems.map((tocItem, i) => (
-                  <li>
-                    <a
-                      href={`#${tocItem.id}`}
-                      class="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-400 transition-colors text-[15px]"
-                    >
-                      <span class="text-red-300 dark:text-red-600 text-xs font-mono">{String(i + 1).padStart(2, '0')}</span>
-                      {tocItem.label}
-                    </a>
-                  </li>
-                ))}
-              </ol>
-            </nav>
-          )}
+          {
+            tocItems.length >= 2 && (
+              <nav class="bg-red-50/60 dark:bg-red-900/20 border border-red-100 dark:border-red-800/50 rounded-lg p-3 sm:p-5 mb-2">
+                <h3 class="font-serif font-bold text-red-900 dark:text-red-300 mb-3 text-sm tracking-widest uppercase">
+                  {tocLabel}
+                </h3>
+                <ol class="space-y-1.5">
+                  {tocItems.map((tocItem, i) => (
+                    <li>
+                      <a
+                        href={`#${tocItem.id}`}
+                        class="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-400 transition-colors text-[15px]"
+                      >
+                        <span class="text-red-300 dark:text-red-600 text-xs font-mono">
+                          {String(i + 1).padStart(2, '0')}
+                        </span>
+                        {tocItem.label}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </nav>
+            )
+          }
 
           <section id="content">
             <h2 class="section-title">{detailLabel}</h2>
             <div class="prose prose-lg max-w-none text-gray-700 dark:text-gray-300 leading-relaxed font-serif">
-              {contentSections.map((sec) => (
-                sec.heading ? (
-                  <div id={sec.id} class="scroll-mt-6">
-                    <h3 class="text-xl font-bold text-red-900 dark:text-red-300 mt-8 mb-3 font-serif border-l-4 border-red-700 pl-3">
-                      {sec.heading}
-                    </h3>
-                    {sec.lines.map((line: string) => {
+              {
+                contentSections.map((sec) =>
+                  sec.heading ? (
+                    <div id={sec.id} class="scroll-mt-6">
+                      <h3 class="text-xl font-bold text-red-900 dark:text-red-300 mt-8 mb-3 font-serif border-l-4 border-red-700 pl-3">
+                        {sec.heading}
+                      </h3>
+                      {sec.lines.map((line: string) => {
+                        const trimmed = line.trim();
+                        if (!trimmed) return null;
+                        if (trimmed.startsWith('●') || trimmed.startsWith('-') || trimmed.match(/^\d+\./)) {
+                          return <p class="mb-2 pl-4 text-gray-600 dark:text-gray-400">{trimmed}</p>;
+                        }
+                        return <p class="mb-4">{trimmed}</p>;
+                      })}
+                    </div>
+                  ) : (
+                    sec.lines.map((line: string) => {
                       const trimmed = line.trim();
                       if (!trimmed) return null;
                       if (trimmed.startsWith('●') || trimmed.startsWith('-') || trimmed.match(/^\d+\./)) {
                         return <p class="mb-2 pl-4 text-gray-600 dark:text-gray-400">{trimmed}</p>;
                       }
                       return <p class="mb-4">{trimmed}</p>;
-                    })}
-                  </div>
-                ) : (
-                  sec.lines.map((line: string) => {
-                    const trimmed = line.trim();
-                    if (!trimmed) return null;
-                    if (trimmed.startsWith('●') || trimmed.startsWith('-') || trimmed.match(/^\d+\./)) {
-                      return <p class="mb-2 pl-4 text-gray-600 dark:text-gray-400">{trimmed}</p>;
-                    }
-                    return <p class="mb-4">{trimmed}</p>;
-                  })
+                    })
+                  )
                 )
-              ))}
+              }
             </div>
           </section>
         </div>

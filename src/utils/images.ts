@@ -79,10 +79,7 @@ export const adaptOpenGraphImages = async (
           isUnpicCompatible(resolvedImage)
         ) {
           _image = (await unpicOptimizer(resolvedImage, [defaultWidth], defaultWidth, defaultHeight, 'jpg'))[0];
-        } else if (
-          typeof resolvedImage === 'string' &&
-          resolvedImage.startsWith('/')
-        ) {
+        } else if (typeof resolvedImage === 'string' && resolvedImage.startsWith('/')) {
           return {
             url: String(new URL(resolvedImage, astroSite)),
           };

@@ -48,7 +48,9 @@ const faqs = [
 <Layout metadata={metadata}>
   <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
     <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide">よくある質問</h1>
+      <h1 class="text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide">
+        よくある質問
+      </h1>
       <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
       <p class="text-lg text-gray-700 dark:text-gray-300 font-light max-w-2xl mx-auto">
         お客様からよくいただくご質問をまとめました。お役に立てれば幸いです。
@@ -61,24 +63,43 @@ const faqs = [
           <details class="bg-white/80 dark:bg-gray-800/80 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-5 group">
             <summary class="font-semibold cursor-pointer text-lg text-gray-800 dark:text-gray-200 flex items-center justify-between">
               <span>{faq.q}</span>
-              <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              <svg
+                class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0 ml-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
             </summary>
-            <div class="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700 text-gray-700 dark:text-gray-300 leading-relaxed">{faq.a}</div>
+            <div class="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700 text-gray-700 dark:text-gray-300 leading-relaxed">
+              {faq.a}
+            </div>
           </details>
         ))
       }
     </div>
 
-    <div class="mt-12 bg-red-50/80 dark:bg-red-900/20 p-8 rounded-lg border border-red-100 dark:border-red-800 text-center">
+    <div
+      class="mt-12 bg-red-50/80 dark:bg-red-900/20 p-8 rounded-lg border border-red-100 dark:border-red-800 text-center"
+    >
       <h2 class="text-xl font-bold text-red-900 dark:text-red-300 mb-3">まだ疑問がありますか？</h2>
-      <p class="text-gray-700 dark:text-gray-300 mb-4">上記の回答でご不明な点がございましたら、お気軽にお問い合わせください。</p>
-      <a href="/ja/contact" class="inline-block px-6 py-3 bg-red-800 hover:bg-red-900 text-white rounded-lg transition-colors font-medium">
+      <p class="text-gray-700 dark:text-gray-300 mb-4">
+        上記の回答でご不明な点がございましたら、お気軽にお問い合わせください。
+      </p>
+      <a
+        href="/ja/contact"
+        class="inline-block px-6 py-3 bg-red-800 hover:bg-red-900 text-white rounded-lg transition-colors font-medium"
+      >
         お問い合わせ
       </a>
     </div>
 
     <div class="mt-8 text-center">
-      <a href="/ja" class="inline-block px-6 py-3 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors font-medium">
+      <a
+        href="/ja"
+        class="inline-block px-6 py-3 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors font-medium"
+      >
         ホームに戻る
       </a>
     </div>

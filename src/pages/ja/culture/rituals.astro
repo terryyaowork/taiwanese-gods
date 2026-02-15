@@ -1,6 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import rituals from '~/data/ja/culture-rituals.json';
+import type { ImageMetadata } from 'astro';
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
   '/src/assets/images/culture-rituals/*.{jpeg,jpg,png,webp}',
@@ -24,7 +25,11 @@ const metadata = {
 <Layout metadata={metadata}>
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
     <div class="text-center mb-12">
-      <h1 class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide">祭祀儀式</h1>
+      <h1
+        class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide"
+      >
+        祭祀儀式
+      </h1>
       <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
       <p class="text-lg text-gray-700 dark:text-gray-300 font-light max-w-2xl mx-auto">
         台湾の寺院で行われる一般的な祭祀儀式と参拝の作法をご紹介します。
@@ -60,7 +65,9 @@ const metadata = {
                 </h2>
                 <p class="text-gray-600 dark:text-gray-400 font-light line-clamp-3 leading-relaxed">{ritual.summary}</p>
                 <div class="mt-4 pt-4 border-t border-gold-200/30 flex justify-between items-center">
-                  <span class="text-sm text-gold-500 font-medium group-hover:text-red-700 dark:group-hover:text-red-400 transition">詳しく見る →</span>
+                  <span class="text-sm text-gold-500 font-medium group-hover:text-red-700 dark:group-hover:text-red-400 transition">
+                    詳しく見る →
+                  </span>
                 </div>
               </div>
             </a>

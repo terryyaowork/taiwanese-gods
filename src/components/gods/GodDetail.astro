@@ -1,4 +1,5 @@
 ---
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
 
@@ -85,7 +86,7 @@ const metadata = {
   },
 };
 
-const siteUrl = 'https://taiwanese-gods.vercel.app';
+const siteUrl = 'https://www.taiwanese-gods.org';
 const godPath = `${langPrefix}/gods/${god.category || 'taoism'}/${god.id}`;
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -134,19 +135,32 @@ const jsonLd = {
     <div class="max-w-6xl mx-auto px-4 sm:px-6 -mt-4 sm:-mt-8 relative z-30">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
         <!-- Left Content: Description & Story -->
-        <div class="lg:col-span-2 space-y-6 sm:space-y-8 bg-white/95 dark:bg-gray-800/95 p-4 sm:p-6 md:p-8 rounded-lg shadow-xl border-t-4 border-red-800">
+        <div
+          class="lg:col-span-2 space-y-6 sm:space-y-8 bg-white/95 dark:bg-gray-800/95 p-4 sm:p-6 md:p-8 rounded-lg shadow-xl border-t-4 border-red-800"
+        >
           <!-- TOC -->
-          <nav class="bg-red-50/60 dark:bg-red-900/20 border border-red-100 dark:border-red-800/50 rounded-lg p-3 sm:p-5">
-            <h3 class="font-serif font-bold text-red-900 dark:text-red-300 mb-3 text-sm tracking-widest uppercase">{tocLabel}</h3>
+          <nav
+            class="bg-red-50/60 dark:bg-red-900/20 border border-red-100 dark:border-red-800/50 rounded-lg p-3 sm:p-5"
+          >
+            <h3 class="font-serif font-bold text-red-900 dark:text-red-300 mb-3 text-sm tracking-widest uppercase">
+              {tocLabel}
+            </h3>
             <ol class="space-y-1.5">
-              {tocItems.map((item, i) => (
-                <li>
-                  <a href={`#${item.id}`} class="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-400 transition-colors text-[15px]">
-                    <span class="text-red-300 dark:text-red-600 text-xs font-mono">{String(i + 1).padStart(2, '0')}</span>
-                    {item.label}
-                  </a>
-                </li>
-              ))}
+              {
+                tocItems.map((item, i) => (
+                  <li>
+                    <a
+                      href={`#${item.id}`}
+                      class="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-400 transition-colors text-[15px]"
+                    >
+                      <span class="text-red-300 dark:text-red-600 text-xs font-mono">
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
+                      {item.label}
+                    </a>
+                  </li>
+                ))
+              }
             </ol>
           </nav>
 
@@ -202,7 +216,9 @@ const jsonLd = {
                           </span>
                         </h4>
                         <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">{t.location}</p>
-                        {t.deityStory && <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 italic">{t.deityStory}</p>}
+                        {t.deityStory && (
+                          <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 italic">{t.deityStory}</p>
+                        )}
                       </div>
                     </a>
                   ) : (
@@ -213,7 +229,9 @@ const jsonLd = {
                           <span class="ml-auto text-xs text-gray-400">🔗</span>
                         </h4>
                         <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">{t.location}</p>
-                        {t.deityStory && <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 italic">{t.deityStory}</p>}
+                        {t.deityStory && (
+                          <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 italic">{t.deityStory}</p>
+                        )}
                       </div>
                     </a>
                   );
@@ -235,7 +253,9 @@ const jsonLd = {
           </div>
 
           <!-- Divination CTA -->
-          <div class="bg-gradient-to-br from-red-50 to-amber-50 dark:from-red-900/20 dark:to-amber-900/20 p-6 rounded-xl border-2 border-red-200 dark:border-red-800/50 shadow-lg text-center">
+          <div
+            class="bg-gradient-to-br from-red-50 to-amber-50 dark:from-red-900/20 dark:to-amber-900/20 p-6 rounded-xl border-2 border-red-200 dark:border-red-800/50 shadow-lg text-center"
+          >
             <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-gold-300 shadow-md mx-auto mb-3">
               <img src={imageSrc} alt={god.name} class="w-full h-full object-cover" />
             </div>
@@ -243,7 +263,13 @@ const jsonLd = {
               {lang === 'en' ? 'Seek Divine Guidance' : lang === 'ja' ? '神様に祈願する' : '向' + god.name + '誠心祈求'}
             </h3>
             <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
-              {lang === 'en' ? 'Cast moon blocks or draw fortune sticks' : lang === 'ja' ? '筊杯占い・おみくじ' : '擲筊問事 · 求籤解惑'}
+              {
+                lang === 'en'
+                  ? 'Cast moon blocks or draw fortune sticks'
+                  : lang === 'ja'
+                    ? '筊杯占い・おみくじ'
+                    : '擲筊問事 · 求籤解惑'
+              }
             </p>
             <a
               href={`${langPrefix}/fortune?god=${god.id}`}

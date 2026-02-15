@@ -2,10 +2,7 @@
   {
     "id": "sanshan-guowang",
     "name": "Sanshan Guowang (Three Mountain Kings)",
-    "aliases": [
-      "Three Mountain Kings",
-      "Kings of the Three Mountains"
-    ],
+    "aliases": ["Three Mountain Kings", "Kings of the Three Mountains"],
     "domain": "Guardian of Hakka communities, mountain protection, blessing agriculture",
     "description": "Sanshan Guowang (Three Mountain Kings) is the most representative Hakka deity, originating from three mountain gods — Jin Mountain, Ming Mountain, and Du Mountain — in Jieyang, Chaozhou, Guangdong. While originally a multi-ethnic faith in Chaozhou, it became closely associated with Hakka settlers in Taiwan due to their devoted worship. The saying 'wherever there is a Sanshan Guowang temple, there are Hakka people' reflects this deep connection. Beyond blessing agriculture and guarding mountain borders, the Three Kings served as a spiritual pillar for Hakka immigrants forging identity in unfamiliar territory. Over 170 temples exist across Taiwan, concentrated in Hakka-majority areas such as Taoyuan, Hsinchu, Miaoli, and Pingtung.",
     "story": "Legend identifies the Three Kings as three sworn brothers — Lian Jie (King of Jin Mountain), Zhao Xuan (King of Ming Mountain), and Qiao Jun (King of Du Mountain) — righteous men from the late Sui Dynasty who protected their communities from bandits. When Song Dynasty founder Zhao Kuangyin established his empire, the three mountain spirits miraculously aided his campaigns, earning them the royal title 'Three Mountain Kings' and an imperially sanctioned temple. Another interpretation sees them as ancient nature spirits personified through centuries of imperial honors. For Hakka people, the Three Kings are the most intimate guardian deities — wherever they migrated, they carried the incense. During Qing-era ethnic conflicts in Taiwan, Sanshan Guowang temples often served as defensive strongholds for Hakka settlements, intertwining the faith with Hakka collective memory.",
@@ -32,11 +29,7 @@
   {
     "id": "yimin",
     "name": "Yimin Ye (Righteous People Lord)",
-    "aliases": [
-      "Yimin Lord",
-      "Lord of the Righteous",
-      "Loyal and Righteous Lord"
-    ],
+    "aliases": ["Yimin Lord", "Lord of the Righteous", "Loyal and Righteous Lord"],
     "domain": "Homeland defense, spirit of loyalty and righteousness, Hakka community protection",
     "description": "Yimin Ye is the most unique and iconic Hakka faith, found exclusively in Taiwan. 'Yimin' (Righteous People) refers to Hakka militiamen who sacrificed their lives defending their communities during Qing Dynasty upheavals — particularly the Zhu Yigui Incident (1721) and the Lin Shuangwen Rebellion (1786). These ancestors voluntarily organized militias to protect their homes, and many died heroically. Descendants enshrined their spirits collectively as 'Yimin Ye.' Unlike typical deity worship seeking supernatural blessings, this faith is fundamentally an act of gratitude and remembrance for ancestral sacrifice — a 'humans becoming gods' tradition embodying the Hakka values of loyalty, solidarity, and fearless sacrifice. The annual Yimin Festival in the 7th lunar month is the grandest Hakka religious celebration in Taiwan, hosted in rotation by 15 village alliances across the Taoyuan-Hsinchu region, serving as the core event for Hakka cultural identity.",
     "story": "In 1786, the Lin Shuangwen Rebellion erupted in Changhua. Hakka communities in the Hsinchu-Taoyuan region formed volunteer militias to defend their homeland, fighting dozens of bloody battles. After peace was restored, over 200 fallen warriors were buried together in Fangliao (modern-day Xinpu, Hsinchu County), and villagers built a temple beside the tomb. Emperor Qianlong honored their loyalty with the characters 'Bao Zhong' (Praise Loyalty), giving the temple its full name 'Baozhong Ting Yimin Temple.' Subsequent fallen volunteers from other incidents were also enshrined there, making it the spiritual symbol of Taiwanese Hakka identity. Remarkably, the faith centers on a tomb rather than deity statues — a unique feature in Taiwan's temple culture. The Yimin Tomb behind the temple remains the sacred core, where elaborate ceremonies are held during the annual festival.",
@@ -49,20 +42,14 @@
       }
     ],
     "image": "/assets/images/gods/yimin.png",
-    "associatedTemples": [
-      "Xinpu Baozhong Yimin Temple (Xinpu Township, Hsinchu County)"
-    ],
+    "associatedTemples": ["Xinpu Baozhong Yimin Temple (Xinpu Township, Hsinchu County)"],
     "worship": "Yimin Ye worship is strikingly different from typical deity worship. The most remarkable feature is the absence of a deity statue — worship centers on the \"Yimin Tomb\" (mass grave), where devotees offer incense before the burial site. The primary offerings are the Three Sacrificial Animals, with pork being paramount, reflecting the Hakka tradition of offering the most generous sacrifices to honor ancestral heroes. The \"Divine Pig Competition\" (Sai Shen Zhu) is iconic — devotees raise enormous pigs as sacrificial offerings, with some reaching over 1,000 catties (600 kg). Another unique tradition is \"Feng Fan\" (offering rice), where rotating village communities bring daily meals to the temple for the Yimin Ye, as if serving revered family elders — a practice found nowhere else in Taiwanese temple culture.",
     "festivals": "The \"Yimin Festival\" on the 20th of the 7th lunar month is the grandest annual Hakka celebration in Taiwan. The 15 village alliances in the Taoyuan-Hsinchu region take turns hosting, with each alliance serving once in a 15-year cycle. The multi-day celebration includes: the \"Feng Fan Procession\" (villagers carrying meals from all directions to the temple on foot), the \"Divine Pig Competition\" (showcasing prize pigs that can weigh over half a ton), \"Water Lantern Release\" (floating lanterns on rivers to guide wandering spirits), and nighttime \"Pole-carrying Processions.\" Designated a National Important Folk Custom in 2008, the Yimin Festival offers the most authentic window into Taiwanese Hakka culture and values."
   },
   {
     "id": "bo_gong",
     "name": "Bo Gong (Earth God)",
-    "aliases": [
-      "Fude Zhengshen",
-      "Tudigong",
-      "Bo Gong"
-    ],
+    "aliases": ["Fude Zhengshen", "Tudigong", "Bo Gong"],
     "domain": "Guardian of the land, wealth, agriculture, and local community",
     "description": "Hakka people call the Earth God \"Bo Gong\" (Great Uncle), treating him with the warmth and familiarity of a beloved family elder — this intimate relationship is the most endearing quality of Hakka faith. Bo Gong shrines are found everywhere in Hakka villages: \"Field-head Bo Gong\" guards the crops, \"Water-head Bo Gong\" watches over irrigation, \"Village-entrance Bo Gong\" protects comings and goings, and \"Mountain-foot Bo Gong\" guards the forests. Hakka Bo Gong shrines come in many forms — from proper temples to roadside stone altars to the most primitive \"stone shelters\" (three stone slabs forming a simple shrine). Unlike the ornate Earth God temples in Hokkien areas, Hakka Bo Gong shrines blend into the natural landscape — under old trees, beside water channels, along rice paddy ridges — simple yet warm with human connection. In Hakka towns like Meinong and Beipu, Bo Gong worship includes the unique \"Doing Bo Gong Blessing\" ceremony where villagers gather for communal meals at the shrine, combining gratitude to Bo Gong with community bonding.",
     "story": "Bo Gong faith originates from the Chinese reverence for the land itself. When Hakka ancestors crossed the sea to Taiwan, the first thing they did upon settling new territory was establish a Bo Gong altar, praying for the Earth God's blessing on their pioneering efforts. Legend says Bo Gong was originally a man named Zhang Fude, an incorruptible official in life who was generous and kind. After his death, the people honored his virtue by deifying him as the God of the Land. When Hakka settlers came to Taiwan, they blended their hometown Bo Gong faith with the local environment, developing unique worship practices. In the Meinong area, besides the traditional Bo Gong, there exists a distinctive form called \"Li She Zhen Guan\" (Village Official), which incorporates elements of Pingpu (plains indigenous) earth worship, reflecting the cultural fusion between Hakka settlers and indigenous peoples. The \"Five Grain Bo Gong\" in the Beipu area is especially revered by farmers during planting season. The total number of Bo Gong shrines in Hakka villages across Taiwan is incalculable — Meinong alone has over 300, likely the densest concentration of sacred altars anywhere.",
@@ -74,20 +61,14 @@
       }
     ],
     "image": "/assets/images/gods/bo_gong.png",
-    "associatedTemples": [
-      "Local Bo Gong Shrines (Hakka Villages)"
-    ],
+    "associatedTemples": ["Local Bo Gong Shrines (Hakka Villages)"],
     "worship": "Hakka worship of Bo Gong is humble and heartwarming, full of everyday charm. Daily offerings are simple — fruits, tea, or rice wine — while festivals call for the Three Sacrificial Animals and sweet rice cakes (nian gao). Hakka people traditionally visit Bo Gong on the 1st and 15th of each lunar month, though the most devout go daily. The most distinctively Hakka ritual is \"Doing Bo Gong Blessing\" (Zuo Bo Gong Fu) — also called \"Eating Bo Gong Blessing\" — where village residents take turns preparing meals and dining together at the Bo Gong shrine. This is not merely worship but a social event strengthening neighborhood bonds, making it a vital source of Hakka community cohesion. Before and after farming seasons, families also specifically visit the Field-head Bo Gong to pray for or give thanks for the harvest.",
     "festivals": "The 2nd day of the 2nd lunar month — \"Bo Gong's Birthday\" (Earth God's Birthday) — is the most widely celebrated Bo Gong festival in Hakka villages. Shrines are decorated with lanterns and banners, and devotees bring offerings to celebrate. The 15th of the 8th lunar month is another important date, when Hakka people \"Give Thanks for Peace,\" expressing gratitude for Bo Gong's protection throughout the year. In Meinong, a springtime \"Bo Gong Village Patrol\" event features devotees carrying the Bo Gong sedan chair through the settlement, praying for community-wide peace — it has become a significant cultural tourism activity. During Bo Gong's Birthday in Beipu, the celebration is combined with \"Hakka Pounded Tea\" (Lei Cha) experiences, inviting visitors to discover the warmth and uniqueness of Hakka Bo Gong faith."
   },
   {
     "id": "cankui-zushi",
     "name": "Cankui Zushi (Master of Humility)",
-    "aliases": [
-      "Cankui Zushi Gong",
-      "Zushi Gong",
-      "Yinlin Mountain Master"
-    ],
+    "aliases": ["Cankui Zushi Gong", "Zushi Gong", "Yinlin Mountain Master"],
     "domain": "Guardian of Hakka immigrants, mountain and forest protection, blessing land cultivation",
     "description": "Cankui Zushi (Master of Humility) is one of the most important guardian deities for Hakka communities in central Taiwan, with a particularly strong following in Nantou, Changhua, and Yunlin counties. The faith originated in Zhangzhou, Fujian Province, and crossed the Taiwan Strait with Hakka immigrants, becoming a vital spiritual anchor for settlers confronting the hardships of clearing wild mountain terrain. Cankui Zushi is revered for his power to pacify mountains and forests, ward off plagues, and bless agricultural endeavors — making him the deity Hakka pioneers relied upon most when taming the untamed frontier.",
     "story": "Several legends surround the origins of Cankui Zushi. The most widely told recounts that he was a Tang Dynasty monk or ascetic who, during his spiritual cultivation, failed to rescue suffering villagers in time. On his deathbed, overcome with deep remorse, he vowed to become a guardian spirit and protect the people for all eternity. His name, literally meaning 'Master of Shame and Humility,' reflects this profound self-reflection and selfless devotion — qualities that resonate deeply with the Hakka ethos of moral introspection. An alternative tradition identifies him as a Song Dynasty hermit who practiced austerities on Yinlin Mountain, attaining supernatural powers to summon wind and rain and drive away wild beasts. Grateful mountain dwellers built a temple in his honor. Regardless of which version one follows, Cankui Zushi embodies courage in the face of adversity and compassion for others — ideals that Hakka people hold dear.",
@@ -114,11 +95,7 @@
   {
     "id": "dingguang-gufo",
     "name": "Dingguang Gufo (Ancient Buddha of Steady Light)",
-    "aliases": [
-      "Dingguang Buddha",
-      "Dingguang Grand Master",
-      "Dingguang Fozu"
-    ],
+    "aliases": ["Dingguang Buddha", "Dingguang Grand Master", "Dingguang Fozu"],
     "domain": "Guardian of Tingzhou Hakka immigrants, safe sea passage, blessing and disaster relief",
     "description": "Dingguang Gufo (Ancient Buddha of Steady Light) is the most important guardian deity for Hakka immigrants from the Tingzhou region of Fujian Province. The faith traveled to Taiwan with Tingzhou Hakka settlers. The most celebrated site of Dingguang Gufo worship in Taiwan is the Yin Mountain Temple (Yinshan Si) in Tamsui, New Taipei City. Built during the Daoguang era of the Qing Dynasty, it is the only temple in Taiwan dedicated primarily to Dingguang Gufo and historically served as both a religious sanctuary and a social hub for Tingzhou Hakka immigrants.",
     "story": "The historical figure behind Dingguang Gufo was Zheng Ziyan, a Buddhist monk from the Northern Song Dynasty who lived in Tingzhou, Fujian. He entered monastic life as a child and spent decades in rigorous ascetic practice deep within a cave in Wuping County, ultimately achieving spiritual enlightenment. Legend tells that he used his Buddhist powers to subdue a rampaging river dragon and a menacing tiger that had terrorized the people of Tingzhou, delivering them from great suffering. After his passing, his physical body was found to be miraculously preserved — incorrupt and lifelike — and the faithful honored him as 'Dingguang Gufo' (Ancient Buddha of Steady Light). The Southern Song Emperor Lizong bestowed upon him the title 'Dingguang Yuanying Puci Tongsheng Grand Master,' and his veneration spread widely throughout the Tingzhou region. When large numbers of Tingzhou Hakka settlers migrated to Taiwan during the Qing Dynasty, they brought Dingguang Gufo with them as a spiritual comfort and protector during the perilous journey across the strait to an unfamiliar land.",
@@ -130,21 +107,14 @@
       }
     ],
     "image": "/assets/images/gods/god-dingguang-gufo.png",
-    "associatedTemples": [
-      "Tamsui Yin Mountain Temple (Tamsui District, New Taipei City)"
-    ],
+    "associatedTemples": ["Tamsui Yin Mountain Temple (Tamsui District, New Taipei City)"],
     "worship": "Offerings to Dingguang Gufo are primarily fresh flowers, vegetarian fruits, and plain tea. Given his Buddhist origins, meat offerings are generally not used. Devotees pray for safe voyages, disaster relief, and family harmony. Descendants of Tingzhou Hakka immigrants make regular pilgrimages to Yinshan Si each year to pay respects and maintain the bonds of their shared heritage.",
     "festivals": "The 6th day of the 1st lunar month marks the birthday of Dingguang Gufo. Yin Mountain Temple holds a birthday blessing ceremony, drawing Tingzhou Hakka descendants from across the region to gather in worship. The temple also organizes exhibitions and cultural activities related to Hakka heritage, promoting awareness of Tingzhou Hakka history and religious traditions."
   },
   {
     "id": "shennong",
     "name": "Wugu Shennong Dadi (Divine Farmer Emperor)",
-    "aliases": [
-      "Shennong Dadi",
-      "Wugu Xiandi",
-      "Five Grain King",
-      "Medicine King"
-    ],
+    "aliases": ["Shennong Dadi", "Wugu Xiandi", "Five Grain King", "Medicine King"],
     "domain": "Bountiful harvests, herbal medicine and health, peace over the five grains",
     "description": "Wugu Shennong Dadi (Divine Farmer Emperor of the Five Grains) is an immensely important agricultural guardian deity for Hakka communities in Taiwan. As a people whose livelihood depended on farming, the Hakka held an especially deep and earnest devotion to Shennong. The legend of Shennong tasting hundreds of herbs and teaching humanity the art of agriculture is woven deeply into Hakka cultural identity. In Hakka towns across Miaoli, Hsinchu, and beyond, nearly every settlement has a temple or co-enshrined altar dedicated to Shennong — he is the spiritual heart of Hakka agrarian society.",
     "story": "Shennong is one of the Three Sovereigns of Chinese civilization. According to legend, he had a human body with the head of an ox and a transparent abdomen that allowed him to observe the effects of herbs as they passed through his body. He tasted hundreds of wild plants, identifying their medicinal properties and toxicity, thereby laying the foundations of traditional Chinese medicine. He also taught the people to farm — fashioning the lei and si (primitive plows), distinguishing the five grains (rice, millet, sorghum, wheat, and beans) — guiding humanity from a life of hunting and gathering into settled agriculture. The legend holds that Shennong ultimately sacrificed his own life after ingesting a fatally toxic herb called 'Heartbreak Grass,' completing his service to humankind at the ultimate cost. The Hakka people honor him as 'Wugu Xiandi' (First Emperor of the Five Grains), expressing their profound gratitude for his contributions in founding agricultural civilization and herbal medicine.",
@@ -171,11 +141,7 @@
   {
     "id": "hakka-mazu",
     "name": "Hakka Mazu (Hakka Sea Goddess)",
-    "aliases": [
-      "Tianshang Shengmu",
-      "Mazu Po",
-      "Holy Mother Goddess"
-    ],
+    "aliases": ["Tianshang Shengmu", "Mazu Po", "Holy Mother Goddess"],
     "domain": "Maritime protection, travel safety, guardian of Hakka immigrants",
     "description": "While Mazu worship is most commonly associated with Hokkien communities, a deep and distinctive tradition of Mazu devotion also thrives in Hakka settlements, giving rise to a unique 'Hakka Mazu' culture. Mazu temples in Hakka areas such as Hsinchu, Miaoli, and Kaohsiung's Meinong district have developed their own character — incorporating Hakka elements into their ritual practices, temple architecture, and festival celebrations. This blending represents the Hakka community's own localized interpretation of Mazu faith, distinct from its Hokkien counterpart.",
     "story": "The Mazu legend in Hakka communities mirrors the Hokkien tradition: Lin Moniang, born on Meizhou Island in Putian, Fujian Province during the Song Dynasty, displayed extraordinary intelligence and spiritual sensitivity from childhood. She could predict the weather and rescue fishermen from perilous seas. At the age of twenty-eight, she ascended to heaven from Meizhou Island and was venerated by coastal peoples as the guardian goddess of the sea. Although Hakka ancestors traditionally lived in mountainous inland areas, they too depended upon Mazu's protection during the treacherous sea crossing to Taiwan. After settling on the island, Hakka communities gradually infused their Mazu temples with distinctive cultural touches — Hakka floral fabric decorations, couplets written in the Hakka language, and festival celebrations featuring Hakka mountain songs and Bayin (Eight Sounds) music ensembles — creating a 'Hakka Mazu' tradition quite unlike any other.",

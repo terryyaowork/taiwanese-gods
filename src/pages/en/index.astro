@@ -21,22 +21,37 @@ const websiteJsonLd = {
   '@type': 'WebSite',
   name: 'Taiwanese Deities',
   alternateName: '台灣神明介紹',
-  url: 'https://taiwanese-gods.vercel.app/en',
+  url: 'https://www.taiwanese-gods.org/en',
   description: "Explore Taiwan's rich deity culture, temple heritage, and folk traditions.",
   inLanguage: ['en', 'zh-TW'],
   publisher: {
     '@type': 'Organization',
     name: 'Taiwanese Deities',
-    url: 'https://taiwanese-gods.vercel.app',
+    url: 'https://www.taiwanese-gods.org',
   },
 };
 
 const sections = [
-  { title: 'Taoist Deities', desc: 'Mazu, Guan Sheng Di Jun, City God, and more', href: '/en/gods/taoism', img: imgMazu },
-  { title: 'Buddhist Deities', desc: 'Guanyin, Shakyamuni Buddha, Ksitigarbha', href: '/en/gods/buddhism', img: imgGuanyin },
+  {
+    title: 'Taoist Deities',
+    desc: 'Mazu, Guan Sheng Di Jun, City God, and more',
+    href: '/en/gods/taoism',
+    img: imgMazu,
+  },
+  {
+    title: 'Buddhist Deities',
+    desc: 'Guanyin, Shakyamuni Buddha, Ksitigarbha',
+    href: '/en/gods/buddhism',
+    img: imgGuanyin,
+  },
   { title: 'Folk Beliefs', desc: 'God of Wealth, Earth God, Matchmaker God', href: '/en/gods/folk', img: imgCaishen },
   { title: 'Hakka Beliefs', desc: 'Three Mountain Kings and Yimin Lord', href: '/en/gods/hakka', img: imgSanshan },
-  { title: 'Indigenous Beliefs', desc: 'Alizu and ancestral spirit traditions', href: '/en/gods/indigenous', img: imgAlizu },
+  {
+    title: 'Indigenous Beliefs',
+    desc: 'Alizu and ancestral spirit traditions',
+    href: '/en/gods/indigenous',
+    img: imgAlizu,
+  },
   { title: 'Temples', desc: 'Explore famous temples across Taiwan', href: '/en/temples/north', img: null },
 ];
 
@@ -61,7 +76,8 @@ const interactiveFeatures = [
   },
 ];
 
-const introText = "A multilingual platform showcasing Taiwanese deity worship, temple culture, folk customs, and cultural heritage.";
+const introText =
+  'A multilingual platform showcasing Taiwanese deity worship, temple culture, folk customs, and cultural heritage.';
 ---
 
 <Layout metadata={metadata}>

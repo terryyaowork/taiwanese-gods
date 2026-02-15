@@ -28,7 +28,6 @@ const getGodImage = (imagePath) => {
 
 const godImage = getGodImage(god.image);
 const godImageSrc = typeof godImage === 'object' ? godImage.src : godImage;
-
 ---
 
 <GodDetail god={god} imageSrc={godImageSrc} />

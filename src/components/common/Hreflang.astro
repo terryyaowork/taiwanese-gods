@@ -12,7 +12,7 @@
  */
 import { SITE } from 'astrowind:config';
 
-const siteUrl = (SITE?.site || 'https://taiwanese-gods.vercel.app').replace(/\/$/, '');
+const siteUrl = (SITE?.site || 'https://www.taiwanese-gods.org').replace(/\/$/, '');
 const pathname = Astro.url.pathname;
 
 // Determine the base path (without language prefix)
@@ -32,16 +32,15 @@ if (pathname.startsWith('/en/') || pathname === '/en') {
   basePath = pathname;
 }
 
-const alternates = !skip && basePath
-  ? [
-      { lang: 'zh-TW', href: `${siteUrl}${basePath}` },
-      { lang: 'en', href: `${siteUrl}/en${basePath === '/' ? '' : basePath}` },
-      { lang: 'ja', href: `${siteUrl}/ja${basePath === '/' ? '' : basePath}` },
-      { lang: 'x-default', href: `${siteUrl}${basePath}` },
-    ]
-  : [];
+const alternates =
+  !skip && basePath
+    ? [
+        { lang: 'zh-TW', href: `${siteUrl}${basePath}` },
+        { lang: 'en', href: `${siteUrl}/en${basePath === '/' ? '' : basePath}` },
+        { lang: 'ja', href: `${siteUrl}/ja${basePath === '/' ? '' : basePath}` },
+        { lang: 'x-default', href: `${siteUrl}${basePath}` },
+      ]
+    : [];
 ---
 
-{alternates.map(({ lang, href }) => (
-  <link rel="alternate" hreflang={lang} href={href} />
-))}
+{alternates.map(({ lang, href }) => <link rel="alternate" hreflang={lang} href={href} />)}

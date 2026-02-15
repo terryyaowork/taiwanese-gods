@@ -29,7 +29,11 @@ const getTempleImage = (imagePath) => {
 <Layout metadata={metadata}>
   <div class="max-w-6xl mx-auto px-4 py-12">
     <div class="text-center mb-12">
-      <h1 class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide">南部廟宇巡禮</h1>
+      <h1
+        class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide"
+      >
+        南部廟宇巡禮
+      </h1>
       <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
       <p class="text-lg text-gray-700 dark:text-gray-300 font-light max-w-2xl mx-auto">
         介紹台灣南部代表性廟宇，包含主祀神明、歷史與文化特色。
@@ -60,10 +64,10 @@ const getTempleImage = (imagePath) => {
                 <h2 class="text-xl sm:text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-2 group-hover:text-red-700 dark:group-hover:text-red-400 transition">
                   {temple.name}
                 </h2>
-                <div class="text-sm font-medium text-gold-300 mb-3 tracking-wider uppercase">
-                  {temple.location}
-                </div>
-                <p class="text-gray-600 dark:text-gray-400 font-light line-clamp-3 leading-relaxed">{temple.description}</p>
+                <div class="text-sm font-medium text-gold-300 mb-3 tracking-wider uppercase">{temple.location}</div>
+                <p class="text-gray-600 dark:text-gray-400 font-light line-clamp-3 leading-relaxed">
+                  {temple.description}
+                </p>
               </div>
             </a>
           );

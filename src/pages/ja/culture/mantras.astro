@@ -5,14 +5,19 @@ import mantras from '~/data/ja/culture-mantras.json';
 const metadata = {
   title: '真言・経典 | 台湾の文化 — 台湾の神様紹介',
   ignoreTitleTemplate: true,
-  description: '大悲咒、般若心経、六字大明咒、緑度母心咒、準提神咒、薬師如来真言など、台湾仏教・道教の重要な真言と経典をご紹介します。',
+  description:
+    '大悲咒、般若心経、六字大明咒、緑度母心咒、準提神咒、薬師如来真言など、台湾仏教・道教の重要な真言と経典をご紹介します。',
 };
 ---
 
 <Layout metadata={metadata}>
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
     <div class="text-center mb-12">
-      <h1 class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide">真言・経典</h1>
+      <h1
+        class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide"
+      >
+        真言・経典
+      </h1>
       <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
       <p class="text-lg text-gray-700 dark:text-gray-300 font-light max-w-2xl mx-auto">
         台湾仏教・道教の重要な真言、陀羅尼、経典の由来、意味、修行方法をご紹介します。
@@ -39,7 +44,9 @@ const metadata = {
               </h2>
               <p class="text-gray-600 dark:text-gray-400 font-light line-clamp-3 leading-relaxed">{item.summary}</p>
               <div class="mt-4 pt-4 border-t border-gold-200/30 flex justify-between items-center">
-                <span class="text-sm text-gold-500 font-medium group-hover:text-red-700 dark:group-hover:text-red-400 transition">詳しく見る →</span>
+                <span class="text-sm text-gold-500 font-medium group-hover:text-red-700 dark:group-hover:text-red-400 transition">
+                  詳しく見る →
+                </span>
               </div>
             </div>
           </a>

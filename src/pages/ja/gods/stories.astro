@@ -22,7 +22,9 @@ const metadata = {
             <img src={story.images[0]} alt={story.title} class="w-full h-40 object-cover object-top rounded mb-4" />
           )}
           <h2 class="text-xl font-semibold mb-2">{story.title}</h2>
-          <div class="mb-1 text-gray-600 dark:text-gray-400">主な神様: {story.mainDeities.map((d) => d.name).join(', ')}</div>
+          <div class="mb-1 text-gray-600 dark:text-gray-400">
+            主な神様: {story.mainDeities.map((d) => d.name).join(', ')}
+          </div>
           <p class="mb-2 text-gray-700 dark:text-gray-300">{story.summary}</p>
         </a>
       ))

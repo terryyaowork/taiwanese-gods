@@ -39,7 +39,6 @@ function getGodDetails(id: string) {
   if (buddhistGods.some((g) => g.id === id)) category = 'buddhism';
   if (folkGods.some((g) => g.id === id)) category = 'folk';
 
-  // @ts-ignore
   const finalSrc = getGodImage(god.image);
 
   return {
@@ -53,7 +52,11 @@ function getGodDetails(id: string) {
 <Layout metadata={metadata}>
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
     <div class="text-center mb-12">
-      <h1 class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide">神明指南</h1>
+      <h1
+        class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide"
+      >
+        神明指南
+      </h1>
       <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
       <p class="text-lg text-gray-700 dark:text-gray-300 font-light max-w-2xl mx-auto">
         遇見人生的難題，該向哪位神明祈求指引？這裡為您整理各種情境的參拜指南。
@@ -89,7 +92,8 @@ function getGodDetails(id: string) {
               {category.tips && (
                 <div class="bg-red-50/80 dark:bg-red-900/20 p-4 rounded-lg border border-red-100 dark:border-red-800 mb-5">
                   <p class="text-sm text-red-900 dark:text-red-300 leading-relaxed">
-                    <span class="font-bold">參拜秘訣：</span>{category.tips}
+                    <span class="font-bold">參拜秘訣：</span>
+                    {category.tips}
                   </p>
                 </div>
               )}
@@ -108,12 +112,7 @@ function getGodDetails(id: string) {
                       >
                         <div class="w-7 h-7 rounded-full overflow-hidden flex-shrink-0 bg-gray-200 dark:bg-gray-600 border border-gray-300 dark:border-gray-500">
                           {god.finalSrc && (
-                            <img
-                              src={god.finalSrc}
-                              alt={god.name}
-                              class="w-full h-full object-cover"
-                              loading="lazy"
-                            />
+                            <img src={god.finalSrc} alt={god.name} class="w-full h-full object-cover" loading="lazy" />
                           )}
                         </div>
                         <span class="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-red-700 dark:group-hover:text-red-400 transition-colors">
