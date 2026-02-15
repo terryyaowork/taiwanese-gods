@@ -1,0 +1,12 @@
+---
+import temples from '~/data/ja/temples-east.json';
+
+export async function getStaticPaths() {
+  return temples.map((temple) => ({
+    params: { id: temple.id },
+  }));
+}
+
+const { id } = Astro.params;
+return Astro.redirect(`/ja/temples/${id}`);
+---

@@ -1,0 +1,585 @@
+[
+  {
+    "id": "guansheng",
+    "name": "Guan Sheng Di Jun (Lord Guan)",
+    "aliases": [
+      "Lord Guan",
+      "Guan Yu",
+      "God of War and Wealth"
+    ],
+    "category": "taoism",
+    "domain": "God of war, wealth, loyalty and righteousness",
+    "description": "Guan Sheng Di Jun, originally named Guan Yu (styled Yunchang), was a legendary general of the Shu Han kingdom during the Three Kingdoms period. He is one of the most revered deities in Taiwan, serving as the patron saint of business, law enforcement, and brotherhood.\n\nHis divine jurisdiction spans two major domains: loyalty/righteousness and wealth. Merchants worship him for business prosperity and ethical dealings; students pray for academic success (as Guan Yu was known for studying the Spring and Autumn Annals); and families seek his protection and blessing.\n\nGuan Yu worship originated in China and spread to Taiwan during the Ming and Qing Dynasty migrations. Successive emperors elevated his title from marquis to king to emperor, culminating in the title 'Guan Sheng Di Jun.' Guan Di temples are among the most numerous in Taiwan, second only to Earth God shrines.\n\nCommon offerings include the traditional three sacrifices (chicken, pork, fish), longevity peaches, noodles, and three cups of tea. Notably, Xingtian Temple in Taipei has banned incense and paper money burning to promote environmental protection.\n\nA unique aspect of Guan Yu worship in Taiwan is his veneration across three religions simultaneously: Confucianism honors him as the 'Martial Saint' alongside Confucius; Taoism worships him as 'Guan Sheng Di Jun'; and Buddhism reveres him as 'Sangharama Bodhisattva.' This cross-religious worship is exceptionally rare in world religious history.",
+    "story": "Guan Yu, styled Yunchang, was born in Jie County, Hedong Commandery (modern-day Yuncheng, Shanxi) in the late Eastern Han Dynasty. From a young age, he was known for extraordinary strength and a fierce sense of justice. After killing a local tyrant to protect others, he became a fugitive.\n\nHe later met Liu Bei and Zhang Fei in Zhuo Commandery. The three became sworn brothers in the legendary 'Oath of the Peach Garden,' vowing to live and die together.\n\nGuan Yu's military exploits became the stuff of legend: slaying Hua Xiong while the wine was still warm, defeating Yan Liang and Wen Chou, crossing five passes and slaying six generals, and flooding the armies of the seventh army. Each tale showcases his unmatched martial prowess and unwavering loyalty.\n\nThe most touching story is his time under Cao Cao's patronage. Despite being offered wealth, the legendary Red Hare horse, and beautiful women, Guan Yu never forgot his brotherhood oath. Upon learning Liu Bei's whereabouts, he escorted Liu Bei's wives on a thousand-mile journey to reunite with his brother.\n\nIn 219 AD, Guan Yu was ambushed by Lu Meng of Eastern Wu at Jingzhou. After his death at Maicheng, temples were erected across the land. Through centuries of imperial honors, he was elevated from historical figure to divine being, becoming 'Guan Sheng Di Jun' — the supreme symbol of loyalty and righteousness.",
+    "worship": "Common offerings include the three sacrifices (whole chicken, pork, whole fish), longevity peaches, noodles, and three cups of tea. His birthday falls on the 24th day of the sixth lunar month, when grand celebrations are held.\n\nNote: Taipei's Xingtian Temple has banned incense and paper money burning for environmental protection — the first major temple in Taiwan to do so. Visitors simply pray with palms together.",
+    "festivals": "The most important festival is Guan Sheng Di Jun's birthday on the 24th day of the 6th lunar month. Major celebrations are held at temples across Taiwan, including Xingtian Temple and Tainan's Martial Temple.",
+    "temples": [
+      {
+        "name": "Xingtian Temple",
+        "location": "Taipei City",
+        "url": "https://www.ht.org.tw/",
+        "deityStory": "Xingtian Temple is the most popular Guan Yu temple in Northern Taiwan, famous for banning incense. Devotees come for oracle slips and 'soul-calming' rituals."
+      },
+      {
+        "name": "Tainan Grand Martial Temple",
+        "location": "Tainan City",
+        "url": "https://www.facebook.com/TainanGrandMazuTemple",
+        "deityStory": "The only martial temple in Taiwan included in official sacrificial rites. Merchants visit to pray for integrity and wealth."
+      },
+      {
+        "name": "Xinzhuang Wu Temple",
+        "location": "New Taipei City",
+        "deityStory": "A historic Guan Di temple in Xinzhuang, serving as the spiritual center of Xinzhuang Old Street and witnessing centuries of commercial development."
+      },
+      {
+        "name": "Jiaoxi Sietian Temple",
+        "location": "Yilan County",
+        "deityStory": "A famous Guan Di temple in Jiaoxi hot spring area, the most important center of Guan Yu worship in Yilan."
+      }
+    ],
+    "image": "/assets/images/gods/guansheng.png",
+    "associatedTemples": [
+      "Xingtian Temple (Zhongshan District, Taipei City)",
+      "Xinzhuang Wu Temple (Xinzhuang District, New Taipei City)",
+      "Jiaoxi Sietian Temple (Jiaoxi Township, Yilan County)"
+    ]
+  },
+  {
+    "id": "mazu",
+    "name": "Mazu (Goddess of the Sea)",
+    "aliases": [
+      "Heavenly Holy Mother",
+      "Empress of Heaven",
+      "Tianhou"
+    ],
+    "category": "taoism",
+    "domain": "Protector of the seas, maritime safety, universal blessings",
+    "description": "Mazu is the most iconic deity in Taiwanese folk religion, with over a thousand temples across the island. Originally Lin Mo-niang, a fisherman's daughter from Meizhou Island, Fujian, she was deified after her death for saving countless lives and predicting storms.\n\nWhile her core domain is maritime safety, in Taiwan her jurisdiction has expanded to encompass virtually all aspects of life — from fishing and farming to business, education, and even matchmaking. She is truly an 'all-purpose deity.'\n\nMazu worship arrived in Taiwan with Ming and Qing Dynasty immigrants who crossed the treacherous Taiwan Strait. Upon safe arrival, they built temples in gratitude, which is why nearly every coastal town in Taiwan has a Mazu temple.\n\nOfferings are typically vegetarian: flowers, fruits, longevity peaches, and red tortoise cakes. The annual pilgrimage circuits, especially those from Dajia Jenn Lann Temple and Baishatun Gongtian Temple, are among the world's three largest religious events.\n\nA unique phenomenon in Taiwan is the 'Mazu faction' culture — temples across the island each claim to house the most 'authentic' or 'efficacious' Mazu, creating friendly rivalries that have enriched local cultural traditions.",
+    "story": "Mazu was born Lin Mo-niang in 960 AD on Meizhou Island, Fujian Province. Legend says her birth was accompanied by a room filled with fragrant air and red light, yet she did not cry — hence the name 'Mo-niang' (Silent Girl).\n\nFrom a young age, she showed extraordinary intelligence. At eight, she could read scriptures; at thirteen, a Taoist priest taught her astronomy, geography, and medicine. She would stand by the shore reading the weather, warning fishermen of approaching storms and guiding ships to safety.\n\nThe most famous legend tells of her father and brother being caught in a terrible storm at sea. While weaving at home, Mo-niang fell into a trance, spiritually projecting herself to the ocean. She held her father with one hand and bit her brother's clothing with her teeth. When her mother shook her awake, she lost her grip on her brother, saving only her father.\n\nIn 987 AD, at the age of 28, Lin Mo-niang ascended to heaven from the peak of Meizhou Island. Grateful villagers built a temple in her honor. Over centuries, successive dynasties elevated her title from 'Lady' to 'Consort,' to 'Heavenly Consort,' and finally to 'Empress of Heaven.'\n\nAs maritime trade and migration expanded, Mazu worship spread throughout coastal China, Taiwan, Southeast Asia, and Japan, making her the most influential sea goddess in the Chinese world.",
+    "worship": "Offerings to Mazu are typically vegetarian: flowers, seasonal fruits, longevity peaches, red tortoise cakes, and steamed cakes. The altar should be kept clean. When praying, first offer incense to the Heavenly Emperor altar, then pray to Mazu, stating your name, address, and wishes.\n\nHer birthday on the 23rd day of the 3rd lunar month triggers weeks of pilgrimage processions across Taiwan.",
+    "festivals": "Mazu's birthday on the 23rd of the 3rd lunar month is Taiwan's largest religious event. The 9-day pilgrimage from Dajia Jenn Lann Temple and the walking pilgrimage from Baishatun attract hundreds of thousands, ranking alongside Vatican Christmas Mass and the Hajj as one of the world's three great religious events.",
+    "temples": [
+      {
+        "name": "Dajia Zhenlan Temple",
+        "location": "Taichung City",
+        "url": "https://www.dajiamazu.org.tw/",
+        "deityStory": "The Dajia Mazu Pilgrimage is Taiwan's largest religious event, a 9-day, 300km journey on foot, ranking among the world's top three religious events."
+      },
+      {
+        "name": "Beigang Chaotian Temple",
+        "location": "Yunlin County",
+        "url": "https://www.matsu.org.tw/",
+        "deityStory": "Beigang Chaotian Temple is a major center of Mazu worship, with branch temples worldwide. The road in front is a famous pilgrimage route."
+      },
+      {
+        "name": "Baishatun Gongtian Temple",
+        "location": "Miaoli County",
+        "url": "https://www.baishatun.com.tw/",
+        "deityStory": "Famous for the 'Pink Supercar' palanquin. The pilgrimage route is unpredictable, guided solely by Mazu's will."
+      },
+      {
+        "name": "Lugang Mazu Temple",
+        "location": "Changhua County",
+        "url": "https://www.lugangmazu.org/",
+        "deityStory": "Houses the 'Meizhou Mazu' statue gifted by Emperor Kangxi, the only temple in Taiwan with an original statue from the ancestral Meizhou temple."
+      },
+      {
+        "name": "Taitung Tianhou Temple",
+        "location": "Taitung County",
+        "url": "https://www.taitungmazu.org.tw/",
+        "deityStory": "The oldest Mazu temple in Eastern Taiwan, with over a century of history, serving as the religious center of Taitung."
+      },
+      {
+        "name": "Songshan Ciyou Temple",
+        "location": "Taipei City",
+        "deityStory": "Founded during the Qianlong era, it is the most important Mazu temple in Songshan and the spiritual center next to Raohe Night Market."
+      },
+      {
+        "name": "Taichung Lecheng Temple",
+        "location": "Taichung City",
+        "deityStory": "Known as 'Hanxi Mazu Temple', founded over 200 years ago during the Qianlong era. A major Mazu worship center in Taichung, also famous for its matchmaking deity."
+      },
+      {
+        "name": "Changhua Nanyao Temple",
+        "location": "Changhua County",
+        "deityStory": "The most important Mazu temple in Changhua, known for its unique 'Bengang pilgrimage' tradition and exquisite architecture."
+      },
+      {
+        "name": "Shanbian Mazu Temple",
+        "location": "Miaoli County",
+        "deityStory": "A historic Mazu temple in Houlong, witnessing the early Han Chinese settlement history of Miaoli."
+      },
+      {
+        "name": "Tainan Grand Mazu Temple",
+        "location": "Tainan City",
+        "deityStory": "Originally the residence of the Ming Dynasty's Prince of Ningjing, converted to a Mazu temple during the Kangxi era. The first government-built Mazu temple in Taiwan."
+      },
+      {
+        "name": "Xingang Fengtian Temple",
+        "location": "Chiayi County",
+        "deityStory": "One of Chiayi's most important Mazu temples, famous as the destination of the Dajia Mazu pilgrimage."
+      },
+      {
+        "name": "Hualien Gang Tian Temple",
+        "location": "Hualien County",
+        "deityStory": "The most important Mazu temple in Hualien, protecting the fishermen and residents of the east coast."
+      },
+      {
+        "name": "Matsu Tianhou Temple",
+        "location": "Lienchiang County",
+        "deityStory": "Legend says Mazu's body drifted here, and locals built a temple. The Matsu Islands were named after her, making this a sacred site of Mazu worship."
+      },
+      {
+        "name": "Penghu Tianhou Temple",
+        "location": "Penghu County",
+        "deityStory": "The oldest Mazu temple in Taiwan, established during the Ming Dynasty and the most important religious center in Penghu."
+      }
+    ],
+    "image": "/assets/images/gods/mazu.png",
+    "associatedTemples": [
+      "Songshan Ciyou Temple (Songshan District, Taipei City)",
+      "Taichung Lecheng Temple (East District, Taichung City)",
+      "Changhua Nanyao Temple (Changhua City)",
+      "Dajia Zhenlan Temple (Dajia District, Taichung City)",
+      "Lugang Tianhou Temple (Lugang Township, Changhua County)",
+      "Baishatun Gongtian Temple (Tongxiao Township, Miaoli County)",
+      "Shanbian Mazu Temple (Houlong Township, Miaoli County)",
+      "Beigang Chaotian Temple (Beigang Township, Yunlin County)",
+      "Tainan Grand Mazu Temple (West Central District, Tainan City)",
+      "Xingang Fengtian Temple (Xingang Township, Chiayi County)",
+      "Taitung Tianhou Temple (Taitung City, Taitung County)",
+      "Hualien Gang Tian Temple (Hualien City, Hualien County)"
+    ]
+  },
+  {
+    "id": "chenghuang",
+    "name": "City God (Cheng Huang)",
+    "aliases": [
+      "City God",
+      "Cheng Huang Ye"
+    ],
+    "category": "taoism",
+    "domain": "City protection, underworld justice, rewarding good and punishing evil",
+    "description": "The City God is a guardian deity who protects cities and serves as a judge in the underworld — essentially an 'Underworld Mayor and Judge.' Most major cities in Taiwan have a City God temple, with Taipei's Xiahai and Hsinchu's being the most famous.\n\nHis jurisdiction covers two domains: protecting the city and its residents, and judging the dead in the afterlife. His divine bureaucracy includes literary and military judges, and the famous Generals Xie and Fan (7th and 8th Lords).\n\nCity God worship traces back to ancient moat sacrifices during the Zhou Dynasty. Over time, the deity evolved from a nature spirit to historical figures — loyal officials appointed as City Gods after death.\n\nA unique feature of City God temples is the large abacus hung above the entrance, inscribed with 'So you've come too,' reminding visitors that everyone will face divine judgment.\n\nInterestingly, Taipei's Xiahai City God Temple is more famous for its matchmaking deity (Yue Lao) than the City God himself, attracting thousands of singles from around the world seeking love.",
+    "story": "City God worship originated as ancient reverence for moats and city walls. Over time, the deity evolved from an abstract nature spirit to a personified god, with each city choosing a beloved historical figure to serve as their City God.\n\nDuring the Tongzhi period of the Qing Dynasty, a severe plague struck Taipei's Dadaocheng district. Residents paraded the Xiahai City God through the streets, and the plague reportedly subsided soon after, cementing the temple's importance.\n\nThe most famous folk tale involves the City God's underlings: the 7th Lord (Xie Bi-an) and 8th Lord (Fan Wu-jiu). The two were close friends who agreed to meet under a bridge. When a sudden flood came, the tall 7th Lord survived but the short 8th Lord drowned. Grief-stricken, the 7th Lord hanged himself at the bridge. Their loyalty moved heaven, and they were appointed as the City God's generals — which is why the 7th Lord is depicted as tall and pale with a protruding tongue, while the 8th Lord is short and dark-faced.",
+    "worship": "Offerings include the three sacrifices, five fruits, tea, wine, and spirit money. During the City God's processional patrols, residents set up incense altars along the route. His birthday on the 13th of the 5th lunar month features nighttime inspection parades and grand processions.",
+    "festivals": "The City God's birthday on the 13th of the 5th lunar month is the most important festival. Taipei Xiahai's procession has over a century of history, while Hsinchu's combines elaborate parades with its century-old night market food culture.",
+    "temples": [
+      {
+        "name": "Taipei Xiahai City God Temple",
+        "location": "Taipei City",
+        "url": "https://www.tpecitygod.org/",
+        "deityStory": "Locally famous for its Matchmaker God (Yue Lao). Thousands of couples return with wedding cakes to give thanks, making it Taiwan's top spot for finding love."
+      },
+      {
+        "name": "Hualien City God Temple",
+        "location": "Hualien County",
+        "url": "https://www.hualien-citygod.org.tw/",
+        "deityStory": "One of the oldest temples in Hualien, protecting the people of the east coast."
+      },
+      {
+        "name": "Hsinchu City God Temple",
+        "location": "Hsinchu City",
+        "deityStory": "The highest-ranking City God Temple in Taiwan. Its procession, combined with the century-old night market, creates a unique 'faith + food' culture."
+      },
+      {
+        "name": "Chiayi City God Temple",
+        "location": "Chiayi City",
+        "deityStory": "The most important City God Temple in Chiayi with centuries of history. The annual City God procession is a major religious event."
+      },
+      {
+        "name": "Kinmen Wudao City God Temple",
+        "location": "Kinmen County",
+        "deityStory": "The most important City God Temple in Kinmen, dating back to the Ming Dynasty and serving as the spiritual center for locals."
+      }
+    ],
+    "image": "/assets/images/gods/chenghuang.png",
+    "associatedTemples": [
+      "Taipei Xiahai City God Temple (Datong District, Taipei City)",
+      "Hualien City God Temple (Hualien City, Hualien County)",
+      "Hsinchu City God Temple (North District, Hsinchu City)",
+      "Chiayi City God Temple (East District, Chiayi City)",
+      "Kinmen Wudao City God Temple (Jincheng Township, Kinmen County)"
+    ]
+  },
+  {
+    "id": "baosheng",
+    "name": "Baosheng Dadi (Great Emperor of Life Protection)",
+    "aliases": [
+      "Great Emperor Baosheng",
+      "Divine Doctor Wu"
+    ],
+    "category": "taoism",
+    "domain": "God of medicine, healing, health protection",
+    "description": "Baosheng Dadi is Taiwan's most important god of medicine. Originally named Wu Tao, he was a renowned physician in Song Dynasty Fujian. His exceptional medical skills saved countless lives, and after death he was deified as the God of Medicine.\n\nHis worship is centered on healing and health. Modern medical professionals and pharmacists also worship him as their patron saint. Some temples offer 'medicine slips' — traditional herbal prescriptions drawn by lot.\n\nThe most representative temple is Taipei's Dalongdong Baoan Temple, a national monument that won a UNESCO Asia-Pacific Heritage Award for its exquisite restoration.\n\nA delightful folk tale suggests Baosheng Dadi and Mazu were once lovers. When their birthdays approach in the 3rd lunar month, he summons wind and she summons rain in their eternal lovers' quarrel — explaining Taiwan's notoriously changeable March weather.",
+    "story": "Baosheng Dadi was born Wu Tao in 979 AD in Fujian's Tongai County. From youth, he studied medicine extensively, specializing in epidemic treatment. He treated all patients regardless of wealth and often purchased medicine for the poor at his own expense.\n\nHis most famous exploit was treating the Song Emperor Renzong's mother. After her recovery, the emperor offered him a position as Imperial Physician, but Wu Tao declined, preferring to continue serving common people.\n\nAnother beloved legend tells of him treating a tiger with a bone stuck in its throat. Despite the danger, he reached into the tiger's mouth to remove the bone. The grateful tiger became his mount — which is why tiger statues often accompany Baosheng Dadi images.\n\nIn 1036 AD, Wu Tao fell from a cliff while gathering herbs at age 58. Villagers built a temple in his honor, and his worship spread to Taiwan with Hokkien immigrants.",
+    "worship": "Offerings are simple and clean: flowers, vegetarian fruits, and tea. Some temples offer 'medicine slips' for traditional remedies, though modern temples advise consulting doctors as well. His birthday festival at Baoan Temple combines religion, arts, and community events.",
+    "festivals": "His birthday on the 15th of the 3rd lunar month kicks off the three-month 'Baosheng Cultural Festival' at Baoan Temple, one of Taiwan's largest temple cultural events, featuring traditional opera, fire-walking rituals, and art exhibitions.",
+    "temples": [
+      {
+        "name": "Dalongdong Baoan Temple",
+        "location": "Taipei City",
+        "url": "https://www.baoan.org.tw/",
+        "deityStory": "Winner of the UNESCO Asia-Pacific Heritage Award for its exquisite architecture. The annual Baosheng Cultural Festival is a major event in Taipei."
+      }
+    ],
+    "image": "/assets/images/gods/baosheng.png",
+    "associatedTemples": [
+      "Dalongdong Baoan Temple (Datong District, Taipei City)"
+    ]
+  },
+  {
+    "id": "tudigong",
+    "name": "Earth God (Tu Di Gong)",
+    "aliases": [
+      "Lord of the Soil",
+      "Fude Zhengshen",
+      "Earth Deity"
+    ],
+    "category": "taoism",
+    "domain": "Land protection, wealth and harvest, neighborhood safety",
+    "description": "The Earth God, formally 'Fude Zhengshen,' is the most widespread deity in Taiwan with over 2,000 shrines island-wide. Found everywhere from bustling cities to remote villages, he is the most approachable 'neighborhood god.'\n\nHis original domain of land protection and harvest has expanded to encompass business prosperity, real estate dealings, and general financial luck. The famous Hongludi Nanshan Fude Temple in Zhonghe is especially renowned for granting financial blessings.\n\nEarth God worship is one of the oldest forms of nature veneration. He typically appears as a kindly white-bearded elder in official robes, holding a walking stick.\n\nEvery 2nd and 16th of each lunar month is 'Ya Day,' when businesses make offerings for prosperity. The year's final Ya Day on the 16th of the 12th month has evolved into Taiwan's modern corporate year-end banquet tradition.\n\nA unique feature: many Earth God shrines are tiny roadside stone or metal pavilions beneath trees or even in apartment basements, reflecting his grassroots nature. But others, like Hongludi, are grand temples open 24 hours, their night lights creating a famous New Taipei City nightscape.",
+    "story": "The most popular origin story says the Earth God was originally Zhang Fude, a tax official during the Zhou Dynasty. He was famously honest and generous, often sharing his salary with the poor.\n\nDuring his tenure, his district enjoyed abundant harvests and prosperity. When he died at 102, his face remained rosy. A poor farmer built a crude shrine with four stone slabs. Miraculously, the farmer's fortunes began to improve.\n\nWord spread, and neighbors flocked to worship. Eventually they built a proper temple, bestowing the title 'Fude Zhengshen' — origin of the name used for Earth God temples today.\n\nAnother amusing legend: the Earth God once asked the Jade Emperor to make everyone rich. When it was granted, no one wanted to work and chaos ensued. He had to ask for the decree to be reversed — a folk tale reflecting Taiwanese practical wisdom about wealth and labor.",
+    "worship": "Offerings are homey: three sacrifices or simple chicken with wine, fruits, candy, peanuts, and mochi. For wealth requests, special 'Earth God money' is prepared. On Ya Days (2nd and 16th monthly), businesses always make offerings.\n\nAt famous wealth temples like Hongludi, devotees borrow small amounts of 'prosperity money' to keep in their wallets as a wealth charm.",
+    "festivals": "His birthday on the 2nd of the 2nd lunar month ('First Ya') sees celebrations at temples everywhere. The 'Last Ya' on the 16th of the 12th month evolved into Taiwan's unique corporate year-end banquet tradition, where traditionally a chicken pointing at an employee suggested they wouldn't be rehired.",
+    "temples": [
+      {
+        "name": "Zhushan Zinan Temple",
+        "location": "Nantou County",
+        "url": "https://www.紫南宮.tw/",
+        "deityStory": "Famous for lending 'prosperity money.' Devotees borrow small sums from the Earth God to start businesses, often returning double the amount after success."
+      },
+      {
+        "name": "Checheng Fu'an Temple",
+        "location": "Pingtung County",
+        "url": "https://www.fuan.org.tw/",
+        "deityStory": "The largest Earth God temple in Southeast Asia. Its furnace is famously called the 'God's Money Counter' — it automatically sucks in spirit money placed at the opening."
+      },
+      {
+        "name": "Hongludi Nanshan Fude Temple",
+        "location": "New Taipei City",
+        "url": "https://www.nanshan-fude.org.tw/",
+        "deityStory": "Northern Taiwan's most famous wealth temple, featuring a giant Earth God statue. Its mountain location offers stunning night views and it's open 24 hours."
+      }
+    ],
+    "image": "/assets/images/gods/tudigong.png",
+    "associatedTemples": [
+      "Hongludi Nanshan Fude Temple (Zhonghe District, New Taipei City)",
+      "Checheng Fu'an Temple (Checheng Township, Pingtung County)"
+    ]
+  },
+  {
+    "id": "xuantian",
+    "name": "Xuantian Shangdi (Supreme Emperor of Dark Heaven)",
+    "aliases": [
+      "Emperor of the North",
+      "Zhenwu",
+      "Dark Warrior"
+    ],
+    "category": "taoism",
+    "domain": "Exorcism, nation protection, guardian of the north",
+    "description": "Xuantian Shangdi is one of Taoism's most powerful deities, second only to the Jade Emperor. He governs the northern stars and commands the forces of the Dark Warrior constellation. In Taiwan, he is renowned for his fierce demon-exorcising powers.\n\nHis primary function is exorcism and protection against evil spirits. Spirit mediums and Taoist priests often serve him as their patron deity.\n\nHis birthday on the 3rd of the 3rd lunar month draws hundreds of thousands of pilgrims, especially to Songboling Shoutian Temple in Nantou.\n\nHis distinctive appearance — barefoot with loose hair, standing upon a turtle and snake, wielding the Big Dipper Sword — symbolizes both his ascetic cultivation and freedom from worldly constraints.\n\nA unique feature: his temples predominately use black in their décor, corresponding to his association with the North and the element of Water.",
+    "story": "The most popular legend tells of a butcher whose past life was filled with killing. One day, a sage showed him the karmic consequences of his actions. In deep remorse, the butcher cut open his own belly to remove the blood and flesh of slaughtered animals as penance.\n\nHis intestines and stomach fell into water, transforming into a snake and turtle that terrorized the people. After long spiritual cultivation, his soul achieved enlightenment and he became Xuantian Shangdi — but he must forever stand upon the snake and turtle, keeping his past sins suppressed.\n\nThis explains why his statues always show him standing on a turtle and snake — they represent his conquered past karma, not pets or mounts. The story conveys that even the gravest sins can be redeemed through genuine repentance.\n\nA more 'orthodox' Taoist account says he was the 82nd incarnation of Laozi, who cultivated at Wudang Mountain for 42 years before ascending to godhood.",
+    "worship": "Offerings include three sacrifices, five fruits, tea, and wine. Due to the butcher legend, some temples avoid pork, using vegetarian options or chicken and fish instead. Purification water from the temple can be sprinkled for exorcism.\n\nHis 'soul-calming' rituals are considered especially effective — parents often bring frightened children, and homeowners seek blessings before moving or construction.",
+    "festivals": "His birthday on the 3rd of the 3rd lunar month sees massive celebrations, especially at Songboling Shoutian Temple, attracting hundreds of thousands. Traditional rituals include fire-walking and passing under sedan chairs.",
+    "temples": [
+      {
+        "name": "Songboling Shoutian Temple",
+        "location": "Nantou County",
+        "url": "https://www.shoutian.org.tw/",
+        "deityStory": "The head temple with the most Xuantian Shangdi branches in Taiwan. Located on the Bagua Mountain range, it offers great views and is a major pilgrimage center."
+      }
+    ],
+    "image": "/assets/images/gods/xuantianshangdi.png",
+    "associatedTemples": [
+      "Songboling Shoutian Temple (Mingjian Township, Nantou County)"
+    ]
+  },
+  {
+    "id": "yuhuang",
+    "name": "Jade Emperor (Yu Huang Da Di)",
+    "aliases": [
+      "Jade Emperor",
+      "Heavenly Grandfather",
+      "Lord of Heaven"
+    ],
+    "category": "taoism",
+    "domain": "Ruler of Heaven, supreme deity, lord of all gods",
+    "description": "The Jade Emperor, affectionately called 'Tian Gong' (Heavenly Grandfather), is the supreme deity in Taoism, ruling the three realms of heaven, earth, and water. All gods, spirits, and beings fall under his jurisdiction.\n\nAs the cosmic sovereign, he governs the movements of heaven and earth, the seasons, weather, and reviews the moral conduct of all beings. At year's end, all gods report to him — the origin of Taiwan's 'Sending Off the Gods' ceremony.\n\nHis birthday on the 9th of the 1st lunar month is one of Taiwan's most solemn religious events. Families begin worship at midnight with elaborate offerings, following the highest ritual protocol including three kneeling bows with nine kowtows.\n\nA common Taiwanese saying, 'Heavenly Grandfather loves good people,' reflects the folk belief in his impartial justice.",
+    "story": "According to Taoist scriptures, the Jade Emperor was originally a prince named Zhang Youren from the 'Kingdom of Majestic Heavenly Light.' After governing wisely, he abdicated to cultivate the Tao in mountain seclusion.\n\nHe endured 1,750 cosmic kalpas, each lasting 129,600 years, before achieving golden immortality. After another hundred million kalpas, he attained the supreme position of Jade Emperor.\n\nFolk tradition holds that in primordial chaos, when demons roamed freely, a supremely cultivated immortal led the heavenly soldiers to establish cosmic order. The grateful gods unanimously elected him ruler of the three realms.\n\nOn the 25th of the 12th lunar month, the Jade Emperor descends to inspect human conduct — a tradition that reinforces social morality: 'Heaven is watching.'",
+    "worship": "Worshipping the Jade Emperor follows the highest ritual protocol. An outdoor altar faces the sky with two tiers: the upper for the Jade Emperor with flowers, tea, fruits, and vegetarian dishes; the lower for his retinue with five sacrifices. Sugarcane stalks tied with red thread symbolize 'rising higher.' Worship begins at midnight on the 9th of the 1st lunar month with three kneeling bows and nine kowtows.",
+    "festivals": "The Jade Emperor's birthday on the 9th of the 1st lunar month is one of Taiwan's most important religious holidays. Tainan Tiantan Temple hosts the grandest celebration, with firecrackers and lights through the night.",
+    "temples": [
+      {
+        "name": "Tainan Tiantan Temple",
+        "location": "Tainan City",
+        "url": "https://www.tian-tan.org.tw/",
+        "deityStory": "Known as the 'Temple of Heaven,' it's the first official Jade Emperor temple. Its famous 'One' plaque symbolizes that human calculations are no match for Heaven's will."
+      },
+      {
+        "name": "Songshan Fengtian Temple",
+        "location": "Taipei City",
+        "url": "https://www.ftg.org.tw/",
+        "deityStory": "A grand Temple of Heaven in Taipei with thriving worship. Its magnificent architecture makes it a key site for prayers for peace and protection."
+      }
+    ],
+    "image": "/assets/images/gods/yuhuang.png"
+  },
+  {
+    "id": "yuelao",
+    "name": "Yue Lao (Old Man Under the Moon)",
+    "aliases": [
+      "Matchmaker God",
+      "Yue Lao",
+      "Moon Elder"
+    ],
+    "category": "taoism",
+    "domain": "God of marriage, matchmaking, tying red threads of fate",
+    "description": "Yue Lao, the Old Man Under the Moon, is Taiwan's most beloved matchmaking deity. He holds the 'Book of Marriage' containing every destined couple, connecting them with invisible red threads of fate.\n\nHis sole jurisdiction is romantic destiny — finding partners for singles, blessing marriages, and cutting unwanted romantic ties. The red thread symbolizes fated connections that transcend distance.\n\nTaipei's Xiahai City God Temple is Taiwan's most famous Yue Lao shrine, with over 50,000 successful matches claimed. It attracts visitors from Japan, Korea, and around the world.\n\nA specific ritual exists: pray, report your details and ideal partner preferences, cast moon blocks for approval, then take a red thread for your wallet. Some temples offer 'wedding candy' for good luck.\n\nInterestingly, Yue Lao also handles 'cutting peach blossoms' — removing bad romantic situations. But temples warn: he might cut ALL romantic prospects if you're not careful!",
+    "story": "The legend comes from the Tang Dynasty novel 'Sequel to the Records of Mysteries.' A young man named Wei Gu met an old man reading a large book by moonlight outside an inn.\n\nThe old man revealed it was the 'Book of Marriage,' recording every person's destined spouse. Wei Gu's wife, he said, was currently a three-year-old girl from a poor family. Furious, Wei Gu hired someone to harm the girl, scarring her forehead.\n\nFourteen years later, Wei Gu married a governor's adopted daughter and noticed a scar on her forehead. She turned out to be the same girl, adopted and renamed. Wei Gu finally believed in the Moon Elder's predestined matches.\n\nThe tale teaches that fate in love cannot be forced or avoided — every red thread tied by Yue Lao is destiny.",
+    "worship": "The specific ritual: pray at the main altar first, then report your details to Yue Lao — name, birthday, address, and ideal partner preferences. Cast moon blocks three times; three 'yes' answers mean he'll help. Take a red thread and wedding candy. After finding love, return to the temple with wedding cakes to share good fortune.",
+    "festivals": "While there's no specific birthday festival, visitor numbers surge around Chinese Valentine's Day (7th of 7th lunar month) and February 14th. Xiahai Temple holds special matchmaking events during the Qixi Festival.",
+    "temples": [
+      {
+        "name": "Taipei Xiahai City God Temple",
+        "location": "Taipei City",
+        "url": "https://www.tpecitygod.org/",
+        "deityStory": "The Matchmaker God here is globally famous. Over 6,000 couples return annually with wedding cakes to give thanks — an amazing success rate."
+      },
+      {
+        "name": "Longshan Temple",
+        "location": "Taipei City",
+        "url": "https://www.lungshan.org.tw/",
+        "deityStory": "Located in the rear hall, Longshan's Matchmaker God is also very popular. Many young people seek a red thread here after praying to Guanyin."
+      },
+      {
+        "name": "Taichung Lecheng Temple",
+        "location": "Taichung City",
+        "deityStory": "Lecheng Temple's Matchmaker Hall is the most famous place to seek love in central Taiwan."
+      },
+      {
+        "name": "Tainan Grand Mazu Temple",
+        "location": "Tainan City",
+        "deityStory": "The Matchmaker God at Tainan Grand Mazu Temple is among the most efficacious in the city, attracting many worshippers for red threads."
+      },
+      {
+        "name": "Tainan Grand Martial Temple",
+        "location": "Tainan City",
+        "deityStory": "The Matchmaker God here is famous for 'cutting bad romances', helping worshippers end unhealthy relationships."
+      }
+    ],
+    "image": "/assets/images/gods/yuelao.png",
+    "associatedTemples": [
+      "Longshan Temple (Wanhua District, Taipei City)",
+      "Taipei Xiahai City God Temple (Datong District, Taipei City)",
+      "Taichung Lecheng Temple (East District, Taichung City)",
+      "Tainan Grand Mazu Temple (West Central District, Tainan City)",
+      "Tainan Grand Martial Temple (West Central District, Tainan City)"
+    ]
+  },
+  {
+    "id": "caishen",
+    "name": "God of Wealth (Cai Shen)",
+    "aliases": [
+      "Zhao Gong Ming",
+      "Marshal Zhao",
+      "Five Paths God of Wealth"
+    ],
+    "category": "taoism",
+    "domain": "Lord of wealth, attracting fortune, business prosperity",
+    "description": "The God of Wealth is one of Taiwan's most worshipped deities among business people. The martial form, Zhao Gong Ming, is most popular, though civil wealth gods Bi Gan and Fan Li are also revered.\n\nHis job is straightforward — managing money. Businesses pray for prosperity, investors for profits, employees for raises, and lottery players for jackpots. The 5th of the 1st lunar month ('Welcoming the Wealth God') sees all businesses open with firecrackers.\n\nTaiwan recognizes 'Five Paths of Wealth' — wealth spirits from all cardinal directions plus the center, symbolizing income from all directions.\n\nTaiwanese worship style is remarkably practical: devotees bring invoices, bankbooks, business cards, even stock statements to be blessed. The 'prosperity money' system lets worshippers borrow small amounts as wealth charms.",
+    "story": "Zhao Gong Ming's story is detailed in 'The Investiture of the Gods.' He was a Taoist cultivator on Mount Emei during the late Shang Dynasty. When ordered to aid the Shang against the Zhou revolution, he rode a black tiger wielding an iron whip, nearly defeating the entire Zhou army.\n\nJiang Ziya eventually used a secret curse to drain his life force. After the Shang fell, Jiang Ziya was tasked with deifying worthy spirits. Despite Zhao's loyalty to the wrong side, his righteousness and skill earned him the title of Marshal of the Mysterious Altar, commanding four wealth-bringing spirits.\n\nThus Zhao Gong Ming became the Chinese world's most important God of Wealth — depicted with a black face, thick beard, riding a black tiger, holding a golden whip and treasure bowl.",
+    "worship": "Offerings emphasize 'wealth symbolism': ingot-shaped cakes, prosperity cakes (fa gao), apples (peace), pineapples ('ong lai' = 'prosperity comes'), and oranges (great luck). Devotees bring bankbooks and business cards for blessing.\n\nZhushan Zinan Temple's famous 'prosperity money' system lets visitors borrow NT$600 by casting moon blocks, returning the money with interest the following year.",
+    "festivals": "The 5th of the 1st lunar month ('Welcoming Wealth God') is the key festival. Businesses fire crackers at midnight and burn spirit money. Opening for business on this day is called 'Breaking the Five,' symbolizing a prosperous start to the year.",
+    "temples": [
+      {
+        "name": "Beigang Wude Temple",
+        "location": "Yunlin County",
+        "url": "https://www.wude.org.tw/",
+        "deityStory": "The ancestral temple of the Five Paths God of Wealth in Taiwan. Its massive 'Heavenly Treasury' furnace is claimed to be the world's largest, symbolizing abundant wealth."
+      },
+      {
+        "name": "Zhushan Zinan Temple",
+        "location": "Nantou County",
+        "url": "https://www.紫南宮.tw/",
+        "deityStory": "Though dedicated to the Earth God, it's revered as a wealth temple due to its efficacy. The tradition of borrowing prosperity money draws crowds year-round."
+      },
+      {
+        "name": "Hongludi Nanshan Fude Temple",
+        "location": "New Taipei City",
+        "url": "https://www.nanshan-fude.org.tw/",
+        "deityStory": "Devotees come to exchange 'mother money' — swapping large bills for coins to keep in wallets as wealth charms. The giant Earth God statue is a northern Taiwan landmark."
+      }
+    ],
+    "image": "/assets/images/gods/caishen.png",
+    "associatedTemples": [
+      "Beigang Wude Temple (Beigang Township, Yunlin County)"
+    ]
+  },
+  {
+    "id": "jigong",
+    "name": "Ji Gong (Mad Monk)",
+    "aliases": [
+      "Living Buddha Ji Gong",
+      "Eccentric Monk Ji",
+      "Chan Master Daoji"
+    ],
+    "category": "taoism",
+    "domain": "Saving the world, subduing demons, helping the weak and poor",
+    "description": "Ji Gong is Taiwan's most 'down-to-earth' deity — a mad monk who broke every monastic rule yet saved countless lives. His image of a ragged, wine-drinking eccentric challenged stereotypes about enlightened monks, embodying the wisdom that 'Wine and meat pass through the intestines, but Buddha remains in the heart.'\n\nHis domain centers on saving people, exorcising demons, and championing the weak. In Taiwan, Ji Gong worship often connects with spirit medium culture.\n\nHis iconic appearance — broken hat, broken fan, broken shoes, tattered robe, plus a wine gourd — symbolizes breaking through superficial formality to reveal true inner nature.\n\nThough originally a Chan Buddhist figure, in Taiwan he's fully integrated into Taoist and folk religion, beloved especially by blue-collar workers and business people for his egalitarian, no-nonsense character.",
+    "story": "Ji Gong was born Li Xiuyuan in 1148 in Zhejiang Province to a scholarly family. Brilliant but unconventional, he became a monk at Lingyin Temple in Hangzhou, receiving the dharma name 'Daoji.'\n\nMonk Daoji broke every rule — drinking, eating meat, speaking outrageously. Fellow monks called him 'Ji the Madman.' Yet behind his madness lay miraculous powers: healing with scraps of his robe, predicting the future, and moving mountains.\n\nThe most famous legend is 'Flying Peak': Ji Gong foresaw a mountain peak about to crush a village. When no one believed his warnings, he grabbed a bride from a wedding and ran. Villagers chased him, inadvertently evacuating. The peak then crashed into the empty village.\n\nHe passed away at Jingci Temple in 1204, leaving the verse: 'Sixty years of chaos, crashing wall to wall; Now gathered and returned, the waters still meet the boundless sky.'",
+    "worship": "Uniquely, Ji Gong accepts wine and meat as offerings — a contrast to most deities. Common offerings include rice wine, stewed chicken, braised dishes, and fruit. Spirit mediums channeling Ji Gong may drink and eat during rituals, recreating his eccentric style. Sincerity matters more than formality.",
+    "festivals": "His birthday falls on the 2nd of the 2nd lunar month (some temples celebrate on the 3rd of the 10th month). Temple festivals feature spirit medium sessions where mediums channel Ji Gong's eccentric behavior — a highly entertaining spectacle.",
+    "temples": [
+      {
+        "name": "Yilan Sanqing Temple",
+        "location": "Yilan County",
+        "url": "https://www.sanching.org.tw/",
+        "deityStory": "Set in a serene landscape. As a major Taoist temple, it also enshrines Ji Gong and is a must-visit for spiritual cultivators."
+      }
+    ],
+    "image": "/assets/images/gods/jigong.png"
+  },
+  {
+    "id": "lvdongbin",
+    "name": "Lü Dongbin (Patriarch Lü)",
+    "aliases": [
+      "Lü the Immortal",
+      "Patriarch of Pure Yang",
+      "First of the Eight Immortals"
+    ],
+    "category": "taoism",
+    "domain": "Taoist cultivation, swordsmanship, scholarly fortune",
+    "description": "Lü Dongbin is the leader of the Eight Immortals and one of Taiwan's most revered Taoist saints. Skilled in both literature and swordsmanship, he serves as a model for cultivators and patron of scholars. Muzha Zhinan Temple is his most famous shrine in Taiwan.\n\nHis domains include Taoist cultivation, academic success, and demon-slaying. He's the patriarch of internal alchemy practice.\n\nA popular urban legend warns couples against visiting Zhinan Temple together — supposedly Lü Dongbin, rejected by a woman in his youth, will break up visiting couples. The temple has repeatedly clarified this is just a folk tale.\n\nHis image — wearing a Taoist cap, carrying the Xiang Sword on his back, holding a fly-whisk — embodies the romantic ideal of a wandering immortal swordsman.",
+    "story": "Lü Dongbin was born in 798 AD to a scholarly family. After repeatedly failing the imperial examinations, he met the immortal Zhongli Quan at a tavern.\n\nWhile Zhongli cooked millet porridge, Lü fell asleep and dreamed an entire lifetime — passing exams, rising to power, marrying, having children, then losing everything to betrayal. He woke to find the millet still cooking.\n\nThis 'Dream of Millet' (Huangliang Yi Meng) became a famous idiom meaning 'fleeting glory.' Enlightened, he abandoned worldly ambitions to study the Tao under Zhongli.\n\nHe passed the 'Ten Trials' — tests of desire, greed, and courage — and achieved immortality. Rather than retreating from the world, he wandered among humans, saving people and slaying demons, becoming the most humanistic of the Eight Immortals.",
+    "worship": "Offerings emphasize purity: tea, fruits, and vegetarian dishes. Some scholars offer calligraphy supplies for academic blessings. Zhinan Temple's oracle slips are among Taiwan's most famous divination tools.",
+    "festivals": "His birthday on the 14th of the 4th lunar month features grand celebrations at Zhinan Temple, combining Taoist rituals with literary events like poetry readings and calligraphy exhibitions — fitting his scholarly immortal character.",
+    "temples": [
+      {
+        "name": "Zhinan Temple",
+        "location": "Taipei City",
+        "url": "https://www.chihnan.gov.tw/",
+        "deityStory": "Famous temple of Patriarch Lü in the north. Folk legend warns couples against visiting, but the temple clarifies that Lü only cuts bad relationships, while protecting true love."
+      }
+    ],
+    "image": "/assets/images/gods/lvdongbin.png",
+    "associatedTemples": [
+      "Zhinan Temple (Wenshan District, Taipei City)"
+    ]
+  },
+  {
+    "id": "taisui",
+    "name": "Tai Sui (Grand Duke Jupiter)",
+    "aliases": [
+      "Grand Duke",
+      "Year God",
+      "Jupiter General"
+    ],
+    "category": "taoism",
+    "domain": "Annual fortune, averting misfortune, neutralizing yearly afflictions",
+    "description": "Tai Sui is the annual presiding deity in Taoism. Sixty Tai Sui deities rotate in a cycle matching the traditional Chinese calendar. 'Offending Tai Sui' is one of the most feared annual misfortunes in Taiwanese folk belief.\n\nEach person's zodiac animal relative to the current year's Tai Sui determines whether they face bad luck that year. Before the Lunar New Year, massive crowds visit temples to 'place Tai Sui' — registering for protection throughout the year.\n\nThe common saying 'Don't break ground above Tai Sui's head' has become an everyday expression meaning 'don't provoke powerful forces.'\n\nFour to five zodiac signs 'offend' Tai Sui each year through direct collision, punishment, or harm — ensuring steady annual demand for Tai Sui protection rituals.",
+    "story": "Tai Sui worship originated from ancient Chinese observations of Jupiter, which orbits the celestial sphere roughly every 12 years. Each year, one of 60 named Tai Sui deities presides — a system matching the sexagenary cycle.\n\nA folk tale explains the taboo: someone once dug in the Tai Sui's direction and unearthed a growing mass of flesh (Tai Sui fungus) that couldn't be cut away. Terrified, they reburied it and built an altar. Hence: 'Never break ground above Tai Sui's head.'\n\nInterestingly, 'Tai Sui fungus' (Lignosus rhinocerotis) really exists — an underground fungus resembling flesh that amazed ancient people.",
+    "worship": "The annual 'placing Tai Sui' ritual involves registering at a temple before the 15th of the 1st lunar month. The temple lights a Tai Sui lamp in your name for the year. At year's end, return to 'thank Tai Sui.' In offending years, wear a Tai Sui amulet, avoid major life changes, and do good deeds.",
+    "festivals": "The peak period for placing Tai Sui is from the 8th to 9th of the 1st lunar month. Major temples see long queues. The annual announcement of which zodiac signs 'offend' Tai Sui is a regular media event before each Lunar New Year.",
+    "temples": [
+      {
+        "name": "Songshan Ciyou Temple",
+        "location": "Taipei City",
+        "url": "https://www.sscy.org.tw/",
+        "deityStory": "Though primarily a Mazu temple, its Tai Sui Hall is grand and popular. The Tai Sui lamps here are renowned for their efficacy."
+      },
+      {
+        "name": "Longshan Temple",
+        "location": "Taipei City",
+        "url": "https://www.lungshan.org.tw/"
+      }
+    ],
+    "image": "/assets/images/gods/taisui.png"
+  },
+  {
+    "id": "wenchang",
+    "name": "Wenchang Dijun (God of Culture and Literature)",
+    "aliases": [
+      "Emperor Wenchang",
+      "God of Literature"
+    ],
+    "category": "taoism",
+    "domain": "Academic success, examinations, career advancement",
+    "description": "Wenchang Dijun is the Taoist deity of culture and literature, governing academic success and career prospects. He is widely worshipped by students preparing for exams.\n\nOriginally a local deity from Zitong, Sichuan, he was absorbed into Taoism. Legend says he incarnated 73 times as a virtuous official, earning the Jade Emperor's appointment to manage the 'Book of Merit.'\n\nOfferings are symbolic puns: green onions (intelligence), celery (diligence), garlic (calculation), radish (good luck), and buns with zongzi (guaranteed pass). Duck eggs (zero score) and meatballs (finished/doomed) are strictly forbidden.\n\nHe is often worshipped as part of the 'Five Wenchang': Wenchang, Kui Xing, Zhu Yi, Guan Yu, and Lu Dongbin — a powerful team protecting all scholars.",
+    "story": "Legend identifies him as Zhang Yazi of the Jin Dynasty, a filial son from Sichuan. After his death, locals built a temple. Tang Emperors fleeing to Sichuan claimed his protection, leading to imperial titles.\n\nBeyond his origin, the 'Tract of the Quiet Way' is a famous text attributed to him, teaching that true merit comes from hidden good deeds and moral character. This highlights that Wenchang worship isn't just about exam scores, but about cultivating the virtue worthy of success.",
+    "worship": "Students place photocopies of their exam permits on the altar. Essential offerings: green onions (intelligence), celery (diligence), garlic, radish, and zongzi. After praying, eat the offerings — but don't overcook the onions, or the 'intelligence' might vanish!",
+    "festivals": "His birthday is the 3rd of the 2nd lunar month. During exam seasons, temples hold grand blessing ceremonies where priests light lamps and perform rituals to 'open wisdom' for nervous students.",
+    "temples": [
+      {
+        "name": "Taipei Wenchang Temple",
+        "location": "Taipei City",
+        "url": "http://www.文昌宮.tw/",
+        "deityStory": "Located near Shuanglian MRT, this is Taipei's most popular Wenchang temple. During exam season, the interior is literally wallpapered with exam permit copies."
+      },
+      {
+        "name": "Chihkan Tower (Fort Provintia)",
+        "location": "Tainan City",
+        "deityStory": "Wenchang Pavilion in the Chihkan Tower complex enshrines Wenchang Dijun and Kui Xing, a key place for Tainan students to pray for exam success."
+      }
+    ],
+    "image": "/assets/images/gods/wenchang.png",
+    "associatedTemples": [
+      "Chihkan Tower (Haishen Temple/Wenchang Pavilion) (West Central District, Tainan City)"
+    ]
+  },
+  {
+    "id": "confucius",
+    "name": "Confucius",
+    "aliases": [
+      "Master Kong",
+      "The Great Sage"
+    ],
+    "category": "taoism",
+    "domain": "Education, Wisdom, Exams, Academic Success",
+    "description": "Confucius is the great Chinese philosopher, educator, and founder of Confucianism. Revered as the 'Great Sage' and 'Model Teacher for Ten Thousand Ages'. While not a Taoist deity, he holds a high place in Taiwanese folk belief with Confucius Temples across the island. Students pray to him for wisdom and academic success, especially during exam seasons. The Confucius Ceremony is a major cultural tradition in Taiwan.",
+    "story": "Born in the State of Lu during the Spring and Autumn Period, Confucius advocated for Benevolence, Righteousness, Propriety, Wisdom, and Trust. He traveled to various states to promote his political philosophy and dedicated his later years to education and editing ancient texts. His teachings, recorded in the 'Analects', have profoundly influenced East Asian culture.",
+    "worship": "The Confucius Ceremony is held annually on September 28th. It follows ancient rituals with Yi Dance and court music. Worshippers often offer celery (diligence), green onions (intelligence), garlic (calculation), and radish (good luck).",
+    "temples": [
+      {
+        "name": "Tainan Confucius Temple",
+        "location": "Tainan City",
+        "url": "https://confucius.culture.tainan.gov.tw/"
+      },
+      {
+        "name": "Taipei Confucius Temple",
+        "location": "Taipei City",
+        "url": "https://tct.gov.taipei/"
+      }
+    ],
+    "image": "/assets/images/gods/confucius.png",
+    "associatedTemples": [
+      "Tainan Confucius Temple (West Central District, Tainan City)"
+    ]
+  },
+  {
+    "id": "wangmu",
+    "name": "Queen Mother of the West (Xi Wangmu)",
+    "aliases": [
+      "Xi Wangmu",
+      "Golden Mother of the Jade Pond",
+      "Queen Mother"
+    ],
+    "category": "taoism",
+    "domain": "Immortality, ruler of the Jade Pond paradise, chief of all female immortals",
+    "description": "The Queen Mother of the West, also known as 'Golden Mother of the Jade Pond,' is the highest-ranking goddess in Taoism. She rules the Jade Pond paradise on Mount Kunlun and commands all female immortals. Legend says her Peach Garden produces peaches of immortality, served at the grand 'Peach Banquet' on the 3rd of the 3rd lunar month. In Taiwan, her worship is centered at Hualien Shen'an Temple and numerous Cihui Hall temples. She holds a unique position as the patron deity of many spirit mediums.",
+    "story": "Xi Wangmu's worship dates back to the Classic of Mountains and Seas, describing a spirit dwelling on Mount Kunlun. Over millennia, she evolved from a primal deity to an elegant immortal queen.\n\nThe most famous legend tells of King Mu of Zhou meeting her at the Jade Pond, where she sang about the brevity of mortal life. Another well-known tale involves Houyi and Chang'e — Xi Wangmu gave the elixir of immortality to Houyi, which Chang'e stole and flew to the moon.\n\nIn Taiwan, her worship flourished after 1949, centered on the Cihui Hall system originating from Hualien. These temples practice spirit writing (fuji) to receive divine messages, forming a unique spiritual cultivation culture.",
+    "worship": "Offerings include vegetarian fruits, flowers, and longevity peaches, sometimes with sesame oil chicken and oil rice. Her birthday on the 3rd of the 3rd lunar month (the Peach Banquet) features grand celebrations at temples across Taiwan.",
+    "festivals": "The Queen Mother's birthday on the 3rd of the 3rd lunar month, known as the 'Peach Banquet,' is the most important festival. Temples across Taiwan hold grand celebrations with rituals and processions.",
+    "temples": [
+      {
+        "name": "Hualien Shen An Temple",
+        "location": "Hualien County",
+        "deityStory": "Hualien's most famous Queen Mother temple and an important center of the Cihui Hall system. Legend says the Queen Mother appeared here to guide the temple's construction."
+      }
+    ],
+    "image": "/assets/images/gods/god-wangmu.png",
+    "associatedTemples": [
+      "Hualien Shen An Temple (Hualien City, Hualien County)"
+    ]
+  }
+]

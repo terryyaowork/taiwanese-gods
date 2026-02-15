@@ -1,0 +1,39 @@
+---
+import GodDetail from '~/components/gods/GodDetail.astro';
+import gods from '~/data/ja/buddhist-gods.json';
+
+export async function getStaticPaths() {
+  return gods.map((god) => ({
+    params: { id: god.id },
+  }));
+}
+
+const { id } = Astro.params;
+const god = gods.find((g) => g.id === id) as any;
+if (!god) {
+  throw new Error('Deity not found');
+}
+
+const godImages = import.meta.glob('/src/assets/images/gods/*.{jpg,jpeg,png,webp,avif}', {
+  eager: true,
+  import: 'default',
+});
+
+const getGodImage = (imagePath: string | undefined): string | null => {
+  if (!imagePath) return null;
+  const filename = imagePath.split('/').pop();
+  const matchedKey = Object.keys(godImages).find((key) => key.endsWith('/' + filename));
+  if (matchedKey) {
+    const img = godImages[matchedKey];
+    if (typeof img === 'object' && img !== null && 'src' in img) {
+      return (img as { src: string }).src;
+    }
+    return String(img);
+  }
+  return imagePath;
+};
+
+const godImageSrc = getGodImage(god.image) || god.image;
+---
+
+<GodDetail god={{...god, category: 'buddhism'}} imageSrc={godImageSrc} lang="ja" />

@@ -1,0 +1,257 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Divination from '~/components/common/Divination.astro';
+
+// Import all god data to build a lookup map
+import taoistGods from '~/data/zh-TW/taoist-gods.json';
+import buddhistGods from '~/data/zh-TW/buddhist-gods.json';
+import folkGods from '~/data/zh-TW/folk-gods.json';
+import hakkaGods from '~/data/zh-TW/hakka-gods.json';
+import indigenousSpirits from '~/data/zh-TW/indigenous-spirits.json';
+
+// Resolve all god images at build time
+const godImages = import.meta.glob('/src/assets/images/gods/*.{jpg,jpeg,png,webp,avif}', {
+  eager: true,
+  import: 'default',
+});
+
+const resolveImage = (imagePath: string) => {
+  if (!imagePath) return '';
+  const filename = imagePath.split('/').pop();
+  const matchedKey = Object.keys(godImages).find((key) => key.endsWith('/' + filename));
+  if (!matchedKey) return '';
+  const img = godImages[matchedKey];
+  return typeof img === 'object' && img !== null && 'src' in img ? (img as any).src : String(img);
+};
+
+// Build god map
+const allGods = [
+  ...taoistGods.map((g: any) => ({ ...g, category: 'taoism' })),
+  ...buddhistGods.map((g: any) => ({ ...g, category: 'buddhism' })),
+  ...folkGods.map((g: any) => ({ ...g, category: 'folk' })),
+  ...hakkaGods.map((g: any) => ({ ...g, category: 'hakka' })),
+  ...indigenousSpirits.map((g: any) => ({ ...g, category: 'indigenous' })),
+];
+
+const godMap: Record<string, { name: string; imageSrc: string; category: string }> = {};
+for (const g of allGods) {
+  godMap[g.id] = { name: g.name, imageSrc: resolveImage(g.image), category: g.category };
+}
+
+const metadata = {
+  title: '線上求籤 — 六十甲子籤詩 | 台灣神明信仰',
+  description: '線上擲筊求籤，收錄完整六十甲子籤詩，每首皆附白話解說。誠心祈求，獲得神明指引。',
+};
+---
+
+<Layout metadata={metadata}>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <!-- Header -->
+    <div class="text-center mb-10">
+      <h1 class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide">
+        線上求籤
+      </h1>
+      <div class="w-24 h-1 bg-gold-300 mx-auto mb-4"></div>
+      <p class="text-gray-600 dark:text-gray-400 font-light max-w-xl mx-auto">
+        誠心默念問題，擲筊求籤，獲得神明的指引與啟示
+      </p>
+    </div>
+
+    <!-- Two-column Layout: God Info (left) + Divination (right) -->
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 mb-12">
+      <!-- Left: God Info -->
+      <div class="lg:col-span-2">
+        <div class="bg-white/95 dark:bg-gray-800/95 rounded-xl shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden lg:sticky lg:top-4">
+          <!-- God Image -->
+          <div class="relative">
+            <div id="god-avatar-bg" class="w-full aspect-[4/3] sm:aspect-square bg-gray-100 dark:bg-gray-700 overflow-hidden">
+              <img id="god-avatar-img" src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+              <h2 id="god-title" class="text-2xl font-serif font-bold text-white drop-shadow-lg"></h2>
+            </div>
+          </div>
+
+          <!-- Reminder -->
+          <div class="p-5 space-y-4">
+            <div class="bg-amber-50/80 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg p-4">
+              <p class="text-sm text-amber-800 dark:text-amber-300 leading-relaxed">
+                祈求前，請先在心中向神明默念您的<strong>姓名</strong>、<strong>出生年月日</strong>及<strong>住址</strong>，再誠心說出您的問題。
+              </p>
+            </div>
+
+            <a id="god-back-link" href="#" class="hidden items-center gap-1 text-sm text-gray-400 dark:text-gray-500 hover:text-red-600 dark:hover:text-red-400 transition-colors">
+              ← 返回神明介紹
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Divination -->
+      <div class="lg:col-span-3">
+        <div class="bg-white/95 dark:bg-gray-800/95 rounded-xl shadow-xl border border-gray-200 dark:border-gray-700 p-4 sm:p-6">
+          <Divination lang="zh-TW" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Fortune Result Section (hidden by default, shown when fortune is confirmed) -->
+    <div id="fortune-result" class="hidden mb-12 animate-fade-in">
+      <div class="flex items-center gap-4 mb-8">
+        <div class="flex-1 h-px bg-gradient-to-r from-transparent via-red-300 dark:via-red-700 to-transparent"></div>
+        <h2 class="text-2xl font-serif font-bold text-red-900 dark:text-red-300 whitespace-nowrap">您的籤詩</h2>
+        <div class="flex-1 h-px bg-gradient-to-r from-transparent via-red-300 dark:via-red-700 to-transparent"></div>
+      </div>
+
+      <div class="max-w-3xl mx-auto bg-white/95 dark:bg-gray-800/95 rounded-xl shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden">
+        <!-- Fortune Header -->
+        <div class="bg-gradient-to-r from-red-800 to-red-900 px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
+          <div>
+            <span id="result-stick-number" class="text-white/80 text-sm font-mono"></span>
+            <h3 id="result-title" class="text-xl font-serif font-bold text-white"></h3>
+          </div>
+          <span id="result-quality-badge" class="px-3 py-1 rounded-full text-sm font-bold bg-white/20 text-white border border-white/30"></span>
+        </div>
+
+        <!-- Poem -->
+        <div class="px-6 py-6 border-b border-gray-100 dark:border-gray-700">
+          <h4 class="text-sm font-bold text-red-800 dark:text-red-400 mb-3 tracking-widest">籤 詩</h4>
+          <p id="result-poem" class="text-base sm:text-lg font-serif text-gray-800 dark:text-gray-200 leading-loose whitespace-pre-line text-center"></p>
+        </div>
+
+        <!-- Explanation -->
+        <div class="px-6 py-6">
+          <h4 class="text-sm font-bold text-red-800 dark:text-red-400 mb-3 tracking-widest">白話解說</h4>
+          <div id="result-explanation" class="text-gray-700 dark:text-gray-300 leading-relaxed space-y-3"></div>
+
+          <!-- Keywords -->
+          <div id="result-keywords" class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-100 dark:border-gray-700"></div>
+        </div>
+
+        <!-- Draw Again -->
+        <div class="px-6 pb-6 text-center">
+          <button id="btn-draw-again-external" class="px-6 py-2.5 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-full transition-colors font-medium text-sm">
+            重新求籤
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back -->
+    <div class="text-center">
+      <a
+        href="/"
+        class="inline-block px-6 py-3 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors font-medium"
+      >
+        回首頁
+      </a>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fadeInUp 0.5s ease-out;
+  }
+</style>
+
+<script is:inline define:vars={{ godMap }}>
+  // Populate god info — runs on every page load/navigation
+  function populateGodInfo() {
+    var el = document.getElementById('god-avatar-img');
+    if (!el) return; // not on the fortune page
+
+    var params = new URLSearchParams(window.location.search);
+    var godId = params.get('god') || 'yuhuang';
+    var god = godMap[godId] || godMap['yuhuang'];
+    if (!god) return;
+
+    el.src = god.imageSrc;
+    el.alt = god.name;
+
+    var titleEl = document.getElementById('god-title');
+    if (titleEl) titleEl.textContent = '向' + god.name + '誠心祈求';
+
+    var backLink = document.getElementById('god-back-link');
+    if (params.get('god') && backLink) {
+      backLink.href = '/gods/' + god.category + '/' + godId;
+      backLink.classList.remove('hidden');
+      backLink.classList.add('flex');
+    }
+
+    // Hide previous result on re-navigation
+    var resultSection = document.getElementById('fortune-result');
+    if (resultSection) resultSection.classList.add('hidden');
+  }
+
+  // Event handlers — only add once globally
+  if (!window.__fortuneHandlersReady) {
+    window.__fortuneHandlersReady = true;
+
+    document.addEventListener('fortune-confirmed', function (e) {
+      var fortune = e.detail.fortune;
+      var num = e.detail.stickNumber;
+
+      var resultSection = document.getElementById('fortune-result');
+      var resultStickNumber = document.getElementById('result-stick-number');
+      var resultTitle = document.getElementById('result-title');
+      var resultQualityBadge = document.getElementById('result-quality-badge');
+      var resultPoem = document.getElementById('result-poem');
+      var resultExplanation = document.getElementById('result-explanation');
+      var resultKeywords = document.getElementById('result-keywords');
+
+      if (resultStickNumber) resultStickNumber.textContent = '第' + num + '籤 · ' + fortune.ganzhi;
+      if (resultTitle) resultTitle.textContent = fortune.quality;
+      if (resultQualityBadge) resultQualityBadge.textContent = fortune.quality;
+      if (resultPoem) resultPoem.textContent = fortune.poem;
+
+      // Render explanation with section headers
+      if (resultExplanation) {
+        var lines = (fortune.explanation || '').split('\n').filter(function(p) { return p.trim(); });
+        var html = '';
+        lines.forEach(function(line) {
+          var trimmed = line.trim();
+          var headerMatch = trimmed.match(/^【([^】]+)】(.*)$/);
+          if (headerMatch) {
+            html += '<div class="mb-3"><span class="inline-block px-2 py-0.5 bg-red-50 dark:bg-red-900/20 text-red-800 dark:text-red-300 text-xs font-bold rounded mr-2 border border-red-200 dark:border-red-700">' + headerMatch[1] + '</span><span>' + headerMatch[2].trim() + '</span></div>';
+          } else {
+            html += '<p class="text-gray-500 dark:text-gray-400 text-sm italic mb-2">' + trimmed + '</p>';
+          }
+        });
+        resultExplanation.innerHTML = html;
+      }
+
+      if (resultKeywords && fortune.keywords && fortune.keywords.length > 0) {
+        resultKeywords.innerHTML = fortune.keywords.map(function(kw) {
+          return '<span class="text-xs px-2.5 py-1 bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-700 rounded-full">' + kw + '</span>';
+        }).join('');
+        resultKeywords.classList.remove('hidden');
+      } else if (resultKeywords) {
+        resultKeywords.classList.add('hidden');
+      }
+
+      if (resultSection) {
+        resultSection.classList.remove('hidden');
+        setTimeout(function () {
+          resultSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 300);
+      }
+    });
+
+    document.addEventListener('click', function (e) {
+      if (e.target && e.target.id === 'btn-draw-again-external') {
+        var rs = document.getElementById('fortune-result');
+        if (rs) rs.classList.add('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  }
+
+  // Run on initial load + astro:page-load for ClientRouter navigation
+  document.addEventListener('astro:page-load', populateGodInfo);
+  populateGodInfo();
+</script>

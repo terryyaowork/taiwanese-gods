@@ -1,0 +1,85 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+const metadata = { title: 'プライバシーポリシー | 台湾の神様紹介', ignoreTitleTemplate: true };
+---
+
+<Layout metadata={metadata}>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide">プライバシーポリシー</h1>
+      <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
+      <p class="text-gray-500 dark:text-gray-400 text-sm">最終更新日: 2025年2月</p>
+    </div>
+
+    <div class="space-y-8 text-gray-700 dark:text-gray-300 leading-relaxed">
+      <section class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h2 class="text-xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">1. 情報の収集</h2>
+        <p class="mb-3">「台湾の神様紹介」はお客様のプライバシーを大切にしています。このポリシーでは、個人情報の収集、使用、保護について説明します。</p>
+        <p class="mb-3">通常の閲覧において、個人を特定できる情報は収集しません。以下の場合にのみ、お客様が自主的に提供された情報を収集する場合があります：</p>
+        <ul class="list-disc pl-6 space-y-1 text-gray-600 dark:text-gray-400">
+          <li>メールやお問い合わせフォームでご連絡いただいた際のお名前とメールアドレス</li>
+          <li>ご提出いただいたコンテンツの提案や投稿</li>
+        </ul>
+      </section>
+
+      <section class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h2 class="text-xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">2. Cookie・トラッキング</h2>
+        <p class="mb-3">本サイトでは、閲覧体験を最適化するために以下の技術を使用しています：</p>
+        <ul class="list-disc pl-6 space-y-1 text-gray-600 dark:text-gray-400 mb-3">
+          <li><strong>必須Cookie</strong> — 言語設定（中国語/英語/日本語）とダークモード設定の記憶に使用</li>
+          <li><strong>ローカルストレージ</strong> — インタラクティブ機能（筊杯、おみくじ）の一時的な状態保存に使用</li>
+        </ul>
+        <p>これらの技術は個人を特定できる情報を収集しません。ブラウザの設定でCookieを管理・無効化できますが、一部の機能に影響が出る場合があります。</p>
+      </section>
+
+      <section class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h2 class="text-xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">3. サードパーティサービス</h2>
+        <p class="mb-3">本サイトでは、以下のサードパーティサービスを使用または埋め込んでいる場合があります。各サービスには独自のプライバシーポリシーがあります：</p>
+        <ul class="list-disc pl-6 space-y-1 text-gray-600 dark:text-gray-400 mb-3">
+          <li><strong>Google Analytics</strong> — 匿名のトラフィックおよび利用状況の分析に使用</li>
+          <li><strong>Google Maps</strong> — 寺院の所在地のナビゲーションに使用</li>
+          <li><strong>Vercel</strong> — サイトのホスティングサービス（アクセスログを収集する場合があります）</li>
+        </ul>
+        <p>これらのサービスのデータ取り扱いの詳細については、各サービスのプライバシーポリシーをご確認ください。</p>
+      </section>
+
+      <section class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h2 class="text-xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">4. データの利用と保護</h2>
+        <p class="mb-3">ご提供いただいた個人情報（メールアドレスなど）は、以下の目的にのみ使用します：</p>
+        <ul class="list-disc pl-6 space-y-1 text-gray-600 dark:text-gray-400 mb-3">
+          <li>お問い合わせ、ご提案、投稿への対応</li>
+          <li>コラボレーション提案やライセンス依頼の処理</li>
+          <li>サイトのコンテンツとサービス品質の向上</li>
+        </ul>
+        <p>法律で義務付けられている場合を除き、お客様の明示的な同意なしに個人情報を第三者に販売、交換、またはその他の方法で提供することはありません。収集した情報を保護するために合理的なセキュリティ対策を講じています。</p>
+      </section>
+
+      <section class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h2 class="text-xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">5. お客様の権利</h2>
+        <p class="mb-3">お客様には以下の権利があります：</p>
+        <ul class="list-disc pl-6 space-y-1 text-gray-600 dark:text-gray-400 mb-3">
+          <li>当方が保有するお客様の個人情報へのアクセス</li>
+          <li>不正確な情報の修正のご依頼</li>
+          <li>個人情報の削除のご依頼</li>
+        </ul>
+        <p>これらの権利を行使される場合は、<a href="mailto:taiwanese.gods@gmail.com" class="text-red-700 dark:text-red-400 hover:underline">taiwanese.gods@gmail.com</a> までご連絡ください。</p>
+      </section>
+
+      <section class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h2 class="text-xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">6. ポリシーの変更</h2>
+        <p>このプライバシーポリシーは定期的に更新される場合があります。重要な変更があった場合は、更新日とともにこのページでお知らせします。定期的にこのページをご確認いただくことをおすすめします。</p>
+      </section>
+
+      <section class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h2 class="text-xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">7. お問い合わせ</h2>
+        <p>プライバシーに関するご質問やご不明な点がございましたら、<a href="mailto:taiwanese.gods@gmail.com" class="text-red-700 dark:text-red-400 hover:underline">taiwanese.gods@gmail.com</a> までメールでご連絡ください。</p>
+      </section>
+    </div>
+
+    <div class="mt-12 text-center">
+      <a href="/ja" class="inline-block px-6 py-3 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors font-medium">
+        ホームに戻る
+      </a>
+    </div>
+  </div>
+</Layout>

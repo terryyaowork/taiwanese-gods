@@ -18,6 +18,7 @@ interface Link {
 
 interface MenuLink extends Link {
   links?: Array<MenuLink>;
+  mobileOnly?: boolean;
 }
 
 interface ActionLink {
@@ -54,11 +55,13 @@ const {
 
 const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
 const isEn = currentPath.startsWith('/en');
-const currentLang = isEn ? 'en' : 'zh-TW';
+const isJa = currentPath.startsWith('/ja');
+const currentLang = isEn ? 'en' : isJa ? 'ja' : 'zh-TW';
+const langPrefix = isEn ? '/en' : isJa ? '/ja' : '';
 
 const getLocalizedHref = (href: string) => {
-  if (!isEn || !href.startsWith('/') || href.startsWith('/en')) return href;
-  return `/en${href === '/' ? '' : href}`;
+  if (!langPrefix || !href.startsWith('/') || href.startsWith('/en') || href.startsWith('/ja')) return href;
+  return `${langPrefix}${href === '/' ? '' : href}`;
 };
 ---
 
@@ -98,11 +101,11 @@ const getLocalizedHref = (href: string) => {
       aria-label="Main navigation"
     >
       <ul
-        class="flex flex-col lg:flex-row lg:self-center w-full lg:w-auto text-xl lg:text-[0.9375rem] tracking-[0.01rem] font-medium lg:justify-center"
+        class="flex flex-col lg:flex-row lg:self-center w-full lg:w-auto text-base lg:text-[0.9375rem] tracking-[0.01rem] font-medium lg:justify-center"
       >
         {
-          links.map(({ text, href, links }) => (
-            <li class={links?.length ? 'dropdown' : ''}>
+          links.map(({ text, href, links, mobileOnly }) => (
+            <li class:list={[links?.length ? 'dropdown' : '', { 'lg:hidden': mobileOnly }]}>
               {links?.length ? (
                 <>
                   <button
@@ -147,7 +150,7 @@ const getLocalizedHref = (href: string) => {
     <div
       class:list={[
         { 'ml-auto rtl:ml-0 rtl:mr-auto': position === 'left' },
-        'hidden lg:self-center lg:flex items-center lg:mb-0 fixed w-full lg:w-auto lg:static justify-end left-0 rtl:left-auto rtl:right-0 bottom-0 p-3 lg:p-0 lg:justify-self-end',
+        'hidden lg:self-center lg:flex items-center lg:mb-0 w-full lg:w-auto lg:static justify-end left-0 rtl:left-auto rtl:right-0 bottom-0 p-3 lg:p-0 lg:justify-self-end',
       ]}
     >
       <div class="items-center flex justify-between w-full lg:w-auto">

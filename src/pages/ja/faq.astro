@@ -1,0 +1,86 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+const metadata = { title: 'よくある質問 | 台湾の神様紹介', ignoreTitleTemplate: true };
+const faqs = [
+  {
+    q: 'このサイトの情報源は何ですか？',
+    a: '台湾各地の寺院公式サイト、文化部や宗教事務局のオープンデータ、民間信仰に関する学術書や論文、およびチームによるフィールドワークと写真撮影を基に作成しています。すべての情報は正確性を検証しています。誤りや不足にお気づきの場合はご連絡ください。',
+  },
+  {
+    q: 'サイトの言語を切り替えるには？',
+    a: 'ページ右上の言語切り替えボタンから、繁体字中国語、英語、日本語を切り替えることができます。選択した言語は次回の訪問時にも自動的に適用されます。',
+  },
+  {
+    q: 'このサイトの画像を使用できますか？',
+    a: '一部の画像はチームのオリジナル撮影、その他はオープンライセンスのリソースから取得しています。商用利用（出版、広告など）をご希望の場合は、事前にお問い合わせください。非営利の教育や個人利用の場合は、出典を明記してください。',
+  },
+  {
+    q: 'このサイトにコンテンツを提供できますか？',
+    a: '大歓迎です！寺院関係者、文化研究者、台湾の宗教文化に詳しい方からの投稿をお待ちしています。お問い合わせページから、コンテンツの投稿、修正、提案をお寄せください。',
+  },
+  {
+    q: '筊杯とおみくじの機能はどのように動作しますか？',
+    a: 'これらの機能は、ランダムな仕組みを使って台湾の伝統的な寺院参拝の儀式をデジタルで再現しています。筊杯には三つの結果があります：聖筊（一つが表、一つが裏 - 神様の承認）、笑筊（両方が表 - 不明確）、怒筊（両方が裏 - 神様の否認）。おみくじは伝統的な六十甲子の詩から無作為に引き、聖筊が出たら確定となります。デジタルですが、誠意と敬意を持ってお使いください。',
+  },
+  {
+    q: 'なぜ一部の神様や寺院の紹介がまだないのですか？',
+    a: '台湾には非常に多くの神様と寺院があり、現在も継続的にカバー範囲を拡大しています。現在50以上の神様と60以上の寺院を掲載しており、定期的に追加しています。特定の神様や寺院の紹介をご希望の場合はお知らせください！',
+  },
+  {
+    q: 'このサイトは寺院や宗教団体が運営していますか？',
+    a: 'いいえ。このサイトは独立した文化紹介プラットフォームであり、特定の寺院や宗教団体とは提携していません。すべての伝統を客観的かつ中立的な視点で紹介し、あらゆる宗教的伝統を平等に尊重しています。',
+  },
+  {
+    q: '初めて台湾を訪れる方におすすめの寺院は？',
+    a: '初めての方には、歴史的に重要でアクセスしやすい以下の寺院をおすすめします：台北の龍山寺（仏教・民間信仰）、台北の行天宮（道教・関帝）、大甲の鎮瀾宮（道教・媽祖）、台南の大天后宮（道教・媽祖）、鹿港の天后宮（道教・媽祖）。また、「神様ガイド」機能を使えば、願い事に合った神様と寺院を見つけることもできます。',
+  },
+  {
+    q: '台湾における道教・仏教・民間信仰の違いは何ですか？',
+    a: '台湾では、これらの伝統は何世紀にもわたって融合してきました。道教は道との調和を重視し、玉皇大帝や媽祖などの神様がいます。仏教は悟りと慈悲を重視し、観音菩薩や地蔵菩薩などが信仰されています。民間信仰は日常生活に結びついた地域の伝統で、土地公（土地の神様）や虎爺などが含まれます。多くの台湾の寺院は複数の伝統の神様を祀っており、台湾独自の宗教的融合文化を反映しています。',
+  },
+  {
+    q: 'サイト運営チームへの連絡方法は？',
+    a: 'お問い合わせページをご利用いただくか、taiwanese.gods@gmail.com まで直接メールでお問い合わせください。通常1～3営業日以内にご回答いたします。',
+  },
+];
+---
+
+<Layout metadata={metadata}>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide">よくある質問</h1>
+      <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
+      <p class="text-lg text-gray-700 dark:text-gray-300 font-light max-w-2xl mx-auto">
+        お客様からよくいただくご質問をまとめました。お役に立てれば幸いです。
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      {
+        faqs.map((faq) => (
+          <details class="bg-white/80 dark:bg-gray-800/80 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-5 group">
+            <summary class="font-semibold cursor-pointer text-lg text-gray-800 dark:text-gray-200 flex items-center justify-between">
+              <span>{faq.q}</span>
+              <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700 text-gray-700 dark:text-gray-300 leading-relaxed">{faq.a}</div>
+          </details>
+        ))
+      }
+    </div>
+
+    <div class="mt-12 bg-red-50/80 dark:bg-red-900/20 p-8 rounded-lg border border-red-100 dark:border-red-800 text-center">
+      <h2 class="text-xl font-bold text-red-900 dark:text-red-300 mb-3">まだ疑問がありますか？</h2>
+      <p class="text-gray-700 dark:text-gray-300 mb-4">上記の回答でご不明な点がございましたら、お気軽にお問い合わせください。</p>
+      <a href="/ja/contact" class="inline-block px-6 py-3 bg-red-800 hover:bg-red-900 text-white rounded-lg transition-colors font-medium">
+        お問い合わせ
+      </a>
+    </div>
+
+    <div class="mt-8 text-center">
+      <a href="/ja" class="inline-block px-6 py-3 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors font-medium">
+        ホームに戻る
+      </a>
+    </div>
+  </div>
+</Layout>

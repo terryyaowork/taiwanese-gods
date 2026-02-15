@@ -1,6 +1,6 @@
 ---
 import GodDetail from '~/components/gods/GodDetail.astro';
-import gods from '~/data/buddhist-gods.json';
+import gods from '~/data/zh-TW/buddhist-gods.json';
 
 export async function getStaticPaths() {
   // 只產生繁體中文（無語系前綴）的細節頁
@@ -9,31 +9,7 @@ export async function getStaticPaths() {
   }));
 }
 
-const labels = {
-  'zh-TW': {
-    aliases: '別名',
-    domain: '職掌',
-    description: '簡介',
-    story: '神話故事',
-    temples: '代表廟宇',
-    worship: '參拜方式',
-    festivals: '重要慶典',
-    back: '← 回神明列表',
-  },
-  en: {
-    aliases: 'Alias',
-    domain: 'Domain',
-    description: 'Description',
-    story: 'Legend/Story',
-    temples: 'Representative Temples',
-    worship: 'Worship',
-    festivals: 'Major Festivals',
-    back: '← Back to Deities List',
-  },
-};
-
 const { id } = Astro.params;
-const lang = 'zh-TW';
 const god = gods.find((g) => g.id === id);
 if (!god) {
   throw new Error('神明資料不存在');
@@ -45,45 +21,16 @@ const godImages = import.meta.glob('/src/assets/images/gods/*.{jpg,jpeg,png,webp
   import: 'default',
 });
 
-// Helper to find the correct image path
 const getGodImage = (imagePath) => {
   if (!imagePath) return null;
   const filename = imagePath.split('/').pop();
-  const name = filename.split('.')[0];
-
-  // Try to find a match in the globbed images
-  // First try exact filename match (if feasible), but since we need to match full path key
-  // We'll search for the key ending with the filename or name.
-
-  const foundKey = Object.keys(godImages).find((key) => {
-    const keyFilename = key.split('/').pop();
-    // Check for exact match or name match (ignoring extension)
-    return keyFilename && (keyFilename === filename || keyFilename.startsWith(name + '.'));
-  });
-
-  if (foundKey) {
-    return godImages[foundKey];
-  }
-  return imagePath; // Fallback to original path
+  const matchedKey = Object.keys(godImages).find((key) => key.endsWith('/' + filename));
+  return matchedKey ? godImages[matchedKey] : imagePath;
 };
 
 const godImage = getGodImage(god.image);
 const godImageSrc = typeof godImage === 'object' ? godImage.src : godImage;
 
-const metadata = {
-  title: god.name[lang],
-  description: god.description[lang].substring(0, 150) + '...',
-  openGraph: {
-    images: [
-      {
-        url: godImage,
-        width: 1200,
-        height: 630,
-        alt: god.name[lang],
-      },
-    ],
-  },
-};
 ---
 
 <GodDetail god={god} imageSrc={godImageSrc} />

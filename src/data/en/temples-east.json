@@ -1,0 +1,203 @@
+[
+  {
+    "id": "jiaoxi-sietian",
+    "name": "Jiaoxi Sietian Temple",
+    "location": "Jiaoxi Township, Yilan County",
+    "address": "No. 51, Sec. 1, Zhongshan Rd, Jiaoxi Township, Yilan County",
+    "mainDeities": [
+      {
+        "id": "guansheng",
+        "name": "Guan Sheng Di Jun"
+      }
+    ],
+    "description": "Jiaoxi Sietian Temple is the largest and most popular Guan Di temple in Northern Taiwan and a spiritual center in Yilan. It boasts majestic architecture and houses a unique 'Silk Guan Gong' statue. The 'Turtle King' offering ritual on the 13th of the 1st lunar month and the Spring/Autumn ceremonies attract countless worshippers. It stands as a witness to the development of the Lanyang Plain.",
+    "history": "Built in 1804 by Monk Tingshuo. Expanded multiple times to its current grandeur. With numerous branch temples, it is an influential historic temple in the Yilan region.",
+    "images": [
+      "/assets/images/temples/temple-jiaoxisietian.png"
+    ],
+    "url": "https://www.facebook.com/JiaoxiSietianTemple/",
+    "googleMap": "https://maps.app.goo.gl/search/Jiaoxi+Sietian+Temple"
+  },
+  {
+    "id": "yilan-sanqing",
+    "name": "Yilan Sanqing Temple",
+    "location": "Dongshan Township, Yilan County",
+    "address": "No. 123, Sanqing Rd., Dongshan Township, Yilan County",
+    "mainDeities": [
+      {
+        "id": "jigong",
+        "name": "Ji Gong (Mad Monk)"
+      }
+    ],
+    "description": "Yilan Sanqing Temple overlooks the picturesque Meihua Lake. While named after the Three Pure Ones, it is most famous for Ji Gong (the Mad Monk). The mountain-side temple offers stunning lake views and is a popular destination combining tourism and spiritual practice in Yilan.",
+    "history": "Founded in the 1970s by devotees who chose the auspicious lakeside location. Its excellent feng shui and Ji Gong's reputation for answering prayers attracted many worshippers. The surrounding area developed into a complete tourism zone, with Meihua Lake cycling path becoming a popular Yilan attraction.",
+    "images": [
+      "/assets/images/temples/temple-yilan-sanqing.png"
+    ]
+  },
+  {
+    "id": "hualien-citygod",
+    "name": "Hualien City God Temple",
+    "location": "Hualien City, Hualien County",
+    "address": "No. 169, Chenggong St, Hualien City, Hualien County",
+    "mainDeities": [
+      {
+        "id": "chenghuang",
+        "name": "City God"
+      }
+    ],
+    "description": "Hualien City God Temple is one of the oldest temples in Hualien, dedicated to the City God. It famously survived the Japanese colonial 'Kominka' movement (which destroyed many temples) by cleverly enshrining Koxinga (who had Japanese heritage) and disguising the City God. The architecture is a unique blend of traditional Minnan style and Japanese elements, especially the theater stage opposite the temple. It's a vibrant cultural hub famous for local food.",
+    "history": "Established in 1934 as Sheng'an Palace. Renamed 'Zheng Sheng Shrine' honoring Koxinga during the late Japanese period to avoid demolition. Restored to City God worship after WWII and rebuilt in 2004.",
+    "images": [
+      "/assets/images/temples/temple-hualienchenghuang.png"
+    ],
+    "url": "https://www.facebook.com/HualienCityGodTemple/",
+    "googleMap": "https://maps.app.goo.gl/hualienchenghuang"
+  },
+  {
+    "id": "qingxiu-yuan",
+    "name": "Ji'an Qingxiu Yuan",
+    "location": "Ji'an Township, Hualien County",
+    "address": "No. 345-1, Zhongxing Rd, Ji'an Township, Hualien County",
+    "mainDeities": [
+      {
+        "id": "fudomyoo",
+        "name": "Fudo Myoo"
+      }
+    ],
+    "description": "Ji'an Qingxiu Yuan is the most complete preserved Japanese-style temple in Taiwan. Architecture features Edo style 'Hogyo-zukuri' roof. Features 'Baidu Stone' and eighty-eight stone Buddhas.",
+    "history": "Built in 1917 (Taisho 6) as a missionary post for Japanese immigrants. Renamed Qingxiu Yuan after WWII. Restored in 1997.",
+    "images": [
+      "/assets/images/temples/temple-qingxiuyuan.png"
+    ],
+    "googleMap": "https://maps.app.goo.gl/qingxiuyuan"
+  },
+  {
+    "id": "hualien-gangtian",
+    "name": "Hualien Gang Tian Temple",
+    "location": "Hualien City, Hualien County",
+    "address": "No. 15, Ln. 500, Sec. 1, Zhongshan Rd, Hualien City, Hualien County",
+    "mainDeities": [
+      {
+        "id": "mazu",
+        "name": "Mazu"
+      }
+    ],
+    "description": "Hualien Gang Tian Temple is the largest Mazu temple in Eastern Taiwan. Dedicated to 'Gang Tian Ma', it serves as a major spiritual center for Hualien City. The temple features grand architecture blending Northern and Southern styles, with an impressive pai-lou (archway) and a vast plaza. It hosts massive celebrations during Mazu's birthday.",
+    "history": "Tracing its roots to the Qing Dynasty as a simple shrine. The current massive temple complex started construction in 1977 and has since become a landmark of Hualien.",
+    "images": [
+      "/assets/images/temples/temple-hualiengangtian.png"
+    ],
+    "googleMap": "https://maps.app.goo.gl/gangtian"
+  },
+  {
+    "id": "hualien-shenan",
+    "name": "Hualien Shen An Temple",
+    "location": "Ji'an Township, Hualien County",
+    "address": "No. 118, Cihui 3rd St, Ji'an Township, Hualien County",
+    "mainDeities": [
+      {
+        "id": "wangmu",
+        "name": "Queen Mother of the West"
+      }
+    ],
+    "description": "Hualien Shen An Temple is the birthplace of the 'Queen Mother of the West' (Mu Niang) faith in Taiwan. The architecture is majestic and royal. Legend has it that the Queen Mother manifested here. It shares a common origin with the nearby Cihui Tang but remains a distinct and holy site for pilgrims seeking the roots of this faith.",
+    "history": "Established in 1949 following a manifestation of the Queen Mother. Over decades of expansion, it has become a grand temple and a significant landmark in the history of Taiwan's religious development.",
+    "images": [
+      "/assets/images/temples/temple-hualienshenan.png"
+    ],
+    "googleMap": "https://maps.app.goo.gl/search/Hualien+Shen+An+Temple"
+  },
+  {
+    "id": "tafalong-shrine",
+    "name": "Tafalong Ancestral Shrine",
+    "location": "Guangfu Township, Hualien County",
+    "address": "Tafalong Tribe, Guangfu Township, Hualien County",
+    "mainDeities": [
+      {
+        "id": "zuling",
+        "name": "Ancestral Spirits (Kawas)"
+      }
+    ],
+    "description": "Tafalong is one of the oldest and largest Amis (Pangcah) settlements in Hualien County, with a history spanning over 1,500 years. The ancestral shrine (kakita'an) at its heart is the sacred center of Tafalong's spiritual and cultural life, housing ceremonial instruments and ancestral symbols passed down through generations. The shrine's pillars feature exquisite wood carvings depicting Amis creation myths — a precious indigenous art heritage. The annual Harvest Festival (Ilisin) in July-August is the grandest celebration, where the entire tribe gathers for singing, dancing, and ancestral worship, thanking the kawas (ancestral spirits) and nature for their blessings. The festival's dances, feasts, and age-grade system showcase the essence of Amis social structure and culture.",
+    "history": "Tafalong's history spans over 1,500 years, making it one of the earliest large Amis settlements in the East Rift Valley. The name 'Tafalong' means 'white crab' in Amis, after the white crabs once abundant in local streams. The ancestral shrine (kakita'an) preserves the most ancient Amis traditions. Japanese ethnographers conducted detailed studies here during the colonial era. In recent years, the tribe has actively pursued cultural revitalization — restoring the shrine, transmitting traditional songs and crafts, and developing cultural tourism, serving as a model for indigenous cultural preservation in Taiwan.",
+    "images": [
+      "/assets/images/temples/temple-tafalong.png"
+    ]
+  },
+  {
+    "id": "taitung-tianhou",
+    "name": "Taitung Tianhou Temple",
+    "location": "Taitung City, Taitung County",
+    "address": "No. 222, Sec. 1, Zhonghua Rd, Taitung City, Taitung County",
+    "mainDeities": [
+      {
+        "id": "mazu",
+        "name": "Mazu"
+      }
+    ],
+    "description": "Taitung Tianhou Temple is the oldest Mazu temple in Taitung and the only official Qing dynasty temple in Eastern Taiwan. It is famous for the 'Bombing of Master Handan' ceremony during the Lantern Festival, one of Taiwan's top three folklore events alongside the Pingxi Sky Lanterns and Yanshui Beehive Fireworks. The event features brave volunteers representing Master Handan being bombarded with firecrackers, symbolizing prosperity and driving away the cold.",
+    "history": "Founded in 1889 by Admiral Zhang Zhaolian to thank Mazu for helping quell a rebellion. Received a plaque from Emperor Guangxu. Moved to the current site in 1933 after an earthquake. It stands as a witness to the history of Taitung's development.",
+    "images": [
+      "/assets/images/temples/temple-taitungtianhou.png"
+    ],
+    "url": "http://www.taitungtianhou.org.tw/",
+    "googleMap": "https://maps.app.goo.gl/taitungtianhou"
+  },
+  {
+    "id": "penghu-tianhou",
+    "name": "Penghu Tianhou Temple",
+    "location": "Magong City, Penghu County",
+    "address": "No. 1, Zhengyi St, Magong City, Penghu County",
+    "mainDeities": [
+      {
+        "id": "mazu",
+        "name": "Mazu"
+      }
+    ],
+    "description": "Penghu Tianhou Temple is the oldest temple in Taiwan, confirmed by historical records to predate 1604. It houses the 'Shen Yourong Repelled the Dutch' stone tablet — the oldest tablet in Taiwan-Penghu, recording the 1604 event where Ming Dynasty commander Shen Yourong expelled the Dutch. This tablet was designated a National Treasure in 2022. The temple has been a national monument since 1983 and preserves abundant Qing Dynasty carvings and paintings.",
+    "history": "The exact founding date is unknown, but in 1604, Dutch East India Company commander Wijbrand van Waerwijck arrived in Penghu with two ships. Ming Dynasty commander Shen Yourong successfully expelled them. The famous stone tablet commemorating this event was unearthed during renovations in 1919, establishing the temple's status as the oldest in Taiwan-Penghu. The temple has undergone multiple renovations through the Ming and Qing dynasties.",
+    "images": [
+      "/assets/images/temples/temple-penghu-tianhou.png"
+    ],
+    "googleMap": "https://maps.app.goo.gl/penghu-tianhou"
+  },
+  {
+    "id": "kinmen-citygod",
+    "name": "Kinmen Wudao City God Temple",
+    "location": "Jincheng Township, Kinmen County",
+    "address": "No. 40, Guangqian Rd, Jincheng Township, Kinmen County",
+    "mainDeities": [
+      {
+        "id": "chenghuang",
+        "name": "City God"
+      }
+    ],
+    "description": "Kinmen Wudao City God Temple is the largest and most popular temple in Kinmen, serving as the islands' spiritual center. The annual 'Kinmen City God Festival' on the 12th day of the 4th lunar month commemorates the 1680 relocation of the administrative center by General Chen Long, and is listed among Taiwan's top 100 religious sceneries. The grand parade features elaborate floats and traditional performance troupes.",
+    "history": "The original temple dates to 1387 when the Kinmen military garrison was established. In 1663, the Qing Dynasty's coastal evacuation policy led to its destruction. In 1680, General Chen Long relocated the administrative center to Houpu, bringing the City God worship with him. The temple was rebuilt in 1811 with community fundraising, and expanded in 1994 to its current scale.",
+    "images": [
+      "/assets/images/temples/temple-kinmen-citygod.png"
+    ],
+    "url": "https://kinmen.travel/zh-tw/travel/attraction/811",
+    "googleMap": "https://maps.app.goo.gl/kinmen-citygod"
+  },
+  {
+    "id": "matsu-tianhou",
+    "name": "Matsu Tianhou Temple",
+    "location": "Nangan Township, Lienchiang County",
+    "address": "No. 4, Matsu Village, Nangan Township, Lienchiang County",
+    "mainDeities": [
+      {
+        "id": "mazu",
+        "name": "Mazu"
+      }
+    ],
+    "description": "Matsu Tianhou Temple, overlooking Matsu Harbor in Nangan, is the most important religious center in the Matsu Islands and the only temple in the world with the 'Spiritual Cave of Mazu' — believed to be where Mazu's body was buried. Legend says Mazu drowned while searching for her father at sea, and her body drifted to this shore. The Matsu Islands were named after the goddess. The annual 'Mazu Ascension Festival' on the 9th day of the 9th lunar month is the islands' grandest religious event.",
+    "history": "The founding date is unknown, but the site has been inhabited since the Song Dynasty. Historical records from 'Sanshan Zhi' mention Nangan as 'Shang Gan Tang.' The temple has been rebuilt multiple times, with documented renovations in 1943 and 1963. In 2001, the old temple was demolished and rebuilt in the style of the Meizhou Mazu ancestral temple.",
+    "images": [
+      "/assets/images/temples/temple-matsu-tianhou.png"
+    ],
+    "url": "http://tianhou-temple.matsu.idv.tw/",
+    "googleMap": "https://maps.app.goo.gl/matsu-tianhou"
+  }
+]

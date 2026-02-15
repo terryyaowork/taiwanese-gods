@@ -1,0 +1,213 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+const { item, imageSrc, category, categoryLabel, backLink, backLabel, lang = 'zh-TW' } = Astro.props;
+
+const detailLabel = lang === 'en' ? 'Detailed Introduction' : lang === 'ja' ? '詳細紹介' : '詳細介紹';
+const tocLabel = lang === 'en' ? 'Contents' : lang === 'ja' ? '目次' : '本文目錄';
+
+const siteNames: Record<string, string> = { en: 'Taiwanese Gods', ja: '台湾の神々' };
+const metadata = {
+  title: siteNames[lang] ? `${item.title} — ${siteNames[lang]}` : item.title,
+  ignoreTitleTemplate: lang !== 'zh-TW',
+  description: item.summary,
+  openGraph: {
+    images: [
+      {
+        url: imageSrc,
+        width: 1200,
+        height: 630,
+        alt: item.title,
+      },
+    ],
+  },
+};
+
+// Parse 【XXX】 section headers from content for TOC
+const tocItems: { id: string; label: string }[] = [];
+const contentStr = item.content || '';
+const headerRegex = /【([^】]+)】/g;
+let match: RegExpExecArray | null;
+while ((match = headerRegex.exec(contentStr)) !== null) {
+  const label = match[1];
+  const id = `section-${tocItems.length + 1}`;
+  tocItems.push({ id, label });
+}
+
+// Split content into sections by 【XXX】 markers
+interface ContentSection {
+  heading?: string;
+  id?: string;
+  lines: string[];
+}
+const contentSections: ContentSection[] = [];
+const rawLines = contentStr.split('\n');
+let currentSection: ContentSection = { lines: [] };
+let sectionIndex = 0;
+
+for (const line of rawLines) {
+  const headerMatch = line.match(/^【([^】]+)】(.*)$/);
+  if (headerMatch) {
+    if (currentSection.lines.length > 0 || currentSection.heading) {
+      contentSections.push(currentSection);
+    }
+    const heading = headerMatch[1];
+    const rest = headerMatch[2]?.trim() || '';
+    currentSection = { heading, id: `section-${sectionIndex + 1}`, lines: rest ? [rest] : [] };
+    sectionIndex++;
+  } else {
+    const midMatch = line.match(/^(.*?)【([^】]+)】(.*)$/);
+    if (midMatch) {
+      const before = midMatch[1]?.trim();
+      if (before) currentSection.lines.push(before);
+      contentSections.push(currentSection);
+      const heading = midMatch[2];
+      const after = midMatch[3]?.trim() || '';
+      currentSection = { heading, id: `section-${sectionIndex + 1}`, lines: after ? [after] : [] };
+      sectionIndex++;
+    } else {
+      currentSection.lines.push(line);
+    }
+  }
+}
+if (currentSection.lines.length > 0 || currentSection.heading) {
+  contentSections.push(currentSection);
+}
+---
+
+<Layout metadata={metadata}>
+  <div class="main-container bg-paper-texture min-h-screen pb-12">
+    <!-- Hero Section with Image & Title -->
+    <div class="relative w-full h-[25vh] sm:h-[35vh] md:h-[45vh] overflow-hidden">
+      <div class="absolute inset-0 bg-black/60 z-10"></div>
+      {
+        imageSrc && (
+          <img
+            src={imageSrc}
+            alt={item.title}
+            class="absolute inset-0 w-full h-full object-cover blur-sm scale-110 opacity-50"
+          />
+        )
+      }
+      <div class="relative z-20 h-full max-w-5xl mx-auto px-4 flex flex-col justify-end pb-6 sm:pb-10 md:pb-12">
+        <span
+          class="inline-block px-3 py-1 bg-red-800 text-gold-100 text-xs sm:text-sm font-bold tracking-widest rounded-sm mb-2 w-fit border border-gold-300/30 backdrop-blur-sm"
+        >
+          {categoryLabel}
+        </span>
+        <h1 class="text-2xl sm:text-4xl md:text-6xl font-serif font-bold text-white mb-2 drop-shadow-lg tracking-wide">
+          {item.title}
+        </h1>
+        <p class="text-white/80 text-sm sm:text-lg md:text-xl font-light tracking-wider line-clamp-2">
+          {item.summary}
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 -mt-4 sm:-mt-8 relative z-30">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+        <!-- Left Content -->
+        <div class="lg:col-span-2 space-y-6 sm:space-y-8 bg-white/95 dark:bg-gray-800/95 p-4 sm:p-6 md:p-8 rounded-lg shadow-xl border-t-4 border-red-800">
+
+          {/* TOC - only show when there are 2+ sections */}
+          {tocItems.length >= 2 && (
+            <nav class="bg-red-50/60 dark:bg-red-900/20 border border-red-100 dark:border-red-800/50 rounded-lg p-3 sm:p-5 mb-2">
+              <h3 class="font-serif font-bold text-red-900 dark:text-red-300 mb-3 text-sm tracking-widest uppercase">{tocLabel}</h3>
+              <ol class="space-y-1.5">
+                {tocItems.map((tocItem, i) => (
+                  <li>
+                    <a
+                      href={`#${tocItem.id}`}
+                      class="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-400 transition-colors text-[15px]"
+                    >
+                      <span class="text-red-300 dark:text-red-600 text-xs font-mono">{String(i + 1).padStart(2, '0')}</span>
+                      {tocItem.label}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          )}
+
+          <section id="content">
+            <h2 class="section-title">{detailLabel}</h2>
+            <div class="prose prose-lg max-w-none text-gray-700 dark:text-gray-300 leading-relaxed font-serif">
+              {contentSections.map((sec) => (
+                sec.heading ? (
+                  <div id={sec.id} class="scroll-mt-6">
+                    <h3 class="text-xl font-bold text-red-900 dark:text-red-300 mt-8 mb-3 font-serif border-l-4 border-red-700 pl-3">
+                      {sec.heading}
+                    </h3>
+                    {sec.lines.map((line: string) => {
+                      const trimmed = line.trim();
+                      if (!trimmed) return null;
+                      if (trimmed.startsWith('●') || trimmed.startsWith('-') || trimmed.match(/^\d+\./)) {
+                        return <p class="mb-2 pl-4 text-gray-600 dark:text-gray-400">{trimmed}</p>;
+                      }
+                      return <p class="mb-4">{trimmed}</p>;
+                    })}
+                  </div>
+                ) : (
+                  sec.lines.map((line: string) => {
+                    const trimmed = line.trim();
+                    if (!trimmed) return null;
+                    if (trimmed.startsWith('●') || trimmed.startsWith('-') || trimmed.match(/^\d+\./)) {
+                      return <p class="mb-2 pl-4 text-gray-600 dark:text-gray-400">{trimmed}</p>;
+                    }
+                    return <p class="mb-4">{trimmed}</p>;
+                  })
+                )
+              ))}
+            </div>
+          </section>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="lg:col-span-1 space-y-6">
+          {
+            imageSrc && (
+              <div class="bg-white dark:bg-gray-800 p-2 rounded-lg shadow-lg border-2 border-gold-200">
+                <img src={imageSrc} alt={item.title} class="w-full h-auto object-cover rounded-md" />
+                <div class="text-center py-3">
+                  <p class="font-serif font-bold text-xl text-primary-900 dark:text-gray-100">{item.title}</p>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">{categoryLabel}</p>
+                </div>
+              </div>
+            )
+          }
+
+          <div class="mt-8 text-center">
+            <a
+              href={backLink}
+              class="inline-flex items-center gap-2 px-6 py-3 border border-red-800 dark:border-red-600 text-red-800 dark:text-red-400 rounded-full hover:bg-red-800 hover:text-white transition-colors duration-300"
+            >
+              {backLabel}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style is:global>
+  html {
+    scroll-behavior: smooth;
+  }
+  .section-title {
+    @apply text-2xl font-bold mb-6 pb-2 border-b-2 border-red-100 text-red-900 inline-block font-serif;
+    position: relative;
+  }
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: #b91c1c;
+  }
+  div[id^='section-'] {
+    scroll-margin-top: 1.5rem;
+  }
+</style>

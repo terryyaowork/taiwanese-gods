@@ -1,0 +1,118 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+const metadata = { title: 'サイトについて | 台湾の神様紹介', ignoreTitleTemplate: true };
+---
+
+<Layout metadata={metadata}>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide">サイトについて</h1>
+      <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
+    </div>
+
+    <div class="prose prose-lg max-w-none dark:prose-invert">
+      <section class="mb-10">
+        <h2 class="text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">私たちの使命</h2>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          「台湾の神様紹介」は、台湾の豊かな神様信仰、寺院文化、民間習俗の伝統を紹介するデジタルプラットフォームです。台湾の宗教文化は、道教、仏教、民間信仰、原住民族の精神的伝統が独自に融合したもので、世界に類を見ない多様で活気に満ちた信仰のタペストリーを形成しています。
+        </p>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          私たちは、これらの伝統文化を現代的でわかりやすい方法で紹介し、あらゆる背景や国籍の方々が台湾の神様の物語、寺院の美しさ、民間信仰の深い意味を簡単に発見できるようにすることを目指しています。土地の精神文化を理解することは、その人々を真に知る最良の方法の一つだと信じています。
+        </p>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">コンテンツ紹介</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-lg text-red-800 dark:text-red-400 mb-2">神様百科</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">道教、仏教、民間信仰、客家の伝統、原住民族文化にわたる50以上の神様の詳細なプロフィール。伝説、祭り、参拝ガイドを含みます。</p>
+          </div>
+          <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-lg text-red-800 dark:text-red-400 mb-2">寺院ガイド</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">台湾の北部、中部、南部、東部にわたる60以上の著名な寺院を厳選して紹介。住所、歴史、参拝情報を掲載しています。</p>
+          </div>
+          <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-lg text-red-800 dark:text-red-400 mb-2">文化遺産</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">台湾独自の宗教的祭り、参拝儀式、寺院建築、無形文化遺産を紹介。信仰の背後にある生きた知恵を探ります。</p>
+          </div>
+          <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-lg text-red-800 dark:text-red-400 mb-2">体験型コンテンツ</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">デジタル筊杯とおみくじシミュレーターで、伝統的な占いを体験。画面を通じて本物の寺院参拝の雰囲気を味わえます。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">特徴</h2>
+        <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+          <li class="flex items-start gap-3">
+            <span class="text-red-600 mt-1">●</span>
+            <span><strong>多言語対応</strong> — 繁体字中国語、英語、日本語に対応し、台湾の精神文化を世界に発信</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-600 mt-1">●</span>
+            <span><strong>豊富なビジュアル</strong> — 寺院や神様の厳選された写真で、台湾の宗教芸術の美しさを紹介</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-600 mt-1">●</span>
+            <span><strong>神様ガイド</strong> — 願い事に合わせたおすすめの神様を紹介する機能</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-600 mt-1">●</span>
+            <span><strong>相互リンク</strong> — 神様のページから関連寺院へ、寺院のページから祀られている神様へ簡単にアクセス</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-600 mt-1">●</span>
+            <span><strong>レスポンシブデザイン</strong> — スマートフォン、タブレット、デスクトップに最適化。いつでもどこでも閲覧可能</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">情報源・参考文献</h2>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          当サイトのコンテンツは、複数の情報源から慎重に調査・検証しています：
+        </p>
+        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+          <li class="flex items-start gap-3">
+            <span class="text-amber-600 mt-1">◆</span>
+            <span>台湾各地の寺院が提供する公式サイトおよび資料</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-amber-600 mt-1">◆</span>
+            <span>台湾の文化部および宗教事務局のオープンデータ</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-amber-600 mt-1">◆</span>
+            <span>台湾の民間信仰と宗教文化に関する学術書・研究論文</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-amber-600 mt-1">◆</span>
+            <span>チームによるフィールドワーク、取材、写真撮影</span>
+          </li>
+        </ul>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mt-4 italic">
+          誤りにお気づきの場合や追加情報をお持ちの場合は、お知らせいただければ速やかに内容を更新いたします。
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">お問い合わせ</h2>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+          ご提案、コラボレーション、コンテンツライセンス、修正については、
+          <a href="/ja/contact" class="text-red-700 dark:text-red-400 hover:underline">お問い合わせ</a>
+          ページをご利用いただくか、
+          <a href="mailto:taiwanese.gods@gmail.com" class="text-red-700 dark:text-red-400 hover:underline">taiwanese.gods@gmail.com</a>
+          まで直接メールでご連絡ください。
+        </p>
+      </section>
+    </div>
+
+    <div class="mt-12 text-center">
+      <a href="/ja" class="inline-block px-6 py-3 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors font-medium">
+        ホームに戻る
+      </a>
+    </div>
+  </div>
+</Layout>

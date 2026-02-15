@@ -1,24 +1,76 @@
 ---
 import Layout from '~/layouts/Layout.astro';
-import { getHomePermalink } from '~/utils/permalinks';
 
-const title = `Error 404`;
+const title = '404';
 ---
 
 <Layout metadata={{ title }}>
-  <section class="flex items-center h-full p-16">
-    <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
-      <div class="max-w-md text-center">
-        <h2 class="mb-8 font-bold text-9xl">
-          <span class="sr-only">Error</span>
-          <span class="text-primary">404</span>
-        </h2>
-        <p class="text-3xl font-semibold md:text-3xl">Sorry, we couldn't find this page.</p>
-        <p class="mt-4 mb-8 text-lg text-muted dark:text-slate-400">
-          But dont worry, you can find plenty of other things on our homepage.
-        </p>
-        <a rel="noopener noreferrer" href={getHomePermalink()} class="btn ml-4">Back to homepage</a>
+  <section class="flex items-center justify-center min-h-[70vh] px-4">
+    <div class="max-w-lg text-center">
+      <div class="text-8xl sm:text-9xl font-serif font-bold text-red-900/20 dark:text-red-300/20 select-none mb-4">
+        404
       </div>
+      <h1
+        id="not-found-title"
+        class="text-2xl sm:text-3xl font-serif font-bold text-red-900 dark:text-red-300 mb-4"
+      >
+        找不到此頁面
+      </h1>
+      <p id="not-found-desc" class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+        您所尋找的頁面可能已被移除、名稱已更改，或暫時無法使用。
+      </p>
+      <a
+        id="not-found-link"
+        href="/"
+        class="inline-block px-6 py-3 bg-red-900 hover:bg-red-800 text-white rounded-lg transition-colors font-medium"
+      >
+        回到首頁
+      </a>
     </div>
   </section>
 </Layout>
+
+<script is:inline>
+  (function () {
+    const i18n = {
+      'zh-TW': {
+        title: '找不到此頁面',
+        desc: '您所尋找的頁面可能已被移除、名稱已更改，或暫時無法使用。',
+        link: '回到首頁',
+        href: '/',
+      },
+      en: {
+        title: 'Page Not Found',
+        desc: "The page you're looking for may have been removed, renamed, or is temporarily unavailable.",
+        link: 'Back to Homepage',
+        href: '/en',
+      },
+      ja: {
+        title: 'ページが見つかりません',
+        desc: 'お探しのページは削除されたか、名前が変更されたか、一時的に利用できない可能性があります。',
+        link: 'トップページへ戻る',
+        href: '/ja',
+      },
+    };
+
+    const path = window.location.pathname;
+    let lang = 'zh-TW';
+    if (path.startsWith('/en')) lang = 'en';
+    else if (path.startsWith('/ja')) lang = 'ja';
+    else {
+      const saved = localStorage.getItem('selectedLang');
+      if (saved && i18n[saved]) lang = saved;
+    }
+
+    const t = i18n[lang];
+    const titleEl = document.getElementById('not-found-title');
+    const descEl = document.getElementById('not-found-desc');
+    const linkEl = document.getElementById('not-found-link');
+    if (titleEl) titleEl.textContent = t.title;
+    if (descEl) descEl.textContent = t.desc;
+    if (linkEl) {
+      linkEl.textContent = t.link;
+      linkEl.href = t.href;
+    }
+  })();
+</script>

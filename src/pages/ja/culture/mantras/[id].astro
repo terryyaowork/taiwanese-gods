@@ -1,0 +1,26 @@
+---
+import CultureDetail from '~/components/culture/CultureDetail.astro';
+import mantras from '~/data/ja/culture-mantras.json';
+
+export async function getStaticPaths() {
+  return mantras.map((item) => ({
+    params: { id: item.id },
+  }));
+}
+
+const { id } = Astro.params;
+const item = mantras.find((m) => m.id === id);
+if (!item) {
+  throw new Error('Mantra not found');
+}
+---
+
+<CultureDetail
+  item={item}
+  imageSrc={null}
+  category="mantras"
+  categoryLabel="真言・経典"
+  backLink="/ja/culture/mantras"
+  backLabel="← 真言・経典に戻る"
+  lang="ja"
+/>

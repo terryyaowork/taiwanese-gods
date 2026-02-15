@@ -1,0 +1,47 @@
+---
+/**
+ * Generates hreflang alternate links for multilingual SEO.
+ *
+ * URL structure:
+ *   zh-TW (default): /gods/taoism/mazu
+ *   en:              /en/gods/taoism/mazu
+ *   ja:              /ja/gods/taoism/mazu
+ *
+ * Detects current language from path prefix and generates
+ * alternates for all three languages + x-default.
+ */
+import { SITE } from 'astrowind:config';
+
+const siteUrl = (SITE?.site || 'https://taiwanese-gods.vercel.app').replace(/\/$/, '');
+const pathname = Astro.url.pathname;
+
+// Determine the base path (without language prefix)
+let basePath: string;
+let skip = false;
+
+if (pathname.startsWith('/en/') || pathname === '/en') {
+  basePath = pathname.replace(/^\/en\/?/, '/') || '/';
+} else if (pathname.startsWith('/ja/') || pathname === '/ja') {
+  basePath = pathname.replace(/^\/ja\/?/, '/') || '/';
+} else if (pathname.startsWith('/zh-TW/')) {
+  // zh-TW explicit path (redirect target) — skip hreflang
+  skip = true;
+  basePath = '';
+} else {
+  // Chinese (default) page — pathname IS the base path
+  basePath = pathname;
+}
+
+const alternates = !skip && basePath
+  ? [
+      { lang: 'zh-TW', href: `${siteUrl}${basePath}` },
+      { lang: 'en', href: `${siteUrl}/en${basePath === '/' ? '' : basePath}` },
+      { lang: 'ja', href: `${siteUrl}/ja${basePath === '/' ? '' : basePath}` },
+      { lang: 'x-default', href: `${siteUrl}${basePath}` },
+    ]
+  : [];
+---
+
+{alternates.map(({ lang, href }) => (
+  <link rel="alternate" hreflang={lang} href={href} />
+))}

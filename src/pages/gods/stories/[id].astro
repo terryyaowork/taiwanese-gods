@@ -1,6 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import stories from '~/data/god-stories.json';
+import stories from '~/data/zh-TW/god-stories.json';
 
 export async function getStaticPaths() {
   return stories.map((story) => ({
@@ -15,16 +15,16 @@ if (!story) {
 }
 ---
 
-<Layout>
+<Layout metadata={{ title: story.title, description: story.summary || story.content?.substring(0, 150) + '...' }}>
   <div class="max-w-2xl mx-auto py-8">
     {
       story.images?.[0] && (
-        <img src={story.images[0]} alt={story.title['zh-TW']} class="w-full object-cover rounded mb-6" />
+        <img src={story.images[0]} alt={story.title} class="w-full object-cover rounded mb-6" />
       )
     }
-    <h1 class="text-3xl font-bold mb-2">{story.title['zh-TW']}</h1>
-    <div class="mb-2 text-gray-600">主角神明：{story.mainDeities.map((d) => d.name['zh-TW']).join('、')}</div>
-    <div class="mb-4 text-lg whitespace-pre-line">{story.content['zh-TW']}</div>
+    <h1 class="text-3xl font-bold mb-2">{story.title}</h1>
+    <div class="mb-2 text-gray-600">主角神明：{story.mainDeities.map((d) => d.name).join('、')}</div>
+    <div class="mb-4 text-lg whitespace-pre-line">{story.content}</div>
     <a href="/gods/stories" class="text-blue-600 hover:underline">← 回神明故事列表</a>
   </div>
 </Layout>

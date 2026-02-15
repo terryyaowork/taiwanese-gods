@@ -4,31 +4,82 @@ const metadata = { title: '隱私政策' };
 ---
 
 <Layout metadata={metadata}>
-  <div class="container mx-auto py-8">
-    <h1 class="text-3xl font-bold mb-6">隱私政策</h1>
-    <section class="mb-6">
-      <h2 class="text-xl font-semibold mb-2">一、資料收集說明</h2>
-      <p>
-        本網站僅於您主動聯絡我們時（如填寫聯絡表單或來信）收集必要的聯絡資訊（如姓名、Email）。一般瀏覽網站時不會主動收集個人資料。
-      </p>
-    </section>
-    <section class="mb-6">
-      <h2 class="text-xl font-semibold mb-2">二、Cookie 與追蹤技術</h2>
-      <p>本網站可能使用 Cookie 以優化瀏覽體驗，不會用於識別個人身分。您可於瀏覽器設定中停用 Cookie。</p>
-    </section>
-    <section class="mb-6">
-      <h2 class="text-xl font-semibold mb-2">三、第三方服務</h2>
-      <p>本網站可能嵌入第三方服務（如 Google Analytics、社群分享等），其資料處理方式請參考各服務之隱私政策。</p>
-    </section>
-    <section class="mb-6">
-      <h2 class="text-xl font-semibold mb-2">四、資料使用與保護</h2>
-      <p>
-        所收集之聯絡資訊僅用於回覆您的詢問或提供服務，不會任意揭露或轉售給第三方。網站採用合理安全措施保護您的資料。
-      </p>
-    </section>
-    <section>
-      <h2 class="text-xl font-semibold mb-2">五、聯絡方式</h2>
-      <p>如有隱私相關疑問，請來信 terry.yao.work@gmail.com 聯絡我們。</p>
-    </section>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide">隱私政策</h1>
+      <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
+      <p class="text-gray-500 dark:text-gray-400 text-sm">最後更新日期：2025 年 2 月</p>
+    </div>
+
+    <div class="space-y-8 text-gray-700 dark:text-gray-300 leading-relaxed">
+      <section class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h2 class="text-xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">一、資料收集說明</h2>
+        <p class="mb-3">本網站（台灣神明介紹）重視您的隱私權。以下說明我們如何收集、使用與保護您的個人資訊。</p>
+        <p class="mb-3">在一般瀏覽本網站時，我們不會主動收集任何可識別個人身分的資訊。僅在以下情況下，我們可能會收集您主動提供的資訊：</p>
+        <ul class="list-disc pl-6 space-y-1 text-gray-600 dark:text-gray-400">
+          <li>透過聯絡表單或電子郵件與我們聯繫時提供的姓名、Email 地址</li>
+          <li>您主動來信提出的內容建議或投稿資料</li>
+        </ul>
+      </section>
+
+      <section class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h2 class="text-xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">二、Cookie 與追蹤技術</h2>
+        <p class="mb-3">本網站使用以下技術來優化您的瀏覽體驗：</p>
+        <ul class="list-disc pl-6 space-y-1 text-gray-600 dark:text-gray-400 mb-3">
+          <li><strong>必要性 Cookie</strong>：用於記住您的語言偏好設定（繁體中文/英文/日文）及深色模式選擇</li>
+          <li><strong>本地儲存（LocalStorage）</strong>：用於儲存互動功能（如擲筊、求籤）的暫時狀態</li>
+        </ul>
+        <p>這些技術不會收集可識別個人身分的資訊。您可以在瀏覽器設定中管理或停用 Cookie，但這可能會影響部分功能的正常運作。</p>
+      </section>
+
+      <section class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h2 class="text-xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">三、第三方服務</h2>
+        <p class="mb-3">本網站可能使用或嵌入以下第三方服務，各服務有其獨立的隱私政策：</p>
+        <ul class="list-disc pl-6 space-y-1 text-gray-600 dark:text-gray-400 mb-3">
+          <li><strong>Google Analytics</strong>：用於統計網站流量與使用行為分析（匿名數據）</li>
+          <li><strong>Google Maps</strong>：用於廟宇位置導航</li>
+          <li><strong>Vercel</strong>：網站託管服務，可能記錄存取日誌</li>
+        </ul>
+        <p>建議您閱讀相關第三方服務的隱私政策，了解其資料處理方式。</p>
+      </section>
+
+      <section class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h2 class="text-xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">四、資料使用與保護</h2>
+        <p class="mb-3">您所提供的個人資訊（如聯絡信箱）僅會用於以下目的：</p>
+        <ul class="list-disc pl-6 space-y-1 text-gray-600 dark:text-gray-400 mb-3">
+          <li>回覆您的詢問、建議或投稿</li>
+          <li>處理合作提案或授權申請</li>
+          <li>改善網站內容與服務品質</li>
+        </ul>
+        <p>我們不會將您的個人資訊出售、交換或以其他方式轉讓給第三方，除非經您明確同意或法律要求。我們採用合理的安全措施保護所收集的資訊。</p>
+      </section>
+
+      <section class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h2 class="text-xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">五、您的權利</h2>
+        <p class="mb-3">您有權要求：</p>
+        <ul class="list-disc pl-6 space-y-1 text-gray-600 dark:text-gray-400 mb-3">
+          <li>查閱我們持有的您的個人資訊</li>
+          <li>更正不正確的資訊</li>
+          <li>刪除您的個人資訊</li>
+        </ul>
+        <p>如需行使上述權利，請來信 <a href="mailto:taiwanese.gods@gmail.com" class="text-red-700 dark:text-red-400 hover:underline">taiwanese.gods@gmail.com</a> 聯絡我們。</p>
+      </section>
+
+      <section class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h2 class="text-xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">六、政策修改</h2>
+        <p>本隱私政策可能會不定期更新。重大變更時，我們會在本頁面公告最新版本及更新日期。建議您定期查閱本頁面。</p>
+      </section>
+
+      <section class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h2 class="text-xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">七、聯絡方式</h2>
+        <p>如有任何隱私相關疑問或顧慮，請來信 <a href="mailto:taiwanese.gods@gmail.com" class="text-red-700 dark:text-red-400 hover:underline">taiwanese.gods@gmail.com</a> 聯絡我們，我們將竭誠為您說明。</p>
+      </section>
+    </div>
+
+    <div class="mt-12 text-center">
+      <a href="/" class="inline-block px-6 py-3 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors font-medium">
+        回首頁
+      </a>
+    </div>
   </div>
 </Layout>

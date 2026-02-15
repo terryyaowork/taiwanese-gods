@@ -1,0 +1,312 @@
+[
+  {
+    "id": "shakyamuni",
+    "name": "Shakyamuni Buddha",
+    "aliases": [
+      "The Buddha",
+      "Gautama Buddha",
+      "Siddhartha Gautama"
+    ],
+    "domain": "Founder of Buddhism, Teacher of the Three Realms, Symbol of Compassion and Wisdom",
+    "description": "Shakyamuni Buddha, born Siddhartha Gautama, was the crown prince of the Kapilavastu kingdom in ancient India. Moved by the suffering of birth, aging, sickness, and death, he renounced his royal life to seek the truth. He attained enlightenment under the Bodhi tree. For 49 years, he taught the Dharma, guiding sentient beings on how to attain liberation from suffering and the cycle of rebirth through ethical conduct, meditation, and wisdom. In Taiwan, he is the primary object of veneration for Buddhists, representing ultimate enlightenment and compassion.",
+    "story": "The life of the Buddha is filled with legends. It is said that upon birth, he walked seven steps, with lotus flowers blooming at each step, declaring 'Above heaven and below heaven, I am the honored one' (signifying the inherent Buddha-nature in all beings). He lived a luxurious life in the palace but was deeply shaken by the 'Four Sights'—an old man, a sick man, a corpse, and an ascetic. At 29, he left the palace (The Great Renunciation), practiced asceticism for six years, but realized it was not the path. He accepted milk rice from a shepherdess, regained strength, and meditated under the Bodhi tree. He overcame the temptations of Mara and attained enlightenment at dawn. He then delivered his first sermon at Sarnath, turning the Wheel of Dharma.",
+    "temples": [
+      {
+        "name": "Dharma Drum Mountain World Center for Buddhist Education",
+        "location": "Jinshan, New Taipei City",
+        "deityStory": "Founded by Master Sheng Yen, Dharma Drum Mountain is one of the Four Great Mountains of Taiwanese Buddhism. The Main Hall enshrines Shakyamuni Buddha, emphasizing 'Spiritual Environmentalism' and the building of a Pure Land on Earth."
+      },
+      {
+        "name": "Kaohsiung Fo Guang Shan Monastery",
+        "location": "Dashu, Kaohsiung City",
+        "deityStory": "Founded by Master Hsing Yun, Fo Guang Shan is the largest Buddhist monastery in Taiwan. Its Main Hall houses huge statues of the Buddha. It is dedicated to promoting 'Humanistic Buddhism' worldwide."
+      }
+    ],
+    "image": "/assets/images/gods/shakyamuni.png",
+    "associatedTemples": [
+      "Dharma Drum Mountain (Jinshan District, New Taipei City)",
+      "Fo Guang Shan (Dashu District, Kaohsiung City)",
+      "Chung Tai Chan Monastery (Puli Township, Nantou County)"
+    ],
+    "worship": "In Taiwanese Buddhist temples, devotees worship Shakyamuni Buddha through prostrations (three bows), incense offering, sutra chanting, and meditation. The most common practice is to recite the Heart Sutra or the Great Compassion Mantra while kneeling before the Buddha's statue. Offerings include flowers (symbolizing impermanence), fruits (symbolizing the fruits of practice), water (symbolizing purity), and candles or lamps (symbolizing wisdom illuminating darkness). Taiwan's major Buddhist organizations — Fo Guang Shan, Dharma Drum Mountain, Tzu Chi, and Chung Tai — each promote distinctive worship styles, from Fo Guang Shan's \"Humanistic Buddhism\" to Tzu Chi's emphasis on compassion through charitable action.",
+    "festivals": "Buddha's Birthday (Fo Dan) on the 8th day of the 4th lunar month is the most important Buddhist celebration in Taiwan. The centerpiece is the \"Bathing the Buddha\" (Yu Fo) ceremony, where devotees pour fragrant water over a small standing Buddha statue, symbolizing purification of the mind. Fo Guang Shan's celebration is the grandest, featuring elaborate light shows and thousands of participants. Taiwan uniquely celebrates \"Tzu Chi Day\" (Mother's Day weekend) combining Buddhist reverence with gratitude for parents. Vesak (the combined celebration of Buddha's birth, enlightenment, and passing) has been designated a national holiday in many Buddhist countries."
+  },
+  {
+    "id": "guanyin",
+    "name": "Guanyin Bodhisattva",
+    "aliases": [
+      "Goddess of Mercy",
+      "Avalokitesvara"
+    ],
+    "domain": "Great Compassion, Savior from Suffering, Hearer of Cries",
+    "description": "Guanyin is one of the most widely worshipped deities in Taiwan, found in almost every household. She represents infinite compassion and the vow to save all suffering beings. Her forms are diverse, including the White-Robed Guanyin, Child-Giving Guanyin, and Thousand-Hand Guanyin. In Taiwan, she is revered not only in Buddhism but also in Taoism and folk religion, affectionately called 'Guanyin Ma' (Mother Guanyin).",
+    "story": "The 'Universal Gate Chapter' of the Lotus Sutra states that if suffering beings call upon Guanyin's name, she will 'perceive the sound' and come to their rescue. A popular legend is that of Princess Miao Shan, who refused to marry to pursue a spiritual path. She suffered punishment from her father but eventually sacrificed her own eyes and arms to cure his illness. Her filial piety and compassion moved the heavens, and she attained enlightenment.",
+    "temples": [
+      {
+        "name": "Manka Longshan Temple",
+        "location": "Wanhua, Taipei City",
+        "deityStory": "Manka Longshan Temple is Taipei's most famous ancient temple. During WWII, the temple was bombed and the main hall destroyed, but the Guanyin statue remained miraculously unharmed."
+      },
+      {
+        "name": "Linkou Zhulinshan Guanyin Temple",
+        "location": "Linkou, New Taipei City",
+        "deityStory": "Dedicated to the Eighteen-Armed Guanyin, this is a major religious center in the Linkou/Taoyuan area, known for its grand architecture and beautiful gardens."
+      }
+    ],
+    "image": "/assets/images/gods/guanyin.png",
+    "associatedTemples": [
+      "Manka Longshan Temple (Wanhua District, Taipei City)",
+      "Linkou Zhulinshan Guanyin Temple (Linkou District, New Taipei City)",
+      "Qingshui Ziyun Yan (Qingshui District, Taichung City)",
+      "Neimen Zizhu Temple (Neimen District, Kaohsiung City)"
+    ],
+    "worship": "Guanyin worship in Taiwan is remarkably inclusive, practiced across Buddhist, Taoist, and folk religion traditions. Devotees offer flowers, fruits, and vegetarian food (as Guanyin is associated with compassion toward all living beings). Reciting the \"Great Compassion Mantra\" (Da Bei Zhou) or \"Namo Guanshiyin Pusa\" are common practices. Guanyin is particularly invoked for healing, safe childbirth, and protection during natural disasters. The \"Child-Giving Guanyin\" (Song Zi Guanyin) aspect is popular among couples seeking fertility. At Longshan Temple, devotees draw fortune sticks and interpret them through divination blocks, a practice that draws hundreds of visitors daily.",
+    "festivals": "Guanyin has three major celebration days: birthday (19th of 2nd lunar month), enlightenment day (19th of 6th lunar month), and renunciation day (19th of 9th lunar month). On these occasions, temples hold vegetarian feasts, sutra chanting sessions, and \"liberation of life\" ceremonies (releasing animals). Longshan Temple in Taipei sees enormous crowds on these days. The pilgrimage to Guanyin Mountain (Guanyinshan) in New Taipei City is a popular folk tradition, combining religious devotion with hiking. Guanyin worship transcends religious boundaries — she is perhaps the only deity equally revered by Buddhists, Taoists, and folk believers in Taiwan."
+  },
+  {
+    "id": "kshitigarbha",
+    "name": "Kshitigarbha Bodhisattva",
+    "aliases": [
+      "Earth Store Bodhisattva",
+      "King of the Underworld"
+    ],
+    "domain": "Great Vow, Deliverance of Release from Suffering, Lord of the Underworld",
+    "description": "Kshitigarbha is famous for his great vow: 'Not until the hells are emptied will I become a Buddha.' Holding a staff and a wish-granting jewel, he saves beings in the underworld. In Taiwan, he is the Lord of the Underworld, overseeing funeral rites and salvation ceremonies, but also a guardian of the living and the dead.",
+    "story": "The Kshitigarbha Sutra tells of his past lives as a Brahmin woman and a girl named Bright Eyes, who vowed to save all beings to rescue their mothers from hell. Another legend identifies him with Kim Gyo-gak, a Silla prince who became a monk on Mount Jiuhua in China; his uncorrupted body after death led to the belief he was Kshitigarbha's manifestation.",
+    "temples": [
+      {
+        "name": "Xinzhuang Dizang An",
+        "location": "Xinzhuang, New Taipei City",
+        "deityStory": "Xinzhuang Dizang An is a famous temple in the north, dedicated to Ksitigarbha and the Dazhong Ye. Known for finding lost items and exorcism, and for its 'Guan Jiang Shou' troupe."
+      },
+      {
+        "name": "Hualien Xiangde Temple",
+        "location": "Xiulin, Hualien County",
+        "deityStory": "Located in Taroko Gorge, it features a towering 36-foot golden statue of Kshitigarbha standing amidst the mountains, protecting the region."
+      }
+    ],
+    "image": "/assets/images/gods/kshitigarbha.png",
+    "associatedTemples": [
+      "Xinzhuang Dizang An (Xinzhuang District, New Taipei City)",
+      "Manka Dizang An (Wanhua District, Taipei City)",
+      "Tianxiang Xiangde Temple (Xiulin Township, Hualien County)"
+    ],
+    "worship": "Kshitigarbha worship in Taiwan centers on funeral rites, ancestral salvation, and protection of the deceased. Devotees recite the \"Kshitigarbha Sutra\" (Di Zang Jing) to transfer merit to deceased relatives, helping them escape the suffering of the underworld. Offerings include incense, candles, and vegetarian food. During Ghost Month, Kshitigarbha temples hold extended sutra recitation sessions. Devotees also pray for protection of the living, especially for travelers and those facing legal troubles. Xinzhuang Dizang An's unique \"Guan Jiang Shou\" tradition has become an iconic element of Taiwanese temple culture.",
+    "festivals": "Kshitigarbha's birthday on the 30th day of the 7th lunar month (the last day of Ghost Month) is the main celebration. This timing is significant — as the \"King of the Underworld,\" his birthday marks the closing of the ghost gates. Temples hold elaborate ceremonies to guide wandering spirits back to the underworld. Xinzhuang Dizang An's Ghost Month activities, including the famous \"Night Patrol\" by the Guan Jiang Shou troupe, are among the most dramatic religious events in northern Taiwan. Buddhist temples nationwide hold \"Yulanpen\" (Obon) ceremonies, combining Buddhist teachings with Taiwanese folk traditions of honoring ancestors."
+  },
+  {
+    "id": "medicine-buddha",
+    "name": "Medicine Buddha",
+    "aliases": [
+      "Bhaisajyaguru",
+      "Healing Buddha"
+    ],
+    "domain": "Healing, Longevity, Removing Calamities, Physical and Mental Health",
+    "description": "The Medicine Buddha, or Bhaisajyaguru, is the Lord of the Pure Lapis Lazuli World in the East. He made Twelve Great Vows to cure beings of illness, ensure their physical and mental well-being, and provide material abundance. Depicted with a blue lapis lazuli body, holding a medicine jar or pagoda, he heals the 'three poisons' (greed, hatred, ignorance) and physical ailments. Devotees recite the Medicine Buddha Sutra for health and longevity.",
+    "story": "While practicing as a bodhisattva, the Medicine Buddha saw the suffering of beings from various diseases and made the Twelve Great Vows. The 7th Vow specifically states his promise to heal anyone who is tormented by illness, helpless, medicine-less, or poor, just by hearing his name.",
+    "temples": [
+      {
+        "name": "Major Buddhist Monasteries",
+        "location": "Nationwide",
+        "deityStory": "Usually enshrined in the Main Hall or Medicine Buddha Hall of major monasteries like Fo Guang Shan and Dharma Drum Mountain."
+      }
+    ],
+    "image": "/assets/images/gods/god-medicine-buddha.png",
+    "associatedTemples": [
+      "Fo Guang Shan (Dashu District, Kaohsiung City)",
+      "Dharma Drum Mountain (Jinshan District, New Taipei City)"
+    ],
+    "worship": "Devotees pray to the Medicine Buddha for physical healing, mental peace, and longevity. The primary practice is reciting the \"Medicine Buddha Sutra\" (Yao Shi Jing) or chanting his name: \"Namo Yaoshi Liuli Guang Rulai.\" Temples often hold \"Medicine Buddha Dharma Assemblies\" (Yao Shi Fa Hui) where monks lead group chanting sessions. Offerings include medicine, lamps (particularly \"Medicine Buddha Lamps\" believed to extend life), and clean water (symbolizing healing). Some temples distribute blessed water or medicine as part of the worship practice. The Medicine Buddha's lapis lazuli blue color symbolizes purity and healing light.",
+    "festivals": "The Medicine Buddha's birthday is celebrated on the 30th day of the 9th lunar month. Major Buddhist monasteries hold multi-day \"Medicine Buddha Dharma Assemblies\" featuring group sutra chanting, lamp lighting, and vegetarian feasts. Devotees light \"longevity lamps\" (Chang Ming Deng) at the altar, praying for health for themselves and their families. Fo Guang Shan and Dharma Drum Mountain host the largest celebrations, often extending over several days with lectures on Buddhist medicine and wellness practices that bridge traditional faith with modern health awareness."
+  },
+  {
+    "id": "skanda",
+    "name": "Skanda Bodhisattva",
+    "aliases": [
+      "Wei Tuo",
+      "General Wei"
+    ],
+    "domain": "Buddhist Protector, Temple Guardian, Exorciser of Evil",
+    "description": "Skanda is a famous protector deity in Buddhism, the leader of the thirty-two generals under the Southern Heavenly King. Depicted as a handsome warrior in armor holding a Vajra staff, he vows to protect the Dharma and monks. He is often found behind Maitreya Buddha in the Hall of Heavenly Kings, facing the Main Hall. Legend says the position of his staff indicates if the temple accepts traveling monks for lodging.",
+    "story": "Legend has it that after the Buddha's Nirvana, a demon stole the Buddha's tooth relic. Skanda chased it down instantly and retrieved the relic, earning his status as a great protector. He is known for his incredible speed.",
+    "temples": [
+      {
+        "name": "Chung Tai Chan Monastery",
+        "location": "Puli, Nantou County",
+        "deityStory": "The Skanda statue at Chung Tai Chan Monastery is a granite masterpiece, showcasing the dignity and power of the protector."
+      }
+    ],
+    "image": "/assets/images/gods/skanda.png",
+    "associatedTemples": [
+      "Chung Tai Chan Monastery (Puli Township, Nantou County)",
+      "Major Buddhist monasteries nationwide"
+    ],
+    "worship": "As a protector deity rather than a primary object of worship, Skanda receives devotion as part of the broader temple rituals. Monks and nuns pay respects to Skanda daily as part of the morning and evening liturgy, acknowledging his role in guarding the Dharma. Devotees may specifically pray to Skanda for protection during travel and for the safety of Buddhist monasteries. His statue is always placed behind the Maitreya Buddha, facing the Main Hall — legend says the position of his staff indicates whether the temple accepts traveling monks for lodging (staff pointing up means welcome, down means no vacancies).",
+    "festivals": "Skanda's commemoration day is the 3rd day of the 6th lunar month. While not as widely celebrated as major Buddhist holidays, monasteries hold special ceremonies honoring all Dharma protectors on this day. The ceremony typically includes sutra chanting, offerings, and a procession around the monastery grounds. Skanda is also prominently featured during the \"Thousand Buddha Repentance\" (Qian Fo Chan) ceremony, a grand Buddhist ritual held at major temples, where his role as the ultimate protector of Buddhism is emphasized."
+  },
+  {
+    "id": "sangharama",
+    "name": "Sangharama Bodhisattva",
+    "aliases": [
+      "Guan Yu",
+      "Lord Guan",
+      "Sangharama"
+    ],
+    "domain": "Buddhist Protector, Temple Guardian, Symbol of Loyalty",
+    "description": "Sangharama originally meant a Buddhist monastery, but later referred to its guardian spirits. In Chinese Buddhism, the most famous Sangharama Bodhisattva is the Three Kingdoms general Guan Yu. Admired for his loyalty and righteousness, he was adopted as a Buddhist protector after death. Together with Skanda, they are the two main guardians of Buddhist temples. He is depicted with a long beard, green robes, and his Green Dragon Crescent Blade.",
+    "story": "Legend says Master Zhiyi of the Tiantai sect met Guan Yu's spirit while meditating on Mount Yuquan. Guan Yu, impressed by the Master's virtue, offered the mountain as a monastery and vowed to protect the Dharma. Master Zhiyi then requested creating Guan Yu as the Sangharama Guardian, cementing his role in Buddhism.",
+    "temples": [
+      {
+        "name": "Fo Guang Shan",
+        "location": "Kaohsiung City",
+        "deityStory": "Fo Guang Shan has a Sangharama Hall beside the Main Hall, enshrining Guan Yu, corresponding with Skanda to protect the monastery."
+      }
+    ],
+    "image": "/assets/images/gods/sangharama.png",
+    "associatedTemples": [
+      "Major Buddhist monasteries nationwide"
+    ],
+    "worship": "Sangharama Bodhisattva (Guan Yu) holds a unique dual identity in Taiwan — worshipped as a Buddhist protector in monasteries and as a Taoist deity (Lord Guan) in folk temples. In Buddhist settings, devotees pay respects to his statue in the Sangharama Hall, praying for protection of the temple and its community. Offerings are similar to those for other Buddhist deities. In folk religion, Guan Yu is worshipped as the God of Loyalty and Righteousness, and many businesses and police stations display his image. His long beard and Green Dragon Crescent Blade are among the most recognizable deity images in Chinese culture.",
+    "festivals": "Guan Yu's birthday on the 24th day of the 6th lunar month is celebrated in both Buddhist monasteries and folk temples across Taiwan. In Buddhist settings, monks hold Dharma assemblies honoring his vow to protect Buddhism. In folk religion, the celebration is much grander — major temples like Xingtian Temple in Taipei see enormous crowds, with elaborate processions and theatrical performances reenacting the \"Romance of the Three Kingdoms.\" Xingtian Temple's celebration is one of the largest in Taiwan, reflecting Guan Yu's extraordinary popularity as a deity who transcends religious boundaries."
+  },
+  {
+    "id": "amitabha",
+    "name": "Amitabha Buddha",
+    "aliases": [
+      "Amitabha Tathagata",
+      "Buddha of Infinite Life",
+      "Buddha of Infinite Light",
+      "The Welcoming Buddha"
+    ],
+    "domain": "Rebirth in the Pure Land, Pure Land Faith, Removal of Karmic Obstacles",
+    "description": "Amitabha Buddha is one of the most widely recognized figures in Taiwanese Buddhism, revered as the Lord of the Western Pure Land (Sukhavati). In Taiwan, the phrase 'Amituofo' has transcended its religious origins to become an everyday greeting and expression of goodwill. The core practice of the Pure Land school — devotedly chanting 'Namo Amituofo' so that Amitabha will welcome the faithful into the Western Pure Land at the moment of death — is the most widely practiced form of Buddhism in Taiwan, embraced by monastics and laypeople alike.",
+    "story": "The story of Amitabha Buddha originates in the Infinite Life Sutra. Countless ages ago, a king was so deeply moved upon hearing the Dharma that he renounced his throne and became a monk named Dharmakara. Before the Buddha Lokeshvararaja, Dharmakara made forty-eight great vows. The most celebrated is the Eighteenth Vow — the 'Vow of Ten Recitations' — in which he pledged that any being who sincerely aspires to be reborn in his Pure Land and recites his name even ten times at the moment of death will be welcomed there without fail. After immeasurable eons of practice, every one of Dharmakara's vows was fulfilled, and he attained Buddhahood as Amitabha, establishing the Western Pure Land — a realm of golden ground, jeweled lotus ponds, and celestial flowers, free from all suffering. Together with Guanyin (Avalokitesvara) and Mahasthamaprapta, Amitabha forms the 'Three Sages of the West,' who together watch over the Pure Land.",
+    "temples": [
+      {
+        "name": "Taipei Nung Chan Monastery",
+        "location": "Taipei City",
+        "deityStory": "Nung Chan Monastery is the birthplace of Dharma Drum Mountain, founded by Master Sheng Yen. Its celebrated 'Water-Moon Dharma Hall' — a striking modernist structure of exposed concrete — features a wall inscribed with the Diamond Sutra reflected in a tranquil pool. The monastery regularly hosts seven-day Buddha-name recitation retreats and meditation programs."
+      },
+      {
+        "name": "Kaohsiung Fo Guang Shan",
+        "location": "Kaohsiung City",
+        "deityStory": "Founded by Master Hsing Yun, Fo Guang Shan is one of Taiwan's largest Buddhist monasteries. The Great Buddha Land features a towering statue of Amitabha Buddha radiating light across the grounds. Fo Guang Shan promotes 'Humanistic Buddhism' and houses the Buddha Memorial Center, monastic colleges, and facilities for international visitors."
+      }
+    ],
+    "image": "/assets/images/gods/amitabha.png",
+    "associatedTemples": [
+      "Taipei Nung Chan Monastery (Beitou, Taipei City)",
+      "Fo Guang Shan (Dashu, Kaohsiung City)"
+    ],
+    "worship": "Offerings to Amitabha Buddha include fresh flowers, fruit, clean water, and incense — never meat or alcohol. The central practice is 'Buddha-name recitation' (nianfo): devotedly chanting 'Namo Amituofo' aloud, in a whisper, or silently, often counted with prayer beads. Many Taiwanese Buddhists maintain a daily practice of reciting the Amitabha Sutra and chanting the Buddha's name, dedicating the accumulated merit to their karmic creditors across all lifetimes. This accessible practice — requiring no special training or philosophical study — has made Pure Land Buddhism the most popular school of Buddhism in Taiwan.",
+    "festivals": "Amitabha Buddha's birthday on the 17th day of the 11th lunar month is marked by 'Buddha-Seven' retreats (Fo Qi) — intensive seven-day sessions of continuous Buddha-name recitation aimed at achieving 'single-minded focus.' Major monasteries across Taiwan host these retreats, drawing thousands of participants. During the Ghost Month Yulanpen ceremonies in the 7th lunar month, Amitabha's name is also chanted extensively to guide departed souls toward rebirth in the Pure Land."
+  },
+  {
+    "id": "maitreya",
+    "name": "Maitreya Buddha",
+    "aliases": [
+      "Maitreya Bodhisattva",
+      "The Laughing Buddha",
+      "Budai",
+      "Big-Belly Maitreya"
+    ],
+    "domain": "Joy and Contentment, The Future Buddha, Tolerance and Generosity",
+    "description": "Maitreya is the 'Future Buddha' of Buddhist prophecy, destined to descend to the human world and attain Buddhahood after the teachings of Shakyamuni have faded from memory. In Taiwan, Maitreya is almost always depicted as the rotund, laughing Budai — a jolly figure with a bare belly and a wide grin, embodying the spirit of 'a belly big enough to hold all the world's troubles, and a smile broad enough to laugh at all the world's absurdities.' This cheerful image makes him one of the most beloved and instantly recognizable figures in Taiwanese Buddhism.",
+    "story": "Maitreya's story draws from the Maitreya Ascent Sutra and the Maitreya Descent Sutra, which describe how Maitreya Bodhisattva currently resides in Tushita Heaven, awaiting the right time to be reborn on earth as the next Buddha. In Chinese and Taiwanese tradition, Maitreya became inseparable from Budai (Cloth Sack), a wandering monk of the Five Dynasties period. Budai was an eccentric, perpetually grinning monk who roamed from town to town carrying a large cloth sack, telling people 'I have a cloth sack — vast as empty space, free of all hindrances.' On his deathbed, he left behind a verse: 'Maitreya, true Maitreya — manifesting in a thousand billion forms, appearing constantly before the people of the world, yet the people of the world do not recognize him.' Only then did people realize that Budai had been Maitreya all along. From that moment on, the image of the big-bellied laughing monk became the definitive portrayal of Maitreya in Chinese and Taiwanese Buddhism.",
+    "temples": [
+      {
+        "name": "Linkou Zhulinshan Guanyin Temple",
+        "location": "New Taipei City",
+        "deityStory": "While primarily dedicated to Guanyin, Zhulinshan Guanyin Temple also enshrines Maitreya Buddha. The temple is one of the most popular religious centers in northern Taiwan, with throngs of devotees visiting year-round."
+      },
+      {
+        "name": "Changhua Baguashan Great Buddha Temple",
+        "location": "Changhua County",
+        "deityStory": "Although the iconic hilltop Great Buddha statue depicts Shakyamuni, the temple complex also houses a Maitreya shrine. The Great Buddha is Changhua's most famous landmark, and visitors can climb inside for panoramic views of the Changhua Plain."
+      }
+    ],
+    "image": "/assets/images/gods/maitreya.png",
+    "associatedTemples": [
+      "Zhulinshan Guanyin Temple (Linkou, New Taipei City)",
+      "Baguashan Great Buddha Temple (Changhua City, Changhua County)"
+    ],
+    "worship": "Offerings to Maitreya include fresh flowers and fruit. His smiling image puts worshippers at ease, and many approach him with a lighthearted, joyful spirit. Some temples place sweets near the Maitreya statue for visitors to take, symbolizing the sharing of happiness. Practitioners who follow the Maitreya path recite the Maitreya Ascent Sutra and vow to be reborn in Tushita Heaven, where they will one day descend to earth alongside Maitreya when he comes to establish his Buddha-land.",
+    "festivals": "Maitreya Buddha's birthday falls on the 1st day of the 1st lunar month — New Year's Day itself — signifying the idea of greeting each new year with a joyful heart. After the temple bell-ringing ceremonies on New Year's Eve, major Buddhist monasteries hold Maitreya birthday services at dawn on the first day of the year, blessing all who attend with good fortune for the months ahead."
+  },
+  {
+    "id": "manjushri",
+    "name": "Manjushri Bodhisattva",
+    "aliases": [
+      "Manjusri",
+      "Bodhisattva of Wondrous Virtue",
+      "Bodhisattva of Auspicious Glory",
+      "Prajnaparamita Manjushri"
+    ],
+    "domain": "Supreme Wisdom, Academic Achievement, Eloquence and Insight",
+    "description": "Manjushri is the Bodhisattva of Supreme Wisdom in Buddhism, serving alongside Samantabhadra as one of the two attendants of Shakyamuni Buddha — together they form the 'Three Sages of the Avatamsaka.' Manjushri's iconic attributes are a flaming sword in his right hand (cutting through ignorance), a Prajnaparamita sutra in his left (the perfection of wisdom), and a blue lion as his mount (representing the fierce, untameable power of wisdom). In Taiwan, Manjushri is particularly beloved by students and exam-takers, and temples that enshrine him see a surge of visitors before major examinations, as the faithful pray for clarity of mind and academic success.",
+    "story": "Manjushri holds an exalted position in Buddhist scripture. In the Avatamsaka Sutra, he is the teacher who inspires the youth Sudhana to embark on his legendary pilgrimage to fifty-three teachers in search of ultimate truth. In the Vimalakirti Sutra, when none of the great bodhisattvas dared visit the formidable layman Vimalakirti, Manjushri alone accepted the invitation, engaging in a brilliant exchange on the nature of non-duality that remains one of Buddhism's most celebrated dialogues. Although Manjushri appears as a bodhisattva, the scriptures reveal that he has long since attained Buddhahood — in a past life as the 'Dragon-Seed Noble King Buddha' and in a future age as the 'Universal-Seeing Tathagata' — choosing to manifest as a bodhisattva to guide beings toward awakening. Mount Wutai in China is regarded as his sacred abode, drawing pilgrims from across the Buddhist world for centuries.",
+    "temples": [
+      {
+        "name": "Hsinchu Puxian Temple",
+        "location": "Hsinchu City",
+        "deityStory": "Puxian Temple enshrines both Manjushri and Samantabhadra, making it a vital destination for students in the Hsinchu area seeking blessings for exams. During testing season, the temple fills with students and parents praying for wisdom and success."
+      }
+    ],
+    "image": "/assets/images/gods/manjushri.png",
+    "associatedTemples": [
+      "Hsinchu Puxian Temple (Hsinchu City)"
+    ],
+    "worship": "Offerings to Manjushri include flowers, fruit, and — uniquely — stationery such as pens and books, symbolizing scholarly pursuits. It is common for exam-takers to bring their admission tickets or writing instruments to the altar for a blessing, praying for Manjushri to grant them clarity and insight. Devoted practitioners chant the Manjushri Heart Mantra ('Om A Ra Pa Ca Na Dhih') or recite the Manjushri Prajnaparamita Sutra as part of their daily practice.",
+    "festivals": "Manjushri Bodhisattva's birthday is celebrated on the 4th day of the 4th lunar month. Major Buddhist temples hold wisdom-themed Dharma assemblies and blessing ceremonies. Many temples near schools also organize 'Wisdom Lamp' services around exam season, allowing students to light lamps before Manjushri's image as they pray for academic success."
+  },
+  {
+    "id": "samantabhadra",
+    "name": "Samantabhadra Bodhisattva",
+    "aliases": [
+      "Universal Worthy Bodhisattva",
+      "Bodhisattva of Great Practice",
+      "All-Pervading Goodness Bodhisattva"
+    ],
+    "domain": "Great Vows in Action, Diligent Practice, Upholding the Dharma",
+    "description": "Samantabhadra is the Bodhisattva of Great Practice in Buddhism, paired with Manjushri as one of the two attendants flanking Shakyamuni Buddha. Where Manjushri embodies wisdom, Samantabhadra embodies action — the principle that understanding the Dharma is not enough; one must live it in every deed and moment. His signature mount is a six-tusked white elephant, symbolizing the strength to bear the suffering of all beings and the resolve to adorn the Buddha-land through the power of vows put into practice.",
+    "story": "Samantabhadra is best known for his 'Ten Great Vows,' proclaimed in the Avatamsaka Sutra's chapter on the Practices and Vows of Samantabhadra: (1) pay homage to all Buddhas, (2) praise all Tathagatas, (3) make abundant offerings, (4) repent of all misdeeds, (5) rejoice in others' merits, (6) request the turning of the Dharma wheel, (7) request all Buddhas to remain in the world, (8) always follow the Buddhas in learning, (9) accommodate all sentient beings, and (10) dedicate all merit universally. These Ten Great Vows serve as the supreme guide to Buddhist practice. In the Avatamsaka Sutra, Samantabhadra appears at the climax of Sudhana's pilgrimage to fifty-three teachers, revealing the Ten Great Vows and guiding Sudhana to aspire for rebirth in the Pure Land — a passage that became a cornerstone of Pure Land theology. Mount Emei in China is revered as Samantabhadra's sacred domain.",
+    "temples": [
+      {
+        "name": "Hsinchu Puxian Temple",
+        "location": "Hsinchu City",
+        "deityStory": "Puxian Temple takes its name from Samantabhadra (Puxian in Chinese) and is one of the rare Taiwanese temples that enshrines him as the principal deity. The temple houses an elegant statue of Samantabhadra seated atop a white elephant, exuding serene majesty."
+      }
+    ],
+    "image": "/assets/images/gods/samantabhadra.png",
+    "associatedTemples": [
+      "Hsinchu Puxian Temple (Hsinchu City)"
+    ],
+    "worship": "Offerings to Samantabhadra include flowers, fruit, and clean water. Practitioners of the Samantabhadra path recite the chapter on his Practices and Vows from the Avatamsaka Sutra, aspiring to embody all Ten Great Vows in their daily lives. Many Taiwanese Buddhists adopt the ninth vow — 'accommodate all sentient beings' — as a personal motto, striving to practice selfless compassion in their everyday interactions.",
+    "festivals": "Samantabhadra Bodhisattva's birthday is celebrated on the 21st day of the 2nd lunar month. Buddhist temples hold special Dharma assemblies where the congregation recites the chapter on the Practices and Vows of Samantabhadra together, reaffirming their commitment to translating the Dharma into action through the Ten Great Vows."
+  },
+  {
+    "id": "fudomyoo",
+    "name": "Acala (Fudo Myoo)",
+    "aliases": [
+      "The Immovable One",
+      "Acalanatha",
+      "Fudo Myoo"
+    ],
+    "domain": "Vanquishing Demons and Obstacles, Unwavering Resolve, Protection of Practitioners",
+    "description": "Acala — known in Japanese as Fudo Myoo and in Chinese as Budong Mingwang — is the foremost of the Five Wisdom Kings in Esoteric Buddhism (Vajrayana/Shingon). Though his appearance is fearsome, his wrath is an expression of unwavering compassion: he destroys delusion and demonic forces so that beings may find the path to liberation. In Taiwan, Acala worship has a distinctive presence due to the legacy of Japanese Buddhism during the colonial period (1895-1945), and a number of temples established in that era continue to enshrine him today.",
+    "story": "Acala is the wrathful emanation of Mahavairocana Buddha (Dainichi Nyorai). The scriptures teach that when beings proved too obstinate and evil forces too powerful for gentle persuasion, Mahavairocana manifested as the terrifying Acala to subdue them. Every detail of his iconography carries meaning: his right hand wields a demon-conquering sword (severing ignorance and affliction), his left hand grips a lasso (binding those who resist the Dharma and drawing them back to the right path), his back blazes with all-consuming flames (incinerating karmic defilements), and he sits immovably upon a great stone slab (representing a will as unshakeable as bedrock). One eye gazes upward and the other downward; his upper teeth bite his lower lip — an expression that appears furious but in truth arises from boundless compassion, a fierce resolve to wrench all beings free from the sea of suffering.",
+    "temples": [
+      {
+        "name": "Taipei Beitou Puji Temple",
+        "location": "Taipei City",
+        "deityStory": "Built in 1905 during the Japanese colonial period, Puji Temple was originally a Shingon Buddhist temple called Tesshinzan. It retains its Japanese architectural style to this day and is designated a Taipei City historic site. The temple enshrines Acala as its principal deity and is one of Taiwan's few well-preserved Japanese-era Buddhist temples."
+      }
+    ],
+    "image": "/assets/images/gods/fudomyoo.png",
+    "associatedTemples": [
+      "Beitou Puji Temple (Beitou, Taipei City)"
+    ],
+    "worship": "Offerings to Acala include flowers, fruit, and clean water. Esoteric Buddhist practitioners chant the Acala mantra ('Naumaku sanmanda bazaradan senda makaroshada sowataya un tarata kanman'), combined with sacred hand gestures (mudras) and visualization. Lay devotees typically offer incense and pray for the removal of obstacles, protection from misfortune, and inner strength to persevere through difficult times.",
+    "festivals": "Acala's birthday is observed on the 28th day of the 9th lunar month. Temples that enshrine him hold Goma fire rituals (homa) — sacred ceremonies in which a consecrated fire, representing Acala's wisdom-flames, is used to burn wooden prayer tablets inscribed with the wishes of devotees, carrying their aspirations to the heavens."
+  }
+]

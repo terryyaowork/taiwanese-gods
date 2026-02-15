@@ -1,0 +1,14 @@
+---
+/**
+ * Renders JSON-LD structured data in a <script type="application/ld+json"> tag.
+ * Usage:
+ *   <JsonLd data={mySchemaObject} />
+ */
+export interface Props {
+  data: Record<string, unknown>;
+}
+
+const { data } = Astro.props;
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(data)} />

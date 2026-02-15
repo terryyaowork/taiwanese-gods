@@ -1,0 +1,34 @@
+---
+import GodDetail from '~/components/gods/GodDetail.astro';
+import spirits from '~/data/zh-TW/indigenous-spirits.json';
+
+export async function getStaticPaths() {
+  return spirits.map((spirit) => ({
+    params: { id: spirit.id },
+  }));
+}
+
+const { id } = Astro.params;
+const spirit = spirits.find((s) => s.id === id);
+if (!spirit) {
+  throw new Error('信仰資料不存在');
+}
+
+const godImages = import.meta.glob('/src/assets/images/gods/*.{jpg,jpeg,png,webp,avif}', {
+  eager: true,
+  import: 'default',
+});
+
+const getGodImage = (imagePath) => {
+  if (!imagePath) return null;
+  const filename = imagePath.split('/').pop();
+  const matchedKey = Object.keys(godImages).find((key) => key.endsWith('/' + filename));
+  return matchedKey ? godImages[matchedKey] : imagePath;
+};
+
+const godImage = getGodImage(spirit.image);
+const godImageSrc = typeof godImage === 'object' ? godImage.src : godImage;
+
+---
+
+<GodDetail god={spirit} imageSrc={godImageSrc} />

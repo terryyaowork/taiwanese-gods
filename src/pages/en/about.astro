@@ -1,44 +1,117 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-const metadata = { title: 'About This Site' };
+const metadata = { title: 'About This Site — Taiwanese Gods', ignoreTitleTemplate: true };
 ---
 
 <Layout metadata={metadata}>
-  <div class="container mx-auto py-8">
-    <h1 class="text-3xl font-bold mb-6">About This Site</h1>
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-2">Mission</h2>
-      <p>
-        This website is dedicated to promoting the rich traditions of Taiwanese deities, temple culture, and folk
-        customs. We provide bilingual (Chinese/English) content to help both local and international audiences
-        understand Taiwan's vibrant religious culture.
-      </p>
-    </section>
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-2">Key Features</h2>
-      <ul class="list-disc pl-6">
-        <li>Multilingual support (Traditional Chinese & English)</li>
-        <li>Comprehensive introductions to deities, temples, festivals, customs, and heritage</li>
-        <li>Rich images and dynamic content</li>
-        <li>User-friendly navigation and search</li>
-        <li>Ideal for travelers, students, and culture enthusiasts</li>
-      </ul>
-    </section>
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-2">Sources & References</h2>
-      <ul class="list-disc pl-6">
-        <li>Official websites of temples across Taiwan</li>
-        <li>Open data from the Ministry of Culture, Religious Affairs Bureau, etc.</li>
-        <li>Books and academic papers on folk beliefs and religious culture</li>
-        <li>Original interviews and photography by our team</li>
-      </ul>
-    </section>
-    <section>
-      <h2 class="text-xl font-semibold mb-2">Team & Contact</h2>
-      <p>
-        If you have suggestions, wish to collaborate, or need content authorization, please contact us via the "Contact"
-        page.
-      </p>
-    </section>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide">About This Site</h1>
+      <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
+    </div>
+
+    <div class="prose prose-lg max-w-none dark:prose-invert">
+      <section class="mb-10">
+        <h2 class="text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">Our Mission</h2>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          "Taiwanese Gods" is a digital platform dedicated to promoting Taiwan's rich traditions of deity worship, temple culture, and folk customs. Taiwan's religious culture is a unique blend of Taoism, Buddhism, folk beliefs, and indigenous spiritual traditions, creating a diverse and vibrant tapestry of faith that is found nowhere else in the world.
+        </p>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          We aim to present these traditional cultures in a modern, accessible way, allowing readers of all backgrounds and nationalities to easily discover the stories of Taiwanese deities, the beauty of its temples, and the deeper meanings behind folk beliefs. We believe that understanding a land's spiritual culture is one of the best ways to truly know its people.
+        </p>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">What We Offer</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-lg text-red-800 dark:text-red-400 mb-2">Deity Encyclopedia</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">Detailed profiles of over 50 deities across Taoism, Buddhism, folk beliefs, Hakka traditions, and indigenous cultures — including legends, festivals, and worship guides.</p>
+          </div>
+          <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-lg text-red-800 dark:text-red-400 mb-2">Temple Directory</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">A curated collection of over 60 notable temples across North, Central, South, and East Taiwan, complete with addresses, history, and visitor information.</p>
+          </div>
+          <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-lg text-red-800 dark:text-red-400 mb-2">Cultural Heritage</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">Explore Taiwan's unique religious festivals, worship rituals, temple architecture, and intangible cultural heritage — the living wisdom behind the faith.</p>
+          </div>
+          <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-lg text-red-800 dark:text-red-400 mb-2">Interactive Features</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">Experience traditional fortune-telling with our digital moon blocks and fortune stick simulator — a taste of real temple worship from your screen.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">Key Features</h2>
+        <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+          <li class="flex items-start gap-3">
+            <span class="text-red-600 mt-1">●</span>
+            <span><strong>Multilingual Support</strong> — Available in Traditional Chinese and English, making Taiwan's spiritual culture accessible to international visitors</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-600 mt-1">●</span>
+            <span><strong>Rich Visual Content</strong> — Curated photographs of temples and deities showcasing the artistic beauty of Taiwanese religious culture</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-600 mt-1">●</span>
+            <span><strong>Deity Guide</strong> — Personalized recommendations based on your life situation, helping you find the right deity for your prayers</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-600 mt-1">●</span>
+            <span><strong>Cross-Referenced Content</strong> — Deity pages link to related temples, and temple pages link to enshrined deities for easy exploration</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-600 mt-1">●</span>
+            <span><strong>Responsive Design</strong> — Optimized for mobile, tablet, and desktop browsing, so you can explore anytime, anywhere</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">Sources & References</h2>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          Our content is carefully researched and verified from multiple sources:
+        </p>
+        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+          <li class="flex items-start gap-3">
+            <span class="text-amber-600 mt-1">◆</span>
+            <span>Official websites and materials provided by temples across Taiwan</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-amber-600 mt-1">◆</span>
+            <span>Open data from Taiwan's Ministry of Culture and Religious Affairs Bureau</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-amber-600 mt-1">◆</span>
+            <span>Academic books and research papers on Taiwanese folk beliefs and religious culture</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-amber-600 mt-1">◆</span>
+            <span>Original fieldwork, interviews, and photography by our team</span>
+          </li>
+        </ul>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mt-4 italic">
+          If you notice any errors or have additional information to share, please let us know and we'll update our content promptly.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">Contact Us</h2>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+          For suggestions, collaboration proposals, content licensing, or corrections, please visit our
+          <a href="/en/contact" class="text-red-700 dark:text-red-400 hover:underline">Contact</a>
+          page or email us directly at
+          <a href="mailto:taiwanese.gods@gmail.com" class="text-red-700 dark:text-red-400 hover:underline">taiwanese.gods@gmail.com</a>.
+        </p>
+      </section>
+    </div>
+
+    <div class="mt-12 text-center">
+      <a href="/en" class="inline-block px-6 py-3 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors font-medium">
+        Back to Home
+      </a>
+    </div>
   </div>
 </Layout>

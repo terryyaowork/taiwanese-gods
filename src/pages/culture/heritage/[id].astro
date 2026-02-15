@@ -1,6 +1,6 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
-import heritage from '~/data/culture-heritage.json';
+import CultureDetail from '~/components/culture/CultureDetail.astro';
+import heritage from '~/data/zh-TW/culture-heritage.json';
 
 export async function getStaticPaths() {
   return heritage.map((item) => ({
@@ -9,20 +9,35 @@ export async function getStaticPaths() {
 }
 
 const { id } = Astro.params;
-const lang = Astro.url.pathname.startsWith('/en') ? 'en' : 'zh-TW';
-const item = heritage.find((c) => c.id === id);
+const item = heritage.find((h) => h.id === id);
 if (!item) {
-  throw new Error(lang === 'en' ? 'Heritage not found' : '找不到文化傳承資料');
+  throw new Error('文化傳承資料不存在');
 }
+
+const cultureImages = import.meta.glob('/src/assets/images/culture-heritage/*.{jpg,jpeg,png,webp}', {
+  eager: true,
+  import: 'default',
+});
+
+const getImage = (imagePath: string) => {
+  if (!imagePath) return null;
+  const filename = imagePath.split('/').pop();
+  const foundKey = Object.keys(cultureImages).find((key) => key.endsWith(filename || ''));
+  if (foundKey) {
+    const img = cultureImages[foundKey];
+    return typeof img === 'object' && img !== null && 'src' in img ? (img as { src: string }).src : img;
+  }
+  return null;
+};
+
+const imageSrc = item.images?.[0] ? getImage(item.images[0]) : null;
 ---
 
-<Layout>
-  <div class="max-w-2xl mx-auto py-8">
-    {item.images?.[0] && <img src={item.images[0]} alt={item.title[lang]} class="w-full object-cover rounded mb-6" />}
-    <h1 class="text-3xl font-bold mb-2">{item.title[lang]}</h1>
-    <div class="mb-4 text-lg whitespace-pre-line">{item.content[lang]}</div>
-    <a href={`${lang === 'en' ? '/en' : ''}/culture/heritage`} class="text-blue-600 hover:underline"
-      >{lang === 'en' ? '← Back to Heritage List' : '← 回文化傳承列表'}</a
-    >
-  </div>
-</Layout>
+<CultureDetail
+  item={item}
+  imageSrc={imageSrc}
+  category="heritage"
+  categoryLabel="文化傳承"
+  backLink="/culture/heritage"
+  backLabel="← 返回文化傳承"
+/>

@@ -1,0 +1,61 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+const metadata = { title: 'お問い合わせ | 台湾の神様紹介', ignoreTitleTemplate: true };
+---
+
+<Layout metadata={metadata}>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide">お問い合わせ</h1>
+      <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
+      <p class="text-lg text-gray-700 dark:text-gray-300 font-light max-w-2xl mx-auto">
+        台湾の宗教文化にご興味をお持ちいただきありがとうございます！ご提案、コラボレーション、ご質問など、お気軽にお問い合わせください。
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+      <div class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
+        <h2 class="text-xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">メール</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">ご質問やご提案がございましたら、メールでお気軽にお問い合わせください。できるだけ早くお返事いたします。</p>
+        <a href="mailto:taiwanese.gods@gmail.com" class="inline-flex items-center gap-2 text-red-700 dark:text-red-400 hover:underline font-medium text-lg">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+          taiwanese.gods@gmail.com
+        </a>
+      </div>
+
+      <div class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
+        <h2 class="text-xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">返信時間</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">通常1～3営業日以内にご返答いたします。お急ぎの場合は、メールの件名にその旨をお書きください。</p>
+        <p class="text-gray-500 dark:text-gray-400 text-sm italic">ご要件を簡潔にお書きいただけると、より迅速に対応できます。</p>
+      </div>
+    </div>
+
+    <div class="space-y-8">
+      <h2 class="text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-6">どのようなご用件ですか？</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white/60 dark:bg-gray-800/60 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+          <div class="text-3xl mb-3">💡</div>
+          <h3 class="font-bold text-gray-800 dark:text-gray-200 mb-2">コンテンツのご提案</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">誤り、不足している情報を見つけた場合や、新しい神様や寺院の紹介をご希望の場合はお知らせください！</p>
+        </div>
+        <div class="bg-white/60 dark:bg-gray-800/60 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+          <div class="text-3xl mb-3">🤝</div>
+          <h3 class="font-bold text-gray-800 dark:text-gray-200 mb-2">コラボレーション</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">寺院関係者、文化機関、旅行会社、教育機関で提携にご興味のある方は、お気軽にお問い合わせください。</p>
+        </div>
+        <div class="bg-white/60 dark:bg-gray-800/60 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+          <div class="text-3xl mb-3">📝</div>
+          <h3 class="font-bold text-gray-800 dark:text-gray-200 mb-2">コンテンツライセンス</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">当サイトのコンテンツ（テキストや画像）を出版物等にご利用されたい場合は、ライセンスについてお問い合わせください。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 text-center">
+      <a href="/ja" class="inline-block px-6 py-3 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors font-medium">
+        ホームに戻る
+      </a>
+    </div>
+  </div>
+</Layout>

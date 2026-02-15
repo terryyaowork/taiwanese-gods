@@ -1,0 +1,307 @@
+[
+  {
+    "id": "wangye",
+    "name": "Wangye (Plague Lord)",
+    "aliases": [
+      "Wangye",
+      "Plague Lord",
+      "Royal Lord"
+    ],
+    "domain": "Exorcism, protection from plagues, patrolling the world on behalf of Heaven",
+    "description": "Wangye worship is the most dominant folk belief in southern Taiwan. Wangyes are regarded as divine inspectors who 'Patrol on behalf of Heaven', possessing great power to exorcise demons and plagues. The most famous group is the 'Five Royal Lords'. Wangye temples are known for the spectacular 'Burning of the King Boat' ceremony, symbolizing the expulsion of disease and misfortune.",
+    "story": "Legends of Wangye vary; some say they were 360 scholars unjustly killed in the Tang Dynasty, while others cite them as deified virtuous officials. The most famous legend concerns the Five Royal Lords of Nankunshen, who fought a supernatural battle with a local Child Spirit (Wanshan Ye) over the spiritual land. Eventually, Guanyin mediated, leading to their peaceful coexistence.",
+    "temples": [
+      {
+        "name": "Donglong Temple",
+        "location": "Pingtung County",
+        "url": "https://www.donglong.org.tw/",
+        "deityStory": "Famous for the triennial 'King Boat Ceremony'. The burning of the King Boat is the climax, symbolizing the expulsion of plague and evil spirits."
+      },
+      {
+        "name": "Nankunshen Daitian Temple",
+        "location": "Tainan City",
+        "url": "https://www.nkstemple.org.tw/",
+        "deityStory": "Known as the head temple of Wangye in Taiwan. It has branches all over the island. During pilgrimage season, the scene of spirit mediums performing rituals is spectacular."
+      }
+    ],
+    "image": "/assets/images/gods/wangye.png",
+    "associatedTemples": [
+      "Donggang Donglong Temple (Donggang Township, Pingtung County)",
+      "Nankunshen Daitian Temple (Beimen District, Tainan City)"
+    ],
+    "worship": "Wangye worship is elaborate and features strict ritual protocols. Offerings typically include the \"Three Sacrificial Animals\" (pork, chicken, fish), fruits, incense sticks, and joss paper. Devotees pray for peace, exorcism, and protection from plagues. The most iconic ritual is the \"King Boat Ceremony\" (Shao Wang Chuan), a triennial event where an elaborately crafted ship is loaded with symbolic goods and burned to carry away evil spirits. Worshippers often consult Wangye through divination blocks (jiaobei) and fortune sticks. In southern Taiwan, Wangye temples feature spirit mediums (jitong) who enter trances during festivals to communicate divine messages.",
+    "festivals": "The most spectacular Wangye festival is the \"Donggang King Boat Ceremony\" (Donggang Ying Wang), held every three years in Pingtung County. The eight-day event begins with \"Welcoming from the Sea\" — inviting the Wangye ashore — and climaxes with \"Sending Off the King\" — burning a magnificent handcrafted ship on the beach at night, watched by tens of thousands. It is designated a National Important Folk Custom. The Nankunshen Grand Temple Fair in late April of the lunar calendar draws millions of pilgrims. The Xigang Incense Festival (Xigang Qing Jiao), also triennial, is another major Wangye event recognized by UNESCO."
+  },
+  {
+    "id": "baosheng",
+    "name": "Baosheng Dadi",
+    "aliases": [
+      "God of Medicine",
+      "Emperor of Life Protection"
+    ],
+    "domain": "Medicine, health, curing diseases, extending life",
+    "description": "Baosheng Dadi, named Wu Tao, is the 'God of Medicine'. He was a renowned doctor in the Song Dynasty known for his miracles and benevolence. In early Taiwan, sick people would pray to him for medicinal prescriptions. A popular folklore tells of a rivalry between him and Mazu, leading to the saying: 'Baosheng Dadi brings wind, Mazu brings rain'.",
+    "story": "Legends say he 'healed a dragon's eye and cured a tiger's throat' (removing a stuck bone, which is why the Tiger Lord became his guardian). Even after deification, he reportedly healed the Empress of the Ming Dynasty.",
+    "temples": [
+      {
+        "name": "Baoan Temple",
+        "location": "Taipei City",
+        "url": "https://www.baoan.org.tw/"
+      }
+    ],
+    "image": "/assets/images/gods/baosheng.png",
+    "associatedTemples": [
+      "Dalongdong Baoan Temple (Datong District, Taipei City)"
+    ],
+    "worship": "Devotees worship Baosheng Dadi with offerings of fruits, incense, and the traditional \"Three Sacrificial Animals.\" A unique feature of Baosheng Dadi worship is the practice of \"Divine Prescriptions\" (shen yao qian): worshippers draw fortune sticks and receive herbal medicine formulas, which they then take to traditional Chinese pharmacies to fill — a practice that blended religion and healthcare in early Taiwan. The deity's birthday celebrations at Baoan Temple include the \"Fire Lion\" ritual, where a paper lion stuffed with firecrackers is ignited, symbolizing the expulsion of evil and disease.",
+    "festivals": "The \"Baosheng Cultural Festival\" at Taipei's Baoan Temple is the premier event, featuring a month-long series of activities from March to April on the lunar calendar. Highlights include the \"Fire Lion\" (Fang Huo Shi) ceremony — a uniquely Taiwanese ritual found nowhere else — where a paper-and-bamboo lion packed with fireworks is set ablaze in an explosive display. Traditional arts performances, Taoist ceremonies, and a grand procession through the Dalongdong neighborhood are also featured. In 2003, Baoan Temple won the UNESCO Asia-Pacific Heritage Award, bringing international recognition to this cultural celebration."
+  },
+  {
+    "id": "nezha",
+    "name": "Nezha (Third Prince)",
+    "aliases": [
+      "Nezha",
+      "Marshal of the Central Altar",
+      "Third Prince"
+    ],
+    "domain": "Exorcism, Guardian of Children, Patron of Drivers",
+    "description": "Nezha is a lively and powerful child deity, wielding the Fire-tipped Spear and riding Wind Fire Wheels. He protects children and, due to his speed, is also the patron saint of drivers. The modern implementation of 'Techno Prince' (dancing to electronic music) has made him a global cultural icon of Taiwan.",
+    "story": "Legend says Nezha killed a dragon prince and committed suicide to save his parents from the Dragon King's wrath ('returning bones to father, flesh to mother'). His master resurrected him using lotus flowers. He then helped overthrow the tyrant King Zhou. He represents courage and rebellion.",
+    "temples": [
+      {
+        "name": "Fengtian Temple",
+        "location": "Chiayi County",
+        "url": "https://www.hsinkangmazu.org.tw/"
+      }
+    ],
+    "image": "/assets/images/gods/nezha.png",
+    "worship": "Nezha is worshipped as both a protector of children and a patron saint of drivers. Parents bring children to Nezha temples to pray for safe growth, while taxi and truck drivers often place a small Nezha figurine on their dashboards for protection. Offerings include fruits, candies (since Nezha is a child deity), and toy-like items. Spirit mediums channeling Nezha are famous for their acrobatic performances, including standing on ball-shaped objects and performing martial arts moves. The modern \"Electric Techno Nezha\" (Dian Yin San Tai Zi) phenomenon — where temple performers dance to electronic music in LED-lit Nezha costumes — has become a globally recognized symbol of Taiwanese folk culture.",
+    "festivals": "Nezha's birthday falls on the 9th day of the 9th lunar month. Major celebrations are held at temples across Taiwan, featuring spirit medium performances and processions. The \"Techno Nezha\" (Dian Yin San Tai Zi) performances have become a cultural phenomenon, appearing at international events and even the 2017 Taipei Universiade. The Xinying Taizi Temple in Tainan hosts one of the most elaborate Nezha birthday celebrations, combining traditional rituals with modern performances that showcase how ancient beliefs adapt to contemporary culture."
+  },
+  {
+    "id": "tigerlord",
+    "name": "Tiger Lord",
+    "aliases": [
+      "Tiger God",
+      "General of the Lower Altar"
+    ],
+    "domain": "Wealth, protection, guardian of children (curing mumps)",
+    "description": "Tiger Lord is usually worshipped under the altar, serving as the mount for deities like the Earth God. Known as 'General of the Lower Altar'. The saying 'Tiger Lord bites money' reflects the belief that he brings wealth. He is also famous for curing children's mumps and protecting kids.",
+    "story": "Legend has it that a tiger asked Baosheng Dadi for help with a bone stuck in its throat. Improved by the cure, it became the deity's mount and vowed to protect humans.",
+    "temples": [
+      {
+        "name": "Longshan Temple",
+        "location": "Taipei City",
+        "url": "https://www.lungshan.org.tw/"
+      },
+      {
+        "name": "Xingang Fengtian Temple",
+        "location": "Chiayi County",
+        "deityStory": "Xingang Fengtian Temple's Tiger Lord is one of the most famous in Taiwan, especially efficacious for wealth and children's health."
+      }
+    ],
+    "image": "/assets/images/gods/tigerlord.png",
+    "worship": "Tiger Lord is typically enshrined beneath the main altar of Earth God temples, reflecting his role as a subordinate guardian. Worshippers place offerings directly on the ground level — raw meat (especially pork), eggs, and \"gold paper money\" are common. The phrase \"Tiger Lord Bites Money\" (Hu Ye Yao Qian) reflects the belief that rubbing coins on the Tiger Lord statue brings wealth. Parents also bring children suffering from mumps to pray before Tiger Lord, rubbing the child's swollen cheeks while reciting prayers. Devotees seeking financial luck often tie red strings around the Tiger Lord statue.",
+    "festivals": "Tiger Lord celebrations coincide with the Earth God's birthday on the 2nd day of the 2nd lunar month. On this day, devotees bring extra offerings of raw meat and eggs. Some temples hold special \"Tiger Lord Gold\" distribution events where blessed coins or tokens are given to worshippers for good financial fortune. The Tiger Lord at Xingang Fengtian Temple in Chiayi is particularly famous, drawing large crowds during festivals with devotees seeking blessings for wealth and children's health."
+  },
+  {
+    "id": "zhusheng",
+    "name": "Zhusheng Niangniang",
+    "aliases": [
+      "Goddess of Birth",
+      "Registry of Life Goddess"
+    ],
+    "domain": "Fertility, pregnancy, safe childbirth",
+    "description": "Zhusheng Niangniang holds a registry book and a pen, controlling who gets children. She is the primary goddess for those seeking pregnancy. Her attendants, the 'Twelve Midwives', look after children. Parents pray to her for safe delivery and the health of their offspring.",
+    "story": "Often identified with the Three Cloud Fairies from 'Investiture of the Gods', who hold the primitive golden bucket (symbolizing the womb). Others identify her with Chen Jinggu (Lady Linshui).",
+    "temples": [
+      {
+        "name": "Longshan Temple",
+        "location": "Taipei City",
+        "url": "https://www.lungshan.org.tw/"
+      }
+    ],
+    "image": "/assets/images/gods/zhusheng.png",
+    "worship": "Couples struggling with fertility pray to Zhusheng Niangniang with offerings of flowers, fruits, and cosmetics (as she is a female deity). A distinctive practice involves asking the goddess for a \"Flower Spirit\" — a white flower symbolizes a boy, while a red flower symbolizes a girl. After successful childbirth, grateful parents return to the temple to offer \"Oil Rice\" (You Fan) as thanks. Some temples have twelve flower vases representing the Twelve Midwives; devotees choose a specific midwife to pray to based on the desired birth month.",
+    "festivals": "Zhusheng Niangniang's birthday is celebrated on the 20th day of the 3rd lunar month. Temples dedicated to the goddess hold special ceremonies where couples come to pray for children or give thanks for successful pregnancies. Longshan Temple in Taipei is one of the most popular locations for worship. The celebration often includes puppet shows and traditional opera performances as entertainment for the goddess and her attendants."
+  },
+  {
+    "id": "tudipo",
+    "name": "Tudipo (Earth God's Wife)",
+    "aliases": [
+      "Earth God's Wife"
+    ],
+    "domain": "Family harmony, marital love, encouraging hard work",
+    "description": "Tudipo is the wife of the Earth God. Unlike her generous husband, legends say she is pragmatic and advises him not to give wealth too freely, lest people become lazy. While some avoid worshipping her for this reason, she actually teaches the value of hard work and protects family harmony.",
+    "story": "Legend says when the Earth God was sent to earth, he wanted everyone to be rich. Tudipo objected: 'If everyone is rich, who will carry the sedan chairs?' Thus, she ensured the balance of rich and poor, emphasizing the need for labor.",
+    "temples": [
+      {
+        "name": "Songshan Ciyou Temple",
+        "location": "Taipei City",
+        "url": "https://www.ciyou.org.tw/"
+      }
+    ],
+    "image": "/assets/images/gods/tudipo.png",
+    "worship": "Tudipo is worshipped alongside the Earth God (Tudigong), usually seated beside him in temple shrines. Offerings are the same as for Tudigong — fruits, rice cakes, and tea. While not as widely worshipped as her husband, she represents the practical, grounded side of divine blessing. Some devotees specifically pray to Tudipo for family harmony and for guidance on financial responsibility, reflecting her legendary role as the voice of moderation.",
+    "festivals": "Tudipo shares her celebration with the Earth God on the 2nd day of the 2nd lunar month (birthday) and the 15th day of the 8th lunar month (achieving godhood anniversary). During these events, temple processions and community feasts honor both deities. In some regions, there is a folk custom of \"thanking the Earth God couple\" at the end of the harvest season, where farmers express gratitude for the land's bounty."
+  },
+  {
+    "id": "dazhongye",
+    "name": "Wen Wu Dazhong Ye",
+    "aliases": [
+      "Dazhong Ye",
+      "Civil and Martial Lords"
+    ],
+    "domain": "Finding lost items, handling lawsuits, exorcising evil spirits, upholding justice",
+    "description": "Wen Wu Dazhong Ye are the primary deities of Xinzhuang Dizang An. Originating from the worship of wandering spirits, they evolved into judicial deities. 'Wen (Civil) Lord' represents those who died of illness, depicted as a scholar; 'Wu (Martial) Lord' represents those who died in battle, depicted as a warrior. They act as judicial officers of the underworld, famous for solving disputes, recovering lost items, and exorcising evil. The 'Guan Jiang Shou' troupe associated with them is a major icon of Taiwanese temple culture.",
+    "story": "Originally worshipped to appease spirits from ethnic conflicts and plagues in early Xinzhuang. Legend says the Civil and Martial Lords were brothers who died on their way to imperial exams and appeared in dreams. After performing miracles like solving crimes and finding lost property, they became the region's guardians. The annual 'Night Patrol' on the 1st of the 5th Lunar Month sees them patrolling the streets to capture evil spirits and ensure peace.",
+    "temples": [
+      {
+        "name": "Xinzhuang Dizang An",
+        "location": "New Taipei City",
+        "url": "https://www.xzdza.org.tw/"
+      }
+    ],
+    "image": "/assets/images/gods/god-dazhongye.png",
+    "associatedTemples": [
+      "Xinzhuang Dizang An (Xinzhuang District, New Taipei City)"
+    ],
+    "worship": "Worship of Dazhong Ye combines elements of ancestral veneration and deity worship. Devotees offer incense, fruits, and the Three Sacrificial Animals. A unique practice involves asking Dazhong Ye to help find lost items — worshippers describe the lost object and its last known location, then cast divination blocks. The Wen (Civil) Lord handles disputes and legal matters, while the Wu (Martial) Lord deals with exorcism and protection. The \"Guan Jiang Shou\" (官將首) spirit generals who serve Dazhong Ye perform dramatic face-painted processions that are among the most iconic images of Taiwanese temple culture.",
+    "festivals": "The most important festival is the \"Night Patrol\" (An Fang) on the 1st day of the 5th lunar month, when the Wen Wu Dazhong Ye are carried through the streets of Xinzhuang at night to capture evil spirits and maintain peace. The spectacular \"Guan Jiang Shou\" troupe leads the procession with fierce face paint and dramatic movements. The annual Ghost Month (7th lunar month) ceremonies at Xinzhuang Dizang An are also major events, featuring elaborate rituals to appease wandering spirits, with the Dazhong Ye serving as divine peacekeepers between the living and the dead."
+  },
+  {
+    "id": "kaizhangshengwang",
+    "name": "Kaizhang Shengwang (Sacred King of Zhangzhou)",
+    "aliases": [
+      "Chen Shengwang",
+      "Sacred King Chen",
+      "King of Zhangzhou"
+    ],
+    "domain": "Pioneer protection, local guardian deity, exorcism",
+    "description": "Kaizhang Shengwang, originally named Chen Yuanguang, was a Tang Dynasty general revered as the founder of Zhangzhou. He pacified the wilderness, established Zhangzhou Prefecture, and promoted civilization. Zhangzhou immigrants in Taiwan worship him as their most important hometown guardian deity, particularly in northern Taiwan areas like Keelung and Taoyuan.",
+    "story": "Chen Yuanguang (657-711 AD) followed his father on a military campaign to pacify Fujian. After his father's death, the 21-year-old took command. Beyond military prowess, he prioritized education and governance, establishing Zhangzhou Prefecture and transforming wilderness into a prosperous city. He died heroically in battle, and grateful people built temples in his honor, naming him 'Sacred King who Opened Zhangzhou.'",
+    "temples": [
+      {
+        "name": "Keelung Dianji Temple",
+        "location": "Keelung City",
+        "deityStory": "The birthplace of Keelung's famous Miaokou Night Market, dedicated to Kaizhang Shengwang and one of Keelung's most important spiritual centers."
+      },
+      {
+        "name": "Taoyuan Jingfu Temple",
+        "location": "Taoyuan City",
+        "deityStory": "The most important temple in central Taoyuan, witnessing the history of Zhangzhou immigrants settling in Taoyuan."
+      }
+    ],
+    "image": "/assets/images/gods/kaizhangshengwang.png",
+    "associatedTemples": [
+      "Keelung Dianji Temple (Ren'ai District, Keelung City)",
+      "Taoyuan Jingfu Temple (Taoyuan District, Taoyuan City)"
+    ],
+    "worship": "Kaizhang Shengwang is worshipped primarily by descendants of Zhangzhou immigrants. Offerings include the traditional Three Sacrificial Animals, fruits, and incense. As a pioneer and founding deity, prayers typically request protection during travels, success in new ventures, and community safety. In temples like Keelung Dianji, the worship of Kaizhang Shengwang is deeply woven into the commercial culture — the famous Miaokou Night Market literally grew around the temple, and vendors frequently pray for good business.",
+    "festivals": "The birthday of Kaizhang Shengwang falls on the 16th day of the 2nd lunar month. Major celebrations are held at Keelung Dianji Temple and Taoyuan Jingfu Temple. Processions featuring traditional music, dragon dances, and spirit mediums parade through the streets. At Dianji Temple, the celebration is inseparable from the Miaokou Night Market festivities, creating a unique fusion of sacred rituals and street food culture that defines Keelung's identity."
+  },
+  {
+    "id": "kuixing",
+    "name": "Kuixing Ye (Star Lord of Literature)",
+    "aliases": [
+      "Great Scholar Kuixing",
+      "Kuixing"
+    ],
+    "domain": "Literary fortune, examinations, academic honors",
+    "description": "Kuixing Ye is the deity who governs literary fortune and exam success. His distinctive appearance shows him standing on one foot atop a sea turtle's head — symbolizing 'standing alone at the top.' He holds an ink bucket in his left hand and a vermilion brush in his right, signifying 'marking the exam list.' Students traditionally worship Kuixing before exams, praying to top the results.",
+    "story": "Legend says Kuixing was a brilliant scholar in life, but his ugly appearance caused him to fail repeatedly despite his talent. In despair, he drowned himself but was rescued by a sea turtle and ascended to heaven as a god. Another interpretation identifies him as the personification of the first star of the Big Dipper.",
+    "temples": [
+      {
+        "name": "Tainan Chikan Tower Wenchang Pavilion",
+        "location": "Tainan City",
+        "url": "https://www.chikan.com.tw/"
+      }
+    ],
+    "image": "/assets/images/gods/kuixing.png",
+    "worship": "Students worship Kuixing Ye before important exams by burning incense and offering items symbolic of academic success — green onions (cong, a homophone for \"intelligence\"), celery (qin, meaning \"diligence\"), and garlic (suan, meaning \"ability to calculate\"). Some temples provide special \"exam blessing\" rituals where students' exam admission tickets are placed on the altar for divine blessing. A popular practice is to touch the Kuixing statue's brush, hoping its literary magic will transfer to the student.",
+    "festivals": "Kuixing Ye's birthday is celebrated on the 7th day of the 7th lunar month (which coincides with the Qixi/Chinese Valentine's Day). Students flock to temples during exam season — particularly before the college entrance exams in January and July — to pray for high scores. The Wenchang temples in Taipei and Tainan see the largest crowds, with walls of exam admission tickets and \"wisdom pens\" creating a distinctive visual culture unique to Taiwanese education traditions."
+  },
+  {
+    "id": "dijizhu",
+    "name": "Di Ji Zhu (Foundation Lord)",
+    "aliases": [
+      "Foundation Spirit",
+      "House Guardian"
+    ],
+    "domain": "Household protection, family safety",
+    "description": "Di Ji Zhu is the guardian spirit of a household in Taiwanese folk belief. Though of humble rank (akin to a household Earth God), this spirit is closely tied to daily life. Families worship Di Ji Zhu during moving, settling deities, and major festivals (Lunar New Year's Eve, Qingming, Dragon Boat, Ghost Month, Double Ninth, Winter Solstice). Offerings are typically set up in the kitchen or by the back door, facing inward, with simple dishes — a chicken leg is essential.",
+    "story": "Legend says Di Ji Zhu is the spirit of the original inhabitant of the land (possibly a Pingpu indigenous ancestor or early Han settler), who became the guardian spirit of the dwelling.",
+    "temples": [],
+    "image": "/assets/images/gods/di_ji_zhu.png",
+    "worship": "Di Ji Zhu worship takes place at home rather than in temples. The altar is set up in the kitchen or by the back door, at ground level, facing inward (toward the house). Essential offerings include a chicken leg (ji tui), rice, soup, chopsticks, and rice wine. Worship occurs on major festivals: Lunar New Year's Eve, Qingming (Tomb Sweeping), Dragon Boat Festival, Ghost Month (1st and 15th of the 7th month), Mid-Autumn Festival, Double Ninth, and Winter Solstice. When moving into a new house, a ceremony to \"settle the Di Ji Zhu\" must be performed to introduce the family to the guardian spirit.",
+    "festivals": "Di Ji Zhu does not have a specific birthday celebration. Instead, worship follows the rhythm of Taiwan's major traditional holidays. The most important worship occasions are Lunar New Year's Eve (when the whole family gathers) and the first and fifteenth of the Ghost Month (when spirits roam the earth). During these times, families set offerings at the ground-level altar and burn silver joss paper. The practice reflects the intimate, domestic nature of Di Ji Zhu faith — no grand temples or processions, just quiet gratitude for household protection."
+  },
+  {
+    "id": "qiniangma",
+    "name": "Qi Niang Ma (Seven Mothers)",
+    "aliases": [
+      "Weaving Maiden",
+      "Seven Star Goddess"
+    ],
+    "domain": "Child protection, matchmaking, women's crafts",
+    "description": "Qi Niang Ma, associated with the Weaving Maiden star, is the protector of children. In Taiwanese folk custom, parents have their newborn 'adopted' by Qi Niang Ma as a spiritual godmother, praying for the child's safe growth. At age sixteen, the 'Coming of Age' ceremony is held to thank her protection. She also governs matchmaking and needlework skills.",
+    "story": "Originating from the legend of the Cowherd and the Weaving Maiden. After the lovers were separated, the Weaving Maiden's six sisters took pity on the Cowherd raising the children alone and secretly blessed them, becoming collectively known as Qi Niang Ma (Seven Mothers).",
+    "temples": [
+      {
+        "name": "Tainan Kailong Temple",
+        "location": "Tainan City",
+        "url": "https://www.kailong.org.tw/",
+        "deityStory": "The most famous Qi Niang Ma temple in Taiwan and the birthplace of the 'Coming of Age at Sixteen' ceremony."
+      }
+    ],
+    "image": "/assets/images/gods/qiniangma.png",
+    "worship": "Parents \"adopt\" their children to Qi Niang Ma by registering them at the temple, typically as infants. The child then wears a blessed charm or lock necklace as a sign of divine protection. Parents return annually to renew the blessing. The most significant ritual is the \"Coming of Age at Sixteen\" (Zuo Shi Liu Sui) ceremony: at age sixteen, the child formally \"graduates\" from Qi Niang Ma's care, crawling under a divine table three times to symbolize rebirth as an adult. Offerings include cosmetics, mirrors, and flowers (for the goddess) and \"round cakes\" (for the child's smooth transition).",
+    "festivals": "The 7th day of the 7th lunar month (Qi Xi / Chinese Valentine's Day) is Qi Niang Ma's sacred day. The grandest celebration takes place at Tainan's Kailong Temple, where thousands of sixteen-year-olds participate in the \"Coming of Age at Sixteen\" ceremony. Teenagers in traditional clothing crawl under the altar table, symbolically passing through the \"Bird Mother's Womb\" (Niao Mu Gong) to be reborn as adults. This unique Tainan tradition has been designated an Intangible Cultural Heritage of Taiwan. The festival combines ancient ritual with modern celebration, as families gather for joyous feasts afterward."
+  },
+  {
+    "id": "qingshuizushi",
+    "name": "Qingshui Zushi (Patriarch of Clear Water)",
+    "aliases": [
+      "Nose-dropping Patriarch",
+      "Dark-faced Patriarch"
+    ],
+    "domain": "Rain prayers, disaster prevention, medicine",
+    "description": "Qingshui Zushi, originally named Chen Zhaoying, was a renowned Northern Song Dynasty monk from Anxi, Quanzhou, Fujian. Famous for his miraculous rain prayers, his statue typically has a dark face — legend says demons smoked him for seven days and nights at Qingshui Rock but he survived. Taiwan's most famous legend is the 'Nose-dropping Warning': when disasters or calamities are imminent, the patriarch's nose falls off to alert the people.",
+    "story": "Qingshui Zushi cultivated at Qingshui Rock in Anxi, spreading virtue widely. After Anxi immigrants crossed to Taiwan, he became an important hometown guardian deity. The most famous temple is Sanxia Changfu Rock (Sanxia Zushi Temple), renowned as the 'Eastern Art Palace.'",
+    "temples": [
+      {
+        "name": "Sanxia Changfu Rock (Sanxia Zushi Temple)",
+        "location": "Sanxia, New Taipei City",
+        "url": "https://www.tsushie.org.tw/"
+      },
+      {
+        "name": "Bangka Qingshui Rock",
+        "location": "Wanhua, Taipei City",
+        "url": "https://www.monga-manka.com/"
+      }
+    ],
+    "image": "/assets/images/gods/qingshui_zushi.png",
+    "associatedTemples": [
+      "Sanxia Changfu Yan (Sanxia District, New Taipei City)",
+      "Manka Qingshui Yan (Wanhua District, Taipei City)",
+      "Tamsui Qingshui Yan (Tamsui District, New Taipei City)"
+    ],
+    "worship": "Devotees worship Qingshui Zushi with offerings of fruits, incense, and the Three Sacrificial Animals. As a deity associated with rain and disaster prevention, farmers have historically prayed to him during droughts. A unique feature of worship is observing the \"Nose-dropping Warning\" — checking whether the statue's nose has cracked or fallen, which is believed to predict earthquakes, typhoons, or other disasters. Sanxia Zushi Temple, rebuilt over decades by master artist Li Mei-shu using only traditional methods and hand-carved stone pillars, is itself an act of worship through art.",
+    "festivals": "Qingshui Zushi's birthday on the 6th day of the 1st lunar month is the main celebration. The most famous event is the \"Competition of the Divine Pigs\" (Sai Shen Zhu) at Sanxia Zushi Temple, where devotees raise pigs to extraordinary weights as offerings. Although the practice has sparked modern animal welfare debates, it remains a deeply rooted tradition. The temple's reconstruction by artist Li Mei-shu (begun in 1947 and continuing for decades) made Sanxia Zushi Temple a living museum of traditional stone carving, bronze casting, and wood sculpture — earning it the title \"Eastern Art Palace.\""
+  },
+  {
+    "id": "doorgods",
+    "name": "Door Gods",
+    "aliases": [
+      "Qin Shubao & Yuchi Gong",
+      "Shentu & Yulei"
+    ],
+    "domain": "Guarding doorways, warding off evil spirits",
+    "description": "Door Gods are painted on the main gates of temples and homes to repel evil spirits and ghosts. The most common Door Gods in Taiwan are the Tang Dynasty generals Qin Shubao (white-faced with phoenix eyes) and Yuchi Gong (dark-faced with fierce eyes).",
+    "story": "Legend says Emperor Taizong of the Tang Dynasty fell ill and was haunted by ghostly wails. Generals Qin Shubao and Yuchi Gong volunteered to guard the palace gates at night, and the ghosts dared not approach. Unwilling to burden the two generals, the Emperor ordered their portraits painted on the doors — a tradition that continues to this day.",
+    "temples": [],
+    "image": "/assets/images/gods/god-door-gods.png",
+    "worship": "Door Gods are not worshipped at altars like other deities but are honored through the tradition of painting or posting their images on the main doors of temples and traditional homes. During Lunar New Year, households replace old Door God prints with fresh ones, a ritual that symbolizes renewal and continued protection. Worshippers sometimes burn incense in front of the door as a gesture of respect. In temples, the painting of Door Gods is considered a high art — master painters are commissioned to create elaborate, lifelike portraits that can take weeks to complete.",
+    "festivals": "Door Gods are honored during the Lunar New Year, when their images are refreshed or replaced. On New Year's Eve, families pay respects to the Door Gods as part of the year-end rituals. Some traditions hold that the Door Gods \"report\" to the Jade Emperor at year's end (similar to the Kitchen God). In Taiwanese temple culture, the repainting or restoration of Door God murals is a significant cultural event, sometimes celebrated with ceremonies to \"open the eyes\" (kai guang) of the newly painted deities, formally inviting their spirits to inhabit the new images."
+  }
+]

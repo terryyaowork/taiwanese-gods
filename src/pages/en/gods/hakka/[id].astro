@@ -1,0 +1,33 @@
+---
+import GodDetail from '~/components/gods/GodDetail.astro';
+import gods from '~/data/en/hakka-gods.json';
+
+export async function getStaticPaths() {
+  return gods.map((god) => ({
+    params: { id: god.id },
+  }));
+}
+
+const { id } = Astro.params;
+const god = gods.find((g) => g.id === id);
+if (!god) {
+  throw new Error('God not found');
+}
+
+const godImages = import.meta.glob('/src/assets/images/gods/*.{jpg,jpeg,png,webp,avif}', {
+  eager: true,
+  import: 'default',
+});
+
+const getGodImage = (imagePath) => {
+  if (!imagePath) return null;
+  const filename = imagePath.split('/').pop();
+  const matchedKey = Object.keys(godImages).find((key) => key.endsWith('/' + filename));
+  return matchedKey ? godImages[matchedKey] : imagePath;
+};
+
+const godImage = getGodImage(god.image);
+const godImageSrc = typeof godImage === 'object' ? godImage.src : godImage;
+---
+
+<GodDetail god={{...god, category: 'hakka'}} imageSrc={godImageSrc} lang="en" />

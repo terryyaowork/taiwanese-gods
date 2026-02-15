@@ -1,0 +1,143 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import guideData from '~/data/ja/god-guide.json';
+import taoistGods from '~/data/ja/taoist-gods.json';
+import buddhistGods from '~/data/ja/buddhist-gods.json';
+import folkGods from '~/data/ja/folk-gods.json';
+
+const allGods = [...taoistGods, ...buddhistGods, ...folkGods];
+
+const metadata = {
+  title: '神様ガイド | 台湾の神様紹介',
+  ignoreTitleTemplate: true,
+  description: '試験には文昌帝君、金運には財神、恋愛には月下老人。願い事に合った神様がすぐわかるガイドです。',
+};
+
+const godImages = import.meta.glob('/src/assets/images/gods/*.{png,jpg,jpeg,webp}', {
+  eager: true,
+  import: 'default',
+});
+
+const getGodImage = (imagePath: string | undefined): string | null => {
+  if (!imagePath) return null;
+  const filename = imagePath.split('/').pop();
+  const foundKey = Object.keys(godImages).find((key) => key.endsWith(filename || ''));
+  if (foundKey) {
+    const img = godImages[foundKey];
+    if (typeof img === 'object' && img !== null && 'src' in img) {
+      return (img as { src: string }).src;
+    }
+    return String(img);
+  }
+  return imagePath;
+};
+
+function getGodDetails(id: string) {
+  const god = allGods.find((g) => g.id === id);
+  if (!god) return null;
+
+  let category = 'taoism';
+  if (buddhistGods.some((g) => g.id === id)) category = 'buddhism';
+  if (folkGods.some((g) => g.id === id)) category = 'folk';
+
+  // @ts-ignore
+  const finalSrc = getGodImage(god.image);
+
+  return {
+    ...god,
+    category,
+    finalSrc,
+  };
+}
+---
+
+<Layout metadata={metadata}>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide">神様ガイド</h1>
+      <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
+      <p class="text-lg text-gray-700 dark:text-gray-300 font-light max-w-2xl mx-auto">
+        人生の悩みに、どの神様にお祈りすればいいかわからない？あらゆる状況に対応する完全参拝ガイドです。
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+      {
+        guideData.map((category) => (
+          <div class="bg-white/90 dark:bg-gray-800/90 rounded-lg overflow-hidden border border-gold-200 shadow-lg hover:shadow-2xl transition-all duration-300">
+            {/* Header */}
+            <div class="bg-gradient-to-r from-red-900 to-red-800 px-6 py-5">
+              <div class="flex items-center gap-4">
+                <span class="text-4xl drop-shadow-md">{category.icon}</span>
+                <h2 class="text-xl sm:text-2xl font-serif font-bold text-white tracking-wide">{category.title}</h2>
+              </div>
+            </div>
+
+            {/* Body */}
+            <div class="p-4 sm:p-6">
+              <p class="text-gray-700 dark:text-gray-300 font-light leading-relaxed mb-4">{category.description}</p>
+
+              {/* Keywords */}
+              <div class="flex flex-wrap gap-2 mb-5">
+                {category.keywords?.map((keyword) => (
+                  <span class="text-xs font-medium px-2.5 py-1 bg-amber-50 dark:bg-amber-900/30 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-700 rounded-full">
+                    #{keyword}
+                  </span>
+                ))}
+              </div>
+
+              {/* Tips */}
+              {category.tips && (
+                <div class="bg-red-50/80 dark:bg-red-900/20 p-4 rounded-lg border border-red-100 dark:border-red-800 mb-5">
+                  <p class="text-sm text-red-900 dark:text-red-300 leading-relaxed">
+                    <span class="font-bold">参拝のコツ: </span>{category.tips}
+                  </p>
+                </div>
+              )}
+
+              {/* Recommended Gods */}
+              <div class="border-t border-gold-200/40 pt-4">
+                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">おすすめの神様</h3>
+                <div class="flex flex-wrap gap-2">
+                  {category.gods.map((godId) => {
+                    const god = getGodDetails(godId);
+                    if (!god) return null;
+                    return (
+                      <a
+                        href={`/ja/gods/${god.category}/${god.id}`}
+                        class="flex items-center gap-2 pr-3 pl-1 py-1 bg-gray-50 dark:bg-gray-700/50 rounded-full border border-gray-200 dark:border-gray-600 hover:border-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors group"
+                      >
+                        <div class="w-7 h-7 rounded-full overflow-hidden flex-shrink-0 bg-gray-200 dark:bg-gray-600 border border-gray-300 dark:border-gray-500">
+                          {god.finalSrc && (
+                            <img
+                              src={god.finalSrc}
+                              alt={god.name}
+                              class="w-full h-full object-cover"
+                              loading="lazy"
+                            />
+                          )}
+                        </div>
+                        <span class="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-red-700 dark:group-hover:text-red-400 transition-colors">
+                          {god.name}
+                        </span>
+                      </a>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="mt-12 text-center">
+      <a
+        href="/ja"
+        class="inline-block px-6 py-3 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors font-medium"
+      >
+        ホームに戻る
+      </a>
+    </div>
+  </div>
+</Layout>

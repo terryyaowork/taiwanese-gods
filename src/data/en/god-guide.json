@@ -1,0 +1,137 @@
+[
+  {
+    "id": "academic",
+    "title": "Academic & Exams",
+    "description": "For exam success and wisdom",
+    "tips": "Bring a copy of your exam permit, celery (diligence), green onions (intelligence), garlic (winning odds), and radish (good luck). Taipei Wenchang Temple is the top destination.",
+    "keywords": [
+      "exams",
+      "education",
+      "certification",
+      "interviews",
+      "wisdom"
+    ],
+    "gods": [
+      "wenchang",
+      "confucius",
+      "guansheng",
+      "lvdongbin"
+    ],
+    "icon": "🎓"
+  },
+  {
+    "id": "wealth",
+    "title": "Wealth & Career",
+    "description": "For wealth and business success",
+    "tips": "Offer sweets (Wealth God's favorite) and your business card. Military Wealth God (Guan Gong) is for sales/business; Civil Wealth God is for office workers. Tiger Lord 'bites money in'.",
+    "keywords": [
+      "wealth",
+      "startup",
+      "raise",
+      "investment",
+      "sales"
+    ],
+    "gods": [
+      "caishen",
+      "tudigong",
+      "guansheng",
+      "tigerlord"
+    ],
+    "icon": "💰"
+  },
+  {
+    "id": "love",
+    "title": "Love & Marriage",
+    "description": "For finding true love and harmony",
+    "tips": "Xia-Hai City God Temple and Longshan Temple are the top love shrines. Ask Yuelao for a red thread (3 Sheng Jiao needed). Zhinan Temple is famous for 'cutting off bad romances.'",
+    "keywords": [
+      "dating",
+      "marriage",
+      "reunion",
+      "charisma",
+      "romance"
+    ],
+    "gods": [
+      "yuelao",
+      "guanyin"
+    ],
+    "icon": "❤️"
+  },
+  {
+    "id": "health",
+    "title": "Health & Safety",
+    "description": "For good health and safety",
+    "tips": "For chronic illness, ask for a 'Medicine Lot'. Report your condition sincerely to Baosheng Dadi. Mazu and Guanyin also protect safety — pray to Mazu before long journeys.",
+    "keywords": [
+      "healing",
+      "surgery",
+      "longevity",
+      "safety",
+      "wellness"
+    ],
+    "gods": [
+      "baosheng",
+      "mazu",
+      "guanyin"
+    ],
+    "icon": "🏥"
+  },
+  {
+    "id": "fertility",
+    "title": "Fertility & Childbirth",
+    "description": "For conception and safe delivery",
+    "tips": "Offer dates, peanuts, longans, lotus seeds (pun: 'early birth of a noble child'). Touch the 'flower hairpin' at Longshan Temple for extra luck. After delivery, return with sticky rice to repay the vow.",
+    "keywords": [
+      "pregnancy",
+      "prenatal",
+      "delivery",
+      "parenting",
+      "fertility"
+    ],
+    "gods": [
+      "zhusheng",
+      "guanyin",
+      "mazu"
+    ],
+    "icon": "👶"
+  },
+  {
+    "id": "justice",
+    "title": "Justice & Disputes",
+    "description": "For legal victories, finding lost items, and protection from villains",
+    "tips": "Report injustices to the City God, who presides over spiritual justice. Guan Di protects the righteous. Xinzhuang Dazhong Ye is famous for finding lost items. Never lie — these deities are strictly just.",
+    "keywords": [
+      "lawsuit",
+      "rivals",
+      "contract",
+      "dispute",
+      "lost items"
+    ],
+    "gods": [
+      "chenghuang",
+      "guansheng",
+      "dazhongye"
+    ],
+    "icon": "⚖️"
+  },
+  {
+    "id": "removal",
+    "title": "Exorcism & Luck Change",
+    "description": "For removing bad luck, evil spirits, and Tai Sui conflicts",
+    "tips": "Light a blessing lamp or register for Tai Sui protection at temples. For severe cases, seek the 'Ji Gai' (luck repair) ritual. Xingtian Temple offers free 'soul calming' service. Xuantian Shangdi and Wangye are the premier exorcism deities.",
+    "keywords": [
+      "luck change",
+      "soul calming",
+      "Tai Sui",
+      "purification",
+      "protection"
+    ],
+    "gods": [
+      "xuantian",
+      "wangye",
+      "taisui",
+      "kshitigarbha"
+    ],
+    "icon": "🛡️"
+  }
+]

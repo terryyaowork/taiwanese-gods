@@ -1,6 +1,19 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import gods from '~/data/buddhist-gods.json';
+import gods from '~/data/zh-TW/buddhist-gods.json';
+import { Image } from 'astro:assets';
+
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/images/gods/*.{jpeg,jpg,png,gif,webp,avif}', {
+  eager: true,
+});
+
+const resolveImage = (imagePath: string | undefined) => {
+  if (!imagePath) return null;
+  if (imagePath.startsWith('http')) return imagePath; // Remote URL
+  const filename = imagePath.split('/').pop();
+  const matchedPath = Object.keys(images).find((path) => path.endsWith('/' + filename));
+  return matchedPath ? images[matchedPath].default : null;
+};
 
 const metadata = {
   title: '佛教信仰神明 | 台灣神明信仰',
@@ -8,7 +21,7 @@ const metadata = {
   openGraph: {
     images: [
       {
-        url: gods[0]?.image || '/assets/images/gods/default.jpg',
+        url: gods[0]?.image || '/assets/images/gods/default.png',
         width: 1200,
         height: 630,
         alt: '佛教信仰神明集合',
@@ -19,51 +32,58 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8">
-    <div class="mb-8 text-center">
-      <h1 class="text-4xl font-bold mb-4 text-gray-900">佛教信仰神明</h1>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide">佛教信仰神明</h1>
+      <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
+      <p class="text-lg text-gray-700 dark:text-gray-300 font-light max-w-2xl mx-auto">
         佛教傳入台灣後與在地文化融合。這裡介紹觀世音菩薩、地藏王菩薩等廣受敬奉的佛菩薩。
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
       {
-        gods.map((god) => (
-          <a
-            href={`/gods/buddhism/${god.id}`}
-            class="group block bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 transform hover:-translate-y-1"
-          >
-            <div class="relative h-64 overflow-hidden bg-gray-100">
-              {god.image ? (
-                <img
-                  src={god.image}
-                  alt={god.name['zh-TW']}
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              ) : (
-                <div class="flex items-center justify-center h-full text-gray-400">No Image</div>
-              )}
-            </div>
-
-            <div class="p-6">
-              <h2 class="text-2xl font-bold mb-3 text-gray-800 group-hover:text-primary-600 transition-colors">
-                {god.name['zh-TW']}
-              </h2>
-              <p class="text-gray-600 line-clamp-3 leading-relaxed">{god.description['zh-TW']}</p>
-              <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">
-                <span class="text-sm text-gray-500 font-medium">了解更多 →</span>
+        gods.map((god) => {
+          const imageSrc = resolveImage(god.image);
+          return (
+            <a
+              href={`/gods/buddhism/${god.id}`}
+              class="group block bg-white/90 dark:bg-gray-800/90 rounded-lg overflow-hidden border border-gold-200 shadow-lg hover:shadow-2xl hover:border-red-400 transition duration-300 transform hover:-translate-y-1"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition z-10" />
+                {imageSrc ? (
+                  <Image
+                    src={imageSrc}
+                    alt={god.name}
+                    width={400}
+                    height={300}
+                    class="w-full h-full object-cover object-top transition duration-700 group-hover:scale-110"
+                  />
+                ) : (
+                  <div class="flex items-center justify-center h-full text-gold-300 bg-paper-texture">No Image</div>
+                )}
               </div>
-            </div>
-          </a>
-        ))
+
+              <div class="p-4 sm:p-6">
+                <h2 class="text-xl sm:text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-2 group-hover:text-red-700 dark:group-hover:text-red-400 transition">
+                  {god.name}
+                </h2>
+                <p class="text-gray-600 dark:text-gray-400 font-light line-clamp-3 leading-relaxed">{god.description}</p>
+                <div class="mt-4 pt-4 border-t border-gold-200/30 flex justify-between items-center">
+                  <span class="text-sm text-gold-500 font-medium group-hover:text-red-700 dark:group-hover:text-red-400 transition">了解更多 →</span>
+                </div>
+              </div>
+            </a>
+          );
+        })
       }
     </div>
 
     <div class="mt-12 text-center">
       <a
         href="/"
-        class="inline-block px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors font-medium"
+        class="inline-block px-6 py-3 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors font-medium"
       >
         回首頁
       </a>

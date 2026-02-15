@@ -4,36 +4,114 @@ const metadata = { title: '網站介紹' };
 ---
 
 <Layout metadata={metadata}>
-  <div class="container mx-auto py-8">
-    <h1 class="text-3xl font-bold mb-6">網站介紹</h1>
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-2">網站宗旨</h2>
-      <p>
-        本網站致力於推廣台灣神明信仰、廟宇文化與民間習俗，提供中英文多語言介紹，讓國內外朋友都能深入了解台灣豐富的宗教文化。
-      </p>
-    </section>
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-2">主要特色</h2>
-      <ul class="list-disc pl-6">
-        <li>多語言支援（繁體中文、英文）</li>
-        <li>神明、廟宇、節慶、民俗、文化傳承等主題完整介紹</li>
-        <li>豐富圖片與動態內容</li>
-        <li>友善的導覽與搜尋體驗</li>
-        <li>適合國內外旅客、學生、文化愛好者參考</li>
-      </ul>
-    </section>
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-2">資料來源與參考</h2>
-      <ul class="list-disc pl-6">
-        <li>台灣各地廟宇官方網站</li>
-        <li>文化部、宗教事務局等公開資料</li>
-        <li>民間信仰、宗教文化相關書籍與論文</li>
-        <li>網站團隊實地採訪與拍攝</li>
-      </ul>
-    </section>
-    <section>
-      <h2 class="text-xl font-semibold mb-2">團隊與聯絡方式</h2>
-      <p>如有建議、合作或內容授權需求，歡迎透過「聯絡我們」頁面與我們聯繫。</p>
-    </section>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide">網站介紹</h1>
+      <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
+    </div>
+
+    <div class="prose prose-lg max-w-none dark:prose-invert">
+      <section class="mb-10">
+        <h2 class="text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">網站宗旨</h2>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          「台灣神明介紹」是一個致力於推廣台灣神明信仰與廟宇文化的數位平台。台灣的宗教文化融合了道教、佛教、民間信仰與原住民祭祀傳統，形成了獨特而多元的信仰面貌。然而，許多珍貴的文化知識散落在各地，缺乏系統性的整理與介紹。
+        </p>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          本網站希望以現代的方式呈現這些傳統文化，讓不同世代與不同國籍的讀者都能輕鬆認識台灣的神明故事、廟宇之美，以及民間信仰的深層意涵。我們相信，了解信仰文化是認識一個土地的最好方式之一。
+        </p>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">網站內容</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-lg text-red-800 dark:text-red-400 mb-2">⛩️ 神明百科</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">涵蓋道教、佛教、民間信仰、客家與原住民信仰超過 50 位神明的詳細介紹，包含傳說典故、聖誕千秋、參拜方式等。</p>
+          </div>
+          <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-lg text-red-800 dark:text-red-400 mb-2">🏛️ 廟宇導覽</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">收錄全台北中南東超過 60 座知名廟宇，附地址、歷史沿革與特色介紹，方便旅客安排參訪行程。</p>
+          </div>
+          <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-lg text-red-800 dark:text-red-400 mb-2">🎪 文化專區</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">介紹台灣特有的宗教節慶、祭祀禮儀與文化資產，讓讀者深入了解信仰背後的生活智慧。</p>
+          </div>
+          <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-lg text-red-800 dark:text-red-400 mb-2">🔮 互動體驗</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">提供線上擲筊與求籤功能，讓讀者體驗台灣廟宇的傳統祈福儀式。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">主要特色</h2>
+        <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+          <li class="flex items-start gap-3">
+            <span class="text-red-600 mt-1">●</span>
+            <span><strong>多語言支援</strong>：提供繁體中文與英文版本，讓國際旅客也能深入了解台灣信仰文化</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-600 mt-1">●</span>
+            <span><strong>豐富視覺</strong>：精選各地廟宇與神明實景照片，呈現台灣信仰的藝術之美</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-600 mt-1">●</span>
+            <span><strong>神明指南</strong>：依人生情境推薦適合的神明，幫助信眾找到對的方向</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-600 mt-1">●</span>
+            <span><strong>廟宇交叉連結</strong>：神明頁面連結相關廟宇，廟宇頁面連結祀奉神明，方便延伸閱讀</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-600 mt-1">●</span>
+            <span><strong>響應式設計</strong>：支援手機、平板與桌面瀏覽，隨時隨地都能查閱</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">資料來源與參考</h2>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          本網站的內容經過多方查證與整理，主要資料來源包括：
+        </p>
+        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+          <li class="flex items-start gap-3">
+            <span class="text-amber-600 mt-1">◆</span>
+            <span>台灣各地廟宇官方網站與廟方提供之資料</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-amber-600 mt-1">◆</span>
+            <span>文化部文化資產局、內政部宗教資訊系統等政府公開資料</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-amber-600 mt-1">◆</span>
+            <span>《台灣民間信仰》、《台灣的神明》等民間信仰研究書籍</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-amber-600 mt-1">◆</span>
+            <span>團隊實地採訪、拍攝與田野調查記錄</span>
+          </li>
+        </ul>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mt-4 italic">
+          若發現內容有誤或需補充，歡迎來信告知，我們將盡速更正。
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-4">聯絡我們</h2>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+          如有建議、合作提案、內容授權需求，或發現需要修正的資訊，歡迎透過
+          <a href="/contact" class="text-red-700 dark:text-red-400 hover:underline">聯絡我們</a>
+          頁面與我們聯繫，或直接來信
+          <a href="mailto:taiwanese.gods@gmail.com" class="text-red-700 dark:text-red-400 hover:underline">taiwanese.gods@gmail.com</a>。
+        </p>
+      </section>
+    </div>
+
+    <div class="mt-12 text-center">
+      <a href="/" class="inline-block px-6 py-3 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors font-medium">
+        回首頁
+      </a>
+    </div>
   </div>
 </Layout>

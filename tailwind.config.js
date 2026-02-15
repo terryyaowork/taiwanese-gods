@@ -12,6 +12,11 @@ export default {
         accent: 'var(--aw-color-accent)',
         default: 'var(--aw-color-text-default)',
         muted: 'var(--aw-color-text-muted)',
+        gold: {
+          500: '#F59E0B', // Amber 500
+          600: '#D97706', // Amber 600
+          700: '#B45309', // Amber 700
+        },
       },
       fontFamily: {
         sans: ['var(--aw-font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],

@@ -1,63 +1,55 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { Image } from 'astro:assets';
 import { siteTitle } from '~/navigation';
-const lang = Astro.params.lang || 'zh-TW';
-const metadata = { title: siteTitle[lang] };
+
+import imgMazu from '~/assets/images/gods/mazu.png';
+import imgGuanyin from '~/assets/images/gods/guanyin.png';
+import imgCaishen from '~/assets/images/gods/caishen.png';
+import imgSanshan from '~/assets/images/gods/sanshan-guowang.png';
+import imgAlizu from '~/assets/images/gods/alizu.png';
+import heroImage from '~/assets/images/hero-image.png';
+
+const lang = 'zh-TW';
+const metadata = { title: siteTitle['zh-TW'] as string };
+
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: '台灣神明介紹',
+  alternateName: 'Taiwanese Gods',
+  url: 'https://taiwanese-gods.vercel.app',
+  description: '探索台灣豐富的神明文化，了解各地方信仰、廟宇歷史與神明故事。',
+  inLanguage: ['zh-TW', 'en'],
+  publisher: {
+    '@type': 'Organization',
+    name: '台灣神明介紹',
+    url: 'https://taiwanese-gods.vercel.app',
+  },
+};
+
 const sections = [
-  {
-    title: {
-      'zh-TW': '神明介紹',
-      en: 'Deities Introduction',
-    },
-    desc: {
-      'zh-TW': '認識台灣多元的神明信仰與神祇故事。',
-      en: 'Discover the diverse pantheon of Taiwanese deities and their stories.',
-    },
-    href: '/gods/taoism',
-    img: '/assets/images/home-gods.jpg',
-  },
-  {
-    title: {
-      'zh-TW': '廟宇巡禮',
-      en: 'Temple Pilgrimage',
-    },
-    desc: {
-      'zh-TW': '探索台灣各地著名廟宇與信仰中心。',
-      en: 'Explore famous temples and religious centers across Taiwan.',
-    },
-    href: '/temples/north',
-    img: '/assets/images/home-temple.jpg',
-  },
-  {
-    title: {
-      'zh-TW': '信仰文化',
-      en: 'Faith & Culture',
-    },
-    desc: {
-      'zh-TW': '深入了解台灣的祭祀禮儀、節慶與民俗文化。',
-      en: 'Dive into Taiwanese religious rituals, festivals, and folk customs.',
-    },
-    href: '/culture/rituals',
-    img: '/assets/images/home-culture.jpg',
-  },
-  {
-    title: {
-      'zh-TW': '關於我們',
-      en: 'About Us',
-    },
-    desc: {
-      'zh-TW': '網站宗旨、團隊介紹與聯絡方式。',
-      en: 'Our mission, team introduction, and contact information.',
-    },
-    href: '/about',
-    img: '/assets/images/home-about.jpg',
-  },
+  { title: '道教神明', desc: '媽祖、關聖帝君、城隍爺等道教信仰', href: '/gods/taoism', img: imgMazu },
+  { title: '佛教神明', desc: '觀音菩薩、釋迦牟尼佛、地藏王菩薩', href: '/gods/buddhism', img: imgGuanyin },
+  { title: '民間信仰', desc: '財神、土地公、月老等民間神明', href: '/gods/folk', img: imgCaishen },
+  { title: '客家信仰', desc: '三山國王、義民爺等客家獨特信仰', href: '/gods/hakka', img: imgSanshan },
+  { title: '原住民族信仰', desc: '阿立祖等原住民族祖靈信仰與祭儀', href: '/gods/indigenous', img: imgAlizu },
+  { title: '廟宇巡禮', desc: '探索台灣各地著名廟宇與信仰中心', href: '/temples/north', img: null },
 ];
 
-const introText = {
-  'zh-TW': '台灣神明信仰、廟宇文化、民間習俗與文化傳承的多語言導覽平台。',
-  en: 'A multilingual platform showcasing Taiwanese deity worship, temple culture, folk customs, and cultural heritage.',
-};
+const cultureLinks = [
+  { title: '祭祀禮儀', desc: '參拜禮儀、供品準備、點燈安太歲', href: '/culture/rituals' },
+  { title: '節慶活動', desc: '媽祖遶境、鹽水蜂炮、中元普渡', href: '/culture/festivals' },
+  { title: '文化傳承', desc: '廟宇建築、交趾陶、彩繪藝術', href: '/culture/heritage' },
+];
+
+const interactiveFeatures = [
+  { title: '線上求籤', desc: '擲筊求籤，獲得神明指引', href: '/fortune', gradient: 'from-red-900 to-red-700' },
+  { title: '神明指南', desc: '什麼事拜什麼神？一次看懂', href: '/guide', gradient: 'from-amber-700 to-amber-600' },
+];
+
+const introText = '台灣神明信仰、廟宇文化、民間習俗與文化傳承的多語言導覽平台。';
 ---
 
 <script is:inline>
@@ -67,20 +59,118 @@ const introText = {
 </script>
 
 <Layout metadata={metadata}>
-  <div class="container mx-auto py-8">
-    <h1 class="text-4xl font-bold mb-4">{siteTitle[lang]}</h1>
-    <p class="mb-8 text-lg text-gray-700">{introText[lang]}</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+  <JsonLd data={websiteJsonLd} />
+
+  <!-- Hero Section -->
+  <div class="relative w-full h-[60vh] md:h-[70vh] overflow-hidden flex items-center justify-center">
+    <div class="absolute inset-0 bg-black/60 z-10 w-full h-full"></div>
+    <Image
+      src={heroImage}
+      alt="台灣神明介紹"
+      class="absolute inset-0 w-full h-full object-cover blur-[2px] scale-105 opacity-60"
+      widths={[640, 1024, 1920]}
+      sizes="100vw"
+    />
+    <div class="relative z-20 text-center px-4 max-w-4xl mx-auto">
+      <h1
+        class="text-3xl sm:text-5xl md:text-7xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-b from-gold-100 to-gold-300 drop-shadow-lg mb-6 tracking-wider"
+      >
+        {siteTitle[lang]}
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-200 font-light tracking-widest leading-relaxed max-w-2xl mx-auto">
+        {introText}
+      </p>
+      <div class="mt-10">
+        <a
+          href="#explore"
+          class="inline-block px-8 py-3 border border-gold-300 text-gold-300 hover:bg-gold-300 hover:text-red-900 transition-colors duration-300 rounded-sm tracking-widest font-bold"
+        >
+          開始探索
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6 Category Navigation -->
+  <div id="explore" class="max-w-6xl mx-auto py-12 sm:py-16 px-4">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 lg:gap-6">
       {
         sections.map((section) => (
           <a
             href={section.href}
-            class="block rounded-lg shadow hover:shadow-lg transition bg-white dark:bg-gray-800 overflow-hidden"
+            class="group relative block rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-1 border border-gold-200 hover:border-red-400"
           >
-            <img src={section.img} alt={section.title[lang]} class="w-full h-48 object-cover object-center" />
-            <div class="p-6">
-              <h2 class="text-2xl font-semibold mb-2">{section.title[lang]}</h2>
-              <p class="text-gray-600 dark:text-gray-300">{section.desc[lang]}</p>
+            <div class="relative h-36 sm:h-44 md:h-52">
+              {section.img ? (
+                <Image
+                  src={section.img}
+                  alt={section.title}
+                  class="w-full h-full object-cover object-top transition duration-700 group-hover:scale-110"
+                  widths={[320, 480]}
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                />
+              ) : (
+                <img
+                  src="/assets/images/home-temple.jpg"
+                  alt={section.title}
+                  class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                />
+              )}
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+              <div class="absolute bottom-0 left-0 right-0 p-3 sm:p-4">
+                <h2 class="text-lg sm:text-xl md:text-2xl font-serif font-bold text-white drop-shadow-md">
+                  {section.title}
+                </h2>
+                <p class="text-xs sm:text-sm text-gray-200 mt-1 line-clamp-2">{section.desc}</p>
+              </div>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+
+  <!-- Culture Section -->
+  <div class="max-w-6xl mx-auto py-8 sm:py-12 px-4">
+    <div class="text-center mb-8">
+      <h2 class="text-2xl sm:text-3xl font-serif font-bold text-red-900 dark:text-red-300 tracking-wide">信仰文化</h2>
+      <div class="w-16 h-1 bg-gold-300 mx-auto mt-3"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      {
+        cultureLinks.map((item) => (
+          <a
+            href={item.href}
+            class="group block p-6 bg-white/90 dark:bg-gray-800/90 rounded-lg border border-gold-200 hover:border-red-400 shadow hover:shadow-lg transition duration-300"
+          >
+            <h3 class="text-lg sm:text-xl font-serif font-bold text-red-900 dark:text-red-300 mb-2 group-hover:text-red-700 dark:group-hover:text-red-400 transition">
+              {item.title}
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 font-light">{item.desc}</p>
+            <span class="inline-block mt-3 text-sm text-gold-500 group-hover:text-red-700 dark:group-hover:text-red-400 transition font-medium">
+              探索更多 →
+            </span>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+
+  <!-- Interactive Features CTA -->
+  <div class="max-w-6xl mx-auto py-8 sm:py-12 px-4 pb-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+      {
+        interactiveFeatures.map((feature) => (
+          <a
+            href={feature.href}
+            class={`group block rounded-xl p-6 sm:p-8 text-center bg-gradient-to-br ${feature.gradient} shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1`}
+          >
+            <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white mb-3 tracking-wide">{feature.title}</h3>
+            <p class="text-base sm:text-lg text-white/80 font-light">{feature.desc}</p>
+            <div class="mt-4">
+              <span class="inline-block px-6 py-2 border border-white/50 text-white rounded-sm text-sm font-medium group-hover:bg-white/20 transition">
+                立即體驗
+              </span>
             </div>
           </a>
         ))

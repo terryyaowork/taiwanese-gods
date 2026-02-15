@@ -41,11 +41,19 @@ export const headerData = {
         },
         {
           text: {
-            'zh-TW': '神明故事',
-            en: 'Deity Stories',
-            ja: '神様の物語',
+            'zh-TW': '客家信仰',
+            en: 'Hakka Beliefs',
+            ja: '客家信仰',
           },
-          href: getPermalink('/gods/stories'),
+          href: getPermalink('/gods/hakka'),
+        },
+        {
+          text: {
+            'zh-TW': '原住民族信仰',
+            en: 'Indigenous Beliefs',
+            ja: '先住民信仰',
+          },
+          href: getPermalink('/gods/indigenous'),
         },
       ],
     },
@@ -115,21 +123,45 @@ export const headerData = {
         },
         {
           text: {
-            'zh-TW': '民間習俗',
-            en: 'Customs',
-            ja: '民間習俗',
-          },
-          href: getPermalink('/culture/customs'),
-        },
-        {
-          text: {
             'zh-TW': '文化傳承',
             en: 'Heritage',
             ja: '文化継承',
           },
           href: getPermalink('/culture/heritage'),
         },
+        {
+          text: {
+            'zh-TW': '民俗信仰',
+            en: 'Folk Customs',
+            ja: '民俗信仰',
+          },
+          href: getPermalink('/culture/customs'),
+        },
+        {
+          text: {
+            'zh-TW': '經典咒語',
+            en: 'Mantras',
+            ja: '真言・経典',
+          },
+          href: getPermalink('/culture/mantras'),
+        },
       ],
+    },
+    {
+      text: {
+        'zh-TW': '神明指南',
+        en: 'Deity Guide',
+        ja: '神様ガイド',
+      },
+      href: getPermalink('/guide'),
+    },
+    {
+      text: {
+        'zh-TW': '線上求籤',
+        en: 'Fortune Sticks',
+        ja: 'おみくじ',
+      },
+      href: getPermalink('/fortune'),
     },
     {
       text: {
@@ -137,6 +169,7 @@ export const headerData = {
         en: 'About',
         ja: '私たちについて',
       },
+      mobileOnly: true,
       links: [
         {
           text: {
@@ -162,27 +195,10 @@ export const headerData = {
           },
           href: getPermalink('/faq'),
         },
-        {
-          text: {
-            'zh-TW': '隱私政策',
-            en: 'Privacy Policy',
-            ja: 'プライバシーポリシー',
-          },
-          href: getPermalink('/privacy'),
-        },
       ],
     },
   ],
-  actions: [
-    {
-      text: {
-        'zh-TW': '聯絡我們',
-        en: 'Contact',
-        ja: 'お問い合わせ',
-      },
-      href: getPermalink('/contact'),
-    },
-  ],
+  actions: [],
 };
 
 export const footerData = {
@@ -220,11 +236,19 @@ export const footerData = {
         },
         {
           text: {
-            'zh-TW': '神明故事',
-            en: 'Deity Stories',
-            ja: '神様の物語',
+            'zh-TW': '客家信仰',
+            en: 'Hakka Beliefs',
+            ja: '客家信仰',
           },
-          href: getPermalink('/gods/stories'),
+          href: getPermalink('/gods/hakka'),
+        },
+        {
+          text: {
+            'zh-TW': '原住民族信仰',
+            en: 'Indigenous Beliefs',
+            ja: '先住民信仰',
+          },
+          href: getPermalink('/gods/indigenous'),
         },
       ],
     },
@@ -294,19 +318,27 @@ export const footerData = {
         },
         {
           text: {
-            'zh-TW': '民間習俗',
-            en: 'Customs',
-            ja: '民間習俗',
-          },
-          href: getPermalink('/culture/customs'),
-        },
-        {
-          text: {
             'zh-TW': '文化傳承',
             en: 'Heritage',
             ja: '文化継承',
           },
           href: getPermalink('/culture/heritage'),
+        },
+        {
+          text: {
+            'zh-TW': '民俗信仰',
+            en: 'Folk Customs',
+            ja: '民俗信仰',
+          },
+          href: getPermalink('/culture/customs'),
+        },
+        {
+          text: {
+            'zh-TW': '經典咒語',
+            en: 'Mantras',
+            ja: '真言・経典',
+          },
+          href: getPermalink('/culture/mantras'),
         },
       ],
     },

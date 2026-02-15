@@ -1,0 +1,66 @@
+import os
+import shutil
+
+# Map artifact filenames to destination filenames
+# Source is in artifacts dir
+ARTIFACTS_DIR = "/Users/terryyao/.gemini/antigravity/brain/73b3ef71-bcab-47cc-a751-c7d936d4ef37"
+DEST_DIR = "src/assets/images/temples"
+
+MAPPING = {
+    "fagushan_temple_realism_v2_1771079110111.png": "temple-fagushan.jpg",
+    "foguangshan_temple_realism_1771079123858.png": "temple-foguangshan.jpg",
+    "taipei_confucius_temple_realism_1771079139777.png": "temple-taipei-confucius.jpg",
+    "songshan_fengtian_temple_realism_1771079211658.png": "temple-songshan-fengtian.jpg",
+    "yilan_sanqing_temple_realism_1771079280033.png": "temple-yilan-sanqing.jpg",
+    "taichung_fahua_temple_realism_1771079313034.png": "temple-taichung-fahua.jpg",
+    "tainan_tiantan_temple_realism_1771079329082.png": "temple-tainan-tiantan.jpg",
+    "donggang_donglong_temple_realism_1771079345316.png": "temple-donglong.jpg",
+    "zhushan_zinan_temple_realism_retry_2_1771079421760.png": "temple-zhushan-zinan.jpg",
+    "hsinchu_puxian_temple_realism_1771079452274.png": "temple-hsinchu-puxian.jpg",
+    "taipei_wenchang_temple_realism_1771079481972.png": "temple-taipei-wenchang.jpg"
+}
+
+def restore_images():
+    print(f"Starting DIRECT copy restoration of {len(MAPPING)} images...")
+    
+    if not os.path.exists(DEST_DIR):
+        print(f"Creating directory: {DEST_DIR}")
+        os.makedirs(DEST_DIR, exist_ok=True)
+
+    success_count = 0
+    fail_count = 0
+
+    for artifact_name, dest_name in MAPPING.items():
+        src_path = os.path.join(ARTIFACTS_DIR, artifact_name)
+        dest_path = os.path.join(DEST_DIR, dest_name)
+        
+        print(f"\nProcessing: {dest_name}")
+        
+        if not os.path.exists(src_path):
+            print(f"Error: Source file not found: {src_path}")
+            fail_count += 1
+            continue
+            
+        try:
+            # Direct copy with rename (PNG content in JPG file)
+            # Browsers handle this fine and avoids simple conversion issues
+            print(f"  Copying {src_path} -> {dest_path}")
+            if os.path.exists(dest_path):
+                os.remove(dest_path)
+            shutil.copy2(src_path, dest_path)
+            
+            # Verify size
+            size = os.path.getsize(dest_path)
+            print(f"  Success. New size: {size} bytes")
+            if size < 25000:
+                 print("  WARNING: File size still suspiciously small!")
+            success_count += 1
+                
+        except Exception as e:
+            print(f"  Exception during processing: {e}")
+            fail_count += 1
+            
+    print(f"\nRestoration complete. Success: {success_count}, Failed: {fail_count}")
+
+if __name__ == "__main__":
+    restore_images()

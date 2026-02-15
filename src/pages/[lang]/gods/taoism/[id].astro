@@ -1,13 +1,14 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
-import gods from '~/data/taoist-gods.json';
+import GodDetail from '~/components/gods/GodDetail.astro';
 
-type Lang = 'zh-TW' | 'en';
+const allData = import.meta.glob('/src/data/*/taoist-gods.json', { eager: true, import: 'default' });
 
 export async function getStaticPaths() {
-  const langs: Lang[] = ['zh-TW', 'en'];
+  const allData = import.meta.glob('/src/data/*/taoist-gods.json', { eager: true, import: 'default' });
+  const langs = ['zh-TW', 'en', 'ja'];
   const paths: { params: { lang: string; id: string } }[] = [];
   for (const lang of langs) {
+    const gods = (allData[`/src/data/${lang}/taoist-gods.json`] || []) as any[];
     for (const god of gods) {
       paths.push({ params: { lang, id: god.id } });
     }
@@ -15,165 +16,35 @@ export async function getStaticPaths() {
   return paths;
 }
 
-const labels: Record<
-  Lang,
-  {
-    aliases: string;
-    domain: string;
-    description: string;
-    story: string;
-    temples: string;
-    worship: string;
-    festivals: string;
-    back: string;
-  }
-> = {
-  'zh-TW': {
-    aliases: '別名',
-    domain: '職掌',
-    description: '簡介',
-    story: '神話故事',
-    temples: '代表廟宇',
-    worship: '參拜方式',
-    festivals: '重要慶典',
-    back: '← 回神明列表',
-  },
-  en: {
-    aliases: 'Alias',
-    domain: 'Domain',
-    description: 'Description',
-    story: 'Legend/Story',
-    temples: 'Representative Temples',
-    worship: 'Worship',
-    festivals: 'Major Festivals',
-    back: '← Back to Deities List',
-  },
-};
-
 const { lang: rawLang, id } = Astro.params;
-const lang = (rawLang || 'zh-TW') as Lang;
-const god = gods.find((g) => g.id === id) as any;
+const lang = rawLang || 'zh-TW';
+const zhGods = allData['/src/data/zh-TW/taoist-gods.json'] as any[];
+const gods = (allData[`/src/data/${lang}/taoist-gods.json`] || zhGods) as any[];
+const god = gods.find((g: any) => g.id === id);
 if (!god) {
   throw new Error('神明資料不存在');
 }
 
-const metadata = {
-  title: god.name[lang],
-  ignoreTitleTemplate: lang === 'en',
-  description: god.description[lang].substring(0, 150) + '...',
-  openGraph: {
-    images: [
-      {
-        url: god.image,
-        width: 1200,
-        height: 630,
-        alt: god.name[lang],
-      },
-    ],
-  },
+const godImages = import.meta.glob('/src/assets/images/gods/*.{jpg,jpeg,png,webp,avif}', {
+  eager: true,
+  import: 'default',
+});
+
+const getGodImage = (imagePath: string | undefined): string | null => {
+  if (!imagePath) return null;
+  const filename = imagePath.split('/').pop();
+  const matchedKey = Object.keys(godImages).find((key) => key.endsWith('/' + filename));
+  if (matchedKey) {
+    const img = godImages[matchedKey];
+    if (typeof img === 'object' && img !== null && 'src' in img) {
+      return (img as { src: string }).src;
+    }
+    return String(img);
+  }
+  return imagePath;
 };
+
+const godImageSrc = getGodImage(god.image) || god.image;
 ---
 
-<Layout metadata={metadata}>
-  <div class="max-w-3xl mx-auto py-8 px-4 sm:px-6">
-    <div class="mb-6">
-      <a
-        href={lang === 'en' ? '/en/gods/taoism' : '/gods/taoism'}
-        class="text-blue-600 hover:underline inline-flex items-center"
-      >
-        {labels[lang].back}
-      </a>
-    </div>
-
-    <img
-      src={god.image}
-      alt={god.name[lang]}
-      class="w-full object-cover rounded-lg shadow-md mb-8 max-h-[500px] bg-gray-100"
-    />
-
-    <h1 class="text-4xl font-bold mb-6 text-gray-900">{god.name[lang]}</h1>
-
-    <div class="bg-gray-50 p-6 rounded-lg mb-8 border border-gray-100">
-      <div class="mb-4 text-lg">
-        <span class="font-bold text-gray-700">{labels[lang].aliases}：</span>
-        {god.aliases[lang]?.join(lang === 'en' ? ', ' : '、')}
-      </div>
-      <div class="text-lg">
-        <span class="font-bold text-gray-700">{labels[lang].domain}：</span>
-        {god.domain[lang]}
-      </div>
-    </div>
-
-    <div class="space-y-10">
-      <section>
-        <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-primary-700">{labels[lang].description}</h2>
-        <div class="prose max-w-none text-gray-800 leading-relaxed text-lg">
-          {god.description[lang].split('\n').map((line: string) => line.trim() && <p class="mb-4">{line}</p>)}
-        </div>
-      </section>
-
-      <section>
-        <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-primary-700">{labels[lang].story}</h2>
-        <div class="prose max-w-none text-gray-800 leading-relaxed text-lg">
-          {god.story[lang].split('\n').map((line: string) => line.trim() && <p class="mb-4">{line}</p>)}
-        </div>
-      </section>
-
-      {
-        god.worship && god.worship[lang] && (
-          <section>
-            <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-primary-700">{labels[lang].worship}</h2>
-            <div class="prose max-w-none text-gray-800 leading-relaxed text-lg">
-              {god.worship[lang].split('\n').map((line: string) => line.trim() && <p class="mb-4">{line}</p>)}
-            </div>
-          </section>
-        )
-      }
-
-      {
-        god.festivals && god.festivals[lang] && (
-          <section>
-            <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-primary-700">{labels[lang].festivals}</h2>
-            <div class="prose max-w-none text-gray-800 leading-relaxed text-lg">
-              {god.festivals[lang].split('\n').map((line: string) => line.trim() && <p class="mb-4">{line}</p>)}
-            </div>
-          </section>
-        )
-      }
-
-      <section>
-        <h2 class="text-2xl font-bold mb-4 border-b pb-2 text-primary-700">{labels[lang].temples}</h2>
-        <ul class="list-none space-y-3">
-          {
-            god.temples.map((t: any) => (
-              <li>
-                <a
-                  href={t.url}
-                  target="_blank"
-                  rel="noopener"
-                  class="text-blue-600 hover:text-blue-800 hover:underline flex items-center text-lg"
-                >
-                  <span class="mr-2">⛩️</span> {t.name[lang]} <span class="text-gray-500 ml-2">({t.location})</span>
-                </a>
-                {t.deityStory && t.deityStory[lang] && (
-                  <p class="mt-2 text-gray-600 text-base italic border-l-4 border-gray-200 pl-3">
-                    {t.deityStory[lang]}
-                  </p>
-                )}
-              </li>
-            ))
-          }
-        </ul>
-      </section>
-    </div>
-
-    <div class="mt-12 pt-8 border-t text-center">
-      <a
-        href={lang === 'en' ? '/en/gods/taoism' : '/gods/taoism'}
-        class="inline-flex items-center text-blue-600 hover:underline text-lg"
-      >
-        {labels[lang].back}
-      </a>
-    </div>
-  </div>
-</Layout>
+<GodDetail god={{...god, category: 'taoism'}} imageSrc={godImageSrc} lang={lang} />

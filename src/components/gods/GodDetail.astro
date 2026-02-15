@@ -1,12 +1,29 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import Divination from '~/components/common/Divination.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
 
-const { god } = Astro.props;
+const { god, imageSrc, lang = 'zh-TW' } = Astro.props;
 
-const lang = 'zh-TW';
+// Dynamically load temple data for the correct language
+const allTempleFiles = import.meta.glob('/src/data/*/temples-*.json', {
+  eager: true,
+  import: 'default',
+});
 
-const labels = {
+const loadTemples = (region: string) => {
+  return (allTempleFiles[`/src/data/${lang}/temples-${region}.json`] || []) as any[];
+};
+
+// Build temple name → internal link map
+const langPrefix = lang === 'zh-TW' ? '' : `/${lang}`;
+const templeNameToLink = new Map();
+['north', 'central', 'south', 'east'].forEach((region) => {
+  loadTemples(region).forEach((t: any) => {
+    templeNameToLink.set(t.name, `${langPrefix}/temples/${t.id}`);
+  });
+});
+
+const allLabels: Record<string, Record<string, string>> = {
   'zh-TW': {
     aliases: '聖號別稱',
     domain: '職掌神職',
@@ -17,115 +34,190 @@ const labels = {
     festivals: '聖誕千秋',
     back: '← 返回列表',
   },
+  en: {
+    aliases: 'Also Known As',
+    domain: 'Divine Domain',
+    description: 'Introduction',
+    story: 'Legend & Origin',
+    temples: 'Famous Temples',
+    worship: 'Worship Guide',
+    festivals: 'Festivals',
+    back: '← Back to List',
+  },
+  ja: {
+    aliases: '別称',
+    domain: '神職',
+    description: '紹介',
+    story: '伝説',
+    temples: '有名な廟',
+    worship: '参拝作法',
+    festivals: '祭日',
+    back: '← 一覧に戻る',
+  },
 };
+const labels = allLabels[lang] || allLabels['zh-TW'];
 
-// Image handling logic moved here or kept in parent?
-// Parent passes the full god object, so we might need to resolve image here if passed as string
-// But [id].astro resolves it. Let's assume parent resolves it or passes resolved URL.
-// Actually, [id].astro does the dynamic import and resolution.
-// Let's expect `god` to have `imageSrc` property added by parent, OR we pass `imageSrc` as prop.
-// For now, let's pass `imageSrc` as a separate prop to keep it clean.
+const tocLabel = lang === 'en' ? 'Contents' : lang === 'ja' ? '目次' : '本文目錄';
 
-const { imageSrc } = Astro.props;
+// Build TOC items dynamically
+const tocItems: { id: string; label: string }[] = [
+  { id: 'description', label: labels.description },
+  { id: 'story', label: labels.story },
+];
+if (god.worship) tocItems.push({ id: 'worship', label: labels.worship });
+if (god.festivals) tocItems.push({ id: 'festivals', label: labels.festivals });
+tocItems.push({ id: 'temples', label: labels.temples });
 
+const siteNames: Record<string, string> = { en: 'Taiwanese Gods', ja: '台湾の神々' };
 const metadata = {
-  title: god.name[lang],
-  description: god.description[lang].substring(0, 150) + '...',
+  title: siteNames[lang] ? `${god.name} — ${siteNames[lang]}` : god.name,
+  ignoreTitleTemplate: lang !== 'zh-TW',
+  description: (god.description || '').substring(0, 150) + '...',
   openGraph: {
     images: [
       {
         url: imageSrc,
         width: 1200,
         height: 630,
-        alt: god.name[lang],
+        alt: god.name,
       },
     ],
   },
 };
+
+const siteUrl = 'https://taiwanese-gods.vercel.app';
+const godPath = `${langPrefix}/gods/${god.category || 'taoism'}/${god.id}`;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  name: god.name,
+  headline: god.name,
+  description: (god.description || '').substring(0, 300),
+  image: imageSrc,
+  url: `${siteUrl}${godPath}`,
+  inLanguage: lang,
+  publisher: {
+    '@type': 'Organization',
+    name: '台灣神明介紹',
+    url: siteUrl,
+  },
+  ...(god.aliases?.length ? { alternativeHeadline: god.aliases.join('、') } : {}),
+};
 ---
 
 <Layout metadata={metadata}>
+  <JsonLd data={jsonLd} />
   <div class="main-container bg-paper-texture min-h-screen pb-12">
     <!-- Hero Section with Image & Title -->
-    <div class="relative w-full h-[40vh] md:h-[50vh] overflow-hidden">
+    <div class="relative w-full h-[30vh] sm:h-[40vh] md:h-[50vh] overflow-hidden">
       <div class="absolute inset-0 bg-black/60 z-10"></div>
       <img
         src={imageSrc}
-        alt={god.name[lang]}
+        alt={god.name}
         class="absolute inset-0 w-full h-full object-cover blur-sm scale-110 opacity-50"
       />
-      <div class="relative z-20 h-full max-w-5xl mx-auto px-4 flex flex-col justify-end pb-12">
+      <div class="relative z-20 h-full max-w-5xl mx-auto px-4 flex flex-col justify-end pb-6 sm:pb-10 md:pb-12">
         <span
-          class="inline-block px-3 py-1 bg-red-800 text-gold-100 text-sm font-bold tracking-widest rounded-sm mb-2 w-fit border border-gold-300/30 backdrop-blur-sm"
+          class="inline-block px-3 py-1 bg-red-800 text-gold-100 text-xs sm:text-sm font-bold tracking-widest rounded-sm mb-2 w-fit border border-gold-300/30 backdrop-blur-sm"
         >
-          {god.domain[lang]}
+          {god.domain}
         </span>
-        <h1 class="text-4xl md:text-6xl font-serif font-bold text-white mb-2 drop-shadow-lg tracking-wide">
-          {god.name[lang]}
+        <h1 class="text-2xl sm:text-4xl md:text-6xl font-serif font-bold text-white mb-2 drop-shadow-lg tracking-wide">
+          {god.name}
         </h1>
-        <p class="text-white/80 text-lg md:text-xl font-light tracking-wider">
-          {god.aliases[lang]?.join('  |  ')}
+        <p class="text-white/80 text-sm sm:text-lg md:text-xl font-light tracking-wider line-clamp-2">
+          {god.aliases?.join('  |  ')}
         </p>
       </div>
     </div>
 
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 -mt-8 relative z-30">
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 -mt-4 sm:-mt-8 relative z-30">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
         <!-- Left Content: Description & Story -->
-        <div class="lg:col-span-2 space-y-8 bg-white/95 p-8 rounded-lg shadow-xl border-t-4 border-red-800">
-          <section>
-            <h2 class="section-title">{labels[lang].description}</h2>
-            <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed font-serif">
-              {god.description[lang].split('\n').map((line) => line.trim() && <p class="mb-4">{line}</p>)}
+        <div class="lg:col-span-2 space-y-6 sm:space-y-8 bg-white/95 dark:bg-gray-800/95 p-4 sm:p-6 md:p-8 rounded-lg shadow-xl border-t-4 border-red-800">
+          <!-- TOC -->
+          <nav class="bg-red-50/60 dark:bg-red-900/20 border border-red-100 dark:border-red-800/50 rounded-lg p-3 sm:p-5">
+            <h3 class="font-serif font-bold text-red-900 dark:text-red-300 mb-3 text-sm tracking-widest uppercase">{tocLabel}</h3>
+            <ol class="space-y-1.5">
+              {tocItems.map((item, i) => (
+                <li>
+                  <a href={`#${item.id}`} class="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-400 transition-colors text-[15px]">
+                    <span class="text-red-300 dark:text-red-600 text-xs font-mono">{String(i + 1).padStart(2, '0')}</span>
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+
+          <section id="description">
+            <h2 class="section-title">{labels.description}</h2>
+            <div class="prose prose-lg max-w-none text-gray-700 dark:text-gray-300 leading-relaxed font-serif">
+              {god.description.split('\n').map((line: string) => line.trim() && <p class="mb-4">{line}</p>)}
             </div>
           </section>
 
-          <section>
-            <h2 class="section-title">{labels[lang].story}</h2>
-            <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-              {god.story[lang].split('\n').map((line) => line.trim() && <p class="mb-4">{line}</p>)}
+          <section id="story">
+            <h2 class="section-title">{labels.story}</h2>
+            <div class="prose prose-lg max-w-none text-gray-700 dark:text-gray-300 leading-relaxed">
+              {god.story.split('\n').map((line: string) => line.trim() && <p class="mb-4">{line}</p>)}
             </div>
           </section>
 
           {
-            god.worship && god.worship[lang] && (
-              <section>
-                <h2 class="section-title">{labels[lang].worship}</h2>
-                <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-                  {god.worship[lang].split('\n').map((line) => line.trim() && <p class="mb-4">{line}</p>)}
+            god.worship && (
+              <section id="worship">
+                <h2 class="section-title">{labels.worship}</h2>
+                <div class="prose prose-lg max-w-none text-gray-700 dark:text-gray-300 leading-relaxed">
+                  {god.worship.split('\n').map((line: string) => line.trim() && <p class="mb-4">{line}</p>)}
                 </div>
               </section>
             )
           }
 
           {
-            god.festivals && god.festivals[lang] && (
-              <section>
-                <h2 class="section-title">{labels[lang].festivals}</h2>
-                <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-                  {god.festivals[lang].split('\n').map((line) => line.trim() && <p class="mb-4">{line}</p>)}
+            god.festivals && (
+              <section id="festivals">
+                <h2 class="section-title">{labels.festivals}</h2>
+                <div class="prose prose-lg max-w-none text-gray-700 dark:text-gray-300 leading-relaxed">
+                  {god.festivals.split('\n').map((line: string) => line.trim() && <p class="mb-4">{line}</p>)}
                 </div>
               </section>
             )
           }
 
-          <section>
-            <h2 class="section-title">{labels[lang].temples}</h2>
+          <section id="temples">
+            <h2 class="section-title">{labels.temples}</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               {
-                god.temples.map((t) => (
-                  <a href={t.url} target="_blank" rel="noopener" class="block group">
-                    <div class="bg-gray-50 hover:bg-red-50 border border-gray-200 hover:border-red-200 p-4 rounded-md transition-all h-full">
-                      <h4 class="font-bold text-lg text-primary-800 group-hover:text-red-700 mb-1 flex items-center">
-                        <span class="mr-2">⛩️</span> {t.name[lang]}
-                      </h4>
-                      <p class="text-sm text-gray-500 mb-2">{t.location}</p>
-                      {t.deityStory && t.deityStory[lang] && (
-                        <p class="text-sm text-gray-600 line-clamp-2 italic">{t.deityStory[lang]}</p>
-                      )}
-                    </div>
-                  </a>
-                ))
+                god.temples.map((t: any) => {
+                  const internalLink = templeNameToLink.get(t.name);
+                  return internalLink ? (
+                    <a href={internalLink} class="block group">
+                      <div class="bg-gray-50 dark:bg-gray-700/50 hover:bg-red-50 dark:hover:bg-red-900/20 border border-gray-200 dark:border-gray-600 hover:border-red-200 p-4 rounded-md transition-all h-full">
+                        <h4 class="font-bold text-lg text-primary-800 dark:text-gray-200 group-hover:text-red-700 dark:group-hover:text-red-400 mb-1 flex items-center">
+                          <span class="mr-2">⛩️</span> {t.name}
+                          <span class="ml-auto text-xs text-red-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                            {lang === 'zh-TW' ? '詳細介紹 →' : lang === 'ja' ? '詳細 →' : 'Details →'}
+                          </span>
+                        </h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">{t.location}</p>
+                        {t.deityStory && <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 italic">{t.deityStory}</p>}
+                      </div>
+                    </a>
+                  ) : (
+                    <a href={t.url} target="_blank" rel="noopener" class="block group">
+                      <div class="bg-gray-50 dark:bg-gray-700/50 hover:bg-red-50 dark:hover:bg-red-900/20 border border-gray-200 dark:border-gray-600 hover:border-red-200 p-4 rounded-md transition-all h-full">
+                        <h4 class="font-bold text-lg text-primary-800 dark:text-gray-200 group-hover:text-red-700 dark:group-hover:text-red-400 mb-1 flex items-center">
+                          <span class="mr-2">⛩️</span> {t.name}
+                          <span class="ml-auto text-xs text-gray-400">🔗</span>
+                        </h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">{t.location}</p>
+                        {t.deityStory && <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 italic">{t.deityStory}</p>}
+                      </div>
+                    </a>
+                  );
+                })
               }
             </div>
           </section>
@@ -134,23 +226,40 @@ const metadata = {
         <!-- Right Sidebar: Image & Divination -->
         <div class="lg:col-span-1 space-y-6">
           <!-- Main Image Card -->
-          <div class="bg-white p-2 rounded-lg shadow-lg border-2 border-gold-200">
-            <img src={imageSrc} alt={god.name[lang]} class="w-full h-auto object-cover rounded-md" />
+          <div class="bg-white dark:bg-gray-800 p-2 rounded-lg shadow-lg border-2 border-gold-200">
+            <img src={imageSrc} alt={god.name} class="w-full h-auto object-cover rounded-md" />
             <div class="text-center py-3">
-              <p class="font-serif font-bold text-xl text-primary-900">{god.name[lang]}</p>
-              <p class="text-sm text-gray-500">{god.domain[lang]}</p>
+              <p class="font-serif font-bold text-xl text-primary-900 dark:text-gray-100">{god.name}</p>
+              <p class="text-sm text-gray-500 dark:text-gray-400">{god.domain}</p>
             </div>
           </div>
 
-          <!-- Divination Component -->
-          <Divination />
+          <!-- Divination CTA -->
+          <div class="bg-gradient-to-br from-red-50 to-amber-50 dark:from-red-900/20 dark:to-amber-900/20 p-6 rounded-xl border-2 border-red-200 dark:border-red-800/50 shadow-lg text-center">
+            <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-gold-300 shadow-md mx-auto mb-3">
+              <img src={imageSrc} alt={god.name} class="w-full h-full object-cover" />
+            </div>
+            <h3 class="text-lg font-serif font-bold text-red-900 dark:text-red-300 mb-2">
+              {lang === 'en' ? 'Seek Divine Guidance' : lang === 'ja' ? '神様に祈願する' : '向' + god.name + '誠心祈求'}
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+              {lang === 'en' ? 'Cast moon blocks or draw fortune sticks' : lang === 'ja' ? '筊杯占い・おみくじ' : '擲筊問事 · 求籤解惑'}
+            </p>
+            <a
+              href={`${langPrefix}/fortune?god=${god.id}`}
+              class="inline-flex items-center gap-2 px-6 py-3 bg-red-700 hover:bg-red-800 text-white rounded-full font-bold shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105"
+            >
+              <span>🙏</span>
+              {lang === 'en' ? 'Go to Fortune Page' : lang === 'ja' ? 'おみくじページへ' : '前往線上求籤'}
+            </a>
+          </div>
 
           <div class="mt-8 text-center">
             <a
-              href={`/gods/${god.category || 'taoism'}`}
-              class="inline-flex items-center text-gray-600 hover:text-red-700 font-medium transition-colors"
+              href={`${langPrefix}/gods/${god.category || 'taoism'}`}
+              class="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-red-700 dark:hover:text-red-400 font-medium transition-colors"
             >
-              {labels[lang].back}
+              {labels.back}
             </a>
           </div>
         </div>
@@ -159,20 +268,12 @@ const metadata = {
   </div>
 </Layout>
 
-<style>
-  /* Custom Fonts & Colors */
-  .text-gold-100 {
-    color: #fbf5e6;
+<style is:global>
+  html {
+    scroll-behavior: smooth;
   }
-  .text-gold-300 {
-    color: #d4af37;
-  }
-  .border-gold-200 {
-    border-color: #e5c15d;
-  }
-  .bg-paper-texture {
-    background-color: #fcfbf7;
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d8c8b0' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  section[id] {
+    scroll-margin-top: 1.5rem;
   }
   .section-title {
     @apply text-2xl font-bold mb-6 pb-2 border-b-2 border-red-100 text-red-900 inline-block font-serif;

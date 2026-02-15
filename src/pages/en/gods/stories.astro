@@ -1,8 +1,10 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import stories from '~/data/god-stories.json';
+import stories from '~/data/en/god-stories.json';
 const metadata = {
-  title: 'Deity Stories',
+  title: 'Deity Stories — Taiwanese Gods',
+  ignoreTitleTemplate: true,
+  description: 'A collection of legendary stories and origins of common deities worshipped in Taiwan, exploring their myths and cultural significance.',
 };
 ---
 
@@ -17,11 +19,11 @@ const metadata = {
           class="block border rounded-lg p-6 shadow bg-white dark:bg-gray-800 hover:shadow-lg transition"
         >
           {story.images?.[0] && (
-            <img src={story.images[0]} alt={story.title.en} class="w-full h-40 object-cover object-top rounded mb-4" />
+            <img src={story.images[0]} alt={story.title} class="w-full h-40 object-cover object-top rounded mb-4" />
           )}
-          <h2 class="text-xl font-semibold mb-2">{story.title.en}</h2>
-          <div class="mb-1 text-gray-600">Main Deities: {story.mainDeities.map((d) => d.name.en).join(', ')}</div>
-          <p class="mb-2 text-gray-700">{story.summary.en}</p>
+          <h2 class="text-xl font-semibold mb-2">{story.title}</h2>
+          <div class="mb-1 text-gray-600 dark:text-gray-400">Main Deities: {story.mainDeities.map((d) => d.name).join(', ')}</div>
+          <p class="mb-2 text-gray-700 dark:text-gray-300">{story.summary}</p>
         </a>
       ))
     }

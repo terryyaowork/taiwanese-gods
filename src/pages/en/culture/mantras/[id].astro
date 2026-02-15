@@ -1,0 +1,26 @@
+---
+import CultureDetail from '~/components/culture/CultureDetail.astro';
+import mantras from '~/data/en/culture-mantras.json';
+
+export async function getStaticPaths() {
+  return mantras.map((item) => ({
+    params: { id: item.id },
+  }));
+}
+
+const { id } = Astro.params;
+const item = mantras.find((m) => m.id === id);
+if (!item) {
+  throw new Error('Mantra not found');
+}
+---
+
+<CultureDetail
+  item={item}
+  imageSrc={null}
+  category="mantras"
+  categoryLabel="Mantras & Sacred Scriptures"
+  backLink="/en/culture/mantras"
+  backLabel="← Back to Mantras"
+  lang="en"
+/>
