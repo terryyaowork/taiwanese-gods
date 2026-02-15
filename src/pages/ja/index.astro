@@ -10,6 +10,7 @@ import imgCaishen from '~/assets/images/gods/caishen.png';
 import imgSanshan from '~/assets/images/gods/sanshan-guowang.png';
 import imgAlizu from '~/assets/images/gods/alizu.png';
 import heroImage from '~/assets/images/hero-image.png';
+import homeTemple from '~/assets/images/home-temple.png';
 
 const metadata = {
   title: siteTitle['ja'] as string,
@@ -76,6 +77,8 @@ const introText = '台湾の神様信仰、寺院文化、民間習俗、文化�
       class="absolute inset-0 w-full h-full object-cover blur-[2px] scale-105 opacity-60"
       widths={[640, 1024, 1920]}
       sizes="100vw"
+      loading="eager"
+      fetchpriority="high"
     />
     <div class="relative z-20 text-center px-4 max-w-4xl mx-auto">
       <h1
@@ -116,10 +119,12 @@ const introText = '台湾の神様信仰、寺院文化、民間習俗、文化�
                   sizes="(max-width: 768px) 50vw, 33vw"
                 />
               ) : (
-                <img
-                  src="/assets/images/home-temple.jpg"
+                <Image
+                  src={homeTemple}
                   alt={section.title}
                   class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                  widths={[320, 480]}
+                  sizes="(max-width: 768px) 50vw, 33vw"
                 />
               )}
               <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
