@@ -39,14 +39,9 @@ const { language, textDirection } = I18N;
     <Hreflang />
     <Analytics />
 
-    <!-- Google AdSense -->
+    <!-- Google AdSense preconnect -->
     <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />
     <link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin />
-    <script
-      is:inline
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5075476363087677"
-      crossorigin="anonymous"></script>
 
     <!-- Comment the line below to disable View Transitions -->
     <ClientRouter fallback="swap" />
@@ -57,5 +52,16 @@ const { language, textDirection } = I18N;
 
     <BasicScripts />
     <GoTop />
+
+    <!-- Google AdSense (deferred to avoid blocking render) -->
+    <script is:inline>
+      window.addEventListener('load', function () {
+        const s = document.createElement('script');
+        s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5075476363087677';
+        s.crossOrigin = 'anonymous';
+        s.async = true;
+        document.head.appendChild(s);
+      });
+    </script>
   </body>
 </html>
