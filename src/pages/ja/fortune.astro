@@ -206,7 +206,8 @@ const metadata = {
     if (!el) return;
 
     const params = new URLSearchParams(window.location.search);
-    const godId = params.get('god') || 'yuhuang';
+    const godId = params.get('god') || sessionStorage.getItem('fortune-god') || 'yuhuang';
+    if (sessionStorage.getItem('fortune-god')) sessionStorage.removeItem('fortune-god');
     const god = godMap[godId] || godMap['yuhuang'];
     if (!god) return;
 
@@ -217,7 +218,7 @@ const metadata = {
     if (titleEl) titleEl.textContent = god.name + ' にお祈り';
 
     const backLink = document.getElementById('god-back-link');
-    if (params.get('god') && backLink) {
+    if (godId !== 'yuhuang' && backLink) {
       backLink.href = '/ja/gods/' + god.category + '/' + godId;
       backLink.classList.remove('hidden');
       backLink.classList.add('flex');
@@ -305,5 +306,4 @@ const metadata = {
   }
 
   document.addEventListener('astro:page-load', populateGodInfo);
-  populateGodInfo();
 </script>

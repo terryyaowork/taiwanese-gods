@@ -273,6 +273,7 @@ const jsonLd = {
             </p>
             <a
               href={`${langPrefix}/fortune?god=${god.id}`}
+              onclick={`sessionStorage.setItem('fortune-god','${god.id}')`}
               class="inline-flex items-center gap-2 px-6 py-3 bg-red-700 hover:bg-red-800 text-white rounded-full font-bold shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105"
             >
               <span>🙏</span>

@@ -121,9 +121,9 @@ test.describe('Fortune page — Japanese', () => {
 });
 
 test.describe('Navigation from god detail to fortune', () => {
-  test('god detail page has fortune CTA link', async ({ page }) => {
+  test('god detail page has fortune CTA link with god param', async ({ page }) => {
     await page.goto('/en/gods/taoism/xuantian');
-    // Find the fortune CTA link
+    // The fortune link should include god query param
     const fortuneLink = page.locator('a[href*="/en/fortune?god=xuantian"]');
     await expect(fortuneLink).toBeVisible();
   });
@@ -139,6 +139,17 @@ test.describe('Navigation from god detail to fortune', () => {
     await expect(title).toContainText('Xuantian');
     const img = page.locator('#god-avatar-img');
     await expect(img).toHaveAttribute('src', /xuantian/);
+  });
+
+  test('god info loads from sessionStorage fallback', async ({ page }) => {
+    // Simulate production scenario: god ID in sessionStorage, no query param
+    await page.goto('/en/fortune');
+    await page.evaluate(() => sessionStorage.setItem('fortune-god', 'xuantian'));
+    await page.reload();
+    const title = page.locator('#god-title');
+    await expect(title).toContainText('Xuantian');
+    const backLink = page.locator('#god-back-link');
+    await expect(backLink).toBeVisible();
   });
 
   test('divination buttons work after navigation from god page', async ({ page }) => {
