@@ -1,12 +1,15 @@
 ---
-import fortuneData from '~/data/zh-TW/fortunes.json';
-
 import imgShengJiao from '~/assets/images/divination/divination_sheng_jiao.png';
 import imgXiaoJiao from '~/assets/images/divination/divination_xiao_jiao.png';
 import imgYinJiao from '~/assets/images/divination/divination_yin_jiao.png';
 import qianshiContainer from '~/assets/images/divination/qianshi_container.png';
 
 const { class: className = '', lang = 'zh-TW' } = Astro.props;
+
+// Load fortune data based on language
+const allFortunes = import.meta.glob('/src/data/*/fortunes.json', { eager: true, import: 'default' });
+const fortuneData = (allFortunes[`/src/data/${lang}/fortunes.json`] ||
+  allFortunes['/src/data/zh-TW/fortunes.json']) as Record<string, unknown>[];
 
 const allLabels: Record<string, Record<string, string>> = {
   'zh-TW': {
@@ -227,6 +230,7 @@ const uid = `div-${Math.random().toString(36).slice(2, 8)}`;
 </style>
 
 <script
+  is:inline
   define:vars={{
     uid,
     shengJiaoSrc: imgShengJiao.src,
@@ -236,11 +240,16 @@ const uid = `div-${Math.random().toString(36).slice(2, 8)}`;
     labels,
   }}
 >
-  (function () {
-    const root = document.querySelector(`[data-divination-id="${uid}"]`);
+  function initDivination() {
+    const root = document.querySelector('[data-divination-id="' + uid + '"]');
     if (!root) return;
+    // Prevent double-init on the same DOM element
+    if (root.dataset.divinationReady) return;
+    root.dataset.divinationReady = 'true';
 
-    const q = (sel) => root.querySelector(sel);
+    const q = function (sel) {
+      return root.querySelector(sel);
+    };
 
     const btnZhibei = q('.btn-zhibei');
     const resultArea = q('.zhibei-result-area');
@@ -259,6 +268,8 @@ const uid = `div-${Math.random().toString(36).slice(2, 8)}`;
     const confirmBlockArea = q('.confirm-block-area');
     const confirmBlockImg = q('.confirm-block-img');
     const confirmBlockText = q('.confirm-block-text');
+
+    if (!btnZhibei || !btnDraw) return;
 
     let currentStick = null;
 
@@ -408,5 +419,9 @@ const uid = `div-${Math.random().toString(36).slice(2, 8)}`;
     }
 
     btnDrawAgain.addEventListener('click', resetQianshi);
-  })();
+  }
+
+  // Run on initial load and on ClientRouter page transitions
+  initDivination();
+  document.addEventListener('astro:page-load', initDivination);
 </script>

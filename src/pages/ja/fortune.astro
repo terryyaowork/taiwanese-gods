@@ -201,7 +201,6 @@ const metadata = {
 </style>
 
 <script is:inline define:vars={{ godMap }}>
-  // Populate god info — runs on every page load/navigation
   function populateGodInfo() {
     const el = document.getElementById('god-avatar-img');
     if (!el) return;
@@ -228,72 +227,74 @@ const metadata = {
     if (resultSection) resultSection.classList.add('hidden');
   }
 
-  if (!window.__fortuneHandlersReady) {
-    window.__fortuneHandlersReady = true;
+  window.__handleFortuneConfirmed = function (e) {
+    const fortune = e.detail.fortune;
+    const num = e.detail.stickNumber;
 
+    const resultSection = document.getElementById('fortune-result');
+    const resultStickNumber = document.getElementById('result-stick-number');
+    const resultTitle = document.getElementById('result-title');
+    const resultQualityBadge = document.getElementById('result-quality-badge');
+    const resultPoem = document.getElementById('result-poem');
+    const resultExplanation = document.getElementById('result-explanation');
+    const resultKeywords = document.getElementById('result-keywords');
+
+    if (resultStickNumber) resultStickNumber.textContent = '第' + num + '番 · ' + fortune.ganzhi;
+    if (resultTitle) resultTitle.textContent = fortune.quality;
+    if (resultQualityBadge) resultQualityBadge.textContent = fortune.quality;
+    if (resultPoem) resultPoem.textContent = fortune.poem;
+
+    if (resultExplanation) {
+      const lines = (fortune.explanation || '').split('\n').filter(function (p) {
+        return p.trim();
+      });
+      let html = '';
+      lines.forEach(function (line) {
+        const trimmed = line.trim();
+        let headerMatch = trimmed.match(/^【([^】]+)】(.*)$/);
+        if (!headerMatch) headerMatch = trimmed.match(/^\[([^\]]+)\]\s*(.*)$/);
+        if (headerMatch) {
+          html +=
+            '<div class="mb-3"><span class="inline-block px-2 py-0.5 bg-red-50 dark:bg-red-900/20 text-red-800 dark:text-red-300 text-xs font-bold rounded mr-2 border border-red-200 dark:border-red-700">' +
+            (headerMatch[1] || headerMatch[3]) +
+            '</span><span>' +
+            (headerMatch[2] || headerMatch[4] || '').trim() +
+            '</span></div>';
+        } else {
+          html += '<p class="text-gray-500 dark:text-gray-400 text-sm italic mb-2">' + trimmed + '</p>';
+        }
+      });
+      resultExplanation.innerHTML = html;
+    }
+
+    if (resultKeywords && fortune.keywords && fortune.keywords.length > 0) {
+      resultKeywords.innerHTML = fortune.keywords
+        .map(function (kw) {
+          return (
+            '<span class="text-xs px-2.5 py-1 bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-700 rounded-full">' +
+            kw +
+            '</span>'
+          );
+        })
+        .join('');
+      resultKeywords.classList.remove('hidden');
+    } else if (resultKeywords) {
+      resultKeywords.classList.add('hidden');
+    }
+
+    if (resultSection) {
+      resultSection.classList.remove('hidden');
+      setTimeout(function () {
+        resultSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 300);
+    }
+  };
+
+  if (!window.__fortuneListenersReady) {
+    window.__fortuneListenersReady = true;
     document.addEventListener('fortune-confirmed', function (e) {
-      const fortune = e.detail.fortune;
-      const num = e.detail.stickNumber;
-
-      const resultSection = document.getElementById('fortune-result');
-      const resultStickNumber = document.getElementById('result-stick-number');
-      const resultTitle = document.getElementById('result-title');
-      const resultQualityBadge = document.getElementById('result-quality-badge');
-      const resultPoem = document.getElementById('result-poem');
-      const resultExplanation = document.getElementById('result-explanation');
-      const resultKeywords = document.getElementById('result-keywords');
-
-      if (resultStickNumber) resultStickNumber.textContent = '第' + num + '番 · ' + fortune.ganzhi;
-      if (resultTitle) resultTitle.textContent = fortune.quality;
-      if (resultQualityBadge) resultQualityBadge.textContent = fortune.quality;
-      if (resultPoem) resultPoem.textContent = fortune.poem;
-
-      if (resultExplanation) {
-        const lines = (fortune.explanation || '').split('\n').filter(function (p) {
-          return p.trim();
-        });
-        let html = '';
-        lines.forEach(function (line) {
-          const trimmed = line.trim();
-          let headerMatch = trimmed.match(/^【([^】]+)】(.*)$/);
-          if (!headerMatch) headerMatch = trimmed.match(/^\[([^\]]+)\]\s*(.*)$/);
-          if (headerMatch) {
-            html +=
-              '<div class="mb-3"><span class="inline-block px-2 py-0.5 bg-red-50 dark:bg-red-900/20 text-red-800 dark:text-red-300 text-xs font-bold rounded mr-2 border border-red-200 dark:border-red-700">' +
-              headerMatch[1] +
-              '</span><span>' +
-              headerMatch[2].trim() +
-              '</span></div>';
-          } else {
-            html += '<p class="text-gray-500 dark:text-gray-400 text-sm italic mb-2">' + trimmed + '</p>';
-          }
-        });
-        resultExplanation.innerHTML = html;
-      }
-
-      if (resultKeywords && fortune.keywords && fortune.keywords.length > 0) {
-        resultKeywords.innerHTML = fortune.keywords
-          .map(function (kw) {
-            return (
-              '<span class="text-xs px-2.5 py-1 bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-700 rounded-full">' +
-              kw +
-              '</span>'
-            );
-          })
-          .join('');
-        resultKeywords.classList.remove('hidden');
-      } else if (resultKeywords) {
-        resultKeywords.classList.add('hidden');
-      }
-
-      if (resultSection) {
-        resultSection.classList.remove('hidden');
-        setTimeout(function () {
-          resultSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 300);
-      }
+      if (window.__handleFortuneConfirmed) window.__handleFortuneConfirmed(e);
     });
-
     document.addEventListener('click', function (e) {
       if (e.target && e.target.id === 'btn-draw-again-external') {
         const rs = document.getElementById('fortune-result');
