@@ -2,16 +2,7 @@
 User-agent: *
 Allow: /
 
-# Block duplicate/redirect paths from indexing
-Disallow: /temples/central/
-Disallow: /temples/south/
-Disallow: /temples/east/
-Disallow: /en/temples/central/
-Disallow: /en/temples/south/
-Disallow: /en/temples/east/
-Disallow: /ja/temples/central/
-Disallow: /ja/temples/south/
-Disallow: /ja/temples/east/
+# Block duplicate language prefix (zh-TW is the default, no prefix needed)
 Disallow: /zh-TW/
 
 # Block internal assets
