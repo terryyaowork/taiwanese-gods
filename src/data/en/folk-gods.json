@@ -2,7 +2,11 @@
   {
     "id": "wangye",
     "name": "Wangye (Plague Lord)",
-    "aliases": ["Wangye", "Plague Lord", "Royal Lord"],
+    "aliases": [
+      "Wangye",
+      "Plague Lord",
+      "Royal Lord"
+    ],
     "domain": "Exorcism, protection from plagues, patrolling the world on behalf of Heaven",
     "description": "Wangye worship is the most dominant folk belief in southern Taiwan. Wangyes are regarded as divine inspectors who 'Patrol on behalf of Heaven', possessing great power to exorcise demons and plagues. The most famous group is the 'Five Royal Lords'. Wangye temples are known for the spectacular 'Burning of the King Boat' ceremony, symbolizing the expulsion of disease and misfortune.",
     "story": "Legends of Wangye vary; some say they were 360 scholars unjustly killed in the Tang Dynasty, while others cite them as deified virtuous officials. The most famous legend concerns the Five Royal Lords of Nankunshen, who fought a supernatural battle with a local Child Spirit (Wanshan Ye) over the spiritual land. Eventually, Guanyin mediated, leading to their peaceful coexistence.",
@@ -31,10 +35,13 @@
   {
     "id": "baosheng",
     "name": "Baosheng Dadi",
-    "aliases": ["God of Medicine", "Emperor of Life Protection"],
+    "aliases": [
+      "God of Medicine",
+      "Emperor of Life Protection"
+    ],
     "domain": "Medicine, health, curing diseases, extending life",
-    "description": "Baosheng Dadi, named Wu Tao, is the 'God of Medicine'. He was a renowned doctor in the Song Dynasty known for his miracles and benevolence. In early Taiwan, sick people would pray to him for medicinal prescriptions. A popular folklore tells of a rivalry between him and Mazu, leading to the saying: 'Baosheng Dadi brings wind, Mazu brings rain'.",
-    "story": "Legends say he 'healed a dragon's eye and cured a tiger's throat' (removing a stuck bone, which is why the Tiger Lord became his guardian). Even after deification, he reportedly healed the Empress of the Ming Dynasty.",
+    "description": "> A thousand years ago, a physician in southern China treated the poor for free. Today, he's the deity Taiwanese pray to before surgery.\n\nBaosheng Dadi — known locally as \"Da Dao Gong\" — was born Wu Tao in Tong'an, Fujian, during the Song Dynasty. He was a doctor with two remarkable qualities: extraordinary medical skill and a complete refusal to accept payment.\n\nIn an era when healthcare was a luxury, Wu Tao walked from village to village treating the poor for nothing. After his death, locals built shrines. The shrines became temples. The country doctor became the God of Medicine. Today, when a Taiwanese family faces illness — whether it's a parent's cancer diagnosis or even a sick pet — Baosheng Dadi is who they turn to.\n\n**Fun Facts**\n\nWhat makes Dalongdong Baoan Temple's cultural festival so special? It doesn't just do traditional processions — it commissions contemporary art installations inside the temple, hosts academic lectures, and runs international cultural exchanges. The temple's heritage restoration work is museum-grade. In 2003, it won a UNESCO Asia-Pacific Heritage Award. A neighborhood temple winning a United Nations award — that's a story worth telling.\n\nAnd about \"Da Dao Gong wind, Mazu rain\": Taiwanese still use this phrase today whenever the weather turns suddenly cold or wet in March. Next time you're in Taiwan during the third lunar month and a surprise storm rolls in, you'll know — those two are at it again.",
+    "story": "The most famous Baosheng Dadi story is the \"Silk Thread Diagnosis.\"\n\nThe empress fell gravely ill, and every imperial physician failed to cure her. Word reached Wu Tao, and he was summoned to the palace. But there was a problem: in ancient China, a male doctor couldn't touch a woman of the imperial court.\n\nWu Tao's solution was ingenious. He had a silk thread tied to the empress's wrist, with the other end passed through a screen to where he sat. By feeling the subtle vibrations through the thread — her pulse transmitted along silk — he diagnosed her condition and prescribed a cure. It worked.\n\nDoctor or magician? The line blurs.\n\nThere's also a piece of Taiwanese folklore that people love to tell: Baosheng Dadi and Mazu once had a \"divine feud.\" Legend says Da Dao Gong had feelings for Mazu (yes, even gods get crushes) and was rejected. Afterward, they took turns sabotaging each other's birthday celebrations. On the 15th of the third lunar month (Baosheng's birthday), Mazu sends rain to ruin his parade. On the 23rd (Mazu's birthday), he sends wind to mess up her makeup. Taiwanese still say \"Da Dao Gong wind, Mazu rain\" whenever March weather turns foul.",
     "temples": [
       {
         "name": "Baoan Temple",
@@ -43,17 +50,23 @@
       }
     ],
     "image": "/assets/images/gods/baosheng.png",
-    "associatedTemples": ["Dalongdong Baoan Temple (Datong District, Taipei City)"],
-    "worship": "Devotees worship Baosheng Dadi with offerings of fruits, incense, and the traditional \"Three Sacrificial Animals.\" A unique feature of Baosheng Dadi worship is the practice of \"Divine Prescriptions\" (shen yao qian): worshippers draw fortune sticks and receive herbal medicine formulas, which they then take to traditional Chinese pharmacies to fill — a practice that blended religion and healthcare in early Taiwan. The deity's birthday celebrations at Baoan Temple include the \"Fire Lion\" ritual, where a paper lion stuffed with firecrackers is ignited, symbolizing the expulsion of evil and disease.",
+    "associatedTemples": [
+      "Dalongdong Baoan Temple (Datong District, Taipei City)"
+    ],
+    "worship": "**What to pray for:** Recovery from illness, successful surgery, family health, general physical well-being. If someone in your family is facing a major medical procedure, visiting a Baosheng Dadi temple can provide real comfort.\n\n**Three simple steps:**\n1. Bring three meat offerings and fruit — some devotees also bring Chinese medicinal herbs as symbolic offerings to the Medicine God\n2. Light incense and state the patient's name and condition\n3. You can request a \"medicine oracle\" — the temple provides special fortune sticks with herbal prescriptions. Throw moon blocks for confirmation, then take the prescription to a Chinese pharmacy\n\n**Offerings:** Three meats, four types of fruit. Some temples accept traditional Chinese medicine ingredients like dried goji berries or angelica root.\n\n**One key taboo:** If you receive a medicine oracle, don't self-prescribe based on it alone. The oracle is spiritual supplementation. For actual illness, see an actual doctor. Baosheng Dadi was a physician himself — he'd absolutely want you to get proper medical care.",
     "festivals": "The \"Baosheng Cultural Festival\" at Taipei's Baoan Temple is the premier event, featuring a month-long series of activities from March to April on the lunar calendar. Highlights include the \"Fire Lion\" (Fang Huo Shi) ceremony — a uniquely Taiwanese ritual found nowhere else — where a paper-and-bamboo lion packed with fireworks is set ablaze in an explosive display. Traditional arts performances, Taoist ceremonies, and a grand procession through the Dalongdong neighborhood are also featured. In 2003, Baoan Temple won the UNESCO Asia-Pacific Heritage Award, bringing international recognition to this cultural celebration."
   },
   {
     "id": "nezha",
     "name": "Nezha (Third Prince)",
-    "aliases": ["Nezha", "Marshal of the Central Altar", "Third Prince"],
+    "aliases": [
+      "Nezha",
+      "Marshal of the Central Altar",
+      "Third Prince"
+    ],
     "domain": "Exorcism, Guardian of Children, Patron of Drivers",
-    "description": "Nezha is a lively and powerful child deity, wielding the Fire-tipped Spear and riding Wind Fire Wheels. He protects children and, due to his speed, is also the patron saint of drivers. The modern implementation of 'Techno Prince' (dancing to electronic music) has made him a global cultural icon of Taiwan.",
-    "story": "Legend says Nezha killed a dragon prince and committed suicide to save his parents from the Dragon King's wrath ('returning bones to father, flesh to mother'). His master resurrected him using lotus flowers. He then helped overthrow the tyrant King Zhou. He represents courage and rebellion.",
+    "description": "> Fire wheels on his feet, a spear in his hand, LED lights on his head, and EDM pumping in the background. Meet Taiwan's most unlikely deity.\n\nNezha — the Third Prince, or San Tai Zi — is the eternal child of the Taiwanese pantheon. While other gods are solemn elders with flowing beards, Nezha is a kid in a belly bib, riding flaming wheels, causing trouble and saving the day in equal measure.\n\nDon't let the cute look fool you. As the \"Marshal of the Central Altar,\" Nezha is the vanguard of the spirit army — the one who charges in first to clear out demons. In every Taiwanese temple procession, his divine generals lead the parade. He's fast, fierce, and completely fearless.\n\nAnd then there's his modern incarnation: the \"Techno Nezha.\" Imagine a traditional deity puppet in neon-colored armor, LED headgear, dancing to electronic music. This mashup of ancient religion and rave culture has gone global — and it might be the most uniquely Taiwanese thing you'll ever see.\n\n**Fun Facts**\n\nHow did \"Techno Nezha\" become a thing? At the 2009 World Games opening ceremony in Kaohsiung, Nezha puppet generals hit the stage in neon armor, dancing to EDM. The crowd went wild. The act later traveled to the Shanghai World Expo, Japan, and the United States. Foreign audiences had never seen anything like it — a religious figure that raves.\n\nHere's another fun detail: Nezha is one of the very few deities worshipped as a child. Most gods are depicted as dignified adults. Nezha is eternally young, eternally playful. That's why his temple festivals feel different — less solemn, more joyful. His divine generals often interact with kids in the crowd, handing out candy like a big brother at a neighborhood party.",
+    "story": "Nezha's origin story is wild from the very first scene.\n\nHis mother was pregnant for three years and six months. When the baby finally arrived, it wasn't a baby — it was a ball of flesh. His father, General Li Jing, panicked and slashed it open with a sword. Out popped a fully formed boy wearing a belly bib and standing on flaming wheels.\n\nFrom day one, Nezha was trouble. One afternoon, he went to the beach to cool off and accidentally caused a tsunami that flooded the Dragon King's palace. Then he killed the Dragon King's son. When the furious Dragon King demanded justice, Nezha did something extraordinary: he cut his own flesh from his bones, returning his body to his parents. He took full responsibility. Alone.\n\nLater, his master rebuilt him a new body from lotus flowers — stronger, faster, no longer mortal.\n\nThat's why Taiwanese love him: he's imperfect, reckless, even destructive. But when it matters, he steps up. No excuses.",
     "temples": [
       {
         "name": "Fengtian Temple",
@@ -62,13 +75,16 @@
       }
     ],
     "image": "/assets/images/gods/nezha.png",
-    "worship": "Nezha is worshipped as both a protector of children and a patron saint of drivers. Parents bring children to Nezha temples to pray for safe growth, while taxi and truck drivers often place a small Nezha figurine on their dashboards for protection. Offerings include fruits, candies (since Nezha is a child deity), and toy-like items. Spirit mediums channeling Nezha are famous for their acrobatic performances, including standing on ball-shaped objects and performing martial arts moves. The modern \"Electric Techno Nezha\" (Dian Yin San Tai Zi) phenomenon — where temple performers dance to electronic music in LED-lit Nezha costumes — has become a globally recognized symbol of Taiwanese folk culture.",
+    "worship": "**What to pray for:** Children's safety and health, protection from evil spirits, courage and momentum in business (when you need a push, Nezha delivers). Parents with energetic kids often pray for Nezha to watch over them.\n\n**Three simple steps:**\n1. Bring candy, cookies, and toys (Nezha is a child — he likes sweet things and fun stuff)\n2. Light incense and talk casually — no need for ultra-formal language with this deity\n3. Some temples let you leave toys on the altar as offerings. Nezha's altar might be the most fun altar in Taiwan\n\n**Offerings:** Candy, cookies, soda, toy cars, action figures. Meat offerings work too, but Nezha really prefers snacks.\n\n**One key taboo:** Nezha looks like a kid, but don't disrespect him. He's the Marshal of the Central Altar with top-tier combat power in the divine hierarchy. Think of him as a playful prodigy — not someone to underestimate.",
     "festivals": "Nezha's birthday falls on the 9th day of the 9th lunar month. Major celebrations are held at temples across Taiwan, featuring spirit medium performances and processions. The \"Techno Nezha\" (Dian Yin San Tai Zi) performances have become a cultural phenomenon, appearing at international events and even the 2017 Taipei Universiade. The Xinying Taizi Temple in Tainan hosts one of the most elaborate Nezha birthday celebrations, combining traditional rituals with modern performances that showcase how ancient beliefs adapt to contemporary culture."
   },
   {
     "id": "tigerlord",
     "name": "Tiger Lord",
-    "aliases": ["Tiger God", "General of the Lower Altar"],
+    "aliases": [
+      "Tiger God",
+      "General of the Lower Altar"
+    ],
     "domain": "Wealth, protection, guardian of children (curing mumps)",
     "description": "Tiger Lord is usually worshipped under the altar, serving as the mount for deities like the Earth God. Known as 'General of the Lower Altar'. The saying 'Tiger Lord bites money' reflects the belief that he brings wealth. He is also famous for curing children's mumps and protecting kids.",
     "story": "Legend has it that a tiger asked Baosheng Dadi for help with a bone stuck in its throat. Improved by the cure, it became the deity's mount and vowed to protect humans.",
@@ -91,10 +107,13 @@
   {
     "id": "zhusheng",
     "name": "Zhusheng Niangniang",
-    "aliases": ["Goddess of Birth", "Registry of Life Goddess"],
+    "aliases": [
+      "Goddess of Birth",
+      "Registry of Life Goddess"
+    ],
     "domain": "Fertility, pregnancy, safe childbirth",
-    "description": "Zhusheng Niangniang holds a registry book and a pen, controlling who gets children. She is the primary goddess for those seeking pregnancy. Her attendants, the 'Twelve Midwives', look after children. Parents pray to her for safe delivery and the health of their offspring.",
-    "story": "Often identified with the Three Cloud Fairies from 'Investiture of the Gods', who hold the primitive golden bucket (symbolizing the womb). Others identify her with Chen Jinggu (Lady Linshui).",
+    "description": "> Want a baby? Pray to her. Pregnant? Pray to her. Baby arrived? Still pray to her. Zhusheng Niangniang is the full-service deity of parenthood.\n\nZhusheng Niangniang — the Goddess of Birth Registration — is Taiwan's specialist in all things fertility. Her portfolio covers trying to conceive, healthy pregnancies, safe deliveries, and children's wellbeing. She's the OB-GYN of the divine realm.\n\nIn most Taiwanese temples, she doesn't get the main hall. You'll usually find her in a side chamber of a Mazu or Guanyin temple. But peek inside that side chamber and you might notice the incense ash piled higher there than at the main altar. In an era of plummeting birth rates, her services are more in demand than ever.\n\n**Fun Facts**\n\nTaiwan has the lowest birth rate in the world as of 2023. But here's the paradox: Zhusheng Niangniang's temple traffic hasn't declined. If anything, it's intensified — because each pregnancy has become more precious, each prayer more fervent. Someone joked that she might be the only deity in Taiwan experiencing \"shrinking market but skyrocketing customer loyalty.\"\n\nAnd it's not just aspiring parents who visit anymore. Young parents now regularly bring their babies and toddlers back to pray for easy temperaments, good health, and strong growth. From conception to child-rearing, Zhusheng Niangniang truly offers end-to-end divine service.",
+    "story": "Look closely at Zhusheng Niangniang's altar and you'll spot them: twelve smaller figures standing beside her, each cradling an infant. These are the \"Twelve Flower Fairies\" — her divine midwife team, each responsible for assisting with deliveries.\n\nThe most intriguing detail is the flowers on her offering table. White flowers and red flowers are always present. Tradition says white flowers mean a boy, red flowers mean a girl (though some regions flip this). Devotees trying for a specific gender pay close attention to which flower they touch or receive.\n\nThe stories people tell are compelling: someone prays for a child, absent-mindedly touches a flower, and months later discovers they're pregnant — with the gender matching the flower's color.\n\nBelieve what you will. But the steady stream of couples returning to give thanks suggests something is working.",
     "temples": [
       {
         "name": "Longshan Temple",
@@ -103,13 +122,15 @@
       }
     ],
     "image": "/assets/images/gods/zhusheng.png",
-    "worship": "Couples struggling with fertility pray to Zhusheng Niangniang with offerings of flowers, fruits, and cosmetics (as she is a female deity). A distinctive practice involves asking the goddess for a \"Flower Spirit\" — a white flower symbolizes a boy, while a red flower symbolizes a girl. After successful childbirth, grateful parents return to the temple to offer \"Oil Rice\" (You Fan) as thanks. Some temples have twelve flower vases representing the Twelve Midwives; devotees choose a specific midwife to pray to based on the desired birth month.",
+    "worship": "**What to pray for:** Conception, safe pregnancy, smooth delivery, children's health and growth, fertility struggles. Modern devotees also pray for successful IVF treatments and assisted reproduction.\n\n**Three simple steps:**\n1. Bring offerings — fresh flowers, fruit, and sesame oil chicken with rice wine (the traditional postpartum tonic, perfectly appropriate as an offering here)\n2. Light incense and share your situation: your name, age, whether you're trying to conceive, currently pregnant, or seeking a child's health\n3. Gently touch a flower on the altar table (white for boy, red for girl — ask the temple staff, as local customs vary)\n\n**Offerings:** Fresh flowers, four types of fruit, sesame oil chicken, spirit money. Some people also bring tiny baby clothes or shoes as symbolic offerings, welcoming new life.\n\n**One key taboo:** If your prayer is answered, you absolutely must return to give thanks. Bring your child to \"meet\" Zhusheng Niangniang. Skipping the return visit is considered ungrateful — and may affect your luck next time.",
     "festivals": "Zhusheng Niangniang's birthday is celebrated on the 20th day of the 3rd lunar month. Temples dedicated to the goddess hold special ceremonies where couples come to pray for children or give thanks for successful pregnancies. Longshan Temple in Taipei is one of the most popular locations for worship. The celebration often includes puppet shows and traditional opera performances as entertainment for the goddess and her attendants."
   },
   {
     "id": "tudipo",
     "name": "Tudipo (Earth God's Wife)",
-    "aliases": ["Earth God's Wife"],
+    "aliases": [
+      "Earth God's Wife"
+    ],
     "domain": "Family harmony, marital love, encouraging hard work",
     "description": "Tudipo is the wife of the Earth God. Unlike her generous husband, legends say she is pragmatic and advises him not to give wealth too freely, lest people become lazy. While some avoid worshipping her for this reason, she actually teaches the value of hard work and protects family harmony.",
     "story": "Legend says when the Earth God was sent to earth, he wanted everyone to be rich. Tudipo objected: 'If everyone is rich, who will carry the sedan chairs?' Thus, she ensured the balance of rich and poor, emphasizing the need for labor.",
@@ -127,7 +148,10 @@
   {
     "id": "dazhongye",
     "name": "Wen Wu Dazhong Ye",
-    "aliases": ["Dazhong Ye", "Civil and Martial Lords"],
+    "aliases": [
+      "Dazhong Ye",
+      "Civil and Martial Lords"
+    ],
     "domain": "Finding lost items, handling lawsuits, exorcising evil spirits, upholding justice",
     "description": "Wen Wu Dazhong Ye are the primary deities of Xinzhuang Dizang An. Originating from the worship of wandering spirits, they evolved into judicial deities. 'Wen (Civil) Lord' represents those who died of illness, depicted as a scholar; 'Wu (Martial) Lord' represents those who died in battle, depicted as a warrior. They act as judicial officers of the underworld, famous for solving disputes, recovering lost items, and exorcising evil. The 'Guan Jiang Shou' troupe associated with them is a major icon of Taiwanese temple culture.",
     "story": "Originally worshipped to appease spirits from ethnic conflicts and plagues in early Xinzhuang. Legend says the Civil and Martial Lords were brothers who died on their way to imperial exams and appeared in dreams. After performing miracles like solving crimes and finding lost property, they became the region's guardians. The annual 'Night Patrol' on the 1st of the 5th Lunar Month sees them patrolling the streets to capture evil spirits and ensure peace.",
@@ -139,14 +163,20 @@
       }
     ],
     "image": "/assets/images/gods/god-dazhongye.png",
-    "associatedTemples": ["Xinzhuang Dizang An (Xinzhuang District, New Taipei City)"],
+    "associatedTemples": [
+      "Xinzhuang Dizang An (Xinzhuang District, New Taipei City)"
+    ],
     "worship": "Worship of Dazhong Ye combines elements of ancestral veneration and deity worship. Devotees offer incense, fruits, and the Three Sacrificial Animals. A unique practice involves asking Dazhong Ye to help find lost items — worshippers describe the lost object and its last known location, then cast divination blocks. The Wen (Civil) Lord handles disputes and legal matters, while the Wu (Martial) Lord deals with exorcism and protection. The \"Guan Jiang Shou\" (官將首) spirit generals who serve Dazhong Ye perform dramatic face-painted processions that are among the most iconic images of Taiwanese temple culture.",
     "festivals": "The most important festival is the \"Night Patrol\" (An Fang) on the 1st day of the 5th lunar month, when the Wen Wu Dazhong Ye are carried through the streets of Xinzhuang at night to capture evil spirits and maintain peace. The spectacular \"Guan Jiang Shou\" troupe leads the procession with fierce face paint and dramatic movements. The annual Ghost Month (7th lunar month) ceremonies at Xinzhuang Dizang An are also major events, featuring elaborate rituals to appease wandering spirits, with the Dazhong Ye serving as divine peacekeepers between the living and the dead."
   },
   {
     "id": "kaizhangshengwang",
     "name": "Kaizhang Shengwang (Sacred King of Zhangzhou)",
-    "aliases": ["Chen Shengwang", "Sacred King Chen", "King of Zhangzhou"],
+    "aliases": [
+      "Chen Shengwang",
+      "Sacred King Chen",
+      "King of Zhangzhou"
+    ],
     "domain": "Pioneer protection, local guardian deity, exorcism",
     "description": "Kaizhang Shengwang, originally named Chen Yuanguang, was a Tang Dynasty general revered as the founder of Zhangzhou. He pacified the wilderness, established Zhangzhou Prefecture, and promoted civilization. Zhangzhou immigrants in Taiwan worship him as their most important hometown guardian deity, particularly in northern Taiwan areas like Keelung and Taoyuan.",
     "story": "Chen Yuanguang (657-711 AD) followed his father on a military campaign to pacify Fujian. After his father's death, the 21-year-old took command. Beyond military prowess, he prioritized education and governance, establishing Zhangzhou Prefecture and transforming wilderness into a prosperous city. He died heroically in battle, and grateful people built temples in his honor, naming him 'Sacred King who Opened Zhangzhou.'",
@@ -173,7 +203,10 @@
   {
     "id": "kuixing",
     "name": "Kuixing Ye (Star Lord of Literature)",
-    "aliases": ["Great Scholar Kuixing", "Kuixing"],
+    "aliases": [
+      "Great Scholar Kuixing",
+      "Kuixing"
+    ],
     "domain": "Literary fortune, examinations, academic honors",
     "description": "Kuixing Ye is the deity who governs literary fortune and exam success. His distinctive appearance shows him standing on one foot atop a sea turtle's head — symbolizing 'standing alone at the top.' He holds an ink bucket in his left hand and a vermilion brush in his right, signifying 'marking the exam list.' Students traditionally worship Kuixing before exams, praying to top the results.",
     "story": "Legend says Kuixing was a brilliant scholar in life, but his ugly appearance caused him to fail repeatedly despite his talent. In despair, he drowned himself but was rescued by a sea turtle and ascended to heaven as a god. Another interpretation identifies him as the personification of the first star of the Big Dipper.",
@@ -191,7 +224,10 @@
   {
     "id": "dijizhu",
     "name": "Di Ji Zhu (Foundation Lord)",
-    "aliases": ["Foundation Spirit", "House Guardian"],
+    "aliases": [
+      "Foundation Spirit",
+      "House Guardian"
+    ],
     "domain": "Household protection, family safety",
     "description": "Di Ji Zhu is the guardian spirit of a household in Taiwanese folk belief. Though of humble rank (akin to a household Earth God), this spirit is closely tied to daily life. Families worship Di Ji Zhu during moving, settling deities, and major festivals (Lunar New Year's Eve, Qingming, Dragon Boat, Ghost Month, Double Ninth, Winter Solstice). Offerings are typically set up in the kitchen or by the back door, facing inward, with simple dishes — a chicken leg is essential.",
     "story": "Legend says Di Ji Zhu is the spirit of the original inhabitant of the land (possibly a Pingpu indigenous ancestor or early Han settler), who became the guardian spirit of the dwelling.",
@@ -203,7 +239,10 @@
   {
     "id": "qiniangma",
     "name": "Qi Niang Ma (Seven Mothers)",
-    "aliases": ["Weaving Maiden", "Seven Star Goddess"],
+    "aliases": [
+      "Weaving Maiden",
+      "Seven Star Goddess"
+    ],
     "domain": "Child protection, matchmaking, women's crafts",
     "description": "Qi Niang Ma, associated with the Weaving Maiden star, is the protector of children. In Taiwanese folk custom, parents have their newborn 'adopted' by Qi Niang Ma as a spiritual godmother, praying for the child's safe growth. At age sixteen, the 'Coming of Age' ceremony is held to thank her protection. She also governs matchmaking and needlework skills.",
     "story": "Originating from the legend of the Cowherd and the Weaving Maiden. After the lovers were separated, the Weaving Maiden's six sisters took pity on the Cowherd raising the children alone and secretly blessed them, becoming collectively known as Qi Niang Ma (Seven Mothers).",
@@ -222,7 +261,10 @@
   {
     "id": "qingshuizushi",
     "name": "Qingshui Zushi (Patriarch of Clear Water)",
-    "aliases": ["Nose-dropping Patriarch", "Dark-faced Patriarch"],
+    "aliases": [
+      "Nose-dropping Patriarch",
+      "Dark-faced Patriarch"
+    ],
     "domain": "Rain prayers, disaster prevention, medicine",
     "description": "Qingshui Zushi, originally named Chen Zhaoying, was a renowned Northern Song Dynasty monk from Anxi, Quanzhou, Fujian. Famous for his miraculous rain prayers, his statue typically has a dark face — legend says demons smoked him for seven days and nights at Qingshui Rock but he survived. Taiwan's most famous legend is the 'Nose-dropping Warning': when disasters or calamities are imminent, the patriarch's nose falls off to alert the people.",
     "story": "Qingshui Zushi cultivated at Qingshui Rock in Anxi, spreading virtue widely. After Anxi immigrants crossed to Taiwan, he became an important hometown guardian deity. The most famous temple is Sanxia Changfu Rock (Sanxia Zushi Temple), renowned as the 'Eastern Art Palace.'",
@@ -250,7 +292,10 @@
   {
     "id": "doorgods",
     "name": "Door Gods",
-    "aliases": ["Qin Shubao & Yuchi Gong", "Shentu & Yulei"],
+    "aliases": [
+      "Qin Shubao & Yuchi Gong",
+      "Shentu & Yulei"
+    ],
     "domain": "Guarding doorways, warding off evil spirits",
     "description": "Door Gods are painted on the main gates of temples and homes to repel evil spirits and ghosts. The most common Door Gods in Taiwan are the Tang Dynasty generals Qin Shubao (white-faced with phoenix eyes) and Yuchi Gong (dark-faced with fierce eyes).",
     "story": "Legend says Emperor Taizong of the Tang Dynasty fell ill and was haunted by ghostly wails. Generals Qin Shubao and Yuchi Gong volunteered to guard the palace gates at night, and the ghosts dared not approach. Unwilling to burden the two generals, the Emperor ordered their portraits painted on the doors — a tradition that continues to this day.",
