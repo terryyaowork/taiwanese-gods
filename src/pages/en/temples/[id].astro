@@ -80,9 +80,10 @@ const metadata = {
 };
 
 const siteUrl = 'https://www.taiwanese-gods.org';
-const jsonLd = {
+const templeUrl = `${siteUrl}/en/temples/${temple.id}`;
+const placeJsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'HinduTemple',
+  '@type': ['Place', 'TouristAttraction'],
   name: temple.name,
   description: temple.description.substring(0, 300),
   address: {
@@ -91,15 +92,44 @@ const jsonLd = {
     addressRegion: temple.location,
     addressCountry: 'TW',
   },
-  url: `${siteUrl}/en/temples/${temple.id}`,
+  ...(temple.latitude && temple.longitude
+    ? {
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: temple.latitude,
+          longitude: temple.longitude,
+        },
+      }
+    : {}),
+  url: templeUrl,
   inLanguage: 'en',
   ...(mainImageSrc ? { image: mainImageSrc } : {}),
   ...(temple.googleMap ? { hasMap: temple.googleMap } : {}),
+  ...(temple.url ? { sameAs: [temple.url] } : {}),
+  ...(temple.mainDeities && temple.mainDeities.length > 0
+    ? {
+        knowsAbout: temple.mainDeities
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          .map((d: any) => getGodLink(d.id))
+          .filter(Boolean)
+          .map((p: string) => `${siteUrl}${p}`),
+      }
+    : {}),
+};
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Temples', item: `${siteUrl}/en/temples` },
+    { '@type': 'ListItem', position: 2, name: regionLabels[backLink] || 'Temples', item: `${siteUrl}${backLink}` },
+    { '@type': 'ListItem', position: 3, name: temple.name },
+  ],
 };
 ---
 
 <Layout metadata={metadata}>
-  <JsonLd data={jsonLd} />
+  <JsonLd data={placeJsonLd} />
+  <JsonLd data={breadcrumbJsonLd} />
   <div class="temple-page bg-paper-texture min-h-screen pb-12">
     <!-- Hero Section -->
     <div class="relative w-full h-[30vh] sm:h-[40vh] md:h-[50vh] overflow-hidden">

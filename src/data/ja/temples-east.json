@@ -12,9 +12,13 @@
     ],
     "description": "礁渓協天廟は北台湾で最も規模が大きく、香火が最も盛んな関帝廟であり、宜蘭の重要な信仰の中心でもあります。廟の建築は雄大で、台湾唯一の「蠶絲関公」神像を有し、極めて特色ある「春秋楼」も備えています。毎年旧暦正月13日に行われる「亀大王」の乞亀活動や、春秋二季の祭典には多くの参拝者が訪れます。協天廟は単なる宗教施設にとどまらず、蘭陽平原の開発の歴史を物語っています。",
     "history": "清嘉慶9年（1804年）に建立され、廷碩和尚が発起して建設されました。数度の拡張を経て今日の壮大な姿となりました。ここに祀られる関聖帝君は分霊が多く、宜蘭地域で極めて影響力のある古廟です。",
-    "images": ["/assets/images/temples/temple-jiaoxisietian.png"],
+    "images": [
+      "/assets/images/temples/temple-jiaoxisietian.png"
+    ],
     "url": "https://www.facebook.com/JiaoxiSietianTemple/",
-    "googleMap": "https://maps.app.goo.gl/search/礁溪協天廟"
+    "googleMap": "https://maps.app.goo.gl/search/礁溪協天廟",
+    "latitude": 24.8185047,
+    "longitude": 121.7690905
   },
   {
     "id": "yilan-sanqing",
@@ -29,7 +33,9 @@
     ],
     "description": "宜蘭三清宮は梅花湖のほとりに位置し、風光明媚な宜蘭地域の重要な道教宮廟です。名前は三清宮（三清道祖を祀る）ですが、済公活仏の霊験で最も有名です。廟は山に面し水に臨み、環境は清らかで静寂、廟前からは梅花湖全体の美景を見下ろすことができ、宜蘭で有名な観光と信仰の名所です。",
     "history": "1970年代に創建され、参拝者が資金を出し合い梅花湖のほとりの土地を選んで建廟しました。地理的な好立地と風水の良さ、さらに済公活仏の霊験あらたかな庇護の評判が加わり、多くの参拝者が訪れるようになりました。廟の周辺には完成された観光帯が発展し、梅花湖のサイクリングロードも宜蘭の人気スポットとなっています。",
-    "images": ["/assets/images/temples/temple-yilan-sanqing.png"]
+    "images": [
+      "/assets/images/temples/temple-yilan-sanqing.png"
+    ]
   },
   {
     "id": "hualien-citygod",
@@ -44,9 +50,13 @@
     ],
     "description": "花蓮城隍廟は花蓮市で最も歴史の古い廟の一つで、護国城隍爺を主祀しています。この廟は花蓮の百年にわたる歴史の変遷を見守ってきました。最も特筆すべきは、日本統治時代の皇民化政策の時期に取り壊しを免れるため、巧みに鄭成功（国姓爺。母が日本人の田川氏であるため、日本側から日本の血統を持つと見なされた）を祀り、城隍爺に国姓爺の帽子をかぶせることで保全されたという逸話です。廟の建築は伝統的な閩南式の様式に、日本統治時代の一部の要素が融合されており、廟の前の対面にある戯台の屋根は独特の東洋風情を持っています。ここは地元の信仰の中心であるだけでなく、周辺の廟口紅茶などの美食も活気ある文化生活圏を形成しています。",
     "history": "昭和9年（1934年）に建立され、元は聖安宮と称されました。日本統治末期、皇民化運動による廟の取り壊しの風潮を避けるため、「鄭聖祠」と改称し鄭成功を主祀としました。戦後、城隍爺の祭祀が回復され、2004年に再建されて新しい姿となりました。花蓮の人々に共通する歴史の記憶です。",
-    "images": ["/assets/images/temples/temple-hualienchenghuang.png"],
+    "images": [
+      "/assets/images/temples/temple-hualienchenghuang.png"
+    ],
     "url": "https://www.facebook.com/HualienCityGodTemple/",
-    "googleMap": "https://maps.app.goo.gl/hualienchenghuang"
+    "googleMap": "https://maps.app.goo.gl/hualienchenghuang",
+    "latitude": 23.9733796,
+    "longitude": 121.6057448
   },
   {
     "id": "qingxiu-yuan",
@@ -61,8 +71,12 @@
     ],
     "description": "吉安慶修院（旧名：真言宗吉野布教所）は台湾に現存する最も完全な日本式寺院で、花蓮県定古跡に指定されています。建築には濃厚な江戸時代の風格が漂い、方形の「宝形造」屋根を採用しています。院内には「百度石」と八十八体の石仏があり、日本の仏寺の禅意に満ちています。",
     "history": "1917年（大正6年）に日本人移民のための布教所として建てられました。第二次世界大戦後に慶修院と改名されました。1997年に古跡に指定され修復されました。",
-    "images": ["/assets/images/temples/temple-qingxiuyuan.png"],
-    "googleMap": "https://maps.app.goo.gl/qingxiuyuan"
+    "images": [
+      "/assets/images/temples/temple-qingxiuyuan.png"
+    ],
+    "googleMap": "https://maps.app.goo.gl/qingxiuyuan",
+    "latitude": 23.9736033,
+    "longitude": 121.5646838
   },
   {
     "id": "hualien-gangtian",
@@ -77,8 +91,12 @@
     ],
     "description": "花蓮港天宮は花東地域最大の媽祖廟で、敷地が広く気勢壮大です。「港天媽」を主祀し、花蓮市の主要な信仰の中心の一つです。廟の建築は南北の様式を融合し、装飾は華麗で、特に巨大な牌楼と広々とした廟の前庭は印象的です。媽祖聖誕のたびに盛大な祝典活動が行われ、花蓮の人々の求心力を集めています。",
     "history": "清光緒年間に始まり、元は大媽を祀る簡素な草葺きの社でした。民国66年（1977年）に現在地の大廟の建設に着工し、数度の建設を経て今日の花蓮のランドマーク的廟宇となりました。",
-    "images": ["/assets/images/temples/temple-hualiengangtian.png"],
-    "googleMap": "https://maps.app.goo.gl/gangtian"
+    "images": [
+      "/assets/images/temples/temple-hualiengangtian.png"
+    ],
+    "googleMap": "https://maps.app.goo.gl/gangtian",
+    "latitude": 24.0075817,
+    "longitude": 121.5872485
   },
   {
     "id": "hualien-shenan",
@@ -93,8 +111,12 @@
     ],
     "description": "花蓮勝安宮は台湾の「王母娘娘」（母娘）信仰の発祥地で、崇高な地位を持っています。廟の建築は金碧輝煌で、皇家の気品を漂わせています。ここは多くの伝奇に満ちており、かつて王母娘娘がこの地に霊験を現して降臨したと伝えられています。隣接する慈恵堂とは同じ源流（黄衣と青衣の二派に分かれている）ですが、勝安宮は発祥地として今も無数の参拝者がルーツを辿り参拝に訪れています。毎年の「勝世安邦」文化祭は当地の重要な行事です。",
     "history": "民国38年（1949年）に創建され、王母娘娘が霊験を現し扶鸞（神託を受ける儀式）したことに始まります。数十年の拡張を経て今日の壮大な廟の姿となり、台湾の新興宗教発展史における重要なランドマークです。",
-    "images": ["/assets/images/temples/temple-hualienshenan.png"],
-    "googleMap": "https://maps.app.goo.gl/search/花蓮勝安宮"
+    "images": [
+      "/assets/images/temples/temple-hualienshenan.png"
+    ],
+    "googleMap": "https://maps.app.goo.gl/search/花蓮勝安宮",
+    "latitude": 23.9778981,
+    "longitude": 121.5867689
   },
   {
     "id": "tafalong-shrine",
@@ -109,7 +131,11 @@
     ],
     "description": "太巴塱（Tafalong）は花蓮県光復郷のアミ族の部落で、アミ族最古にして最大規模の部落の一つであり、千五百年以上の歴史を持っています。部落の祖祠（kakita'an）は太巴塱の信仰と文化伝承の核心的な場所で、祖祠には代々受け継がれてきた祭器と祖霊の象徴物が保存されています。太巴塱の祖祠の柱には精巧な木彫りの図騰が刻まれ、アミ族の創世神話と祖先の物語が描かれており、台湾原住民芸術の貴重な遺産です。毎年7月から8月の豊年祭（Ilisin）は部落で最も盛大な年間祭典で、全族人が集まって歌い踊り祖先を祭り、祖霊（kawas）の庇護と自然万物の恵みに感謝します。豊年祭期間中の歌舞、宴席、年齢階級制度は、アミ族の社会構造と文化の精髄を完全に示しています。",
     "history": "太巴塱部落の歴史は千五百年以上前にまで遡ることができ、アミ族が花東縦谷に移住した後に最初に建設した大規模な集落の一つです。「太巴塱」はアミ族の言葉で「白い蟹」（Tafalong）を意味し、かつてこの地の渓流に大量の白い蟹がいたことに由来します。祖祠（kakita'an）は部落の精神的核心であり、その建築形式と祭祀方式は最も古いアミ族の伝統を保持しています。日本統治時代には、日本の学者が太巴塱について詳細な民族学調査を行い、貴重な文献記録を残しました。近年、部落は文化復興運動を積極的に推進し、祖祠の修復、伝統的な歌謡と工芸の伝承を行い、部落観光（「太巴塱文化園区」など）も発展させており、台湾の原住民文化保存の模範となっています。",
-    "images": ["/assets/images/temples/temple-tafalong.png"]
+    "images": [
+      "/assets/images/temples/temple-tafalong.png"
+    ],
+    "latitude": 23.6591,
+    "longitude": 121.4497
   },
   {
     "id": "taitung-tianhou",
@@ -124,9 +150,13 @@
     ],
     "description": "台東天后宮は台東で最も歴史の古い媽祖廟であり、清代の東台湾唯一の官廟として崇高な地位を持っています。廟の建築は壮大で、多くの貴重な扁額と文物が保存されています。毎年元宵節に行われる「諸神巡行」と「炸寒単」（爆竹で生身の寒単爺を炸する）の儀式は、「北のランタン、南のロケット花火」と並ぶ台湾三大元宵民俗の一つで、その光景は衝撃的であり、数千数万の参拝者と観光客が参加し、後山（東台湾）独特の信仰の情熱を示しています。",
     "history": "清光緒15年（1889年）に始まり、清朝の提督・張兆連が媽祖の庇護に感謝して民変の平定を記念し建廟を提唱、光緒帝から「靈昭誠佑」の扁額を御賜されました。1933年に地震の被害を受け現在地に移転し、数度の修繕を経て、信仰の中心であるだけでなく、台東の開拓史の証人でもあります。",
-    "images": ["/assets/images/temples/temple-taitungtianhou.png"],
+    "images": [
+      "/assets/images/temples/temple-taitungtianhou.png"
+    ],
     "url": "http://www.taitungtianhou.org.tw/",
-    "googleMap": "https://maps.app.goo.gl/taitungtianhou"
+    "googleMap": "https://maps.app.goo.gl/taitungtianhou",
+    "latitude": 22.7570998,
+    "longitude": 121.1551127
   },
   {
     "id": "penghu-tianhou",
@@ -141,8 +171,12 @@
     ],
     "description": "澎湖天后宮は台湾全土で最も歴史の古い廟で、文献により明万暦32年（1604年）以前にはすでに廟が建てられていたことが確認されており、現在の考証で知られる台湾初の媽祖廟です。廟内に収蔵されている「沈有容諭退紅毛番韋麻郎等」碑は、台澎地域で最も古い石碑で、1604年に明朝の将軍・沈有容がここでオランダ人を諭して退去させた歴史的事件を記録しています。この碑は2022年に文化部により中華民国の国宝級文物に認定されました。廟は1983年に国定古跡に指定され、建築配置は完全で、大量の清代の木彫り、石彫り、彩色画が保存されており、台湾初期の廟宇建築を研究するための貴重な模範です。",
     "history": "正確な創建年代は不詳ですが、明万暦32年（1604年）にオランダ東インド会社の司令官ウェイマラン（韋麻郎）が二隻の船を率いて澎湖に到着し、福建都司の沈有容が兵船五十隻を率いて交渉に赴き、オランダ人の退去に成功しました。この事蹟は石碑に刻まれ、それが有名な「沈有容諭退紅毛番韋麻郎等」碑で、1919年の廟の整修時に出土し、澎湖天后宮の台澎第一の古廟としての歴史的地位を確立しました。廟は明・清を通じて数度の修建を経て、清康熙年間に施琅が澎湖を攻略した後に大規模な修繕が行われ、現在の建築には大量の清代の工芸が保存されています。",
-    "images": ["/assets/images/temples/temple-penghu-tianhou.png"],
-    "googleMap": "https://maps.app.goo.gl/penghu-tianhou"
+    "images": [
+      "/assets/images/temples/temple-penghu-tianhou.png"
+    ],
+    "googleMap": "https://maps.app.goo.gl/penghu-tianhou",
+    "latitude": 23.5647115,
+    "longitude": 119.5640221
   },
   {
     "id": "kinmen-citygod",
@@ -157,9 +191,13 @@
     ],
     "description": "浯島城隍廟は金門地域で最も規模が大きく香火が最も盛んな廟であり、金門で最も重要な信仰の中心です。廟の建築は三開間二進式の配置で、屋根は歇山重簷式を採用しています。毎年旧暦4月12日の「金門迎城隍」は金門の年間で最も盛大な宗教民俗活動で、清康熙19年（1680年）に金門鎮総兵の陳龍が行政中心を金門城から後浦に移転した歴史的事件を記念しており、台湾宗教百景に選ばれています。迎城隍活動の芸閣や陣頭のパレードは規模が壮大で、多くの旅行者を引きつけています。",
     "history": "最も古くは明洪武20年（1387年）にまで遡り、江夏侯の周徳が金門城で千戸所城を修築した際に、同時に古地城隍廟を建てました。清康熙2年（1663年）、清朝廷が遷界政策を実施し、後浦の元の城隍廟が崩壊しました。康熙19年（1680年）、初代金門鎮総兵の陳龍が行政中心を後浦に移転し、古地城隍の分炉が後浦の西門里に移され、浯島城隍廟の基礎が築かれました。嘉慶16年（1811年）、文應舉らが銀二千三百余金を募って再建しました。1994年に拡張工事が行われ、今日の規模となりました。",
-    "images": ["/assets/images/temples/temple-kinmen-citygod.png"],
+    "images": [
+      "/assets/images/temples/temple-kinmen-citygod.png"
+    ],
     "url": "https://kinmen.travel/zh-tw/travel/attraction/811",
-    "googleMap": "https://maps.app.goo.gl/kinmen-citygod"
+    "googleMap": "https://maps.app.goo.gl/kinmen-citygod",
+    "latitude": 24.4325803,
+    "longitude": 118.3161057
   },
   {
     "id": "matsu-tianhou",
@@ -174,8 +212,12 @@
     ],
     "description": "馬祖境天后宮は南竿の馬祖港のそばに位置し、海に面した馬祖地域で最も重要な信仰の中心であり、世界で唯一「媽祖の霊穴」を有する廟でもあります。正殿の神龕の前方数歩の距離に、伝説上の媽祖の遺体が埋葬された場所があります。伝えによると、媽祖の父と兄が漁に出て帰らず、林默娘が海に飛び込んで父を救おうとして不幸にも命を落とし、遺体が南竿の馬祖澳口に漂着、村人がその孝心に感じ入り、埋葬して廟を建て祭祀しました。「馬祖」列島の名前は「媽祖」に由来し、清光緒20年のイギリス海軍の海図にはすでにこの島が「馬祖」と記されており、この地名が文献に最も早く出現した記録です。毎年旧暦9月9日には「媽祖昇天祭」が行われ、馬祖の年間で最も盛大な宗教祝典です。",
     "history": "建立年代はすでに不詳ですが、歴史は極めて古いものです。宋朝の時期にはすでに南竿の馬祖澳に人が住んでおり、宋代の磁器の破片が出土しています。『三山志』には南竿が「上竿塘」と記録されており、明清時代には南竿塘と改称されました。廟は数度の重修を経ており、碑文で確認できるものとしては、民国32年に張逸舟が撰した「重脩馬祖島天后宮記」や、民国52年の彭啓超将軍の題名があります。民国90年（2001年）に旧廟を取り壊して新築し、莆仙地方の設計師を招き、湄洲媽祖祖廟の様式に倣った宮殿式廟宇として建造され、今日の規模となりました。",
-    "images": ["/assets/images/temples/temple-matsu-tianhou.png"],
+    "images": [
+      "/assets/images/temples/temple-matsu-tianhou.png"
+    ],
     "url": "http://tianhou-temple.matsu.idv.tw/",
-    "googleMap": "https://maps.app.goo.gl/matsu-tianhou"
+    "googleMap": "https://maps.app.goo.gl/matsu-tianhou",
+    "latitude": 26.1583916,
+    "longitude": 119.9181111
   }
 ]
