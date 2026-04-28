@@ -84,7 +84,9 @@
     "images": [
       "/assets/images/temples/temple-chihkan.png"
     ],
-    "googleMap": "https://maps.app.goo.gl/search/Chihkan+Tower"
+    "googleMap": "https://maps.app.goo.gl/search/Chihkan+Tower",
+    "latitude": 22.9972744,
+    "longitude": 120.2027032
   },
   {
     "id": "nankunshen",

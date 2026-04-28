@@ -35,7 +35,9 @@
     "history": "Founded in the 1970s by devotees who chose the auspicious lakeside location. Its excellent feng shui and Ji Gong's reputation for answering prayers attracted many worshippers. The surrounding area developed into a complete tourism zone, with Meihua Lake cycling path becoming a popular Yilan attraction.",
     "images": [
       "/assets/images/temples/temple-yilan-sanqing.png"
-    ]
+    ],
+    "latitude": 24.6391621,
+    "longitude": 121.7350194
   },
   {
     "id": "hualien-citygod",
