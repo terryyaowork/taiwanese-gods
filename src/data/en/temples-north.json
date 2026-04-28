@@ -12,9 +12,7 @@
     ],
     "description": "Keelung Dianji Temple is one of the three major temples in Keelung, dedicated to Kaizhang Shengwang. It is most famous for being the heart of the renowned 'Keelung Miaokou Night Market'. The temple and the market are inseparable, creating a unique scene where food stalls surround the sacred space. It is a hub for both spiritual worship and culinary delights, always bustling with people. The temple features exquisite stone carvings, particularly the dragon pillars.",
     "history": "Built in 1875 (Qing Dynasty) with land donated by the Lin family of Banqiao. It has undergone multiple renovations and is closely tied to the history of Keelung, witnessing the rise and development of the port city.",
-    "images": [
-      "/assets/images/temples/temple-keelungdianji.png"
-    ],
+    "images": ["/assets/images/temples/temple-keelungdianji.png"],
     "url": "https://www.facebook.com/DianJiGong/",
     "googleMap": "https://maps.app.goo.gl/search/Keelung+Dianji+Temple",
     "latitude": 25.1280744,
@@ -37,9 +35,7 @@
     ],
     "description": "Manka Longshan Temple is a masterpiece of traditional Chinese architecture and a spiritual heart of Taipei. It features the only pair of bronze dragon pillars in Taiwan and an exquisite spiral caisson ceiling above the main hall. The temple follows a 'Three-Hall' layout (Front, Main, Rear) in a 'Hui' (enclosed courtyard) shape. While the main hall is dedicated to Guanyin, the rear hall houses over 100 deities from Taoism and Folk religion, including Mazu, Wenchang, and the famous Matchmaker (Yue Lao), reflecting Taiwan's unique religious inclusivity. It is a living museum of art, history, and faith.",
     "history": "Founded in 1738 by immigrants from Quanzhou as a branch of the Longshan Temple in Jinjiang. It served as a community center and witnessed the historical clan conflicts in Manka (Bangka). The temple has survived earthquakes, typhoons, and WWII air raids. Notably, during a bombing raid, the main hall was destroyed, but the Guanyin statue remained unharmed—a widely celebrated miracle. The current structure was meticulously restored in the 1920s by the master craftsman Wang Yi-shun.",
-    "images": [
-      "/assets/images/temples/temple-longshan.png"
-    ],
+    "images": ["/assets/images/temples/temple-longshan.png"],
     "url": "https://www.lungshan.org.tw",
     "googleMap": "https://maps.app.goo.gl/iX8U3bnuKUjEWMnJ8",
     "latitude": 25.0372498,
@@ -58,9 +54,7 @@
     ],
     "description": "Xingtian Temple is renowned for its strict environmental policies and solemn atmosphere. It pioneered the 'No Incense, No Gold Paper, No Donation Box' rule, emphasizing that sincere prayer is more important than offerings. The architecture is grand yet simple, lacking the overly ornate decorations of other temples. It is famous for its 'Recalling the Soul' (Shou Jing) service performed by blue-robed volunteers, offering spiritual comfort to thousands of believers daily.",
     "history": "Constructed in 1967 by Master Xuan Kong. Despite being relatively new compared to other ancient temples, it became one of the most visited in Taiwan due to its reputation for answering prayers and its high moral standards. Master Xuan Kong donated his entire fortune to build the temple and established strict rules to promote benevolence.",
-    "images": [
-      "/assets/images/temples/temple-xingtian.png"
-    ],
+    "images": ["/assets/images/temples/temple-xingtian.png"],
     "url": "https://www.ht.org.tw",
     "googleMap": "https://maps.app.goo.gl/metg9bbR6hathxpZ8",
     "latitude": 25.0630848,
@@ -83,9 +77,7 @@
     ],
     "description": "Located in the historic Dihua Street, this small temple packs a massive punch. Despite its size (only ~150 sqm), it houses over 600 deity statues, making it the most densely populated temple in Taiwan. While dedicated to the City God, it is globally famous for its Matchmaker (Yue Lao), reportedly bringing together over 6,000 couples annually. Visitors should try the 'Peace Tea' made from dates and wolfberries, symbolizing a sweet and fruitful relationship.",
     "history": "Built in 1856 by immigrants from Tongan to protect the settlement. The temple has witnessed the rise of Dadaocheng as a tea trading hub. It hosts the annual 'City God Reception' festival on the 13th day of the 5th Lunar month, a massive event known locally as 'May 13th, people watching people', one of Taipei's major religious festivals.",
-    "images": [
-      "/assets/images/temples/temple-citygod.png"
-    ],
+    "images": ["/assets/images/temples/temple-citygod.png"],
     "url": "http://www.tpecitygod.org",
     "googleMap": "https://maps.app.goo.gl/guB7Gqt934KVvTpA8",
     "latitude": 25.0556263,
@@ -104,9 +96,7 @@
     ],
     "description": "Located right next to the famous Raohe Street Night Market, Ciyou Temple is the perfect example of Taiwan's 'Temple Entrance' culture. This magnificent 6-story building features intricate 'Jian Nian' (cut porcelain) roof decorations of dragons. Dedicated to the Black-Faced Mazu, it is a spiritual anchor for the locals. The contrast between the solemn, golden temple and the bustling, food-filled night market creates a unique atmosphere that captures the essence of Taiwanese life.",
     "history": "Built in 1753 by the monk Lin Shou-yi. Songshan was formerly known as 'Xikou', a vital river port on the Keelung River during the Qing Dynasty. Ciyou Temple served as the religious and community center for the 13 surrounding villages, witnessing the area's transformation from a trading port to a modern district.",
-    "images": [
-      "/assets/images/temples/temple-ciyou.png"
-    ],
+    "images": ["/assets/images/temples/temple-ciyou.png"],
     "url": "https://www.ssjyg.org.tw",
     "googleMap": "https://maps.app.goo.gl/4pQhoRnjQgDyiTzW9",
     "latitude": 25.0512927,
@@ -125,9 +115,7 @@
     ],
     "description": "Dalongdong Baoan Temple is a masterpiece of art and restoration. It won the 2003 UNESCO Asia-Pacific Heritage Award for Culture Heritage Conservation for its meticulous restoration using traditional techniques. Dedicated to the Medicine God, Baosheng Dadi, it features exquisite murals by master Pan Li-shui, Koji pottery, and wood carvings. Unlike many bustling temples, it has a scholarly, artistic, and museum-like atmosphere.",
     "history": "Founded in 1742. The annual 'Baosheng Cultural Festival' is a major religious event in Northern Taiwan, featuring the unique 'Fire Lion' ritual—a spectacular fireworks display believed to ward off evil spirits and bring good fortune.",
-    "images": [
-      "/assets/images/temples/temple-baoan.png"
-    ],
+    "images": ["/assets/images/temples/temple-baoan.png"],
     "url": "https://www.baoan.org.tw",
     "googleMap": "https://maps.app.goo.gl/LhkSuHr4Q1As3dQh8",
     "latitude": 25.0723373,
@@ -146,9 +134,7 @@
     ],
     "description": "Zhinan Temple, also known as the 'Temple of Immortal Lu', is a prestigious Taoist site located on Zhinan Mountain. It is famous for its unique blend of Taoism, Buddhism, and Confucianism. Perched on the mountainside, it offers breathtaking views of the Taipei Basin. While there is a folklore that couples visiting together might break up, it is now more popularly known as a powerful place to cut off bad relationships and pray for true love.",
     "history": "Founded in 1890 by Magistrate Wang Bin-lin, who brought the incense of Ancestor Lu from Yongle Palace in Shanxi. It has expanded over the century into a massive religious complex. The famous 'Thousand Steps' trail is a historic pilgrimage route lined with stone lanterns.",
-    "images": [
-      "/assets/images/temples/temple-zhinan.png"
-    ],
+    "images": ["/assets/images/temples/temple-zhinan.png"],
     "url": "https://www.chih-nan-temple.org/",
     "googleMap": "https://maps.app.goo.gl/zhinan",
     "latitude": 24.9796041,
@@ -167,9 +153,7 @@
     ],
     "description": "Songshan Fengtian Temple is dedicated to the Jade Emperor and is an important Taoist temple in Taipei's Xinyi District. The golden and magnificent architecture houses the Jade Emperor in the main hall, with the Three Officials and Star Lords as companion deities. The Jade Emperor's Birthday on the 9th of the 1st lunar month is the grandest annual celebration.",
     "history": "Founded during the Guangxu era of the Qing Dynasty as a small local shrine. Through multiple expansions driven by growing devotees, it became the grand temple seen today. It is one of Taipei's most important centers of Jade Emperor worship.",
-    "images": [
-      "/assets/images/temples/temple-songshan-fengtian.png"
-    ],
+    "images": ["/assets/images/temples/temple-songshan-fengtian.png"],
     "latitude": 25.0372626,
     "longitude": 121.5846258
   },
@@ -186,9 +170,7 @@
     ],
     "description": "Located near Shuanglian MRT station, Taipei Wenchang Temple is the most popular temple for academic success in Taipei. During exam seasons, the interior is literally wallpapered with photocopies of exam permits. Students offer symbolic foods with auspicious homophones: green onions (intelligence), celery (diligence), radish (good luck), and zongzi (guaranteed pass).",
     "history": "Founded during the Qing Guangxu era as a scholars' shrine. After relocation due to urban development and multiple renovations, its central location and reputation for answered prayers made it the most visited Wenchang temple for students across Taiwan.",
-    "images": [
-      "/assets/images/temples/temple-taipei-wenchang.png"
-    ],
+    "images": ["/assets/images/temples/temple-taipei-wenchang.png"],
     "latitude": 25.0023944,
     "longitude": 121.5436683
   },
@@ -205,9 +187,7 @@
     ],
     "description": "Taipei Confucius Temple is the most important Confucian temple in northern Taiwan, modeled after the original in Qufu, Shandong. The Main Hall contains no statues, only spirit tablets, following the Confucian tradition of avoiding idol worship. The annual Teacher's Day ceremony on September 28th features the Eight-Row Dance and ancient rituals, representing Taiwan's most significant Confucian cultural event.",
     "history": "The original temple built in 1879 was demolished during Japanese rule. The current temple was rebuilt in 1925 by Taipei gentry, completed in 1939, and designed by master craftsman Wang Yi-shun from Quanzhou. Together with the adjacent Baoan Temple, it forms Taipei's most complete traditional architectural complex.",
-    "images": [
-      "/assets/images/temples/temple-taipei-confucius.png"
-    ],
+    "images": ["/assets/images/temples/temple-taipei-confucius.png"],
     "url": "https://www.tctcc.taipei",
     "latitude": 25.0727013,
     "longitude": 121.5165018
@@ -225,9 +205,7 @@
     ],
     "description": "Xinzhuang Wu Temple is the oldest Guan Di temple in Northern Taiwan and a designated historic site. It witnessed the prosperous era of Xinzhuang's port. The temple doors feature 108 door nails instead of painted door gods, symbolizing Guan Di's supreme martial prowess requiring no guards.",
     "history": "Founded in 1760 by Hu Zhuoyou. It has undergone multiple renovations while preserving its traditional Minnan architectural style.",
-    "images": [
-      "/assets/images/temples/temple-xinzhuangwu.png"
-    ],
+    "images": ["/assets/images/temples/temple-xinzhuangwu.png"],
     "url": "https://www.facebook.com/kct0511/",
     "googleMap": "https://maps.app.goo.gl/search/Zhonghe+Hongludi",
     "latitude": 25.0337842,
@@ -250,9 +228,7 @@
     ],
     "description": "Xinzhuang Dizang An is famous as the origin of the 'Guan Jiang Shou' (Officers of the Underworld) performance. Dedicated to Ksitigarbha and the Dazhong Ye spirits, it is known for finding lost items and settling disputes. The annual 'Night Patrol' festival is a major cultural event in Northern Taiwan.",
     "history": "Established in 1757 initially to house and honor wandering spirits. It grew with Xinzhuang's development to become a major guardian temple of the region.",
-    "images": [
-      "/assets/images/temples/temple-xinzhuangdizang.png"
-    ],
+    "images": ["/assets/images/temples/temple-xinzhuangdizang.png"],
     "url": "https://www.xzdza.org.tw/",
     "googleMap": "https://maps.app.goo.gl/xzdza",
     "latitude": 25.0377357,
@@ -271,9 +247,7 @@
     ],
     "description": "Hongludi Nanshan Fude Temple is the most famous place in Northern Taiwan to pray for wealth. Its most distinctive feature is a giant statue of Tudigong (109 feet tall), a major landmark. Located on Nanshih Mountain, it offers a stunning panoramic night view of Taipei. Open 24 hours, it is particularly busy at night, with many business people coming to exchange 'Money Mother' coins and touch the ingots for good fortune.",
     "history": "Originating in 1739 as a humble shrine made of three stone slabs. It has grown into a massive complex, but the original small shrine is still preserved inside the main hall (a temple within a temple), witnessing its long history.",
-    "images": [
-      "/assets/images/temples/temple-hongludi.png"
-    ],
+    "images": ["/assets/images/temples/temple-hongludi.png"],
     "url": "https://www.hunglodei.tw/",
     "googleMap": "https://maps.app.goo.gl/hongludi",
     "latitude": 24.9718368,
@@ -292,9 +266,7 @@
     ],
     "description": "Dharma Drum Mountain is one of Taiwan's four major Buddhist organizations, founded by Master Sheng Yen in 1989. Set in lush green mountains of Jinshan, the campus blends modern architecture with Zen aesthetics, emphasizing 'Protecting the Spiritual Environment.' It is renowned for promoting meditation and humanistic education, representing the modernization of Buddhism in Taiwan.",
     "history": "Founded by Master Sheng Yen in 1989, with the grand opening in 2005. Master Sheng Yen promoted 'Elevating Human Quality, Building a Pure Land on Earth,' emphasizing Buddhism's role in social care and spiritual purification. It serves as a comprehensive campus combining education, culture, and charity, with significant international Buddhist influence.",
-    "images": [
-      "/assets/images/temples/temple-fagushan.png"
-    ],
+    "images": ["/assets/images/temples/temple-fagushan.png"],
     "url": "https://www.ddm.org.tw",
     "latitude": 25.2409502,
     "longitude": 121.6148125
@@ -312,9 +284,7 @@
     ],
     "description": "Taoyuan Jingfu Temple, locally known as the 'Big Temple', is the spiritual center of Taoyuan City and a municipal historic site. Dedicated to Kaizhang Shengwang, it also integrates deities from both Zhangzhou and Quanzhou immigrants, symbolizing ethnic harmony. Located at the city center roundabout, its architecture is grand, featuring a unique 'Hip-and-Gable with False Four-Slope' roof structure due to urban space constraints, making it a prominent landmark.",
     "history": "Established in 1813. In the early days, Taoyuan saw frequent conflicts between Zhangzhou and Quanzhou immigrants; the temple's founding symbolized integration and peace. It preserves many artifacts from the Qing Dynasty.",
-    "images": [
-      "/assets/images/temples/temple-taoyuanjingfu.png"
-    ],
+    "images": ["/assets/images/temples/temple-taoyuanjingfu.png"],
     "url": "https://www.facebook.com/TaoyuanJingfuTemple/",
     "googleMap": "https://maps.app.goo.gl/search/Taoyuan+Jingfu+Temple",
     "latitude": 25.02206,
@@ -333,9 +303,7 @@
     ],
     "description": "Hsinchu City God Temple holds the highest rank among City God temples in Taiwan. It features the 'Jinmen Baozhang' plaque bestowed by Emperor Guangxu. The annual 'Hsinchu Zhongyuan City God Festival' in the 7th lunar month is a massive event, famous for the 'Hang Jia' (wearing the cangue) ritual where thousands penance for their sins. The temple square is also a famous food hub, renowned for Hsinchu meatballs and rice noodles.",
     "history": "Founded in 1748. In 1891, it was elevated to the rank of 'Capital City God' (Du Chenghuang), overseeing all City Gods in Taiwan, a status of immense prestige.",
-    "images": [
-      "/assets/images/temples/temple-hsinchucitygod.png"
-    ],
+    "images": ["/assets/images/temples/temple-hsinchucitygod.png"],
     "url": "http://www.weiling.org.tw/",
     "googleMap": "https://maps.app.goo.gl/search/Hsinchu+City+God+Temple",
     "latitude": 24.8043564,
@@ -354,9 +322,7 @@
     ],
     "description": "Beipu Citien Temple is the most representative Hakka religious center in Hsinchu County and a designated county monument. Dedicated to Guanyin, it reflects the Hakka 'Guanyin first' tradition. The layout resembles the Cantonese-Hakka 'double-hall, two-wing' style. Notable features include sandstone ascending dragon pillars (a rarity in Taiwanese temples) and two sets of '24 Filial Piety' stone columns with exquisite carvings. The stone-paved square marks the beginning of Beipu Old Street.",
     "history": "The temple's founding is closely tied to the Hakka settlement of Beipu. In 1834, Hakka leader Jiang Xiuluan and Hokkien merchant Zhou Bangzheng formed the 'Jin Guang Fu' reclamation enterprise. The Guanyin statue was reportedly brought from mainland China. In 1840, a wooden temple was built. In 1874, Jiang Ronghua (grandson of Jiang Xiuluan) expanded it into the current two-hall, two-wing layout. The temple was a key site in the 1907 Beipu Incident.",
-    "images": [
-      "/assets/images/temples/temple-beipu-citien.png"
-    ],
+    "images": ["/assets/images/temples/temple-beipu-citien.png"],
     "googleMap": "https://maps.app.goo.gl/beipu-citien",
     "latitude": 24.6997628,
     "longitude": 121.0583752
@@ -374,9 +340,7 @@
     ],
     "description": "Hsinchu Puxian Temple enshrines Samantabhadra Bodhisattva riding a six-tusked white elephant. Samantabhadra represents 'Great Practice,' symbolizing the power of putting Buddhist teachings into daily action. Devotees pray here for spiritual progress and the fulfillment of vows.",
     "history": "Founded during the Japanese colonial period as a communal practice site for Buddhists. After WWII, it gradually expanded into an important Buddhist temple, actively promoting Buddhist education and social welfare in the Hsinchu area.",
-    "images": [
-      "/assets/images/temples/temple-hsinchu-puxian.png"
-    ],
+    "images": ["/assets/images/temples/temple-hsinchu-puxian.png"],
     "latitude": 24.885388,
     "longitude": 121.0792737
   },
@@ -393,9 +357,7 @@
     ],
     "description": "Hsinchu Putian Temple is famous for its massive 120-meter tall statue of Guansheng Dijun, a landmark visible from afar. Located near the Hsinchu Science Park, it is a spiritual center for many tech workers. Besides the main deity, its Matchmaker (Yue Lao) is also highly renowned, attracting singles seeking love.",
     "history": "Founded in 1967 by former Hsinchu County Council Speaker Zheng Zaichuan. The giant statue was completed in 1975.",
-    "images": [
-      "/assets/images/temples/temple-hsinchu-putian.png"
-    ],
+    "images": ["/assets/images/temples/temple-hsinchu-putian.png"],
     "latitude": 24.7803926,
     "longitude": 120.9788137
   },
@@ -412,9 +374,7 @@
     ],
     "description": "Hsinchu Sanshan Guowang Temple, built during the Qianlong era, is the most representative Hakka religious center in Hsinchu City. The Three Mountain Kings — patron gods from Jieyang, Chaozhou, Guangdong — are among the most important guardian deities brought by Hakka immigrants to Taiwan. The temple preserves Qing Dynasty plaques and stone carvings that witness Hakka settlers' history in the Hsinchu region.",
     "history": "Founded in 1780 by Hakka immigrants from Guangdong. During the Qing era, when ethnic conflicts between Hokkien and Hakka communities were common, this temple served not just as a religious site but as a rallying point for Hakka solidarity. It has been renovated multiple times while preserving its Qing Dynasty architectural framework. It narrowly escaped demolition during the Japanese colonial period.",
-    "images": [
-      "/assets/images/temples/temple-hsinchu-sanshan.png"
-    ]
+    "images": ["/assets/images/temples/temple-hsinchu-sanshan.png"]
   },
   {
     "id": "xinpu-yimin",
@@ -429,9 +389,7 @@
     ],
     "description": "Baozhong Yimin Temple is the head temple of the Yimin (Righteous People) faith in all of Taiwan and the most sacred spiritual site for the Hakka community. Unlike typical temples, its spiritual core is the 'Yimin Tomb' behind the main hall — the burial site of over 200 Hakka militiamen who died defending their communities during the Lin Shuangwen Rebellion and other Qing Dynasty uprisings. The characters 'Bao Zhong' (Praise Loyalty) on the main plaque were bestowed by Emperor Qianlong. The annual Yimin Festival features the famous 'Divine Pig Competition,' the grandest Hakka religious celebration in Taiwan.",
     "history": "In 1786, when the Lin Shuangwen Rebellion erupted, Hakka communities in Hsinchu and Taoyuan formed volunteer militias. After the conflict, over 200 fallen warriors were buried together in Fangliao (modern-day Xinpu). In 1790, locals built a temple beside the tomb, and Emperor Qianlong bestowed the 'Bao Zhong' plaque. The temple has since become the symbol of Hakka spirit in Taiwan, with its unique 'tomb as temple' worship tradition.",
-    "images": [
-      "/assets/images/temples/temple-xinpu-yimin.png"
-    ],
+    "images": ["/assets/images/temples/temple-xinpu-yimin.png"],
     "url": "https://www.yimin.org.tw/",
     "googleMap": "https://maps.app.goo.gl/search/Baozhong+Yimin+Temple",
     "latitude": 24.8442777,

@@ -16,9 +16,7 @@
     ],
     "description": "Xingang Fengtian Temple is a renowned Mazu temple, claiming the title of 'First Mazu in Taiwan'. A unique feature is its Tiger General (Huye) strictly worshipped *on* the altar table, unlike most temples where it is under the table. The saying 'Bengang has the Herald, Xingang has Lord Tiger' highlights its fame. Rich in historical artifacts and plaques, it witnesses over 300 years of history and is a key stop for the Dajia Mazu Pilgrimage.",
     "history": "Tracing back to 1700 as Bengang Tianhou Temple. After the original temple was destroyed by floods in 1799, it was relocated and renamed Fengtian Temple. Generations of renovations have preserved exquisite cut porcelain and Koji pottery arts.",
-    "images": [
-      "/assets/images/temples/temple-xingangfengtian.png"
-    ],
+    "images": ["/assets/images/temples/temple-xingangfengtian.png"],
     "googleMap": "https://maps.app.goo.gl/search/Xingang+Fengtian+Temple",
     "latitude": 23.5567967,
     "longitude": 120.3479018
@@ -36,9 +34,7 @@
     ],
     "description": "Chiayi City God Temple is the only county-level City God temple in Taiwan to receive an imperial title — the 'Marquis of Suijing,' bestowed by Emperor Guangxu in 1875. The current building dates to 1940, blending Hokkien and Japanese colonial architectural styles. Designated a national monument in 2015, it houses precious historical artifacts including Qing Dynasty plaques and stone tablets. The annual 7th lunar month festival is one of Chiayi's grandest religious events.",
     "history": "Founded in 1694 as a simple tablet shrine in Zhuluo County. In 1715, County Magistrate Zhou Zhongxuan donated his salary to build a proper temple. The current structure was completed in 1940. In 1875, Emperor Guangxu bestowed the title 'Marquis of Suijing' on the City God — a unique honor for a county-level deity. Designated a national monument in 2015.",
-    "images": [
-      "/assets/images/temples/temple-chiayi-citygod.png"
-    ],
+    "images": ["/assets/images/temples/temple-chiayi-citygod.png"],
     "url": "https://www.chiayi.gov.tw/",
     "googleMap": "https://maps.app.goo.gl/chiayi-citygod",
     "latitude": 23.4784142,
@@ -57,9 +53,7 @@
     ],
     "description": "Tainan Confucius Temple, known as the 'First Academy in Taiwan', was the highest educational institute in Taiwan during the Qing Dynasty. It follows the traditional 'School on the Left, Temple on the Right' layout. The 'First Academy in Taiwan' plaque bestowed by Emperor Kangxi hangs proudly at the entrance. The annual Confucius Ceremony on September 28th preserves ancient rituals, including the 'Ba Yi Dance', making it a key site for Confucian culture.",
     "history": "Founded in 1665 by Zheng Jing upon the advice of Chen Yonghua to promote education and cultivate talent. Expanded frequently during the Qing Dynasty. Used for other purposes during the Japanese era but restored after WWII. Now a National Monument and the center of Confucian culture in Taiwan.",
-    "images": [
-      "/assets/images/temples/temple-tainanconfucius.png"
-    ],
+    "images": ["/assets/images/temples/temple-tainanconfucius.png"],
     "googleMap": "https://maps.app.goo.gl/search/Tainan+Confucius+Temple",
     "latitude": 22.9903049,
     "longitude": 120.2042518
@@ -81,9 +75,7 @@
     ],
     "description": "Originally built by the Dutch in 1653 as Fort Provintia, Chihkan Tower is a premier historic site and a symbol of Tainan. The current complex, featuring the Haishen Temple and Wenchang Pavilion, stands atop the original Dutch foundations. It is famous for the 'Nine Tortoise Steles' bestowed by Emperor Qianlong, a significant historical artifact. Students flock to the garden to pray to Kuixing (God of Examinations) for academic success.",
     "history": "Built by the Dutch in 1653 as Fort Provintia. Conquered by Koxinga in 1661 and became the administrative center 'Chengtian Prefecture'. After planned destruction and earthquakes in the Qing Dynasty, it was rebuilt in the Guangxu era as Haishen Temple and Wenchang Pavilion, blending Dutch foundations with Chinese architecture.",
-    "images": [
-      "/assets/images/temples/temple-chihkan.png"
-    ],
+    "images": ["/assets/images/temples/temple-chihkan.png"],
     "googleMap": "https://maps.app.goo.gl/search/Chihkan+Tower",
     "latitude": 22.9972744,
     "longitude": 120.2027032
@@ -101,9 +93,7 @@
     ],
     "description": "Nankunshen Daitian Temple is the 'Headquarters of Wangye Temples' in Taiwan, a National Monument, and a Michelin Green Guide 3-star attraction. Dedicated to the Five Royal Lords (Li, Chi, Wu, Zhu, Fan). The complex is massive, featuring the grand Lingxiao Treasure Hall and the beautiful Jiangnan-style 'Da Kun Garden'. It is renowned for its architectural art, including mastery in cut porcelain and stone carving. The annual pilgrimage season sees thousands of branch temples returning, creating a spectacular cultural spectacle.",
     "history": "Dates back to 1662. Legend says the Five Royal Lords arrived on a King Boat at the Nankunshen sandbar. Moved to the current location in the Jiaqing era of the Qing Dynasty due to geographical changes. Known as the 'King of Kunshun', it has maintained centuries of devotion.",
-    "images": [
-      "/assets/images/temples/temple-nankunshen.png"
-    ],
+    "images": ["/assets/images/temples/temple-nankunshen.png"],
     "googleMap": "https://maps.app.goo.gl/search/Nankunshen+Daitian+Temple",
     "latitude": 23.2858993,
     "longitude": 120.1433204
@@ -125,9 +115,7 @@
     ],
     "description": "Tainan Grand Mazu Temple is the first official Mazu temple in Taiwan, unique for being converted from the palace of Prince Ningjing of the Ming Dynasty. After Shi Lang conquered Taiwan, it was converted and elevated to a Grand Temple, becoming the center of Mazu worship in the Qing era. It holds high status with many imperial plaques. Its Matchmaker God (Yuelao) is famously efficacious for blessing unrequited love and strengthening relationships.",
     "history": "Originally the Prince Ningjing Palace (built 1664). Converted to a Mazu temple in 1683 by Shi Lang after petitioning Emperor Kangxi, who promoted Mazu to 'Empress of Heaven'. It marks the start of official Qing worship of Mazu and witnesses the transition from Ming to Qing rule. A National Monument.",
-    "images": [
-      "/assets/images/temples/temple-tainanmazu.png"
-    ],
+    "images": ["/assets/images/temples/temple-tainanmazu.png"],
     "googleMap": "https://maps.app.goo.gl/search/Tainan+Grand+Mazu+Temple",
     "latitude": 22.9965179,
     "longitude": 120.2017095
@@ -153,9 +141,7 @@
     ],
     "description": "The Grand Martial Temple is the only Guan Di temple in Taiwan included in official rites, Neighboring the Grand Mazu Temple. Its famous 66-meter undulating red wall, praised as 'First in Jiangnan', is a visual marvel. The temple layout is strict and majestic. It also houses Guanyin and a unique Matchmaker God (specializing in cutting off bad romances and warding off petty people). The Guan Di statue here is exceptionally majestic, exuding righteousness.",
     "history": "Built around the Ming Yongli era. Designated as an official temple for Guan Di worship in 1727 (Yongzheng era), requiring officials to perform biannual rites. Preserves Ming dynasty architectural styles despite renovations. A National Monument.",
-    "images": [
-      "/assets/images/temples/temple-tainanwu.png"
-    ],
+    "images": ["/assets/images/temples/temple-tainanwu.png"],
     "url": "https://www.facebook.com/TainanGrandMartialTemple/",
     "googleMap": "https://maps.app.goo.gl/search/Tainan+Grand+Martial+Temple",
     "latitude": 22.9965239,
@@ -174,9 +160,7 @@
     ],
     "description": "Tainan Tiantan, commonly called 'Heaven God Temple', is the first official Altar of Heaven in Taiwan, dedicated to the Jade Emperor. In the main hall hangs a famous single-character plaque 'Yi' (One), gifted by Emperor Xianfeng — symbolizing that Heaven is supreme. The Jade Emperor's Birthday on the 9th of the 1st lunar month sees grand sacrificial offerings.",
     "history": "Founded in 1854 by Tainan merchants and gentry as Taiwan's first official Altar of Heaven. Qing Dynasty officials held annual Heaven worship ceremonies here. The temple preserves several imperial plaques, with the single-character 'Yi' plaque being the most treasured artifact.",
-    "images": [
-      "/assets/images/temples/temple-tainan-tiantan.png"
-    ],
+    "images": ["/assets/images/temples/temple-tainan-tiantan.png"],
     "latitude": 22.9937209,
     "longitude": 120.2041994
   },
@@ -193,9 +177,7 @@
     ],
     "description": "Fongshan Longshan Temple is one of the best-preserved Longshan Temples from the Qing Dynasty in Taiwan, designated as a National Monument. It is distinct from other Longshan temples established by Sanyi immigrants. The temple is renowned for its exquisite 'Jian Nian' (cut porcelain) and clay sculptures, which are among the finest in Taiwan. As the premier of Fongshan's four ancient temples, it exudes a solemn and rustic atmosphere, bearing witness to the history of the ancient walled city.",
     "history": "Believed to be founded in the early Qianlong era. Legend says an oil merchant from Fujian left a Guanyin amulet on a guava tree here; it glowed at night, leading locals to build a temple. Major renovations occurred in 1764 led by Magistrate Wang Yingzeng. The current structure reflects renovations from the Daoguang era and the Japanese colonial period.",
-    "images": [
-      "/assets/images/temples/temple-fongshanlongshan.png"
-    ],
+    "images": ["/assets/images/temples/temple-fongshanlongshan.png"],
     "url": "https://www.facebook.com/FongshanLongshanTemple/",
     "googleMap": "https://maps.app.goo.gl/search/Fongshan+Longshan+Temple",
     "latitude": 22.6206562,
@@ -218,9 +200,7 @@
     ],
     "description": "Fo Guang Shan is one of Taiwan's four major Buddhist organizations, founded by Venerable Master Hsing Yun in 1967. It is the largest Buddhist monastery in Taiwan. The sprawling campus features the magnificent Buddha Memorial Center with eight pagodas lining the Path to Buddhahood. Known for promoting 'Humanistic Buddhism,' it operates over 300 branch temples worldwide.",
     "history": "Master Hsing Yun came to Taiwan in 1949 and founded Fo Guang Shan in 1967. From barren hills, it grew into an international Buddhist center over 50+ years. The Buddha Memorial Center, completed in 2011, attracts millions of visitors annually as Southern Taiwan's most important religious tourism destination.",
-    "images": [
-      "/assets/images/temples/temple-foguangshan.png"
-    ],
+    "images": ["/assets/images/temples/temple-foguangshan.png"],
     "url": "https://www.fgs.org.tw",
     "latitude": 22.750556,
     "longitude": 120.445278
@@ -238,9 +218,7 @@
     ],
     "description": "Donggang Donglong Temple is a prominent Wangye temple in Southern Taiwan, the spiritual center of Donggang. Its 'Golden Archway', covered in real gold leaf and costing over 100 million TWD, is a dazzling landmark. The triennial 'Donggang King Boat Ceremony' (burning the King Boat) is a designated National Folk Cultural Asset, a massive and mystical event attracting thousands. The unique 'Ji Gai' ritual, involving ceremonial spanking to drive away bad luck, is also a well-known tradition here.",
     "history": "Founded in 1706 (Kangxi era). Legend says locals found a driftwood marked 'Wen', verified it as a divine sign, and built the temple. It has undergone multiple relocations and rebuilds, notably after a tsunami in 1894, evolving into its current grand structure.",
-    "images": [
-      "/assets/images/temples/temple-donglong.png"
-    ],
+    "images": ["/assets/images/temples/temple-donglong.png"],
     "url": "https://www.66.org.tw/",
     "googleMap": "https://maps.app.goo.gl/search/Donggang+Donglong+Temple",
     "latitude": 22.4630682,
@@ -259,9 +237,7 @@
     ],
     "description": "Checheng Fu'an Temple is the largest Earth God (Tudi Gong) temple in Taiwan and the spiritual center of the Hengchun Peninsula. It is famous for its 'Money Counting gold furnace', where convection currents automatically suck in incense paper sheet by sheet. The architecture follows the Northern Palace style. The Earth God here wears a dragon robe and official cap, signifying his high rank bestowed by Emperor Qianlong, distinct from common Earth God images.",
     "history": "Founded in 1662 (Kangxi era) as 'Jingsheng Pavilion'. In 1788, due to aid in quelling the Lin Shuangwen rebellion, Emperor Qianlong bestowed the title of Wangye and dragon robes upon the Earth God and renamed it Fu'an Temple. Rebuilt multiple times to its current grandeur.",
-    "images": [
-      "/assets/images/temples/temple-chechengfuan.png"
-    ],
+    "images": ["/assets/images/temples/temple-chechengfuan.png"],
     "url": "http://www.fuan.org.tw/",
     "googleMap": "https://maps.app.goo.gl/search/Checheng+Fuan+Temple",
     "latitude": 22.070838,
@@ -280,8 +256,6 @@
     ],
     "description": "Pingtung Jiuru Sanshan Guowang Temple is one of the oldest Three Mountain Kings temples in Taiwan and a designated national monument. It witnesses the Liudui Hakka community's pioneering history on the Pingtung Plain. The architecture preserves a strong Hakka temple style — simple yet solemn. Ancient Qing Dynasty steles and plaques inside record the hardships of Hakka settlers in southern Taiwan. The temple remains a vital center for Hakka worship, community meetings, and cultural identity.",
     "history": "Founded around 1700 during the Kangxi era by early Hakka immigrants from Guangdong. At that time, the Pingtung Plain was a frontier between indigenous territories and Han settlers. The Hakka pioneers brought the incense of Sanshan Guowang from their homeland and built this temple as both spiritual anchor and community center. Major renovations during the Daoguang era established its current layout. Designated a national monument for its historical and Hakka cultural significance.",
-    "images": [
-      "/assets/images/temples/temple-jiuru-sanshan.png"
-    ]
+    "images": ["/assets/images/temples/temple-jiuru-sanshan.png"]
   }
 ]
