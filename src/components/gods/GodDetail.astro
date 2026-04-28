@@ -104,10 +104,39 @@ const jsonLd = {
   },
   ...(god.aliases?.length ? { alternativeHeadline: god.aliases.join('、') } : {}),
 };
+
+// Breadcrumb labels per language
+const categoryNames: Record<string, Record<string, string>> = {
+  'zh-TW': { taoism: '道教', buddhism: '佛教', folk: '民間信仰', hakka: '客家神明', indigenous: '原住民信仰' },
+  en: { taoism: 'Taoism', buddhism: 'Buddhism', folk: 'Folk Religion', hakka: 'Hakka Gods', indigenous: 'Indigenous' },
+  ja: { taoism: '道教', buddhism: '仏教', folk: '民間信仰', hakka: '客家の神々', indigenous: '原住民信仰' },
+};
+const godsListLabel: Record<string, string> = { 'zh-TW': '神明', en: 'Gods', ja: '神々' };
+const cat = god.category || 'taoism';
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: godsListLabel[lang] || godsListLabel['zh-TW'],
+      item: `${siteUrl}${langPrefix}/gods`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: (categoryNames[lang] || categoryNames['zh-TW'])[cat] || cat,
+      item: `${siteUrl}${langPrefix}/gods/${cat}`,
+    },
+    { '@type': 'ListItem', position: 3, name: god.name },
+  ],
+};
 ---
 
 <Layout metadata={metadata}>
   <JsonLd data={jsonLd} />
+  <JsonLd data={breadcrumbJsonLd} />
   <div class="main-container bg-paper-texture min-h-screen pb-12">
     <!-- Hero Section with Image & Title -->
     <div class="relative w-full h-[30vh] sm:h-[40vh] md:h-[50vh] overflow-hidden">
