@@ -1,5 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
 import gods from '~/data/zh-TW/folk-gods.json';
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
@@ -31,9 +32,100 @@ const metadata = {
     ],
   },
 };
+
+const collectionJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  url: 'https://www.taiwanese-gods.org/gods/folk',
+  inLanguage: 'zh-TW',
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: '王爺',
+        url: 'https://www.taiwanese-gods.org/gods/folk/wangye',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: '保生大帝',
+        url: 'https://www.taiwanese-gods.org/gods/folk/baosheng',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: '三太子',
+        url: 'https://www.taiwanese-gods.org/gods/folk/nezha',
+      },
+      {
+        '@type': 'ListItem',
+        position: 4,
+        name: '虎爺',
+        url: 'https://www.taiwanese-gods.org/gods/folk/tigerlord',
+      },
+      {
+        '@type': 'ListItem',
+        position: 5,
+        name: '註生娘娘',
+        url: 'https://www.taiwanese-gods.org/gods/folk/zhusheng',
+      },
+      {
+        '@type': 'ListItem',
+        position: 6,
+        name: '土地婆',
+        url: 'https://www.taiwanese-gods.org/gods/folk/tudipo',
+      },
+      {
+        '@type': 'ListItem',
+        position: 7,
+        name: '文武大眾爺',
+        url: 'https://www.taiwanese-gods.org/gods/folk/dazhongye',
+      },
+      {
+        '@type': 'ListItem',
+        position: 8,
+        name: '開漳聖王',
+        url: 'https://www.taiwanese-gods.org/gods/folk/kaizhangshengwang',
+      },
+      {
+        '@type': 'ListItem',
+        position: 9,
+        name: '魁星爺',
+        url: 'https://www.taiwanese-gods.org/gods/folk/kuixing',
+      },
+      {
+        '@type': 'ListItem',
+        position: 10,
+        name: '地基主',
+        url: 'https://www.taiwanese-gods.org/gods/folk/dijizhu',
+      },
+      {
+        '@type': 'ListItem',
+        position: 11,
+        name: '七娘媽',
+        url: 'https://www.taiwanese-gods.org/gods/folk/qiniangma',
+      },
+      {
+        '@type': 'ListItem',
+        position: 12,
+        name: '清水祖師',
+        url: 'https://www.taiwanese-gods.org/gods/folk/qingshuizushi',
+      },
+      {
+        '@type': 'ListItem',
+        position: 13,
+        name: '門神',
+        url: 'https://www.taiwanese-gods.org/gods/folk/doorgods',
+      },
+    ],
+  },
+};
 ---
 
 <Layout metadata={metadata}>
+  <JsonLd data={collectionJsonLd} />
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
     <div class="text-center mb-12">
       <h1

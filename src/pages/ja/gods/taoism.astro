@@ -1,5 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
 import gods from '~/data/ja/taoist-gods.json';
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
@@ -21,9 +22,112 @@ const metadata = {
   ignoreTitleTemplate: true,
   description: '玉皇大帝、媽祖、関聖帝君など、台湾で広く信仰されている道教の神様をご紹介します。',
 };
+
+const collectionJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  url: 'https://www.taiwanese-gods.org/ja/gods/taoism',
+  inLanguage: 'ja',
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: '関聖帝君',
+        url: 'https://www.taiwanese-gods.org/ja/gods/taoism/guansheng',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: '媽祖',
+        url: 'https://www.taiwanese-gods.org/ja/gods/taoism/mazu',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: '城隍爺',
+        url: 'https://www.taiwanese-gods.org/ja/gods/taoism/chenghuang',
+      },
+      {
+        '@type': 'ListItem',
+        position: 4,
+        name: '保生大帝',
+        url: 'https://www.taiwanese-gods.org/ja/gods/taoism/baosheng',
+      },
+      {
+        '@type': 'ListItem',
+        position: 5,
+        name: '土地公',
+        url: 'https://www.taiwanese-gods.org/ja/gods/taoism/tudigong',
+      },
+      {
+        '@type': 'ListItem',
+        position: 6,
+        name: '玄天上帝',
+        url: 'https://www.taiwanese-gods.org/ja/gods/taoism/xuantian',
+      },
+      {
+        '@type': 'ListItem',
+        position: 7,
+        name: '玉皇大帝',
+        url: 'https://www.taiwanese-gods.org/ja/gods/taoism/yuhuang',
+      },
+      {
+        '@type': 'ListItem',
+        position: 8,
+        name: '月下老人',
+        url: 'https://www.taiwanese-gods.org/ja/gods/taoism/yuelao',
+      },
+      {
+        '@type': 'ListItem',
+        position: 9,
+        name: '財神',
+        url: 'https://www.taiwanese-gods.org/ja/gods/taoism/caishen',
+      },
+      {
+        '@type': 'ListItem',
+        position: 10,
+        name: '済公',
+        url: 'https://www.taiwanese-gods.org/ja/gods/taoism/jigong',
+      },
+      {
+        '@type': 'ListItem',
+        position: 11,
+        name: '呂洞賓',
+        url: 'https://www.taiwanese-gods.org/ja/gods/taoism/lvdongbin',
+      },
+      {
+        '@type': 'ListItem',
+        position: 12,
+        name: '太歳星君',
+        url: 'https://www.taiwanese-gods.org/ja/gods/taoism/taisui',
+      },
+      {
+        '@type': 'ListItem',
+        position: 13,
+        name: '文昌帝君',
+        url: 'https://www.taiwanese-gods.org/ja/gods/taoism/wenchang',
+      },
+      {
+        '@type': 'ListItem',
+        position: 14,
+        name: '孔子',
+        url: 'https://www.taiwanese-gods.org/ja/gods/taoism/confucius',
+      },
+      {
+        '@type': 'ListItem',
+        position: 15,
+        name: '西王母',
+        url: 'https://www.taiwanese-gods.org/ja/gods/taoism/wangmu',
+      },
+    ],
+  },
+};
 ---
 
 <Layout metadata={metadata}>
+  <JsonLd data={collectionJsonLd} />
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
     <div class="text-center mb-12">
       <h1
