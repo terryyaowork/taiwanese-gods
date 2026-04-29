@@ -20,16 +20,32 @@ const metadata = {
 const websiteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Taiwanese Deities',
-  alternateName: '台灣神明介紹',
+  name: 'Taiwanese Gods',
+  alternateName: ['台灣神明介紹', '台湾の神様紹介'],
   url: 'https://www.taiwanese-gods.org/en',
-  description: "Explore Taiwan's rich deity culture, temple heritage, and folk traditions.",
-  inLanguage: ['en', 'zh-TW'],
+  description: "Explore Taiwan's rich deity culture, temple heritage, and folk traditions across Taoist, Buddhist, folk, Hakka, and Indigenous traditions.",
+  inLanguage: ['en', 'zh-TW', 'ja'],
   publisher: {
     '@type': 'Organization',
-    name: 'Taiwanese Deities',
+    name: 'Taiwanese Gods',
     url: 'https://www.taiwanese-gods.org',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://www.taiwanese-gods.org/favicon.ico',
+    },
+    sameAs: ['https://www.facebook.com/profile.php?id=61584952887629'],
   },
+};
+
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Taiwanese Gods',
+  alternateName: ['台灣神明介紹', '台湾の神様紹介'],
+  url: 'https://www.taiwanese-gods.org',
+  logo: 'https://www.taiwanese-gods.org/favicon.ico',
+  sameAs: ['https://www.facebook.com/profile.php?id=61584952887629'],
+  description: 'A trilingual gateway to Taiwan\'s deities, temples, and religious culture (English / Traditional Chinese / Japanese)',
 };
 
 const sections = [
@@ -83,6 +99,7 @@ const introText =
 
 <Layout metadata={metadata}>
   <JsonLd data={websiteJsonLd} />
+  <JsonLd data={organizationJsonLd} />
 
   <!-- Hero Section -->
   <div class="relative w-full h-[60vh] md:h-[70vh] overflow-hidden flex items-center justify-center">

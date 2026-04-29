@@ -19,15 +19,31 @@ const websiteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: '台灣神明介紹',
-  alternateName: 'Taiwanese Gods',
+  alternateName: ['Taiwanese Gods', '台湾の神様紹介'],
   url: 'https://www.taiwanese-gods.org',
   description: '探索台灣豐富的神明文化，了解各地方信仰、廟宇歷史與神明故事。',
-  inLanguage: ['zh-TW', 'en'],
+  inLanguage: ['zh-TW', 'en', 'ja'],
   publisher: {
     '@type': 'Organization',
     name: '台灣神明介紹',
     url: 'https://www.taiwanese-gods.org',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://www.taiwanese-gods.org/favicon.ico',
+    },
+    sameAs: ['https://www.facebook.com/profile.php?id=61584952887629'],
   },
+};
+
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: '台灣神明介紹',
+  alternateName: ['Taiwanese Gods', '台湾の神様紹介'],
+  url: 'https://www.taiwanese-gods.org',
+  logo: 'https://www.taiwanese-gods.org/favicon.ico',
+  sameAs: ['https://www.facebook.com/profile.php?id=61584952887629'],
+  description: '台灣神明、廟宇、信仰文化的多語系入口網站（繁中／英／日）',
 };
 
 const sections = [
@@ -61,6 +77,7 @@ const introText = '台灣神明信仰、廟宇文化、民間習俗與文化傳�
 
 <Layout metadata={metadata}>
   <JsonLd data={websiteJsonLd} />
+  <JsonLd data={organizationJsonLd} />
 
   <!-- Hero Section -->
   <div class="relative w-full h-[60vh] md:h-[70vh] overflow-hidden flex items-center justify-center">
