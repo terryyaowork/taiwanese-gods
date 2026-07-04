@@ -1,0 +1,53 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import routes from '~/data/ja/routes.json';
+
+const metadata = {
+  title: '台湾寺廟めぐりモデルコース｜テーマ別参拝ルート',
+  description:
+    '台湾のお寺めぐりモデルコース——縁結び・金運・初めての参拝など、テーマ別ルートを MRT での行き方、参拝ポイント、タイムスケジュール付きでご紹介。',
+};
+---
+
+<Layout metadata={metadata}>
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    <div class="text-center mb-12">
+      <h1
+        class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide"
+      >
+        寺廟めぐりモデルコース
+      </h1>
+      <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
+      <p class="text-lg text-gray-700 dark:text-gray-300 font-light max-w-2xl mx-auto">
+        テーマ別の参拝ルートを、MRT での行き方・滞在目安・お願いごとのポイント付きでご案内。そのまま歩くだけで巡れます。
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+      {
+        routes.map((route) => (
+          <a
+            href={`/ja/routes/${route.id}`}
+            class="group block bg-white/90 dark:bg-gray-800/90 rounded-lg overflow-hidden border border-gold-200 shadow-lg hover:shadow-2xl hover:border-red-400 transition duration-300 transform hover:-translate-y-1 p-6"
+          >
+            <div class="flex items-center gap-3 mb-3">
+              <span class="inline-block px-3 py-1 text-sm rounded-full bg-red-100 dark:bg-red-900/60 text-red-800 dark:text-red-200 font-medium">
+                {route.theme}
+              </span>
+              <span class="text-sm text-gray-500 dark:text-gray-400">
+                {route.region}・約 {route.durationHours} 時間
+              </span>
+            </div>
+            <h2 class="text-xl sm:text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-3 group-hover:text-red-700 transition">
+              {route.name}
+            </h2>
+            <p class="text-gray-600 dark:text-gray-400 font-light leading-relaxed line-clamp-3">{route.summary}</p>
+            <div class="mt-4 text-sm text-gray-500 dark:text-gray-400">
+              {route.stops.length} スポット・{route.transport}
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</Layout>
