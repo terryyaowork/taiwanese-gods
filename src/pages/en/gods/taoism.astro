@@ -18,10 +18,14 @@ const resolveImage = (imagePath: string | undefined): ImageMetadata | null => {
 };
 
 const metadata = {
-  title: 'Taoism Gods of Taiwan — Complete Guide | Taiwanese Gods',
+  // EXP-G-001 follow-up (2026-07-04): the 2026-04-27 title "Taoism Gods of
+  // Taiwan — Complete Guide" kept impressions flat but dropped CTR to 0%
+  // (172 imp / 0 clicks over 28d). "Taoism Gods" is non-native phrasing.
+  // Retry with native wording + concrete deity names for information scent.
+  title: 'Taoist Deities in Taiwan: Jade Emperor, Mazu & the Gods People Actually Worship',
   ignoreTitleTemplate: true,
   description:
-    'Browse 15 taoism gods worshipped in Taiwan — Mazu, Guan Yu, Jade Emperor, City God, Earth God, and more. Learn their legends, festivals, and temple locations.',
+    'Meet the 15 Taoist deities Taiwanese people pray to every day — Mazu for safety, Guan Yu for business, the Jade Emperor above all. Legends, festivals, and where to find their temples.',
 };
 
 const collectionJsonLd = {

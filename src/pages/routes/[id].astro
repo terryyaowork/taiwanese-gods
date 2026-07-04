@@ -1,0 +1,130 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import routes from '~/data/zh-TW/routes.json';
+import templesNorth from '~/data/zh-TW/temples-north.json';
+
+export function getStaticPaths() {
+  return routes.map((route) => ({ params: { id: route.id }, props: { route } }));
+}
+
+const { route } = Astro.props;
+
+// Resolve each stop's temple record (currently all stops are northern temples;
+// extend the lookup list when central/south routes are added).
+const templeIndex = new Map(templesNorth.map((t) => [t.id, t]));
+const stops = route.stops.map((stop) => ({ ...stop, temple: templeIndex.get(stop.templeId) }));
+
+const metadata = {
+  title: `${route.name}｜${route.theme}主題廟宇路線`,
+  description: route.summary.slice(0, 150),
+};
+
+const itineraryJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Trip',
+  name: route.name,
+  description: route.summary,
+  itinerary: stops
+    .filter((s) => s.temple)
+    .map((s) => ({
+      '@type': 'Place',
+      name: s.temple.name,
+      address: s.temple.address,
+      geo:
+        s.temple.latitude && s.temple.longitude
+          ? { '@type': 'GeoCoordinates', latitude: s.temple.latitude, longitude: s.temple.longitude }
+          : undefined,
+    })),
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd data={itineraryJsonLd} />
+  <div class="max-w-4xl mx-auto px-4 py-12">
+    <div class="text-center mb-10">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <span
+          class="inline-block px-3 py-1 text-sm rounded-full bg-red-100 dark:bg-red-900/60 text-red-800 dark:text-red-200 font-medium"
+        >
+          {route.theme}
+        </span>
+        <span class="text-sm text-gray-500 dark:text-gray-400">{route.region}・約 {route.durationHours} 小時</span>
+      </div>
+      <h1 class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide">
+        {route.name}
+      </h1>
+      <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
+      <p class="text-lg text-gray-700 dark:text-gray-300 font-light">{route.summary}</p>
+      <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">🚇 {route.transport}</p>
+    </div>
+
+    <!-- 路線各站 -->
+    <div class="space-y-8 mb-14">
+      {
+        stops.map((stop) => (
+          <div class="bg-white/90 dark:bg-gray-800/90 rounded-lg border border-gold-200 shadow-lg overflow-hidden">
+            <div class="p-6 sm:p-8">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-red-800 text-white flex items-center justify-center font-serif font-bold text-lg">
+                  {stop.order}
+                </div>
+                <div class="flex-1">
+                  <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-2">
+                    {stop.temple ? (
+                      <a
+                        href={`/temples/${stop.temple.id}`}
+                        class="text-xl sm:text-2xl font-serif font-bold text-red-900 dark:text-red-300 hover:text-red-700 underline decoration-gold-300"
+                      >
+                        {stop.temple.name}
+                      </a>
+                    ) : (
+                      <span class="text-xl font-serif font-bold text-red-900 dark:text-red-300">{stop.templeId}</span>
+                    )}
+                    <span class="text-sm text-gray-500 dark:text-gray-400">{stop.suggestedTime}</span>
+                  </div>
+                  <p class="text-sm font-medium text-gold-700 dark:text-gold-300 mb-3">🙏 求什麼：{stop.prayFor}</p>
+                  <p class="text-gray-700 dark:text-gray-300 font-light leading-relaxed mb-3">{stop.why}</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-3">💡 {stop.tips}</p>
+                  <div class="flex flex-wrap gap-x-6 gap-y-1 text-sm text-gray-500 dark:text-gray-400">
+                    <span>🚇 {stop.arrival}</span>
+                    <span>⏱ 建議停留 {stop.stayMinutes} 分鐘</span>
+                    {stop.temple?.googleMap && (
+                      <a
+                        href={stop.temple.googleMap}
+                        target="_blank"
+                        rel="noopener"
+                        class="text-red-700 dark:text-red-400 underline decoration-gold-300"
+                      >
+                        📍 Google 地圖
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <!-- 一日時間表 -->
+    <div class="bg-white/80 dark:bg-gray-800/80 rounded-lg border border-gold-200 p-6 sm:p-8 mb-10">
+      <h2 class="text-xl sm:text-2xl font-serif font-bold text-red-900 dark:text-red-300 mb-6">一日時間表</h2>
+      <ol class="space-y-3">
+        {
+          route.itinerary.map((item) => (
+            <li class="flex gap-4 items-baseline">
+              <span class="flex-shrink-0 w-14 font-mono text-sm text-red-800 dark:text-red-300 font-semibold">
+                {item.time}
+              </span>
+              <span class="text-gray-700 dark:text-gray-300 font-light">{item.activity}</span>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+
+    <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">📝 {route.notes}</p>
+  </div>
+</Layout>
