@@ -26,14 +26,15 @@ const itineraryJsonLd = {
   name: route.name,
   description: route.summary,
   itinerary: stops
-    .filter((s) => s.temple)
-    .map((s) => ({
+    .map((s) => s.temple)
+    .filter((t): t is NonNullable<typeof t> => Boolean(t))
+    .map((t) => ({
       '@type': 'Place',
-      name: s.temple.name,
-      address: s.temple.address,
+      name: t.name,
+      address: t.address,
       geo:
-        s.temple.latitude && s.temple.longitude
-          ? { '@type': 'GeoCoordinates', latitude: s.temple.latitude, longitude: s.temple.longitude }
+        t.latitude && t.longitude
+          ? { '@type': 'GeoCoordinates', latitude: t.latitude, longitude: t.longitude }
           : undefined,
     })),
 };
@@ -51,7 +52,9 @@ const itineraryJsonLd = {
         </span>
         <span class="text-sm text-gray-500 dark:text-gray-400">{route.region}・約 {route.durationHours} 小時</span>
       </div>
-      <h1 class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide">
+      <h1
+        class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide"
+      >
         {route.name}
       </h1>
       <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
