@@ -1,67 +1,5 @@
 [
   {
-    "id": "taipei-classic-halfday",
-    "name": "Taipei Classic Temple Half-Day Tour",
-    "theme": "First Visit",
-    "region": "Taipei",
-    "durationHours": 5,
-    "transport": "Entirely by MRT + walking. Grab an EasyCard at any station — it works on all trains and buses.",
-    "summary": "Visiting Taipei for the first time and want to see its temples? This is the route. Start your morning at Lungshan Temple, the city's most celebrated temple with nearly 300 years of incense smoke and some of Taiwan's finest carving craftsmanship. In the afternoon, head to the Xia-Hai City God Temple on Dihua Street — its Matchmaker God (Yue Lao) is so famous that travelers fly in from Japan and Korea just to pray for love. End the day strolling Dadaocheng's heritage street with a coffee and some local goods. Both temples are free to enter, and everything is reachable by MRT.",
-    "stops": [
-      {
-        "order": 1,
-        "templeId": "longshan",
-        "prayFor": "Safety, health, and love — Guanyin and the Matchmaker God are both here",
-        "why": "Founded in 1738, Manka Lungshan Temple is Taipei's oldest and most internationally renowned temple. Its stone pillars, woodwork, and jiannian mosaic roof are considered the pinnacle of Taiwanese temple artistry. The main hall honors Guanyin (the Bodhisattva of Compassion), while the rear hall houses Yue Lao, the Matchmaker God — Buddhist and Taoist deities under one roof, which is exactly how folk religion works in Taiwan.",
-        "tips": "First time at a Taiwanese temple? Read our Temple Visiting Guide first: enter through the Dragon Gate (right side), exit through the Tiger Gate (left side), and always step OVER the threshold, never on it. Photos are fine inside, but skip the flash and avoid pointing your camera at people who are praying.",
-        "stayMinutes": 60,
-        "arrival": "MRT Longshan Temple Station, Exit 1 — about a 2-minute walk",
-        "suggestedTime": "09:30-10:30"
-      },
-      {
-        "order": 2,
-        "templeId": "citygod",
-        "prayFor": "Love and marriage (Taiwan's most famous Matchmaker), plus career luck",
-        "why": "The Xia-Hai City God Temple on Dihua Street is tiny — under 165 square meters — yet it is Taiwan's most famous temple for praying for love. Its Yue Lao is credited with thousands of successful matches every year and has been featured repeatedly in Japanese media. The temple provides prayer instructions in English, Japanese, and Chinese, so you can follow along even without knowing a word of Mandarin.",
-        "tips": "Praying to Yue Lao has its own ritual (the temple has an illustrated guide): purchase the offering set with the red thread, introduce yourself to Yue Lao and describe the partner you hope to meet, then keep the red thread with you. Already have a partner? Thank Yue Lao and pray for a lasting relationship instead.",
-        "stayMinutes": 45,
-        "arrival": "MRT Beimen Station, Exit 3 — about a 10-minute walk",
-        "suggestedTime": "14:00-14:45"
-      }
-    ],
-    "itinerary": [
-      {
-        "time": "09:30",
-        "activity": "Lungshan Temple (Guanyin & Yue Lao)"
-      },
-      {
-        "time": "10:45",
-        "activity": "Stroll Bopiliao Historic Block next door — preserved Qing-dynasty street houses"
-      },
-      {
-        "time": "12:00",
-        "activity": "Lunch around Huaxi Street: pepper buns, squid thick soup, and other local snacks"
-      },
-      {
-        "time": "13:30",
-        "activity": "MRT from Longshan Temple Station to Beimen Station (about 15 minutes)"
-      },
-      {
-        "time": "14:00",
-        "activity": "Xia-Hai City God Temple (City God & Yue Lao)"
-      },
-      {
-        "time": "15:00",
-        "activity": "Dihua Street: dried goods shops, Chinese medicine halls, indie stores and heritage-house cafés"
-      },
-      {
-        "time": "16:30",
-        "activity": "Finish at Dadaocheng Wharf with a view over the Tamsui River"
-      }
-    ],
-    "notes": "Both temples are free to enter with no reservation needed. There is no strict dress code, but avoid overly revealing clothing out of respect. Incense and offerings can be purchased at the temples (Lungshan Temple has phased out incense burning — praying with palms together is the norm there). For the full etiquette walkthrough, see our Temple Visiting Guide."
-  },
-  {
     "id": "north-wealth-day-trip",
     "name": "Northern Taiwan Wealth-Praying Day Trip",
     "theme": "Praying for Wealth",
@@ -136,6 +74,68 @@
       }
     ],
     "notes": "All three temples are free to enter. Crowds swell on the 1st and 15th of the lunar month and on weekends, so if you prefer some quiet, go on a weekday. The general rule for wealth-praying: state your name, birth date, and address, explain what you are asking for, and pledge only a thanks-offering you can comfortably keep."
+  },
+  {
+    "id": "taipei-classic-halfday",
+    "name": "Taipei Classic Temple Half-Day Tour",
+    "theme": "First Visit",
+    "region": "Taipei",
+    "durationHours": 5,
+    "transport": "Entirely by MRT + walking. Grab an EasyCard at any station — it works on all trains and buses.",
+    "summary": "Visiting Taipei for the first time and want to see its temples? This is the route. Start your morning at Lungshan Temple, the city's most celebrated temple with nearly 300 years of incense smoke and some of Taiwan's finest carving craftsmanship. In the afternoon, head to the Xia-Hai City God Temple on Dihua Street — its Matchmaker God (Yue Lao) is so famous that travelers fly in from Japan and Korea just to pray for love. End the day strolling Dadaocheng's heritage street with a coffee and some local goods. Both temples are free to enter, and everything is reachable by MRT.",
+    "stops": [
+      {
+        "order": 1,
+        "templeId": "longshan",
+        "prayFor": "Safety, health, and love — Guanyin and the Matchmaker God are both here",
+        "why": "Founded in 1738, Manka Lungshan Temple is Taipei's oldest and most internationally renowned temple. Its stone pillars, woodwork, and jiannian mosaic roof are considered the pinnacle of Taiwanese temple artistry. The main hall honors Guanyin (the Bodhisattva of Compassion), while the rear hall houses Yue Lao, the Matchmaker God — Buddhist and Taoist deities under one roof, which is exactly how folk religion works in Taiwan.",
+        "tips": "First time at a Taiwanese temple? Read our Temple Visiting Guide first: enter through the Dragon Gate (right side), exit through the Tiger Gate (left side), and always step OVER the threshold, never on it. Photos are fine inside, but skip the flash and avoid pointing your camera at people who are praying.",
+        "stayMinutes": 60,
+        "arrival": "MRT Longshan Temple Station, Exit 1 — about a 2-minute walk",
+        "suggestedTime": "09:30-10:30"
+      },
+      {
+        "order": 2,
+        "templeId": "citygod",
+        "prayFor": "Love and marriage (Taiwan's most famous Matchmaker), plus career luck",
+        "why": "The Xia-Hai City God Temple on Dihua Street is tiny — under 165 square meters — yet it is Taiwan's most famous temple for praying for love. Its Yue Lao is credited with thousands of successful matches every year and has been featured repeatedly in Japanese media. The temple provides prayer instructions in English, Japanese, and Chinese, so you can follow along even without knowing a word of Mandarin.",
+        "tips": "Praying to Yue Lao has its own ritual (the temple has an illustrated guide): purchase the offering set with the red thread, introduce yourself to Yue Lao and describe the partner you hope to meet, then keep the red thread with you. Already have a partner? Thank Yue Lao and pray for a lasting relationship instead.",
+        "stayMinutes": 45,
+        "arrival": "MRT Beimen Station, Exit 3 — about a 10-minute walk",
+        "suggestedTime": "14:00-14:45"
+      }
+    ],
+    "itinerary": [
+      {
+        "time": "09:30",
+        "activity": "Lungshan Temple (Guanyin & Yue Lao)"
+      },
+      {
+        "time": "10:45",
+        "activity": "Stroll Bopiliao Historic Block next door — preserved Qing-dynasty street houses"
+      },
+      {
+        "time": "12:00",
+        "activity": "Lunch around Huaxi Street: pepper buns, squid thick soup, and other local snacks"
+      },
+      {
+        "time": "13:30",
+        "activity": "MRT from Longshan Temple Station to Beimen Station (about 15 minutes)"
+      },
+      {
+        "time": "14:00",
+        "activity": "Xia-Hai City God Temple (City God & Yue Lao)"
+      },
+      {
+        "time": "15:00",
+        "activity": "Dihua Street: dried goods shops, Chinese medicine halls, indie stores and heritage-house cafés"
+      },
+      {
+        "time": "16:30",
+        "activity": "Finish at Dadaocheng Wharf with a view over the Tamsui River"
+      }
+    ],
+    "notes": "Both temples are free to enter with no reservation needed. There is no strict dress code, but avoid overly revealing clothing out of respect. Incense and offerings can be purchased at the temples (Lungshan Temple has phased out incense burning — praying with palms together is the norm there). For the full etiquette walkthrough, see our Temple Visiting Guide."
   },
   {
     "id": "dajia-mazu-pilgrimage",
