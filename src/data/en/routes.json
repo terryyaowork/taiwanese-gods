@@ -30,7 +30,10 @@
       }
     ],
     "itinerary": [
-      { "time": "09:30", "activity": "Lungshan Temple (Guanyin & Yue Lao)" },
+      {
+        "time": "09:30",
+        "activity": "Lungshan Temple (Guanyin & Yue Lao)"
+      },
       {
         "time": "10:45",
         "activity": "Stroll Bopiliao Historic Block next door — preserved Qing-dynasty street houses"
@@ -39,14 +42,221 @@
         "time": "12:00",
         "activity": "Lunch around Huaxi Street: pepper buns, squid thick soup, and other local snacks"
       },
-      { "time": "13:30", "activity": "MRT from Longshan Temple Station to Beimen Station (about 15 minutes)" },
-      { "time": "14:00", "activity": "Xia-Hai City God Temple (City God & Yue Lao)" },
+      {
+        "time": "13:30",
+        "activity": "MRT from Longshan Temple Station to Beimen Station (about 15 minutes)"
+      },
+      {
+        "time": "14:00",
+        "activity": "Xia-Hai City God Temple (City God & Yue Lao)"
+      },
       {
         "time": "15:00",
         "activity": "Dihua Street: dried goods shops, Chinese medicine halls, indie stores and heritage-house cafés"
       },
-      { "time": "16:30", "activity": "Finish at Dadaocheng Wharf with a view over the Tamsui River" }
+      {
+        "time": "16:30",
+        "activity": "Finish at Dadaocheng Wharf with a view over the Tamsui River"
+      }
     ],
     "notes": "Both temples are free to enter with no reservation needed. There is no strict dress code, but avoid overly revealing clothing out of respect. Incense and offerings can be purchased at the temples (Lungshan Temple has phased out incense burning — praying with palms together is the norm there). For the full etiquette walkthrough, see our Temple Visiting Guide."
+  },
+  {
+    "id": "north-wealth-day-trip",
+    "name": "Northern Taiwan Wealth-Praying Day Trip",
+    "theme": "Praying for Wealth",
+    "region": "Taipei",
+    "durationHours": 6,
+    "transport": "All by MRT and on foot — no car needed. An EasyCard covers every train and bus.",
+    "summary": "Three of Taipei's busiest wealth-praying temples in a single day. Start the morning at Xingtian Temple, where Guan Sheng Dijun — Lord Guan, the merchants' patron of loyalty and good faith — presides over the 'honest wealth' earned by fair dealing. Around midday, cross town to Songshan Ciyou Temple, where Mazu is asked for the quieter blessing of a safe, steady livelihood. By late afternoon you reach the Xia-Hai City God Temple on Dihua Street, where the City God governs opportunity and fortune — and Yue Lao, the Matchmaker God, waits in the same small hall. Finish at Dadaocheng Wharf as the sun goes down over the river. Every stop is a short walk from an MRT station.",
+    "stops": [
+      {
+        "order": 1,
+        "templeId": "xingtian",
+        "prayFor": "A thriving career and honest wealth",
+        "why": "Xingtian Temple is dedicated to Guan Sheng Dijun — Lord Guan (Guan Yu) — whom the business world treats as its guardian. His two great virtues, loyalty and keeping one's word, are exactly the 'honest wealth' that merchants come to pray for. It is one of the busiest temples in Taipei, and its free soul-calming (shoujing) blessing is a quiet ritual worth witnessing.",
+        "tips": "Xingtian Temple burns no incense, sells no gold paper, and keeps no donation box — you simply press your palms together and pray. The soul-calming line can get long, so a weekday morning is your best bet.",
+        "stayMinutes": 60,
+        "arrival": "MRT Xingtian Temple Station, Exit 3 — about a 3-minute walk",
+        "suggestedTime": "09:30-10:30"
+      },
+      {
+        "order": 2,
+        "templeId": "ciyou",
+        "prayFor": "Peaceful prosperity and a settled household",
+        "why": "Songshan Ciyou Temple is the spiritual heart of the Songshan district, dedicated to Mazu, the Heavenly Holy Mother. Beyond wealth, what Mazu grants is 'prospering in peace' — settle yourself first, then let the business grow. It is the old merchants' wisdom.",
+        "tips": "The temple sits right at the mouth of the Raohe Street Night Market. If your day runs into the evening, praying and then wandering straight into the market is the local move.",
+        "stayMinutes": 45,
+        "arrival": "MRT Songshan Station, Exit 5 — about a 2-minute walk",
+        "suggestedTime": "11:30-12:15"
+      },
+      {
+        "order": 3,
+        "templeId": "citygod",
+        "prayFor": "Opportune fortune, good connections, and love",
+        "why": "The Xia-Hai City God Temple on Dihua Street is famous across Taiwan for its Yue Lao, the Matchmaker God — but the City God himself governs a district's rewards, punishments, and chances. For a person in business, this is where you pray for the 'fortune of timing': the right moment, the right people, the right connections.",
+        "tips": "The temple is small, but the stream of worshippers never stops. Afterward, walk the length of Dihua Street — the dried-goods sellers, herbal-medicine halls, and fabric shops are century-old family businesses, and it is the most characterful place to pick up a gift to take home.",
+        "stayMinutes": 45,
+        "arrival": "MRT Beimen Station, Exit 3 — about a 10-minute walk; or a 12-minute walk from Daqiaotou Station",
+        "suggestedTime": "15:00-15:45"
+      }
+    ],
+    "itinerary": [
+      {
+        "time": "09:30",
+        "activity": "Xingtian Temple (Guan Sheng Dijun — praying for career and honest wealth)"
+      },
+      {
+        "time": "10:45",
+        "activity": "MRT from Xingtian Temple Station to Songshan Station (change at Zhongshan Junior High for the Songshan line, about 20 minutes)"
+      },
+      {
+        "time": "11:30",
+        "activity": "Songshan Ciyou Temple (Mazu — praying for peaceful prosperity)"
+      },
+      {
+        "time": "12:30",
+        "activity": "Lunch around Raohe Street: Fuzhou pepper buns and herbal pork-rib soup"
+      },
+      {
+        "time": "14:15",
+        "activity": "MRT from Songshan Station to Beimen Station (about 25 minutes)"
+      },
+      {
+        "time": "15:00",
+        "activity": "Xia-Hai City God Temple (City God & Yue Lao — praying for opportunity)"
+      },
+      {
+        "time": "16:00",
+        "activity": "Stroll Dihua Street: dried goods and gifts to take home"
+      },
+      {
+        "time": "17:30",
+        "activity": "Finish at Dadaocheng Wharf for the sunset over the Tamsui River"
+      }
+    ],
+    "notes": "All three temples are free to enter. Crowds swell on the 1st and 15th of the lunar month and on weekends, so if you prefer some quiet, go on a weekday. The general rule for wealth-praying: state your name, birth date, and address, explain what you are asking for, and pledge only a thanks-offering you can comfortably keep."
+  },
+  {
+    "id": "dajia-mazu-pilgrimage",
+    "name": "Dajia Mazu Pilgrimage Trail",
+    "theme": "Pilgrimage",
+    "region": "Taichung & Chiayi",
+    "durationHours": 6,
+    "transport": "Driving is easiest (Dajia to Xingang is about 1.5 hours on the freeway). Rail plus a connecting bus works too, but the transfers eat time — for one person, driving is the most unhurried way to go.",
+    "summary": "Every year in the third lunar month, millions join the palanquin of the Dajia Mazu for a nine-day, eight-night walk of more than 300 kilometers — but this route asks you to skip those nine days, and to walk only the first and last stops. Pick a weekday, and go alone: at dawn, Dajia Zhenlan Temple holds nothing but the footsteps of locals lighting their morning incense; in the afternoon, Xingang Fengtian Temple lets you linger over Ye Wang's cochin pottery, then sit on a bench in the temple courtyard until you no longer want to leave. The 300 kilometers in between belong to the millions who walk them with Mazu each year; you don't need the whole road. At the two ends, say what is on your mind plainly — and that is your pilgrimage.",
+    "stops": [
+      {
+        "order": 1,
+        "templeId": "zhenlan",
+        "prayFor": "A safe setting-out, and telling Mazu what is on your mind",
+        "why": "Dajia Zhenlan Temple is the most famous Mazu temple in Taiwan and the starting point of the nine-day, eight-night pilgrimage. During the procession it is shoulder to shoulder here — but on an ordinary weekday morning, the hall usually holds only locals going about their daily worship: the same Mazu, an entirely different quiet. The 276-kilogram solid-gold Mazu statue downstairs is yours to see, too, without the crush of a crowd.",
+        "tips": "Weekday mornings are the calmest; the 1st and 15th of the lunar month and weekends are noticeably busier. Tell Mazu that today you are walking a pilgrimage of your own, alone — then don't rush off. Sit in the courtyard a while first. For a gift to take home, Dajia's famous crumbly butter shortcakes come from the old house Yu Zhen Xin, which has shops right around the temple.",
+        "stayMinutes": 105,
+        "arrival": "About a 10-minute walk from Dajia Rail Station; by car, exit National Freeway 3 at the Dajia interchange",
+        "suggestedTime": "09:00-10:45"
+      },
+      {
+        "order": 2,
+        "templeId": "xingang-fengtian",
+        "prayFor": "A vow fulfilled, and the Tiger General's guard over your wealth",
+        "why": "Xingang Fengtian Temple is known as the home of the 'First Mazu in Taiwan' and is the end point of the Dajia Mazu pilgrimage each year — stand here and you have walked, alone, both the head and the tail of the whole route. Its Tiger General (Huye) is enshrined on top of the altar table rather than beneath it as is usual, and the old saying 'the herald of Beigang, the Tiger General of Xingang' speaks to his renown. The temple's treasures are the cochin-pottery works of the master Ye Wang.",
+        "tips": "Weekday afternoons draw few pilgrims — take your time finding Ye Wang's cochin pottery, no need to hurry. The duck-meat thick soup by the temple gate is a taste locals have known since childhood: a seat to sit down in, and no line. Buy a pack of Xingang taffy, carry it to a bench in the courtyard, and eat it with the sunset — that bench is where this route ends.",
+        "stayMinutes": 120,
+        "arrival": "From Chiayi Rail Station, take a Beigang-bound bus and get off at the Xingang Fengtian Temple stop, about 40 minutes; by car, exit National Freeway 1 at Dalin or Minxiong and follow the county road",
+        "suggestedTime": "13:30-15:30"
+      }
+    ],
+    "itinerary": [
+      {
+        "time": "09:00",
+        "activity": "Dajia Zhenlan Temple (Mazu — telling her you are setting out on a pilgrimage of your own) — quietest at dawn on a weekday"
+      },
+      {
+        "time": "10:15",
+        "activity": "Sit in the courtyard a while; pick up a box of butter shortcakes on Shuntian Road, unhurried"
+      },
+      {
+        "time": "11:00",
+        "activity": "Drive south to Xingang (about 1.5 hours on the freeway) — nothing scheduled along the way"
+      },
+      {
+        "time": "12:45",
+        "activity": "Lunch by the Xingang temple gate: a bowl of duck-meat thick soup, eaten slowly, sitting down"
+      },
+      {
+        "time": "13:30",
+        "activity": "Xingang Fengtian Temple (First Mazu, the Tiger General & Ye Wang's cochin pottery)"
+      },
+      {
+        "time": "15:00",
+        "activity": "Sit on a courtyard bench with Xingang taffy and the sunset — this is the end; no rush home"
+      }
+    ],
+    "notes": "Both temples are free to enter. The point of this route is to walk Mazu's road while avoiding the crowds: during the Dajia Mazu procession (the setting-out date is chosen by divination blocks, usually around the third lunar month) the whole route is packed, so steer clear of those nine days; the 1st and 15th of the lunar month and weekends are noticeably busier too, and a weekday-morning start is ideal. Reporting in alone is simple: your name and why you have come, said to Mazu — that is all. If you still have time on the way back, Changhua Nanyao Temple (the first-night resting place of the Dajia procession, whose rear Guanyin hall has rare Greek-style column capitals), just off the Changhua interchange, is worth a look — but that is a bonus, not homework."
+  },
+  {
+    "id": "tainan-heritage-walk",
+    "name": "Tainan Old-Capital Temple Walk",
+    "theme": "Old-Capital Stroll",
+    "region": "Tainan",
+    "durationHours": 6,
+    "transport": "All on foot — the three stops are all in Tainan's West Central District, never more than a 10-minute walk apart. Just right for one person.",
+    "summary": "By mid-morning on a weekday, the incense smoke at the Grand Mazu Temple outnumbers the visitors — this is the best hour to see the old capital of Tainan. This route is built for walking alone, and it has only three stops: the Tainan Grand Mazu Temple, Taiwan's first official Mazu temple (and once the palace of the Ming loyalist Prince Ningjing); the Grand Martial Temple one lane over, with its 66-meter vermilion wall; and, a few minutes' walk on, the Tainan Tiantan, the Altar of Heaven. The three sit less than ten minutes apart on foot, and you can walk them in a single afternoon with time to spare — the benches in the temple courtyards, a bowl of unhurried fish soup down a side lane, a plate of sliced fruit at the old Lily Fruit Shop across from the Confucius Temple: that is the real body of this walk. Three-hundred-year-old Tainan isn't going anywhere. Take it slow — that is exactly enough.",
+    "stops": [
+      {
+        "order": 1,
+        "templeId": "tainan-grand-mazu",
+        "prayFor": "Peace, and warmth in love (its Yue Lao watches over the one-sided and the deepening)",
+        "why": "The Tainan Grand Mazu Temple is the only Mazu temple in Taiwan built by imperial decree, and once the palace of the Ming loyalist Prince Ningjing, Zhu Shugui — the only temple in Taiwan converted from a prince's residence. The Yue Lao in the rear hall is said to look after those in unrequited love and those praying for a relationship to grow warmer; come alone, and you have all the time you need to say it out loud.",
+        "tips": "Weekday mornings draw the fewest worshippers — the hall is quiet enough to hear your own footsteps. The Grand Mazu Temple hides down a lane off Yongfu Road: an unassuming front, a world within. The Qing imperial plaque 'Huihuang Haishi' hangs inside the hall — look up and find it.",
+        "stayMinutes": 60,
+        "arrival": "About a 20-minute walk from Tainan Rail Station; or take a city bus to the 'Chihkan Tower' stop, then walk about 3 minutes",
+        "suggestedTime": "09:30-10:30"
+      },
+      {
+        "order": 2,
+        "templeId": "tainan-martial",
+        "prayFor": "Uprightness in your work, and cutting off bad romantic luck",
+        "why": "The Grand Martial Temple is the only Guan Di temple in Taiwan included in the official state rites, right next door to the Grand Mazu Temple. Its 66-meter vermilion wall, rising and falling along the lane and praised as the 'finest in Jiangnan,' is worth walking slowly beneath more than photographing. Inside hangs the plaque 'Da Zhang Fu' (A True Man) in the hand of the Qing Yongzheng Emperor, and the statue of Guan Sheng Dijun, eyes blazing, radiates the martial saint's upright force.",
+        "tips": "The Yifeng winter-melon tea stand directly across from the temple gate keeps a permanent line — a glance at the queue as you pass is plenty; no need to join it, when the side lanes are full of old shops where you can actually sit down. The red wall catches the light in the afternoon, so if you want a photo, loop back to it before you leave.",
+        "stayMinutes": 60,
+        "arrival": "About a 1-minute walk from the Grand Mazu Temple — the two are neighbors",
+        "suggestedTime": "10:45-11:45"
+      },
+      {
+        "order": 3,
+        "templeId": "tainan-tiantan",
+        "prayFor": "Life's big turning points — the one wish that matters most (the Jade Emperor is highest of all)",
+        "why": "The Tainan Tiantan, commonly called the 'Heaven God Temple,' is Taiwan's first altar dedicated solely to the Jade Emperor, where Qing officials made their annual offerings to Heaven. The single-character plaque 'Yi' (One) high in the main hall is called the most valuable plaque in all Taiwan — because the Jade Emperor is supreme, and of a thousand words only the one character 'One' can stand for it.",
+        "tips": "Tainan people come to pray to the Jade Emperor only for the big things: a move, a new business, an exam, a marriage. If there is one wish on this trip that matters most to you, save it for this stop. For quiet, avoid the ninth day of the first lunar month (the Jade Emperor's birthday) and the 1st and 15th — a weekday afternoon is the most serene.",
+        "stayMinutes": 75,
+        "arrival": "About a 5-minute walk from the Grand Martial Temple",
+        "suggestedTime": "13:30-14:45"
+      }
+    ],
+    "itinerary": [
+      {
+        "time": "09:30",
+        "activity": "Tainan Grand Mazu Temple (Mazu & Yue Lao) — fewest worshippers on a weekday morning"
+      },
+      {
+        "time": "10:45",
+        "activity": "Grand Martial Temple (Guan Sheng Dijun); walk the vermilion wall slowly; passing the Yifeng winter-melon tea, one glance at the line is enough"
+      },
+      {
+        "time": "12:00",
+        "activity": "Lunch: duck down a side lane for a noodle or fish-soup shop with seats — the kind with no queue and an owner who won't rush you — and eat slowly"
+      },
+      {
+        "time": "13:30",
+        "activity": "Tainan Tiantan (Jade Emperor & the 'Yi' plaque); save your most important wish for the Jade Emperor, then sit a while in the courtyard"
+      },
+      {
+        "time": "15:00",
+        "activity": "Walk about 10 minutes south to the Lily Fruit Shop across from the Confucius Temple to wind down — an old shop with seats, a plate of sliced fruit, and stay as long as you like"
+      }
+    ],
+    "notes": "All three stops are free to enter. For quiet, come on a weekday and avoid the 1st and 15th of the lunar month and weekends; the ninth day of the first lunar month, the Jade Emperor's birthday, is the Tiantan's grandest and most crowded day. Walking alone, there is no schedule to keep — the lanes between the temples are the scenery themselves, so if you lose your way, don't rush to check the map. If you still have energy, Chihkan Tower (the base of the fort the Dutch built in 1653; ticketed), on the block directly across from the Grand Martial Temple, is quietest after its evening lights come on — a worthy add-on; if you are spent, save it for next time."
   }
 ]
