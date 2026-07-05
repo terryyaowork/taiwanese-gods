@@ -1,86 +1,5 @@
 [
   {
-    "id": "xingang-fengtian",
-    "name": "Xingang Fengtian Temple",
-    "location": "Xingang Township, Chiayi County",
-    "address": "No. 53, Xinmin Rd, Xingang Township, Chiayi County",
-    "mainDeities": [
-      {
-        "id": "mazu",
-        "name": "Mazu"
-      },
-      {
-        "id": "tigerlord",
-        "name": "Tiger Lord"
-      }
-    ],
-    "description": "Xingang Fengtian Temple is a renowned Mazu temple, claiming the title of 'First Mazu in Taiwan'. A unique feature is its Tiger General (Huye) strictly worshipped *on* the altar table, unlike most temples where it is under the table. The saying 'Bengang has the Herald, Xingang has Lord Tiger' highlights its fame. Rich in historical artifacts and plaques, it witnesses over 300 years of history and is a key stop for the Dajia Mazu Pilgrimage.",
-    "history": "Tracing back to 1700 as Bengang Tianhou Temple. After the original temple was destroyed by floods in 1799, it was relocated and renamed Fengtian Temple. Generations of renovations have preserved exquisite cut porcelain and Koji pottery arts.",
-    "images": ["/assets/images/temples/temple-xingangfengtian.png"],
-    "googleMap": "https://maps.app.goo.gl/search/Xingang+Fengtian+Temple",
-    "latitude": 23.5567967,
-    "longitude": 120.3479018
-  },
-  {
-    "id": "chiayi-citygod",
-    "name": "Chiayi City God Temple",
-    "location": "East District, Chiayi City",
-    "address": "No. 168, Wufeng N. Rd, East District, Chiayi City",
-    "mainDeities": [
-      {
-        "id": "chenghuang",
-        "name": "City God"
-      }
-    ],
-    "description": "Chiayi City God Temple is the only county-level City God temple in Taiwan to receive an imperial title — the 'Marquis of Suijing,' bestowed by Emperor Guangxu in 1875. The current building dates to 1940, blending Hokkien and Japanese colonial architectural styles. Designated a national monument in 2015, it houses precious historical artifacts including Qing Dynasty plaques and stone tablets. The annual 7th lunar month festival is one of Chiayi's grandest religious events.",
-    "history": "Founded in 1694 as a simple tablet shrine in Zhuluo County. In 1715, County Magistrate Zhou Zhongxuan donated his salary to build a proper temple. The current structure was completed in 1940. In 1875, Emperor Guangxu bestowed the title 'Marquis of Suijing' on the City God — a unique honor for a county-level deity. Designated a national monument in 2015.",
-    "images": ["/assets/images/temples/temple-chiayi-citygod.png"],
-    "url": "https://www.chiayi.gov.tw/",
-    "googleMap": "https://maps.app.goo.gl/chiayi-citygod",
-    "latitude": 23.4784142,
-    "longitude": 120.454231
-  },
-  {
-    "id": "tainan-confucius",
-    "name": "Tainan Confucius Temple",
-    "location": "West Central District, Tainan City",
-    "address": "No. 2, Nanmen Rd, West Central District, Tainan City",
-    "mainDeities": [
-      {
-        "id": "confucius",
-        "name": "Confucius"
-      }
-    ],
-    "description": "Tainan Confucius Temple, known as the 'First Academy in Taiwan', was the highest educational institute in Taiwan during the Qing Dynasty. It follows the traditional 'School on the Left, Temple on the Right' layout. The 'First Academy in Taiwan' plaque bestowed by Emperor Kangxi hangs proudly at the entrance. The annual Confucius Ceremony on September 28th preserves ancient rituals, including the 'Ba Yi Dance', making it a key site for Confucian culture.",
-    "history": "Founded in 1665 by Zheng Jing upon the advice of Chen Yonghua to promote education and cultivate talent. Expanded frequently during the Qing Dynasty. Used for other purposes during the Japanese era but restored after WWII. Now a National Monument and the center of Confucian culture in Taiwan.",
-    "images": ["/assets/images/temples/temple-tainanconfucius.png"],
-    "googleMap": "https://maps.app.goo.gl/search/Tainan+Confucius+Temple",
-    "latitude": 22.9903049,
-    "longitude": 120.2042518
-  },
-  {
-    "id": "chihkan-tower",
-    "name": "Chihkan Tower (Fort Provintia)",
-    "location": "West Central District, Tainan City",
-    "address": "No. 212, Sec. 2, Minzhu Rd, West Central District, Tainan City",
-    "mainDeities": [
-      {
-        "id": "wenchang",
-        "name": "Wenchang Dijun"
-      },
-      {
-        "id": "guanyin",
-        "name": "Guanyin Bodhisattva"
-      }
-    ],
-    "description": "Originally built by the Dutch in 1653 as Fort Provintia, Chihkan Tower is a premier historic site and a symbol of Tainan. The current complex, featuring the Haishen Temple and Wenchang Pavilion, stands atop the original Dutch foundations. It is famous for the 'Nine Tortoise Steles' bestowed by Emperor Qianlong, a significant historical artifact. Students flock to the garden to pray to Kuixing (God of Examinations) for academic success.",
-    "history": "Built by the Dutch in 1653 as Fort Provintia. Conquered by Koxinga in 1661 and became the administrative center 'Chengtian Prefecture'. After planned destruction and earthquakes in the Qing Dynasty, it was rebuilt in the Guangxu era as Haishen Temple and Wenchang Pavilion, blending Dutch foundations with Chinese architecture.",
-    "images": ["/assets/images/temples/temple-chihkan.png"],
-    "googleMap": "https://maps.app.goo.gl/search/Chihkan+Tower",
-    "latitude": 22.9972744,
-    "longitude": 120.2027032
-  },
-  {
     "id": "nankunshen",
     "name": "Nankunshen Daitian Temple",
     "location": "Beimen District, Tainan City",
@@ -96,7 +15,8 @@
     "images": ["/assets/images/temples/temple-nankunshen.png"],
     "googleMap": "https://maps.app.goo.gl/search/Nankunshen+Daitian+Temple",
     "latitude": 23.2858993,
-    "longitude": 120.1433204
+    "longitude": 120.1433204,
+    "sortOrder": 0
   },
   {
     "id": "tainan-grand-mazu",
@@ -118,7 +38,8 @@
     "images": ["/assets/images/temples/temple-tainanmazu.png"],
     "googleMap": "https://maps.app.goo.gl/search/Tainan+Grand+Mazu+Temple",
     "latitude": 22.9965179,
-    "longitude": 120.2017095
+    "longitude": 120.2017095,
+    "sortOrder": 1
   },
   {
     "id": "tainan-martial",
@@ -145,43 +66,8 @@
     "url": "https://www.facebook.com/TainanGrandMartialTemple/",
     "googleMap": "https://maps.app.goo.gl/search/Tainan+Grand+Martial+Temple",
     "latitude": 22.9965239,
-    "longitude": 120.2021668
-  },
-  {
-    "id": "tainan-tiantan",
-    "name": "Tainan Tiantan (Altar of Heaven)",
-    "location": "West Central District, Tainan City",
-    "address": "No. 16, Ln. 84, Sec. 2, Zhongyi Rd., West Central Dist., Tainan City",
-    "mainDeities": [
-      {
-        "id": "yuhuang",
-        "name": "Jade Emperor"
-      }
-    ],
-    "description": "Tainan Tiantan, commonly called 'Heaven God Temple', is the first official Altar of Heaven in Taiwan, dedicated to the Jade Emperor. In the main hall hangs a famous single-character plaque 'Yi' (One), gifted by Emperor Xianfeng — symbolizing that Heaven is supreme. The Jade Emperor's Birthday on the 9th of the 1st lunar month sees grand sacrificial offerings.",
-    "history": "Founded in 1854 by Tainan merchants and gentry as Taiwan's first official Altar of Heaven. Qing Dynasty officials held annual Heaven worship ceremonies here. The temple preserves several imperial plaques, with the single-character 'Yi' plaque being the most treasured artifact.",
-    "images": ["/assets/images/temples/temple-tainan-tiantan.png"],
-    "latitude": 22.9937209,
-    "longitude": 120.2041994
-  },
-  {
-    "id": "fongshan-longshan",
-    "name": "Fongshan Longshan Temple",
-    "location": "Fongshan District, Kaohsiung City",
-    "address": "No. 7, Zhongshan Rd, Fongshan District, Kaohsiung City",
-    "mainDeities": [
-      {
-        "id": "guanyin",
-        "name": "Guanyin Bodhisattva"
-      }
-    ],
-    "description": "Fongshan Longshan Temple is one of the best-preserved Longshan Temples from the Qing Dynasty in Taiwan, designated as a National Monument. It is distinct from other Longshan temples established by Sanyi immigrants. The temple is renowned for its exquisite 'Jian Nian' (cut porcelain) and clay sculptures, which are among the finest in Taiwan. As the premier of Fongshan's four ancient temples, it exudes a solemn and rustic atmosphere, bearing witness to the history of the ancient walled city.",
-    "history": "Believed to be founded in the early Qianlong era. Legend says an oil merchant from Fujian left a Guanyin amulet on a guava tree here; it glowed at night, leading locals to build a temple. Major renovations occurred in 1764 led by Magistrate Wang Yingzeng. The current structure reflects renovations from the Daoguang era and the Japanese colonial period.",
-    "images": ["/assets/images/temples/temple-fongshanlongshan.png"],
-    "url": "https://www.facebook.com/FongshanLongshanTemple/",
-    "googleMap": "https://maps.app.goo.gl/search/Fongshan+Longshan+Temple",
-    "latitude": 22.6206562,
-    "longitude": 120.3620084
+    "longitude": 120.2021668,
+    "sortOrder": 2
   },
   {
     "id": "foguangshan",
@@ -203,7 +89,91 @@
     "images": ["/assets/images/temples/temple-foguangshan.png"],
     "url": "https://www.fgs.org.tw",
     "latitude": 22.750556,
-    "longitude": 120.445278
+    "longitude": 120.445278,
+    "sortOrder": 3
+  },
+  {
+    "id": "xingang-fengtian",
+    "name": "Xingang Fengtian Temple",
+    "location": "Xingang Township, Chiayi County",
+    "address": "No. 53, Xinmin Rd, Xingang Township, Chiayi County",
+    "mainDeities": [
+      {
+        "id": "mazu",
+        "name": "Mazu"
+      },
+      {
+        "id": "tigerlord",
+        "name": "Tiger Lord"
+      }
+    ],
+    "description": "Xingang Fengtian Temple is a renowned Mazu temple, claiming the title of 'First Mazu in Taiwan'. A unique feature is its Tiger General (Huye) strictly worshipped *on* the altar table, unlike most temples where it is under the table. The saying 'Bengang has the Herald, Xingang has Lord Tiger' highlights its fame. Rich in historical artifacts and plaques, it witnesses over 300 years of history and is a key stop for the Dajia Mazu Pilgrimage.",
+    "history": "Tracing back to 1700 as Bengang Tianhou Temple. After the original temple was destroyed by floods in 1799, it was relocated and renamed Fengtian Temple. Generations of renovations have preserved exquisite cut porcelain and Koji pottery arts.",
+    "images": ["/assets/images/temples/temple-xingangfengtian.png"],
+    "googleMap": "https://maps.app.goo.gl/search/Xingang+Fengtian+Temple",
+    "latitude": 23.5567967,
+    "longitude": 120.3479018,
+    "sortOrder": 4
+  },
+  {
+    "id": "tainan-tiantan",
+    "name": "Tainan Tiantan (Altar of Heaven)",
+    "location": "West Central District, Tainan City",
+    "address": "No. 16, Ln. 84, Sec. 2, Zhongyi Rd., West Central Dist., Tainan City",
+    "mainDeities": [
+      {
+        "id": "yuhuang",
+        "name": "Jade Emperor"
+      }
+    ],
+    "description": "Tainan Tiantan, commonly called 'Heaven God Temple', is the first official Altar of Heaven in Taiwan, dedicated to the Jade Emperor. In the main hall hangs a famous single-character plaque 'Yi' (One), gifted by Emperor Xianfeng — symbolizing that Heaven is supreme. The Jade Emperor's Birthday on the 9th of the 1st lunar month sees grand sacrificial offerings.",
+    "history": "Founded in 1854 by Tainan merchants and gentry as Taiwan's first official Altar of Heaven. Qing Dynasty officials held annual Heaven worship ceremonies here. The temple preserves several imperial plaques, with the single-character 'Yi' plaque being the most treasured artifact.",
+    "images": ["/assets/images/temples/temple-tainan-tiantan.png"],
+    "latitude": 22.9937209,
+    "longitude": 120.2041994,
+    "sortOrder": 5
+  },
+  {
+    "id": "tainan-confucius",
+    "name": "Tainan Confucius Temple",
+    "location": "West Central District, Tainan City",
+    "address": "No. 2, Nanmen Rd, West Central District, Tainan City",
+    "mainDeities": [
+      {
+        "id": "confucius",
+        "name": "Confucius"
+      }
+    ],
+    "description": "Tainan Confucius Temple, known as the 'First Academy in Taiwan', was the highest educational institute in Taiwan during the Qing Dynasty. It follows the traditional 'School on the Left, Temple on the Right' layout. The 'First Academy in Taiwan' plaque bestowed by Emperor Kangxi hangs proudly at the entrance. The annual Confucius Ceremony on September 28th preserves ancient rituals, including the 'Ba Yi Dance', making it a key site for Confucian culture.",
+    "history": "Founded in 1665 by Zheng Jing upon the advice of Chen Yonghua to promote education and cultivate talent. Expanded frequently during the Qing Dynasty. Used for other purposes during the Japanese era but restored after WWII. Now a National Monument and the center of Confucian culture in Taiwan.",
+    "images": ["/assets/images/temples/temple-tainanconfucius.png"],
+    "googleMap": "https://maps.app.goo.gl/search/Tainan+Confucius+Temple",
+    "latitude": 22.9903049,
+    "longitude": 120.2042518,
+    "sortOrder": 6
+  },
+  {
+    "id": "chihkan-tower",
+    "name": "Chihkan Tower (Fort Provintia)",
+    "location": "West Central District, Tainan City",
+    "address": "No. 212, Sec. 2, Minzhu Rd, West Central District, Tainan City",
+    "mainDeities": [
+      {
+        "id": "wenchang",
+        "name": "Wenchang Dijun"
+      },
+      {
+        "id": "guanyin",
+        "name": "Guanyin Bodhisattva"
+      }
+    ],
+    "description": "Originally built by the Dutch in 1653 as Fort Provintia, Chihkan Tower is a premier historic site and a symbol of Tainan. The current complex, featuring the Haishen Temple and Wenchang Pavilion, stands atop the original Dutch foundations. It is famous for the 'Nine Tortoise Steles' bestowed by Emperor Qianlong, a significant historical artifact. Students flock to the garden to pray to Kuixing (God of Examinations) for academic success.",
+    "history": "Built by the Dutch in 1653 as Fort Provintia. Conquered by Koxinga in 1661 and became the administrative center 'Chengtian Prefecture'. After planned destruction and earthquakes in the Qing Dynasty, it was rebuilt in the Guangxu era as Haishen Temple and Wenchang Pavilion, blending Dutch foundations with Chinese architecture.",
+    "images": ["/assets/images/temples/temple-chihkan.png"],
+    "googleMap": "https://maps.app.goo.gl/search/Chihkan+Tower",
+    "latitude": 22.9972744,
+    "longitude": 120.2027032,
+    "sortOrder": 7
   },
   {
     "id": "donggang-donglong",
@@ -222,7 +192,48 @@
     "url": "https://www.66.org.tw/",
     "googleMap": "https://maps.app.goo.gl/search/Donggang+Donglong+Temple",
     "latitude": 22.4630682,
-    "longitude": 120.4487888
+    "longitude": 120.4487888,
+    "sortOrder": 8
+  },
+  {
+    "id": "chiayi-citygod",
+    "name": "Chiayi City God Temple",
+    "location": "East District, Chiayi City",
+    "address": "No. 168, Wufeng N. Rd, East District, Chiayi City",
+    "mainDeities": [
+      {
+        "id": "chenghuang",
+        "name": "City God"
+      }
+    ],
+    "description": "Chiayi City God Temple is the only county-level City God temple in Taiwan to receive an imperial title — the 'Marquis of Suijing,' bestowed by Emperor Guangxu in 1875. The current building dates to 1940, blending Hokkien and Japanese colonial architectural styles. Designated a national monument in 2015, it houses precious historical artifacts including Qing Dynasty plaques and stone tablets. The annual 7th lunar month festival is one of Chiayi's grandest religious events.",
+    "history": "Founded in 1694 as a simple tablet shrine in Zhuluo County. In 1715, County Magistrate Zhou Zhongxuan donated his salary to build a proper temple. The current structure was completed in 1940. In 1875, Emperor Guangxu bestowed the title 'Marquis of Suijing' on the City God — a unique honor for a county-level deity. Designated a national monument in 2015.",
+    "images": ["/assets/images/temples/temple-chiayi-citygod.png"],
+    "url": "https://www.chiayi.gov.tw/",
+    "googleMap": "https://maps.app.goo.gl/chiayi-citygod",
+    "latitude": 23.4784142,
+    "longitude": 120.454231,
+    "sortOrder": 9
+  },
+  {
+    "id": "fongshan-longshan",
+    "name": "Fongshan Longshan Temple",
+    "location": "Fongshan District, Kaohsiung City",
+    "address": "No. 7, Zhongshan Rd, Fongshan District, Kaohsiung City",
+    "mainDeities": [
+      {
+        "id": "guanyin",
+        "name": "Guanyin Bodhisattva"
+      }
+    ],
+    "description": "Fongshan Longshan Temple is one of the best-preserved Longshan Temples from the Qing Dynasty in Taiwan, designated as a National Monument. It is distinct from other Longshan temples established by Sanyi immigrants. The temple is renowned for its exquisite 'Jian Nian' (cut porcelain) and clay sculptures, which are among the finest in Taiwan. As the premier of Fongshan's four ancient temples, it exudes a solemn and rustic atmosphere, bearing witness to the history of the ancient walled city.",
+    "history": "Believed to be founded in the early Qianlong era. Legend says an oil merchant from Fujian left a Guanyin amulet on a guava tree here; it glowed at night, leading locals to build a temple. Major renovations occurred in 1764 led by Magistrate Wang Yingzeng. The current structure reflects renovations from the Daoguang era and the Japanese colonial period.",
+    "images": ["/assets/images/temples/temple-fongshanlongshan.png"],
+    "url": "https://www.facebook.com/FongshanLongshanTemple/",
+    "googleMap": "https://maps.app.goo.gl/search/Fongshan+Longshan+Temple",
+    "latitude": 22.6206562,
+    "longitude": 120.3620084,
+    "sortOrder": 10
   },
   {
     "id": "checheng-fuan",
@@ -241,7 +252,8 @@
     "url": "http://www.fuan.org.tw/",
     "googleMap": "https://maps.app.goo.gl/search/Checheng+Fuan+Temple",
     "latitude": 22.070838,
-    "longitude": 120.7108142
+    "longitude": 120.7108142,
+    "sortOrder": 11
   },
   {
     "id": "jiuru-sanshan",
@@ -258,6 +270,7 @@
     "history": "Founded around 1700 during the Kangxi era by early Hakka immigrants from Guangdong. At that time, the Pingtung Plain was a frontier between indigenous territories and Han settlers. The Hakka pioneers brought the incense of Sanshan Guowang from their homeland and built this temple as both spiritual anchor and community center. Major renovations during the Daoguang era established its current layout. Designated a national monument for its historical and Hakka cultural significance.",
     "images": ["/assets/images/temples/temple-jiuru-sanshan.png"],
     "latitude": 22.7414,
-    "longitude": 120.4881
+    "longitude": 120.4881,
+    "sortOrder": 12
   }
 ]

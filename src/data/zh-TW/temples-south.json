@@ -1,86 +1,5 @@
 [
   {
-    "id": "xingang-fengtian",
-    "name": "新港奉天宮",
-    "location": "嘉義縣新港鄉",
-    "address": "嘉義縣新港鄉新民路53號",
-    "mainDeities": [
-      {
-        "id": "mazu",
-        "name": "媽祖"
-      },
-      {
-        "id": "tigerlord",
-        "name": "虎爺"
-      }
-    ],
-    "description": "新港奉天宮是台灣著名的媽祖廟之一，具有「開臺媽祖」之稱。這裡最獨特的信仰特色是「虎爺」供奉於神桌之上（一般虎爺供奉於桌下），俗諺「笨港報馬仔，新港虎爺公」即在描述此地虎爺的威顯。奉天宮擁有豐富的歷史文物與匾額，見證了三百多年的歷史滄桑，每年大甲媽祖遶境必駐駕於此，是著名的宗教聖地。",
-    "history": "源於清康熙39年（1700年），樹璧和尚自湄洲奉請媽祖金身渡海來台，先在笨港（今雲林北港）建廟奉祀，即笨港天后宮。嘉慶4年（1799年）笨港溪（北港溪）氾濫，洪水沖毀原廟及周邊聚落，信眾遂攜媽祖金身遷移至麻園寮（今新港）重建廟宇，定名「奉天宮」。因這段歷史淵源，新港奉天宮與北港朝天宮之間一直存在「開台媽祖正統」之爭。廟內歷代整建保留了剪黏、交趾陶等精美傳統工藝，尤其交趾陶大師葉王的作品為鎮廟之寶。每年大甲媽祖遶境進香的目的地便是新港奉天宮。",
-    "images": ["/assets/images/temples/temple-xingangfengtian.png"],
-    "googleMap": "https://maps.app.goo.gl/search/新港奉天宮",
-    "latitude": 23.5567967,
-    "longitude": 120.3479018
-  },
-  {
-    "id": "chiayi-citygod",
-    "name": "嘉義城隍廟",
-    "location": "嘉義市東區",
-    "address": "嘉義市東區吳鳳北路168號",
-    "mainDeities": [
-      {
-        "id": "chenghuang",
-        "name": "城隍爺"
-      }
-    ],
-    "description": "嘉義城隍廟是全台唯一獲得皇帝敕封尊號的縣級城隍廟，清光緒元年（1875年）由光緒皇帝敕封城隍爺為「綏靖侯」，神格崇高，香火鼎盛。廟宇建築規模宏偉，現今樣貌為昭和十五年（1940年）重建而成，融合了閩南與日治時期的建築風格。2015年升格為國定古蹟，見證了嘉義地區三百多年的信仰歷史。廟內保存許多珍貴的歷史文物，包括清代匾額、石碑及木雕等。每年農曆七月的城隍祭典是嘉義最盛大的宗教活動之一。",
-    "history": "清康熙三十三年（1694年），在諸羅縣初創城隍祠堂，以牌位供奉城隍尊神。康熙五十四年（1715年）冬，由諸羅知縣周鍾瑄捐俸倡建正式廟宇。乾隆三十年（1765年）進行重建。光緒元年（1875年），光緒皇帝敕封嘉義城隍為「綏靖侯」，是全台唯一獲得皇帝加封尊號的縣級城隍爺。現今廟宇為昭和十五年（1940年）重建竣工，歷經日治時期的重修，融合了當時的建築工藝。民國一百零四年（2015年）升格為國定古蹟。",
-    "images": ["/assets/images/temples/temple-chiayi-citygod.png"],
-    "url": "https://www.chiayi.gov.tw/",
-    "googleMap": "https://maps.app.goo.gl/chiayi-citygod",
-    "latitude": 23.4784142,
-    "longitude": 120.454231
-  },
-  {
-    "id": "tainan-confucius",
-    "name": "台南孔廟",
-    "location": "台南市中西區",
-    "address": "台南市中西區南門路2號",
-    "mainDeities": [
-      {
-        "id": "confucius",
-        "name": "孔子"
-      }
-    ],
-    "description": "台南孔廟素有「全臺首學」之美譽，是台灣第一座孔廟，也是清代台灣最高的教育學府。建築風格宏偉莊嚴，採用「左學右廟」的傳統格局，大門口高懸康熙皇帝御賜的「全臺首學」匾額，彰顯其崇高地位。雖然不是道教廟宇，但在台灣民間信仰與文化傳承中佔有極重要地位。每年9月28日孔子誕辰舉辦的「釋奠典禮」，依然依循古禮進行，保存了完整的「八佾舞」傳統，是探索中華文化與儒家思想的重要聖地。",
-    "history": "創建於明永曆19年（1665年），由鄭經採納諮議參軍陳永華之建議而建，目的是為了在台灣推廣文教，培育人才。歷經清代多次增建與修繕，確立了今日的規模。日治時期曾被徵用，戰後恢復祭孔功能。現為國定古蹟，也是台灣儒家文化的中心。",
-    "images": ["/assets/images/temples/temple-tainanconfucius.png"],
-    "googleMap": "https://maps.app.goo.gl/search/台南孔廟",
-    "latitude": 22.9903049,
-    "longitude": 120.2042518
-  },
-  {
-    "id": "chihkan-tower",
-    "name": "赤崁樓 (海神廟/文昌閣)",
-    "location": "台南市中西區",
-    "address": "台南市中西區民族路二段212號",
-    "mainDeities": [
-      {
-        "id": "wenchang",
-        "name": "文昌帝君"
-      },
-      {
-        "id": "guanyin",
-        "name": "觀世音菩薩"
-      }
-    ],
-    "description": "赤崁樓前身為荷蘭人所建的「普羅民遮城」，是台灣最著名的古蹟之一，也是台南的精神象徵。現存建築主要由海神廟與文昌閣組成，巍峨立於荷蘭城堡的基座之上，庭園中還有著名的「九隻贔屭馱碑」，是清乾隆皇帝為了表彰平定林爽文事件所賜，極具歷史價值。這裡不僅是歷史建築，庭園中的魁星爺手持硃砂筆，更是眾多考生祈求金榜題名的地方，香火鼎盛。",
-    "history": "1653年由荷蘭人建立，初稱「普羅民遮城」。1661年鄭成功攻下此城，設承天府，為全島最高行政機構。清代因地震與民變多已傾圮，光緒年間陸續在原址興建海神廟、文昌閣與五子祠。今日所見樣貌多為當時重建基礎，融合了荷式、中式建築特色。",
-    "images": ["/assets/images/temples/temple-chihkan.png"],
-    "googleMap": "https://maps.app.goo.gl/search/赤崁樓",
-    "latitude": 22.9972744,
-    "longitude": 120.2027032
-  },
-  {
     "id": "nankunshen",
     "name": "南鯤鯓代天府",
     "location": "台南市北門區",
@@ -96,7 +15,8 @@
     "images": ["/assets/images/temples/temple-nankunshen.png"],
     "googleMap": "https://maps.app.goo.gl/search/南鯤鯓代天府",
     "latitude": 23.2858993,
-    "longitude": 120.1433204
+    "longitude": 120.1433204,
+    "sortOrder": 0
   },
   {
     "id": "tainan-grand-mazu",
@@ -118,7 +38,8 @@
     "images": ["/assets/images/temples/temple-tainanmazu.png"],
     "googleMap": "https://maps.app.goo.gl/search/台南大天后宮",
     "latitude": 22.9965179,
-    "longitude": 120.2017095
+    "longitude": 120.2017095,
+    "sortOrder": 1
   },
   {
     "id": "tainan-martial",
@@ -145,43 +66,8 @@
     "url": "https://www.facebook.com/TainanGrandMartialTemple/",
     "googleMap": "https://maps.app.goo.gl/search/台南祀典武廟",
     "latitude": 22.9965239,
-    "longitude": 120.2021668
-  },
-  {
-    "id": "tainan-tiantan",
-    "name": "台南天壇",
-    "location": "台南市中西區",
-    "address": "台南市中西區忠義路二段84巷16號",
-    "mainDeities": [
-      {
-        "id": "yuhuang",
-        "name": "玉皇大帝"
-      }
-    ],
-    "description": "台南天壇俗稱「天公廟」，是全台首建的官方天壇，主祀玉皇大帝。廟宇位於台南市中心，建築古樸莊嚴，正殿懸掛清咸豐帝御賜「一」字匾，被譽為全台最有價值的匾額——因為天公最大，只有「一」字能代表。每年農曆正月初九「天公生」，信眾以盛大的三牲五果、全豬全羊祭拜，場面隆重。",
-    "history": "創建於清咸豐四年（1854年），由府城紳商集資興建，是全台第一座專祀玉皇大帝的天壇。清代官員每年都在此舉行祭天大典，因此具有官方祀典的崇高地位。廟內保存多塊清代御賜匾額，其中「一」字匾最為珍貴，為鎮廟之寶。",
-    "images": ["/assets/images/temples/temple-tainan-tiantan.png"],
-    "latitude": 22.9937209,
-    "longitude": 120.2041994
-  },
-  {
-    "id": "fongshan-longshan",
-    "name": "鳳山龍山寺",
-    "location": "高雄市鳳山區",
-    "address": "高雄市鳳山區中山路7號",
-    "mainDeities": [
-      {
-        "id": "guanyin",
-        "name": "觀世音菩薩"
-      }
-    ],
-    "description": "鳳山龍山寺是台灣現存由清代保留至今最完整的龍山寺之一，列為國定古蹟。不同於其他龍山寺多由泉州三邑移民所建，此廟的起源與泉州安海龍山寺香火有關。寺廟建築保留了豐富的傳統工藝，特別是「剪黏」與「泥塑」作品極為精彩，技法精湛，保存狀況良好。寺內氣氛古樸莊嚴，是鳳山四大古廟之首，見證了鳳山古城的興衰與發展，也是研究台灣傳統建築與民間信仰的重要資產。",
-    "history": "相傳創建於清乾隆初年，確切年代不可考。傳說一名來自福建的賣油郎在經過此地時，將隨身攜帶的觀音香火掛在番石榴樹上休息，離去時忘記帶走，夜間竟發光如明珠，居民認為是菩薩顯靈，遂建廟供奉。歷經多次修繕，最重要的一次是在清乾隆29年（1764年），由知縣王瑛曾發起重修。現存建築多為道光年間及日治時期修繕後的樣貌。",
-    "images": ["/assets/images/temples/temple-fongshanlongshan.png"],
-    "url": "https://www.facebook.com/FongshanLongshanTemple/",
-    "googleMap": "https://maps.app.goo.gl/search/鳳山龍山寺",
-    "latitude": 22.6206562,
-    "longitude": 120.3620084
+    "longitude": 120.2021668,
+    "sortOrder": 2
   },
   {
     "id": "foguangshan",
@@ -203,7 +89,91 @@
     "images": ["/assets/images/temples/temple-foguangshan.png"],
     "url": "https://www.fgs.org.tw",
     "latitude": 22.750556,
-    "longitude": 120.445278
+    "longitude": 120.445278,
+    "sortOrder": 3
+  },
+  {
+    "id": "xingang-fengtian",
+    "name": "新港奉天宮",
+    "location": "嘉義縣新港鄉",
+    "address": "嘉義縣新港鄉新民路53號",
+    "mainDeities": [
+      {
+        "id": "mazu",
+        "name": "媽祖"
+      },
+      {
+        "id": "tigerlord",
+        "name": "虎爺"
+      }
+    ],
+    "description": "新港奉天宮是台灣著名的媽祖廟之一，具有「開臺媽祖」之稱。這裡最獨特的信仰特色是「虎爺」供奉於神桌之上（一般虎爺供奉於桌下），俗諺「笨港報馬仔，新港虎爺公」即在描述此地虎爺的威顯。奉天宮擁有豐富的歷史文物與匾額，見證了三百多年的歷史滄桑，每年大甲媽祖遶境必駐駕於此，是著名的宗教聖地。",
+    "history": "源於清康熙39年（1700年），樹璧和尚自湄洲奉請媽祖金身渡海來台，先在笨港（今雲林北港）建廟奉祀，即笨港天后宮。嘉慶4年（1799年）笨港溪（北港溪）氾濫，洪水沖毀原廟及周邊聚落，信眾遂攜媽祖金身遷移至麻園寮（今新港）重建廟宇，定名「奉天宮」。因這段歷史淵源，新港奉天宮與北港朝天宮之間一直存在「開台媽祖正統」之爭。廟內歷代整建保留了剪黏、交趾陶等精美傳統工藝，尤其交趾陶大師葉王的作品為鎮廟之寶。每年大甲媽祖遶境進香的目的地便是新港奉天宮。",
+    "images": ["/assets/images/temples/temple-xingangfengtian.png"],
+    "googleMap": "https://maps.app.goo.gl/search/新港奉天宮",
+    "latitude": 23.5567967,
+    "longitude": 120.3479018,
+    "sortOrder": 4
+  },
+  {
+    "id": "tainan-tiantan",
+    "name": "台南天壇",
+    "location": "台南市中西區",
+    "address": "台南市中西區忠義路二段84巷16號",
+    "mainDeities": [
+      {
+        "id": "yuhuang",
+        "name": "玉皇大帝"
+      }
+    ],
+    "description": "台南天壇俗稱「天公廟」，是全台首建的官方天壇，主祀玉皇大帝。廟宇位於台南市中心，建築古樸莊嚴，正殿懸掛清咸豐帝御賜「一」字匾，被譽為全台最有價值的匾額——因為天公最大，只有「一」字能代表。每年農曆正月初九「天公生」，信眾以盛大的三牲五果、全豬全羊祭拜，場面隆重。",
+    "history": "創建於清咸豐四年（1854年），由府城紳商集資興建，是全台第一座專祀玉皇大帝的天壇。清代官員每年都在此舉行祭天大典，因此具有官方祀典的崇高地位。廟內保存多塊清代御賜匾額，其中「一」字匾最為珍貴，為鎮廟之寶。",
+    "images": ["/assets/images/temples/temple-tainan-tiantan.png"],
+    "latitude": 22.9937209,
+    "longitude": 120.2041994,
+    "sortOrder": 5
+  },
+  {
+    "id": "tainan-confucius",
+    "name": "台南孔廟",
+    "location": "台南市中西區",
+    "address": "台南市中西區南門路2號",
+    "mainDeities": [
+      {
+        "id": "confucius",
+        "name": "孔子"
+      }
+    ],
+    "description": "台南孔廟素有「全臺首學」之美譽，是台灣第一座孔廟，也是清代台灣最高的教育學府。建築風格宏偉莊嚴，採用「左學右廟」的傳統格局，大門口高懸康熙皇帝御賜的「全臺首學」匾額，彰顯其崇高地位。雖然不是道教廟宇，但在台灣民間信仰與文化傳承中佔有極重要地位。每年9月28日孔子誕辰舉辦的「釋奠典禮」，依然依循古禮進行，保存了完整的「八佾舞」傳統，是探索中華文化與儒家思想的重要聖地。",
+    "history": "創建於明永曆19年（1665年），由鄭經採納諮議參軍陳永華之建議而建，目的是為了在台灣推廣文教，培育人才。歷經清代多次增建與修繕，確立了今日的規模。日治時期曾被徵用，戰後恢復祭孔功能。現為國定古蹟，也是台灣儒家文化的中心。",
+    "images": ["/assets/images/temples/temple-tainanconfucius.png"],
+    "googleMap": "https://maps.app.goo.gl/search/台南孔廟",
+    "latitude": 22.9903049,
+    "longitude": 120.2042518,
+    "sortOrder": 6
+  },
+  {
+    "id": "chihkan-tower",
+    "name": "赤崁樓 (海神廟/文昌閣)",
+    "location": "台南市中西區",
+    "address": "台南市中西區民族路二段212號",
+    "mainDeities": [
+      {
+        "id": "wenchang",
+        "name": "文昌帝君"
+      },
+      {
+        "id": "guanyin",
+        "name": "觀世音菩薩"
+      }
+    ],
+    "description": "赤崁樓前身為荷蘭人所建的「普羅民遮城」，是台灣最著名的古蹟之一，也是台南的精神象徵。現存建築主要由海神廟與文昌閣組成，巍峨立於荷蘭城堡的基座之上，庭園中還有著名的「九隻贔屭馱碑」，是清乾隆皇帝為了表彰平定林爽文事件所賜，極具歷史價值。這裡不僅是歷史建築，庭園中的魁星爺手持硃砂筆，更是眾多考生祈求金榜題名的地方，香火鼎盛。",
+    "history": "1653年由荷蘭人建立，初稱「普羅民遮城」。1661年鄭成功攻下此城，設承天府，為全島最高行政機構。清代因地震與民變多已傾圮，光緒年間陸續在原址興建海神廟、文昌閣與五子祠。今日所見樣貌多為當時重建基礎，融合了荷式、中式建築特色。",
+    "images": ["/assets/images/temples/temple-chihkan.png"],
+    "googleMap": "https://maps.app.goo.gl/search/赤崁樓",
+    "latitude": 22.9972744,
+    "longitude": 120.2027032,
+    "sortOrder": 7
   },
   {
     "id": "donggang-donglong",
@@ -222,7 +192,48 @@
     "url": "https://www.66.org.tw/",
     "googleMap": "https://maps.app.goo.gl/search/東港東隆宮",
     "latitude": 22.4630682,
-    "longitude": 120.4487888
+    "longitude": 120.4487888,
+    "sortOrder": 8
+  },
+  {
+    "id": "chiayi-citygod",
+    "name": "嘉義城隍廟",
+    "location": "嘉義市東區",
+    "address": "嘉義市東區吳鳳北路168號",
+    "mainDeities": [
+      {
+        "id": "chenghuang",
+        "name": "城隍爺"
+      }
+    ],
+    "description": "嘉義城隍廟是全台唯一獲得皇帝敕封尊號的縣級城隍廟，清光緒元年（1875年）由光緒皇帝敕封城隍爺為「綏靖侯」，神格崇高，香火鼎盛。廟宇建築規模宏偉，現今樣貌為昭和十五年（1940年）重建而成，融合了閩南與日治時期的建築風格。2015年升格為國定古蹟，見證了嘉義地區三百多年的信仰歷史。廟內保存許多珍貴的歷史文物，包括清代匾額、石碑及木雕等。每年農曆七月的城隍祭典是嘉義最盛大的宗教活動之一。",
+    "history": "清康熙三十三年（1694年），在諸羅縣初創城隍祠堂，以牌位供奉城隍尊神。康熙五十四年（1715年）冬，由諸羅知縣周鍾瑄捐俸倡建正式廟宇。乾隆三十年（1765年）進行重建。光緒元年（1875年），光緒皇帝敕封嘉義城隍為「綏靖侯」，是全台唯一獲得皇帝加封尊號的縣級城隍爺。現今廟宇為昭和十五年（1940年）重建竣工，歷經日治時期的重修，融合了當時的建築工藝。民國一百零四年（2015年）升格為國定古蹟。",
+    "images": ["/assets/images/temples/temple-chiayi-citygod.png"],
+    "url": "https://www.chiayi.gov.tw/",
+    "googleMap": "https://maps.app.goo.gl/chiayi-citygod",
+    "latitude": 23.4784142,
+    "longitude": 120.454231,
+    "sortOrder": 9
+  },
+  {
+    "id": "fongshan-longshan",
+    "name": "鳳山龍山寺",
+    "location": "高雄市鳳山區",
+    "address": "高雄市鳳山區中山路7號",
+    "mainDeities": [
+      {
+        "id": "guanyin",
+        "name": "觀世音菩薩"
+      }
+    ],
+    "description": "鳳山龍山寺是台灣現存由清代保留至今最完整的龍山寺之一，列為國定古蹟。不同於其他龍山寺多由泉州三邑移民所建，此廟的起源與泉州安海龍山寺香火有關。寺廟建築保留了豐富的傳統工藝，特別是「剪黏」與「泥塑」作品極為精彩，技法精湛，保存狀況良好。寺內氣氛古樸莊嚴，是鳳山四大古廟之首，見證了鳳山古城的興衰與發展，也是研究台灣傳統建築與民間信仰的重要資產。",
+    "history": "相傳創建於清乾隆初年，確切年代不可考。傳說一名來自福建的賣油郎在經過此地時，將隨身攜帶的觀音香火掛在番石榴樹上休息，離去時忘記帶走，夜間竟發光如明珠，居民認為是菩薩顯靈，遂建廟供奉。歷經多次修繕，最重要的一次是在清乾隆29年（1764年），由知縣王瑛曾發起重修。現存建築多為道光年間及日治時期修繕後的樣貌。",
+    "images": ["/assets/images/temples/temple-fongshanlongshan.png"],
+    "url": "https://www.facebook.com/FongshanLongshanTemple/",
+    "googleMap": "https://maps.app.goo.gl/search/鳳山龍山寺",
+    "latitude": 22.6206562,
+    "longitude": 120.3620084,
+    "sortOrder": 10
   },
   {
     "id": "checheng-fuan",
@@ -241,7 +252,8 @@
     "url": "http://www.fuan.org.tw/",
     "googleMap": "https://maps.app.goo.gl/search/車城福安宮",
     "latitude": 22.070838,
-    "longitude": 120.7108142
+    "longitude": 120.7108142,
+    "sortOrder": 11
   },
   {
     "id": "jiuru-sanshan",
@@ -258,6 +270,7 @@
     "history": "創建於清康熙年間（約1700年前後），為最早渡海來台的廣東客家移民所建。當時屏東平原為原住民與漢人交界的拓墾前線，客家先民從原鄉奉請三山國王香火，建廟作為精神寄託與聚落中心。廟宇歷經多次修建，清道光年間的重修奠定了今日的基本格局。因其悠久歷史與客家文化價值，被列為國定古蹟。六堆客家文化園區即以此地區為核心，三山國王廟是認識台灣南部客家歷史不可錯過的重要史蹟。",
     "images": ["/assets/images/temples/temple-jiuru-sanshan.png"],
     "latitude": 22.7414,
-    "longitude": 120.4881
+    "longitude": 120.4881,
+    "sortOrder": 12
   }
 ]

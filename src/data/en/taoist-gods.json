@@ -1,41 +1,5 @@
 [
   {
-    "id": "guansheng",
-    "name": "Guan Sheng Di Jun (Lord Guan)",
-    "aliases": ["Lord Guan", "Guan Yu", "God of War and Wealth"],
-    "category": "taoism",
-    "domain": "God of war, wealth, loyalty and righteousness",
-    "description": "Walk down any old street in Taiwan and look up at the little altars behind the shop counters — seven out of ten are watched over by the same red-faced, long-bearded figure. That's Guan Sheng Di Jun, better known to everyone as Guan Gong (Lord Guan) or Guan Yu. He began as a real man: a legendary general of the Three Kingdoms era whose Green Dragon Crescent Blade earned him a thousand years of fame. Yet in Taiwan he may be the hardest-working deity of all. Merchants worship him as a god of wealth; students pray to him for exam luck (Guan Yu was famous for never putting down his copy of the Spring and Autumn Annals); police officers and business owners come to him for integrity and justice. He is one of the rare historical figures venerated by three traditions at once — Confucians call him the 'Martial Sage,' Taoists crown him 'Guan Sheng Di Jun,' and Buddhists honor him as the Sangharama Bodhisattva. From Taipei's Xingtian Temple to Tainan's Martial Temple, his incense has burned unbroken for centuries — not because of his blade, but because of a single word he lived by: loyalty.",
-    "story": "Cao Cao may be the most heartbroken fan in Chinese history. After surrounding Guan Yu and accepting his surrender, the warlord showered him with everything a man could want — fine wine and feasts, a high title, and the legendary Red Hare, the finest horse in the land. Guan Yu accepted the horse (a warrior knows a good horse when he sees one) and nothing else. His mind was fixed on a single question: where was his sworn brother, Liu Bei?\n\nThe moment word arrived, Guan Yu took his two sisters-in-law under his protection and left. Cao Cao lined the road with five checkpoints to stop him; Guan Yu fought through every one — the feat remembered as 'crossing five passes and slaying six generals.' Riches, rank, and comfort were his for the taking, and he rode a thousand li away from all of it to rejoin a brother who at that moment had nothing.\n\nThat is the heart of it: he valued a promise more than his own life. And it is exactly why Taiwanese have trusted him for centuries. In business, the person you fear most is the one with no honor — so people hand their livelihoods to the god with the most.",
-    "worship": "What is Lord Guan best at answering? Prayers for honest prosperity and fair dealing in business, for passing exams, for justice, and for driving off evil all fall within his jurisdiction.\n\nHow to pray: set out your offerings, light incense, state your name and what you're asking for, then cast moon blocks to ask whether he grants it. What matters most is sincerity — Guan Gong has no patience for a false heart.\n\nOfferings: the 'three meats' (a whole chicken, pork, and a whole fish), longevity peaches, longevity noodles, and three cups of clear tea. Some devotees lay a copy of the Spring and Autumn Annals on the altar as a mark of respect.\n\nThere is only one taboo, but it is the important one: come with clean intentions. If you're praying for ill-gotten money, save your incense — this is the god of righteous wealth, and he cannot abide a speck of grit in his eye.",
-    "festivals": "The most important festival is Guan Sheng Di Jun's birthday on the 24th day of the 6th lunar month. Major celebrations are held at temples across Taiwan, including Xingtian Temple and Tainan's Martial Temple.",
-    "temples": [
-      {
-        "name": "Xingtian Temple",
-        "location": "Taipei City",
-        "url": "https://www.ht.org.tw/",
-        "deityStory": "The busiest Guan Gong temple in northern Taiwan, and the first major temple to ban incense burning in 2014 — a bold environmental move. Just put your palms together and pray."
-      },
-      {
-        "name": "Tainan Grand Martial Temple",
-        "location": "Tainan City",
-        "url": "https://www.facebook.com/TainanGrandMazuTemple",
-        "deityStory": "The only Guan Gong temple historically included in official state ceremonies. Over 300 years old, and you can feel every year of it when you step inside."
-      },
-      {
-        "name": "Jiaosi Xietian Temple",
-        "location": "Yilan County",
-        "deityStory": "Perfect combo: soak in Jiaosi’s famous hot springs, then pay respects to Guan Gong."
-      }
-    ],
-    "image": "/assets/images/gods/guansheng.png",
-    "associatedTemples": [
-      "Xingtian Temple (Taipei City)",
-      "Tainan Grand Martial Temple (Tainan City)",
-      "Jiaosi Xietian Temple (Yilan County)"
-    ]
-  },
-  {
     "id": "mazu",
     "name": "Mazu (Goddess of the Sea)",
     "aliases": ["Heavenly Holy Mother", "Empress of Heaven", "Tianhou"],
@@ -136,76 +100,45 @@
       "Xingang Fengtian Temple (Xingang Township, Chiayi County)",
       "Taitung Tianhou Temple (Taitung City, Taitung County)",
       "Hualien Gang Tian Temple (Hualien City, Hualien County)"
-    ]
+    ],
+    "sortOrder": 0
   },
   {
-    "id": "chenghuang",
-    "name": "City God (Cheng Huang)",
-    "aliases": ["City God", "Cheng Huang Ye"],
+    "id": "guansheng",
+    "name": "Guan Sheng Di Jun (Lord Guan)",
+    "aliases": ["Lord Guan", "Guan Yu", "God of War and Wealth"],
     "category": "taoism",
-    "domain": "City protection, underworld justice, rewarding good and punishing evil",
-    "description": "Step into a City God temple and the first thing you see, hung above the doorway, is three characters: 'You have come.' If your conscience is clear it reads like a warm welcome; if it isn't, it sends a chill down your spine. This is Chenghuang Ye, the City God — also called Chenghuang Laoye or Chenghuang Zunshen — the local magistrate of the underworld. The world of the living has its county chiefs and mayors; the world below has its City God, and every wrong you got away with in life is tallied in his ledger. He is the underworld's judge, prosecutor, and chief of police rolled into one, and the giant abacus hanging in his hall is his calling card: good and evil are all counted in the end. Yet he is more than a figure of dread — he also guards the peace of his district, and he even comes ranked like the mortal civil service: a 'Metropolitan' City God governs a province, a 'Prefectural' one a prefecture, a 'County' one a county. Hsinchu's is the highest-ranking City God temple in all Taiwan. Thronged by day, heavy with atmosphere by night — that coexistence of the living and the dead is something only a City God temple can offer.",
-    "story": "Unlike most deities, the City God has no single fixed identity. Each locality's City God is usually a fair-minded, well-respected figure from that place, appointed to the post after death — which means Taipei's City God and Tainan's City God are, quite literally, different men. There's something moving in that idea: live an upright life, and one day it may be your turn to watch over a stretch of land.\n\nWhat the temples share is their furnishings. Over the door hangs the plaque 'You have come,' like a greeting that has been waiting a long time. Inside the hall hangs the great abacus, a reminder that every account is on the books. And flanking the shrine stand two figures — one tall, one short, one black-faced, one white — General Xie and General Fan, the Black and White Impermanence, who bring in those whose time has come. Plenty of Taiwanese remember being led into a City God temple as a child and not daring to look up at those looming statues. Only later do you understand: what frightened you was never the statue. It was the ledger in your own heart.",
-    "worship": "What do people pray for here? Justice and a fair hearing (many come before a lawsuit), relief from backstabbers and petty enemies, and safety for the neighborhood. Quite a few City God temples also house a startlingly effective Yue Lao — Taipei's Xiahai City God Temple alone receives thousands of boxes of thank-you wedding cakes every year.\n\nHow to pray: bring the three meats and wine, offer incense first at the Heaven Emperor censer, then step to the City God's main hall and state your name, address, and request. If you're seeking redress for a wrong, you can write out your grievance and burn it as a petition. Keep the offerings on the formal side — three meats, wine, and spirit money, nothing too offhand.\n\nThe great taboo: never lie or swear a false oath inside a City God temple. He is the one who keeps the accounts, and lying to his face is walking straight into the net.",
-    "festivals": "The City God's birthday on the 13th of the 5th lunar month is the most important festival. Taipei Xiahai's procession has over a century of history, while Hsinchu's combines elaborate parades with its century-old night market food culture.",
+    "domain": "God of war, wealth, loyalty and righteousness",
+    "description": "Walk down any old street in Taiwan and look up at the little altars behind the shop counters — seven out of ten are watched over by the same red-faced, long-bearded figure. That's Guan Sheng Di Jun, better known to everyone as Guan Gong (Lord Guan) or Guan Yu. He began as a real man: a legendary general of the Three Kingdoms era whose Green Dragon Crescent Blade earned him a thousand years of fame. Yet in Taiwan he may be the hardest-working deity of all. Merchants worship him as a god of wealth; students pray to him for exam luck (Guan Yu was famous for never putting down his copy of the Spring and Autumn Annals); police officers and business owners come to him for integrity and justice. He is one of the rare historical figures venerated by three traditions at once — Confucians call him the 'Martial Sage,' Taoists crown him 'Guan Sheng Di Jun,' and Buddhists honor him as the Sangharama Bodhisattva. From Taipei's Xingtian Temple to Tainan's Martial Temple, his incense has burned unbroken for centuries — not because of his blade, but because of a single word he lived by: loyalty.",
+    "story": "Cao Cao may be the most heartbroken fan in Chinese history. After surrounding Guan Yu and accepting his surrender, the warlord showered him with everything a man could want — fine wine and feasts, a high title, and the legendary Red Hare, the finest horse in the land. Guan Yu accepted the horse (a warrior knows a good horse when he sees one) and nothing else. His mind was fixed on a single question: where was his sworn brother, Liu Bei?\n\nThe moment word arrived, Guan Yu took his two sisters-in-law under his protection and left. Cao Cao lined the road with five checkpoints to stop him; Guan Yu fought through every one — the feat remembered as 'crossing five passes and slaying six generals.' Riches, rank, and comfort were his for the taking, and he rode a thousand li away from all of it to rejoin a brother who at that moment had nothing.\n\nThat is the heart of it: he valued a promise more than his own life. And it is exactly why Taiwanese have trusted him for centuries. In business, the person you fear most is the one with no honor — so people hand their livelihoods to the god with the most.",
+    "worship": "What is Lord Guan best at answering? Prayers for honest prosperity and fair dealing in business, for passing exams, for justice, and for driving off evil all fall within his jurisdiction.\n\nHow to pray: set out your offerings, light incense, state your name and what you're asking for, then cast moon blocks to ask whether he grants it. What matters most is sincerity — Guan Gong has no patience for a false heart.\n\nOfferings: the 'three meats' (a whole chicken, pork, and a whole fish), longevity peaches, longevity noodles, and three cups of clear tea. Some devotees lay a copy of the Spring and Autumn Annals on the altar as a mark of respect.\n\nThere is only one taboo, but it is the important one: come with clean intentions. If you're praying for ill-gotten money, save your incense — this is the god of righteous wealth, and he cannot abide a speck of grit in his eye.",
+    "festivals": "The most important festival is Guan Sheng Di Jun's birthday on the 24th day of the 6th lunar month. Major celebrations are held at temples across Taiwan, including Xingtian Temple and Tainan's Martial Temple.",
     "temples": [
       {
-        "name": "Taipei Xiahai City God Temple",
+        "name": "Xingtian Temple",
         "location": "Taipei City",
-        "url": "https://www.tpecitygod.org/",
-        "deityStory": "Locally famous for its Matchmaker God (Yue Lao). Thousands of couples return with wedding cakes to give thanks, making it Taiwan's top spot for finding love."
+        "url": "https://www.ht.org.tw/",
+        "deityStory": "The busiest Guan Gong temple in northern Taiwan, and the first major temple to ban incense burning in 2014 — a bold environmental move. Just put your palms together and pray."
       },
       {
-        "name": "Hualien City God Temple",
-        "location": "Hualien County",
-        "url": "https://www.hualien-citygod.org.tw/",
-        "deityStory": "One of the oldest temples in Hualien, protecting the people of the east coast."
+        "name": "Tainan Grand Martial Temple",
+        "location": "Tainan City",
+        "url": "https://www.facebook.com/TainanGrandMazuTemple",
+        "deityStory": "The only Guan Gong temple historically included in official state ceremonies. Over 300 years old, and you can feel every year of it when you step inside."
       },
       {
-        "name": "Hsinchu City God Temple",
-        "location": "Hsinchu City",
-        "deityStory": "The highest-ranking City God Temple in Taiwan. Its procession, combined with the century-old night market, creates a unique 'faith + food' culture."
-      },
-      {
-        "name": "Chiayi City God Temple",
-        "location": "Chiayi City",
-        "deityStory": "The most important City God Temple in Chiayi with centuries of history. The annual City God procession is a major religious event."
-      },
-      {
-        "name": "Kinmen Wudao City God Temple",
-        "location": "Kinmen County",
-        "deityStory": "The most important City God Temple in Kinmen, dating back to the Ming Dynasty and serving as the spiritual center for locals."
+        "name": "Jiaosi Xietian Temple",
+        "location": "Yilan County",
+        "deityStory": "Perfect combo: soak in Jiaosi’s famous hot springs, then pay respects to Guan Gong."
       }
     ],
-    "image": "/assets/images/gods/chenghuang.png",
+    "image": "/assets/images/gods/guansheng.png",
     "associatedTemples": [
-      "Taipei Xiahai City God Temple (Datong District, Taipei City)",
-      "Hualien City God Temple (Hualien City, Hualien County)",
-      "Hsinchu City God Temple (North District, Hsinchu City)",
-      "Chiayi City God Temple (East District, Chiayi City)",
-      "Kinmen Wudao City God Temple (Jincheng Township, Kinmen County)"
-    ]
-  },
-  {
-    "id": "baosheng",
-    "name": "Baosheng Dadi (Great Emperor of Life Protection)",
-    "aliases": ["Great Emperor Baosheng", "Divine Doctor Wu"],
-    "category": "taoism",
-    "domain": "God of medicine, healing, health protection",
-    "description": "Look closely at a statue of Baosheng Dadi and you'll often find a tiger crouched at his side — not a decoration, but a patient. Legend says this god of medicine, known as Dadao Gong or Wu Zhenren (the True Man Wu), once reached bare-handed into a tiger's throat to pull out a lodged bone; the grateful beast never left him again. Baosheng Dadi was born Wu Tao, a celebrated physician of Tong'an in Fujian during the Northern Song. His skill was extraordinary and he treated rich and poor without distinction, and after his death the Hokkien people enshrined him as their foremost god of medicine. Settlers carried his faith across to Taiwan, where the incense for health and healing has never gone out — even doctors, nurses, and pharmacists honor him as the patron of their profession, and some temples still offer traditional 'medicine lots,' herbal prescriptions drawn by divination. His flagship temple, Taipei's Dalongdong Baoan Temple, won a UNESCO Asia-Pacific Heritage Award for its restoration; if you want to see Taiwanese temple craftsmanship at its peak, this is where you go.",
-    "story": "Wu Tao's most famous house call was to the reigning Empress Dowager herself. When the mother of Emperor Renzong of Song lay ill and no remedy worked, Wu Tao cured her. The emperor offered to make him Imperial Physician — wealth and status in a single step — but he turned it down, asking only to go home and keep treating ordinary people, buying medicine out of his own pocket for those who couldn't pay.\n\nHe was born in 979 in Baijiao village, Tong'an, Fujian, and mastered internal and external medicine, acupuncture, and herbal lore, with a special gift for fighting epidemics. In 1036, at the age of fifty-eight, he fell from a cliff while gathering herbs on a mountainside — a healer who died on the very path of his healing. The villagers built a temple in his memory and honored him as Baosheng Dadi, the Great Emperor Who Protects Life.\n\nTaiwanese folklore adds a fond footnote: Dadao Gong and Mazu were once a couple who later parted. Every third lunar month, they say, he sends wind to tangle her hair and she sends rain to soak him through — which is why the weather that month swings so wildly between gusts and showers, a pattern locals nickname 'Dadao Gong's wind, Mazu's rain.'",
-    "worship": "Worship Baosheng Dadi with cleanliness in mind — the offerings are simple: fresh flowers, vegetarian fruit, and clear tea, with sincerity counting for the most. What is he best asked for? Recovery from illness, health and safety, and the warding off of misfortune — even doctors, nurses, and pharmacists come to pay respects to the patron of their trade.\n\nSome temples keep 'medicine lots': after casting moon blocks you draw a slip and take the prescription to a Chinese herbal pharmacy. Modern temples are careful to add a reminder, though — the lots are for the comfort of the heart, and anyone who feels unwell should still see a doctor.\n\nThe 15th day of the third lunar month is his birthday, when Baoan Temple's months-long 'Baosheng Cultural Festival' fills the calendar with clan operas, fire-walking rites, and arts events — carrying the old spirit of 'healing the world' right into the present day.",
-    "festivals": "His birthday on the 15th of the 3rd lunar month kicks off the three-month 'Baosheng Cultural Festival' at Baoan Temple, one of Taiwan's largest temple cultural events, featuring traditional opera, fire-walking rituals, and art exhibitions.",
-    "temples": [
-      {
-        "name": "Dalongdong Baoan Temple",
-        "location": "Taipei City",
-        "url": "https://www.baoan.org.tw/",
-        "deityStory": "Winner of the UNESCO Asia-Pacific Heritage Award for its exquisite architecture. The annual Baosheng Cultural Festival is a major event in Taipei."
-      }
+      "Xingtian Temple (Taipei City)",
+      "Tainan Grand Martial Temple (Tainan City)",
+      "Jiaosi Xietian Temple (Yilan County)"
     ],
-    "image": "/assets/images/gods/baosheng.png",
-    "associatedTemples": ["Dalongdong Baoan Temple (Datong District, Taipei City)"]
+    "sortOrder": 1
   },
   {
     "id": "tudigong",
@@ -241,28 +174,8 @@
     "associatedTemples": [
       "Hongludi Nanshan Fude Temple (Zhonghe District, New Taipei City)",
       "Checheng Fu'an Temple (Checheng Township, Pingtung County)"
-    ]
-  },
-  {
-    "id": "xuantian",
-    "name": "Xuantian Shangdi (Supreme Emperor of Dark Heaven)",
-    "aliases": ["Emperor of the North", "Zhenwu", "Dark Warrior"],
-    "category": "taoism",
-    "domain": "Exorcism, nation protection, guardian of the north",
-    "description": "One foot on a turtle, one on a snake, hair loose and feet bare, a Seven-Star Sword in his hand — the silhouette is unmistakable. This is Xuantian Shangdi, the Supreme Emperor of the Dark Heaven, known to most Taiwanese as Shangdi Gong or Diye Gong and also called Zhenwu Dadi or the Emperor of the North Pole. His rank in Taoism is exalted: he governs the seven stars of the north and commands the celestial position of the Dark Warrior. In Taiwan he is famed above all for his ferocity against demons — when something feels haunted, jinxed, or unclean, Shangdi Gong is the name many people reach for first, and countless spirit mediums and Taoist priests serve him as their patron. Every third day of the third lunar month, his birthday draws hundreds of thousands of pilgrims to Songboling Shoutian Temple in Nantou, the head temple from which more Xuantian Shangdi shrines branch than from anywhere else in Taiwan. One more detail worth noticing: he belongs to the North, whose element is Water and whose color is black — which is why his statues and his temples tend to be draped in dark tones.",
-    "story": "The most widely told legend is a butcher's story. In a past life, Xuantian Shangdi was a butcher weighed down by the karma of endless killing. One day an immortal opened his eyes to the truth, and in a fit of remorse he resolved to lay down his knife and atone — he cut open his own belly and drew out his stomach and intestines as a sign of repentance. But the intestines fell into the water and became a snake, and the stomach became a turtle, and the two of them stirred up the waters and terrorized the people.\n\nThrough long cultivation the butcher's soul at last attained godhood. Yet the turtle and the snake were his own karma, and no one else could clean up after him — so he pins them beneath his own feet, holding them down for all time. That is why his statue forever stands upon a turtle and a snake: they are not mounts, but the past he conquered. Lay down the butcher's knife, and even the gravest sin has a chance at a fresh start — but the karma you create is yours alone to face. That is the sharpest lesson this fierce warrior-god leaves for us. (The more orthodox Taoist account tells it differently: he was an incarnation of Laozi who cultivated for forty-two years on Mount Wudang before ascending to godhood.)",
-    "worship": "Offerings to Xuantian Shangdi include the three meats, five fruits, tea, and wine. Because of the butcher legend in his past, some temples avoid pork and use chicken, fish, or vegetarian dishes instead — it's safest to ask the temple first. What is he best asked for? Driving off evil, 'soul-calming' (shoujing), and breaking curses are his specialty: parents bring frightened children for a soul-calming rite, homeowners pray to settle a house before moving in or breaking ground, and anyone who feels they've brushed against something unclean can ask the temple for 'purifying talisman water' to sprinkle and clear it away. Around his birthday on the third day of the third lunar month, temples hold fire-walking rites and the 'passing beneath the palanquin' ritual, and the surge of pilgrims to Songboling Shoutian Temple is the event of the year.",
-    "festivals": "His birthday on the 3rd of the 3rd lunar month sees massive celebrations, especially at Songboling Shoutian Temple, attracting hundreds of thousands. Traditional rituals include fire-walking and passing under sedan chairs.",
-    "temples": [
-      {
-        "name": "Songboling Shoutian Temple",
-        "location": "Nantou County",
-        "url": "https://www.shoutian.org.tw/",
-        "deityStory": "The head temple with the most Xuantian Shangdi branches in Taiwan. Located on the Bagua Mountain range, it offers great views and is a major pilgrimage center."
-      }
     ],
-    "image": "/assets/images/gods/xuantianshangdi.png",
-    "associatedTemples": ["Songboling Shoutian Temple (Mingjian Township, Nantou County)"]
+    "sortOrder": 2
   },
   {
     "id": "yuhuang",
@@ -288,7 +201,8 @@
         "deityStory": "A grand Temple of Heaven in Taipei with thriving worship. Its magnificent architecture makes it a key site for prayers for peace and protection."
       }
     ],
-    "image": "/assets/images/gods/yuhuang.png"
+    "image": "/assets/images/gods/yuhuang.png",
+    "sortOrder": 3
   },
   {
     "id": "yuelao",
@@ -336,7 +250,57 @@
       "Taichung Lecheng Temple (East District, Taichung City)",
       "Tainan Grand Mazu Temple (West Central District, Tainan City)",
       "Tainan Grand Martial Temple (West Central District, Tainan City)"
-    ]
+    ],
+    "sortOrder": 4
+  },
+  {
+    "id": "chenghuang",
+    "name": "City God (Cheng Huang)",
+    "aliases": ["City God", "Cheng Huang Ye"],
+    "category": "taoism",
+    "domain": "City protection, underworld justice, rewarding good and punishing evil",
+    "description": "Step into a City God temple and the first thing you see, hung above the doorway, is three characters: 'You have come.' If your conscience is clear it reads like a warm welcome; if it isn't, it sends a chill down your spine. This is Chenghuang Ye, the City God — also called Chenghuang Laoye or Chenghuang Zunshen — the local magistrate of the underworld. The world of the living has its county chiefs and mayors; the world below has its City God, and every wrong you got away with in life is tallied in his ledger. He is the underworld's judge, prosecutor, and chief of police rolled into one, and the giant abacus hanging in his hall is his calling card: good and evil are all counted in the end. Yet he is more than a figure of dread — he also guards the peace of his district, and he even comes ranked like the mortal civil service: a 'Metropolitan' City God governs a province, a 'Prefectural' one a prefecture, a 'County' one a county. Hsinchu's is the highest-ranking City God temple in all Taiwan. Thronged by day, heavy with atmosphere by night — that coexistence of the living and the dead is something only a City God temple can offer.",
+    "story": "Unlike most deities, the City God has no single fixed identity. Each locality's City God is usually a fair-minded, well-respected figure from that place, appointed to the post after death — which means Taipei's City God and Tainan's City God are, quite literally, different men. There's something moving in that idea: live an upright life, and one day it may be your turn to watch over a stretch of land.\n\nWhat the temples share is their furnishings. Over the door hangs the plaque 'You have come,' like a greeting that has been waiting a long time. Inside the hall hangs the great abacus, a reminder that every account is on the books. And flanking the shrine stand two figures — one tall, one short, one black-faced, one white — General Xie and General Fan, the Black and White Impermanence, who bring in those whose time has come. Plenty of Taiwanese remember being led into a City God temple as a child and not daring to look up at those looming statues. Only later do you understand: what frightened you was never the statue. It was the ledger in your own heart.",
+    "worship": "What do people pray for here? Justice and a fair hearing (many come before a lawsuit), relief from backstabbers and petty enemies, and safety for the neighborhood. Quite a few City God temples also house a startlingly effective Yue Lao — Taipei's Xiahai City God Temple alone receives thousands of boxes of thank-you wedding cakes every year.\n\nHow to pray: bring the three meats and wine, offer incense first at the Heaven Emperor censer, then step to the City God's main hall and state your name, address, and request. If you're seeking redress for a wrong, you can write out your grievance and burn it as a petition. Keep the offerings on the formal side — three meats, wine, and spirit money, nothing too offhand.\n\nThe great taboo: never lie or swear a false oath inside a City God temple. He is the one who keeps the accounts, and lying to his face is walking straight into the net.",
+    "festivals": "The City God's birthday on the 13th of the 5th lunar month is the most important festival. Taipei Xiahai's procession has over a century of history, while Hsinchu's combines elaborate parades with its century-old night market food culture.",
+    "temples": [
+      {
+        "name": "Taipei Xiahai City God Temple",
+        "location": "Taipei City",
+        "url": "https://www.tpecitygod.org/",
+        "deityStory": "Locally famous for its Matchmaker God (Yue Lao). Thousands of couples return with wedding cakes to give thanks, making it Taiwan's top spot for finding love."
+      },
+      {
+        "name": "Hualien City God Temple",
+        "location": "Hualien County",
+        "url": "https://www.hualien-citygod.org.tw/",
+        "deityStory": "One of the oldest temples in Hualien, protecting the people of the east coast."
+      },
+      {
+        "name": "Hsinchu City God Temple",
+        "location": "Hsinchu City",
+        "deityStory": "The highest-ranking City God Temple in Taiwan. Its procession, combined with the century-old night market, creates a unique 'faith + food' culture."
+      },
+      {
+        "name": "Chiayi City God Temple",
+        "location": "Chiayi City",
+        "deityStory": "The most important City God Temple in Chiayi with centuries of history. The annual City God procession is a major religious event."
+      },
+      {
+        "name": "Kinmen Wudao City God Temple",
+        "location": "Kinmen County",
+        "deityStory": "The most important City God Temple in Kinmen, dating back to the Ming Dynasty and serving as the spiritual center for locals."
+      }
+    ],
+    "image": "/assets/images/gods/chenghuang.png",
+    "associatedTemples": [
+      "Taipei Xiahai City God Temple (Datong District, Taipei City)",
+      "Hualien City God Temple (Hualien City, Hualien County)",
+      "Hsinchu City God Temple (North District, Hsinchu City)",
+      "Chiayi City God Temple (East District, Chiayi City)",
+      "Kinmen Wudao City God Temple (Jincheng Township, Kinmen County)"
+    ],
+    "sortOrder": 5
   },
   {
     "id": "caishen",
@@ -369,73 +333,8 @@
       }
     ],
     "image": "/assets/images/gods/caishen.png",
-    "associatedTemples": ["Beigang Wude Temple (Beigang Township, Yunlin County)"]
-  },
-  {
-    "id": "jigong",
-    "name": "Ji Gong (Mad Monk)",
-    "aliases": ["Living Buddha Ji Gong", "Eccentric Monk Ji", "Chan Master Daoji"],
-    "category": "taoism",
-    "domain": "Saving the world, subduing demons, helping the weak and poor",
-    "description": "Broken hat, broken fan, broken shoes, a tattered monk's robe, and a gourd of wine swinging from one hand — the least god-like god of all is Ji Gong, also known as the Living Buddha Ji Gong or the Mad Monk Ji. He began as a real Southern Song monk, the Chan master Daoji, who drank wine, ate meat, and behaved like a lunatic, yet cured the illnesses no one else could and threw himself into fighting for the wronged. The line he left behind — 'Wine and meat pass through the gut; the Buddha stays in the heart' — is still quoted today. In Taiwan, Ji Gong is the most down-to-earth deity there is: he pays no mind to status, prizes loyalty above all, and is beloved especially by laborers and small business owners. When Ji Gong 'descends' at a temple festival, the spirit medium drinks, waves the fan, and hops about — the liveliest act on the whole grounds. That ragged look isn't poverty; it's his signboard, a way of smashing every hollow formality to point straight at the true nature of the heart. Having bowed before so many solemn, upright gods, a lot of people find they can finally relax in front of Ji Gong.",
-    "story": "Ji Gong was born Li Xiuyuan in 1148, into a scholarly family in Tiantai, Zhejiang. As a young man he took vows at Lingyin Temple in Hangzhou and received the dharma name Daoji — and then proceeded to scandalize the entire monastery, drinking, eating meat, and talking like a madman until the exasperated monks nicknamed him 'Ji the Lunatic.' Yet the mad monk had genuine power: he would tear scraps from his ragged robe, roll them into pills, and cure stubborn diseases with them, and he made a habit of helping the poor and punishing the cruel.\n\nHis most famous legend is 'the Flying Peak.' Ji Gong foresaw that a mountain peak was about to come hurtling down onto a village. He ran through the streets shouting a warning, but no one believed him — so in desperation he snatched a bride right out of the middle of her own wedding and bolted. The whole village gave chase to get her back, and as they poured out after him, the peak crashed down and flattened the now-empty village. Only then did they understand: the madman had saved every one of them.\n\nIn 1204, Daoji passed away at Jingci Temple in Hangzhou, leaving behind a verse: 'Sixty years of tumbling wall to wall; now gathered home, the water still meets the boundless blue.' A mad life, and a clear-eyed one.",
-    "worship": "Praying to Ji Gong is probably the most relaxed act of worship in all of Taiwan — because the offerings can include wine and meat. Rice wine, drunken chicken, braised snacks, fruit: all fair game. It's the exact opposite of the vegetarian rule most gods keep, and that's entirely in character for the god of no formality.\n\nWhat to pray for? Saving people is his trade: healing illness and averting disaster, breaking a run of bad luck, standing up for the underdog, seeking justice. Some temples keep the tradition of Ji Gong 'descending' to handle cases, with the medium drinking and waving his fan in a re-creation of the mad monk's style.\n\nThe taboos here are the fewest of all: no elaborate ritual is required, and a sincere heart is what works. But don't misread 'wine and meat pass through the gut.' He may not stand on ceremony, but the one thing he weighs most is whether your heart is true.",
-    "festivals": "His birthday falls on the 2nd of the 2nd lunar month (some temples celebrate on the 3rd of the 10th month). Temple festivals feature spirit medium sessions where mediums channel Ji Gong's eccentric behavior — a highly entertaining spectacle.",
-    "temples": [
-      {
-        "name": "Yilan Sanqing Temple",
-        "location": "Yilan County",
-        "url": "https://www.sanching.org.tw/",
-        "deityStory": "Set in a serene landscape. As a major Taoist temple, it also enshrines Ji Gong and is a must-visit for spiritual cultivators."
-      }
-    ],
-    "image": "/assets/images/gods/jigong.png"
-  },
-  {
-    "id": "lvdongbin",
-    "name": "Lü Dongbin (Patriarch Lü)",
-    "aliases": ["Lü the Immortal", "Patriarch of Pure Yang", "First of the Eight Immortals"],
-    "category": "taoism",
-    "domain": "Taoist cultivation, swordsmanship, scholarly fortune",
-    "description": "On Zhinan Mountain above Muzha in Taipei sits Zhinan Temple, and its principal deity is Lü Dongbin, first of the Eight Immortals, revered by the faithful as Patriarch Lü, Lü Xiangong, or Fuyou Dijun. This immortal was accomplished in both the pen and the sword: a master swordsman whose 'flying sword that slays demons' tales spread far and wide, and a scholar by background, so that students pray to him for exam luck while Taoist cultivators honor him as the patriarch of internal alchemy. What Taiwanese know him best for, though, may be the legend that couples should never visit Zhinan Temple together — supposedly Patriarch Lü grows jealous and splits them up. The temple has clarified this many times: it's pure folk gossip, and in fact Lü only severs 'bad-luck romances' while safeguarding true love. Gossip aside, Zhinan Temple has long been called 'the foremost sacred mountain under heaven,' and its 'Immortal Patriarch oracle' is among the most famous divination slips in Taiwan. The insider's way to visit is to climb up at dusk, pay respects to the patriarch, and take in the glittering Taipei skyline on the way down.",
-    "story": "Before he was an immortal, Lü Dongbin was a scholar who kept failing his exams. In the Tang dynasty he traveled to Chang'an again and again to sit the imperial examination, and again and again his name was left off the list. The night that changed everything happened in a Chang'an tavern, where he met the immortal Zhongli Quan cooking a pot of millet. While the pot simmered, Lü dozed off — and in his dream he passed the exam, rose through office step by step, took a wife, raised children, and reached the highest ranks, only to be framed by scheming rivals and end up ruined, his family scattered, wandering the streets.\n\nHe woke with a start. The millet still wasn't done.\n\nAn entire lifetime of glory and ruin, gone in less time than it takes to cook one pot of grain — this is the origin of the idiom 'a golden millet dream.' On the spot, Lü Dongbin saw through the hunger for fame, took Zhongli Quan as his master, and went on to pass the 'Ten Trials' of desire, wealth, and mortal fear before attaining immortality. Rather than retreat into the mountains, he wandered the human world saving people; the carefree tale of 'thrice drunk at Yueyang Tower' still survives. Of all the Eight Immortals, this failed exam candidate is the most warmly human.",
-    "worship": "Worship Patriarch Lü with an emphasis on purity: clear tea, fruit, and vegetarian dishes. Because Lü was a scholar by background, exam-takers often add a writing brush, ink, paper, and an inkstone to the offering, a nod to his blessing over learning. What to pray for? Exam success, progress in cultivation, and the warding off of misfortune all fall within his scope.\n\nAt Zhinan Temple, don't leave without drawing an 'Immortal Patriarch oracle' — one of the most renowned divination slips in Taiwan, and the whole reason many people make the climb.\n\nThe 14th day of the fourth lunar month is Patriarch Lü's birthday, when Zhinan Temple pairs the birthday rites with poetry readings and calligraphy exhibitions, fitting for this most scholarly of immortals. And should couples steer clear? The temple's own answer: Lü only cuts off the bad romances — true love has nothing to fear.",
-    "festivals": "His birthday on the 14th of the 4th lunar month features grand celebrations at Zhinan Temple, combining Taoist rituals with literary events like poetry readings and calligraphy exhibitions — fitting his scholarly immortal character.",
-    "temples": [
-      {
-        "name": "Zhinan Temple",
-        "location": "Taipei City",
-        "url": "https://www.chihnan.gov.tw/",
-        "deityStory": "Famous temple of Patriarch Lü in the north. Folk legend warns couples against visiting, but the temple clarifies that Lü only cuts bad relationships, while protecting true love."
-      }
-    ],
-    "image": "/assets/images/gods/lvdongbin.png",
-    "associatedTemples": ["Zhinan Temple (Wenshan District, Taipei City)"]
-  },
-  {
-    "id": "taisui",
-    "name": "Tai Sui (Grand Duke Jupiter)",
-    "aliases": ["Grand Duke", "Year God", "Jupiter General"],
-    "category": "taoism",
-    "domain": "Annual fortune, averting misfortune, neutralizing yearly afflictions",
-    "description": "Every year in the run-up to Lunar New Year, the news runs the same fixed story: 'These zodiac signs offend Tai Sui this year!' And then the lines form in front of the Tai Sui halls at temples across Taiwan — this is the island's annual appointment with Tai Sui Xingjun, popularly known as Tai Sui Ye or the Presiding Year God. Tai Sui is the deity who governs each year's fortune, and there are sixty of them rotating in step with the sexagenary calendar cycle. When your zodiac animal clashes with or is 'punished' by the current year's Tai Sui, you have 'offended Tai Sui' — believed to make for a bumpy, misfortune-prone year. So 'settling Tai Sui' became the most common annual ritual in Taiwan: at the start of the year you light a Tai Sui lamp at the temple, and at year's end you return to thank him. The saying 'don't break ground on Tai Sui's head' has long since left religion behind to become everyday speech, a warning against provoking a power beyond your weight. Four or five signs take their turn every year, so Tai Sui Ye never runs short of visitors.",
-    "story": "The root of the Tai Sui belief is, of all things, astronomy. The ancients observed that Jupiter — the 'Year Star' — circles the celestial sphere roughly every twelve years, so they divided the sky into twelve zones; each year Jupiter passed through one, and that zone had its own Tai Sui spirit on watch. Over time this grew into the full system of sixty Tai Sui in rotation, each with his own name and rank.\n\nFolklore adds a story to make your skin crawl. Long ago, someone who scoffed at the taboo deliberately dug into the ground in the Tai Sui's direction — and unearthed a lump of flesh that kept growing and could not be cut through no matter what. Terrified, he hastily reburied it and set up an altar to it, and from then on the warning spread: never break ground on Tai Sui's head.\n\nThe curious part is that the 'Tai Sui fungus' in the tale really does exist — an underground fungus shaped like a mass of flesh, exactly the kind of thing that would unnerve the ancients. One belief, with one end tied to the stars and the other to a mystery buried in the soil: Tai Sui may be the most cross-disciplinary god of them all.",
-    "worship": "How do you 'settle Tai Sui'? Early in the lunar year — ideally before the 15th of the first month — you register your name and birth date at a temple, and the staff install a Tai Sui lamp or talisman in the Tai Sui hall, asking Tai Sui Xingjun to watch over you for the year. At year's end, around the twelfth lunar month, you return to 'thank Tai Sui,' closing the loop.\n\nWho needs to do it? The signs that hold, clash with, punish, break, or harm the current year's Tai Sui — the temples and the media publish the list every year.\n\nAdvice for an offending year: wear a Tai Sui talisman, light a Tai Sui lamp, put off big changes like moving house or switching jobs, and do plenty of good deeds. When it comes to fortune, a little caution never hurt anyone.",
-    "festivals": "The peak period for placing Tai Sui is from the 8th to 9th of the 1st lunar month. Major temples see long queues. The annual announcement of which zodiac signs 'offend' Tai Sui is a regular media event before each Lunar New Year.",
-    "temples": [
-      {
-        "name": "Songshan Ciyou Temple",
-        "location": "Taipei City",
-        "url": "https://www.sscy.org.tw/",
-        "deityStory": "Though primarily a Mazu temple, its Tai Sui Hall is grand and popular. The Tai Sui lamps here are renowned for their efficacy."
-      },
-      {
-        "name": "Longshan Temple",
-        "location": "Taipei City",
-        "url": "https://www.lungshan.org.tw/"
-      }
-    ],
-    "image": "/assets/images/gods/taisui.png"
+    "associatedTemples": ["Beigang Wude Temple (Beigang Township, Yunlin County)"],
+    "sortOrder": 6
   },
   {
     "id": "wenchang",
@@ -461,7 +360,52 @@
       }
     ],
     "image": "/assets/images/gods/wenchang.png",
-    "associatedTemples": ["Chihkan Tower (Haishen Temple/Wenchang Pavilion) (West Central District, Tainan City)"]
+    "associatedTemples": ["Chihkan Tower (Haishen Temple/Wenchang Pavilion) (West Central District, Tainan City)"],
+    "sortOrder": 7
+  },
+  {
+    "id": "baosheng",
+    "name": "Baosheng Dadi (Great Emperor of Life Protection)",
+    "aliases": ["Great Emperor Baosheng", "Divine Doctor Wu"],
+    "category": "taoism",
+    "domain": "God of medicine, healing, health protection",
+    "description": "Look closely at a statue of Baosheng Dadi and you'll often find a tiger crouched at his side — not a decoration, but a patient. Legend says this god of medicine, known as Dadao Gong or Wu Zhenren (the True Man Wu), once reached bare-handed into a tiger's throat to pull out a lodged bone; the grateful beast never left him again. Baosheng Dadi was born Wu Tao, a celebrated physician of Tong'an in Fujian during the Northern Song. His skill was extraordinary and he treated rich and poor without distinction, and after his death the Hokkien people enshrined him as their foremost god of medicine. Settlers carried his faith across to Taiwan, where the incense for health and healing has never gone out — even doctors, nurses, and pharmacists honor him as the patron of their profession, and some temples still offer traditional 'medicine lots,' herbal prescriptions drawn by divination. His flagship temple, Taipei's Dalongdong Baoan Temple, won a UNESCO Asia-Pacific Heritage Award for its restoration; if you want to see Taiwanese temple craftsmanship at its peak, this is where you go.",
+    "story": "Wu Tao's most famous house call was to the reigning Empress Dowager herself. When the mother of Emperor Renzong of Song lay ill and no remedy worked, Wu Tao cured her. The emperor offered to make him Imperial Physician — wealth and status in a single step — but he turned it down, asking only to go home and keep treating ordinary people, buying medicine out of his own pocket for those who couldn't pay.\n\nHe was born in 979 in Baijiao village, Tong'an, Fujian, and mastered internal and external medicine, acupuncture, and herbal lore, with a special gift for fighting epidemics. In 1036, at the age of fifty-eight, he fell from a cliff while gathering herbs on a mountainside — a healer who died on the very path of his healing. The villagers built a temple in his memory and honored him as Baosheng Dadi, the Great Emperor Who Protects Life.\n\nTaiwanese folklore adds a fond footnote: Dadao Gong and Mazu were once a couple who later parted. Every third lunar month, they say, he sends wind to tangle her hair and she sends rain to soak him through — which is why the weather that month swings so wildly between gusts and showers, a pattern locals nickname 'Dadao Gong's wind, Mazu's rain.'",
+    "worship": "Worship Baosheng Dadi with cleanliness in mind — the offerings are simple: fresh flowers, vegetarian fruit, and clear tea, with sincerity counting for the most. What is he best asked for? Recovery from illness, health and safety, and the warding off of misfortune — even doctors, nurses, and pharmacists come to pay respects to the patron of their trade.\n\nSome temples keep 'medicine lots': after casting moon blocks you draw a slip and take the prescription to a Chinese herbal pharmacy. Modern temples are careful to add a reminder, though — the lots are for the comfort of the heart, and anyone who feels unwell should still see a doctor.\n\nThe 15th day of the third lunar month is his birthday, when Baoan Temple's months-long 'Baosheng Cultural Festival' fills the calendar with clan operas, fire-walking rites, and arts events — carrying the old spirit of 'healing the world' right into the present day.",
+    "festivals": "His birthday on the 15th of the 3rd lunar month kicks off the three-month 'Baosheng Cultural Festival' at Baoan Temple, one of Taiwan's largest temple cultural events, featuring traditional opera, fire-walking rituals, and art exhibitions.",
+    "temples": [
+      {
+        "name": "Dalongdong Baoan Temple",
+        "location": "Taipei City",
+        "url": "https://www.baoan.org.tw/",
+        "deityStory": "Winner of the UNESCO Asia-Pacific Heritage Award for its exquisite architecture. The annual Baosheng Cultural Festival is a major event in Taipei."
+      }
+    ],
+    "image": "/assets/images/gods/baosheng.png",
+    "associatedTemples": ["Dalongdong Baoan Temple (Datong District, Taipei City)"],
+    "sortOrder": 8
+  },
+  {
+    "id": "xuantian",
+    "name": "Xuantian Shangdi (Supreme Emperor of Dark Heaven)",
+    "aliases": ["Emperor of the North", "Zhenwu", "Dark Warrior"],
+    "category": "taoism",
+    "domain": "Exorcism, nation protection, guardian of the north",
+    "description": "One foot on a turtle, one on a snake, hair loose and feet bare, a Seven-Star Sword in his hand — the silhouette is unmistakable. This is Xuantian Shangdi, the Supreme Emperor of the Dark Heaven, known to most Taiwanese as Shangdi Gong or Diye Gong and also called Zhenwu Dadi or the Emperor of the North Pole. His rank in Taoism is exalted: he governs the seven stars of the north and commands the celestial position of the Dark Warrior. In Taiwan he is famed above all for his ferocity against demons — when something feels haunted, jinxed, or unclean, Shangdi Gong is the name many people reach for first, and countless spirit mediums and Taoist priests serve him as their patron. Every third day of the third lunar month, his birthday draws hundreds of thousands of pilgrims to Songboling Shoutian Temple in Nantou, the head temple from which more Xuantian Shangdi shrines branch than from anywhere else in Taiwan. One more detail worth noticing: he belongs to the North, whose element is Water and whose color is black — which is why his statues and his temples tend to be draped in dark tones.",
+    "story": "The most widely told legend is a butcher's story. In a past life, Xuantian Shangdi was a butcher weighed down by the karma of endless killing. One day an immortal opened his eyes to the truth, and in a fit of remorse he resolved to lay down his knife and atone — he cut open his own belly and drew out his stomach and intestines as a sign of repentance. But the intestines fell into the water and became a snake, and the stomach became a turtle, and the two of them stirred up the waters and terrorized the people.\n\nThrough long cultivation the butcher's soul at last attained godhood. Yet the turtle and the snake were his own karma, and no one else could clean up after him — so he pins them beneath his own feet, holding them down for all time. That is why his statue forever stands upon a turtle and a snake: they are not mounts, but the past he conquered. Lay down the butcher's knife, and even the gravest sin has a chance at a fresh start — but the karma you create is yours alone to face. That is the sharpest lesson this fierce warrior-god leaves for us. (The more orthodox Taoist account tells it differently: he was an incarnation of Laozi who cultivated for forty-two years on Mount Wudang before ascending to godhood.)",
+    "worship": "Offerings to Xuantian Shangdi include the three meats, five fruits, tea, and wine. Because of the butcher legend in his past, some temples avoid pork and use chicken, fish, or vegetarian dishes instead — it's safest to ask the temple first. What is he best asked for? Driving off evil, 'soul-calming' (shoujing), and breaking curses are his specialty: parents bring frightened children for a soul-calming rite, homeowners pray to settle a house before moving in or breaking ground, and anyone who feels they've brushed against something unclean can ask the temple for 'purifying talisman water' to sprinkle and clear it away. Around his birthday on the third day of the third lunar month, temples hold fire-walking rites and the 'passing beneath the palanquin' ritual, and the surge of pilgrims to Songboling Shoutian Temple is the event of the year.",
+    "festivals": "His birthday on the 3rd of the 3rd lunar month sees massive celebrations, especially at Songboling Shoutian Temple, attracting hundreds of thousands. Traditional rituals include fire-walking and passing under sedan chairs.",
+    "temples": [
+      {
+        "name": "Songboling Shoutian Temple",
+        "location": "Nantou County",
+        "url": "https://www.shoutian.org.tw/",
+        "deityStory": "The head temple with the most Xuantian Shangdi branches in Taiwan. Located on the Bagua Mountain range, it offers great views and is a major pilgrimage center."
+      }
+    ],
+    "image": "/assets/images/gods/xuantianshangdi.png",
+    "associatedTemples": ["Songboling Shoutian Temple (Mingjian Township, Nantou County)"],
+    "sortOrder": 9
   },
   {
     "id": "confucius",
@@ -485,7 +429,29 @@
       }
     ],
     "image": "/assets/images/gods/confucius.png",
-    "associatedTemples": ["Tainan Confucius Temple (West Central District, Tainan City)"]
+    "associatedTemples": ["Tainan Confucius Temple (West Central District, Tainan City)"],
+    "sortOrder": 10
+  },
+  {
+    "id": "jigong",
+    "name": "Ji Gong (Mad Monk)",
+    "aliases": ["Living Buddha Ji Gong", "Eccentric Monk Ji", "Chan Master Daoji"],
+    "category": "taoism",
+    "domain": "Saving the world, subduing demons, helping the weak and poor",
+    "description": "Broken hat, broken fan, broken shoes, a tattered monk's robe, and a gourd of wine swinging from one hand — the least god-like god of all is Ji Gong, also known as the Living Buddha Ji Gong or the Mad Monk Ji. He began as a real Southern Song monk, the Chan master Daoji, who drank wine, ate meat, and behaved like a lunatic, yet cured the illnesses no one else could and threw himself into fighting for the wronged. The line he left behind — 'Wine and meat pass through the gut; the Buddha stays in the heart' — is still quoted today. In Taiwan, Ji Gong is the most down-to-earth deity there is: he pays no mind to status, prizes loyalty above all, and is beloved especially by laborers and small business owners. When Ji Gong 'descends' at a temple festival, the spirit medium drinks, waves the fan, and hops about — the liveliest act on the whole grounds. That ragged look isn't poverty; it's his signboard, a way of smashing every hollow formality to point straight at the true nature of the heart. Having bowed before so many solemn, upright gods, a lot of people find they can finally relax in front of Ji Gong.",
+    "story": "Ji Gong was born Li Xiuyuan in 1148, into a scholarly family in Tiantai, Zhejiang. As a young man he took vows at Lingyin Temple in Hangzhou and received the dharma name Daoji — and then proceeded to scandalize the entire monastery, drinking, eating meat, and talking like a madman until the exasperated monks nicknamed him 'Ji the Lunatic.' Yet the mad monk had genuine power: he would tear scraps from his ragged robe, roll them into pills, and cure stubborn diseases with them, and he made a habit of helping the poor and punishing the cruel.\n\nHis most famous legend is 'the Flying Peak.' Ji Gong foresaw that a mountain peak was about to come hurtling down onto a village. He ran through the streets shouting a warning, but no one believed him — so in desperation he snatched a bride right out of the middle of her own wedding and bolted. The whole village gave chase to get her back, and as they poured out after him, the peak crashed down and flattened the now-empty village. Only then did they understand: the madman had saved every one of them.\n\nIn 1204, Daoji passed away at Jingci Temple in Hangzhou, leaving behind a verse: 'Sixty years of tumbling wall to wall; now gathered home, the water still meets the boundless blue.' A mad life, and a clear-eyed one.",
+    "worship": "Praying to Ji Gong is probably the most relaxed act of worship in all of Taiwan — because the offerings can include wine and meat. Rice wine, drunken chicken, braised snacks, fruit: all fair game. It's the exact opposite of the vegetarian rule most gods keep, and that's entirely in character for the god of no formality.\n\nWhat to pray for? Saving people is his trade: healing illness and averting disaster, breaking a run of bad luck, standing up for the underdog, seeking justice. Some temples keep the tradition of Ji Gong 'descending' to handle cases, with the medium drinking and waving his fan in a re-creation of the mad monk's style.\n\nThe taboos here are the fewest of all: no elaborate ritual is required, and a sincere heart is what works. But don't misread 'wine and meat pass through the gut.' He may not stand on ceremony, but the one thing he weighs most is whether your heart is true.",
+    "festivals": "His birthday falls on the 2nd of the 2nd lunar month (some temples celebrate on the 3rd of the 10th month). Temple festivals feature spirit medium sessions where mediums channel Ji Gong's eccentric behavior — a highly entertaining spectacle.",
+    "temples": [
+      {
+        "name": "Yilan Sanqing Temple",
+        "location": "Yilan County",
+        "url": "https://www.sanching.org.tw/",
+        "deityStory": "Set in a serene landscape. As a major Taoist temple, it also enshrines Ji Gong and is a must-visit for spiritual cultivators."
+      }
+    ],
+    "image": "/assets/images/gods/jigong.png",
+    "sortOrder": 11
   },
   {
     "id": "wangmu",
@@ -505,6 +471,55 @@
       }
     ],
     "image": "/assets/images/gods/god-wangmu.png",
-    "associatedTemples": ["Hualien Shen An Temple (Hualien City, Hualien County)"]
+    "associatedTemples": ["Hualien Shen An Temple (Hualien City, Hualien County)"],
+    "sortOrder": 12
+  },
+  {
+    "id": "lvdongbin",
+    "name": "Lü Dongbin (Patriarch Lü)",
+    "aliases": ["Lü the Immortal", "Patriarch of Pure Yang", "First of the Eight Immortals"],
+    "category": "taoism",
+    "domain": "Taoist cultivation, swordsmanship, scholarly fortune",
+    "description": "On Zhinan Mountain above Muzha in Taipei sits Zhinan Temple, and its principal deity is Lü Dongbin, first of the Eight Immortals, revered by the faithful as Patriarch Lü, Lü Xiangong, or Fuyou Dijun. This immortal was accomplished in both the pen and the sword: a master swordsman whose 'flying sword that slays demons' tales spread far and wide, and a scholar by background, so that students pray to him for exam luck while Taoist cultivators honor him as the patriarch of internal alchemy. What Taiwanese know him best for, though, may be the legend that couples should never visit Zhinan Temple together — supposedly Patriarch Lü grows jealous and splits them up. The temple has clarified this many times: it's pure folk gossip, and in fact Lü only severs 'bad-luck romances' while safeguarding true love. Gossip aside, Zhinan Temple has long been called 'the foremost sacred mountain under heaven,' and its 'Immortal Patriarch oracle' is among the most famous divination slips in Taiwan. The insider's way to visit is to climb up at dusk, pay respects to the patriarch, and take in the glittering Taipei skyline on the way down.",
+    "story": "Before he was an immortal, Lü Dongbin was a scholar who kept failing his exams. In the Tang dynasty he traveled to Chang'an again and again to sit the imperial examination, and again and again his name was left off the list. The night that changed everything happened in a Chang'an tavern, where he met the immortal Zhongli Quan cooking a pot of millet. While the pot simmered, Lü dozed off — and in his dream he passed the exam, rose through office step by step, took a wife, raised children, and reached the highest ranks, only to be framed by scheming rivals and end up ruined, his family scattered, wandering the streets.\n\nHe woke with a start. The millet still wasn't done.\n\nAn entire lifetime of glory and ruin, gone in less time than it takes to cook one pot of grain — this is the origin of the idiom 'a golden millet dream.' On the spot, Lü Dongbin saw through the hunger for fame, took Zhongli Quan as his master, and went on to pass the 'Ten Trials' of desire, wealth, and mortal fear before attaining immortality. Rather than retreat into the mountains, he wandered the human world saving people; the carefree tale of 'thrice drunk at Yueyang Tower' still survives. Of all the Eight Immortals, this failed exam candidate is the most warmly human.",
+    "worship": "Worship Patriarch Lü with an emphasis on purity: clear tea, fruit, and vegetarian dishes. Because Lü was a scholar by background, exam-takers often add a writing brush, ink, paper, and an inkstone to the offering, a nod to his blessing over learning. What to pray for? Exam success, progress in cultivation, and the warding off of misfortune all fall within his scope.\n\nAt Zhinan Temple, don't leave without drawing an 'Immortal Patriarch oracle' — one of the most renowned divination slips in Taiwan, and the whole reason many people make the climb.\n\nThe 14th day of the fourth lunar month is Patriarch Lü's birthday, when Zhinan Temple pairs the birthday rites with poetry readings and calligraphy exhibitions, fitting for this most scholarly of immortals. And should couples steer clear? The temple's own answer: Lü only cuts off the bad romances — true love has nothing to fear.",
+    "festivals": "His birthday on the 14th of the 4th lunar month features grand celebrations at Zhinan Temple, combining Taoist rituals with literary events like poetry readings and calligraphy exhibitions — fitting his scholarly immortal character.",
+    "temples": [
+      {
+        "name": "Zhinan Temple",
+        "location": "Taipei City",
+        "url": "https://www.chihnan.gov.tw/",
+        "deityStory": "Famous temple of Patriarch Lü in the north. Folk legend warns couples against visiting, but the temple clarifies that Lü only cuts bad relationships, while protecting true love."
+      }
+    ],
+    "image": "/assets/images/gods/lvdongbin.png",
+    "associatedTemples": ["Zhinan Temple (Wenshan District, Taipei City)"],
+    "sortOrder": 13
+  },
+  {
+    "id": "taisui",
+    "name": "Tai Sui (Grand Duke Jupiter)",
+    "aliases": ["Grand Duke", "Year God", "Jupiter General"],
+    "category": "taoism",
+    "domain": "Annual fortune, averting misfortune, neutralizing yearly afflictions",
+    "description": "Every year in the run-up to Lunar New Year, the news runs the same fixed story: 'These zodiac signs offend Tai Sui this year!' And then the lines form in front of the Tai Sui halls at temples across Taiwan — this is the island's annual appointment with Tai Sui Xingjun, popularly known as Tai Sui Ye or the Presiding Year God. Tai Sui is the deity who governs each year's fortune, and there are sixty of them rotating in step with the sexagenary calendar cycle. When your zodiac animal clashes with or is 'punished' by the current year's Tai Sui, you have 'offended Tai Sui' — believed to make for a bumpy, misfortune-prone year. So 'settling Tai Sui' became the most common annual ritual in Taiwan: at the start of the year you light a Tai Sui lamp at the temple, and at year's end you return to thank him. The saying 'don't break ground on Tai Sui's head' has long since left religion behind to become everyday speech, a warning against provoking a power beyond your weight. Four or five signs take their turn every year, so Tai Sui Ye never runs short of visitors.",
+    "story": "The root of the Tai Sui belief is, of all things, astronomy. The ancients observed that Jupiter — the 'Year Star' — circles the celestial sphere roughly every twelve years, so they divided the sky into twelve zones; each year Jupiter passed through one, and that zone had its own Tai Sui spirit on watch. Over time this grew into the full system of sixty Tai Sui in rotation, each with his own name and rank.\n\nFolklore adds a story to make your skin crawl. Long ago, someone who scoffed at the taboo deliberately dug into the ground in the Tai Sui's direction — and unearthed a lump of flesh that kept growing and could not be cut through no matter what. Terrified, he hastily reburied it and set up an altar to it, and from then on the warning spread: never break ground on Tai Sui's head.\n\nThe curious part is that the 'Tai Sui fungus' in the tale really does exist — an underground fungus shaped like a mass of flesh, exactly the kind of thing that would unnerve the ancients. One belief, with one end tied to the stars and the other to a mystery buried in the soil: Tai Sui may be the most cross-disciplinary god of them all.",
+    "worship": "How do you 'settle Tai Sui'? Early in the lunar year — ideally before the 15th of the first month — you register your name and birth date at a temple, and the staff install a Tai Sui lamp or talisman in the Tai Sui hall, asking Tai Sui Xingjun to watch over you for the year. At year's end, around the twelfth lunar month, you return to 'thank Tai Sui,' closing the loop.\n\nWho needs to do it? The signs that hold, clash with, punish, break, or harm the current year's Tai Sui — the temples and the media publish the list every year.\n\nAdvice for an offending year: wear a Tai Sui talisman, light a Tai Sui lamp, put off big changes like moving house or switching jobs, and do plenty of good deeds. When it comes to fortune, a little caution never hurt anyone.",
+    "festivals": "The peak period for placing Tai Sui is from the 8th to 9th of the 1st lunar month. Major temples see long queues. The annual announcement of which zodiac signs 'offend' Tai Sui is a regular media event before each Lunar New Year.",
+    "temples": [
+      {
+        "name": "Songshan Ciyou Temple",
+        "location": "Taipei City",
+        "url": "https://www.sscy.org.tw/",
+        "deityStory": "Though primarily a Mazu temple, its Tai Sui Hall is grand and popular. The Tai Sui lamps here are renowned for their efficacy."
+      },
+      {
+        "name": "Longshan Temple",
+        "location": "Taipei City",
+        "url": "https://www.lungshan.org.tw/"
+      }
+    ],
+    "image": "/assets/images/gods/taisui.png",
+    "sortOrder": 14
   }
 ]
