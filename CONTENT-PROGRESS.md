@@ -16,30 +16,30 @@
 
 ## 進度總表
 
-| 內容型                      | 筆數 | zh  | en  | ja  | 備註                                    |
-| --------------------------- | ---- | --- | --- | --- | --------------------------------------- |
-| **神明**                    |      |     |     |     |                                         |
-| 道教神明 taoist-gods        | 15   | ✅  | ✅  | ✅  | wave 1/2                                |
-| 佛教神明 buddhist-gods      | 11   | ✅  | ✅  | ✅  | wave 1/2                                |
-| 民間神明 folk-gods          | 13   | ✅  | ✅  | ✅  | wave 1/2                                |
-| 客家神明 hakka-gods         | 7    | ✅  | ✅  | ✅  | wave 1/2                                |
-| 原民信仰 indigenous-spirits | 7    | ✅  | ✅  | ✅  | wave 3                                  |
-| **廟宇**                    |      |     |     |     |                                         |
-| 北部廟宇 temples-north      | 21   | ✅  | ✅  | ✅  | wave 4 — description + history          |
-| 中部廟宇 temples-central    | 12   | ✅  | ✅  | ✅  | wave 4                                  |
-| 南部廟宇 temples-south      | 13   | ✅  | ✅  | ✅  | wave 4                                  |
-| 東部廟宇 temples-east       | 11   | ✅  | ✅  | ✅  | wave 4                                  |
-| **文化**                    |      |     |     |     |                                         |
-| 習俗 culture-customs        | 10   | ✅  | ✅  | ✅  | wave 5                                  |
-| 節慶 culture-festivals      | 9    | ✅  | ✅  | ✅  | wave 5                                  |
-| 工藝 culture-heritage       | 7    | ✅  | ✅  | ✅  | wave 5                                  |
-| 儀式 culture-rituals        | 8    | ✅  | ✅  | ✅  | wave 5                                  |
-| 咒語介紹 culture-mantras    | 10   | ✅  | ✅  | ✅  | wave 5 — 咒語本文逐字保留、只改介紹文字 |
-| **其他**                    |      |     |     |     |                                         |
-| 神明故事 god-stories        | 10   | ✅  | ✅  | ✅  | 三語皆故事版（stage 一-b）              |
-| 路線 routes                 | 4    | ✅  | ✅  | ✅  | wave 1/2                                |
-| 神明指南 god-guide          | 7    | ➖  | ➖  | ➖  | 實用 tips 型、不故事化                  |
-| 籤詩 fortunes               | 60   | ➖  | ➖  | ➖  | 傳統籤詩原文、不改                      |
+| 內容型                      | 筆數 | zh  | en  | ja  | 備註                                                           |
+| --------------------------- | ---- | --- | --- | --- | -------------------------------------------------------------- |
+| **神明**                    |      |     |     |     |                                                                |
+| 道教神明 taoist-gods        | 15   | ✅  | ✅  | ✅  | wave 1/2                                                       |
+| 佛教神明 buddhist-gods      | 11   | ✅  | ✅  | ✅  | wave 1/2                                                       |
+| 民間神明 folk-gods          | 13   | ✅  | ✅  | ✅  | wave 1/2                                                       |
+| 客家神明 hakka-gods         | 7    | ✅  | ✅  | ✅  | wave 1/2                                                       |
+| 原民信仰 indigenous-spirits | 7    | ✅  | ✅  | ✅  | wave 3                                                         |
+| **廟宇**                    |      |     |     |     |                                                                |
+| 北部廟宇 temples-north      | 21   | ✅  | ✅  | ✅  | wave 4 — description + history                                 |
+| 中部廟宇 temples-central    | 12   | ✅  | ✅  | ✅  | wave 4                                                         |
+| 南部廟宇 temples-south      | 13   | ✅  | ✅  | ✅  | wave 4                                                         |
+| 東部廟宇 temples-east       | 11   | ✅  | ✅  | ✅  | wave 4                                                         |
+| **文化**                    |      |     |     |     |                                                                |
+| 習俗 culture-customs        | 10   | ✅  | ✅  | ✅  | wave 5                                                         |
+| 節慶 culture-festivals      | 9    | ✅  | ✅  | ✅  | wave 5                                                         |
+| 工藝 culture-heritage       | 7    | ✅  | ✅  | ✅  | wave 5                                                         |
+| 儀式 culture-rituals        | 8    | ✅  | ✅  | ✅  | wave 5                                                         |
+| 咒語介紹 culture-mantras    | 10   | ✅  | ✅  | ✅  | wave 5 — 咒語本文逐字保留、只改介紹文字                        |
+| **其他**                    |      |     |     |     |                                                                |
+| 神明故事 god-stories        | 10   | ✅  | ✅  | ✅  | 三語皆故事版（stage 一-b）                                     |
+| 路線 routes                 | 4    | ✅  | ✅  | ✅  | wave 1/2                                                       |
+| 神明指南 god-guide          | 7    | ➖  | ➖  | ➖  | 實用 tips 型、不故事化                                         |
+| 籤詩 fortunes               | 60   | ➖  | ➖  | ➖  | 不故事化；poem 留漢詩、解說三語齊全（ja 2026-07-05 補齊 3→60） |
 
 ## 執行波次
 
