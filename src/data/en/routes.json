@@ -73,7 +73,17 @@
         "activity": "Finish at Dadaocheng Wharf for the sunset over the Tamsui River"
       }
     ],
-    "notes": "All three temples are free to enter. Crowds swell on the 1st and 15th of the lunar month and on weekends, so if you prefer some quiet, go on a weekday. The general rule for wealth-praying: state your name, birth date, and address, explain what you are asking for, and pledge only a thanks-offering you can comfortably keep."
+    "notes": "All three temples are free to enter. Crowds swell on the 1st and 15th of the lunar month and on weekends, so if you prefer some quiet, go on a weekday. The general rule for wealth-praying: state your name, birth date, and address, explain what you are asking for, and pledge only a thanks-offering you can comfortably keep.",
+    "food": [
+      {
+        "name": "Raohe St. Night Market — Fuzhou Pepper Buns",
+        "description": "Songshan Ciyou Temple sits right at the entrance to Raohe Street Night Market, and slipping straight in after praying to Mazu is the local move. The name to know here is the Fuzhou pepper bun — slapped onto the wall of a charcoal oven and baked fresh, the crust comes out blistered and crisp, and the first bite floods with peppery pork and scallion. Worth the wait in line."
+      },
+      {
+        "name": "Dadaocheng — Dried Goods & Traditional Pastries",
+        "description": "Dihua Street, home to the Xia-Hai City God Temple, has been Taipei's dried-goods heart for over a century. Once you've prayed to the City God and Yue Lao, work your way down the street: the herbal-medicine halls, dried-goods sellers, and old pastry shops are the place to pick up a gift. A box of traditional Chinese pastries or a bag of dried goods carries far more of Dadaocheng than any night-market snack."
+      }
+    ]
   },
   {
     "id": "taipei-classic-halfday",
@@ -135,7 +145,17 @@
         "activity": "Finish at Dadaocheng Wharf with a view over the Tamsui River"
       }
     ],
-    "notes": "Both temples are free to enter with no reservation needed. There is no strict dress code, but avoid overly revealing clothing out of respect. Incense and offerings can be purchased at the temples (Lungshan Temple has phased out incense burning — praying with palms together is the norm there). For the full etiquette walkthrough, see our Temple Visiting Guide."
+    "notes": "Both temples are free to enter with no reservation needed. There is no strict dress code, but avoid overly revealing clothing out of respect. Incense and offerings can be purchased at the temples (Lungshan Temple has phased out incense burning — praying with palms together is the norm there). For the full etiquette walkthrough, see our Temple Visiting Guide.",
+    "food": [
+      {
+        "name": "Manka — Huaxi Street Old-Taipei Eats",
+        "description": "Step out of Lungshan Temple and you're in the oldest quarter of Manka, right beside Huaxi Street Night Market. This stretch is old Taipei in miniature — sesame-oil pork kidney, oyster vermicelli, old-fashioned sweet soups, much of it from shops that have kept the same flavors for decades. A bowl here after the temple is a taste of a century of Wanhua street life."
+      },
+      {
+        "name": "Dadaocheng — Cisheng Temple Courtyard Food Street",
+        "description": "Over in Dadaocheng, beyond the dried-goods shops of Dihua Street, those in the know turn into the food street in front of Cisheng Temple. Tables and chairs are set out in a long row under an old banyan tree — fried snacks, fish soup, pork-rib soup with a bowl of rice. It is one of the few places left in Taipei where you can eat quietly in a temple courtyard's shade, and it suits a solo traveler well."
+      }
+    ]
   },
   {
     "id": "dajia-mazu-pilgrimage",
@@ -193,7 +213,17 @@
         "activity": "Sit on a courtyard bench with Xingang taffy and the sunset — this is the end; no rush home"
       }
     ],
-    "notes": "Both temples are free to enter. The point of this route is to walk Mazu's road while avoiding the crowds: during the Dajia Mazu procession (the setting-out date is chosen by divination blocks, usually around the third lunar month) the whole route is packed, so steer clear of those nine days; the 1st and 15th of the lunar month and weekends are noticeably busier too, and a weekday-morning start is ideal. Reporting in alone is simple: your name and why you have come, said to Mazu — that is all. If you still have time on the way back, Changhua Nanyao Temple (the first-night resting place of the Dajia procession, whose rear Guanyin hall has rare Greek-style column capitals), just off the Changhua interchange, is worth a look — but that is a bonus, not homework."
+    "notes": "Both temples are free to enter. The point of this route is to walk Mazu's road while avoiding the crowds: during the Dajia Mazu procession (the setting-out date is chosen by divination blocks, usually around the third lunar month) the whole route is packed, so steer clear of those nine days; the 1st and 15th of the lunar month and weekends are noticeably busier too, and a weekday-morning start is ideal. Reporting in alone is simple: your name and why you have come, said to Mazu — that is all. If you still have time on the way back, Changhua Nanyao Temple (the first-night resting place of the Dajia procession, whose rear Guanyin hall has rare Greek-style column capitals), just off the Changhua interchange, is worth a look — but that is a bonus, not homework.",
+    "food": [
+      {
+        "name": "Dajia — Butter Shortcake & Taro Cake",
+        "description": "The old street outside Dajia Zhenlan Temple is best known for its butter shortcake — Dajia's signature specialty, with a crust that flakes apart in crisp layers around a sweet malt-and-butter filling. It's good warm or cool, and one of Taichung's most classic gifts to bring home. Dajia is also taro country, so the taro cake is every bit as local a treat."
+      },
+      {
+        "name": "Xingang — Xingang Taffy & Duck Thick Soup",
+        "description": "Xingang, the trail's final stop and home to Fengtian Temple, is famous above all for Xingang taffy — a traditional sweet made from malt sugar and peanuts, soft with a gentle chew, and made here for over a century. Around the temple gate, the duck thick soup and sweet-potato noodles are old flavors locals have known since childhood."
+      }
+    ]
   },
   {
     "id": "tainan-heritage-walk",
@@ -257,6 +287,16 @@
         "activity": "Walk about 10 minutes south to the Lily Fruit Shop across from the Confucius Temple to wind down — an old shop with seats, a plate of sliced fruit, and stay as long as you like"
       }
     ],
-    "notes": "All three stops are free to enter. For quiet, come on a weekday and avoid the 1st and 15th of the lunar month and weekends; the ninth day of the first lunar month, the Jade Emperor's birthday, is the Tiantan's grandest and most crowded day. Walking alone, there is no schedule to keep — the lanes between the temples are the scenery themselves, so if you lose your way, don't rush to check the map. If you still have energy, Chihkan Tower (the base of the fort the Dutch built in 1653; ticketed), on the block directly across from the Grand Martial Temple, is quietest after its evening lights come on — a worthy add-on; if you are spent, save it for next time."
+    "notes": "All three stops are free to enter. For quiet, come on a weekday and avoid the 1st and 15th of the lunar month and weekends; the ninth day of the first lunar month, the Jade Emperor's birthday, is the Tiantan's grandest and most crowded day. Walking alone, there is no schedule to keep — the lanes between the temples are the scenery themselves, so if you lose your way, don't rush to check the map. If you still have energy, Chihkan Tower (the base of the fort the Dutch built in 1653; ticketed), on the block directly across from the Grand Martial Temple, is quietest after its evening lights come on — a worthy add-on; if you are spent, save it for next time.",
+    "food": [
+      {
+        "name": "Old Capital — Dawn Tainan Beef Soup",
+        "description": "In Tainan the day often begins with a bowl of beef soup. Freshly sliced same-day beef is cooked the instant a scalding broth is poured over it, so the meat stays pink and tender. If you set out early on this walk, find a bowl of beef soup with a side of minced-pork rice around Chihkan Tower for breakfast — it's the most authentic Tainan morning ritual there is."
+      },
+      {
+        "name": "Around Chihkan Tower — Traditional Old-Capital Snacks",
+        "description": "The Grand Mazu Temple and Grand Martial Temple sit right beside Chihkan Tower, in the densest cluster of Tainan street food anywhere in the old city. Savory rice pudding, danzai noodles, shrimp rolls, coffin bread, thin noodles — these are flavors the old capital has passed down for decades, and you'll cross one stall after another every few steps. The point here isn't to keep a schedule; it's to wander slowly and eat whatever you happen upon."
+      }
+    ]
   }
 ]
