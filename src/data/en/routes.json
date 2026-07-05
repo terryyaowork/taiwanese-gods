@@ -418,5 +418,125 @@
         "description": "In Dadaocheng, home to the Xia-Hai City God Temple, beyond the dried goods and traditional pastries of Dihua Street, those in the know turn into the food street in front of Cisheng Temple — a long row of tables and chairs under an old banyan tree, with fish soup, fried snacks, and pork-rib soup over rice. It is one of the few places left in Taipei where you can eat quietly in a temple courtyard's shade, and it suits a solo traveler well."
       }
     ]
+  },
+  {
+    "id": "taipei-exam-wenchang",
+    "name": "Taipei Wenchang Exam-Luck Escape",
+    "theme": "Praying for Exam Success",
+    "region": "Taipei",
+    "durationHours": 4,
+    "transport": "By MRT and on foot; an EasyCard is easiest. The two stops are about a 5-minute MRT ride apart.",
+    "summary": "When a big exam is closing in and the nerves start to bite, this is the trip Taipei people make. Start the morning at the Taipei Confucius Temple, asking Confucius — the Great Sage and First Teacher — for a grounded, steady mind for study; then take the MRT to the Taipei Wenchang Temple near Shuanglian to pray to Wenchang Dijun, the god of examinations and literary success, for exam luck and a place on the pass list. One stop for the roots of learning, one stop for the luck to pass — two stops in half a day, enough to settle your own heart, or the heart of a student at home.",
+    "stops": [
+      {
+        "order": 1,
+        "templeId": "taipei-confucius",
+        "prayFor": "A foundation in study, an upright approach to learning, and a calm, focused mind",
+        "why": "The Taipei Confucius Temple is the most important Confucian temple in northern Taiwan. Its Dacheng Hall holds no idols — Confucius, the Great Sage and First Teacher, is honored by a spirit tablet alone, solemn and plain. What you come here to pray for is not last-minute exam luck but a grounded attitude toward study and a settled mind: quiet the heart first, and the reading goes in. That is exactly why this route puts it first.",
+        "tips": "The Confucius Temple burns no incense — a bow with palms pressed together is all that is needed. The grounds are peaceful, well suited to a slow solo loop to clear your head. The grandest day is the Confucius ceremony (the Shidian rite) on Teachers' Day, September 28, each year; on ordinary days it is far quieter.",
+        "stayMinutes": 50,
+        "arrival": "MRT Yuanshan Station, Exit 2 — about a 10-minute walk",
+        "suggestedTime": "09:30-10:20"
+      },
+      {
+        "order": 2,
+        "templeId": "taipei-wenchang",
+        "prayFor": "Exam luck, a place on the pass list, and Wenchang's blessing",
+        "why": "The Taipei Wenchang Temple stands right by Shuanglian MRT Station and is the busiest Wenchang temple in central Taipei, dedicated to Wenchang Dijun, the god who governs scholarly honors. Come exam season, its walls fill with photocopied exam admission tickets, layer upon layer packed edge to edge — the hopes of countless students, each pinned here for a place on the pass list. Having prayed for the roots of learning, at this stop you hand the luck of passing to Wenchang Dijun.",
+        "tips": "Tradition calls for 'homophone offerings': scallion (cong, for cleverness), celery (qin, for diligence), radish or caitou (for good fortune), and zongzi rice dumplings (bao-zhong, a 'guaranteed pass'). You can bring a photocopy of the exam admission ticket for Wenchang Dijun to 'register.' Report the student's name, ticket number, and exam subjects sincerely.",
+        "stayMinutes": 45,
+        "arrival": "From Yuanshan Station, take the MRT to Shuanglian Station (2 stops), then about a 5-minute walk",
+        "suggestedTime": "10:35-11:20"
+      }
+    ],
+    "itinerary": [
+      {
+        "time": "09:30",
+        "activity": "Taipei Confucius Temple (the Great Sage — praying for a foundation in study and a calm mind)"
+      },
+      {
+        "time": "10:20",
+        "activity": "MRT from Yuanshan Station to Shuanglian Station (about 5 minutes)"
+      },
+      {
+        "time": "10:35",
+        "activity": "Taipei Wenchang Temple (Wenchang Dijun — praying for exam luck and a place on the pass list)"
+      },
+      {
+        "time": "11:20",
+        "activity": "Lunch and a slow wander around Shuanglian and Chifeng Street"
+      }
+    ],
+    "notes": "Both stops are free to enter. Praying for exam luck isn't praying for a lucky break — this route deliberately places the Confucius Temple's 'foundation for study' ahead of the Wenchang Temple's 'exam-luck blessing,' a reminder to yourself (or the student at home) that a settled heart and diligent reading are what give a god's blessing something to work on. For quiet, pick a weekday morning and avoid the crush in the week before major exams, as well as the 1st and 15th of the lunar month. Afterward, the Shuanglian and Chifeng Street area is full of old shops and cafés — a good place to sit down alone and catch your breath.",
+    "food": [
+      {
+        "name": "Shuanglian & Chifeng Street — Old-Taipei Flavors",
+        "description": "The Shuanglian and Chifeng Street area around the Wenchang Temple is where old Taipei and the new creative crowd overlap. There's the traditional street food of Shuanglian Morning Market and the old noodle shops and cafés tucked down Chifeng Street's lanes — after praying for exam luck, find a small shop here, have a bowl of noodles or a cup of tea, and let some of the tension ease off."
+      },
+      {
+        "name": "Dalongdong — Temple-Gate & Old-Street Eats",
+        "description": "Dalongdong, beside the Confucius Temple, is one of old Taipei's original settlements, right next to Bao'an Temple and Hami Street. The temple-gate snacks and traditional noodle dishes around here are local flavors from shops decades old — after praying at the Confucius Temple in the morning, stop for a late breakfast on the old street before moving on to the next stop."
+      }
+    ]
+  },
+  {
+    "id": "taipei-villain-warding",
+    "name": "Taipei Evil-Warding & Villain-Dispelling Escape",
+    "theme": "Warding Off Evil & Petty People",
+    "region": "Taipei & New Taipei",
+    "durationHours": 4,
+    "transport": "By MRT and on foot; an EasyCard is easiest. Both stops sit on the same Zhonghe–Xinlu Line, about a 12-minute ride apart.",
+    "summary": "When petty people are dogging your steps, nothing seems to go right, and there's a knot of grievance sitting in your chest, this is the quiet reset of a trip to take. Start at the Xinzhuang Dizang Temple, where the Civil and Martial Great Sacred Lords — served by the Guanjiangshou spirit-general troupe that was born here — specialize in warding off evil and clearing away the bad energy and the backstabbers clinging to you. Then take the MRT to the Xia-Hai City God Temple in Dadaocheng, where the City God weighs right and wrong and sets things straight. Two stops in half a day: clear out the ill feeling you've been carrying, and walk it alone at an unhurried pace — that is exactly enough.",
+    "stops": [
+      {
+        "order": 1,
+        "templeId": "xinzhuang-dizang",
+        "prayFor": "Warding off evil, dispelling petty people, and cutting loose old entanglements",
+        "why": "The fierce-faced Guanjiangshou (spirit-general troupe) you see at Taiwanese temple processions was born right here, at the Xinzhuang Dizang Temple. Commonly called the 'Great Sacred Temple,' it is dedicated to Dizang (Ksitigarbha) and the Civil and Martial Great Sacred Lords (Wenwu Dazhongye), and it specializes in warding off evil, handling lawsuits, and finding lost things — the most important center of exorcism belief in northern Taiwan. If there are backstabbers, legal troubles, or a run of bad luck you can't shake, coming here to ask the Great Sacred Lords and the Guanjiangshou for a 'clearing out' is the first step this route sets for you.",
+        "tips": "The Dizang Temple keeps a steady stream of incense, and the temple provides gold paper and instructions. Praying to ward off evil and dispel petty people has its own way of doing things — if you're unsure, ask a temple volunteer. The Guanjiangshou troupe of the annual 'Xinzhuang Grand Worship' (the Great Sacred Lords' procession, on the 1st of the fifth lunar month) is the most striking, but also the most crowded; for quiet, pick a weekday.",
+        "stayMinutes": 50,
+        "arrival": "MRT Xinzhuang Station (Zhonghe–Xinlu Line), Exit 1 — about a 5-minute walk",
+        "suggestedTime": "09:30-10:20"
+      },
+      {
+        "order": 2,
+        "templeId": "citygod",
+        "prayFor": "A clear judgment of right and wrong, fair dealing, and peace of mind",
+        "why": "The Xia-Hai City God Temple is famous for its Yue Lao, but the City God it enshrines has a very different primary role: he governs a district's rewards and punishments and judges right from wrong. When you've been wronged, crossed by petty people, or left with an unsettled heart, you come to report it to the City God — what you're really asking for is the calm of trusting that fairness rests in the god's own reckoning. The first stop warded off the evil and dispelled the villains; here you lay right and wrong before the City God to weigh, so you can let go and move on.",
+        "tips": "The temple is small and the worshippers unending. When you report to the City God, lay out the wrong and the wish plainly — what you seek is a settled certainty and a sense of release. After praying, the temple offers a cup of peace tea; drink it before you go. Then stroll down Dihua Street — the century-old dried-goods street is the best kind of scenery for winding down.",
+        "stayMinutes": 45,
+        "arrival": "From Xinzhuang Station, take the MRT to Daqiaotou Station (Zhonghe–Xinlu Line, about 12 minutes), then about a 12-minute walk",
+        "suggestedTime": "10:50-11:35"
+      }
+    ],
+    "itinerary": [
+      {
+        "time": "09:30",
+        "activity": "Xinzhuang Dizang Temple (the Great Sacred Lords & the Guanjiangshou — warding off evil and dispelling petty people)"
+      },
+      {
+        "time": "10:20",
+        "activity": "MRT from Xinzhuang Station to Daqiaotou Station (about 12 minutes)"
+      },
+      {
+        "time": "10:50",
+        "activity": "Xia-Hai City God Temple (the City God — a clear judgment of right and wrong, and fair dealing)"
+      },
+      {
+        "time": "11:35",
+        "activity": "Stroll Dihua Street in Dadaocheng, and lunch"
+      }
+    ],
+    "notes": "Both stops are free to enter. Warding off evil and dispelling petty people is a folk tradition for finding peace of mind — the point of this trip isn't to resent anyone, but to clear out the ill feeling and grievance you've been carrying, let it go, and set yourself moving forward again. For quiet, pick a weekday morning and avoid the 1st and 15th of the lunar month and weekends. Afterward, Dadaocheng's dried-goods shops and the temple-courtyard food street by Cisheng Temple make a fine extension; if you're spent, save it for next time.",
+    "food": [
+      {
+        "name": "Dadaocheng — Cisheng Temple Courtyard & Dihua Street",
+        "description": "In Dadaocheng, home to the Xia-Hai City God Temple, beyond the dried goods and traditional pastries of Dihua Street, those in the know turn into the food street in front of Cisheng Temple — a long row of tables and chairs under an old banyan tree, with fish soup, fried snacks, and pork-rib soup over rice. It is one of the few places left in Taipei where you can eat quietly in a temple courtyard's shade, a fitting spot to sit alone once the ill feeling has been cleared away."
+      },
+      {
+        "name": "Xinzhuang — Temple-Street Old Flavors",
+        "description": "Xinzhuang Temple Street (around Xinzhuang Road), where the Dizang Temple stands, is one of the oldest market streets in northern Taiwan. Salted 'guangbing' biscuits, traditional noodle dishes, and old pastry shops here carry flavors from businesses decades old — after praying to the Great Sacred Lords, stop for a bite on the old street before moving on to the next stop."
+      }
+    ]
   }
 ]
