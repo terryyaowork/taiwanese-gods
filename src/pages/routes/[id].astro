@@ -3,6 +3,9 @@ import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
 import routes from '~/data/zh-TW/routes.json';
 import templesNorth from '~/data/zh-TW/temples-north.json';
+import templesCentral from '~/data/zh-TW/temples-central.json';
+import templesSouth from '~/data/zh-TW/temples-south.json';
+import templesEast from '~/data/zh-TW/temples-east.json';
 
 export function getStaticPaths() {
   return routes.map((route) => ({ params: { id: route.id }, props: { route } }));
@@ -10,9 +13,8 @@ export function getStaticPaths() {
 
 const { route } = Astro.props;
 
-// Resolve each stop's temple record (currently all stops are northern temples;
-// extend the lookup list when central/south routes are added).
-const templeIndex = new Map(templesNorth.map((t) => [t.id, t]));
+const allTemples = [...templesNorth, ...templesCentral, ...templesSouth, ...templesEast];
+const templeIndex = new Map(allTemples.map((t) => [t.id, t]));
 const stops = route.stops.map((stop) => ({ ...stop, temple: templeIndex.get(stop.templeId) }));
 
 const metadata = {
