@@ -100,6 +100,14 @@ export const headerData = {
     },
     {
       text: {
+        'zh-TW': '主題路線',
+        en: 'Routes',
+        ja: '巡礼ルート',
+      },
+      href: getPermalink('/routes'),
+    },
+    {
+      text: {
         'zh-TW': '信仰文化',
         en: 'Culture',
         ja: '信仰文化',
@@ -290,6 +298,14 @@ export const footerData = {
             ja: '東部の寺院',
           },
           href: getPermalink('/temples/east'),
+        },
+        {
+          text: {
+            'zh-TW': '主題路線',
+            en: 'Routes',
+            ja: '巡礼ルート',
+          },
+          href: getPermalink('/routes'),
         },
       ],
     },
