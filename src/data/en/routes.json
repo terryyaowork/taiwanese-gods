@@ -298,5 +298,65 @@
         "description": "The Grand Mazu Temple and Grand Martial Temple sit right beside Chihkan Tower, in the densest cluster of Tainan street food anywhere in the old city. Savory rice pudding, danzai noodles, shrimp rolls, coffin bread, thin noodles — these are flavors the old capital has passed down for decades, and you'll cross one stall after another every few steps. The point here isn't to keep a schedule; it's to wander slowly and eat whatever you happen upon."
       }
     ]
+  },
+  {
+    "id": "tainan-yuelao-love",
+    "name": "Tainan Yue Lao Love-Praying Escape",
+    "theme": "Praying for Love",
+    "region": "Tainan",
+    "durationHours": 4,
+    "transport": "All on foot — the two temples stand side by side on Yongfu Road. Just right for a slow walk on your own.",
+    "summary": "When love feels stuck, plenty of Tainan folk quietly take a walk down Yongfu Road, alone. This route has just two stops, both in Tainan's West Central District and next door to each other: first the Grand Martial Temple, to ask its Yue Lao — the Matchmaker God — to sever the bad romances and troublemakers still tangling up your past; then a one-minute walk to the Grand Mazu Temple, to pray to Tainan's most trusted Yue Lao for a good match. Each of Tainan's Four Great Yue Lao has its own calling, and this route follows the most natural pairing of the four: clear out the old first, then make your wish. Half a day to walk it, and the empty space is left for you.",
+    "stops": [
+      {
+        "order": 1,
+        "templeId": "tainan-martial",
+        "prayFor": "Cutting off bad romance, ending toxic ties, and warding off troublemakers",
+        "why": "The Grand Martial Temple is dedicated to Guan Sheng Dijun — Lord Guan — and the Yue Lao beside him is the most unusual of Tainan's Four Great Yue Lao: he specializes in cutting off bad romance and warding off the troublemakers in your life. A past you can't let go of, an entanglement you can't cut, a third party or a toxic person clinging on — this is where you come first, to ask Yue Lao to cut the knot with a single clean stroke. Clear away the bad ties first, so the good ones have room to come in.",
+        "tips": "To pray to Yue Lao, bring a red thread and offerings (wedding candy, fresh flowers); the temple usually provides gold paper and instructions. Cutting off bad romance has its own ritual and its own order of things to say — if you're unsure, ask a temple volunteer, they're glad to show you. For quiet, pick a weekday morning.",
+        "stayMinutes": 50,
+        "arrival": "About a 20-minute walk from Tainan Rail Station; or take a city bus to the 'Chihkan Tower' stop, then walk about 3 minutes",
+        "suggestedTime": "09:30-10:20"
+      },
+      {
+        "order": 2,
+        "templeId": "tainan-grand-mazu",
+        "prayFor": "A good match, a one-sided love returned, and a warming relationship",
+        "why": "The Tainan Grand Mazu Temple is Taiwan's first official Mazu temple, and the Yue Lao in its rear hall is the foremost of Tainan's Four Great Yue Lao — his reputation for answered prayers is known to everyone in the old capital. He looks after those in unrequited love and blesses steady relationships to keep growing warmer. The last stop cleared out the bad romance; here you hand him your wish — for the right match, one that lasts.",
+        "tips": "Before Yue Lao, sincerely report your name, your birth date, and the match you hope for — the more specific, the better. Carry the red thread you receive with you. The two temples are only a minute apart, yet the mood is completely different: the Martial Temple is imposing, the Grand Mazu Temple warm and gentle. Take your time to feel it.",
+        "stayMinutes": 60,
+        "arrival": "About a 1-minute walk from the Grand Martial Temple — the two are neighbors",
+        "suggestedTime": "10:30-11:30"
+      }
+    ],
+    "itinerary": [
+      {
+        "time": "09:30",
+        "activity": "Grand Martial Temple (Yue Lao — cutting off bad romance and warding off troublemakers)"
+      },
+      {
+        "time": "10:20",
+        "activity": "About a 1-minute walk to the Grand Mazu Temple"
+      },
+      {
+        "time": "10:30",
+        "activity": "Grand Mazu Temple (Yue Lao — praying for a good match and a warming relationship)"
+      },
+      {
+        "time": "11:30",
+        "activity": "Lunch around Yongfu Road, and a slow wander"
+      }
+    ],
+    "notes": "Both stops are free to enter. For quiet, pick a weekday morning and avoid the 1st and 15th of the lunar month and weekends. There's no rush when you're praying for love — walking this route alone is meant to be a quiet stretch of time to sort out your own heart, so it's fine to go slow. Tainan's other two Great Yue Lao are at Chongqing Temple (for winning a love back) and Daguanyin Pavilion (for finding a match); if you still have the energy and the heart to walk further that day, extend the route yourself — if you're spent, save it for next time.",
+    "food": [
+      {
+        "name": "Old Capital — Dawn Tainan Beef Soup",
+        "description": "In Tainan the day often begins with a bowl of beef soup. Freshly sliced same-day beef cooks the instant a scalding broth is poured over it, so the meat stays pink and tender. Around Yongfu Road and Chihkan Tower there are stalls selling it from early morning — a bowl with a side of minced-pork rice before the temples is the most authentic way to warm up the old-capital way."
+      },
+      {
+        "name": "Around Yongfu Road — Traditional Old-Capital Snacks",
+        "description": "The West Central District, where both temples stand, is the densest cluster of Tainan street food in the old city. Savory rice pudding, danzai noodles, shrimp rolls, thin noodles, tofu pudding — every few steps you cross a stall carrying a flavor handed down for decades. After praying to Yue Lao, find a small shop, sit down, and eat slowly, so this solo journey gets a gentle ending."
+      }
+    ]
   }
 ]
