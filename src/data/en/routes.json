@@ -92,13 +92,13 @@
     "region": "Taipei",
     "durationHours": 5,
     "transport": "Entirely by MRT + walking. Grab an EasyCard at any station — it works on all trains and buses.",
-    "summary": "Visiting Taipei for the first time and want to see its temples? This is the route. Start your morning at Lungshan Temple, the city's most celebrated temple with nearly 300 years of incense smoke and some of Taiwan's finest carving craftsmanship. In the afternoon, head to the Xia-Hai City God Temple on Dihua Street — its Matchmaker God (Yue Lao) is so famous that travelers fly in from Japan and Korea just to pray for love. End the day strolling Dadaocheng's heritage street with a coffee and some local goods. Both temples are free to enter, and everything is reachable by MRT.",
+    "summary": "Visiting Taipei for the first time and want to see its temples? This is the route. Start your morning at Longshan Temple, the city's most celebrated temple with nearly 300 years of incense smoke and some of Taiwan's finest carving craftsmanship. In the afternoon, head to the Xia-Hai City God Temple on Dihua Street — its Matchmaker God (Yue Lao) is so famous that travelers fly in from Japan and Korea just to pray for love. End the day strolling Dadaocheng's heritage street with a coffee and some local goods. Both temples are free to enter, and everything is reachable by MRT.",
     "stops": [
       {
         "order": 1,
         "templeId": "longshan",
         "prayFor": "Safety, health, and love — Guanyin and the Matchmaker God are both here",
-        "why": "Founded in 1738, Manka Lungshan Temple is Taipei's oldest and most internationally renowned temple. Its stone pillars, woodwork, and jiannian mosaic roof are considered the pinnacle of Taiwanese temple artistry. The main hall honors Guanyin (the Bodhisattva of Compassion), while the rear hall houses Yue Lao, the Matchmaker God — Buddhist and Taoist deities under one roof, which is exactly how folk religion works in Taiwan.",
+        "why": "Founded in 1738, Manka Longshan Temple is Taipei's oldest and most internationally renowned temple. Its stone pillars, woodwork, and jiannian mosaic roof are considered the pinnacle of Taiwanese temple artistry. The main hall honors Guanyin (the Bodhisattva of Compassion), while the rear hall houses Yue Lao, the Matchmaker God — Buddhist and Taoist deities under one roof, which is exactly how folk religion works in Taiwan.",
         "tips": "First time at a Taiwanese temple? Read our Temple Visiting Guide first: enter through the Dragon Gate (right side), exit through the Tiger Gate (left side), and always step OVER the threshold, never on it. Photos are fine inside, but skip the flash and avoid pointing your camera at people who are praying.",
         "stayMinutes": 60,
         "arrival": "MRT Longshan Temple Station, Exit 1 — about a 2-minute walk",
@@ -118,7 +118,7 @@
     "itinerary": [
       {
         "time": "09:30",
-        "activity": "Lungshan Temple (Guanyin & Yue Lao)"
+        "activity": "Longshan Temple (Guanyin & Yue Lao)"
       },
       {
         "time": "10:45",
@@ -145,11 +145,11 @@
         "activity": "Finish at Dadaocheng Wharf with a view over the Tamsui River"
       }
     ],
-    "notes": "Both temples are free to enter with no reservation needed. There is no strict dress code, but avoid overly revealing clothing out of respect. Incense and offerings can be purchased at the temples (Lungshan Temple has phased out incense burning — praying with palms together is the norm there). For the full etiquette walkthrough, see our Temple Visiting Guide.",
+    "notes": "Both temples are free to enter with no reservation needed. There is no strict dress code, but avoid overly revealing clothing out of respect. Incense and offerings can be purchased at the temples (Longshan Temple has phased out incense burning — praying with palms together is the norm there). For the full etiquette walkthrough, see our Temple Visiting Guide.",
     "food": [
       {
         "name": "Manka — Huaxi Street Old-Taipei Eats",
-        "description": "Step out of Lungshan Temple and you're in the oldest quarter of Manka, right beside Huaxi Street Night Market. This stretch is old Taipei in miniature — sesame-oil pork kidney, oyster vermicelli, old-fashioned sweet soups, much of it from shops that have kept the same flavors for decades. A bowl here after the temple is a taste of a century of Wanhua street life."
+        "description": "Step out of Longshan Temple and you're in the oldest quarter of Manka, right beside Huaxi Street Night Market. This stretch is old Taipei in miniature — sesame-oil pork kidney, oyster vermicelli, old-fashioned sweet soups, much of it from shops that have kept the same flavors for decades. A bowl here after the temple is a taste of a century of Wanhua street life."
       },
       {
         "name": "Dadaocheng — Cisheng Temple Courtyard Food Street",
@@ -356,6 +356,66 @@
       {
         "name": "Around Yongfu Road — Traditional Old-Capital Snacks",
         "description": "The West Central District, where both temples stand, is the densest cluster of Tainan street food in the old city. Savory rice pudding, danzai noodles, shrimp rolls, thin noodles, tofu pudding — every few steps you cross a stall carrying a flavor handed down for decades. After praying to Yue Lao, find a small shop, sit down, and eat slowly, so this solo journey gets a gentle ending."
+      }
+    ]
+  },
+  {
+    "id": "taipei-yuelao-love",
+    "name": "Taipei Yue Lao Love-Praying Escape",
+    "theme": "Praying for Love",
+    "region": "Taipei",
+    "durationHours": 4,
+    "transport": "By MRT and on foot; an EasyCard is easiest. The two stops are about a 15-minute MRT ride apart.",
+    "summary": "For praying to Yue Lao in Taipei, the first name that comes to most minds is the Xia-Hai City God Temple in Dadaocheng — but this route sets the order for you. Start the morning at Manka Longshan Temple, letting the stillness of a near-300-year-old temple settle your heart before you ask its Yue Lao, the Matchmaker God, in the rear hall for a good match. Then take the MRT to Dadaocheng and finish at the Xia-Hai City God Temple's Yue Lao — the most trusted and most thronged in all Taiwan. Two stops in half a day, and just right for one person. For quiet, pick a weekday at dawn.",
+    "stops": [
+      {
+        "order": 1,
+        "templeId": "longshan",
+        "prayFor": "A good match, and a settled heart to open the way",
+        "why": "Longshan Temple is dedicated to Guanyin, the Bodhisattva of Compassion, and its rear hall also houses Yue Lao, the Matchmaker God. Compared with the crowds of Dadaocheng, the Yue Lao here is far quieter — and that is the point of putting it first. In the calm of a near-300-year-old temple, let your heart settle and think through the match you truly want. A settled heart makes a sincere wish.",
+        "tips": "Longshan Temple no longer burns incense — pressing your palms together to pray is the norm. To pray to Yue Lao, you can bring fresh flowers and wedding candy, and sincerely report your name, birth date, and the match you hope for. The temple is quietest at dawn, and best of all for lingering alone.",
+        "stayMinutes": 50,
+        "arrival": "MRT Longshan Temple Station, Exit 1 — about a 2-minute walk",
+        "suggestedTime": "09:30-10:20"
+      },
+      {
+        "order": 2,
+        "templeId": "citygod",
+        "prayFor": "A match, a true and lasting love, and a relationship that bears fruit",
+        "why": "The Yue Lao of the Xia-Hai City God Temple is the most renowned and most incense-heavy Matchmaker God in all Taiwan — travelers fly in from Japan and Korea just to pray here. Its love-praying customs are the most complete anywhere: pray to Yue Lao, take the red thread, offer wedding candy and lead-money coins; and if the match comes good later, remember to return with a box of wedding cookies to thank him. The first stop settled your heart and made the wish; here you hand it to the most trusted Yue Lao to finish.",
+        "tips": "The temple is small and the worshippers unending; the red thread and offerings can be requested right beside it. Carry the red thread you receive with you, and don't wash it off. To avoid the crowds, be sure to pick a weekday and steer clear of weekends and the run-up to Valentine's Day. After praying, walk down Dihua Street — the century-old dried-goods street is scenery in itself.",
+        "stayMinutes": 45,
+        "arrival": "From Longshan Temple Station, take the MRT to Beimen Station (change at Ximen), then Exit 3 and about a 10-minute walk",
+        "suggestedTime": "11:00-11:45"
+      }
+    ],
+    "itinerary": [
+      {
+        "time": "09:30",
+        "activity": "Manka Longshan Temple (Yue Lao — settling the heart and praying for a match)"
+      },
+      {
+        "time": "10:20",
+        "activity": "MRT from Longshan Temple Station to Beimen Station (change at Ximen, about 15 minutes)"
+      },
+      {
+        "time": "11:00",
+        "activity": "Xia-Hai City God Temple (Yue Lao — finishing with the prayer for love)"
+      },
+      {
+        "time": "12:00",
+        "activity": "Lunch on Dihua Street in Dadaocheng, and a slow wander"
+      }
+    ],
+    "notes": "Both stops are free to enter. This route deliberately saves the most famous — and most crowded — Xia-Hai City God Temple for the finish, so for any quiet at all, be sure to pick a weekday at dawn and avoid weekends, the 1st and 15th of the lunar month, and the run-up to Valentine's Day. There's no rush when you're praying for love — walking alone and thinking things through slowly is meant to be a quiet stretch of time for yourself. If you still have energy that day, Dadaocheng's dried-goods shops and the temple-courtyard food street by Cisheng Temple make a fine extension; if you're spent, save it for next time.",
+    "food": [
+      {
+        "name": "Manka — Huaxi Street Old-Taipei Eats",
+        "description": "Step out of Longshan Temple and you're in the oldest quarter of Manka, right beside Huaxi Street Night Market. Sesame-oil pork kidney, oyster vermicelli, old-fashioned sweet soups — much of it from shops that have kept the same flavors for decades. A bowl here after praying for love is a taste of a century of Wanhua street life."
+      },
+      {
+        "name": "Dadaocheng — Cisheng Temple Courtyard & Dihua Street",
+        "description": "In Dadaocheng, home to the Xia-Hai City God Temple, beyond the dried goods and traditional pastries of Dihua Street, those in the know turn into the food street in front of Cisheng Temple — a long row of tables and chairs under an old banyan tree, with fish soup, fried snacks, and pork-rib soup over rice. It is one of the few places left in Taipei where you can eat quietly in a temple courtyard's shade, and it suits a solo traveler well."
       }
     ]
   }
