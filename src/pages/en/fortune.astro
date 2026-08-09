@@ -9,6 +9,7 @@ import buddhistGods from '~/data/en/buddhist-gods.json';
 import folkGods from '~/data/en/folk-gods.json';
 import hakkaGods from '~/data/en/hakka-gods.json';
 import indigenousSpirits from '~/data/en/indigenous-spirits.json';
+import { buildGodRecommendations, routesIndexHref } from '~/utils/temple-recommendations';
 
 // Resolve all god images at build time
 const godImages = import.meta.glob('/src/assets/images/gods/*.{jpg,jpeg,png,webp,avif}', {
@@ -38,6 +39,19 @@ const godMap: Record<string, { name: string; imageSrc: string; category: string 
 for (const g of allGods) {
   godMap[g.id] = { name: g.name, imageSrc: resolveImage(g.image), category: g.category };
 }
+
+// After drawing: point the reader to a real temple / route
+const godRecommendations = buildGodRecommendations('en');
+const routesHref = routesIndexHref('en');
+
+const ctaLabels = {
+  title: 'Now go in person',
+  sub: 'These temples enshrine {god}. Go on a weekday morning — fewer people, and more room to say what you came to say.',
+  routesLabel: 'Or follow a quiet route',
+  fallbackTitle: 'Not sure where to go?',
+  fallbackSub: 'Browse the themed routes and pick a quiet one.',
+  fallbackLink: 'Browse routes',
+};
 
 const metadata = {
   title: 'Fortune Sticks — Sixty Jiazi Fortune Poems | Taiwanese Deities',
@@ -162,6 +176,19 @@ const metadata = {
           </div>
         </div>
 
+        <!-- CTA: go to a real temple / walk a route -->
+        <div id="fortune-cta" class="hidden px-6 pb-6">
+          <div class="rounded-lg border border-amber-200 dark:border-amber-700 bg-amber-50/70 dark:bg-amber-900/20 p-5">
+            <h4 id="fortune-cta-title" class="text-base font-serif font-bold text-red-900 dark:text-red-300 mb-1"></h4>
+            <p id="fortune-cta-sub" class="text-sm text-gray-600 dark:text-gray-400 mb-4 leading-relaxed"></p>
+            <ul id="fortune-cta-temples" class="space-y-2"></ul>
+            <div id="fortune-cta-routes" class="hidden mt-4 pt-4 border-t border-amber-200/70 dark:border-amber-700/50">
+              <p id="fortune-cta-routes-label" class="text-xs font-bold text-amber-800 dark:text-amber-300 mb-2"></p>
+              <ul id="fortune-cta-routes-list" class="space-y-2"></ul>
+            </div>
+          </div>
+        </div>
+
         <!-- Draw Again -->
         <div class="px-6 pb-6 text-center">
           <button
@@ -202,7 +229,78 @@ const metadata = {
   }
 </style>
 
-<script is:inline define:vars={{ godMap }}>
+<script is:inline define:vars={{ godMap, godRecommendations, ctaLabels, routesHref }}>
+  // Recommend a real temple / route after the draw. No enshrining temple → fall back to the
+  // routes index; indigenous beliefs are tied to mountains and village sites, not temples → no CTA.
+  function renderFortuneCta(godId) {
+    const box = document.getElementById('fortune-cta');
+    if (!box) return;
+
+    const titleEl = document.getElementById('fortune-cta-title');
+    const subEl = document.getElementById('fortune-cta-sub');
+    const templeList = document.getElementById('fortune-cta-temples');
+    const routesBox = document.getElementById('fortune-cta-routes');
+    const routesLabel = document.getElementById('fortune-cta-routes-label');
+    const routesList = document.getElementById('fortune-cta-routes-list');
+    if (!titleEl || !subEl || !templeList || !routesBox || !routesLabel || !routesList) return;
+
+    const god = godMap[godId];
+    if (!god || god.category === 'indigenous') {
+      box.classList.add('hidden');
+      return;
+    }
+
+    templeList.innerHTML = '';
+    routesList.innerHTML = '';
+
+    const addItem = function (list, href, name, meta) {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = href;
+      a.className =
+        'flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-3 rounded-md bg-white/80 dark:bg-gray-800/60 border border-amber-200/80 dark:border-amber-700/50 px-4 py-2.5 hover:border-red-400 dark:hover:border-red-500 transition-colors';
+      const nameEl = document.createElement('span');
+      nameEl.className = 'text-sm font-medium text-gray-800 dark:text-gray-200';
+      nameEl.textContent = name;
+      a.appendChild(nameEl);
+      if (meta) {
+        const metaEl = document.createElement('span');
+        metaEl.className = 'text-xs text-gray-500 dark:text-gray-400';
+        metaEl.textContent = meta;
+        a.appendChild(metaEl);
+      }
+      li.appendChild(a);
+      list.appendChild(li);
+    };
+
+    const rec = godRecommendations[godId];
+
+    if (rec && rec.temples.length > 0) {
+      titleEl.textContent = ctaLabels.title;
+      subEl.textContent = ctaLabels.sub.replace('{god}', god.name);
+      rec.temples.forEach(function (t) {
+        addItem(templeList, t.href, t.name, t.location);
+      });
+
+      if (rec.routes.length > 0) {
+        routesLabel.textContent = ctaLabels.routesLabel;
+        rec.routes.forEach(function (r) {
+          addItem(routesList, r.href, r.name, '');
+        });
+        routesBox.classList.remove('hidden');
+      } else {
+        routesBox.classList.add('hidden');
+      }
+    } else {
+      titleEl.textContent = ctaLabels.fallbackTitle;
+      subEl.textContent = ctaLabels.fallbackSub;
+      addItem(templeList, routesHref, ctaLabels.fallbackLink, '');
+      routesBox.classList.add('hidden');
+    }
+
+    box.classList.remove('hidden');
+  }
+
   function populateGodInfo() {
     const el = document.getElementById('god-avatar-img');
     if (!el) return;
@@ -212,6 +310,8 @@ const metadata = {
     if (sessionStorage.getItem('fortune-god')) sessionStorage.removeItem('fortune-god');
     const god = godMap[godId] || godMap['yuhuang'];
     if (!god) return;
+
+    window.__fortuneGodId = godMap[godId] ? godId : 'yuhuang';
 
     el.src = god.imageSrc;
     el.alt = god.name;
@@ -284,6 +384,8 @@ const metadata = {
     } else if (resultKeywords) {
       resultKeywords.classList.add('hidden');
     }
+
+    renderFortuneCta(window.__fortuneGodId || 'yuhuang');
 
     if (resultSection) {
       resultSection.classList.remove('hidden');

@@ -214,3 +214,81 @@ test.describe('Draw Again button', () => {
     test.skip();
   });
 });
+
+/**
+ * Step 0 — 求完籤 → 推薦真廟 / 路線的 CTA。
+ * 直接派送 `fortune-confirmed` 事件，避開擲筊的隨機性，只驗 CTA 這段邏輯。
+ */
+const confirmFortune = async (page) => {
+  await page.evaluate(() => {
+    document.dispatchEvent(
+      new CustomEvent('fortune-confirmed', {
+        detail: {
+          stickNumber: 1,
+          fortune: { id: 1, ganzhi: '甲子', quality: '上上', poem: 'test', explanation: '【總解】test', keywords: [] },
+        },
+      })
+    );
+  });
+};
+
+test.describe('Fortune CTA — 求完 → 真廟 / 路線', () => {
+  test('zh: god with temples shows temple links carrying the tracking param', async ({ page }) => {
+    await page.goto('/fortune?god=mazu');
+    await confirmFortune(page);
+
+    const cta = page.locator('#fortune-cta');
+    await expect(cta).toBeVisible();
+    await expect(page.locator('#fortune-cta-sub')).toContainText('媽祖');
+
+    const templeLinks = page.locator('#fortune-cta-temples a');
+    await expect(templeLinks).toHaveCount(3);
+    for (const href of await templeLinks.evaluateAll((els) => els.map((e) => e.getAttribute('href')))) {
+      expect(href).toMatch(/^\/temples\/[a-z0-9-]+\?from=fortune$/);
+    }
+
+    // 媽祖有路線經過（大甲進香）
+    await expect(page.locator('#fortune-cta-routes')).toBeVisible();
+    const routeLink = page.locator('#fortune-cta-routes-list a').first();
+    await expect(routeLink).toHaveAttribute('href', /^\/routes\/[a-z0-9-]+\?from=fortune$/);
+  });
+
+  test('zh: god with no enshrining temple falls back to the routes index', async ({ page }) => {
+    await page.goto('/fortune?god=nezha');
+    await confirmFortune(page);
+
+    await expect(page.locator('#fortune-cta')).toBeVisible();
+    await expect(page.locator('#fortune-cta-temples a')).toHaveCount(1);
+    await expect(page.locator('#fortune-cta-temples a')).toHaveAttribute('href', '/routes?from=fortune');
+    await expect(page.locator('#fortune-cta-routes')).toBeHidden();
+  });
+
+  test('zh: indigenous belief shows no CTA (sacred sites are not temples)', async ({ page }) => {
+    await page.goto('/fortune?god=tayal-utux');
+    await confirmFortune(page);
+
+    await expect(page.locator('#fortune-cta')).toBeHidden();
+  });
+
+  test('en: CTA renders with English copy and /en links', async ({ page }) => {
+    await page.goto('/en/fortune?god=mazu');
+    await confirmFortune(page);
+
+    await expect(page.locator('#fortune-cta-title')).toHaveText('Now go in person');
+    await expect(page.locator('#fortune-cta-temples a').first()).toHaveAttribute(
+      'href',
+      /^\/en\/temples\/[a-z0-9-]+\?from=fortune$/
+    );
+  });
+
+  test('ja: CTA renders with Japanese copy and /ja links', async ({ page }) => {
+    await page.goto('/ja/fortune?god=mazu');
+    await confirmFortune(page);
+
+    await expect(page.locator('#fortune-cta-title')).toHaveText('お参りに行ってみませんか');
+    await expect(page.locator('#fortune-cta-temples a').first()).toHaveAttribute(
+      'href',
+      /^\/ja\/temples\/[a-z0-9-]+\?from=fortune$/
+    );
+  });
+});
