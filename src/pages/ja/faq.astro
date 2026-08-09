@@ -1,6 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
+import { boldSegments, stripBold } from '~/utils/rich-text';
 const metadata = { title: 'よくある質問 | 台湾の神様紹介', ignoreTitleTemplate: true };
 
 const culturalFaqs = [
@@ -269,6 +270,10 @@ const faqSchema = {
     },
   ],
 };
+// JSON-LD 是給搜尋引擎的純文字，粗體記號在這裡只是雜訊（頁面本身已改成正確渲染粗體）
+faqSchema.mainEntity.forEach((q) => {
+  q.acceptedAnswer.text = stripBold(q.acceptedAnswer.text);
+});
 ---
 
 <Layout metadata={metadata}>
@@ -303,7 +308,7 @@ const faqSchema = {
               </svg>
             </summary>
             <div class="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700 text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line">
-              {faq.a}
+              {boldSegments(faq.a).map((s) => (s.bold ? <strong>{s.text}</strong> : s.text))}
             </div>
           </details>
         ))
@@ -329,7 +334,7 @@ const faqSchema = {
               </svg>
             </summary>
             <div class="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700 text-gray-700 dark:text-gray-300 leading-relaxed">
-              {faq.a}
+              {boldSegments(faq.a).map((s) => (s.bold ? <strong>{s.text}</strong> : s.text))}
             </div>
           </details>
         ))

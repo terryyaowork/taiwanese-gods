@@ -292,3 +292,29 @@ test.describe('Fortune CTA — 求完 → 真廟 / 路線', () => {
     );
   });
 });
+
+/**
+ * 內容資料裡有 markdown 粗體記號，但頁面是純文字切段輸出、不解析 markdown ——
+ * 2026-08-09 之前線上是裸露的星號。修法是渲染成 <strong>（純文字位置則移除記號）。
+ */
+test.describe('粗體記號渲染', () => {
+  const pages = [
+    ['zh 神明詳頁', '/gods/taoism/confucius'],
+    ['ja 神明詳頁', '/ja/gods/folk/wangye'],
+    ['zh 神明列表', '/gods/folk'],
+    ['zh FAQ', '/faq'],
+  ];
+
+  for (const [label, path] of pages) {
+    test(`${label} 不出現字面星號`, async ({ page }) => {
+      await page.goto(path);
+      const text = await page.locator('body').innerText();
+      expect(text).not.toContain('**');
+    });
+  }
+
+  test('神明詳頁的強調字有渲染成 <strong>', async ({ page }) => {
+    await page.goto('/gods/taoism/confucius');
+    await expect(page.locator('#festivals strong').first()).toBeVisible();
+  });
+});

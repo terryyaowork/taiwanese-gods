@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
+import { boldSegments, stripBold } from '~/utils/rich-text';
 
 const { god, imageSrc, lang = 'zh-TW' } = Astro.props;
 
@@ -73,7 +74,7 @@ const siteNames: Record<string, string> = { en: 'Taiwanese Gods', ja: '台湾の
 const metadata = {
   title: siteNames[lang] ? `${god.name} — ${siteNames[lang]}` : god.name,
   ignoreTitleTemplate: lang !== 'zh-TW',
-  description: (god.description || '').substring(0, 150) + '...',
+  description: stripBold(god.description || '').substring(0, 150) + '...',
   openGraph: {
     images: [
       {
@@ -93,7 +94,7 @@ const jsonLd = {
   '@type': 'Article',
   name: god.name,
   headline: god.name,
-  description: (god.description || '').substring(0, 300),
+  description: stripBold(god.description || '').substring(0, 300),
   image: imageSrc,
   url: `${siteUrl}${godPath}`,
   inLanguage: lang,
@@ -196,14 +197,36 @@ const breadcrumbJsonLd = {
           <section id="description">
             <h2 class="section-title">{labels.description}</h2>
             <div class="prose prose-lg max-w-none text-gray-700 dark:text-gray-300 leading-relaxed font-serif">
-              {god.description.split('\n').map((line: string) => line.trim() && <p class="mb-4">{line}</p>)}
+              {
+                god.description
+                  .split('\n')
+                  .map(
+                    (line: string) =>
+                      line.trim() && (
+                        <p class="mb-4">
+                          {boldSegments(line).map((s) => (s.bold ? <strong>{s.text}</strong> : s.text))}
+                        </p>
+                      )
+                  )
+              }
             </div>
           </section>
 
           <section id="story">
             <h2 class="section-title">{labels.story}</h2>
             <div class="prose prose-lg max-w-none text-gray-700 dark:text-gray-300 leading-relaxed">
-              {god.story.split('\n').map((line: string) => line.trim() && <p class="mb-4">{line}</p>)}
+              {
+                god.story
+                  .split('\n')
+                  .map(
+                    (line: string) =>
+                      line.trim() && (
+                        <p class="mb-4">
+                          {boldSegments(line).map((s) => (s.bold ? <strong>{s.text}</strong> : s.text))}
+                        </p>
+                      )
+                  )
+              }
             </div>
           </section>
 
@@ -212,7 +235,16 @@ const breadcrumbJsonLd = {
               <section id="worship">
                 <h2 class="section-title">{labels.worship}</h2>
                 <div class="prose prose-lg max-w-none text-gray-700 dark:text-gray-300 leading-relaxed">
-                  {god.worship.split('\n').map((line: string) => line.trim() && <p class="mb-4">{line}</p>)}
+                  {god.worship
+                    .split('\n')
+                    .map(
+                      (line: string) =>
+                        line.trim() && (
+                          <p class="mb-4">
+                            {boldSegments(line).map((s) => (s.bold ? <strong>{s.text}</strong> : s.text))}
+                          </p>
+                        )
+                    )}
                 </div>
               </section>
             )
@@ -223,7 +255,16 @@ const breadcrumbJsonLd = {
               <section id="festivals">
                 <h2 class="section-title">{labels.festivals}</h2>
                 <div class="prose prose-lg max-w-none text-gray-700 dark:text-gray-300 leading-relaxed">
-                  {god.festivals.split('\n').map((line: string) => line.trim() && <p class="mb-4">{line}</p>)}
+                  {god.festivals
+                    .split('\n')
+                    .map(
+                      (line: string) =>
+                        line.trim() && (
+                          <p class="mb-4">
+                            {boldSegments(line).map((s) => (s.bold ? <strong>{s.text}</strong> : s.text))}
+                          </p>
+                        )
+                    )}
                 </div>
               </section>
             )
