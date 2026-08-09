@@ -53,7 +53,8 @@
 ## 進度確認方式
 
 1. **這張表**：每波完成打勾更新
-2. **三語一致性**：比對 zh/en/ja 同檔 id 順序 + 欄位齊全
-   ⚠ 原本用的 `verify-consistency.mjs` 是 `C:/tmp` 的臨時腳本、**已遺失**，目前沒有自動驗證工具，需要時得重建（見 `PRODUCT-PROGRESS.md` 已知坑 #6）
+2. **三語一致性**：`npm run verify`（`scripts/verify-consistency.mjs`，2026-08-09 重建）
+   驗筆數 / id 順序 / **欄位齊全**，並順便對帳這張表的數字。首次執行即抓到 13 筆欄位缺口，
+   代表過去的「零缺口」只驗過筆數與順序 — 詳見 `PRODUCT-PROGRESS.md`。
 3. **CI 三關**：每次 push 前 `npm run check` 必過（`astro build` 過 ≠ `astro check` 過）
 4. **build**：`npx astro build` 頁數不減（2026-07-05 基準 736 頁）

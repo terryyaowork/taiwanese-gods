@@ -115,6 +115,22 @@
 
 **內容層剩餘小尾巴**：北港朝天宮老街美食（目前無對應中部路線，待有路線再補）。
 
+### ⚠ 三語欄位缺口 13 筆（2026-08-09 由 `npm run verify` 首次抓到）
+
+過去宣稱的「三語零缺口」只驗過**筆數 / id / 順序**，沒驗**欄位齊全**——所以這 13 筆一直是隱形的。
+`GodDetail.astro` 對 `worship` / `festivals` 是條件渲染（`god.worship &&`），欄位缺 = **該語系頁面整段消失**，
+不是排版問題而是內容缺頁。以 zh 原文計約 3,739 字待翻。
+
+| 語系 | 神明                                             | 缺欄位              |
+| ---- | ------------------------------------------------ | ------------------- |
+| en   | 孔子                                             | festivals           |
+| ja   | 觀世音菩薩 / 阿彌陀佛 / 彌勒佛 / 文殊菩薩        | festivals           |
+| ja   | 三太子 / 註生娘娘 / 保生大帝                     | worship + festivals |
+| ja   | 三山國王 / 義民爺 / 伯公 / 慚愧祖師（客家 4 尊） | worship + festivals |
+| ja   | 阿立祖                                           | worship + festivals |
+
+> ⏸ 待用戶決定要不要補（屬內容產出，需確認）。補完跑 `npm run verify` 應歸零。
+
 ## ⚠ 已知坑 / 資料層缺口
 
 做 CTA 或行事曆之前一定會撞到這幾個：
@@ -131,12 +147,15 @@
    只有 CTA 點擊靠 `?from=fortune` query 參數量（零 JS）。求籤完成率 / 擲筊次數暫不量——好奇但不影響任何決策。
    週報 pipeline 抓的是 users/sessions + GSC clicks/impressions。
 5. **多 agent 同檔 append 有 race 疑慮**：曾讓多個 agent 並行 append 同一個 JSON。下次同檔多筆寫入走「各寫獨立暫存檔、主線合併」。
-6. **`verify-consistency.mjs` 已遺失**（`CONTENT-PROGRESS.md` 還引用它，原本放在 `C:/tmp`）。三語一致性目前沒有自動驗證腳本，需要時得重建。
+6. ~~**`verify-consistency.mjs` 已遺失**~~ **2026-08-09 重建：`npm run verify`**（`scripts/verify-consistency.mjs`）。
+   一次驗兩件事：三語資料一致性（筆數 / id 順序 / **欄位齊全**）＋ 文件數字對帳（筆數表、覆蓋率、路線美食）。
+   不一致就 exit 1。**動完資料或改完文件都跑一次**——文件裡的數字是負債，靠人記得改不可靠。
 7. **`astro build` 過 ≠ `astro check` 過**：build 不做 TS 檢查。push 前一律 `npm run check`（astro + eslint + prettier 三關），CI 是 `pnpm run check`。
 
 ## 驗收清單（動完必跑）
 
 ```bash
+npm run verify         # 三語一致性（筆數 / id 順序 / 欄位齊全）+ 文件數字對帳
 npm run check          # 三關：astro check + eslint + prettier — push 前必過
 npx astro build        # 頁數不減（2026-07-05 基準 736 頁）
 npx playwright test    # tests/fortune.spec.ts — 動到求籤 / 擲筊必跑
