@@ -27,6 +27,11 @@ jobs:
       - name: 安裝依賴
         run: pnpm install --frozen-lockfile
 
+      # 三語資料一致性（筆數 / id 順序 / 欄位齊全）+ 文件數字對帳
+      # 擋的是「某個語系少一段內容」與「文件數字過期」這兩類靜默錯誤 — build 不會發現
+      - name: 一致性對帳
+        run: pnpm run verify
+
       - name: Astro 語法檢查
         run: pnpm run check
 
