@@ -318,3 +318,26 @@ test.describe('粗體記號渲染', () => {
     await expect(page.locator('#festivals strong').first()).toBeVisible();
   });
 });
+
+/** /guide 的真廟 CTA —— 量測參數必須是 guide，不能跟求籤的 fortune 混在一起 */
+test.describe('神明指南 CTA', () => {
+  for (const [label, path, prefix] of [
+    ['zh', '/guide', ''],
+    ['en', '/en/guide', '/en'],
+    ['ja', '/ja/guide', '/ja'],
+  ]) {
+    test(`${label}: 情境卡片帶 ?from=guide 的廟宇連結`, async ({ page }) => {
+      await page.goto(path);
+      // 只看帶量測參數的連結（導覽列的 /temples/north 之類不算）
+      const tracked = await page
+        .locator('a[href*="?from="]')
+        .evaluateAll((els) => els.map((e) => e.getAttribute('href') ?? ''));
+
+      expect(tracked.length).toBeGreaterThan(0);
+      for (const href of tracked) {
+        expect(href).toContain('?from=guide');
+        expect(href.startsWith(`${prefix}/temples/`)).toBe(true);
+      }
+    });
+  }
+});

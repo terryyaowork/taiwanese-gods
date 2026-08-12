@@ -55,8 +55,11 @@ export interface GodRecommendation {
 const MAX_TEMPLES = 3;
 const MAX_ROUTES = 2;
 
-/** 唯一的量測手段：CTA 連結帶這個參數，GA4 頁面報表直接看得到點擊數（零 JS 埋點） */
-export const FORTUNE_CTA_PARAM = '?from=fortune';
+/**
+ * 唯一的量測手段：CTA 連結帶 `?from=<來源>`，GA4 頁面報表直接看得到點擊數（零 JS 埋點）。
+ * 每個入口用不同的來源值，數據才分得開（求籤 vs 神明指南）。
+ */
+export type CtaSource = 'fortune' | 'guide';
 
 const templeModules = import.meta.glob<TempleRecord[]>('/src/data/*/temples-*.json', {
   eager: true,
@@ -84,10 +87,11 @@ function collect<T>(modules: Record<string, T[]>, lang: Lang): T[] {
  * 產生 `神明 id → { 主祀廟, 經過那些廟的路線 }` 的對照表。
  * 廟依 sortOrder（顯著度）排序，取前 MAX_TEMPLES 間。
  */
-export function buildGodRecommendations(lang: Lang): Record<string, GodRecommendation> {
+export function buildGodRecommendations(lang: Lang, source: CtaSource = 'fortune'): Record<string, GodRecommendation> {
   const temples = collect(templeModules, lang);
   const routes = collect(routeModules, lang);
   const prefix = localePrefix(lang);
+  const track = `?from=${source}`;
 
   // templeId → 經過該廟的路線
   const routesByTemple = new Map<string, RouteRecord[]>();
@@ -127,7 +131,7 @@ export function buildGodRecommendations(lang: Lang): Record<string, GodRecommend
         relatedRoutes.push({
           id: route.id,
           name: route.name,
-          href: `${prefix}/routes/${route.id}${FORTUNE_CTA_PARAM}`,
+          href: `${prefix}/routes/${route.id}${track}`,
         });
       }
     }
@@ -137,7 +141,7 @@ export function buildGodRecommendations(lang: Lang): Record<string, GodRecommend
         id: temple.id,
         name: temple.name,
         location: temple.location ?? '',
-        href: `${prefix}/temples/${temple.id}${FORTUNE_CTA_PARAM}`,
+        href: `${prefix}/temples/${temple.id}${track}`,
       })),
       routes: relatedRoutes,
     };
@@ -147,6 +151,6 @@ export function buildGodRecommendations(lang: Lang): Record<string, GodRecommend
 }
 
 /** 查無主祀廟時的退路：導去主題路線總覽（原民類由呼叫端直接不顯示） */
-export function routesIndexHref(lang: Lang): string {
-  return `${localePrefix(lang)}/routes${FORTUNE_CTA_PARAM}`;
+export function routesIndexHref(lang: Lang, source: CtaSource = 'fortune'): string {
+  return `${localePrefix(lang)}/routes?from=${source}`;
 }

@@ -4,6 +4,7 @@ import guideData from '~/data/ja/god-guide.json';
 import taoistGods from '~/data/ja/taoist-gods.json';
 import buddhistGods from '~/data/ja/buddhist-gods.json';
 import folkGods from '~/data/ja/folk-gods.json';
+import { buildGodRecommendations, type RecommendedTemple } from '~/utils/temple-recommendations';
 
 const allGods = [...taoistGods, ...buddhistGods, ...folkGods];
 
@@ -48,6 +49,26 @@ function getGodDetails(id: string) {
     finalSrc,
   };
 }
+// 「該拜哪尊神」也接上真廟 CTA。量測用 ?from=guide，跟求籤的 ?from=fortune 分開。
+const godRecommendations = buildGodRecommendations('ja', 'guide');
+const ctaLabel = '実際に行くなら';
+
+/** 一個情境最多推 2 間廟 —— 呼應「留白是設計、量一定要輕」 */
+const templesForCategory = (godIds: string[]): RecommendedTemple[] => {
+  const seen = new Set<string>();
+  const out: RecommendedTemple[] = [];
+  for (const id of godIds ?? []) {
+    for (const temple of godRecommendations[id]?.temples ?? []) {
+      if (seen.has(temple.id)) continue;
+      seen.add(temple.id);
+      out.push(temple);
+      if (out.length >= 2) return out;
+    }
+  }
+  return out;
+};
+
+const categories = guideData.map((category) => ({ ...category, ctaTemples: templesForCategory(category.gods) }));
 ---
 
 <Layout metadata={metadata}>
@@ -66,7 +87,7 @@ function getGodDetails(id: string) {
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
       {
-        guideData.map((category) => (
+        categories.map((category) => (
           <div class="bg-white/90 dark:bg-gray-800/90 rounded-lg overflow-hidden border border-gold-200 shadow-lg hover:shadow-2xl transition-all duration-300">
             {/* Header */}
             <div class="bg-gradient-to-r from-red-900 to-red-800 px-6 py-5">
@@ -124,6 +145,23 @@ function getGodDetails(id: string) {
                   })}
                 </div>
               </div>
+              {/* CTA: 想去現場 */}
+              {category.ctaTemples.length > 0 && (
+                <div class="border-t border-gold-200/40 pt-4 mt-4">
+                  <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">{ctaLabel}</h3>
+                  <div class="flex flex-wrap gap-2">
+                    {category.ctaTemples.map((temple) => (
+                      <a
+                        href={temple.href}
+                        class="flex items-baseline gap-2 px-3 py-1.5 bg-amber-50/70 dark:bg-amber-900/20 rounded-full border border-amber-200 dark:border-amber-700 hover:border-red-400 dark:hover:border-red-500 transition-colors"
+                      >
+                        <span class="text-sm font-medium text-gray-800 dark:text-gray-200">{temple.name}</span>
+                        <span class="text-xs text-gray-500 dark:text-gray-400">{temple.location}</span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         ))
