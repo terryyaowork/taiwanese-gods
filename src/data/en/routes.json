@@ -538,5 +538,73 @@
         "description": "Xinzhuang Temple Street (around Xinzhuang Road), where the Dizang Temple stands, is one of the oldest market streets in northern Taiwan. Salted 'guangbing' biscuits, traditional noodle dishes, and old pastry shops here carry flavors from businesses decades old — after praying to the Great Sacred Lords, stop for a bite on the old street before moving on to the next stop."
       }
     ]
+  },
+  {
+    "id": "beigang-mazu-wealth",
+    "name": "Beigang Two-Temple Walk: Settle First, Then Ask",
+    "theme": "Wealth & peace of mind",
+    "region": "Yunlin County",
+    "durationHours": 5,
+    "transport": "Beigang has no train station. Take Chiayi County Bus 7325 or Chiayi Bus 7201 from Chiayi Railway Station, bus 7235 from THSR Chiayi Station (via the Southern Branch of the National Palace Museum), or Taixi Bus 7123 or 7124 from Douliu Railway Station. The two temples are about 2.4 km apart — half an hour on foot, a few minutes by taxi. Schedules change; check before you go.",
+    "summary": "One morning, two temples, just enough time for two kinds of conversation. Enter Chaotian Temple before the heat, and tell Mazu the things you are not asking for anything about. After breakfast on the old street, go to Wude Temple and say plainly what you want from money. The order is deliberate: settle first, then you can ask. Nothing is rushed here, and a long stretch is left for eating and walking, because the best part of Beigang is often that stretch.",
+    "stops": [
+      {
+        "order": 1,
+        "templeId": "beigang-chaotian",
+        "prayFor": "Peace, and saying out loud what has been weighing on you",
+        "why": "Beigang Chaotian Temple is a center of Mazu worship in Taiwan, the ancestral pilgrimage temple for many Mazu temples, and a national heritage site. During the third lunar month it roars with pilgrims; at half past eight on an ordinary weekday morning, the hall usually holds only locals doing their daily offering, and the stone carving and cut-porcelain work read most clearly in the low light. The same temple, two entirely different faces.",
+        "tips": "Weekday mornings are quietest; the first and fifteenth of the lunar month, weekends, and the third-month pilgrimage season are visibly busier — avoid them if you can. Reporting yourself is simple: name, address, why you came, said unhurriedly. Afterwards, sit in the forecourt for ten minutes. A Beigang morning is worth staying in.",
+        "stayMinutes": 90,
+        "arrival": "Reachable by bus 7325 or 7201 from Chiayi Station, 7235 from THSR Chiayi, or Taixi Bus 7123/7124 from Douliu",
+        "suggestedTime": "08:30-10:00"
+      },
+      {
+        "order": 2,
+        "templeId": "beigang-wude",
+        "prayFor": "Wealth, and replenishing your treasury",
+        "why": "Wude Temple is the founding temple of the Five Paths Wealth God tradition in Taiwan, enshrining Zhao Gongming, and the largest of its kind — its several-story \"Heavenly Treasury\" furnace is visible from a distance. The air here is nothing like Chaotian Temple. Business owners come in numbers, what they ask for is specific, and you will notice how directly everyone speaks.",
+        "tips": "Be concrete: what you do, what has gone wrong, what you hope changes. Vagueness is not the register here. The temple provides instructions for the treasury-replenishing rite and its paper money — just follow them. Crowds build after noon, so arriving early is easier on you.",
+        "stayMinutes": 75,
+        "arrival": "About 2.4 km north of Chaotian Temple — 30 minutes on foot, a few minutes by taxi",
+        "suggestedTime": "12:00-13:15"
+      }
+    ],
+    "itinerary": [
+      {
+        "time": "08:30",
+        "activity": "Chaotian Temple (Mazu; peace — quietest early)"
+      },
+      {
+        "time": "10:00",
+        "activity": "Walk the old street, eat breakfast (jianpanguo is how Beigang starts a day)"
+      },
+      {
+        "time": "11:30",
+        "activity": "Chaotian Temple → Wude Temple (30 min on foot, or a short taxi)"
+      },
+      {
+        "time": "12:00",
+        "activity": "Wude Temple (Five Paths Wealth God; wealth and treasury)"
+      },
+      {
+        "time": "13:15",
+        "activity": "Buy sesame oil and peanuts on the old street, walk slowly back"
+      }
+    ],
+    "notes": "Both temples are free to enter. This route is deliberately set on a weekday morning: around Mazu's birthday in the third lunar month, on the first and fifteenth, and on weekends, Beigang fills until you cannot walk — what you see then is the crowd, not the temple. Jianpanguo is breakfast and sells out, so come early for it. If you still have time afterwards, walk out to the bank of the Beigang River; the wind along the levee carries off the morning's incense, and it is the right place to end.",
+    "food": [
+      {
+        "name": "Jianpanguo — how Beigang starts the day",
+        "description": "In Beigang the day begins with the sizzle off a griddle. Rice cake is sliced and fried until both sides are crisp and fragrant while the inside stays soft; with a bowl of soup it is a full meal. Several stalls around the old street have been doing this for decades — cheap, plain seating, best around seven or eight in the morning. They close when it runs out, and you do not need the most famous one."
+      },
+      {
+        "name": "Duck rice and \"false fish maw\" soup",
+        "description": "Duck is Beigang's signature: a bowl of duck rice under braising sauce is satisfying on its own. For soup, try the \"false fish maw\" — an old technique that shapes fish paste into something close to the texture of fish maw, in a faintly sweet broth you rarely meet elsewhere. Plenty of shops around the old street have been open twenty years or more, with seats and no one hurrying you."
+      },
+      {
+        "name": "Sesame oil and peanuts (to take home)",
+        "description": "Beigang is a heartland of traditional sesame oil, and old mills still run on the old street — you smell the roasting before you reach them. Peanut products are a local specialty too. If you take something home, a bottle of sesame oil or a bag of peanut brittle is as Beigang as it gets."
+      }
+    ]
   }
 ]
