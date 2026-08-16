@@ -272,5 +272,23 @@
     "latitude": 22.7414,
     "longitude": 120.4881,
     "sortOrder": 12
+  },
+  {
+    "id": "xinying-taizi",
+    "name": "Xinying Taizi Temple",
+    "location": "Xinying District, Tainan City",
+    "address": "No. 45-2, Taizigong, Taibei Vil., Xinying District, Tainan City",
+    "mainDeities": [
+      {
+        "id": "nezha",
+        "name": "Nezha"
+      }
+    ],
+    "description": "Nearly every Nezha temple in Taiwan can trace its incense back to this one. Xinying Taizi Temple is the head temple of Marshal of the Central Altar and the founding temple of the tradition, with branches across the island. The great days come in the ninth lunar month: around the god's birthday, palanquins from branch temples everywhere return to Xinying for incense, the roads filling with electronic-music Nezha troupes and processional performers — one of the largest religious celebrations in Taiwan. The grounds hold an old temple and a new one; the old hall, now a Tainan heritage site, is modest in scale but is where the root lies, while the new temple absorbs the tens of thousands who come each year. To see this faith in its earliest form, start in the old hall.",
+    "history": "In 1663, five devotees — Xu Pei-yuan, Hong Ji-zhou, He Shi-ping, Zhou Yi-de, and Li Zhong-cheng — fled war with their families, carrying the image and palanquin of the Marshal of the Central Altar across the strait and landing at Yuejin Harbor in Tainan. They settled around Xinying, the worship took root among the villages, and in 1688 the temple was built, becoming the founding temple of Nezha worship in Taiwan. Over three centuries branch temples spread across the island, and every year on the ninth day of the ninth lunar month those branches return here for incense — one temple's birthday become a homecoming for an entire tradition. The old hall still stands and is a designated Tainan heritage site.",
+    "images": [],
+    "url": "https://www.taizih.org.tw",
+    "googleMap": "https://maps.google.com/?cid=309370358842796397",
+    "sortOrder": 13
   }
 ]

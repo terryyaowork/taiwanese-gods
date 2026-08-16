@@ -417,5 +417,108 @@
     "latitude": 24.885388,
     "longitude": 121.0792737,
     "sortOrder": 20
+  },
+  {
+    "id": "sanxia-changfu",
+    "name": "Sanxia Changfu Temple",
+    "location": "Sanxia District, New Taipei City",
+    "address": "No. 1, Changfu St, Sanxia District, New Taipei City",
+    "mainDeities": [
+      {
+        "id": "qingshuizushi",
+        "name": "Qingshui Zushi"
+      }
+    ],
+    "description": "Walk into Sanxia Changfu Temple and don't look up at the statues first — look at the pillars. The birds, flowers, and figures on every stone column were cut by hand, deep enough to slip a finger into. This temple to Qingshui Zushi has been rebuilt since 1947 under the direction of Li Mei-shu, a painter born in Sanxia, who brought the training of Western fine art into a traditional temple and kept at it for decades. He died before the work was finished. That is why Changfu Temple is that rare thing in Taiwan: an old temple still being built, a relay across three generations of craftsmen. It was designated a New Taipei City heritage site in 2018.",
+    "history": "In 1767, Anxi migrants from Quanzhou settled around Sanxia, Yingge, Shulin, and Daxi and proposed a temple; it was completed two years later, in 1769, enshrining the Qingshui Zushi of their home region. The area was then called Sanjiaoyong, where three rivers meet, and the temple stood at the center of the settlement — a place of worship and a place where migrants settled their affairs. Its transformation came in the twentieth century. In 1947 the painter Li Mei-shu took charge of the rebuilding. He refused to rush; every carving had to be worthy of the temple, and the work stretched across decades. The layered stonework you see today is what that patience left behind.",
+    "images": [],
+    "googleMap": "https://maps.google.com/?cid=5983519490857505777",
+    "sortOrder": 21
+  },
+  {
+    "id": "manka-qingshui",
+    "name": "Manka Qingshui Temple",
+    "location": "Wanhua District, Taipei City",
+    "address": "No. 81, Kangding Rd, Wanhua District, Taipei City",
+    "mainDeities": [
+      {
+        "id": "qingshuizushi",
+        "name": "Qingshui Zushi"
+      }
+    ],
+    "description": "Manka Qingshui Temple is one of the few old temples in Taipei that is only half there. It once had three halls; the rear hall burned in a communal fight and was never rebuilt, so the building simply stops — and that absence became part of its history. Known locally as the Zushi Temple, it enshrines Qingshui Zushi and was funded by Anxi migrants in 1787. It ranks with Longshan Temple and Baoan Temple as one of the \"three great temple gates of Taipei,\" and is a designated city heritage site. Inside it is quieter than you expect: none of Longshan's crowds, light falling through the courtyard, dark timber absorbing half the sound. If you want somewhere in Wanhua to sit for a while, this beats the streets around it.",
+    "history": "In 1787, Anxi migrants chose Weng You-lai as director and raised thirty thousand silver dollars to build the temple; it was completed in 1790, enshrining a Qingshui Zushi image brought from the original Qingshui Temple in their home county. What changed the temple's fate came in 1853, when fighting broke out in Manka between migrant groups. Fire reached the temple and destroyed it. Believers rebuilt in 1867, but the rear hall was never restored. That unrepaired gap is now the most direct evidence of how Taipei's earliest commercial district grew: out of conflict, and out of rebuilding.",
+    "images": [],
+    "googleMap": "https://maps.google.com/?cid=13678376866519882228",
+    "sortOrder": 22
+  },
+  {
+    "id": "tamsui-qingshui",
+    "name": "Tamsui Qingshui Temple",
+    "location": "Tamsui District, New Taipei City",
+    "address": "No. 87, Qingshui St, Tamsui District, New Taipei City",
+    "mainDeities": [
+      {
+        "id": "qingshuizushi",
+        "name": "Qingshui Zushi"
+      }
+    ],
+    "description": "The Qingshui Zushi enshrined in Tamsui goes by the most vivid name in Taiwan: the Nose-Dropping Ancestor. Legend says that when disaster approaches, the nose of the statue falls off as a warning. It sounds absurd until you hear a Tamsui local tell it — they are entirely serious, because the story is about the survival of a whole town. Built in 1937, the temple is young by local standards, yet it counts among greater Taipei's four great Zushi temples and Tamsui's four great temples. It sits inside the market lanes off Qingshui Street: turn in from the crowded old street and within a few steps the noise gives way to incense smoke. In Tamsui, the busiest and the stillest are one corner apart.",
+    "history": "Tamsui Qingshui Temple was built in 1937, late compared with other Zushi temples in Taiwan — but the deity it enshrines had been part of Tamsui life far longer than the building. The story of the falling nose circulated in the neighborhood before there was any temple, and believers took turns hosting the image in private homes until the hall was finished and it finally had a fixed address. That sequence — faith first, temple after — is why this place is bound so tightly to the streets around it. Nobody built a temple and waited for worshippers; people believed for decades, then built the temple together. It is now counted among the four great Zushi temples of greater Taipei, alongside those of Manka, Sanxia, and Ruifang.",
+    "images": [],
+    "googleMap": "https://maps.google.com/?cid=13357688321990784336",
+    "sortOrder": 23
+  },
+  {
+    "id": "tamsui-yinshan",
+    "name": "Tamsui Yinshan Temple",
+    "location": "Tamsui District, New Taipei City",
+    "address": "No. 15, Denggong Rd, Tamsui District, New Taipei City",
+    "mainDeities": [
+      {
+        "id": "dingguang-gufo",
+        "name": "Dingguang Gufo"
+      }
+    ],
+    "description": "Yinshan Temple will make you rethink what a temple is: the side chambers here were not built for a deity, but for people to sleep in. Founded in 1822 by Hakka migrants from Tingzhou in western Fujian, it enshrines their guardian, Dingguang Gufo, and set aside its two wings as the Tingzhou Guild Hall so that newcomers from home had somewhere to stay the moment they stepped off the boat. Only two Qing-era Dingguang Buddha temples survive in Taiwan; this is the northern one, and the better preserved — two halls, two corridors, two side chambers, now a national heritage site. For those migrants the building was at once the god's home and their own: settle the faith first, then settle the body.",
+    "history": "In 1822, Hakka migrants from the eight counties of Tingzhou prefecture in western Fujian built Yinshan Temple in Tamsui. They were a relative minority among Taiwan's settlers — different in speech, in origin, and in custom from the Quanzhou and Zhangzhou communities around them — so from the beginning the temple was more than a place of worship. Its side chambers served as the Tingzhou Guild Hall, lodging for countrymen who had just crossed the strait and had nowhere yet to go. The deity in the main hall, the newcomers in the wings: one building taking the word \"protection\" literally. The layout has barely changed in two hundred years, which is why it stands today as a national heritage site and the best preserved Dingguang Buddha temple in Taiwan.",
+    "images": [],
+    "googleMap": "https://maps.google.com/?cid=11859948809437008348",
+    "sortOrder": 24
+  },
+  {
+    "id": "zhulinshan-guanyin",
+    "name": "Linkou Zhulinshan Guanyin Temple",
+    "location": "Linkou District, New Taipei City",
+    "address": "No. 325, Zhulin Rd, Linkou District, New Taipei City",
+    "mainDeities": [
+      {
+        "id": "guanyin",
+        "name": "Guanyin"
+      }
+    ],
+    "description": "The temple's name is assembled from three places — Luzhu, Linkou, and Guishan, one character each. The naming is honest about what this is: not one village's temple, but a center of faith raised by three communities together. It enshrines the eighteen-armed Guanyin, and the halls completed in the 2012 rebuild used thirty-eight thousand-year-old Taiwanese cypress timbers; what you notice first on entering is the smell of wood, not incense. Outside lies a garden of several hectares, cherry blossoms in spring, and on a weekday morning close to nothing but the sound of someone sweeping — one of the few places near Taipei that manages to be both large and quiet.",
+    "history": "In 1801, worshippers brought three Guanyin images from the Longshan Temple of Anhai, Jinjiang, in Fujian. At first there was no temple; households across the villages took turns hosting the images. The real test came late in the Japanese colonial period, when the assimilation campaign suppressed Taiwanese folk religion and sought to burn its statues — believers hid the Guanyin and kept worship going in secret. The colonial government eventually permitted a temple in Japanese style, completed at the present site in 1939, and the name was made from one character each of Luzhu, Linkou, and Guishan to record who had protected it together. After study trips abroad, the temple completed its current rebuild in 2012.",
+    "images": [],
+    "url": "https://www.zlskyt.com.tw",
+    "googleMap": "https://maps.google.com/?cid=7194270883373393240",
+    "sortOrder": 25
+  },
+  {
+    "id": "manka-dizang",
+    "name": "Manka Dizang Temple",
+    "location": "Wanhua District, Taipei City",
+    "address": "No. 245, Xichang St, Wanhua District, Taipei City",
+    "mainDeities": [
+      {
+        "id": "kshitigarbha",
+        "name": "Ksitigarbha"
+      }
+    ],
+    "description": "Manka Dizang Temple is small enough to walk straight past — a single hall three bays wide, wedged between shopfronts on Xichang Street, with no archway and no forecourt. That is precisely what makes it valuable. Most of Taipei's old temples expanded over two centuries; this one kept the form of a mid-Qing single-hall temple, swallowtail ridge, gable walls, and rolled-roof entrance corridor intact. It enshrines Ksitigarbha, with Marshal Tian Du and the City God in attendance. It is not a tourist stop; most days there are only a few old neighbors sitting by the door. If you want to see what a temple originally looked like rather than what restoration made of it, this is Taipei's plainest example.",
+    "history": "Manka Dizang Temple was built in 1760 and repaired in 1838, making it one of the earliest surviving temples in Taipei. It faced a crisis under Japanese rule, when the authorities moved to bring folk temples into public ownership; to keep the property, the temple transferred management to Manka Longshan Temple, and that arrangement carried it through. Because it was never substantially rebuilt, it preserves the full form of a mid-Qing single-hall temple and is now a designated heritage site. Each year on the thirtieth day of the seventh lunar month, Ksitigarbha's feast day, this quiet little temple holds a large universal deliverance rite — its busiest day of the year, and the way Wanhua remembers it.",
+    "images": [],
+    "googleMap": "https://maps.google.com/?cid=8053789533490894167",
+    "sortOrder": 26
   }
 ]

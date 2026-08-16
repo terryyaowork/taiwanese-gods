@@ -253,8 +253,10 @@ test.describe('Fortune CTA — 求完 → 真廟 / 路線', () => {
     await expect(routeLink).toHaveAttribute('href', /^\/routes\/[a-z0-9-]+\?from=fortune$/);
   });
 
+  // 用地基主當樣本：祂是家宅神、不會有主祀廟，所以這個 fallback 案例不會因為補廟宇資料而失效
+  // （原本用三太子，2026-08-12 補進新營太子宮後測試就紅了 —— 測試如實反映資料變動，換樣本而不是改斷言）
   test('zh: god with no enshrining temple falls back to the routes index', async ({ page }) => {
-    await page.goto('/fortune?god=nezha');
+    await page.goto('/fortune?god=dijizhu');
     await confirmFortune(page);
 
     await expect(page.locator('#fortune-cta')).toBeVisible();
