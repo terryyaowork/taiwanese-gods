@@ -13,7 +13,7 @@
  * 有任何一項不符就 exit 1。
  */
 
-import { readFileSync, readdirSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -208,6 +208,145 @@ for (const { doc, text, re, expected, label } of inlineChecks) {
 }
 
 // ---------------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------
+// 4. 資料引用完整性 — 這一節全部是 2026-08-30 真的踩到才加的
+//
+//    每一項都對應一次實際事故：
+//    - 跨分類重複：baosheng 同時在 taoist-gods 與 folk-gods，同一尊神兩個 URL
+//    - category 欄位不符：拆檔時漏改欄位，靠檔案位置看不出來
+//    - 主祀神 id 懸空：CTA 會查不到廟
+//    - 圖片路徑不存在：dc87958 改 slug 時圖片路徑跟著改、圖檔沒改名，10 篇故事全破圖
+//    - _redirects 健全性：導到 404、蓋掉實體頁、連鎖導向，三種都是靜默失敗
+// ---------------------------------------------------------------------------
+
+console.log('');
+console.log('▸ 資料引用完整性');
+
+const GOD_FILES = {
+  taoism: 'taoist-gods',
+  buddhism: 'buddhist-gods',
+  folk: 'folk-gods',
+  hakka: 'hakka-gods',
+  indigenous: 'indigenous-spirits',
+};
+const REGIONS = ['north', 'central', 'south', 'east'];
+const CULTURE = ['customs', 'rituals', 'heritage', 'festivals', 'mantras'];
+
+// 原住民祖靈沒有獨立神明頁，是刻意的懸空引用，不是錯誤
+const DEITY_ID_ALLOWLIST = new Set(['zuling']);
+
+const rows = (lang, base) => {
+  if (!existsSync(join(ROOT, 'src/data', lang, `${base}.json`))) return [];
+  const j = readJson(lang, base);
+  return Array.isArray(j) ? j : j.gods || j.temples || j.items || j.routes || [];
+};
+
+// 4a. 神明跨分類重複 + category 欄位是否等於所在檔案
+for (const lang of LANGS) {
+  const seen = {};
+  for (const [cat, f] of Object.entries(GOD_FILES)) {
+    for (const g of rows(lang, f)) {
+      (seen[g.id] ||= []).push(cat);
+      if (g.category && g.category !== cat) {
+        fail(`[資料] ${lang}/${f}: ${g.id} 的 category 欄位寫 ${g.category}，但檔案是 ${cat}`);
+      }
+    }
+  }
+  for (const [id, cats] of Object.entries(seen)) {
+    if (cats.length > 1) fail(`[資料] ${lang}: 神明 ${id} 同時出現在 ${cats.join(' + ')}，會產生重複 URL`);
+  }
+}
+
+// 4b. 廟宇 mainDeities.id 必須查得到神明
+for (const lang of LANGS) {
+  const godIds = new Set();
+  for (const f of Object.values(GOD_FILES)) for (const g of rows(lang, f)) godIds.add(g.id);
+  for (const r of REGIONS) {
+    for (const t of rows(lang, `temples-${r}`)) {
+      for (const d of t.mainDeities || []) {
+        if (d.id && !godIds.has(d.id) && !DEITY_ID_ALLOWLIST.has(d.id)) {
+          fail(`[資料] ${lang}/temples-${r}: ${t.id} 的主祀神 ${d.id} 查無此神明`);
+        }
+      }
+    }
+  }
+}
+
+// 4c. culture 跨檔重複 / 廟宇跨 region 重複
+for (const lang of LANGS) {
+  const c = {};
+  for (const k of CULTURE) for (const x of rows(lang, `culture-${k}`)) (c[x.id] ||= []).push(k);
+  for (const [id, v] of Object.entries(c)) {
+    if (v.length > 1) fail(`[資料] ${lang}: culture 條目 ${id} 同時出現在 ${v.join(' + ')}`);
+  }
+  const t = {};
+  for (const r of REGIONS) for (const x of rows(lang, `temples-${r}`)) (t[x.id] ||= []).push(r);
+  for (const [id, v] of Object.entries(t)) {
+    if (v.length > 1) fail(`[資料] ${lang}: 廟宇 ${id} 同時出現在 ${v.join(' + ')}`);
+  }
+}
+
+// 4d. 圖片路徑必須真的有檔案
+const imageOk = (p) => {
+  if (!p || p.startsWith('http')) return true;
+  const rel = p.replace(/^\//, '');
+  return (
+    existsSync(join(ROOT, 'src/assets', rel.replace(/^assets\//, ''))) ||
+    existsSync(join(ROOT, 'public', rel)) ||
+    existsSync(join(ROOT, 'src', rel))
+  );
+};
+const imageSets = [
+  ...REGIONS.map((r) => `temples-${r}`),
+  ...CULTURE.map((c) => `culture-${c}`),
+  ...Object.values(GOD_FILES),
+  'god-stories',
+];
+for (const base of imageSets) {
+  for (const x of rows(BASE_LANG, base)) {
+    for (const img of x.images || []) {
+      if (!imageOk(img)) fail(`[資料] ${base}: ${x.id} 的圖片不存在 — ${img}`);
+    }
+    if (x.image && !imageOk(x.image)) fail(`[資料] ${base}: ${x.id} 的圖片不存在 — ${x.image}`);
+  }
+}
+
+// 4e. _redirects 健全性（目標存在性需要先 build，沒有 dist 就只驗格式）
+const redirectsPath = join(ROOT, 'public/_redirects');
+if (existsSync(redirectsPath)) {
+  const hasDist = existsSync(join(ROOT, 'dist'));
+  const lines = readFileSync(redirectsPath, 'utf8').split('\n');
+  const froms = new Map();
+  const tos = new Map();
+  let n = 0;
+  lines.forEach((line, i) => {
+    const t = line.trim();
+    if (!t || t.startsWith('#')) return;
+    const m = t.match(/^(\S+)\s+(\S+)\s+301$/);
+    if (!m) return fail(`[redirect] 第 ${i + 1} 行無法解析：${t.slice(0, 60)}`);
+    n++;
+    const [, from, to] = m;
+    if (from === to) fail(`[redirect] 自我導向：${from}`);
+    if (froms.has(from)) fail(`[redirect] 來源重複：${from}（第 ${froms.get(from)} 與 ${i + 1} 行）`);
+    else froms.set(from, i + 1);
+    tos.set(from, to);
+    if (hasDist) {
+      if (!existsSync(join(ROOT, 'dist', to.replace(/^\//, ''), 'index.html'))) {
+        fail(`[redirect] 目標不存在（會導到 404）：${from} -> ${to}`);
+      }
+      if (existsSync(join(ROOT, 'dist', from.replace(/^\//, ''), 'index.html'))) {
+        fail(`[redirect] 蓋掉現有頁面：${from}`);
+      }
+    }
+  });
+  for (const [from, to] of tos) {
+    if (froms.has(to)) fail(`[redirect] 連鎖導向：${from} -> ${to} -> ${tos.get(to)}`);
+  }
+  console.log(`  _redirects ${n} 條規則${hasDist ? '（含目標存在性）' : '（無 dist，僅驗格式）'}`);
+}
+
+console.log('  神明分類 / 主祀神引用 / 圖片路徑 / redirect 全部檢查完畢');
 
 console.log('');
 if (problems.length) {
