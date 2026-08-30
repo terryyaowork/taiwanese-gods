@@ -210,5 +210,41 @@
     "latitude": 23.6591,
     "longitude": 121.4497,
     "sortOrder": 10
+  },
+  {
+    "id": "chenggong-tianhou",
+    "name": "Chenggong Tianhou Temple",
+    "location": "Chenggong Township, Taitung County",
+    "address": "No. 50, Zhongshan Rd, Chenggong Township, Taitung County",
+    "mainDeities": [
+      {
+        "id": "mazu",
+        "name": "Mazu"
+      }
+    ],
+    "description": "Chenggong, formerly called Xingang, is the largest fishing harbour on the east coast, and Mazu here is the last god a crew salutes before heading out. Chenggong Tianhou Temple enshrines Mazu, also titled the Heavenly Holy Mother, and was founded during the Japanese colonial period. Boats out of this harbour longline for swordfish, which means several days at sea in water that turns without warning. That is why the incense in a coastal Mazu temple never really goes out. The temple sits on Zhongshan Road, a few minutes on foot from the fishing port, and pairs well with a morning at the fish market.",
+    "history": "Chenggong Tianhou Temple was founded during the Japanese colonial era by Han settlers who had moved into Xingang, today Chenggong Township. Coastal Mazu temples in Taiwan almost all follow the same sequence: the fishermen come first, then the temple. Settlers carried an incense division or a statue from their home temple, and once they had put down roots, they built. Chenggong lives on fishing, and the temple calendar tracks the fishing seasons closely. The busiest day of the year is the twenty-third day of the third lunar month, Mazu's birthday.",
+    "images": ["/assets/images/temples/temple-chenggongtianhou.png"],
+    "url": "https://www.eastcoast-nsa.gov.tw/en/attractions/detail/280/",
+    "googleMap": "https://maps.app.goo.gl/QBr2Rep5fPMaoLS58",
+    "sortOrder": 11
+  },
+  {
+    "id": "yuli-wunian",
+    "name": "Yuli Wunian Qiansui Temple",
+    "location": "Yuli Township, Hualien County",
+    "address": "No. 100, Zhongshan Rd Sec. 2, Yuli Township, Hualien County",
+    "mainDeities": [
+      {
+        "id": "wangye",
+        "name": "Wangye"
+      }
+    ],
+    "description": "The \"five years\" in Wunian Qiansui is not the god's age. It is the interval between ceremonies: the presiding Thousand-Year Lord returns only once each cycle. Yuli Wunian Qiansui Temple enshrines the Wunian Qiansui, part of the wider Wangye tradition, and has served as a centre of worship in Yuli since the Qing dynasty. The founding temple of this lineage is Zhen'an Temple in Mingshan, Baozhong, Yunlin; the belief travelled east with migrants into the East Rift Valley. The temple stands on Zhongshan Road and is one of the few Wangye temples along the valley, worth a stop if you are passing through Yuli.",
+    "history": "Yuli Wunian Qiansui Temple was founded in the Qing dynasty by Han settlers opening land in the East Rift Valley. The Wunian Qiansui, also known as the Twelve Plague Lords, are one branch of Wangye belief, centred on Mingshan in Baozhong, Yunlin. The name comes from the ceremonial cycle: nominally five years, in practice every four, because the count includes both the first and last year. The tradition moved east with settlers from western Taiwan, and this temple is a footnote to the valley's settlement history. Where people went, the gods were carried after them.",
+    "images": ["/assets/images/temples/temple-yuliwunian.png"],
+    "url": "#",
+    "googleMap": "https://maps.app.goo.gl/zBWWU9BErDBhXe2r9",
+    "sortOrder": 12
   }
 ]
