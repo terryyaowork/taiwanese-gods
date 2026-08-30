@@ -1,0 +1,127 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import taoist from '~/data/ja/taoist-gods.json';
+import buddhist from '~/data/ja/buddhist-gods.json';
+import folk from '~/data/ja/folk-gods.json';
+import hakka from '~/data/ja/hakka-gods.json';
+import indigenous from '~/data/ja/indigenous-spirits.json';
+import stories from '~/data/ja/god-stories.json';
+
+const categories = [
+  {
+    slug: 'taoism',
+    name: '道教の神様',
+    desc: '玉皇上帝、媽祖、関聖帝君——台湾の人々が日常的に参拝する主な神様。',
+    gods: taoist,
+  },
+  {
+    slug: 'buddhism',
+    name: '仏教の神様',
+    desc: '観世音菩薩、地蔵菩薩、薬師如来——寺院にも家庭の仏壇にも祀られる。',
+    gods: buddhist,
+  },
+  {
+    slug: 'folk',
+    name: '民間信仰',
+    desc: '土地公、城隍爺、門神——集落と家の入口を守る神様。',
+    gods: folk,
+  },
+  {
+    slug: 'hakka',
+    name: '客家信仰',
+    desc: '三山国王、義民爺、伯公——客家の集落に固有の信仰体系。',
+    gods: hakka,
+  },
+  {
+    slug: 'indigenous',
+    name: '先住民信仰',
+    desc: 'タイヤル族の utux、パイワン族の百歩蛇、阿里祖——台湾固有の霊観。',
+    gods: indigenous,
+  },
+];
+
+const total = categories.reduce((n, c) => n + c.gods.length, 0);
+
+const metadata = {
+  title: `台湾の神様一覧：${total} 柱の分類・由来・参拝の仕方`,
+  ignoreTitleTemplate: true,
+  description: `道教・仏教・民間信仰・客家・先住民——台湾で実際に信仰されている ${total} 柱の神様を、系統別に分類し、由来と参拝できる廟をまとめました。`,
+};
+---
+
+<Layout metadata={metadata}>
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    <div class="text-center mb-12">
+      <h1
+        class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide"
+      >
+        台湾の神様一覧
+      </h1>
+      <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
+      <p class="text-lg text-gray-700 dark:text-gray-300 font-light max-w-2xl mx-auto">
+        台湾の信仰は一つの系統から来たものではありません。道教、仏教、閩南の民間信仰、客家、先住民の霊観が、
+        この島で数百年にわたり共存してきました。ここでは {total} 柱を五つの系統に分けて紹介します。
+      </p>
+    </div>
+
+    <div class="space-y-10">
+      {
+        categories.map((cat) => (
+          <section class="bg-white/90 dark:bg-gray-800/90 rounded-lg border border-gold-200 shadow-lg p-6">
+            <div class="flex flex-wrap items-baseline gap-3 mb-2">
+              <a
+                href={`/ja/gods/${cat.slug}`}
+                class="text-xl sm:text-2xl font-serif font-bold text-red-900 dark:text-red-300 hover:text-red-700 transition"
+              >
+                {cat.name}
+              </a>
+              <span class="text-sm text-gray-500 dark:text-gray-400">{cat.gods.length} 柱</span>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 font-light mb-4">{cat.desc}</p>
+            <ul class="flex flex-wrap gap-x-4 gap-y-2">
+              {cat.gods.map((god) => (
+                <li>
+                  <a
+                    href={`/ja/gods/${cat.slug}/${god.id}`}
+                    class="text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-300 underline decoration-gold-300 underline-offset-4 transition"
+                  >
+                    {god.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+
+      <section class="bg-white/90 dark:bg-gray-800/90 rounded-lg border border-gold-200 shadow-lg p-6">
+        <div class="flex flex-wrap items-baseline gap-3 mb-2">
+          <a
+            href="/ja/gods/stories"
+            class="text-xl sm:text-2xl font-serif font-bold text-red-900 dark:text-red-300 hover:text-red-700 transition"
+          >
+            神様の物語
+          </a>
+          <span class="text-sm text-gray-500 dark:text-gray-400">{stories.length} 篇</span>
+        </div>
+        <p class="text-gray-600 dark:text-gray-400 font-light mb-4">
+          神様もかつては人でした。これらの物語は、神になる前の時間を描いています。
+        </p>
+        <ul class="flex flex-wrap gap-x-4 gap-y-2">
+          {
+            stories.map((story) => (
+              <li>
+                <a
+                  href={`/ja/gods/stories/${story.id}`}
+                  class="text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-300 underline decoration-gold-300 underline-offset-4 transition"
+                >
+                  {story.title}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </div>
+  </div>
+</Layout>

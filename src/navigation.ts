@@ -17,6 +17,14 @@ export const headerData = {
       links: [
         {
           text: {
+            'zh-TW': '全部神明',
+            en: 'All Deities',
+            ja: '神様一覧',
+          },
+          href: getPermalink('/gods'),
+        },
+        {
+          text: {
             'zh-TW': '道教神明',
             en: 'Taoist Deities',
             ja: '道教の神様',
@@ -64,6 +72,14 @@ export const headerData = {
         ja: '寺院巡り',
       },
       links: [
+        {
+          text: {
+            'zh-TW': '全部廟宇',
+            en: 'All Temples',
+            ja: '廟一覧',
+          },
+          href: getPermalink('/temples'),
+        },
         {
           text: {
             'zh-TW': '北部廟宇',
@@ -220,6 +236,14 @@ export const footerData = {
       links: [
         {
           text: {
+            'zh-TW': '全部神明',
+            en: 'All Deities',
+            ja: '神様一覧',
+          },
+          href: getPermalink('/gods'),
+        },
+        {
+          text: {
             'zh-TW': '道教神明',
             en: 'Taoist Deities',
             ja: '道教の神様',
@@ -267,6 +291,14 @@ export const footerData = {
         ja: '寺院巡り',
       },
       links: [
+        {
+          text: {
+            'zh-TW': '全部廟宇',
+            en: 'All Temples',
+            ja: '廟一覧',
+          },
+          href: getPermalink('/temples'),
+        },
         {
           text: {
             'zh-TW': '北部廟宇',

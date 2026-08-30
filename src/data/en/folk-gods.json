@@ -121,26 +121,6 @@
     "sortOrder": 4
   },
   {
-    "id": "baosheng",
-    "name": "Baosheng Dadi",
-    "aliases": ["God of Medicine", "Emperor of Life Protection"],
-    "domain": "Medicine, health, curing diseases, extending life",
-    "description": "A doctor who never once took payment — a thousand years later, he's a god. Meet Baosheng Dadi, the God of Medicine, known to Taiwanese as \"Da Dao Gong,\" born Wu Tao (the name is pronounced \"Tao\") in Tong'an, Fujian, during the Song Dynasty. In an age when seeing a doctor was a luxury, Wu Tao walked from village to village treating the poor and refusing a single coin, and after his death the country physician was elevated, step by step, into the deity who guards life itself. Today, when a Taiwanese family faces a frightening diagnosis, an upcoming operation, or even a sick pet, Baosheng Dadi is who they turn to. His most important temple is Dalongdong Baoan Temple in Taipei, whose annual Baosheng Cultural Festival blends deity processions with contemporary art and academic lectures. Its heritage restoration was so meticulous that in 2003 it won a UNESCO Asia-Pacific Heritage Award — a neighborhood temple earning a United Nations honor tells you everything about the place this healer holds in Taiwanese hearts.",
-    "story": "Baosheng Dadi's most famous feat is the \"silk-thread diagnosis.\"\n\nLegend says the empress once fell ill with a mysterious sickness that every imperial physician failed to cure. Word reached Wu Tao, and he was summoned to the palace — but there was a problem. In ancient China, a male doctor could not touch a woman of the court, let alone the empress. So he devised a solution: he had a silk thread tied to the empress's wrist and its other end drawn out beyond a screen to where he sat. Through nothing but that single thread and a screen, he read the pulse transmitted along the silk, diagnosed the illness precisely, and prescribed the cure that healed her. Doctor, or magician? The line blurs.\n\nThe tale Taiwanese love even more is a piece of divine gossip: the \"feud\" between Da Dao Gong and Mazu. Folk telling has it that Da Dao Gong once had feelings for Mazu (yes, even gods get crushes) and was turned down — after which the two took turns spoiling each other's birthdays. On the 15th of the third lunar month, Baosheng's birthday, Mazu sends rain to ruin his beard; on the 23rd, Mazu's birthday, he sends wind to wreck her makeup. So whenever the March weather turns suddenly wet and windy, Taiwanese still say with a grin, \"Da Dao Gong's wind, Mazu's rain\" — those two are at it again.",
-    "temples": [
-      {
-        "name": "Baoan Temple",
-        "location": "Taipei City",
-        "url": "https://www.baoan.org.tw/"
-      }
-    ],
-    "image": "/assets/images/gods/baosheng.png",
-    "associatedTemples": ["Dalongdong Baoan Temple (Datong District, Taipei City)"],
-    "worship": "What should you pray for? Recovery from illness, a successful operation, family health, a long sickness finally lifting. When someone at home is about to undergo major surgery, many people come first to tell Baosheng Dadi, just to set their hearts at ease.\n\nHow to worship: prepare the Three Sacrifices and four kinds of fruit, light incense, and state the patient's name and condition. Some devotees bring Chinese medicinal herbs such as angelica root or goji berries as offerings, a nod to the Medicine God. Many Baosheng Dadi temples keep \"medicine oracles\" — after casting moon blocks for a herbal prescription, you can take it to a Chinese pharmacy to fill.\n\nThere's only one taboo that really matters: a medicine oracle is meant to steady the mind, not to replace a doctor or license self-prescribing. If you're genuinely ill, see a physician — Baosheng Dadi was a doctor himself, and he would absolutely want you to get proper care.",
-    "festivals": "The \"Baosheng Cultural Festival\" at Taipei's Baoan Temple is the premier event, featuring a month-long series of activities from March to April on the lunar calendar. Highlights include the \"Fire Lion\" (Fang Huo Shi) ceremony — a uniquely Taiwanese ritual found nowhere else — where a paper-and-bamboo lion packed with fireworks is set ablaze in an explosive display. Traditional arts performances, Taoist ceremonies, and a grand procession through the Dalongdong neighborhood are also featured. In 2003, Baoan Temple won the UNESCO Asia-Pacific Heritage Award, bringing international recognition to this cultural celebration.",
-    "sortOrder": 5
-  },
-  {
     "id": "dijizhu",
     "name": "Di Ji Zhu (Foundation Lord)",
     "aliases": ["Foundation Spirit", "House Guardian"],

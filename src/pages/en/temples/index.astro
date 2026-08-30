@@ -1,0 +1,69 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import north from '~/data/en/temples-north.json';
+import central from '~/data/en/temples-central.json';
+import south from '~/data/en/temples-south.json';
+import east from '~/data/en/temples-east.json';
+
+const regions = [
+  { slug: 'north', name: 'Northern Taiwan', temples: north },
+  { slug: 'central', name: 'Central Taiwan', temples: central },
+  { slug: 'south', name: 'Southern Taiwan', temples: south },
+  { slug: 'east', name: 'Eastern Taiwan & Islands', temples: east },
+];
+
+const total = regions.reduce((n, r) => n + r.temples.length, 0);
+
+const metadata = {
+  title: `Temples of Taiwan: All ${total} Temples, Their Deities and How to Visit`,
+  ignoreTitleTemplate: true,
+  description: `North, central, south, east and the offshore islands — ${total} temples worth the trip, each with its main deity, address and what to look for.`,
+};
+---
+
+<Layout metadata={metadata}>
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    <div class="text-center mb-12">
+      <h1
+        class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide"
+      >
+        Temples of Taiwan
+      </h1>
+      <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
+      <p class="text-lg text-gray-700 dark:text-gray-300 font-light max-w-2xl mx-auto">
+        Taiwan has one of the highest densities of temples in the world. {total} of them here, grouped by region, each with
+        its main deity and what makes it worth visiting.
+      </p>
+    </div>
+
+    <div class="space-y-10">
+      {
+        regions.map((region) => (
+          <section class="bg-white/90 dark:bg-gray-800/90 rounded-lg border border-gold-200 shadow-lg p-6">
+            <div class="flex flex-wrap items-baseline gap-3 mb-4">
+              <a
+                href={`/en/temples/${region.slug}`}
+                class="text-xl sm:text-2xl font-serif font-bold text-red-900 dark:text-red-300 hover:text-red-700 transition"
+              >
+                {region.name}
+              </a>
+              <span class="text-sm text-gray-500 dark:text-gray-400">{region.temples.length} temples</span>
+            </div>
+            <ul class="flex flex-wrap gap-x-4 gap-y-2">
+              {region.temples.map((temple) => (
+                <li>
+                  <a
+                    href={`/en/temples/${temple.id}`}
+                    class="text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-300 underline decoration-gold-300 underline-offset-4 transition"
+                  >
+                    {temple.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+    </div>
+  </div>
+</Layout>

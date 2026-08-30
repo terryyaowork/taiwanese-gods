@@ -1,0 +1,113 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import taoist from '~/data/zh-TW/taoist-gods.json';
+import buddhist from '~/data/zh-TW/buddhist-gods.json';
+import folk from '~/data/zh-TW/folk-gods.json';
+import hakka from '~/data/zh-TW/hakka-gods.json';
+import indigenous from '~/data/zh-TW/indigenous-spirits.json';
+import stories from '~/data/zh-TW/god-stories.json';
+
+const categories = [
+  { slug: 'taoism', name: '道教神明', desc: '玉皇上帝、媽祖、關聖帝君——台灣人日常祈求的主要對象。', gods: taoist },
+  {
+    slug: 'buddhism',
+    name: '佛教神明',
+    desc: '觀世音菩薩、地藏王菩薩、藥師佛——寺院與家庭佛堂的主祀。',
+    gods: buddhist,
+  },
+  { slug: 'folk', name: '民間信仰', desc: '土地公、城隍爺、門神——從聚落到家門口的守護神。', gods: folk },
+  { slug: 'hakka', name: '客家信仰', desc: '三山國王、義民爺、伯公——客庄特有的信仰系統。', gods: hakka },
+  {
+    slug: 'indigenous',
+    name: '原住民族信仰',
+    desc: '泰雅族 utux、排灣族百步蛇、阿里祖——台灣原生的靈觀。',
+    gods: indigenous,
+  },
+];
+
+const total = categories.reduce((n, c) => n + c.gods.length, 0);
+
+const metadata = {
+  title: `台灣神明總覽：${total} 位神明的分類、由來與參拜方式`,
+  ignoreTitleTemplate: true,
+  description: `道教、佛教、民間信仰、客家與原住民族——${total} 位台灣人真正在拜的神明，一頁看完分類、由來與可以去哪裡參拜。`,
+};
+---
+
+<Layout metadata={metadata}>
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    <div class="text-center mb-12">
+      <h1
+        class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide"
+      >
+        台灣神明總覽
+      </h1>
+      <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
+      <p class="text-lg text-gray-700 dark:text-gray-300 font-light max-w-2xl mx-auto">
+        台灣的神明不只來自一個系統。道教、佛教、閩南民間信仰、客庄與原住民族的靈觀在這座島上並存了幾百年。 這裡收錄 {
+          total
+        } 位神明，依系統分成五類。
+      </p>
+    </div>
+
+    <div class="space-y-10">
+      {
+        categories.map((cat) => (
+          <section class="bg-white/90 dark:bg-gray-800/90 rounded-lg border border-gold-200 shadow-lg p-6">
+            <div class="flex flex-wrap items-baseline gap-3 mb-2">
+              <a
+                href={`/gods/${cat.slug}`}
+                class="text-xl sm:text-2xl font-serif font-bold text-red-900 dark:text-red-300 hover:text-red-700 transition"
+              >
+                {cat.name}
+              </a>
+              <span class="text-sm text-gray-500 dark:text-gray-400">{cat.gods.length} 位</span>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 font-light mb-4">{cat.desc}</p>
+            <ul class="flex flex-wrap gap-x-4 gap-y-2">
+              {cat.gods.map((god) => (
+                <li>
+                  <a
+                    href={`/gods/${cat.slug}/${god.id}`}
+                    class="text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-300 underline decoration-gold-300 underline-offset-4 transition"
+                  >
+                    {god.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+
+      <section class="bg-white/90 dark:bg-gray-800/90 rounded-lg border border-gold-200 shadow-lg p-6">
+        <div class="flex flex-wrap items-baseline gap-3 mb-2">
+          <a
+            href="/gods/stories"
+            class="text-xl sm:text-2xl font-serif font-bold text-red-900 dark:text-red-300 hover:text-red-700 transition"
+          >
+            神明故事
+          </a>
+          <span class="text-sm text-gray-500 dark:text-gray-400">{stories.length} 篇</span>
+        </div>
+        <p class="text-gray-600 dark:text-gray-400 font-light mb-4">
+          神明也曾經是人。這些長篇故事講的是他們成神之前的那一段。
+        </p>
+        <ul class="flex flex-wrap gap-x-4 gap-y-2">
+          {
+            stories.map((story) => (
+              <li>
+                <a
+                  href={`/gods/stories/${story.id}`}
+                  class="text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-300 underline decoration-gold-300 underline-offset-4 transition"
+                >
+                  {story.title}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </div>
+  </div>
+</Layout>

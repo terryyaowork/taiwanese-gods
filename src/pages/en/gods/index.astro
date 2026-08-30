@@ -1,0 +1,127 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import taoist from '~/data/en/taoist-gods.json';
+import buddhist from '~/data/en/buddhist-gods.json';
+import folk from '~/data/en/folk-gods.json';
+import hakka from '~/data/en/hakka-gods.json';
+import indigenous from '~/data/en/indigenous-spirits.json';
+import stories from '~/data/en/god-stories.json';
+
+const categories = [
+  {
+    slug: 'taoism',
+    name: 'Taoist Deities',
+    desc: 'The Jade Emperor, Mazu, Guan Yu — the gods Taiwanese people pray to on an ordinary day.',
+    gods: taoist,
+  },
+  {
+    slug: 'buddhism',
+    name: 'Buddhist Deities',
+    desc: 'Guanyin, Kshitigarbha, the Medicine Buddha — enshrined in monasteries and home altars alike.',
+    gods: buddhist,
+  },
+  {
+    slug: 'folk',
+    name: 'Folk Beliefs',
+    desc: 'Tudigong, the City God, the door gods — guardians of the village and of the doorway.',
+    gods: folk,
+  },
+  {
+    slug: 'hakka',
+    name: 'Hakka Beliefs',
+    desc: 'The Three Mountain Kings, the Yimin martyrs, Bogong — the belief system of Hakka townships.',
+    gods: hakka,
+  },
+  {
+    slug: 'indigenous',
+    name: 'Indigenous Beliefs',
+    desc: 'Atayal utux, the Paiwan hundred-pacer, Ali ancestral spirits — the island of Taiwan before Han settlement.',
+    gods: indigenous,
+  },
+];
+
+const total = categories.reduce((n, c) => n + c.gods.length, 0);
+
+const metadata = {
+  title: `All Taiwanese Deities: ${total} Gods, Their Origins and How People Worship Them`,
+  ignoreTitleTemplate: true,
+  description: `Taoist, Buddhist, folk, Hakka and Indigenous — ${total} deities Taiwanese people actually worship, grouped by tradition, with origins and where to visit their temples.`,
+};
+---
+
+<Layout metadata={metadata}>
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    <div class="text-center mb-12">
+      <h1
+        class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-red-900 dark:text-red-300 mb-4 tracking-wide"
+      >
+        Deities of Taiwan
+      </h1>
+      <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
+      <p class="text-lg text-gray-700 dark:text-gray-300 font-light max-w-2xl mx-auto">
+        Taiwanese religion does not come from a single source. Taoist, Buddhist, Hoklo folk, Hakka and Indigenous
+        traditions have shared this island for centuries. {total} deities, grouped into five traditions.
+      </p>
+    </div>
+
+    <div class="space-y-10">
+      {
+        categories.map((cat) => (
+          <section class="bg-white/90 dark:bg-gray-800/90 rounded-lg border border-gold-200 shadow-lg p-6">
+            <div class="flex flex-wrap items-baseline gap-3 mb-2">
+              <a
+                href={`/en/gods/${cat.slug}`}
+                class="text-xl sm:text-2xl font-serif font-bold text-red-900 dark:text-red-300 hover:text-red-700 transition"
+              >
+                {cat.name}
+              </a>
+              <span class="text-sm text-gray-500 dark:text-gray-400">{cat.gods.length} deities</span>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 font-light mb-4">{cat.desc}</p>
+            <ul class="flex flex-wrap gap-x-4 gap-y-2">
+              {cat.gods.map((god) => (
+                <li>
+                  <a
+                    href={`/en/gods/${cat.slug}/${god.id}`}
+                    class="text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-300 underline decoration-gold-300 underline-offset-4 transition"
+                  >
+                    {god.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+
+      <section class="bg-white/90 dark:bg-gray-800/90 rounded-lg border border-gold-200 shadow-lg p-6">
+        <div class="flex flex-wrap items-baseline gap-3 mb-2">
+          <a
+            href="/en/gods/stories"
+            class="text-xl sm:text-2xl font-serif font-bold text-red-900 dark:text-red-300 hover:text-red-700 transition"
+          >
+            Deity Stories
+          </a>
+          <span class="text-sm text-gray-500 dark:text-gray-400">{stories.length} stories</span>
+        </div>
+        <p class="text-gray-600 dark:text-gray-400 font-light mb-4">
+          Every god was once a person. These long-form stories are about the part before they became gods.
+        </p>
+        <ul class="flex flex-wrap gap-x-4 gap-y-2">
+          {
+            stories.map((story) => (
+              <li>
+                <a
+                  href={`/en/gods/stories/${story.id}`}
+                  class="text-gray-700 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-300 underline decoration-gold-300 underline-offset-4 transition"
+                >
+                  {story.title}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </div>
+  </div>
+</Layout>
