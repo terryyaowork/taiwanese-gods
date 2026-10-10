@@ -5,7 +5,7 @@ export default defineConfig({
   timeout: 30000,
   retries: 0,
   use: {
-    baseURL: 'http://localhost:4321',
+    baseURL: 'http://localhost:4331',
     headless: true,
   },
   projects: [
@@ -15,8 +15,8 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: 'pnpm dev --port 4321',
-    port: 4321,
+    command: 'pnpm dev --port 4331',
+    port: 4331,
     reuseExistingServer: true,
     timeout: 30000,
   },
