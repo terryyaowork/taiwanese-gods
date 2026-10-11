@@ -7,7 +7,7 @@ import LanguageSwitcher from '~/components/widgets/LanguageSwitcher.astro';
 import { siteTitle } from '~/navigation';
 
 import { getHomePermalink } from '~/utils/permalinks';
-import { trimSlash } from '~/utils/permalinks';
+import { getPagePathname, trimSlash } from '~/utils/permalinks';
 
 interface Link {
   text?: string | Record<string, string>;
@@ -53,7 +53,7 @@ const {
   position = 'center',
 } = Astro.props;
 
-const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
+const currentPath = `/${trimSlash(getPagePathname(new URL(Astro.url).pathname))}`;
 const isEn = currentPath.startsWith('/en');
 const isJa = currentPath.startsWith('/ja');
 const currentLang = isEn ? 'en' : isJa ? 'ja' : 'zh-TW';

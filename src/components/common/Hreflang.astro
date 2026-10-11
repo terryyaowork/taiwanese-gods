@@ -11,9 +11,10 @@
  * alternates for all three languages + x-default.
  */
 import { SITE } from 'astrowind:config';
+import { getPagePathname } from '~/utils/permalinks';
 
 const siteUrl = (SITE?.site || 'https://www.taiwanese-gods.org').replace(/\/$/, '');
-const pathname = Astro.url.pathname;
+const pathname = getPagePathname(Astro.url.pathname);
 
 // Determine the base path (without language prefix)
 let basePath: string;

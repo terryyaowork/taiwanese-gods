@@ -24,6 +24,12 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 export default defineConfig({
   output: 'static',
 
+  // Emit /page.html instead of /page/index.html so Cloudflare Pages serves
+  // /page without a 308 to /page/ — matches sitemap, canonical and hreflang (trailingSlash: never).
+  build: {
+    format: 'file',
+  },
+
   integrations: [
     tailwind({
       applyBaseStyles: false,

@@ -1,11 +1,13 @@
 ---
+import { getPagePathname } from '~/utils/permalinks';
+
 const languages = [
   { code: 'zh-TW', label: '繁體中文', prefix: '' },
   { code: 'en', label: 'English', prefix: '/en' },
   { code: 'ja', label: '日本語', prefix: '/ja' },
 ];
 
-const currentPath = Astro.url.pathname;
+const currentPath = getPagePathname(Astro.url.pathname);
 const isEn = currentPath.startsWith('/en');
 const isJa = currentPath.startsWith('/ja');
 const currentLangCode = isEn ? 'en' : isJa ? 'ja' : 'zh-TW';

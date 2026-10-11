@@ -27,6 +27,10 @@ export const TAG_BASE = cleanSlug(APP_BLOG?.tag?.pathname) || 'tag';
 
 export const POST_PERMALINK_PATTERN = trimSlash(APP_BLOG?.post?.permalink || `${BLOG_BASE}/%slug%`);
 
+/** Public URL path for a page. With build.format 'file', Astro.url.pathname ends in .html at build time. */
+export const getPagePathname = (pathname: string): string =>
+  pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+
 /** */
 export const getCanonical = (path = ''): string | URL => {
   const url = String(new URL(path, SITE.site));

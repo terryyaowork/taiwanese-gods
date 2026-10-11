@@ -5,7 +5,4 @@ Allow: /
 # Block duplicate language prefix (zh-TW is the default, no prefix needed)
 Disallow: /zh-TW/
 
-# Block internal assets
-Disallow: /_astro/
-
 Sitemap: https://www.taiwanese-gods.org/sitemap-index.xml
