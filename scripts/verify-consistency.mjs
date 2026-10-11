@@ -378,7 +378,10 @@ const MAP_OK = /^https:\/\/(maps\.google\.com\/\?cid=\d+|maps\.app\.goo\.gl\/[A-
 for (const base of templeBases) {
   const byLang = Object.fromEntries(LANGS.map((l) => [l, new Map(readJson(l, base).map((t) => [t.id, t.googleMap]))]));
   for (const [id, zhMap] of byLang[BASE_LANG]) {
-    if (zhMap !== undefined && !MAP_OK.test(zhMap)) fail(`[地圖] ${base}: ${id} 的連結格式不對（${zhMap}）`);
+    // 每間廟都要有已驗證的地圖連結：先在地圖上找到這間廟，才能上架。
+    // 2026-10-11 查出 4 間在 Google 地圖、網路、政府名冊都查不到的廟，都是沒附來源的生成資料。
+    if (zhMap === undefined) fail(`[地圖] ${base}: ${id} 沒有地圖連結（先在 Google 地圖確認這間廟存在，再取 CID）`);
+    else if (!MAP_OK.test(zhMap)) fail(`[地圖] ${base}: ${id} 的連結格式不對（${zhMap}）`);
     for (const l of LANGS) {
       if (byLang[l].get(id) !== zhMap) fail(`[地圖] ${base}: ${id} 的 ${l} 連結和中文不同`);
     }

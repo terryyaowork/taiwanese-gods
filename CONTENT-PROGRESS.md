@@ -27,7 +27,7 @@
 | 客家神明 hakka-gods         | 7    | ✅  | ✅  | ✅  | wave 1/2                                                       |
 | 原民信仰 indigenous-spirits | 7    | ✅  | ✅  | ✅  | wave 3                                                         |
 | **廟宇**                    |      |     |     |     |                                                                |
-| 北部廟宇 temples-north      | 27   | ✅  | ✅  | ✅  | wave 4 — description + history                                 |
+| 北部廟宇 temples-north      | 26   | ✅  | ✅  | ✅  | wave 4 — description + history                                 |
 | 中部廟宇 temples-central    | 14   | ✅  | ✅  | ✅  | wave 4                                                         |
 | 南部廟宇 temples-south      | 14   | ✅  | ✅  | ✅  | wave 4                                                         |
 | 東部廟宇 temples-east       | 13   | ✅  | ✅  | ✅  | wave 4                                                         |

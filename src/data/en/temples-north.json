@@ -389,21 +389,21 @@
     "sortOrder": 17
   },
   {
-    "id": "hsinchu-sanshan",
-    "name": "Hsinchu Sanshan Guowang Temple",
-    "location": "North District, Hsinchu City",
-    "address": "No. 184, Ximen St., North Dist., Hsinchu City",
+    "id": "xinzhuang-guangfu",
+    "name": "Xinzhuang Guangfu Temple",
+    "location": "Xinzhuang District, New Taipei City",
+    "address": "No. 150, Xinzhuang Rd., Xinzhuang Dist., New Taipei City",
+    "description": "Of the four old temples on Xinzhuang's old street, the best preserved is, oddly, the one that lost its worshippers: Guangfu Temple, which locals still call the Three Mountain Kings Temple. The Three Mountain Kings are a local faith from Chaozhou in Guangdong, carried across the strait by Chaozhou settlers. When those settlers later left Xinzhuang, the temple lost its incense and its patrons — and so escaped the rounds of renovation that remade its neighbors, keeping its Qing-dynasty face. Today it is a national monument: the gate carvings are cut from Guanyin Mountain stone, the roof frame is Minnan-style yet uses rare square beams, and the front is built of red brick while the rear is dark brick. Slow down here when you walk the old street.",
+    "history": "Guangfu Temple was built in 1780, the 45th year of the Qianlong reign, with money from Xinzhuang's Chaozhou immigrants from Guangdong, and dedicated to the Three Mountain Kings. A great fire destroyed it in 1882. In 1888, Hsinchu gentleman Chen Chao-gang rallied people from the nine Chaozhou counties to rebuild it — and the rebuilt temple was left unpainted, a plain look it still keeps today. It was repaired again in 1936. In 1985 it was designated a second-grade historic site (now a national monument), and restoration work ran from 1991 to 1995.",
     "mainDeities": [
       {
         "id": "sanshan-guowang",
         "name": "Sanshan Guowang"
       }
     ],
-    "description": "Which three mountains are the Three Mountain Kings? The answer lies in Jin Mountain, Ming Mountain, and Du Mountain in Jieyang, Chaozhou, Guangdong — the mountain gods of these three peaks were the most important guardian deities the Hakka carried across the sea to Taiwan. Built during the Qianlong reign, Hsinchu Sanshan Guowang Temple is the most representative Hakka center of faith in Hsinchu's North District. It preserves many Qing-dynasty plaques and stone carvings that bear witness to the Hakka history of reclaiming the Zhuqian (Hsinchu) region. Built in a traditional blend of Minnan and Cantonese styles, its layout is upright and solemn, and the stone carving of the front hall is especially fine. Though the temple sits in a busy district, the surrounding lanes still keep the grain of the early Hakka settlement, making it the best starting point for understanding Hsinchu's Hakka history.",
-    "history": "In 1780, during the Qianlong reign, the Cantonese Hakka immigrants of the Hsinchu area pooled their funds to build the Sanshan Guowang Temple. Qing-era Hsinchu once saw severe ethnic conflict between Hokkien and Hakka, and in such times the Sanshan Guowang Temple was not only a place of worship but a vital rallying point where the Hakka drew together and kept alive the ties of kinship and hometown. The temple has been renovated many times yet still preserves the basic layout of its Qing-dynasty architecture. Under Japanese rule it once faced the threat of demolition, and was saved in the end only through the efforts of local people.",
-    "images": ["/assets/images/temples/temple-hsinchu-sanshan.png"],
-    "latitude": 24.806,
-    "longitude": 120.9676,
+    "images": ["/assets/images/temples/temple-xinzhuang-guangfu.webp"],
+    "imageIsIllustration": true,
+    "googleMap": "https://maps.google.com/?cid=10283934670926035896",
     "sortOrder": 18
   },
   {
@@ -424,24 +424,6 @@
     "latitude": 24.7803926,
     "longitude": 120.9788137,
     "sortOrder": 19
-  },
-  {
-    "id": "hsinchu-puxian",
-    "name": "Hsinchu Puxian Temple",
-    "location": "East District, Hsinchu City",
-    "address": "No. 536, Sec. 1, Guangfu Rd., East Dist., Hsinchu City",
-    "mainDeities": [
-      {
-        "id": "samantabhadra",
-        "name": "Samantabhadra Bodhisattva"
-      }
-    ],
-    "description": "In the main hall of Hsinchu Puxian Temple, Samantabhadra Bodhisattva rides a six-tusked white elephant, serene and dignified — the most striking sight of this Buddhist temple in Hsinchu's East District. Dedicated to Samantabhadra Bodhisattva, its buildings are quiet and refined, a rare patch of stillness in the city center. In Buddhism, Samantabhadra represents 'Great Practice,' the power to put the Dharma into daily life step by step; so those who come here mostly seek not wealth or fame but the steadiness to advance in practice and fulfill their vows. For anyone wanting to catch a breath amid the rush, Puxian Temple is a good place to sit down.",
-    "history": "Hsinchu Puxian Temple was founded during the Daoguang reign of the Qing dynasty (around the 1830s), built with funds raised by local gentry, at first only a small Buddhist temple. Through repeated renovations and expansions from the late Qing into the Japanese colonial period, it gradually became an important Buddhist temple in the Hsinchu area. Dedicated to Samantabhadra Bodhisattva, it is known for 'practice and vow' — Samantabhadra's Ten Great Vows are the very heart of Mahayana Buddhist practice. Its architecture blends Minnan and Japanese styles, every brick and tile bearing the cultural imprint of a different age. After the war the temple continued to expand, adding a lecture hall and a library and actively promoting Buddhist education and charity. Quiet and shaded by ancient trees, it is a rare place for still cultivation in central Hsinchu.",
-    "images": ["/assets/images/temples/temple-hsinchu-puxian.png"],
-    "latitude": 24.885388,
-    "longitude": 121.0792737,
-    "sortOrder": 20
   },
   {
     "id": "sanxia-changfu",

@@ -8,9 +8,9 @@
     "story": "Legend has it that the Three Mountain Kings were once three sworn brothers of the late Sui Dynasty — Lian Jie, King of Jin Mountain; Zhao Xuan, King of Ming Mountain; and Qiao Jun, King of Du Mountain — righteous men who protected their villagers from bandits in a lawless age. Later, as the Song founder Zhao Kuangyin was establishing his empire, the three mountain spirits manifested to aid his battles, and for this they were enfeoffed as the \"Three Mountain Kings\" and granted an imperially sanctioned temple. Another reading holds that they were originally the nature spirits of three mountains, gradually personified through successive imperial honors.\n\nBut the Three Kings' story in Taiwan is written more in Hakka sweat and blood. In the Qing era of frequent sub-ethnic feuds, Hakka settlements were often outnumbered, and the Sanshan Guowang temple was frequently the village's core defensive stronghold — where the temple stood, there stood the line, and there the clan held. They were more than gods; they were the Hakka answer, in turbulent times, to \"who we are and what we defend.\"\n\nThis is also why, whenever the Hakka moved, they would first go to a Sanshan Guowang temple to take incense along, and build a new temple once they reached their new home — the mountain gods traveled with the people, and the homeland's protection was never absent.",
     "temples": [
       {
-        "name": "Hsinchu Sanshan Guowang Temple",
-        "location": "Hsinchu City",
-        "deityStory": "Built during the Qianlong era, it is the most representative Hakka religious center in Hsinchu City, preserving Qing Dynasty plaques and stone carvings that witness Hakka settlers' history in the region."
+        "name": "Xinzhuang Guangfu Temple",
+        "location": "New Taipei City",
+        "deityStory": "Built in 1780 with money from Xinzhuang's Chaozhou settlers and now a national monument; after the settlers left, it escaped repeated renovation and kept its Qing-dynasty look."
       },
       {
         "name": "Pingtung Jiuru Sanshan Guowang Temple",
@@ -20,11 +20,11 @@
     ],
     "image": "/assets/images/gods/sanshan-guowang.png",
     "associatedTemples": [
-      "Hsinchu Sanshan Guowang Temple (North District, Hsinchu City)",
+      "Xinzhuang Guangfu Temple (Xinzhuang District, New Taipei City)",
       "Pingtung Jiuru Sanshan Guowang Temple (Jiuru Township, Pingtung County)"
     ],
     "worship": "Worship of the Three Mountain Kings preserves many Hakka traditions. Offerings center on the Three Sacrifices (pork, chicken, fish), fruit, and tea and wine, with pork weighing heaviest — a greater emphasis on substantial meat offerings than in Hokkien faith. The order matters: light incense first at the Heaven God censer, then pay respects to the Great King, the Second King, and the Third King in turn. Hakka Sanshan Guowang temples usually also enshrine Han Wengong (the scholar Han Yu) and the Earth God (Bo Gong), who can be worshipped at the same time.\n\nOn lunar 2/25, \"the King's birthday,\" the temples stage grand rites with Hakka Bayin (Eight Sounds) ensembles and traditional opera to thank the gods, and some still keep the custom of casting moon blocks to select an \"Incense Master\" to manage that year's affairs.\n\nWhat best reveals the weight of this faith is an old Hakka rule: when moving house or relocating a whole village, one must first go to the Sanshan Guowang temple to take incense along, then build anew at the destination — the guardian always walks ahead of the household.",
-    "festivals": "The 25th day of the 2nd lunar month — the birthday of the Three Mountain Kings — is the most important festival at Sanshan Guowang temples. Celebrations at Hsinchu and Pingtung Jiuru temples are especially grand, combining Hakka cultural performances, Bayin music concerts, and Hakka cuisine. During major festival years (every three to five years), some temples organize \"King's Procession\" parades through Hakka villages, with households setting up incense tables along the route. In the Liudui region (Kaohsiung Meinong and Pingtung), Sanshan Guowang temples coordinate with the \"Liudui Carnival\" for joint celebrations, making it southern Taiwan's premier Hakka cultural event.",
+    "festivals": "The 25th day of the 2nd lunar month — the birthday of the Three Mountain Kings — is the most important festival at Sanshan Guowang temples. Celebrations at the Pingtung Jiuru temple are especially grand, combining Hakka cultural performances, Bayin music concerts, and Hakka cuisine. During major festival years (every three to five years), some temples organize \"King's Procession\" parades through Hakka villages, with households setting up incense tables along the route. In the Liudui region (Kaohsiung Meinong and Pingtung), Sanshan Guowang temples coordinate with the \"Liudui Carnival\" for joint celebrations, making it southern Taiwan's premier Hakka cultural event.",
     "sortOrder": 0
   },
   {

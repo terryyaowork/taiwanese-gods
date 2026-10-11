@@ -201,9 +201,23 @@
 /temples/chenggongtianhou  /temples/chenggong-tianhou  301
 /en/temples/chenggongtianhou  /en/temples/chenggong-tianhou  301
 /ja/temples/chenggongtianhou  /ja/temples/chenggong-tianhou  301
-/temples/east/yuliwunian  /temples/yuli-wunian  301
-/en/temples/east/yuliwunian  /en/temples/yuli-wunian  301
-/ja/temples/east/yuliwunian  /ja/temples/yuli-wunian  301
-/temples/yuliwunian  /temples/yuli-wunian  301
-/en/temples/yuliwunian  /en/temples/yuli-wunian  301
-/ja/temples/yuliwunian  /ja/temples/yuli-wunian  301
+/temples/east/yuliwunian  /temples/yuli-xietian  301
+/en/temples/east/yuliwunian  /en/temples/yuli-xietian  301
+/ja/temples/east/yuliwunian  /ja/temples/yuli-xietian  301
+/temples/yuliwunian  /temples/yuli-xietian  301
+/en/temples/yuliwunian  /en/temples/yuli-xietian  301
+/ja/temples/yuliwunian  /ja/temples/yuli-xietian  301
+
+# 2026-10-11 查無此廟的資料改成真實的廟（查證過程見 PRODUCT-PROGRESS「待用戶決定：5 間廟」）
+/temples/hsinchu-sanshan  /temples/xinzhuang-guangfu  301
+/en/temples/hsinchu-sanshan  /en/temples/xinzhuang-guangfu  301
+/ja/temples/hsinchu-sanshan  /ja/temples/xinzhuang-guangfu  301
+/temples/yuli-wunian  /temples/yuli-xietian  301
+/en/temples/yuli-wunian  /en/temples/yuli-xietian  301
+/ja/temples/yuli-wunian  /ja/temples/yuli-xietian  301
+/temples/east/yuli-wunian  /temples/yuli-xietian  301
+/en/temples/east/yuli-wunian  /en/temples/yuli-xietian  301
+/ja/temples/east/yuli-wunian  /ja/temples/yuli-xietian  301
+/temples/hsinchu-puxian  /temples/north  301
+/en/temples/hsinchu-puxian  /en/temples/north  301
+/ja/temples/hsinchu-puxian  /ja/temples/north  301
