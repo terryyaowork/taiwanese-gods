@@ -533,5 +533,23 @@
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=8053789533490894167",
     "sortOrder": 26
+  },
+  {
+    "id": "xinpu-guanghe",
+    "name": "Xinpu Guanghe Temple",
+    "location": "Xinpu Township, Hsinchu County",
+    "address": "No. 608, Zhongzheng Rd., Xinpu Township, Hsinchu County",
+    "mainDeities": [
+      {
+        "id": "sanshan-guowang",
+        "name": "Sanshan Guowang"
+      }
+    ],
+    "description": "In 1895, during the Japanese invasion of Taiwan, Japanese troops set fire to Xinpu's main street, and Guanghe Temple's front hall, middle hall and statues all burned. The temple you see today was rebuilt piece by piece afterward: first a simple middle hall of mud brick in 1902, then nearly ten years of major renovation starting in 1919. Xinpu Guanghe Temple is dedicated to the Three Mountain Kings — locals also call it the Wangye Temple — a hometown faith carried here by Xinpu's Chaozhou settlers. That renovation left fine koji pottery, including a piece signed by the Quanzhou master Su Yang-shui in 1928. Xinpu is known for its old street and Hakka ancestral halls; stop by while you walk the old street.",
+    "history": "Guanghe Temple was founded during the Xianfeng reign of the Qing dynasty. Xinpu was then called Baligui, and Chaozhou settlers built the temple to honor the Three Mountain Kings of their homeland, at the call of local gentleman Pan Rong-guang. In 1859 the temple walls had collapsed, so Pan Rong-guang, Cai Liang-zhen, Chen Chao-gang and others raised funds for repairs, finished the following year (1860). In 1895 Japanese troops burned Xinpu's main street, destroying the front and middle halls and the statues. In 1902 Pan Cheng-yuan funded a simple middle hall of mud brick, and Fuzhou craftsmen Lin Fa-ben and Lin Qi-feng sculpted new statues of the Three Mountain Kings and other deities — twelve in all. From 1919, local gentry funded a major renovation that took about ten years, completed and consecrated in 1928. During the Japanese assimilation campaign in 1940, statues from nearby temples were moved here, and the temple renamed itself \"Huiming Temple\" to get by.",
+    "images": ["/assets/images/temples/temple-xinpu-guanghe.webp"],
+    "imageIsIllustration": true,
+    "googleMap": "https://maps.google.com/?cid=12853975680603968433",
+    "sortOrder": 27
   }
 ]

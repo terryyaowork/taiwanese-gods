@@ -13,6 +13,11 @@
         "deityStory": "Built in 1780 with money from Xinzhuang's Chaozhou settlers and now a national monument; after the settlers left, it escaped repeated renovation and kept its Qing-dynasty look."
       },
       {
+        "name": "Xinpu Guanghe Temple",
+        "location": "Hsinchu County",
+        "deityStory": "Founded in the Xianfeng era by Xinpu's Chaozhou settlers and rebuilt after Japanese troops burned it in 1895; it keeps koji pottery signed by Quanzhou master Su Yang-shui in 1928."
+      },
+      {
         "name": "Pingtung Jiuru Sanshan Guowang Temple",
         "location": "Pingtung County",
         "deityStory": "Built during the Kangxi era, it is one of the oldest Sanshan Guowang temples in Taiwan and a national monument, witnessing the Liudui Hakka settlement of the Pingtung Plain."
@@ -21,6 +26,7 @@
     "image": "/assets/images/gods/sanshan-guowang.png",
     "associatedTemples": [
       "Xinzhuang Guangfu Temple (Xinzhuang District, New Taipei City)",
+      "Xinpu Guanghe Temple (Xinpu Township, Hsinchu County)",
       "Pingtung Jiuru Sanshan Guowang Temple (Jiuru Township, Pingtung County)"
     ],
     "worship": "Worship of the Three Mountain Kings preserves many Hakka traditions. Offerings center on the Three Sacrifices (pork, chicken, fish), fruit, and tea and wine, with pork weighing heaviest — a greater emphasis on substantial meat offerings than in Hokkien faith. The order matters: light incense first at the Heaven God censer, then pay respects to the Great King, the Second King, and the Third King in turn. Hakka Sanshan Guowang temples usually also enshrine Han Wengong (the scholar Han Yu) and the Earth God (Bo Gong), who can be worshipped at the same time.\n\nOn lunar 2/25, \"the King's birthday,\" the temples stage grand rites with Hakka Bayin (Eight Sounds) ensembles and traditional opera to thank the gods, and some still keep the custom of casting moon blocks to select an \"Incense Master\" to manage that year's affairs.\n\nWhat best reveals the weight of this faith is an old Hakka rule: when moving house or relocating a whole village, one must first go to the Sanshan Guowang temple to take incense along, then build anew at the destination — the guardian always walks ahead of the household.",
