@@ -54,6 +54,11 @@ const getTempleImage = (imagePath) => {
                     alt={temple.name}
                     class="w-full h-full object-cover object-top transition duration-700 group-hover:scale-110"
                   />
+                  {'imageIsIllustration' in temple && temple.imageIsIllustration && (
+                    <span class="absolute bottom-2 right-2 z-20 rounded bg-black/60 px-2 py-0.5 text-xs text-white">
+                      イメージ図
+                    </span>
+                  )}
                 </div>
               )}
               <div class="p-4 sm:p-6">
