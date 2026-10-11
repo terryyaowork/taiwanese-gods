@@ -346,7 +346,33 @@ if (existsSync(redirectsPath)) {
   console.log(`  _redirects ${n} 條規則${hasDist ? '（含目標存在性）' : '（無 dist，僅驗格式）'}`);
 }
 
-console.log('  神明分類 / 主祀神引用 / 圖片路徑 / redirect 全部檢查完畢');
+// 4f. 日文字形：日文正文用日本字形（國→国、莊→荘、巖→巌）。兩種欄位例外：
+//     address 保留台灣原寫法（讀者要複製去地圖、給司機看）；poem 是籤詩原文，逐字保留。
+//     日文廟宇地址必須和中文一字不差。2026-10-11 發現 7 個廟名與 11 個地址不一致。
+const JA_OLD_GLYPHS = /[國莊巖]/;
+const JA_GLYPH_EXEMPT = new Set(['address', 'poem']);
+for (const base of dataFiles) {
+  const walk = (v, key, path) => {
+    if (typeof v === 'string') {
+      if (!JA_GLYPH_EXEMPT.has(key) && JA_OLD_GLYPHS.test(v)) {
+        fail(`[日文字形] ${base}${path} 用了台灣字形「${v.match(JA_OLD_GLYPHS)[0]}」，改成日本字形`);
+      }
+    } else if (v && typeof v === 'object') {
+      for (const [k, x] of Object.entries(v)) walk(x, Array.isArray(v) ? key : k, `${path}.${k}`);
+    }
+  };
+  walk(readJson('ja', base), null, '');
+}
+for (const base of templeBases) {
+  const zh = new Map(readJson(BASE_LANG, base).map((t) => [t.id, t.address]));
+  for (const t of readJson('ja', base)) {
+    if (zh.has(t.id) && zh.get(t.id) !== t.address) {
+      fail(`[日文地址] ${base}: ${t.id} 的地址要和中文一樣（${zh.get(t.id)}），現在是 ${t.address}`);
+    }
+  }
+}
+
+console.log('  神明分類 / 主祀神引用 / 圖片路徑 / redirect / 日文字形 全部檢查完畢');
 
 console.log('');
 if (problems.length) {

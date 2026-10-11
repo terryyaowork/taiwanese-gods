@@ -215,7 +215,7 @@
     "id": "chenggong-tianhou",
     "name": "成功天后宮",
     "location": "台東県成功鎮",
-    "address": "台東県成功鎮中山路50号",
+    "address": "台東縣成功鎮中山路50號",
     "mainDeities": [
       {
         "id": "mazu",
@@ -233,7 +233,7 @@
     "id": "yuli-wunian",
     "name": "玉里五年千歳廟",
     "location": "花蓮県玉里鎮",
-    "address": "花蓮県玉里鎮中山路二段100号",
+    "address": "花蓮縣玉里鎮中山路二段100號",
     "mainDeities": [
       {
         "id": "wangye",

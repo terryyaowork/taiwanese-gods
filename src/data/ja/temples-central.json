@@ -242,7 +242,7 @@
     "id": "zhunan-wugu",
     "name": "竹南五穀宮",
     "location": "苗栗県竹南鎮",
-    "address": "苗栗県竹南鎮五谷街16号",
+    "address": "苗栗縣竹南鎮五谷街16號",
     "mainDeities": [
       {
         "id": "shennong",
@@ -260,7 +260,7 @@
     "id": "lugu-fenghuangshan",
     "name": "鹿谷鳳凰山寺",
     "location": "南投県鹿谷郷",
-    "address": "南投県鹿谷郷廟口巷12之1号",
+    "address": "南投縣鹿谷鄉廟口巷12之1號",
     "mainDeities": [
       {
         "id": "cankui-zushi",
