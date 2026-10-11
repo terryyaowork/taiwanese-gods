@@ -163,6 +163,22 @@
     "images": ["/assets/images/temples/temple-hongludi.png"],
     "url": "https://www.hunglodei.tw/",
     "googleMap": "https://maps.google.com/?cid=2042951815845756788",
+    "visit": {
+      "hours": "Open 24 hours",
+      "gettingThere": "Take bus 249 or 670 to the Hongludi stop, or bus 241, 275 or 1080 to Zhonghe Junior High School, then walk south on Xingnan Road and turn left up Lane 399, Section 2. If you drive, there is parking at the front and back entrances and in the multi-storey lot halfway up, about 2,000 spaces in all.",
+      "whenToGo": "The busiest times are the Earth God's birthday on lunar 2/2 and the Lunar New Year. Many worshippers also come up on the 1st and 15th, or the 2nd and 16th, of each lunar month.",
+      "checkedAt": "2026-10-11",
+      "sources": [
+        {
+          "name": "Hongludi Nanshan Fude Temple (official site, access)",
+          "url": "https://www.hunglodei.tw/traffic_2.php"
+        },
+        {
+          "name": "TVBS Supertaste",
+          "url": "https://supertaste.tvbs.com.tw/hot/328486"
+        }
+      ]
+    },
     "latitude": 24.9718368,
     "longitude": 121.4975598,
     "sortOrder": 6
@@ -221,6 +237,26 @@
     "description": "At midnight as the 9th day of the first lunar month begins, Songshan Fengtian Temple is packed solid with worshippers who have come to honor Tiangong, the Lord of Heaven. It is the biggest night of the year. This Taoist temple in Taipei's Xinyi District is dedicated to Tiangong, the Jade Emperor, and is one of the most important centers of Jade Emperor worship in the Taipei area. The resplendent main hall enshrines the Jade Emperor, with the Three Officials (Sanguan Dadi) worshipped alongside him. If you want to see how Taiwanese people honor heaven with their most solemn rites, Tiangong's birthday on the 9th day of the first lunar month is the grandest lesson there is; the media call this the largest Tiangong temple in northern Taiwan.",
     "history": "Legend traces the prehistory of Fengtian Temple back to an incense burner in a stone cave on Tiger Mountain in 1862. In 1953, Songshan gentry including Wen Jin-bo and Liu Yong-hao pooled funds to put up a bamboo hut and formally named it Fengtian Temple. Worshippers grew in number year after year, and the temple was expanded again and again, with the Jade Emperor enshrined in the main hall. The incense in its Tiangong burner has never stopped burning strong, above all on Tiangong's birthday, the 9th day of the first lunar month, when worshippers begin pouring in at midnight to honor the Lord of Heaven. As Xinyi District kept developing and the crowds kept growing, Songshan Fengtian Temple became one of the most important centers of Jade Emperor worship in the Taipei area.",
     "images": ["/assets/images/temples/temple-songshan-fengtian.png"],
+    "visit": {
+      "hours": "Daily 5:00 AM – 9:00 PM",
+      "gettingThere": "Take the MRT Tamsui-Xinyi (Red) Line to its terminus, Guangci/Fengtian Temple Station (opened August 30, 2026), then walk about 5 minutes.",
+      "whenToGo": "The 9th day of the first lunar month, the Jade Emperor's birthday, is the busiest day of the year, with worshippers arriving from midnight until dawn.",
+      "checkedAt": "2026-10-11",
+      "sources": [
+        {
+          "name": "Taipei Travel",
+          "url": "https://www.travel.taipei/en/attraction/details/687"
+        },
+        {
+          "name": "CNA (Guangci/Fengtian Temple Station opening)",
+          "url": "https://cna.com.tw/news/ahel/202608300170.aspx"
+        },
+        {
+          "name": "TVBS Supertaste",
+          "url": "https://supertaste.tvbs.com.tw/review/361073"
+        }
+      ]
+    },
     "latitude": 25.0372626,
     "longitude": 121.5846258,
     "sortOrder": 9
@@ -423,6 +459,22 @@
     "description": "Before you even reach Hsinchu Putian Temple, you'll see its giant statue of Guansheng Dijun (Lord Guan), 120 Taiwanese feet tall, about 36 meters. Grand and imposing, it comes into view from far away and is the temple's best-known landmark. Located in Hsinchu's East District, near the Hsinchu Science Park, the temple is dedicated to Guansheng Dijun. Beyond Lord Guan, Putian Temple's Yue Lao, the Old Man under the Moon who rules over matchmaking, is also well known, drawing many single men and women to pray for a good match. In a tech city that runs on efficiency, it is a place to ask for a little guidance in love.",
     "history": "Hsinchu Putian Temple is a postwar temple. In 1967, Zheng Zaichuan, a former council speaker, donated the land and launched the effort to build it, and in 1975 the deity statues were enshrined. Through many rounds of renovation and expansion since then, it has gradually grown to its present scale, and its giant statue of Guansheng Dijun has become the most eye-catching landmark in Hsinchu's East District.",
     "images": ["/assets/images/temples/temple-hsinchu-putian.png"],
+    "visit": {
+      "hours": "Daily 8:00 AM – 5:00 PM (open as usual over Lunar New Year)",
+      "gettingThere": "The temple sits on Guqifeng hill, about 3 km from Hsinchu Railway Station. Hsinchu Bus route 20 runs via Xida Road, Baoshan Road and Gaocui Road straight to the temple.",
+      "whenToGo": "It is busiest around Guan Gong's birthday on lunar 6/24.",
+      "checkedAt": "2026-10-11",
+      "sources": [
+        {
+          "name": "TVBS Supertaste",
+          "url": "https://supertaste.tvbs.com.tw/hot/328486"
+        },
+        {
+          "name": "Money Weekly",
+          "url": "https://www.moneyweekly.com.tw/Magazine/Info/理財周刊/8034"
+        }
+      ]
+    },
     "latitude": 24.7803926,
     "longitude": 120.9788137,
     "sortOrder": 19
@@ -560,7 +612,7 @@
       }
     ],
     "description": "In 1895, during the Japanese invasion of Taiwan, Japanese troops set fire to Xinpu's main street, and Guanghe Temple's front hall, middle hall and statues all burned. The temple you see today was rebuilt piece by piece afterward: first a simple middle hall of mud brick in 1902, then nearly ten years of major renovation starting in 1919. Xinpu Guanghe Temple is dedicated to the Three Mountain Kings — locals also call it the Wangye Temple — a hometown faith carried here by Xinpu's Chaozhou settlers. That renovation left fine koji pottery, including a piece signed by the Quanzhou master Su Yang-shui in 1928. Xinpu is known for its old street and Hakka ancestral halls; stop by while you walk the old street.",
-    "history": "Guanghe Temple was founded during the Xianfeng reign of the Qing dynasty. Xinpu was then called Baligui, and Chaozhou settlers built the temple to honor the Three Mountain Kings of their homeland, at the call of local gentleman Pan Rong-guang. In 1859 the temple walls had collapsed, so Pan Rong-guang, Cai Liang-zhen, Chen Chao-gang and others raised funds for repairs, finished the following year (1860). In 1895 Japanese troops burned Xinpu's main street, destroying the front and middle halls and the statues. In 1902 Pan Cheng-yuan funded a simple middle hall of mud brick, and Fuzhou craftsmen Lin Fa-ben and Lin Qi-feng sculpted new statues of the Three Mountain Kings and other deities — twelve in all. From 1919, local gentry funded a major renovation that took about ten years, completed and consecrated in 1928. During the Japanese assimilation campaign in 1940, statues from nearby temples were moved here, and the temple renamed itself \"Huiming Temple\" to get by.",
+    "history": "Guanghe Temple was founded during the Xianfeng reign of the Qing dynasty. Xinpu was then called Baligui, and Chaozhou settlers built the temple to honor the Three Mountain Kings of their homeland, at the call of local gentleman Pan Rong-guang. In 1859 the temple walls had collapsed, so Pan Rong-guang, Cai Liang-zhen, Chen Chao-gang and others raised funds for repairs, finished the following year (1860). In 1895 Japanese troops burned Xinpu's main street, destroying the front and middle halls and the statues. In 1902 Pan Cheng-yuan funded a simple middle hall of mud brick, and Fuzhou craftsmen Lin Fa-ben and Lin Qi-feng sculpted new statues of the Three Mountain Kings and other deities — twelve in all. From 1919, local gentry funded a major renovation that took about ten years, completed and consecrated in 1928–1929. During the Japanese assimilation campaign in 1940, statues from nearby temples were moved here, and the temple renamed itself \"Huiming Temple\" to get by.",
     "images": ["/assets/images/temples/temple-xinpu-guanghe.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=12853975680603968433",
