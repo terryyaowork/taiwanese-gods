@@ -31,6 +31,14 @@ export const POST_PERMALINK_PATTERN = trimSlash(APP_BLOG?.post?.permalink || `${
 export const getPagePathname = (pathname: string): string =>
   pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
 
+/** Page language from the URL prefix: /en → en, /ja → ja, everything else is the zh-TW default. */
+export const getPageLanguage = (pathname: string): { lang: 'zh-TW' | 'en' | 'ja'; ogLocale: string } => {
+  const path = getPagePathname(pathname);
+  if (path === '/en' || path.startsWith('/en/')) return { lang: 'en', ogLocale: 'en_US' };
+  if (path === '/ja' || path.startsWith('/ja/')) return { lang: 'ja', ogLocale: 'ja_JP' };
+  return { lang: 'zh-TW', ogLocale: 'zh_TW' };
+};
+
 /** */
 export const getCanonical = (path = ''): string | URL => {
   const url = String(new URL(path, SITE.site));
