@@ -317,6 +317,12 @@ for (const base of imageSets) {
 const redirectsPath = join(ROOT, 'public/_redirects');
 if (existsSync(redirectsPath)) {
   const hasDist = existsSync(join(ROOT, 'dist'));
+  // astro build.format 'file' 產出 /page.html，'directory' 產出 /page/index.html（2026-10-11 改成 file）。
+  // 兩種都認，否則換格式後每條規則都會被誤報成「目標不存在」。
+  const pageExists = (p) => {
+    const rel = p.replace(/^\//, '');
+    return existsSync(join(ROOT, 'dist', `${rel}.html`)) || existsSync(join(ROOT, 'dist', rel, 'index.html'));
+  };
   const lines = readFileSync(redirectsPath, 'utf8').split('\n');
   const froms = new Map();
   const tos = new Map();
@@ -333,10 +339,10 @@ if (existsSync(redirectsPath)) {
     else froms.set(from, i + 1);
     tos.set(from, to);
     if (hasDist) {
-      if (!existsSync(join(ROOT, 'dist', to.replace(/^\//, ''), 'index.html'))) {
+      if (!pageExists(to)) {
         fail(`[redirect] 目標不存在（會導到 404）：${from} -> ${to}`);
       }
-      if (existsSync(join(ROOT, 'dist', from.replace(/^\//, ''), 'index.html'))) {
+      if (pageExists(from)) {
         fail(`[redirect] 蓋掉現有頁面：${from}`);
       }
     }
