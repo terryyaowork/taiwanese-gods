@@ -19,9 +19,11 @@ const resolveImage = (imagePath: string | undefined): ImageMetadata | null => {
 };
 
 const metadata = {
-  title: '台灣道教主神與神明介紹 | 道教信仰完整指南',
+  // EXP-G-007 (2026-10-11): the old title never named a god; top queries are
+  // 道教神明 / 道教拜什麼神, so lead with concrete deity names.
+  title: '台灣道教神明介紹：媽祖、關公、土地公等15位主神',
   description:
-    '認識台灣15位重要道教主神——玉皇大帝、媽祖、關聖帝君、土地公、城隍爺等，了解道教神明的神職、傳說典故與重要廟宇。',
+    '道教拜什麼神？從玉皇大帝、媽祖、關聖帝君到土地公，整理台灣15位常見道教主神的神職與傳說，拜拜前先認識祂們。',
   openGraph: {
     images: [
       {
