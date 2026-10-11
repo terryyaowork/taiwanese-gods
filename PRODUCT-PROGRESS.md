@@ -227,11 +227,26 @@ taiwanese.gods 帳號查詢；查完已刪除臨時建立的探索。
 ## 驗收清單（動完必跑）
 
 ```bash
-npm run verify         # 三語一致性（筆數 / id 順序 / 欄位齊全）+ 文件數字對帳 — 已在 CI，會擋 push
+npm run verify         # 見下表 — 已在 CI，會擋 push
 npm run check          # 三關：astro check + eslint + prettier — push 前必過
 npx astro build        # 頁數不減（2026-07-05 基準 736 頁）
-npx playwright test    # tests/fortune.spec.ts — 動到求籤 / 擲筊必跑
+npm run verify         # build 之後再跑一次：有 dist 才會檢查 301 的目標頁存不存在
+npx playwright test    # tests/fortune.spec.ts（求籤／擲筊）＋ tests/temples.spec.ts（參拜資訊框）
 ```
+
+`verify` 檢查的項目（`scripts/verify-consistency.mjs`）：
+
+| 節    | 檢查什麼                                                                             | 什麼時候加的 |
+| ----- | ------------------------------------------------------------------------------------ | ------------ |
+| 1     | 三語筆數、id 順序、欄位齊全                                                          | 2026-08-09   |
+| 2–3   | 文件裡的數字（筆數、CTA 覆蓋率）和資料一致                                           | 2026-08-09   |
+| 4a–4d | 神明分類、主祀神引用、跨檔重複、圖片檔存在                                           | 2026-08-30   |
+| 4e    | `_redirects` 格式、重複、連鎖；**有 dist 時**才檢查目標頁存在、不蓋掉現有頁          | 2026-08-30   |
+| 4f    | 日文用日本字形（對照表與例外在 `scripts/ja-glyphs.mjs`）；日文廟宇地址和中文一字不差 | 2026-10-11   |
+| 4g    | 每間廟都要有地圖連結，格式只收 CID 或分享短網址，三語相同                            | 2026-10-11   |
+
+⚠️ CI 在 build **之前**跑 verify，所以 4e 的「目標頁存在」在 CI 上從來沒跑過——只有本機 build 後再跑才會檢查。
+要補的話是在 CI 的 build 之後再加一次 `pnpm verify`（尚未做，動 CI 前先跟用戶確認）。
 
 互動功能額外驗收：**三語都手動點過一輪**（不是只看 zh），且 CTA / 結果流程在手機寬度不破版。
 
