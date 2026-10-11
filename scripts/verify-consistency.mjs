@@ -396,7 +396,39 @@ for (const base of templeBases) {
   }
 }
 
-console.log('  神明分類 / 主祀神引用 / 圖片路徑 / redirect / 日文字形 / 地圖連結 全部檢查完畢');
+// 4h. 神明頁的「靈驗宮廟」連結：名稱在廟宇資料庫裡的，頁面連到站內廟宇頁，不能再帶 url（不會顯示，只會過期）；
+//     不在資料庫的，url 只接受 4g 的地圖格式（或不填，顯示成不可點的卡片），三語相同。
+//     2026-10-11 發現神明頁有 35 個沒在用的官網連結（16 個壞掉）、FB 連結是推測出來的、開隆宮網域不存在。
+for (const base of godBases) {
+  const byLang = Object.fromEntries(
+    LANGS.map((l) => {
+      const names = new Set(templeBases.flatMap((tb) => readJson(l, tb).map((t) => t.name)));
+      return [l, { names, gods: new Map(readJson(l, base).map((g) => [g.id, g.temples || []])) }];
+    })
+  );
+  for (const [id, zhTemples] of byLang[BASE_LANG].gods) {
+    for (const l of LANGS) {
+      const temples = byLang[l].gods.get(id) || [];
+      if (temples.length !== zhTemples.length) {
+        fail(`[神明廟宇] ${base}: ${id} 的 ${l} 有 ${temples.length} 間，中文有 ${zhTemples.length} 間`);
+        continue;
+      }
+      temples.forEach((t, i) => {
+        const inDb = byLang[l].names.has(t.name);
+        if (inDb !== byLang[BASE_LANG].names.has(zhTemples[i].name)) {
+          fail(`[神明廟宇] ${base}: ${id} 第 ${i + 1} 間「${t.name}」(${l}) 和中文的資料庫對應不一致`);
+        }
+        if (inDb && t.url) fail(`[神明廟宇] ${base}: ${id}「${t.name}」(${l}) 在廟宇資料庫裡，拿掉 url`);
+        if (!inDb && t.url !== undefined && !MAP_OK.test(t.url)) {
+          fail(`[神明廟宇] ${base}: ${id}「${t.name}」(${l}) 的 url 要用地圖連結（${t.url}）`);
+        }
+        if (t.url !== zhTemples[i].url) fail(`[神明廟宇] ${base}: ${id}「${t.name}」(${l}) 的 url 和中文不同`);
+      });
+    }
+  }
+}
+
+console.log('  神明分類 / 主祀神引用 / 圖片路徑 / redirect / 日文字形 / 地圖連結 / 神明廟宇連結 全部檢查完畢');
 
 console.log('');
 if (problems.length) {

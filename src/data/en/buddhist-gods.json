@@ -69,7 +69,8 @@
       {
         "name": "Nung Chan Monastery",
         "location": "Taipei City",
-        "deityStory": "Nung Chan Monastery was first founded by Elder Master Dongchu; after Master Sheng Yen took it over, it became the birthplace of Dharma Drum Mountain. Its 'Water-Moon Monastery,' designed by architect Kris Yao and completed in 2012, has more than five thousand characters of the Diamond Sutra carved into its walls, reflected in a pool of water. The monastery regularly holds Buddha Seven retreats (seven days of recitation) and meditation activities."
+        "deityStory": "Nung Chan Monastery was first founded by Elder Master Dongchu; after Master Sheng Yen took it over, it became the birthplace of Dharma Drum Mountain. Its 'Water-Moon Monastery,' designed by architect Kris Yao and completed in 2012, has more than five thousand characters of the Diamond Sutra carved into its walls, reflected in a pool of water. The monastery regularly holds Buddha Seven retreats (seven days of recitation) and meditation activities.",
+        "url": "https://maps.google.com/?cid=14302773420327321771"
       },
       {
         "name": "Fo Guang Shan (Buddha's Light Mountain)",
@@ -102,7 +103,8 @@
       {
         "name": "Tianxiang Xiangde Temple",
         "location": "Xiulin Township, Hualien County",
-        "deityStory": "Located at Tianxiang in Taroko, the temple's statue of Kshitigarbha stands tall among the mountains, symbolizing the bodhisattva guarding Taiwan's eastern 'back mountain' region and protecting all beings."
+        "deityStory": "Located at Tianxiang in Taroko, the temple's statue of Kshitigarbha stands tall among the mountains, symbolizing the bodhisattva guarding Taiwan's eastern 'back mountain' region and protecting all beings.",
+        "url": "https://maps.google.com/?cid=7248874286095477343"
       }
     ],
     "image": "/assets/images/gods/kshitigarbha.png",

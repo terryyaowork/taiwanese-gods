@@ -44,7 +44,6 @@
       {
         "name": "Baozhong Yimin Temple",
         "location": "Hsinchu County",
-        "url": "https://www.yimin.org.tw/",
         "deityStory": "The head temple of Yimin faith in Taiwan. Construction began in 1788 (the 53rd year of the Qianlong reign), and the main hall was completed in 1790. The Yimin Tomb behind the temple holds the martyrs who fell in successive conflicts. The Yimin Festival on the 20th day of the 7th lunar month is hosted in rotation by fifteen great villages and is celebrated on a grand scale; its most distinctive rite is the \"Divine Pig Competition,\" the Hakka's most generous tribute to their forebears."
       }
     ],
@@ -65,7 +64,8 @@
       {
         "name": "Meinong Kaiji Bo Gong Shrine",
         "location": "Meinong District, Kaohsiung City",
-        "deityStory": "The earliest Bo Gong altar set up in Meinong's Hakka villages, a witness to the history of how Meinong was settled."
+        "deityStory": "The earliest Bo Gong altar set up in Meinong's Hakka villages, a witness to the history of how Meinong was settled.",
+        "url": "https://maps.google.com/?cid=8704867852177686101"
       }
     ],
     "image": "/assets/images/gods/bo_gong.png",

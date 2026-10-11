@@ -13,31 +13,26 @@
       {
         "name": "Dajia Zhenlan Temple",
         "location": "Taichung City",
-        "url": "https://www.dajiamazu.org.tw/",
         "deityStory": "The Dajia Mazu pilgrimage is Taiwan's grandest religious event, hailed as one of the 'world's three great religious events' — nine days and eight nights, more than 300 kilometers on foot."
       },
       {
         "name": "Beigang Chaotian Temple",
         "location": "Yunlin County",
-        "url": "https://www.matsu.org.tw/",
         "deityStory": "A major center of Mazu worship in Taiwan, with branch temples all over the world."
       },
       {
         "name": "Baishatun Gongtian Temple",
         "location": "Miaoli County",
-        "url": "https://www.baishatun.com.tw/",
         "deityStory": "Baishatun Mazu is famous as the 'Pink Supercar.' The pilgrimage route is never fixed — it follows wherever Mazu's palanquin leads, a sign of how close and responsive she is to her people."
       },
       {
         "name": "Lugang Tianhou Temple",
         "location": "Changhua County",
-        "url": "https://www.lugangmazu.org/",
         "deityStory": "Enshrines the Mazu statue that crossed the strait from Meizhou with Shi Lang's forces in 1683 (known as 'Meizhou Mazu'). It is the only temple in Taiwan that houses the founding Holy Mother statue from the Meizhou ancestral temple."
       },
       {
         "name": "Taitung Tianhou Temple",
         "location": "Taitung County",
-        "url": "https://www.taitungmazu.org.tw/",
         "deityStory": "Completed in 1891, it was the last official temple built in Taiwan during the Qing dynasty, and is the only government-built Mazu temple in eastern Taiwan."
       },
       {
@@ -117,13 +112,11 @@
       {
         "name": "Xingtian Temple",
         "location": "Taipei City",
-        "url": "https://www.ht.org.tw/",
         "deityStory": "In 2014 the temple removed its incense burners and offering tables and switched to incense-free worship. It is also known as a good place for shoujing, the rite for calming a frightened spirit."
       },
       {
         "name": "Tainan Grand Martial Temple",
         "location": "Tainan City",
-        "url": "https://www.facebook.com/TainanGrandMazuTemple",
         "deityStory": "The only martial temple in Taiwan listed in the official state sacrifices, with more than 300 years of history — step inside and you can feel its solemn presence."
       },
       {
@@ -159,19 +152,16 @@
       {
         "name": "Zhushan Zinan Temple",
         "location": "Nantou County",
-        "url": "https://www.紫南宮.tw/",
         "deityStory": "Famous across Taiwan for its 'fortune money' loans. If the moon blocks give approval, devotees can borrow money from Tudigong as start-up capital — said to be remarkably effective — and repay it the following year."
       },
       {
         "name": "Checheng Fu'an Temple",
         "location": "Pingtung County",
-        "url": "https://www.fuan.org.tw/",
         "deityStory": "The largest Tudigong temple in Southeast Asia, with grand architecture. Most remarkable is its joss paper furnace, nicknamed the 'divine money-counting machine': place joss paper at the vent and it is drawn in automatically — quite a sight."
       },
       {
         "name": "Hongludi Nanshan Fude Temple",
         "location": "New Taipei City",
-        "url": "https://www.nanshan-fude.org.tw/",
         "deityStory": "Northern Taiwan's best-known place to pray for wealth, with a giant Tudigong statue. Its hilltop setting offers sweeping views, making it a great spot for night scenery, and it is open for worship 24 hours a day."
       }
     ],
@@ -196,13 +186,11 @@
       {
         "name": "Tainan Tiantan (Altar of Heaven)",
         "location": "Tainan City",
-        "url": "https://www.tian-tan.org.tw/",
         "deityStory": "Popularly called the 'Tiangong Temple,' it was built in 1854 with funds pooled by the officials and people of the prefectural city, and is billed as 'Taiwan's foremost temple.' Its 'One' (一) plaque is one of Tainan's three famous plaques, symbolizing that 'however carefully you calculate, it can't match Heaven's single reckoning.'"
       },
       {
         "name": "Songshan Fengtian Temple",
         "location": "Taipei City",
-        "url": "https://www.ftg.org.tw/",
         "deityStory": "A large-scale Tiangong temple in Taipei, busy with worshippers. Its imposing architecture makes it an important place for devotees to pray for safety and the removal of misfortune."
       }
     ],
@@ -223,13 +211,11 @@
       {
         "name": "Taipei Xia-Hai City God Temple",
         "location": "Taipei City",
-        "url": "https://www.tpecitygod.org/",
         "deityStory": "The Yue Lao here is famous. According to the temple's 2017 count, more than 6,000 couples come back each year with wedding cakes to give thanks — an astonishing rate."
       },
       {
         "name": "Manka Longshan Temple",
         "location": "Taipei City",
-        "url": "https://www.lungshan.org.tw/",
         "deityStory": "Longshan Temple's Yue Lao sits in the rear hall and is just as popular. Many young people, after paying respects to Guanyin, make a special trip to the rear hall to ask for a red thread."
       },
       {
@@ -272,13 +258,11 @@
       {
         "name": "Taipei Xia-Hai City God Temple",
         "location": "Taipei City",
-        "url": "https://www.tpecitygod.org/",
         "deityStory": "Although its main deity is the City God, the temple's Yue Lao is internationally famous. Every year countless couples return with wedding cakes to give thanks, making it Taiwan's most powerful place for finding a partner."
       },
       {
         "name": "Hualien City God Temple",
         "location": "Hualien County",
-        "url": "https://www.hualien-citygod.org.tw/",
         "deityStory": "Located on Chenggong Street in Hualien City, it watches over the people of eastern Taiwan."
       },
       {
@@ -321,19 +305,16 @@
       {
         "name": "Beigang Wude Palace",
         "location": "Yunlin County",
-        "url": "https://www.wude.org.tw/",
         "deityStory": "The founding temple of the Gods of Wealth of the Five Directions in Taiwan. Its giant 'Heavenly Treasury' furnace is billed as the largest in the world, symbolizing an overflowing treasury."
       },
       {
         "name": "Zhushan Zinan Temple",
         "location": "Nantou County",
-        "url": "https://www.紫南宮.tw/",
         "deityStory": "Although its main deity is Tudigong, its reputation for answering prayers for wealth makes it one of the most important wealth temples. The custom of borrowing fortune money keeps crowds coming all year round."
       },
       {
         "name": "Hongludi Nanshan Fude Temple",
         "location": "New Taipei City",
-        "url": "https://www.nanshan-fude.org.tw/",
         "deityStory": "Its giant Tudigong statue has become a landmark of northern Taiwan."
       }
     ],
@@ -355,7 +336,6 @@
       {
         "name": "Taipei Wenchang Temple",
         "location": "Taipei City",
-        "url": "http://www.文昌宮.tw/",
         "deityStory": "Right next to Shuanglian MRT Station."
       },
       {
@@ -382,7 +362,6 @@
       {
         "name": "Dalongdong Baoan Temple",
         "location": "Taipei City",
-        "url": "https://www.baoan.org.tw/",
         "deityStory": "Winner of a UNESCO Asia-Pacific Award for Cultural Heritage Conservation, with exquisite temple architecture. Its annual Baosheng Cultural Festival is one of Taipei's major religious and cultural events."
       }
     ],
@@ -404,7 +383,6 @@
       {
         "name": "Songboling Shoutian Temple",
         "location": "Nantou County",
-        "url": "https://www.shoutian.org.tw/",
         "deityStory": "The head temple with the most branch temples of Xuantian Shangdi in Taiwan. Set at the southern end of the Bagua Mountains with excellent views, it is an important pilgrimage center in Taiwan."
       }
     ],
@@ -424,13 +402,11 @@
     "temples": [
       {
         "name": "Tainan Confucius Temple",
-        "location": "Tainan City",
-        "url": "https://confucius.culture.tainan.gov.tw/"
+        "location": "Tainan City"
       },
       {
         "name": "Taipei Confucius Temple",
-        "location": "Taipei City",
-        "url": "https://tct.gov.taipei/"
+        "location": "Taipei City"
       }
     ],
     "image": "/assets/images/gods/confucius.png",
@@ -497,7 +473,6 @@
       {
         "name": "Zhinan Temple",
         "location": "Taipei City",
-        "url": "https://www.chihnan.gov.tw/",
         "deityStory": "A famous Lü Zu temple in northern Taiwan, long called 'the most spiritually potent mountain under heaven.' Folk legend says couples shouldn't visit together, but the temple says Lü Zu only cuts off bad romances, and true matches are blessed."
       }
     ],
@@ -524,13 +499,11 @@
       {
         "name": "Songshan Ciyou Temple",
         "location": "Taipei City",
-        "url": "https://www.sscy.org.tw/",
         "deityStory": "Although its main deity is Mazu, it is also one of the temples most often recommended in Taipei for Tai Sui appeasement."
       },
       {
         "name": "Manka Longshan Temple",
-        "location": "Taipei City",
-        "url": "https://www.lungshan.org.tw/"
+        "location": "Taipei City"
       }
     ],
     "image": "/assets/images/gods/taisui.png",

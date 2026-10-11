@@ -13,31 +13,26 @@
       {
         "name": "大甲鎮瀾宮",
         "location": "台中市",
-        "url": "https://www.dajiamazu.org.tw/",
         "deityStory": "大甲媽祖遶境進香是台灣最盛大的宗教活動，被譽為「世界三大宗教盛事」之一，全程九天八夜，徒步三百多公里。"
       },
       {
         "name": "北港朝天宮",
         "location": "雲林縣",
-        "url": "https://www.matsu.org.tw/",
         "deityStory": "北港朝天宮是台灣媽祖信仰的重鎮，分靈遍布世界各地。"
       },
       {
         "name": "白沙屯拱天宮",
         "location": "苗栗縣",
-        "url": "https://www.baishatun.com.tw/",
         "deityStory": "白沙屯媽祖以「粉紅超跑」聞名，進香路線不定，全憑媽祖鑾轎指引，展現了媽祖的親民與靈驗。"
       },
       {
         "name": "鹿港天后宮",
         "location": "彰化縣",
-        "url": "https://www.lugangmazu.org/",
         "deityStory": "供奉 1683 年隨施琅部隊從湄洲渡海來台的媽祖神像（俗稱「湄洲媽」），是台灣唯一奉祀湄洲祖廟開基聖母神像的廟宇。"
       },
       {
         "name": "台東天后宮",
         "location": "台東縣",
-        "url": "https://www.taitungmazu.org.tw/",
         "deityStory": "1891 年完工，是清代在台灣最後興建的官廟，也是東部唯一的官建媽祖廟。"
       },
       {
@@ -117,13 +112,11 @@
       {
         "name": "行天宮",
         "location": "台北市",
-        "url": "https://www.ht.org.tw/",
         "deityStory": "2014 年撤除香爐與供桌，改為不焚香參拜。來這裡收驚也很靈。"
       },
       {
         "name": "台南祀典武廟",
         "location": "台南市",
-        "url": "https://www.facebook.com/TainanGrandMazuTemple",
         "deityStory": "全台唯一列入官方祀典的武廟，三百多年歷史，走進去就能感受到那種莊嚴的氣場。"
       },
       {
@@ -150,19 +143,16 @@
       {
         "name": "竹山紫南宮",
         "location": "南投縣",
-        "url": "https://www.紫南宮.tw/",
         "deityStory": "以「借發財金」聞名全台。信眾擲筊獲准後可向土地公借錢當本錢，據說非常靈驗，隔年歸還。"
       },
       {
         "name": "車城福安宮",
         "location": "屏東縣",
-        "url": "https://www.fuan.org.tw/",
         "deityStory": "東南亞最大的土地公廟，建築宏偉。最特別的是金爐有「神明點鈔機」之稱，金紙放風口會自動被吸入，蔚為奇觀。"
       },
       {
         "name": "烘爐地南山福德宮",
         "location": "新北市",
-        "url": "https://www.nanshan-fude.org.tw/",
         "deityStory": "北台灣最著名的求財聖地，擁有巨大的土地公像。位在山頂視野遼闊，是看夜景的好去處，24小時開放參拜。"
       }
     ],
@@ -184,13 +174,11 @@
       {
         "name": "台南天壇",
         "location": "台南市",
-        "url": "https://www.tian-tan.org.tw/",
         "deityStory": "俗稱「天公廟」，1854 年由府城官民共同集資興建，號稱「台灣首廟」。這裡的「一」字匾名列台南三大名匾，象徵「千算萬算，不如老天一算」。"
       },
       {
         "name": "松山奉天宮",
         "location": "台北市",
-        "url": "https://www.ftg.org.tw/",
         "deityStory": "台北規模宏大的天公廟，香火鼎盛。廟宇建築氣勢磅礴，是信眾祈求平安、消災的重要場所。"
       }
     ],
@@ -211,13 +199,11 @@
       {
         "name": "台北霞海城隍廟",
         "location": "台北市",
-        "url": "https://www.tpecitygod.org/",
         "deityStory": "這裡的月老名氣響亮。據廟方 2017 年的統計，每年有超過六千對新人帶著喜餅回來還願，效率驚人。"
       },
       {
         "name": "艋舺龍山寺",
         "location": "台北市",
-        "url": "https://www.lungshan.org.tw/",
         "deityStory": "龍山寺的月老位在後殿，同樣香火鼎盛。許多年輕人在參拜完觀音後，都會特地到後殿求一條紅線。"
       },
       {
@@ -260,13 +246,11 @@
       {
         "name": "台北霞海城隍廟",
         "location": "台北市",
-        "url": "https://www.tpecitygod.org/",
         "deityStory": "雖然主祀城隍爺，但廟裡的月下老人卻聞名國際。每年有成千上萬對情侶帶著喜餅回來還願，是台灣最強的「脫單」聖地。"
       },
       {
         "name": "花蓮城隍廟",
         "location": "花蓮縣",
-        "url": "https://www.hualien-citygod.org.tw/",
         "deityStory": "位在花蓮市成功街，守護著後山的百姓。"
       },
       {
@@ -309,19 +293,16 @@
       {
         "name": "北港武德宮",
         "location": "雲林縣",
-        "url": "https://www.wude.org.tw/",
         "deityStory": "台灣五路財神的開基祖廟。巨大的「天庫」金爐號稱世界最大，象徵財庫豐盈。"
       },
       {
         "name": "竹山紫南宮",
         "location": "南投縣",
-        "url": "https://www.紫南宮.tw/",
         "deityStory": "雖然主祀土地公，但因求財靈驗，被視為最重要的財神廟之一。借發財金的習俗讓這裡終年人潮不斷。"
       },
       {
         "name": "烘爐地南山福德宮",
         "location": "新北市",
-        "url": "https://www.nanshan-fude.org.tw/",
         "deityStory": "巨大的土地公像已成為北台灣的地標。"
       }
     ],
@@ -343,7 +324,6 @@
       {
         "name": "台北文昌宮",
         "location": "台北市",
-        "url": "http://www.文昌宮.tw/",
         "deityStory": "位於雙連捷運站旁。"
       },
       {
@@ -370,7 +350,6 @@
       {
         "name": "大龍峒保安宮",
         "location": "台北市",
-        "url": "https://www.baoan.org.tw/",
         "deityStory": "榮獲聯合國教科文組織亞太文化資產保存獎，廟宇建築精美。每年舉辦的「保生文化祭」是台北重要的宗教文化活動。"
       }
     ],
@@ -392,7 +371,6 @@
       {
         "name": "松柏嶺受天宮",
         "location": "南投縣",
-        "url": "https://www.shoutian.org.tw/",
         "deityStory": "全台玄天上帝分靈最多的總廟。位在八卦山脈南端，視野極佳，是台灣重要的進香中心。"
       }
     ],
@@ -412,13 +390,11 @@
     "temples": [
       {
         "name": "台南孔廟",
-        "location": "台南市",
-        "url": "https://confucius.culture.tainan.gov.tw/"
+        "location": "台南市"
       },
       {
         "name": "台北孔廟",
-        "location": "台北市",
-        "url": "https://tct.gov.taipei/"
+        "location": "台北市"
       }
     ],
     "image": "/assets/images/gods/confucius.png",
@@ -475,7 +451,6 @@
       {
         "name": "指南宮",
         "location": "台北市",
-        "url": "https://www.chihnan.gov.tw/",
         "deityStory": "北台灣著名的呂祖廟，素有「天下第一靈山」之稱。民間傳說情侶不宜同遊，但廟方表示呂祖只會斬爛桃花，正緣反而會被保佑。"
       }
     ],
@@ -497,13 +472,11 @@
       {
         "name": "松山慈祐宮",
         "location": "台北市",
-        "url": "https://www.sscy.org.tw/",
         "deityStory": "雖然主祀媽祖，也是台北常被推薦的安太歲廟宇。"
       },
       {
         "name": "艋舺龍山寺",
-        "location": "台北市",
-        "url": "https://www.lungshan.org.tw/"
+        "location": "台北市"
       }
     ],
     "image": "/assets/images/gods/taisui.png",

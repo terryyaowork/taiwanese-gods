@@ -10,13 +10,11 @@
       {
         "name": "東港東隆宮",
         "location": "屏東県",
-        "url": "https://www.donglong.org.tw/",
         "deityStory": "三年に一度の「迎王平安祭典」で知られます。王船焼きは祭典のクライマックスで、疫病神と煞気を送り出し、平安を祈る意味があります。"
       },
       {
         "name": "南鯤鯓代天府",
         "location": "台南市",
-        "url": "https://www.nkstemple.org.tw/",
         "deityStory": "台湾の王爺総本廟。分霊廟は全台湾に広がり、毎年の進香の時期には大勢の参拝者が押し寄せ、乩童が法器を振るう光景は圧巻です。"
       }
     ],
@@ -74,8 +72,7 @@
     "temples": [
       {
         "name": "艋舺龍山寺",
-        "location": "台北市",
-        "url": "https://www.lungshan.org.tw/"
+        "location": "台北市"
       }
     ],
     "image": "/assets/images/gods/zhusheng.png",
@@ -93,13 +90,11 @@
     "temples": [
       {
         "name": "三峡長福巌",
-        "location": "新北市三峡区",
-        "url": "https://www.tsushie.org.tw/"
+        "location": "新北市三峡区"
       },
       {
         "name": "艋舺清水巌",
-        "location": "台北市万華区",
-        "url": "https://www.monga-manka.com/"
+        "location": "台北市万華区"
       }
     ],
     "image": "/assets/images/gods/qingshui_zushi.png",
@@ -157,7 +152,7 @@
       {
         "name": "台南開隆宮",
         "location": "台南市",
-        "url": "https://www.kailong.org.tw/",
+        "url": "https://maps.google.com/?cid=12452605444314404463",
         "deityStory": "全台湾で最も名高い七娘媽廟であり、成人儀礼「做十六歳」の習俗の発祥地にして代表的な廟です。"
       }
     ],
@@ -176,8 +171,7 @@
     "temples": [
       {
         "name": "赤崁楼（海神廟／文昌閣）",
-        "location": "台南市",
-        "url": "https://www.chikan.com.tw/"
+        "location": "台南市"
       }
     ],
     "image": "/assets/images/gods/kuixing.png",
@@ -214,8 +208,7 @@
     "temples": [
       {
         "name": "新荘地蔵庵",
-        "location": "新北市",
-        "url": "https://www.xzdza.org.tw/"
+        "location": "新北市"
       }
     ],
     "image": "/assets/images/gods/dazhongye.png",

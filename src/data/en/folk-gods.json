@@ -14,13 +14,11 @@
       {
         "name": "Donggang Donglong Temple",
         "location": "Pingtung County",
-        "url": "https://www.donglong.org.tw/",
         "deityStory": "Famous for its Welcoming the Royal Lords ceremony, held once every three years. The burning of the royal boat is the climax, sending away the plague gods and evil influences and praying for peace."
       },
       {
         "name": "Nankunshen Daitian Temple",
         "location": "Tainan City",
-        "url": "https://www.nkstemple.org.tw/",
         "deityStory": "The head temple of Wangye in Taiwan. Its branch temples are spread across the island, crowds pour in every pilgrimage season, and the sight of spirit mediums wielding their ritual weapons is spectacular."
       }
     ],
@@ -81,8 +79,7 @@
     "temples": [
       {
         "name": "Manka Longshan Temple",
-        "location": "Taipei City",
-        "url": "https://www.lungshan.org.tw/"
+        "location": "Taipei City"
       }
     ],
     "image": "/assets/images/gods/zhusheng.png",
@@ -100,13 +97,11 @@
     "temples": [
       {
         "name": "Sanxia Changfu Temple",
-        "location": "Sanxia District, New Taipei City",
-        "url": "https://www.tsushie.org.tw/"
+        "location": "Sanxia District, New Taipei City"
       },
       {
         "name": "Manka Qingshui Temple",
-        "location": "Wanhua District, Taipei City",
-        "url": "https://www.monga-manka.com/"
+        "location": "Wanhua District, Taipei City"
       }
     ],
     "image": "/assets/images/gods/qingshui_zushi.png",
@@ -171,7 +166,7 @@
       {
         "name": "Tainan Kailong Temple",
         "location": "Tainan City",
-        "url": "https://www.kailong.org.tw/",
+        "url": "https://maps.google.com/?cid=12452605444314404463",
         "deityStory": "Taiwan's most famous Qi Niang Ma temple, and the birthplace and leading temple of the Coming of Age at Sixteen custom."
       }
     ],
@@ -190,8 +185,7 @@
     "temples": [
       {
         "name": "Chihkan Tower (Fort Provintia)",
-        "location": "Tainan City",
-        "url": "https://www.chikan.com.tw/"
+        "location": "Tainan City"
       }
     ],
     "image": "/assets/images/gods/kuixing.png",
@@ -228,8 +222,7 @@
     "temples": [
       {
         "name": "Xinzhuang Dizang An",
-        "location": "New Taipei City",
-        "url": "https://www.xzdza.org.tw/"
+        "location": "New Taipei City"
       }
     ],
     "image": "/assets/images/gods/god-dazhongye.png",
