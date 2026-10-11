@@ -38,6 +38,10 @@ jobs:
       - name: 建置網站
         run: pnpm run build
 
+      # 有 dist 之後再對帳一次：_redirects 的 301 目標頁存不存在，只有 build 後才查得到
+      - name: 建置後對帳（301 目標頁）
+        run: pnpm run verify
+
       - name: 上傳建置產物
         uses: actions/upload-artifact@v4
         with:
