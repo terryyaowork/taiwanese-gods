@@ -202,8 +202,8 @@
     "description": "Every exam season, the walls of Taipei Wenchang Temple fill up with photocopies of exam admission tickets, layered so thickly that they become a sight in their own right. Standing beside Shuanglian MRT Station in Taipei's Zhongshan District, this is a well-known Wenchang temple in central Taipei, dedicated to Wenchang Dijun, the god in charge of scholarly success. Worshippers arrive carrying bags of punning offerings: scallions for cleverness, celery for diligence, radish (caitou) for good fortune, and zongzi rice dumplings, whose name sounds like \"sure to pass.\" All their hopes of seeing their names on the pass list are placed in these offerings they can hold in their hands.",
     "history": "Taipei Wenchang Temple's origins go back to the Japanese era. It is said that a statue of Wenchang Dijun brought over by a merchant was left in the woods at Shuanglian, and was later found and enshrined; it was expanded in 1960. Later, because of construction on the MRT Tamsui Line, the temple moved into Minxiang Park and was rebuilt inside the park in 1992. It is not large, but its location in the heart of Taipei, its easy access and its long reputation for answered prayers gradually made it a temple students visit often. On the eve of every major exam, crowds of students and parents pour in to pray for good results, and the wall covered in admission tickets has become a unique cultural sight.",
     "images": ["/assets/images/temples/temple-taipei-wenchang.png"],
-    "latitude": 25.0023944,
-    "longitude": 121.5436683,
+    "latitude": 25.0591875,
+    "longitude": 121.5210132,
     "sortOrder": 8
   },
   {
@@ -281,8 +281,8 @@
     "images": ["/assets/images/temples/temple-taoyuanjingfu.png"],
     "url": "https://www.jingfugung.com/",
     "googleMap": "https://maps.google.com/?cid=4147780182156509096",
-    "latitude": 25.02206,
-    "longitude": 121.30333,
+    "latitude": 24.9949833,
+    "longitude": 121.3108364,
     "sortOrder": 12
   },
   {
@@ -404,6 +404,8 @@
     "images": ["/assets/images/temples/temple-xinzhuang-guangfu.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=10283934670926035896",
+    "latitude": 25.0355685,
+    "longitude": 121.4552737,
     "sortOrder": 18
   },
   {
@@ -441,6 +443,8 @@
     "images": ["/assets/images/temples/temple-sanxia-changfu.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=5983519490857505777",
+    "latitude": 24.9337902,
+    "longitude": 121.3703176,
     "sortOrder": 21
   },
   {
@@ -459,6 +463,8 @@
     "images": ["/assets/images/temples/temple-manka-qingshui.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=13678376866519882228",
+    "latitude": 25.0402174,
+    "longitude": 121.5025954,
     "sortOrder": 22
   },
   {
@@ -477,6 +483,8 @@
     "images": ["/assets/images/temples/temple-tamsui-qingshui.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=13357688321990784336",
+    "latitude": 25.1703568,
+    "longitude": 121.4410754,
     "sortOrder": 23
   },
   {
@@ -495,6 +503,8 @@
     "images": ["/assets/images/temples/temple-tamsui-yinshan.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=11859948809437008348",
+    "latitude": 25.169174,
+    "longitude": 121.448532,
     "sortOrder": 24
   },
   {
@@ -514,6 +524,8 @@
     "imageIsIllustration": true,
     "url": "https://www.zlskyt.com.tw",
     "googleMap": "https://maps.google.com/?cid=7194270883373393240",
+    "latitude": 25.0836731,
+    "longitude": 121.3893262,
     "sortOrder": 25
   },
   {
@@ -532,6 +544,8 @@
     "images": ["/assets/images/temples/temple-manka-dizang.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=8053789533490894167",
+    "latitude": 25.0368701,
+    "longitude": 121.5006503,
     "sortOrder": 26
   },
   {
@@ -550,6 +564,8 @@
     "images": ["/assets/images/temples/temple-xinpu-guanghe.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=12853975680603968433",
+    "latitude": 24.8280843,
+    "longitude": 121.0745984,
     "sortOrder": 27
   }
 ]

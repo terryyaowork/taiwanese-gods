@@ -229,6 +229,8 @@
     "description": "Chenggong Tianhou Temple, also called the Xiaogang Chengguang'ao Tianhou Temple, has more than 150 years of history and is the oldest Mazu temple in Taitung County. In the Qing dynasty, Liu Jin-lai was posted to the \"back mountains\" of the east as an interpreter-official. Before setting out, he went to Lukang's Tianhou Temple to ask Mazu to travel with him for protection; once he reached Taitung safely, he enshrined her here, and the Mazu faith took root in Taitung. The temple is also a place where peoples met: its founding at first drew opposition from local Indigenous communities, until Pingpu women mediated and the two sides learned to live side by side. On the East Coast, Chengguang'ao is a stop worth making.",
     "history": "The temple moved several times before settling in Chengguang'ao, where it became the heart of local faith. When traditional religion was banned under Japanese rule, residents hid the statues in a seaside cave, and the faith survived. In 1949 the temple caught fire. Short on hands and unable to bring painters from the west coast, the rebuilders hired local Pingpu Indigenous people to paint the beams — the first time Indigenous people took part in building a Han temple. Mazu's birthday on the 23rd day of the third lunar month is the busiest day of the year.",
     "url": "https://www.eastcoast-nsa.gov.tw/zh-tw/attractions/detail/280/",
+    "latitude": 23.1598565,
+    "longitude": 121.4015768,
     "sortOrder": 11,
     "images": ["/assets/images/temples/temple-chenggong-tianhou.webp"],
     "imageIsIllustration": true,
@@ -250,6 +252,8 @@
     "images": ["/assets/images/temples/temple-yuli-xietian.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=9288293534586800899",
+    "latitude": 23.3337444,
+    "longitude": 121.3160939,
     "sortOrder": 12
   }
 ]

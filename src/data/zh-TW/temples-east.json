@@ -229,6 +229,8 @@
     "description": "成功天后宮又叫小港成廣澳天后宮，已有超過一百五十年歷史，是台東縣最古老的媽祖廟。清代時，劉進來被派到後山擔任通事。出發前，他特地到鹿港天后宮請媽祖隨行護身；平安抵達台東後，就把媽祖安置在這裡，媽祖信仰從此在台東扎根。這座廟也是不同族群相遇的地方：建廟之初曾和當地原住民起衝突，最後靠平埔族婦女居中協調，雙方才得以共存。來東海岸，成廣澳是值得停下來的一站。",
     "history": "天后宮幾經搬遷，最後落腳成廣澳，成為當地的信仰中心。日治時期禁止傳統信仰，居民把神像藏進海邊的石洞，信仰才延續下來。1949 年廟宇遭遇火災，重建時人手不足，請不到西部的彩繪師傅，便請當地平埔族原住民協助樑上的彩繪，這是原住民參與漢人廟宇興建的首例。農曆三月二十三日媽祖聖誕，是一年裡最熱鬧的日子。",
     "url": "https://www.eastcoast-nsa.gov.tw/zh-tw/attractions/detail/280/",
+    "latitude": 23.1598565,
+    "longitude": 121.4015768,
     "sortOrder": 11,
     "images": ["/assets/images/temples/temple-chenggong-tianhou.webp"],
     "imageIsIllustration": true,
@@ -250,6 +252,8 @@
     "images": ["/assets/images/temples/temple-yuli-xietian.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=9288293534586800899",
+    "latitude": 23.3337444,
+    "longitude": 121.3160939,
     "sortOrder": 12
   }
 ]

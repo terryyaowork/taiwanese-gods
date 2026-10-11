@@ -202,8 +202,8 @@
     "description": "每到大考季，台北文昌宮的牆上就會掛滿一張張准考證影本，密密麻麻疊成一片，蔚為奇觀。這座位在台北市中山區、雙連捷運站旁的廟，是台北市區知名的文昌廟，主祀掌管功名的文昌帝君。來拜的人手上總提著一袋「諧音供品」——蔥求聰明、芹菜求勤奮、蘿蔔（菜頭）求好彩頭、粽子求「包中」，把對金榜題名的期待，全寄託在這些看得見的心意裡。",
     "history": "台北文昌宮的起源在日治時期：據說商人帶來的文昌帝君神像被棄置在雙連的樹林裡，後來被人尋獲供奉，1960年擴建。之後因為捷運淡水線施工，廟遷進民享公園，1992年在公園內重建。它規模雖然不大，但地處台北市中心、交通便利，再累積了長年「靈驗」的口碑，漸漸成了考生常來的文昌廟。每逢大考前夕，廟裡就湧入大批考生和家長祈求上榜，那面貼滿准考證的牆，成了獨特的文化景觀。",
     "images": ["/assets/images/temples/temple-taipei-wenchang.png"],
-    "latitude": 25.0023944,
-    "longitude": 121.5436683,
+    "latitude": 25.0591875,
+    "longitude": 121.5210132,
     "sortOrder": 8
   },
   {
@@ -281,8 +281,8 @@
     "images": ["/assets/images/temples/temple-taoyuanjingfu.png"],
     "url": "https://www.jingfugung.com/",
     "googleMap": "https://maps.google.com/?cid=4147780182156509096",
-    "latitude": 25.02206,
-    "longitude": 121.30333,
+    "latitude": 24.9949833,
+    "longitude": 121.3108364,
     "sortOrder": 12
   },
   {
@@ -404,6 +404,8 @@
     "images": ["/assets/images/temples/temple-xinzhuang-guangfu.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=10283934670926035896",
+    "latitude": 25.0355685,
+    "longitude": 121.4552737,
     "sortOrder": 18
   },
   {
@@ -441,6 +443,8 @@
     "images": ["/assets/images/temples/temple-sanxia-changfu.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=5983519490857505777",
+    "latitude": 24.9337902,
+    "longitude": 121.3703176,
     "sortOrder": 21
   },
   {
@@ -459,6 +463,8 @@
     "images": ["/assets/images/temples/temple-manka-qingshui.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=13678376866519882228",
+    "latitude": 25.0402174,
+    "longitude": 121.5025954,
     "sortOrder": 22
   },
   {
@@ -477,6 +483,8 @@
     "images": ["/assets/images/temples/temple-tamsui-qingshui.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=13357688321990784336",
+    "latitude": 25.1703568,
+    "longitude": 121.4410754,
     "sortOrder": 23
   },
   {
@@ -495,6 +503,8 @@
     "images": ["/assets/images/temples/temple-tamsui-yinshan.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=11859948809437008348",
+    "latitude": 25.169174,
+    "longitude": 121.448532,
     "sortOrder": 24
   },
   {
@@ -514,6 +524,8 @@
     "imageIsIllustration": true,
     "url": "https://www.zlskyt.com.tw",
     "googleMap": "https://maps.google.com/?cid=7194270883373393240",
+    "latitude": 25.0836731,
+    "longitude": 121.3893262,
     "sortOrder": 25
   },
   {
@@ -532,6 +544,8 @@
     "images": ["/assets/images/temples/temple-manka-dizang.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=8053789533490894167",
+    "latitude": 25.0368701,
+    "longitude": 121.5006503,
     "sortOrder": 26
   },
   {
@@ -550,6 +564,8 @@
     "images": ["/assets/images/temples/temple-xinpu-guanghe.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=12853975680603968433",
+    "latitude": 24.8280843,
+    "longitude": 121.0745984,
     "sortOrder": 27
   }
 ]

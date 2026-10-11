@@ -116,8 +116,8 @@
     "images": ["/assets/images/temples/temple-lecheng.jpeg"],
     "url": "https://www.lecheng.org.tw",
     "googleMap": "https://maps.app.goo.gl/Exgy6BDDyBg3VWBG6",
-    "latitude": 25.0822649,
-    "longitude": 121.5570149,
+    "latitude": 24.1407017,
+    "longitude": 120.6980189,
     "sortOrder": 5
   },
   {
@@ -198,8 +198,8 @@
     "description": "Taichung Fahua Temple, in Taichung's West District, is dedicated to Shakyamuni Buddha. It began as a mission station set up by the Nichiren school during the Japanese colonial era and was only renamed Fahua Temple after the war; its current six-story building was completed in 1996. The grounds are quiet and peaceful, a place in the middle of the busy city where you can let your mind settle.",
     "history": "Fahua Temple began in 1913, the second year of the Taisho era, as the 'Taichung Mission Station' that the Nichiren school established on Juren Street in Taichung, with the temple name Shinju-in. After the war in 1945, it was renamed Fahua Temple. In 1994, because the building had fallen into disrepair over the years, the temple rebuilt it as a six-story structure, completed in 1996. Today its main hall enshrines Shakyamuni Buddha.",
     "images": ["/assets/images/temples/temple-taichung-fahua.png"],
-    "latitude": 22.9822089,
-    "longitude": 120.2099784,
+    "latitude": 24.1356735,
+    "longitude": 120.6811078,
     "sortOrder": 9
   },
   {
@@ -257,6 +257,8 @@
     "images": ["/assets/images/temples/temple-zhunan-wugu.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=13686238840636622089",
+    "latitude": 24.6885803,
+    "longitude": 120.8837405,
     "sortOrder": 12
   },
   {
@@ -275,6 +277,8 @@
     "images": ["/assets/images/temples/temple-lugu-fenghuangshan.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=3289151911247841520",
+    "latitude": 23.7339182,
+    "longitude": 120.7843578,
     "sortOrder": 13
   }
 ]

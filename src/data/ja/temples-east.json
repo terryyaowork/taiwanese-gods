@@ -229,6 +229,8 @@
     "description": "成功天后宮（せいこうてんこうぐう）は小港成広澳天后宮とも呼ばれ、150年を超える歴史をもつ台東県最古の媽祖廟です。清代、後山（台湾東部）へ通事として派遣された劉進来は、出発前に鹿港天后宮へ参り、道中の守りとして媽祖に同行を願いました。無事に台東へ着くと、媽祖をこの地に祀り、ここから台東に媽祖信仰が根づきました。この廟は異なる民族が出会った場所でもあります。建立当初は地元の原住民と衝突しましたが、平埔族の女性たちの仲立ちで、互いに理解し合い共存する道が開かれました。東海岸を旅するなら、成広澳はぜひ立ち寄りたい場所です。",
     "history": "天后宮は何度かの移転を経て成広澳に落ち着き、地域の信仰の中心となりました。日本統治時代に伝統信仰が禁じられた時期には、住民が神像を海辺の岩穴に隠し、信仰を守り抜きました。1949年に火災に遭い、再建の際は人手が足りず、西部の彩色職人を呼べなかったため、地元の平埔族の人々に梁の彩色を頼みました。原住民が漢人の廟の建設に関わった最初の例です。旧暦3月23日の媽祖の聖誕が、一年でいちばん賑わう日です。",
     "url": "https://www.eastcoast-nsa.gov.tw/zh-tw/attractions/detail/280/",
+    "latitude": 23.1598565,
+    "longitude": 121.4015768,
     "sortOrder": 11,
     "images": ["/assets/images/temples/temple-chenggong-tianhou.webp"],
     "imageIsIllustration": true,
@@ -250,6 +252,8 @@
     "images": ["/assets/images/temples/temple-yuli-xietian.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=9288293534586800899",
+    "latitude": 23.3337444,
+    "longitude": 121.3160939,
     "sortOrder": 12
   }
 ]

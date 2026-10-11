@@ -116,8 +116,8 @@
     "images": ["/assets/images/temples/temple-lecheng.jpeg"],
     "url": "https://www.lecheng.org.tw",
     "googleMap": "https://maps.app.goo.gl/Exgy6BDDyBg3VWBG6",
-    "latitude": 25.0822649,
-    "longitude": 121.5570149,
+    "latitude": 24.1407017,
+    "longitude": 120.6980189,
     "sortOrder": 5
   },
   {
@@ -198,8 +198,8 @@
     "description": "台中法華寺位在台中市西區，主祀釋迦牟尼佛。它的前身是日治時期日蓮宗設立的布教所，戰後才改名法華寺；今天的六層樓建築在1996年完工。寺內環境清幽，是鬧市裡一處能靜下心來的所在。",
     "history": "法華寺的前身，是1913年（大正二年）日蓮宗在台中居仁街設立的「台中布教所」，寺名信受院。1945年戰後，才改名為法華寺。1994年，因為年久失修，寺方重建為六層樓的建築，1996年完工。如今主殿供奉釋迦牟尼佛。",
     "images": ["/assets/images/temples/temple-taichung-fahua.png"],
-    "latitude": 22.9822089,
-    "longitude": 120.2099784,
+    "latitude": 24.1356735,
+    "longitude": 120.6811078,
     "sortOrder": 9
   },
   {
@@ -257,6 +257,8 @@
     "images": ["/assets/images/temples/temple-zhunan-wugu.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=13686238840636622089",
+    "latitude": 24.6885803,
+    "longitude": 120.8837405,
     "sortOrder": 12
   },
   {
@@ -275,6 +277,8 @@
     "images": ["/assets/images/temples/temple-lugu-fenghuangshan.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=3289151911247841520",
+    "latitude": 23.7339182,
+    "longitude": 120.7843578,
     "sortOrder": 13
   }
 ]

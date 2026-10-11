@@ -268,8 +268,8 @@
     "description": "Pingtung Jiuru Sanshan Guowang Temple, built in 1778 (the 43rd year of the Qianlong reign), is a Pingtung County historic site dedicated to the three Kings of Jinshan, Mingshan and Dushan. The \"Wei Zhen Hai Dong\" plaque hanging high in the main hall is dated to the year the temple was built; the worship pavilion is painted with the Hetu and Luoshu diagrams, the door gods are the work of the painter Pan Li-shui, and the wood carvings on the front facade draw on Romance of the Three Kingdoms and Romance of Sui and Tang. Worship here crosses ethnic lines: the temple's most famous legend involves the Hakka of neighboring Linluo, and the Hoklo who later settled in Jiuru carried on the worship.",
     "history": "Jiuru Sanshan Guowang Temple was completed in 1778 (the 43rd year of the Qianlong reign), and the \"Wei Zhen Hai Dong\" plaque in the main hall dates from that year. In 1866 (the 5th year of the Tongzhi reign), the temple was rebuilt on its present site; it was renovated again in the late 1920s, and its most recent restoration was completed in October 2016. In front of the temple stands a bluestone incense burner from 1807 (the 12th year of the Jiaqing reign). In 2004, the Pingtung County Government designated it a county historic site, and in 2012 its left and right side wings were separately registered as historic buildings.",
     "images": ["/assets/images/temples/temple-jiuru-sanshan.png"],
-    "latitude": 22.7414,
-    "longitude": 120.4881,
+    "latitude": 22.7309282,
+    "longitude": 120.4847171,
     "sortOrder": 12
   },
   {
@@ -289,6 +289,8 @@
     "imageIsIllustration": true,
     "url": "https://www.taizih.org.tw",
     "googleMap": "https://maps.google.com/?cid=309370358842796397",
+    "latitude": 23.2951009,
+    "longitude": 120.2733225,
     "sortOrder": 13
   }
 ]

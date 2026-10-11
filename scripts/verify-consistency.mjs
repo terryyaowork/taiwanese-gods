@@ -396,6 +396,26 @@ for (const base of templeBases) {
   }
 }
 
+// 4i. 廟宇座標：每間都要有、要落在台澎金馬範圍、三語相同。座標會寫進結構化資料（GeoCoordinates）。
+//     2026-10-11 發現樂成宮座標在台北、法華寺在台南、另 3 間偏 1–7 公里、13 間沒有座標；全部改用 Google 地圖地標座標。
+//     這條只擋缺漏與明顯錯置；新增廟宇時，座標要從地圖連結的地標頁取，不要手填。
+for (const base of templeBases) {
+  const byLang = Object.fromEntries(LANGS.map((l) => [l, new Map(readJson(l, base).map((t) => [t.id, t]))]));
+  for (const [id, zh] of byLang[BASE_LANG]) {
+    const { latitude: lat, longitude: lng } = zh;
+    if (typeof lat !== 'number' || typeof lng !== 'number') {
+      fail(`[座標] ${base}: ${id} 沒有座標（從地圖連結的地標頁取）`);
+      continue;
+    }
+    if (lat < 21.8 || lat > 26.4 || lng < 118.1 || lng > 122.1)
+      fail(`[座標] ${base}: ${id} 的座標 ${lat},${lng} 不在台澎金馬範圍`);
+    for (const l of LANGS) {
+      const t = byLang[l].get(id);
+      if (t && (t.latitude !== lat || t.longitude !== lng)) fail(`[座標] ${base}: ${id} 的 ${l} 座標和中文不同`);
+    }
+  }
+}
+
 // 4h. 神明頁的「靈驗宮廟」連結：名稱在廟宇資料庫裡的，頁面連到站內廟宇頁，不能再帶 url（不會顯示，只會過期）；
 //     不在資料庫的，url 只接受 4g 的地圖格式（或不填，顯示成不可點的卡片），三語相同。
 //     2026-10-11 發現神明頁有 35 個沒在用的官網連結（16 個壞掉）、FB 連結是推測出來的、開隆宮網域不存在。
@@ -428,7 +448,7 @@ for (const base of godBases) {
   }
 }
 
-console.log('  神明分類 / 主祀神引用 / 圖片路徑 / redirect / 日文字形 / 地圖連結 / 神明廟宇連結 全部檢查完畢');
+console.log('  神明分類 / 主祀神引用 / 圖片路徑 / redirect / 日文字形 / 地圖連結 / 座標 / 神明廟宇連結 全部檢查完畢');
 
 console.log('');
 if (problems.length) {
