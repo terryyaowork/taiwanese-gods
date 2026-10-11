@@ -14,7 +14,7 @@
     "history": "The story begins with a monk who crossed the sea to Taiwan. In 1804, the monk Tingshuo of Zhangzhou, Fujian, carried a statue of Guan Sheng Di Jun over the water, settled in Jiaoxi, and built a temple. This was then the vital gateway for pioneers opening up the Kavalan region, and as the Han migrants of the frontier toiled to build new lives, Guan Di became the steadiest anchor in their hearts. From the Qing through the Japanese era the temple was expanded and repaired many times, and a large-scale reconstruction after the war gave it the imposing form it wears today. Branch statues of Sietian Temple's Guan Di are now found across Taiwan, its grand festivals in the first and sixth lunar months drawing great crowds — and the temple stands as one page in the history of the Lanyang Plain's settlement.",
     "images": ["/assets/images/temples/temple-jiaoxisietian.png"],
     "url": "https://www.facebook.com/JiaoxiSietianTemple/",
-    "googleMap": "https://maps.app.goo.gl/search/Jiaoxi+Sietian+Temple",
+    "googleMap": "https://maps.google.com/?cid=2348428617193744051",
     "latitude": 24.8185047,
     "longitude": 121.7690905,
     "sortOrder": 0
@@ -33,7 +33,7 @@
     "description": "Step into Penghu Tianhou Temple and the ground beneath your feet belongs to the oldest Mazu temple in Taiwan — founded before 1604 and, by documentary evidence, the very first Mazu temple on Taiwanese soil, dedicated to Mazu (the Empress of Heaven). It holds the oldest stone stele in the Taiwan-Penghu region, the tablet recording how the Ming general Shen Yourong 'ordered the withdrawal of the red-haired barbarian Weimalang' — that is, expelled the Dutch — in 1604; in 2022 the Ministry of Culture designated it a national treasure. A National Monument since 1983, the temple preserves a wealth of intact Qing-dynasty wood carving, stone carving, and painting — a living textbook for anyone wishing to see the architecture of Taiwan's earliest temples.",
     "history": "The exact founding date is lost, but a standoff at sea fixed the temple firmly in history. In 1604, the Dutch East India Company commander Wijbrand van Waerwijck arrived in Penghu with two ships; the Fujian commander Shen Yourong sailed out with fifty warships to negotiate and pressed the Dutch into withdrawing. The event was carved onto a stone stele that then slept for over three hundred years — until an 1919 renovation of the temple brought it back to light, confirming Penghu Tianhou Temple's standing as the oldest temple in the Taiwan-Penghu region. The temple was rebuilt many times through the Ming and Qing; after Shi Lang took Penghu in the Kangxi era it underwent a major renovation, and it still preserves a great deal of Qing craftsmanship today.",
     "images": ["/assets/images/temples/temple-penghu-tianhou.png"],
-    "googleMap": "https://maps.app.goo.gl/penghu-tianhou",
+    "googleMap": "https://maps.google.com/?cid=8689713124882381801",
     "latitude": 23.5647115,
     "longitude": 119.5640221,
     "sortOrder": 1
@@ -52,7 +52,7 @@
     "description": "Folk tradition holds that in the seventh lunar month of 1948, the Queen Mother of the West — Wangmu Niangniang, known affectionately as Mu Niang or Yaochi Jinmu — manifested and descended at Ji'an in Hualien; and so the Hualien Shen An Temple became the birthplace of the 'Queen Mother of the West' faith in Taiwan. Glittering and regal in style, the temple enshrines Mu Niang and holds an exalted place among the faithful. Shen An Temple and the nearby Cihui Tang share a single origin, later dividing into the Yellow-Robe and Green-Robe branches — yet as the wellspring of it all, Shen An Temple still draws countless pilgrims back to seek their roots. For anyone wishing to reach the source of Mu Niang worship, this is a stop in Hualien not to be missed.",
     "history": "Legend holds that in the seventh lunar month of 1948, the Queen Mother of the West manifested around Ji'an in Hualien and watched over the district; moved by her efficacy, the faithful built a temple to enshrine her — and this was the beginning of Shen An Temple. From here the worship of Mu Niang spread outward across Taiwan; Shen An Temple and Cihui Tang, sharing one source, branched into the Yellow-Robe and Green-Robe systems that took root island-wide. As the birthplace of the faith, Shen An Temple has been expanded many times into an ever more magnificent complex, and its annual culture festival remains a major event in Hualien — keeping generation after generation mindful of the day the Queen Mother came down to earth.",
     "images": ["/assets/images/temples/temple-hualienshenan.png"],
-    "googleMap": "https://maps.app.goo.gl/search/Hualien+Shen+An+Temple",
+    "googleMap": "https://maps.google.com/?cid=17322388269370314172",
     "latitude": 23.9778981,
     "longitude": 121.5867689,
     "sortOrder": 2
@@ -72,7 +72,7 @@
     "history": "The temple was founded in the Japanese Taisho era, around the 1920s, funded by Hualien's Han settlers as the city's foremost center of City God worship. Modest at first, it enshrined the City God attended by the civil and martial judges and the Fan and Xie generals — the well-known Seventh and Eighth Lords. As Hualien's population grew after the war, the temple was expanded several times into its present form. It has never been merely a place to burn incense: for years it has run charitable works and winter relief, a mainstay of local welfare. Its grandest moment comes with the Zhongyuan (Ghost Month) festival of the seventh lunar month, when the City God's touring procession winds mightily through the streets and draws crowds lining every road.",
     "images": ["/assets/images/temples/temple-hualienchenghuang.png"],
     "url": "https://www.facebook.com/HualienCityGodTemple/",
-    "googleMap": "https://maps.app.goo.gl/hualienchenghuang",
+    "googleMap": "https://maps.google.com/?cid=1792585756554793237",
     "latitude": 23.9733796,
     "longitude": 121.6057448,
     "sortOrder": 3
@@ -82,6 +82,7 @@
     "name": "Yilan Sanqing Temple",
     "location": "Dongshan Township, Yilan County",
     "address": "No. 123, Sanqing Rd., Dongshan Township, Yilan County",
+    "googleMap": "https://maps.google.com/?cid=11371312628312859824",
     "mainDeities": [
       {
         "id": "jigong",
@@ -109,7 +110,7 @@
     "description": "Walk into Ji'an Qingxiu Yuan and for a moment you may think you've crossed to Japan — this is the most complete Japanese-style temple still standing in Taiwan, formerly the 'Shingon-shu Yoshino Mission,' dedicated to Fudo Myoo and listed as a Hualien County historic monument. Its square 'hogyo-zukuri' pyramidal roof breathes a strong Edo-period air, and within stand the wish-granting 'Hyakudo Stone' and eighty-eight stone Buddhas modeled on the Shikoku pilgrimage circuit, lined up one by one in the deep calm of a Japanese temple. It is a lovely, quiet corner of Hualien in which to slow down.",
     "history": "In 1917, the Japanese abbot Kawabata Manji founded this mission in the Yoshino immigrant village of Hualien as a base for the Koyasan branch of the Shingon sect — and a spiritual refuge for the Japanese settlers of the day. Built in the manner of the temples of Shikoku, its hogyo-zukuri roof carries an Edo grace. After the Second World War the settlers were repatriated and the mission fell into neglect; later it was renamed Qingxiu Yuan and placed under civilian care. In 1997 it was designated a Hualien County monument, and after a thorough restoration it reopened. Its eighty-eight stone Buddhas imitate the eighty-eight sacred sites of Shikoku, so that worshippers unable to cross the ocean could make the pilgrimage close to home.",
     "images": ["/assets/images/temples/temple-qingxiuyuan.png"],
-    "googleMap": "https://maps.app.goo.gl/qingxiuyuan",
+    "googleMap": "https://maps.google.com/?cid=16084543393414290365",
     "latitude": 23.9736033,
     "longitude": 121.5646838,
     "sortOrder": 5
@@ -129,7 +130,7 @@
     "history": "The temple's origins are bound up with the putting down of a revolt. In 1889, Admiral Zhang Zhaolian, grateful to Mazu for her aid in quelling a rebellion, proposed building this temple in thanks; the Guangxu Emperor bestowed the plaque 'Numinous, Radiant, Sincere, and Protecting,' giving it the standing of an official temple from the very start. When an earthquake damaged the building in 1933, the temple was moved to its present site and repaired many times into its current form. From a Qing official temple to today's Lantern Festival spectacle, Taitung Tianhou Temple is not only a center of faith but a witness to the history of Taitung's settlement.",
     "images": ["/assets/images/temples/temple-taitungtianhou.png"],
     "url": "http://www.taitungtianhou.org.tw/",
-    "googleMap": "https://maps.app.goo.gl/taitungtianhou",
+    "googleMap": "https://maps.google.com/?cid=5023869641749829170",
     "latitude": 22.7570998,
     "longitude": 121.1551127,
     "sortOrder": 6
@@ -149,7 +150,7 @@
     "history": "The exact founding date is lost, but the story of this land runs very deep. People were living around the Matsu inlet of Nangan as far back as the Song dynasty — Song-era ceramic shards have been unearthed here — and the old gazetteer 'Sanshan Zhi' called Nangan 'Shanggantang,' a name changed to Nangantang only in Ming and Qing times. The temple has been rebuilt many times; among the documented records are Zhang Yizhou's 1943 'Account of the Rebuilding of the Matsu Island Tianhou Temple' and an inscription by General Peng Qichao in 1963. In 2001 the old temple was pulled down and rebuilt, with designers from the Puxian region brought in to raise a palace-style temple modeled on the Meizhou Mazu ancestral temple — the grand form it holds today.",
     "images": ["/assets/images/temples/temple-matsu-tianhou.png"],
     "url": "http://tianhou-temple.matsu.idv.tw/",
-    "googleMap": "https://maps.app.goo.gl/matsu-tianhou",
+    "googleMap": "https://maps.google.com/?cid=14117555990881214823",
     "latitude": 26.1583916,
     "longitude": 119.9181111,
     "sortOrder": 7
@@ -169,7 +170,7 @@
     "history": "The temple's origins reach back to 1387, when Zhou Dexing, Marquis of Jiangxia, built the walled garrison at Kinmen City and raised the Gudi City God Temple alongside it. In 1663 the Qing coastal-evacuation policy left the existing City God temple at Houpu in ruins. Not until 1680 did Chen Long, the first Kinmen garrison commander, move the administrative seat to Houpu and branch the Gudi City God to the Ximen ward there — laying the foundation of the Wudao City God Temple. In 1811, Wen Yingju and others raised over 2,300 taels of silver to rebuild it, and a further expansion in 1994 brought it to its present scale. Through all this migration and rebuilding, the bond between the City God and the town of Houpu has endured for more than three hundred years.",
     "images": ["/assets/images/temples/temple-kinmen-citygod.png"],
     "url": "https://kinmen.travel/zh-tw/travel/attraction/811",
-    "googleMap": "https://maps.app.goo.gl/kinmen-citygod",
+    "googleMap": "https://maps.google.com/?cid=12324986200684401392",
     "latitude": 24.4325803,
     "longitude": 118.3161057,
     "sortOrder": 8
@@ -188,7 +189,7 @@
     "description": "Hualien Gang Tian Temple is the largest Mazu temple in eastern Taiwan, dedicated to the goddess whom locals affectionately call 'Gang Tian Ma' (Mazu, the Empress of Heaven), and an important center of faith for Hualien City. Its grounds are vast and its presence commanding, its architecture blending southern and northern styles in ornate detail — the enormous archway (pailou) and the wide temple plaza make an immediate impression. When Mazu's birthday comes around, the temple holds a grand celebratory procession that gathers up all the warmth of Hualien's people — a place not to be missed when you come to worship Mazu in Hualien.",
     "history": "The temple's story begins with a golden Mazu statue that crossed the sea with migrants. In the Guangxu era, around the 1890s, early Han settlers carried a branch statue of Mazu to Hualien Port — then known as 'Qilai' — where at first they could only enshrine this earliest 'Great Mazu' in a rough thatched hut. As the incense grew through the Japanese era, the hut was rebuilt as a small wooden temple. By 1977 the old temple had grown too small, and a new one was begun on the present site in Hualien City, taking years to reach the imposing form it holds today. Its Mazu-birthday procession, held around the third lunar month, is now the grandest religious event in Hualien City each year.",
     "images": ["/assets/images/temples/temple-hualiengangtian.png"],
-    "googleMap": "https://maps.app.goo.gl/gangtian",
+    "googleMap": "https://maps.google.com/?cid=17585757952751034367",
     "latitude": 24.0075817,
     "longitude": 121.5872485,
     "sortOrder": 9
@@ -198,6 +199,7 @@
     "name": "Tafalong Ancestral Shrine",
     "location": "Guangfu Township, Hualien County",
     "address": "Tafalong Tribe, Guangfu Township, Hualien County",
+    "googleMap": "https://maps.google.com/?cid=3299427822821884226",
     "mainDeities": [
       {
         "id": "zuling",
@@ -226,7 +228,6 @@
     "history": "Chenggong Tianhou Temple was founded during the Japanese colonial era by Han settlers who had moved into Xingang, today Chenggong Township. Coastal Mazu temples in Taiwan almost all follow the same sequence: the fishermen come first, then the temple. Settlers carried an incense division or a statue from their home temple, and once they had put down roots, they built. Chenggong lives on fishing, and the temple calendar tracks the fishing seasons closely. The busiest day of the year is the twenty-third day of the third lunar month, Mazu's birthday.",
     "images": ["/assets/images/temples/temple-chenggongtianhou.png"],
     "url": "https://www.eastcoast-nsa.gov.tw/en/attractions/detail/280/",
-    "googleMap": "https://maps.app.goo.gl/QBr2Rep5fPMaoLS58",
     "sortOrder": 11
   },
   {
@@ -244,7 +245,6 @@
     "history": "Yuli Wunian Qiansui Temple was founded in the Qing dynasty by Han settlers opening land in the East Rift Valley. The Wunian Qiansui, also known as the Twelve Plague Lords, are one branch of Wangye belief, centred on Mingshan in Baozhong, Yunlin. The name comes from the ceremonial cycle: nominally five years, in practice every four, because the count includes both the first and last year. The tradition moved east with settlers from western Taiwan, and this temple is a footnote to the valley's settlement history. Where people went, the gods were carried after them.",
     "images": ["/assets/images/temples/temple-yuliwunian.png"],
     "url": "#",
-    "googleMap": "https://maps.app.goo.gl/zBWWU9BErDBhXe2r9",
     "sortOrder": 12
   }
 ]

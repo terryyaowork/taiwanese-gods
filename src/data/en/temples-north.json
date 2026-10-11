@@ -102,7 +102,7 @@
     "history": "In 1856, during the Xianfeng reign, a group of Tongan people in Dadaocheng pooled their money to build this City God temple to protect the peace of their settlement. Those were the years when Dadaocheng was taking off on the tea trade, and the temple naturally became the spiritual center for Tongan merchants. Under Japanese rule it once faced demolition, and only the determined efforts of local gentry saved the little temple. The real turning point came in the 1970s, when the temple began promoting worship of the Matchmaker (Yue Lao); wave after wave of people seeking love poured in, and this temple of under 150 square meters leapt to become one of the most popular Yue Lao temples in all Taiwan. Meanwhile the annual 'Taipei City God Reception' on the 13th day of the 5th lunar month packs the streets so tightly it is nicknamed 'the 13th of May, people watching people,' and for a century it has remained one of Taipei's three great temple festivals.",
     "images": ["/assets/images/temples/temple-citygod.png"],
     "url": "http://www.tpecitygod.org",
-    "googleMap": "https://maps.app.goo.gl/guB7Gqt934KVvTpA8",
+    "googleMap": "https://maps.google.com/?cid=7596797163613549522",
     "latitude": 25.0556263,
     "longitude": 121.5102099,
     "sortOrder": 3
@@ -142,7 +142,7 @@
     "history": "In 1882, during the Guangxu reign, Wang Bin-lin, the county magistrate of Tamsui, proposed building Zhinan Temple, at first only a small shrine to Lu Dongbin (Patriarch Lu). Generation after generation expanded it: the Lingxiao Hall was added in the Taisho era under Japanese rule, and after the war the Dacheng Hall (Confucian) and Mahavira Hall (Buddhist) followed, slowly growing into the grand three-teachings-in-one complex of today. Built into the mountain and looking down from on high, reached by more than a thousand stone steps beneath towering ancient trees, it earned the name 'foremost sacred mountain under heaven.' As for the folk saying that Lu Dongbin is strict about matters of the heart and will break up couples who visit together — pure nonsense, yet by a quirk of fate it became the most widely known tale attached to Zhinan Temple.",
     "images": ["/assets/images/temples/temple-zhinan.png"],
     "url": "https://www.chih-nan-temple.org/",
-    "googleMap": "https://maps.app.goo.gl/zhinan",
+    "googleMap": "https://maps.google.com/?cid=4588651315000145868",
     "latitude": 24.9796041,
     "longitude": 121.5880572,
     "sortOrder": 5
@@ -162,7 +162,7 @@
     "history": "During the Qianlong reign (around the 1770s), Zhangzhou immigrants brought a divided incense of Tudigong from the Erxuan Temple in Nanjing, Fujian; at first it was only a simple straw altar, rebuilt in stone in the Jiaqing era. The name 'Honglu-di' — 'brazier ground' — is no accident: the terrain here resembles a fire brazier in feng shui, and though the elevation is modest the view is superb, earning a feng shui master's praise as a rare 'wealth-gathering point.' That is exactly why Hongludi Nanshan Fude Temple became the most famous 'wealth-seeking' Earth God temple in Taiwan. At year's end and the new year, and on the Earth God's birthday on the 2nd day of the 2nd lunar month, the stream of pilgrims and cars up the mountain never ends. The kindly Tudigong statue on the summit, ingot in hand, has long been a landmark of Zhonghe; and after dark, the glittering lights of the Taipei Basin below have made this a celebrated spot for night views as well.",
     "images": ["/assets/images/temples/temple-hongludi.png"],
     "url": "https://www.hunglodei.tw/",
-    "googleMap": "https://maps.app.goo.gl/hongludi",
+    "googleMap": "https://maps.google.com/?cid=2042951815845756788",
     "latitude": 24.9718368,
     "longitude": 121.4975598,
     "sortOrder": 6
@@ -182,6 +182,7 @@
     "history": "Taipei's earliest Confucius temple was built in 1879 during the Guangxu reign, but was demolished under Japanese rule. The temple we see today was rebuilt on the initiative of Taipei's gentry beginning in 1925 — they engaged Wang Yi-shun, the famed Quanzhou master who designed Longshan Temple, and the work was not completed until 1939. Also built in the Minnan style, it stands in graceful counterpoint to the Dalongdong Baoan Temple just across the wall — one Confucian, one Taoist — together forming the most complete surviving cluster of traditional architecture in Taipei.",
     "images": ["/assets/images/temples/temple-taipei-confucius.png"],
     "url": "https://www.tctcc.taipei",
+    "googleMap": "https://maps.google.com/?cid=7269829153313436851",
     "latitude": 25.0727013,
     "longitude": 121.5165018,
     "sortOrder": 7
@@ -191,6 +192,7 @@
     "name": "Taipei Wenchang Temple",
     "location": "Zhongshan District, Taipei City",
     "address": "No. 9, Ln. 45, Minsheng W. Rd., Zhongshan Dist., Taipei City",
+    "googleMap": "https://maps.google.com/?cid=18254476121765775052",
     "mainDeities": [
       {
         "id": "wenchang",
@@ -209,6 +211,7 @@
     "name": "Songshan Fengtian Temple",
     "location": "Xinyi District, Taipei City",
     "address": "No. 12, Ln. 221, Fude St., Xinyi Dist., Taipei City",
+    "googleMap": "https://maps.google.com/?cid=5607905391796647853",
     "mainDeities": [
       {
         "id": "yuhuang",
@@ -237,7 +240,7 @@
     "history": "In 1875, the first year of the Guangxu reign, Lin Wei-yuan of the Lin family of Banqiao donated the land and helped build Dianji Temple, dedicated to Kaizhang Shengwang, making it the most important center of Zhangzhou faith in the Keelung area. From the First Sino-Japanese War through the Japanese colonial period, Dianji Temple underwent many major renovations, its fate bound tightly to Keelung's own — from Qing-era trading port to later international harbor, it witnessed all the rise and change of Keelung Harbor. The temple still preserves many precious Qing-dynasty plaques and stone stelae recording the pioneering stories of Keelung's early settlers. And the temple-gate night market around it, running unbroken from the Japanese era to today, has long become Keelung's most iconic tourist landmark.",
     "images": ["/assets/images/temples/temple-keelungdianji.png"],
     "url": "https://www.facebook.com/DianJiGong/",
-    "googleMap": "https://maps.app.goo.gl/search/Keelung+Dianji+Temple",
+    "googleMap": "https://maps.google.com/?cid=14401796649461744893",
     "latitude": 25.1280744,
     "longitude": 121.743085,
     "sortOrder": 10
@@ -257,7 +260,7 @@
     "history": "In 1748, during the Qianlong reign, Zeng Ri-ying, the sub-prefect of Tamsui, proposed building the Hsinchu City God Temple, one of the oldest government-built temples in the Hsinchu area. In the Qing imagination the City God temple was like an 'underworld county yamen,' facing the yamen of Hsinchu's magistrate from afar — one of the netherworld, one of the living — symbolizing the ideal of 'gods and people governing together.' It was rebuilt many times through the Jiaqing and Guangxu reigns, and under Japanese rule the gentleman Zheng Zhao-ji led a large-scale renovation that set its layout as it stands today. The temple preserves a great many Qing plaques and couplets, the 'Li Yang Qi' plaque being the most famous. Its annual 'City God Procession' is the largest religious event in Hsinchu City, and the route by which the City God circles the four city gates — north, south, east, and west — has continued for nearly three hundred years. The temple-front square and its surrounding stalls have grown into the renowned 'City God Temple-Gate' food street.",
     "images": ["/assets/images/temples/temple-hsinchucitygod.png"],
     "url": "http://www.weiling.org.tw/",
-    "googleMap": "https://maps.app.goo.gl/search/Hsinchu+City+God+Temple",
+    "googleMap": "https://maps.google.com/?cid=17492759372388554891",
     "latitude": 24.8043564,
     "longitude": 120.9660651,
     "sortOrder": 11
@@ -277,7 +280,7 @@
     "history": "During the Jiaqing reign (around the 1810s), immigrants from Zhangzhou, Fujian, pooled their funds to build a 'Jingfu Shrine' to Kaizhang Shengwang — the forerunner of today's Jingfu Temple. As Taoyuan gradually developed, the temple expanded along with it, becoming the most important center of faith in the city center. It was renovated many times through the Daoguang and Tongzhi reigns, underwent a large-scale renovation under Japanese rule, was formally renamed 'Jingfu Temple' after the war, and completed its most recent major renovation in 2002, its appearance renewed. From Qing-era pioneer settlement to today's special municipality, Taoyuan has changed and changed again, yet this largest Earth God temple in Taoyuan has always stood at the city center, a spiritual stronghold shared by generations of Taoyuan people.",
     "images": ["/assets/images/temples/temple-taoyuanjingfu.png"],
     "url": "https://www.facebook.com/TaoyuanJingfuTemple/",
-    "googleMap": "https://maps.app.goo.gl/search/Taoyuan+Jingfu+Temple",
+    "googleMap": "https://maps.google.com/?cid=4147780182156509096",
     "latitude": 25.02206,
     "longitude": 121.30333,
     "sortOrder": 12
@@ -297,6 +300,7 @@
     "history": "In 1989, Master Sheng Yen founded Dharma Drum Mountain in Jinshan, though the grand opening ceremony was not held until 2005. He put forward the ideal of 'uplifting the character of humanity and building a pure land on earth,' holding that Buddhism should not merely chant sutras deep in the mountains but step into society, care for the world, and purify the human heart. And so Dharma Drum Mountain is not only a Buddhist monastery but a comprehensive campus combining education, culture, and charity — a path that has earned it an important place in the international Buddhist community as well.",
     "images": ["/assets/images/temples/temple-fagushan.png"],
     "url": "https://www.ddm.org.tw",
+    "googleMap": "https://maps.google.com/?cid=11848497937389221475",
     "latitude": 25.2409502,
     "longitude": 121.6148125,
     "sortOrder": 13
@@ -315,7 +319,7 @@
     "description": "The start of Beipu Old Street lies right on the stone-paved forecourt of Citien Temple. This county-designated historic site in Beipu Township, Hsinchu County, is the most representative Hakka center of faith in the whole county and the core landmark of the entire Beipu settlement. Dedicated to Guanyin Bodhisattva, it embodies the classic Hakka tradition of 'Guanyin first.' Its plan approaches the Cantonese-Hakka 'double-hall, two-wing' layout, and the Sanchuan Hall is distinguished by its sandstone carving; the pair of stone dragon pillars along the entrance colonnade are both carved as 'ascending dragons' coiling upward — a technique rarely seen in Taiwan's temples. Inside are also two sets of '24 Filial Exemplars' stone columns, finely carved and likewise rare across Taiwan. On weekends, follow the forecourt into the old street and the stream of visitors never stops.",
     "history": "The origins of Citien Temple are inseparable from the Han Chinese settlement of Beipu. In 1834, during the Daoguang reign, the Cantonese leader Jiang Xiuluan and the Hokkien merchant Zhou Bangzheng jointly formed the 'Jin Guang Fu' reclamation enterprise to open up the southeastern mountains of Hsinchu — and the Guanyin statue enshrined in the temple was, by tradition, personally brought back from mainland China by Jiang Xiuluan. In 1840 Jiang rebuilt it as a wooden temple. In 1874, during the Tongzhi reign, Jiang Xiuluan's eldest grandson Jiang Ronghua carried out another major reconstruction, adding two wings and a front hall and setting the 'two-hall, two-wing, two-side-house' layout of today. During the 'Beipu Incident' of 1907 in the late Guangxu period, Citien Temple even served as an important base, adding a page of far-reaching history to this temple.",
     "images": ["/assets/images/temples/temple-beipu-citien.png"],
-    "googleMap": "https://maps.app.goo.gl/beipu-citien",
+    "googleMap": "https://maps.google.com/?cid=1480177471064116822",
     "latitude": 24.6997628,
     "longitude": 121.0583752,
     "sortOrder": 14
@@ -335,7 +339,7 @@
     "history": "In 1786, during the Qianlong reign, the Lin Shuangwen Rebellion broke out, and Hakka communities around Hsinchu and Taoyuan formed volunteer militias to defend their homes in bloody battle. After the fighting, more than 200 fallen warriors were buried together at Fangliao (today's Xinpu Township). In 1790 the local people pooled their funds to build a temple in their memory, and the Qianlong Emperor bestowed the 'Bao Zhong' plaque — the origin of Yimin Temple. In every later upheaval — the Zhu Yigui and Dai Chaochun uprisings among them — the righteous who died protecting their homeland were also enshrined here. Thus Yimin Temple became the symbolic sanctuary of the Taiwanese Hakka spirit, and its singular form of worship, 'a tomb as a temple,' has always stood apart in Taiwan's religious culture.",
     "images": ["/assets/images/temples/temple-xinpu-yimin.png"],
     "url": "https://www.yimin.org.tw/",
-    "googleMap": "https://maps.app.goo.gl/search/Baozhong+Yimin+Temple",
+    "googleMap": "https://maps.google.com/?cid=16984425093641938005",
     "latitude": 24.8442777,
     "longitude": 121.036446,
     "sortOrder": 15
@@ -355,7 +359,7 @@
     "history": "During the Yongzheng reign (around the 1730s), immigrants from Zhangzhou, Fujian, pooled their funds to build Wu Temple, dedicated to the God of War, Lord Guan. Xinzhuang was then the most flourishing port and trading town in northern Taiwan, its harbor crowded with masts and sails, and Wu Temple was where the merchants prayed for thriving business and urged one another toward loyalty and honesty. It was renovated and expanded many times through the Qianlong and Jiaqing reigns, and in the Daoguang era it received an official inscribed plaque, formally becoming a temple of the officially recognized sacrificial register. Under Japanese rule this old temple once faced the threat of demolition, and survived only through the determined protection of local gentry. It still holds precious relics — Qing-dynasty stelae, old plaques, and stone lions — quietly witnessing Xinzhuang's century of change from a thriving port to a modern town.",
     "images": ["/assets/images/temples/temple-xinzhuangwu.png"],
     "url": "https://www.facebook.com/kct0511/",
-    "googleMap": "https://maps.app.goo.gl/search/Zhonghe+Hongludi",
+    "googleMap": "https://maps.google.com/?cid=862564105281032633",
     "latitude": 25.0337842,
     "longitude": 121.4501079,
     "sortOrder": 16
@@ -379,7 +383,7 @@
     "history": "Dizang An was completed in Xinzhuang during the Qianlong reign (around 1757), one of the oldest Ksitigarbha temples in northern Taiwan. Xinzhuang was in its early days an important commercial port in the north, densely populated but often visited by plague and disaster, and Dizang An became a vital place to deliver wandering souls and pray for the community's peace. The Zhongyuan (Ghost Festival) rites of the 7th lunar month are the temple's grandest moment, with the 'Wen-Wu Dazhong Ye procession' and the 'Guan Jiang Shou' troupe performance the most famous — for Xinzhuang is the very birthplace of the Guan Jiang Shou tradition, those fierce-faced officers charged with awing demons and keeping order between the worlds of the living and the dead, now designated an intangible cultural asset of New Taipei City.",
     "images": ["/assets/images/temples/temple-xinzhuangdizang.png"],
     "url": "https://www.xzdza.org.tw/",
-    "googleMap": "https://maps.app.goo.gl/xzdza",
+    "googleMap": "https://maps.google.com/?cid=18128714433227309511",
     "latitude": 25.0377357,
     "longitude": 121.4568824,
     "sortOrder": 17
@@ -407,6 +411,7 @@
     "name": "Hsinchu Putian Temple",
     "location": "East District, Hsinchu City",
     "address": "No. 66, Ln. 306, Gaofeng Rd., East Dist., Hsinchu City",
+    "googleMap": "https://maps.google.com/?cid=3349517159199232979",
     "mainDeities": [
       {
         "id": "guansheng",

@@ -102,7 +102,7 @@
     "history": "清咸豐六年（1856年），一群大稻埕的同安人集資蓋起這座城隍廟，為的是守護地方安寧。那正是大稻埕靠茶葉貿易起飛的年代，城隍廟也順勢成了同安商人的精神中心。日治時期，它一度面臨拆除的危機，幸好地方仕紳極力保住，才留下這座小廟。真正的轉折發生在1970年代——廟方開始推廣月下老人信仰，求姻緣的信眾一波波湧入，讓這座不到50坪的小廟一躍成為全台最熱門的月老廟之一。而每年農曆五月十三日的「台北迎城隍」，人潮擠到俗稱「五月十三人看人」，百年來始終是台北三大廟會之一。",
     "images": ["/assets/images/temples/temple-citygod.png"],
     "url": "http://www.tpecitygod.org",
-    "googleMap": "https://maps.app.goo.gl/guB7Gqt934KVvTpA8",
+    "googleMap": "https://maps.google.com/?cid=7596797163613549522",
     "latitude": 25.0556263,
     "longitude": 121.5102099,
     "sortOrder": 3
@@ -142,7 +142,7 @@
     "history": "清光緒八年（1882年），淡水知縣徐慶璋倡議興建指南宮，起初只是一座供奉呂洞賓（呂祖）的小廟。此後一代代擴建：日治大正年間增建了凌霄寶殿，光復後又添上大成殿（儒）與大雄寶殿（佛），慢慢長成今天儒釋道三教合一的宏偉格局。指南宮依山而立、居高臨下，上山沿途千餘級石階、古木參天，這才有了「天下第一靈山」的名號。至於民間那則「呂洞賓對感情嚴格、情侶同遊會被拆散」的說法，雖是無稽之談，卻陰錯陽差成了指南宮最廣為人知的一段軼事。",
     "images": ["/assets/images/temples/temple-zhinan.png"],
     "url": "https://www.chih-nan-temple.org/",
-    "googleMap": "https://maps.app.goo.gl/zhinan",
+    "googleMap": "https://maps.google.com/?cid=4588651315000145868",
     "latitude": 24.9796041,
     "longitude": 121.5880572,
     "sortOrder": 5
@@ -162,7 +162,7 @@
     "history": "清乾隆年間（約1770年代），漳州移民從福建南靖二宣廟把土地公分靈請來，最初只是一座簡單的草壇，到嘉慶年間才改建成石造廟宇。「烘爐地」這個名字大有來頭——這裡山勢形似風水裡的「火爐」，加上海拔不高卻視野極佳，被風水師譽為難得一見的「聚財穴」。也正因如此，烘爐地南山福德宮成了全台最知名的「求財」土地公廟。每逢歲末年初，還有農曆二月初二土地公誕辰，上山參拜的人車總是絡繹不絕。山頂那尊高達兩公尺、手持元寶的土地公神像，慈祥的模樣早已是中和區的地標；入夜後居高臨下望去，台北盆地燈火璀璨，這裡也順理成章成了著名的夜景勝地。",
     "images": ["/assets/images/temples/temple-hongludi.png"],
     "url": "https://www.hunglodei.tw/",
-    "googleMap": "https://maps.app.goo.gl/hongludi",
+    "googleMap": "https://maps.google.com/?cid=2042951815845756788",
     "latitude": 24.9718368,
     "longitude": 121.4975598,
     "sortOrder": 6
@@ -182,6 +182,7 @@
     "history": "台北最早的孔廟建於清光緒五年（1879年），可惜到了日治時期遭到拆除。今天這座孔廟，是台北士紳在1925年發起重建的——他們請來設計龍山寺的泉州名匠王益順操刀，工程一直到1939年才落成。廟宇同樣採閩南式風格，與一牆之隔的大龍峒保安宮相映成趣，兩座建築一儒一道，共同構成了台北保存最完整的一片傳統建築群。",
     "images": ["/assets/images/temples/temple-taipei-confucius.png"],
     "url": "https://www.tctcc.taipei",
+    "googleMap": "https://maps.google.com/?cid=7269829153313436851",
     "latitude": 25.0727013,
     "longitude": 121.5165018,
     "sortOrder": 7
@@ -191,6 +192,7 @@
     "name": "台北文昌宮",
     "location": "台北市中山區",
     "address": "台北市中山區民生西路45巷9號",
+    "googleMap": "https://maps.google.com/?cid=18254476121765775052",
     "mainDeities": [
       {
         "id": "wenchang",
@@ -209,6 +211,7 @@
     "name": "松山奉天宮",
     "location": "台北市信義區",
     "address": "台北市信義區福德街221巷12號",
+    "googleMap": "https://maps.google.com/?cid=5607905391796647853",
     "mainDeities": [
       {
         "id": "yuhuang",
@@ -237,7 +240,7 @@
     "history": "清光緒元年（1875年），板橋林家的林維源捐出土地，協助興建奠濟宮，主祀開漳聖王，成為基隆地區最重要的漳州人信仰中心。從甲午戰爭到日治時期，奠濟宮歷經多次大型整修，一路和基隆的命運緊緊綁在一起——從清代的通商口岸，到後來的國際港口，基隆港的繁榮與變遷，它都看在眼裡。廟內至今保存著多件珍貴的清代匾額與石碑，記錄著基隆早期移民的拓墾故事。而廟宇周邊那座從日治時期一路延續至今的廟口夜市，早已成為基隆最具代表性的觀光地標。",
     "images": ["/assets/images/temples/temple-keelungdianji.png"],
     "url": "https://www.facebook.com/DianJiGong/",
-    "googleMap": "https://maps.app.goo.gl/search/基隆奠濟宮",
+    "googleMap": "https://maps.google.com/?cid=14401796649461744893",
     "latitude": 25.1280744,
     "longitude": 121.743085,
     "sortOrder": 10
@@ -257,7 +260,7 @@
     "history": "清乾隆十三年（1748年），淡水廳同知曾日瑛倡議興建新竹都城隍廟，是新竹地區歷史最悠久的官建廟宇之一。在清代人的想像裡，城隍廟就像一座「陰間縣衙」，和新竹知縣的衙門遙遙相望，一陰一陽，象徵著「人神共治」的理念。此後它歷經嘉慶、光緒年間多次重修，日治時期更由仕紳鄭肇基主持大規模翻修，才奠定今天的格局。廟內保存了大量清代匾額與楹聯，其中以「理陽氣」匾最為著名。而每年的「城隍爺出巡」是新竹市最大的宗教盛事，城隍爺繞行東西南北四座城門的路線，已經延續了近三百年。廟前廣場與周邊攤販，也聚成了名聞遐邇的「城隍廟口小吃」。",
     "images": ["/assets/images/temples/temple-hsinchucitygod.png"],
     "url": "http://www.weiling.org.tw/",
-    "googleMap": "https://maps.app.goo.gl/search/新竹都城隍廟",
+    "googleMap": "https://maps.google.com/?cid=17492759372388554891",
     "latitude": 24.8043564,
     "longitude": 120.9660651,
     "sortOrder": 11
@@ -277,7 +280,7 @@
     "history": "清嘉慶年間（約1810年代），福建漳州移民集資蓋起一座「景福祠」，供奉開漳聖王，這就是景福宮的前身。隨著桃園逐漸開發，廟也一路擴建，成了桃園市區最重要的信仰中心。歷經道光、同治年間多次整修，日治時期又進行大規模翻修，光復後才正式改名為「景福宮」，並在2002年完成最近一次大整修，廟貌煥然一新。從清代的拓墾聚落，到今天的直轄市，桃園變了又變，這座桃園最大的土地公廟卻始終矗立在市中心，是一代代桃園人共同的精神堡壘。",
     "images": ["/assets/images/temples/temple-taoyuanjingfu.png"],
     "url": "https://www.facebook.com/TaoyuanJingfuTemple/",
-    "googleMap": "https://maps.app.goo.gl/search/桃園景福宮",
+    "googleMap": "https://maps.google.com/?cid=4147780182156509096",
     "latitude": 25.02206,
     "longitude": 121.30333,
     "sortOrder": 12
@@ -297,6 +300,7 @@
     "history": "1989年，聖嚴法師在金山開創了法鼓山，直到2005年才舉行落成開山大典。他提出「提昇人的品質，建設人間淨土」的理念，主張佛教不該只在深山誦經，更要走進社會、關懷人間、淨化人心。也因此，法鼓山不只是一座佛教道場，更是一片結合教育、文化與慈善的綜合園區。這樣的路線，讓它在國際佛教界也占有一席重要的地位。",
     "images": ["/assets/images/temples/temple-fagushan.png"],
     "url": "https://www.ddm.org.tw",
+    "googleMap": "https://maps.google.com/?cid=11848497937389221475",
     "latitude": 25.2409502,
     "longitude": 121.6148125,
     "sortOrder": 13
@@ -315,7 +319,7 @@
     "description": "北埔老街的起點，就在慈天宮那片石條鋪成的廟埕上。這座新竹縣北埔鄉的縣定古蹟，是全縣最具代表性的客家信仰中心，也是整個北埔聚落的核心地標。它主祀觀世音菩薩，是典型的客家「觀音為先」信仰。廟的平面接近廣東客家的「雙堂二橫」格局，三川殿以砂岩雕刻見長；步口檐廊那對石雕蟠龍柱左右都做成向上盤的「升龍」，是台灣廟宇少見的手法。廟內還有兩組「二十四孝」石柱，雕工細膩，同樣是全台罕見。假日順著廟埕走進老街，遊客絡繹不絕。",
     "history": "慈天宮的身世，和漢人開墾北埔密不可分。清道光十四年（1834年），粵人姜秀鑾與閩人周邦正合組「金廣福墾號」，向新竹東南山區拓墾——據傳廟裡供奉的觀音菩薩，就是姜秀鑾親自從中國大陸奉迎回來的。道光二十年（1840年），姜秀鑾將它改建成木造廟宇。到了同治十三年（1874年），姜秀鑾的長孫姜榮華再度大改建，增築兩廊與前殿，奠定今日「兩殿、兩廊、兩橫屋」的格局。光緒末年的「北埔事件」（1907年）中，慈天宮更曾是重要據點，為這座廟添上一頁深遠的歷史。",
     "images": ["/assets/images/temples/temple-beipu-citien.png"],
-    "googleMap": "https://maps.app.goo.gl/beipu-citien",
+    "googleMap": "https://maps.google.com/?cid=1480177471064116822",
     "latitude": 24.6997628,
     "longitude": 121.0583752,
     "sortOrder": 14
@@ -335,7 +339,7 @@
     "history": "清乾隆五十一年（1786年），林爽文事件爆發，新竹、桃園一帶的客家鄉勇組成義軍，浴血保衛家園。戰事過後，兩百餘名犧牲的義勇被合葬在枋寮（今新埔鎮）。乾隆五十五年（1790年），鄉民集資建廟紀念，乾隆皇帝御賜「褒忠」匾額，這便是義民廟的由來。此後每逢動亂——朱一貴、戴潮春等事件——為守護鄉土而犧牲的義民，也陸續被請進廟裡合祀。就這樣，義民廟成了台灣客家精神的象徵聖地，而它「以塚為廟」的獨特信仰形式，在台灣的宗教文化裡始終獨樹一格。",
     "images": ["/assets/images/temples/temple-xinpu-yimin.png"],
     "url": "https://www.yimin.org.tw/",
-    "googleMap": "https://maps.app.goo.gl/search/褒忠亭義民廟",
+    "googleMap": "https://maps.google.com/?cid=16984425093641938005",
     "latitude": 24.8442777,
     "longitude": 121.036446,
     "sortOrder": 15
@@ -355,7 +359,7 @@
     "history": "清雍正年間（約1730年代），福建漳州移民集資興建武聖廟，主祀武聖關公。當時的新莊是北台灣最繁華的港口商埠，帆檣雲集，武聖廟便是商賈們祈求生意興隆、也彼此砥礪義氣誠信的重要信仰中心。此後歷經乾隆、嘉慶年間多次整修擴建，到道光年間更獲官方賜額，正式成為官方認可的祀典廟宇。日治時期，這座老廟一度面臨存廢危機，所幸得到地方仕紳力保才保存下來。廟內至今留有清代石碑、古匾與石獅等珍貴文物，靜靜見證著新莊從繁華港口走向現代城鎮的百年變遷。",
     "images": ["/assets/images/temples/temple-xinzhuangwu.png"],
     "url": "https://www.facebook.com/kct0511/",
-    "googleMap": "https://maps.app.goo.gl/search/中和烘爐地",
+    "googleMap": "https://maps.google.com/?cid=862564105281032633",
     "latitude": 25.0337842,
     "longitude": 121.4501079,
     "sortOrder": 16
@@ -379,7 +383,7 @@
     "history": "清乾隆年間（約1757年），地藏庵在新莊落成，是北台灣歷史最悠久的地藏庵之一。新莊早年是北部重要的商港，人口密集，卻也常伴著瘟疫與天災，地藏庵便成了超渡亡靈、祈求地方安寧的重要場所。每年農曆七月的中元祭典，是地藏庵最盛大的時刻，其中「文武大眾爺繞境」與「官將首」陣頭表演最為出名——新莊正是「官將首」陣頭的發源地，那些面目猙獰的官將首，以震懾鬼魅、維護陰陽秩序為己任，如今已被列為新北市的無形文化資產。",
     "images": ["/assets/images/temples/temple-xinzhuangdizang.png"],
     "url": "https://www.xzdza.org.tw/",
-    "googleMap": "https://maps.app.goo.gl/xzdza",
+    "googleMap": "https://maps.google.com/?cid=18128714433227309511",
     "latitude": 25.0377357,
     "longitude": 121.4568824,
     "sortOrder": 17
@@ -407,6 +411,7 @@
     "name": "新竹普天宮",
     "location": "新竹市東區",
     "address": "新竹市東區高峰路306巷66號",
+    "googleMap": "https://maps.google.com/?cid=3349517159199232979",
     "mainDeities": [
       {
         "id": "guansheng",

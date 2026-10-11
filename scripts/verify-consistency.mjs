@@ -371,7 +371,21 @@ for (const base of templeBases) {
   }
 }
 
-console.log('  神明分類 / 主祀神引用 / 圖片路徑 / redirect / 日文字形 全部檢查完畢');
+// 4g. 地圖連結：三語必須一字不差（同一間廟），而且只接受兩種已驗證的格式——
+//     地標 CID（maps.google.com/?cid=數字）或分享短網址（maps.app.goo.gl/亂碼）。
+//     2026-10-11 發現 18 個 maps.app.goo.gl/search/廟名（回 400）與 17 個拿廟 id 當短碼的假連結（回 404）。
+const MAP_OK = /^https:\/\/(maps\.google\.com\/\?cid=\d+|maps\.app\.goo\.gl\/[A-Za-z0-9]{10,})$/;
+for (const base of templeBases) {
+  const byLang = Object.fromEntries(LANGS.map((l) => [l, new Map(readJson(l, base).map((t) => [t.id, t.googleMap]))]));
+  for (const [id, zhMap] of byLang[BASE_LANG]) {
+    if (zhMap !== undefined && !MAP_OK.test(zhMap)) fail(`[地圖] ${base}: ${id} 的連結格式不對（${zhMap}）`);
+    for (const l of LANGS) {
+      if (byLang[l].get(id) !== zhMap) fail(`[地圖] ${base}: ${id} 的 ${l} 連結和中文不同`);
+    }
+  }
+}
+
+console.log('  神明分類 / 主祀神引用 / 圖片路徑 / redirect / 日文字形 / 地圖連結 全部檢查完畢');
 
 console.log('');
 if (problems.length) {

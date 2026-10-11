@@ -13,7 +13,7 @@
     "description": "Nearly every Wangye temple in Taiwan traces its roots back to one place — Nankunshen Daitian Temple in Beimen, Tainan, where branch temples return to 'pay respects to the ancestor.' It is, quite literally, the head temple of Wangye (Royal Lords) worship in Taiwan. This National Monument enshrines the Five Royal Lords — Lords Li, Chi, Wu, Zhu, and Fan — and holds a three-star rating in the Michelin Green Guide. The grounds are vast: the towering Lingxiao Treasure Hall stands on one side, the Jiangnan-style 'Da Kun Garden' on the other, every surface alive with master cut-porcelain, stone carving, and painting — no wonder it has been called a 'museum of traditional Taiwanese architecture.' When the pilgrimage season arrives on the Royal Lords' birthday, the drums and gongs of hundreds of branch temples' processions come pouring back to the mother temple — one of the most spectacular religious sights in southern Taiwan.",
     "history": "The story begins in 1661, around the time Koxinga arrived in Taiwan, making this one of the oldest Wangye temples on the island. Its most legendary chapter is the 'contest of magic' between the Five Royal Lords and the 'Child Lord' (Gina Gong) of the neighboring Wanshan Hall — the two sides fought over the same auspicious plot of land until, unable to prevail against each other, they struck a pact to share the incense offerings, and to this day both stand side by side on the site. Through repeated Qing-dynasty expansions and large-scale renovation in the Japanese era, the temple grew ever grander. Every year in the late fourth lunar month, the 'Nankunshen Grand Temple Fair' draws around a million worshippers — the largest Wangye festival in Taiwan. In 2012 it was registered as a National Monument, and its Koji pottery, wood carving, and stone work remain a must-see for lovers of traditional craft.",
     "images": ["/assets/images/temples/temple-nankunshen.png"],
-    "googleMap": "https://maps.app.goo.gl/search/Nankunshen+Daitian+Temple",
+    "googleMap": "https://maps.google.com/?cid=5698524408887702393",
     "latitude": 23.2858993,
     "longitude": 120.1433204,
     "sortOrder": 0
@@ -36,7 +36,7 @@
     "description": "Tainan Grand Mazu Temple was the first official Mazu temple in Taiwan — and it hides in the lanes of the West Central District, in what was once the palace of Prince Ningjing, Zhu Shugui of the Ming. It is the only Mazu temple in Taiwan converted from a royal residence, and its stature shows. After Admiral Shi Lang took Taiwan, he turned the palace into a Tianfei (Heavenly Consort) shrine, later elevated to a Tianhou (Empress of Heaven) temple, making it the heart of Mazu worship in the Qing era — imperial plaque after imperial plaque hangs within. Those seeking love shouldn't miss the Yue Lao (Matchmaker God) in the rear hall: he is said to look after the unrequited and to warm a cooling romance, and in Tainan his efficacy is the stuff of legend.",
     "history": "In 1684, Admiral Shi Lang petitioned the Kangxi Emperor to build this temple by imperial decree — the only Mazu temple in Taiwan so commissioned, which is how it earned the name 'Grand Tianhou Temple' and the highest rank in the state sacrificial rites. The ground beneath it had been the residence of Prince Ningjing, Zhu Shugui of the Ming — a princely mansion turned Mazu temple as one dynasty gave way to the next. Its official status gave it a solemn, imposing layout, and the gold-faced Mazu statue in the main hall ranks the highest of any Mazu temple in Taiwan. Within, precious Qing imperial plaques such as 'Radiant over the Seas' survive, and it is now a National Monument. And the efficacious Yue Lao in the rear hall is, for generations of Tainan locals, the first name that comes to mind when praying for love — one of the most popular matchmaking sites in the old capital.",
     "images": ["/assets/images/temples/temple-tainanmazu.png"],
-    "googleMap": "https://maps.app.goo.gl/search/Tainan+Grand+Mazu+Temple",
+    "googleMap": "https://maps.google.com/?cid=3928751623246684999",
     "latitude": 22.9965179,
     "longitude": 120.2017095,
     "sortOrder": 1
@@ -64,7 +64,7 @@
     "history": "In 1665, Zheng Jing — son of Koxinga — built this temple, first called the 'Grand Guan Di Temple,' the earliest official Guan Di temple in Taiwan. Its main gate faces Chihkan Tower directly, civil and martial gazing at each other across the street in the old capital's distinctive 'civil-and-martial facing' arrangement; and because it held state-ritual rank, it was paired with the Tainan Confucius Temple as the city's 'civil temple and martial temple.' Repeated Qing-dynasty renovations established today's three-hall layout, with the majestic Guan Di enthroned in the main hall. Its greatest treasure is the plaque reading 'Da Zhang Fu' (A True Man), brushed by the hand of the Yongzheng Emperor. Together with its renowned Yue Lao and the many attendant temples of the surrounding Liuhe precinct, this quarter forms one of the most complete temple clusters in old Tainan — and is today a National Monument.",
     "images": ["/assets/images/temples/temple-tainanwu.png"],
     "url": "https://www.facebook.com/TainanGrandMartialTemple/",
-    "googleMap": "https://maps.app.goo.gl/search/Tainan+Grand+Martial+Temple",
+    "googleMap": "https://maps.google.com/?cid=12511403035812143910",
     "latitude": 22.9965239,
     "longitude": 120.2021668,
     "sortOrder": 2
@@ -88,6 +88,7 @@
     "history": "In 1949 Master Hsing Yun came to Taiwan with the Nationalist government; in 1967 he bought a tract of barren hillside in Dashu, Kaohsiung, and began to build — and Fo Guang Shan was born. No one could have guessed that this scrubby hill would grow, over the next fifty-odd years, into an internationally renowned center of Buddhism. In 2011 the Buddha Memorial Center was completed, and it soon became the most important religious tourism destination in southern Taiwan, drawing several million visitors a year.",
     "images": ["/assets/images/temples/temple-foguangshan.png"],
     "url": "https://www.fgs.org.tw",
+    "googleMap": "https://maps.google.com/?cid=1468301486437044642",
     "latitude": 22.750556,
     "longitude": 120.445278,
     "sortOrder": 3
@@ -110,7 +111,7 @@
     "description": "At Xingang Fengtian Temple in Chiayi County, the Tiger Lord (Hu Ye) doesn't crouch beneath the altar table as he does almost everywhere else — here he has been invited up onto the altar itself, and that is what makes this Mazu temple so distinctive. As the local saying goes, 'Benggang has its Herald, Xingang has its Tiger Lord,' a nod to how celebrated this temple's Tiger Lord has become. Fengtian Temple is long known as the home of the 'First Mazu of Taiwan,' its halls filled with relics and plaques bearing witness to more than three hundred years of history. Each year during the great Dajia Mazu pilgrimage, the goddess's palanquin makes a point of resting here — making the temple a place worshippers from across Taiwan journey to once a year.",
     "history": "In 1700, the monk Shubi carried a golden Mazu statue across the sea from Meizhou, the goddess's homeland, and first built a temple at Benggang — today's Beigang in Yunlin — the Benggang Tianhou Temple. Fate turned in 1799, when the Benggang (Beigang) River flooded, sweeping away the old temple and the settlement around it; the faithful carried the Mazu statue to Mayuanliao — present-day Xingang — and rebuilt, naming the new temple Fengtian. It is from this shared origin that the long-running dispute between Xingang Fengtian and Beigang Chaotian temples over the 'orthodox First Mazu of Taiwan' springs. Generations of restoration have left behind exquisite cut-porcelain and Koji pottery — the works of the Koji master Ye Wang being the temple's crowning treasure. And each year, the destination of the great Dajia Mazu pilgrimage is none other than this temple.",
     "images": ["/assets/images/temples/temple-xingangfengtian.png"],
-    "googleMap": "https://maps.app.goo.gl/search/Xingang+Fengtian+Temple",
+    "googleMap": "https://maps.google.com/?cid=2265432032953395044",
     "latitude": 23.5567967,
     "longitude": 120.3479018,
     "sortOrder": 4
@@ -120,6 +121,7 @@
     "name": "Tainan Tiantan (Altar of Heaven)",
     "location": "West Central District, Tainan City",
     "address": "No. 16, Ln. 84, Sec. 2, Zhongyi Rd., West Central Dist., Tainan City",
+    "googleMap": "https://maps.google.com/?cid=458319961205529549",
     "mainDeities": [
       {
         "id": "yuhuang",
@@ -147,7 +149,7 @@
     "description": "High above the main gate hangs the plaque 'First Academy in Taiwan,' bestowed by the Kangxi Emperor — a single line that captures the standing of the Tainan Confucius Temple, the first Confucian temple in Taiwan and the highest seat of learning in the Qing era. Set in the West Central District, it follows the traditional 'school on the left, temple on the right' plan, grand and dignified. Though not a Taoist temple, it carries immense weight in Taiwan's folk belief and cultural inheritance. Each year on September 28th, Confucius's birthday, the 'Sacrificial Ceremony to Confucius' is still conducted according to ancient rites, faithfully preserving the 'Ba Yi' eight-row ceremonial dance — an essential stop for anyone drawn to Chinese culture and Confucian thought.",
     "history": "In 1665, Zheng Jing acted on the counsel of his adviser Chen Yonghua and raised this Confucius temple — the purpose plain enough: to promote learning and cultivate talent on this newly settled land. Through repeated Qing-dynasty additions and repairs, it grew to its present scale. During the Japanese colonial period the temple was for a time requisitioned for other uses, its Confucian rites restored only after the war. Today it stands as a National Monument and the center of Confucian culture in Taiwan.",
     "images": ["/assets/images/temples/temple-tainanconfucius.png"],
-    "googleMap": "https://maps.app.goo.gl/search/Tainan+Confucius+Temple",
+    "googleMap": "https://maps.google.com/?cid=802303505355083921",
     "latitude": 22.9903049,
     "longitude": 120.2042518,
     "sortOrder": 6
@@ -170,7 +172,7 @@
     "description": "Chihkan Tower is not a temple but one of the most famous historic sites in the West Central District — and a symbol of Tainan itself. It began life as 'Fort Provintia,' built by the Dutch, and the Haishen (Sea God) Temple and Wenchang Pavilion seen today rise directly atop the foundations of that old Dutch fort. The garden's greatest draw is the 'Nine Stone Tortoises Bearing Steles,' bestowed by the Qianlong Emperor to commemorate the quelling of the Lin Shuangwen uprising — objects of real historical weight. Up in the Wenchang Pavilion stands Kuixing, God of Examinations, vermilion brush in hand, which is why this ancient site doubles as a place where crowds of students come to pray for success in their exams.",
     "history": "In 1653 the Dutch raised Fort Provintia here. In 1661 Koxinga took the fort and established 'Chengtian Prefecture' as the island's highest seat of government, and Chihkan changed hands. Through earthquakes and local uprisings the old ramparts largely crumbled, and it was only in the Guangxu era that the Haishen Temple, Wenchang Pavilion, and Wuzi Shrine were built one by one on the site. What visitors see today rests mostly on those rebuilt foundations — Dutch fortress and Chinese pavilion stacked one atop the other, a rare historical scene where two architectural traditions meet.",
     "images": ["/assets/images/temples/temple-chihkan.png"],
-    "googleMap": "https://maps.app.goo.gl/search/Chihkan+Tower",
+    "googleMap": "https://maps.google.com/?cid=17466488504101853084",
     "latitude": 22.9972744,
     "longitude": 120.2027032,
     "sortOrder": 7
@@ -190,7 +192,7 @@
     "history": "In the Qianlong era — around the 1770s — the fishermen of Donggang pooled their money to build this temple to Lord Wen. What all Taiwan remembers it for, though, is the 'Welcoming the Royal Lords Peace Festival' held once every three years. Over eight days, the rite runs from 'Fetching the Water,' when the touring Royal Lord is welcomed ashore, to the final night's 'Sending Off the Kings,' when the magnificent King Boat is set ablaze to carry the Lord back to Heaven — every stage bound by strict ancient ceremony. The boat itself is built by local craftsmen using traditional techniques, reaching over ten meters in length, its beams carved and painted with breathtaking care. On the night of the sending-off, tens of thousands gather along the shore to watch the flames devour the vessel inch by inch — a sight both magnificent and profoundly moving. The Donggang Welcoming of the Royal Lords is today a National Important Folk Custom.",
     "images": ["/assets/images/temples/temple-donglong.png"],
     "url": "https://www.66.org.tw/",
-    "googleMap": "https://maps.app.goo.gl/search/Donggang+Donglong+Temple",
+    "googleMap": "https://maps.google.com/?cid=15681144924228885359",
     "latitude": 22.4630682,
     "longitude": 120.4487888,
     "sortOrder": 8
@@ -210,7 +212,7 @@
     "history": "The temple's beginnings were humble: in 1694, Zhuluo County first raised a simple City God shrine holding nothing but a spirit tablet. In the winter of 1715, the Zhuluo magistrate Zhou Zhongxuan donated his own salary to build a proper temple, which was reconstructed again in 1765. Its true moment of glory came in 1875, when the Guangxu Emperor enfeoffed the Chiayi City God as 'Marquis of Suijing' — the only county-level City God in all Taiwan to receive an imperial title. The present temple was completed in a 1940 rebuild that preserves the craftsmanship of the Japanese colonial era, and in 2015 it was designated a National Monument.",
     "images": ["/assets/images/temples/temple-chiayi-citygod.png"],
     "url": "https://www.chiayi.gov.tw/",
-    "googleMap": "https://maps.app.goo.gl/chiayi-citygod",
+    "googleMap": "https://maps.google.com/?cid=4930083161119714020",
     "latitude": 23.4784142,
     "longitude": 120.454231,
     "sortOrder": 9
@@ -230,7 +232,7 @@
     "history": "The temple is said to have been founded in the early Qianlong era, though the exact date is lost to record. A touching folk tale survives: an oil peddler from Fujian, passing through, hung the Guanyin incense amulet he carried on a guava tree to rest — and left without it. That night the amulet glowed in the dark like a bright pearl, and the villagers, certain the Bodhisattva had shown herself, built a temple to enshrine her. Many restorations followed, the most important in 1764, when the county magistrate Wang Yingzeng led a major rebuild. Much of what stands today reflects repairs from the Daoguang era and the Japanese colonial period.",
     "images": ["/assets/images/temples/temple-fongshanlongshan.png"],
     "url": "https://www.facebook.com/FongshanLongshanTemple/",
-    "googleMap": "https://maps.app.goo.gl/search/Fongshan+Longshan+Temple",
+    "googleMap": "https://maps.google.com/?cid=1666344148016138627",
     "latitude": 22.6206562,
     "longitude": 120.3620084,
     "sortOrder": 10
@@ -250,7 +252,7 @@
     "history": "In the Guangxu era — around the 1880s — the early settlers of Checheng pooled their funds to build this temple to Fude Zhengshen. Its grandeur set it apart from the small, modest Earth God shrines found elsewhere: legend holds that the Qing governor Liu Mingchuan, touring the south, was so struck by the temple's imposing air that he conferred upon it the name 'Fu'an Temple.' After the war it was expanded several times, its main hall rising lofty and resplendent in gold. Fu'an Temple's best-known tradition is the 'race for the first incense': in the countdown from New Year's Eve to the first day of the lunar year, worshippers surge forward to plant the very first incense stick — an electric, jostling scene. And with Kenting National Park close at hand, the temple has become a favorite waypoint for travelers heading south to pray for blessings.",
     "images": ["/assets/images/temples/temple-chechengfuan.png"],
     "url": "http://www.fuan.org.tw/",
-    "googleMap": "https://maps.app.goo.gl/search/Checheng+Fuan+Temple",
+    "googleMap": "https://maps.google.com/?cid=12041559885625507963",
     "latitude": 22.070838,
     "longitude": 120.7108142,
     "sortOrder": 11
@@ -260,6 +262,7 @@
     "name": "Pingtung Jiuru Sanshan Guowang Temple",
     "location": "Jiuru Township, Pingtung County",
     "address": "No. 174, Ren'ai St., Jiuru Township, Pingtung County",
+    "googleMap": "https://maps.google.com/?cid=17178237001016271324",
     "mainDeities": [
       {
         "id": "sanshan-guowang",
