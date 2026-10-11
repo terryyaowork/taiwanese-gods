@@ -186,8 +186,8 @@
   {
     "id": "taichung-fahua",
     "name": "Taichung Fahua Temple",
-    "location": "South District, Taichung City",
-    "address": "No. 180, Fahua St., South Dist., Taichung City",
+    "location": "West District, Taichung City",
+    "address": "No. 2, Juren St., West Dist., Taichung City",
     "googleMap": "https://maps.google.com/?cid=3550906514890478414",
     "mainDeities": [
       {
@@ -195,7 +195,7 @@
         "name": "Manjushri Bodhisattva"
       }
     ],
-    "description": "A candidate's amulet of wisdom is here at Taichung Fahua Temple. In Taichung's South District and dedicated to Manjushri Bodhisattva, Fahua Temple is a long-established Buddhist temple in the Taichung area. Manjushri symbolizes wisdom, riding a blue lion and wielding a sword to cut through ignorance and open the mind — and every exam season, students come here to pray for a clear head and success on the roll. The grounds are quiet and secluded, the architecture blending traditional and modern styles, and the temple regularly holds Buddhist lectures and meditation activities — a place in the bustling city where one can settle the mind.",
+    "description": "A candidate's amulet of wisdom is here at Taichung Fahua Temple. In Taichung's West District and dedicated to Manjushri Bodhisattva, Fahua Temple is a long-established Buddhist temple in the Taichung area. Manjushri symbolizes wisdom, riding a blue lion and wielding a sword to cut through ignorance and open the mind — and every exam season, students come here to pray for a clear head and success on the roll. The grounds are quiet and secluded, the architecture blending traditional and modern styles, and the temple regularly holds Buddhist lectures and meditation activities — a place in the bustling city where one can settle the mind.",
     "history": "Fahua Temple began as a small Guanyin temple in the Zhugaocuo settlement during the Kangxi reign of the Qing dynasty. Under Japanese rule it was rebuilt as a Japanese-style Buddhist temple, named 'Fahua Temple,' and placed under the Myoshinji branch of the Japanese Rinzai school, for a time wholly Japanese in character. After World War II, Taiwanese monks took it over and gradually drew it back into the tradition of Chinese Buddhism. In the 1970s the temple carried out a large-scale reconstruction, achieving the grand appearance of today. Its main hall now enshrines Shakyamuni Buddha, with Guanyin Bodhisattva and Ksitigarbha Bodhisattva alongside, and the temple actively promotes Buddhist education and social charity, regularly holding Dharma assemblies and meditation courses — one of the most historically rich Buddhist temples in central Taichung.",
     "images": ["/assets/images/temples/temple-taichung-fahua.png"],
     "latitude": 22.9822089,
