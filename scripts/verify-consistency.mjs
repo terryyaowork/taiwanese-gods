@@ -338,7 +338,9 @@ if (existsSync(redirectsPath)) {
     if (froms.has(from)) fail(`[redirect] 來源重複：${from}（第 ${froms.get(from)} 與 ${i + 1} 行）`);
     else froms.set(from, i + 1);
     tos.set(from, to);
-    if (hasDist) {
+    // splat / placeholder 規則（/temples/central/* -> /temples/:splat）的目標是請求時才展開，dist 裡不會有實體檔，只驗格式。
+    const isDynamic = /[*:]/.test(from) || /:/.test(to);
+    if (hasDist && !isDynamic) {
       if (!pageExists(to)) {
         fail(`[redirect] 目標不存在（會導到 404）：${from} -> ${to}`);
       }

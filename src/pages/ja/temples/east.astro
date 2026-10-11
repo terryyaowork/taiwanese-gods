@@ -42,7 +42,7 @@ const getTempleImage = (imagePath) => {
           const imageSrc = image && typeof image === 'object' ? image.src : image;
           return (
             <a
-              href={`/ja/temples/east/${temple.id}`}
+              href={`/ja/temples/${temple.id}`}
               class="group block bg-white/90 dark:bg-gray-800/90 rounded-lg overflow-hidden border border-gold-200 shadow-lg hover:shadow-2xl hover:border-red-400 transition duration-300 transform hover:-translate-y-1"
             >
               {imageSrc && (

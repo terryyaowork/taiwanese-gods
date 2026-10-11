@@ -36,8 +36,6 @@ export default defineConfig({
     }),
     sitemap({
       filter: (page) => {
-        // Exclude redirect pages (regional temple sub-paths)
-        if (/\/temples\/(central|south|east)\/[^/]+\/?$/.test(page)) return false;
         // Exclude /zh-TW/ duplicate pages (root paths are the canonical Chinese version)
         if (/\/zh-TW\//.test(page)) return false;
         return true;
