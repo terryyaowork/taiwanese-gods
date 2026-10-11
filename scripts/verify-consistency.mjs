@@ -16,6 +16,7 @@
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { findTaiwanGlyphs, isJaGlyphExempt } from './ja-glyphs.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const LANGS = ['zh-TW', 'en', 'ja'];
@@ -346,16 +347,14 @@ if (existsSync(redirectsPath)) {
   console.log(`  _redirects ${n} 條規則${hasDist ? '（含目標存在性）' : '（無 dist，僅驗格式）'}`);
 }
 
-// 4f. 日文字形：日文正文用日本字形（國→国、莊→荘、巖→巌）。兩種欄位例外：
-//     address 保留台灣原寫法（讀者要複製去地圖、給司機看）；poem 是籤詩原文，逐字保留。
-//     日文廟宇地址必須和中文一字不差。2026-10-11 發現 7 個廟名與 11 個地址不一致。
-const JA_OLD_GLYPHS = /[國莊巖]/;
-const JA_GLYPH_EXEMPT = new Set(['address', 'poem']);
+// 4f. 日文字形：日文正文用日本字形（對照表與例外規則在 scripts/ja-glyphs.mjs）。
+//     日文廟宇地址必須和中文一字不差。2026-10-11 發現字形混用 400 多處、11 個地址不一致。
 for (const base of dataFiles) {
   const walk = (v, key, path) => {
     if (typeof v === 'string') {
-      if (!JA_GLYPH_EXEMPT.has(key) && JA_OLD_GLYPHS.test(v)) {
-        fail(`[日文字形] ${base}${path} 用了台灣字形「${v.match(JA_OLD_GLYPHS)[0]}」，改成日本字形`);
+      const found = isJaGlyphExempt(base, key) ? [] : findTaiwanGlyphs(v);
+      if (found.length) {
+        fail(`[日文字形] ${base}${path} 用了台灣字形「${[...new Set(found)].join('')}」，改成日本字形`);
       }
     } else if (v && typeof v === 'object') {
       for (const [k, x] of Object.entries(v)) walk(x, Array.isArray(v) ? key : k, `${path}.${k}`);
