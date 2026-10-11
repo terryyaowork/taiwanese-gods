@@ -19,6 +19,26 @@
     "images": ["/assets/images/temples/temple-longshan.png"],
     "url": "https://www.lungshan.org.tw",
     "googleMap": "https://maps.app.goo.gl/iX8U3bnuKUjEWMnJ8",
+    "visit": {
+      "hours": "Daily 6:00 AM – 10:00 PM (last entry 9:45 PM)",
+      "gettingThere": "MRT Bannan (Blue) Line to Longshan Temple Station, then about a 3-minute walk. If you drive, park at the Monga Park underground garage across the street.",
+      "whenToGo": "The temple is busiest on the 1st and 15th of every lunar month, and on Guanyin's three feast days (lunar 2/19, 6/19, and 9/19).",
+      "checkedAt": "2026-10-11",
+      "sources": [
+        {
+          "name": "Taipei Travel",
+          "url": "https://www.travel.taipei/en/attraction/details/487"
+        },
+        {
+          "name": "Wanhua District Office",
+          "url": "https://whdo.gov.taipei/News_Content.aspx?n=AE0B0E0EEC836122&sms=A3DB4DC2F3BF810A&s=953C6CE5427BA73B"
+        },
+        {
+          "name": "NCHU Digital Formosa",
+          "url": "https://taiwan.nchu.edu.tw/DigitalFormosa/2018B/page7.html"
+        }
+      ]
+    },
     "latitude": 25.0372498,
     "longitude": 121.4998803,
     "sortOrder": 0

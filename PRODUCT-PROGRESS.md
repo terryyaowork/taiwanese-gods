@@ -39,6 +39,11 @@ taiwanese.gods 帳號查詢；查完已刪除臨時建立的探索。
 **待判：EXP-G-007（taoism 分類頁 title/meta，en 縮短 + zh 首次改，ja 不動當對照）。驗收日 2026-11-15，到期就判，不要拖。**
 基準與判法寫在 `~/.hermes/workspace/memory/gods-seo-experiments.json`；比的是同排名下的 CTR，不是週總量。
 
+**進行中：廟宇「參拜資訊」框（開放時間／怎麼去／何時去＋查證日期與來源）。** 樣本：龍山寺三語（2026-10-11）。
+資料放在每間廟的選填欄位 `visit`，元件是 `src/components/temples/TempleVisitInfo.astro`，沒有 `visit` 的廟不顯示。
+擴充規則：一次一間，依搜尋點擊排序——新竹普天宮 → 台中法華寺 → 花蓮港天宮 → 紅羅地 → 松山奉天宮。
+每項事實要有官方或公部門來源；只有部落格說法的（例如捷運出口號碼）不放；只寫農曆日期，不換算國曆。
+
 ---
 
 ## ✅ Step 0 已完成並上線（2026-08-09）
@@ -191,11 +196,12 @@ taiwanese.gods 帳號查詢；查完已刪除臨時建立的探索。
 7. **playwright 大規模失敗先查連接埠**：config 設了 `reuseExistingServer`，若 4321 被殘留行程佔著（回 404），測試會整批紅但程式其實沒問題。徵兆是跑很久（5 分鐘以上）。先 `Get-NetTCPConnection -LocalPort 4321` 殺掉再跑。2026-08-12 踩過兩次。
 8. **`astro build` 過 ≠ `astro check` 過**：build 不做 TS 檢查。push 前一律 `npm run check`（astro + eslint + prettier 三關），CI 是 `pnpm run check`。
 9. ~~資料裡的粗體記號會字面顯示~~ **2026-08-09 已修**：改成正確渲染粗體，資料不動（作者原本就是想強調）。
-   `src/utils/rich-text.ts` 提供兩個函式 —— `boldSegments()` 切段包 `<strong>`（有樣式的位置）、
-   `stripBold()` 移除記號（meta description / JSON-LD / 列表卡片摘要，那些是純文字位置，記號只是雜訊）。
-   套用範圍：`GodDetail.astro` 四個區塊 + 12 個神明列表頁 + 3 個 FAQ 頁（含其 FAQPage JSON-LD）。
-   負向驗收：`dist` 全站 **0 個**字面星號（修前 6 頁神明 + 3 頁 FAQ），92 頁有 `<strong>`；已加 5 個回歸測試。
-   ⚠ 記號不成對時（出現奇數次）刻意原樣輸出整行 —— 寧可露出星號，也不要把後半段整段變粗體。
+10. **dev server 對結尾斜線回 404**：`/en/temples/longshan/` 在 `astro dev` 是 404，正式站兩種都通。playwright 跑的是 dev server（4331），所以測試網址不要加結尾斜線，並且檢查 `response.status()` 是 200——404 頁也有 h1，只看 h1 會誤判通過。另外，4331 上若有舊的 dev server 殘留，新加的元件不會出現，先關掉再跑。2026-10-11 踩過。
+    `src/utils/rich-text.ts` 提供兩個函式 —— `boldSegments()` 切段包 `<strong>`（有樣式的位置）、
+    `stripBold()` 移除記號（meta description / JSON-LD / 列表卡片摘要，那些是純文字位置，記號只是雜訊）。
+    套用範圍：`GodDetail.astro` 四個區塊 + 12 個神明列表頁 + 3 個 FAQ 頁（含其 FAQPage JSON-LD）。
+    負向驗收：`dist` 全站 **0 個**字面星號（修前 6 頁神明 + 3 頁 FAQ），92 頁有 `<strong>`；已加 5 個回歸測試。
+    ⚠ 記號不成對時（出現奇數次）刻意原樣輸出整行 —— 寧可露出星號，也不要把後半段整段變粗體。
 
 ## 驗收清單（動完必跑）
 
@@ -220,6 +226,7 @@ npx playwright test    # tests/fortune.spec.ts — 動到求籤 / 擲筊必跑
 
 | 日期       | 動了什麼                                                                                                                                |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-10-11 | 廟宇詳細頁新增「參拜資訊」框（選填欄位 `visit`），樣本龍山寺三語；新增 `tests/temples.spec.ts`（6 個測試）                              |
 | 2026-10-11 | taoism 分類頁 title/meta 調整（en 79→60 字元、zh 改神名版），開 EXP-G-007，ja 當對照組                                                  |
 | 2026-10-11 | 取得 CTA 數據：28 天點擊率 fortune 3.4%／guide 4.9%，08-10 起合計 42 次；EXP-G-006 判定為 null_result                                   |
 | 2026-10-10 | 8 月新增的 9 間廟補主圖（Gemini 產生、逐張驗收），66 間全有圖；playwright 改用 4331 避免撞其他專案的 4321                               |

@@ -19,6 +19,26 @@
     "images": ["/assets/images/temples/temple-longshan.png"],
     "url": "https://www.lungshan.org.tw",
     "googleMap": "https://maps.app.goo.gl/iX8U3bnuKUjEWMnJ8",
+    "visit": {
+      "hours": "毎日 6:00〜22:00（最終入場 21:45）",
+      "gettingThere": "MRT板南線（ブルーライン）「龍山寺」駅から徒歩約3分。車の場合は、向かいの艋舺公園地下駐車場が便利です。",
+      "whenToGo": "旧暦の毎月1日・15日と、観音さまの三つの記念日（旧暦2月19日・6月19日・9月19日）は特に混み合います。",
+      "checkedAt": "2026-10-11",
+      "sources": [
+        {
+          "name": "台北旅遊網",
+          "url": "https://www.travel.taipei/en/attraction/details/487"
+        },
+        {
+          "name": "台北市萬華区公所",
+          "url": "https://whdo.gov.taipei/News_Content.aspx?n=AE0B0E0EEC836122&sms=A3DB4DC2F3BF810A&s=953C6CE5427BA73B"
+        },
+        {
+          "name": "中興大学 Digital Formosa",
+          "url": "https://taiwan.nchu.edu.tw/DigitalFormosa/2018B/page7.html"
+        }
+      ]
+    },
     "latitude": 25.0372498,
     "longitude": 121.4998803,
     "sortOrder": 0

@@ -19,6 +19,26 @@
     "images": ["/assets/images/temples/temple-longshan.png"],
     "url": "https://www.lungshan.org.tw",
     "googleMap": "https://maps.app.goo.gl/iX8U3bnuKUjEWMnJ8",
+    "visit": {
+      "hours": "每日 06:00–22:00（21:45 最後入場）",
+      "gettingThere": "搭捷運板南線（藍線）到龍山寺站，步行約 3 分鐘。開車可停對面的艋舺公園地下停車場。",
+      "whenToGo": "每逢農曆初一、十五，以及觀音的三個紀念日（農曆二月十九、六月十九、九月十九）人潮最多。",
+      "checkedAt": "2026-10-11",
+      "sources": [
+        {
+          "name": "臺北旅遊網",
+          "url": "https://www.travel.taipei/en/attraction/details/487"
+        },
+        {
+          "name": "臺北市萬華區公所",
+          "url": "https://whdo.gov.taipei/News_Content.aspx?n=AE0B0E0EEC836122&sms=A3DB4DC2F3BF810A&s=953C6CE5427BA73B"
+        },
+        {
+          "name": "中興大學數位臺灣",
+          "url": "https://taiwan.nchu.edu.tw/DigitalFormosa/2018B/page7.html"
+        }
+      ]
+    },
     "latitude": 25.0372498,
     "longitude": 121.4998803,
     "sortOrder": 0

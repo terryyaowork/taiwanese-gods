@@ -1,6 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
+import TempleVisitInfo, { type TempleVisit } from '~/components/temples/TempleVisitInfo.astro';
 import templesNorth from '~/data/zh-TW/temples-north.json';
 import templesCentral from '~/data/zh-TW/temples-central.json';
 import templesSouth from '~/data/zh-TW/temples-south.json';
@@ -346,6 +347,9 @@ const breadcrumbJsonLd = {
               </div>
             </div>
           </div>
+
+          <!-- Plan Your Visit (optional per temple) -->
+          <TempleVisitInfo visit={(temple as { visit?: TempleVisit }).visit} lang="zh-TW" />
 
           <!-- Action Buttons -->
           <div class="space-y-3">

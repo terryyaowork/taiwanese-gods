@@ -1,0 +1,91 @@
+---
+// Practical "plan your visit" box for a temple detail page. Optional per temple:
+// renders nothing when the temple has no `visit` data. Hours change, so the
+// checked date and sources are always shown with the facts.
+export interface VisitSource {
+  name: string;
+  url: string;
+}
+
+export interface TempleVisit {
+  hours: string;
+  gettingThere: string;
+  whenToGo: string;
+  checkedAt: string;
+  sources: VisitSource[];
+}
+
+export interface Props {
+  visit?: TempleVisit;
+  lang: 'zh-TW' | 'en' | 'ja';
+}
+
+const LABELS = {
+  'zh-TW': {
+    title: '參拜資訊',
+    hours: '開放時間',
+    gettingThere: '怎麼去',
+    whenToGo: '何時去',
+    checked: (date: string) => `${date} 查證`,
+    sources: '資料來源：',
+    separator: '、',
+  },
+  en: {
+    title: 'Plan Your Visit',
+    hours: 'Hours',
+    gettingThere: 'Getting There',
+    whenToGo: 'When to Go',
+    checked: (date: string) => `Checked on ${date}`,
+    sources: 'Sources: ',
+    separator: ', ',
+  },
+  ja: {
+    title: '参拝情報',
+    hours: '参拝時間',
+    gettingThere: 'アクセス',
+    whenToGo: '混雑する日',
+    checked: (date: string) => `${date} 確認`,
+    sources: '出典：',
+    separator: '、',
+  },
+};
+
+const { visit, lang } = Astro.props;
+const t = LABELS[lang];
+const rows = visit
+  ? [
+      { label: t.hours, text: visit.hours },
+      { label: t.gettingThere, text: visit.gettingThere },
+      { label: t.whenToGo, text: visit.whenToGo },
+    ]
+  : [];
+---
+
+{
+  visit && (
+    <div class="bg-white/95 dark:bg-gray-800/95 p-6 rounded-lg shadow-lg" data-testid="temple-visit">
+      <h3 class="font-bold text-lg text-red-900 dark:text-red-300 mb-4 pb-2 border-b border-red-100 dark:border-red-900">
+        {t.title}
+      </h3>
+      <dl class="space-y-4 text-sm">
+        {rows.map((row) => (
+          <div>
+            <dt class="font-bold text-gray-800 dark:text-gray-200">{row.label}</dt>
+            <dd class="text-gray-600 dark:text-gray-400">{row.text}</dd>
+          </div>
+        ))}
+      </dl>
+      <p class="mt-4 pt-3 border-t border-gray-100 dark:border-gray-700 text-xs text-gray-500 dark:text-gray-400">
+        {t.checked(visit.checkedAt)} · {t.sources}
+        {visit.sources.map((source, index) => (
+          <>
+            {index > 0 && t.separator}
+            <a href={source.url} target="_blank" rel="noopener" class="underline hover:text-red-700">
+              {source.name}
+            </a>
+          </>
+        ))}
+      </p>
+    </div>
+  )
+}
