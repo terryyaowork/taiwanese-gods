@@ -292,5 +292,92 @@
     "latitude": 23.2951009,
     "longitude": 120.2733225,
     "sortOrder": 13
+  },
+  {
+    "id": "chukou-longyin",
+    "name": "Chukou Longyin Temple",
+    "location": "Fanlu Township, Chiayi County",
+    "address": "No. 1, Chukou Village, Fanlu Township, Chiayi County",
+    "googleMap": "https://maps.google.com/?cid=6501032802069779541",
+    "mainDeities": [
+      {
+        "id": "jigong",
+        "name": "Ji Gong (Mad Monk)"
+      }
+    ],
+    "description": "Ji Gong, with his tattered hat, tattered fan and ragged robe, was once filmed at this very temple. According to the temple, both TTV's drama series Ji Gong and CTV's drama series Ji Gong the Living Buddha chose Chukou Longyin Temple in Fanlu, Chiayi, as a filming location. Longyin Temple is dedicated to Chan Master Ji Gong, the much-loved Living Buddha Ji Gong. It sits at the foot of Chukou Mountain on the way toward Alishan, within the Alishan National Scenic Area. The large stone panels on either side of the main entrance are carved with scenes of Ji Gong guiding people toward salvation, and the eaves are covered with auspicious dragons in cut-porcelain mosaic. The Yuantong Hall on the second floor enshrines Guanyin Bodhisattva, flanked by Manjushri and Samantabhadra. The temple has set lunar 10/3 as the day Chan Master Ji Gong attained the Way, and each year a birthday ceremony is held that morning during the chen hour. It is the liveliest day of the year.",
+    "history": "According to the temple's history, from 1966 onward a local family named Qiu repeatedly dreamed of a deity in ragged clothes holding a tattered fan, who told them to carve a statue. In 1974 the Qiu family brought a divided spirit of Chan Master Ji Gong from Longfeng Temple in Jiaxian, Kaohsiung. That same year the statue was carved and enshrined in their home, and they began consulting the deity on behalf of devotees and helping people. In August 1990, construction of Longyin Temple began with almost no funds. At first it relied on devotees working as volunteers; only later was a management committee gradually formed. On October 24, 1991, the structure of the inner hall was largely complete, and Chan Master Ji Gong was installed there ahead of the rest. According to the temple, TTV's Ji Gong was filmed here in August 1995 and CTV's Ji Gong the Living Buddha in June 1997, and so this new temple at the foot of the mountain came to be seen on television by many people.",
+    "visit": {
+      "hours": "Daily 6:00 AM – 7:00 PM",
+      "gettingThere": "The temple lists two public transit routes: take the Taiwan Tourist Shuttle from THSR Chiayi Station, or take a Chiayi Bus from the main station in downtown Chiayi, and get off at Chukou stop either way. Some Chiayi Bus services do not run on weekends and holidays, so check the latest timetable before you set out.",
+      "whenToGo": "Lunar 10/3 is the day the temple has set for Chan Master Ji Gong's attainment of the Way, and a birthday ceremony is held that day during the chen hour (7–9 AM). According to the temple, a fire-walking ceremony is usually held on the festival day, and it draws the biggest crowds.",
+      "checkedAt": "2026-10-12",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=6501032802069779541"
+        },
+        {
+          "name": "Longyin Temple official site (Public Transit)",
+          "url": "https://www.longin.org.tw/news_ii.html?ID=49"
+        },
+        {
+          "name": "Longyin Temple official site (Chan Master Ji Gong's Birthday Notice)",
+          "url": "https://www.longin.org.tw/news_ii.html?ID=34"
+        },
+        {
+          "name": "Longyin Temple official site (History)",
+          "url": "https://www.longin.org.tw/about.html?ID=1"
+        }
+      ]
+    },
+    "images": ["/assets/images/temples/temple-chukou-longyin.webp"],
+    "imageIsIllustration": true,
+    "latitude": 23.4389827,
+    "longitude": 120.6072795,
+    "sortOrder": 14
+  },
+  {
+    "id": "guanziling-huowangye",
+    "name": "Guanziling Huowangye Temple",
+    "location": "Baihe District, Tainan City",
+    "address": "No. 24-38, Guanling Village, Baihe District, Tainan City",
+    "googleMap": "https://maps.google.com/?cid=10707761289026570100",
+    "mainDeities": [
+      {
+        "id": "fudomyoo",
+        "name": "Acala (Fudo Myoo)"
+      }
+    ],
+    "description": "On the opening night of the autumn Guanziling Hot Spring Food Festival, an illuminated Acala float sets out from the Baoquan Bridge parking lot and is pulled up the mountain road to Dacheng Hall Plaza, with people in yukata carrying lanterns in the procession. The deity being carried out is the main god of Guanziling Huowangye Temple. Huowangye, the Fire King, is Acala (Fudo Myoo). In the early years of Japanese rule, when the hot springs were being developed, the Japanese set up an image of Acala above the spring source to pray for safety. Later the statue and its stone tablet were taken away, so local residents pooled money to build a temple, recreated the statue after the original, and gave it a name that came more naturally to Taiwanese tongues. The temple is small, yet it is the center of faith for Guanziling's hot spring businesses and residents. Each year the hot spring operators choose an incense master (luzhu) by divination to lead the offerings, praying that the springs never run dry. Before you soak, stop by to meet the guardian of these mud hot springs.",
+    "history": "In 1902, the Japanese developed the Guanziling hot springs and set up an image of Acala above the spring source to pray for safety. Later the Japanese took the statue and stone tablet away, and local people pooled money to build this temple, modeling a new statue on the original Acala. From then on he was called Huowangye, the Fire King. Each year the hot spring operators choose an incense master (luzhu) by divination to lead the offerings, praying that the springs keep flowing, and he became the guardian of the Guanziling hot springs. In recent years, events held by the Tainan City Government and the Siraya National Scenic Area Administration have referred to him as \"Acala (Huowangye).\" In the summer of 2022, the Siraya National Scenic Area Administration held a float festival timed to Huowangye's birthday, and in the summer of 2026 it held an Acala-themed street parade. The Tainan City Government Tourism Bureau, for its part, schedules the Acala night procession for the opening of the hot spring food festival each year. The wisdom king the Japanese brought here a century ago now walks the hot spring streets with the residents every year.",
+    "visit": {
+      "hours": "Daily 7:00 AM – 8:00 PM",
+      "whenToGo": "On the opening night of the autumn Guanziling Hot Spring Food Festival, an Acala night procession runs from around the Baoquan Bridge parking lot to Dacheng Hall Plaza. The date changes from year to year (September 17, 2022; September 21, 2024; October 25, 2025), so check the Tainan City Government Tourism Bureau's announcements before you go. In summer, the Siraya National Scenic Area Administration has also held a float festival and a street parade timed to Huowangye's birthday.",
+      "checkedAt": "2026-10-12",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=10707761289026570100"
+        },
+        {
+          "name": "Tainan Travel (Tourism Bureau, Tainan City Government): Guanziling Scenic Area",
+          "url": "https://www.twtainan.net/zh-tw/attractions/detail/590/"
+        },
+        {
+          "name": "Tainan Travel (Tourism Bureau, Tainan City Government): Autumn Special – Guanziling Night Procession Blessing and Hot Spring Two-Day Trip",
+          "url": "https://www.twtainan.net/zh-tw/tours/tour/322/"
+        },
+        {
+          "name": "Siraya National Scenic Area Administration: Guanziling Summer Float Festival",
+          "url": "https://www.siraya-nsa.gov.tw/zh-tw/event/news/11469"
+        }
+      ]
+    },
+    "images": ["/assets/images/temples/temple-guanziling-huowangye.webp"],
+    "imageIsIllustration": true,
+    "latitude": 23.3383407,
+    "longitude": 120.5047454,
+    "sortOrder": 15
   }
 ]

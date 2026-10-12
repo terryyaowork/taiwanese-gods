@@ -619,5 +619,44 @@
     "latitude": 24.8280843,
     "longitude": 121.0745984,
     "sortOrder": 27
+  },
+  {
+    "id": "jinshan-ciyin",
+    "name": "Jinshan Ciyin Temple",
+    "location": "Jinshan District, New Taipei City",
+    "address": "No. 63, Nanshihu, Wuhu Village, Jinshan District, New Taipei City",
+    "mainDeities": [
+      {
+        "id": "manjushri",
+        "name": "Manjushri Bodhisattva"
+      }
+    ],
+    "description": "Before an exam, some students bring a photocopy of their admission ticket and their stationery to the altar and pray to Manjushri. On exam day, they ask the temple staff to light a pineapple lamp of light for them. This is how Jinshan Ciyin Temple looks after test-takers. The temple is dedicated to Manjushri Bodhisattva (Manjusri), and according to the temple, it is the largest Manjushri place of practice in northern Taiwan. What sets it apart from most Buddhist temples is that five bodhisattvas are worshipped together: Manjushri, Ksitigarbha, Skanda (Weituo), Namo Seng and Mahasthamaprapta, whom the temple calls the Wuxian Bodhisattvas. Students come for help with their studies, but many others come to consult the bodhisattvas with divination blocks. They offer incense, state their name, birth date and address, and then ask, one question at a time, about whatever is weighing on their minds.",
+    "history": "Ciyin Temple began as a family shrine. According to the temple, around 1986 the lay Buddhist Li Zhenrong founded Ciyin Hall in his home next to Jinshan Elementary School, enshrining the Wuxian Bodhisattvas and inscribing the lines \"With kindness, compassion, joy and equanimity, help all beings; hear their cries and relieve suffering, the bodhisattva way.\" A management committee for Ciyin Hall was set up in 1996. In 2005, Jinshan Elementary School expanded and took over land for its campus, and Ciyin Hall faced demolition. Led by the hall's head, Zheng Lianxue, devotees donated more than 1,000 ping of building land and farmland. They first put up a sheet-metal shrine as a stopgap, then raised funds for a new temple. The new hall was completed in 2013, and in 2018 the New Taipei City Government issued its certificate, registering it as the foundation Jinshan Ciyin Temple of New Taipei City. The Wuxian Bodhisattvas' birthday Dharma assembly, held around lunar 9/28 each year, is the most important event of the temple's year.",
+    "googleMap": "https://maps.google.com/?cid=11584966916967381912",
+    "visit": {
+      "hours": "Daily 8:30 AM – 5:00 PM (service hours posted by the temple)",
+      "whenToGo": "It is busiest during the Wuxian Bodhisattvas' birthday Dharma assembly around lunar 9/28 each year (in 2026, November 6–8). In the first half of the year, the birthday celebration alternates between Manjushri Bodhisattva's birthday (lunar 4/4) and Skanda (Weituo) Bodhisattva's birthday (lunar 6/3).",
+      "checkedAt": "2026-10-12",
+      "sources": [
+        {
+          "name": "Jinshan Ciyin Temple (Services)",
+          "url": "https://www.ciyintemple.org/%e6%9c%8d%e5%8b%99%e9%a0%85%e7%9b%ae/"
+        },
+        {
+          "name": "Jinshan Ciyin Temple (Birthday Celebrations)",
+          "url": "https://www.ciyintemple.org/%e4%bd%9b%e8%aa%95%e6%85%b6%e5%85%b8/"
+        },
+        {
+          "name": "Jinshan Ciyin Temple (About the Founder)",
+          "url": "https://www.ciyintemple.org/%e5%89%b5%e8%be%a6%e4%ba%ba%e4%bb%8b%e7%b4%b9/"
+        }
+      ]
+    },
+    "images": ["/assets/images/temples/temple-jinshan-ciyin.webp"],
+    "imageIsIllustration": true,
+    "latitude": 25.2157939,
+    "longitude": 121.6150015,
+    "sortOrder": 28
   }
 ]

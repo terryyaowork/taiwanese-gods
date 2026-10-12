@@ -157,9 +157,15 @@
     "domain": "Foremost in Wisdom, Studies and Exams, Unhindered Eloquence",
     "description": "When exam season arrives, photocopies of admission tickets pile up like small mountains on the altars of temples that honor Manjushri Bodhisattva. Manjushri, also known as Wenshu Shili or Manjushri of Great Wisdom, is the great bodhisattva who is 'foremost in wisdom' in Buddhism. With Samantabhadra Bodhisattva he attends Shakyamuni Buddha, the three together called the 'Shakyamuni Triad'; when the central figure is Vairocana Buddha instead, they are called the 'Three Sages of the Avatamsaka.' His image is unforgettable: his right hand raises the sword of wisdom, which cuts through afflictions rather than enemies; his left holds a Prajna sutra; and he rides a blue-green lion, symbol of wisdom's fierce power. In Taiwan he is the guardian of students and test-takers, and visiting Manjushri before a big exam to ask for wisdom and a place on the list of successful candidates is a fixed routine for many families. But Manjushri is about more than exams. What he gives is the ability to think things through, so you can bring life's hard questions to him too.",
     "story": "Manjushri holds an astonishingly high place in the sutras. In the Avatamsaka Sutra he is the first teacher of the youth Sudhana and his fifty-three visits, the one whose words send the boy on a quest to seek out wise teachers. The Vimalakirti Sutra is even more vivid. The layman Vimalakirti fell ill, and the Buddha asked his disciples to visit him, but one after another they declined, because Vimalakirti's eloquence was so sharp that anyone who went would be left speechless. In the end only Manjushri accepted the task, and the meeting of these two supreme minds produced the most brilliant exchange on the Dharma in all the sutras.\n\nThe scriptures also record a secret: Manjushri actually became a Buddha long ago. In the past he was the Buddha called Supreme King of the Dragon Lineage, and in the future he will be the Tathagata Universal Vision. He took the form of a bodhisattva again only in order to help living beings. Mount Wutai in China is revered as Manjushri's sacred site, and eminent monks through the ages have made pilgrimages there. This faith in wisdom came to Taiwan with Buddhism and became the firmest support of Taiwan's test-takers.",
-    "temples": [],
+    "temples": [
+      {
+        "name": "Jinshan Ciyin Temple",
+        "location": "Jinshan District, New Taipei City",
+        "deityStory": "Dedicated to Manjushri Bodhisattva, the temple often sees students bringing photocopies of their exam admission tickets to pray. According to the temple, it is the largest Manjushri place of practice in northern Taiwan."
+      }
+    ],
     "image": "/assets/images/gods/manjushri.png",
-    "associatedTemples": [],
+    "associatedTemples": ["Jinshan Ciyin Temple (Jinshan District, New Taipei City)"],
     "worship": "Offerings to Manjushri have one special feature: besides fresh flowers and fruit, you can offer stationery, pens and books alike. What test-takers do most often is bring a copy of their admission ticket or the pen they will use in the exam to the altar to be blessed, praying for a clear mind in the exam room and a place on the list of successful candidates. Those who practice Manjushri's teachings recite his heart mantra, 'Om A Ra Pa Ca Na Dhih,' or chant the Prajnaparamita Sutra Spoken by Manjushri. On his birthday, the 4th day of the fourth lunar month, temples hold wisdom services, and around exam season many temples also offer wisdom lamps you can light. One reminder: Manjushri gives wisdom, not answers. You still have to study; his blessing is that what you study sinks in.",
     "festivals": "The 4th day of the fourth lunar month is Manjushri Bodhisattva's birthday, when major Buddhist temples hold wisdom services and prayer events. Many temples near schools also hold 'Wisdom Lamp services' timed to exam season, so students can light lamps and pray for blessings.",
     "sortOrder": 6
@@ -223,10 +229,18 @@
         "location": "Taipei City",
         "url": "https://maps.google.com/?cid=8934174258470216255",
         "deityStory": "A grotto carved into the cliff beside a waterfall, containing a stone relief of Acala. It was built during the Taisho era of Japanese rule, funded by Sano Shotaro, who ran the Hoshinoyu hot spring inn."
+      },
+      {
+        "name": "Guanziling Huowangye Temple",
+        "location": "Baihe District, Tainan City",
+        "deityStory": "In the early years of Japanese rule, the Japanese set up an image of Acala at the source of the Guanziling hot springs. Later, residents pooled money to build a temple and recreate the statue, renaming him Huowangye, the Fire King. The temple is the center of faith for the hot spring businesses and residents."
       }
     ],
     "image": "/assets/images/gods/fudomyoo.png",
-    "associatedTemples": ["Beitou Acala Grotto (Beitou District, Taipei City)"],
+    "associatedTemples": [
+      "Beitou Acala Grotto (Beitou District, Taipei City)",
+      "Guanziling Huowangye Temple (Baihe District, Tainan City)"
+    ],
     "worship": "There are two ways to worship Acala in Taiwan. In Chinese Buddhist settings, offerings are vegetarian and devotees recite Acala's heart mantra, a practice common among lay practitioners of Esoteric teachings. The most distinctive practice in Japanese-style Esoteric settings is the goma fire offering: wishes are written on goma sticks and thrown into the fire altar to burn, symbolizing the flames consuming karmic obstacles and carrying one's vows up to the Buddhas. Complete goma rites are uncommon in Taiwan and are mostly seen only at large Esoteric services. What do people ask him for? Acala is about holding on. When your will is weak, when obstacles make you want to give up, when you need to cut off a bad habit, he is especially fitting to pray to for steadfast resolve and unwavering practice. Japanese tradition treats the 28th of every month as Acala's day, and some practitioners in Taiwan still keep this day by reciting mantras and sitting in meditation.",
     "festivals": "**Acala's Day**: Japanese temples hold Acala services on the 28th of every month.\n\n**Goma Services**: Acala's most representative rite is the goma fire offering, usually held on his feast day, during the New Year period, or when a practitioner makes a special vow.\n\n**Shugendo-Related Practice**: some Taiwanese practitioners influenced by Japanese Buddhism still keep the tradition of a monthly Acala gathering (on the 28th of each month), practicing through mantra recitation, sitting meditation, and goma.\n\nA note: faith in Acala remains niche in Taiwan, mainly among **people interested in Esoteric Buddhism and students of Japanese-style Buddhism**. Ordinary visitors can observe its cultural traces at the few temples more deeply influenced by the Japanese colonial era.",
     "sortOrder": 10
