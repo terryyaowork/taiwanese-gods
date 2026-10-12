@@ -3,7 +3,7 @@
     "id": "academic",
     "title": "Academic & Exams",
     "description": "For exam success and wisdom",
-    "tips": "Bring a copy of your exam permit, celery (diligence), green onions (intelligence), garlic (winning odds), and radish (good luck). Taipei Wenchang Temple is the top destination.",
+    "tips": "Bring a copy of your exam permit, celery (diligence), green onions (intelligence), garlic (winning odds), and radish (good luck). Wenchang Dijun is the deity most people pray to before exams; the Taipei Wenchang Temple in Shuanglian is a common stop for test-takers.",
     "keywords": ["exams", "education", "certification", "interviews", "wisdom"],
     "gods": ["wenchang", "confucius", "guansheng", "lvdongbin"],
     "icon": "🎓"
@@ -12,7 +12,7 @@
     "id": "wealth",
     "title": "Wealth & Career",
     "description": "For wealth and business success",
-    "tips": "Offer sweets (Wealth God's favorite) and your business card. Military Wealth God (Guan Gong) is for sales/business; Civil Wealth God is for office workers. Tiger Lord 'bites money in'.",
+    "tips": "Offer auspicious items like fa gao (prosperity cake) and pineapple (ong lai, 'prosperity comes'), and your business card. Taiwan's most common Military Wealth God is Zhao Gongming; Guan Gong is also revered as one. At the Tiger Lord, pass a coin over the censer before his mouth, say 'Tiger Lord, bite money in,' and keep it as seed money.",
     "keywords": ["wealth", "startup", "raise", "investment", "sales"],
     "gods": ["caishen", "tudigong", "guansheng", "tigerlord"],
     "icon": "💰"
@@ -21,7 +21,7 @@
     "id": "love",
     "title": "Love & Marriage",
     "description": "For finding true love and harmony",
-    "tips": "Xia-Hai City God Temple and Longshan Temple are the top love shrines. Ask Yuelao for a red thread (3 Sheng Jiao needed). Zhinan Temple is famous for 'cutting off bad romances.'",
+    "tips": "Xia-Hai City God Temple and Longshan Temple are the top love shrines. Red-thread customs vary: Longshan Temple requires 3 consecutive Sheng Jiao, while at Xia-Hai you buy the thread and pass it over the censer. Zhinan Temple is famous for 'cutting off bad romances.'",
     "keywords": ["dating", "marriage", "reunion", "charisma", "romance"],
     "gods": ["yuelao", "guanyin"],
     "icon": "❤️"
@@ -30,7 +30,7 @@
     "id": "health",
     "title": "Health & Safety",
     "description": "For good health and safety",
-    "tips": "For chronic illness, ask for a 'Medicine Lot'. Report your condition sincerely to Baosheng Dadi. Mazu and Guanyin also protect safety — pray to Mazu before long journeys.",
+    "tips": "If you're unwell, see a doctor first; some also ask for a 'Medicine Lot' for peace of mind. Report your condition sincerely to Baosheng Dadi. Mazu and Guanyin also protect safety — pray to Mazu before long journeys.",
     "keywords": ["healing", "surgery", "longevity", "safety", "wellness"],
     "gods": ["baosheng", "mazu", "guanyin"],
     "icon": "🏥"
@@ -39,7 +39,7 @@
     "id": "fertility",
     "title": "Fertility & Childbirth",
     "description": "For conception and safe delivery",
-    "tips": "Offer dates, peanuts, longans, lotus seeds (pun: 'early birth of a noble child'). Touch the 'flower hairpin' at Longshan Temple for extra luck. After delivery, return with sticky rice to repay the vow.",
+    "tips": "Offer dates, peanuts, longans, lotus seeds (pun: 'early birth of a noble child'). After praying to Zhusheng Niangniang at Longshan Temple, gently touch the flowers on the offering table (some say white flowers for a boy, red for a girl). After delivery, return with sticky rice to repay the vow.",
     "keywords": ["pregnancy", "prenatal", "delivery", "parenting", "fertility"],
     "gods": ["zhusheng", "guanyin", "mazu"],
     "icon": "👶"
@@ -48,7 +48,7 @@
     "id": "justice",
     "title": "Justice & Disputes",
     "description": "For legal victories, finding lost items, and protection from villains",
-    "tips": "Report injustices to the City God, who presides over spiritual justice. Guan Di protects the righteous. Xinzhuang Dazhong Ye is famous for finding lost items. Never lie — these deities are strictly just.",
+    "tips": "Report injustices to the City God, the underworld's judge and guardian of the local community. Guan Di protects the righteous. To find lost items, people often pray to Dazhong Ye at Xinzhuang Dizang Temple. Never lie — these deities are strictly just.",
     "keywords": ["lawsuit", "rivals", "contract", "dispute", "lost items"],
     "gods": ["chenghuang", "guansheng", "dazhongye"],
     "icon": "⚖️"
