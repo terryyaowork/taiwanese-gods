@@ -8,22 +8,43 @@ interface VisitSource {
 interface Temple {
   id: string;
   name: string;
-  visit?: { hours: string; gettingThere: string; whenToGo: string; checkedAt: string; sources: VisitSource[] };
+  visit?: { hours?: string; gettingThere?: string; whenToGo?: string; checkedAt: string; sources: VisitSource[] };
 }
-const load = (lang: string): Temple[] => JSON.parse(fs.readFileSync(`src/data/${lang}/temples-north.json`, 'utf8'));
-const zhNorth = load('zh-TW');
-const enNorth = load('en');
-const jaNorth = load('ja');
+type VisitField = 'hours' | 'gettingThere' | 'whenToGo';
+const VISIT_FIELDS: VisitField[] = ['hours', 'gettingThere', 'whenToGo'];
+const loadRegion = (lang: string, region: string): Temple[] =>
+  JSON.parse(fs.readFileSync(`src/data/${lang}/temples-${region}.json`, 'utf8'));
+const zhNorth = loadRegion('zh-TW', 'north');
+const enNorth = loadRegion('en', 'north');
+const jaNorth = loadRegion('ja', 'north');
 
 // The visit box is optional per temple: it must show the data (with checked date
 // and sources) where `visit` exists, and render nothing where it does not.
 const LANGS = [
-  { prefix: '', data: zhNorth, checked: '查證' },
-  { prefix: '/en', data: enNorth, checked: 'Checked on' },
-  { prefix: '/ja', data: jaNorth, checked: '確認' },
+  {
+    prefix: '',
+    lang: 'zh-TW',
+    data: zhNorth,
+    checked: '查證',
+    fieldLabels: { hours: '開放時間', gettingThere: '怎麼去', whenToGo: '何時去' },
+  },
+  {
+    prefix: '/en',
+    lang: 'en',
+    data: enNorth,
+    checked: 'Checked on',
+    fieldLabels: { hours: 'Hours', gettingThere: 'Getting There', whenToGo: 'When to Go' },
+  },
+  {
+    prefix: '/ja',
+    lang: 'ja',
+    data: jaNorth,
+    checked: '確認',
+    fieldLabels: { hours: '参拝時間', gettingThere: 'アクセス', whenToGo: '混雑する日' },
+  },
 ];
 
-for (const { prefix, data, checked } of LANGS) {
+for (const { prefix, lang, data, checked, fieldLabels } of LANGS) {
   const withVisit = data.find((t) => t.visit);
   const withoutVisit = data.find((t) => !t.visit);
 
@@ -36,14 +57,28 @@ for (const { prefix, data, checked } of LANGS) {
     expect(response?.status()).toBe(200);
     const box = page.getByTestId('temple-visit');
     await expect(box).toBeVisible();
-    await expect(box).toContainText(visit.hours);
-    await expect(box).toContainText(visit.gettingThere);
-    await expect(box).toContainText(visit.whenToGo);
+    for (const f of VISIT_FIELDS) if (visit[f]) await expect(box).toContainText(visit[f]);
     await expect(box).toContainText(checked);
     await expect(box).toContainText(visit.checkedAt);
     await expect(box.locator('a')).toHaveCount(visit.sources.length);
     for (const source of visit.sources) {
       await expect(box.locator(`a[href="${source.url}"]`)).toHaveText(source.name);
+    }
+  });
+
+  test(`visit box leaves out fields that have no data (${prefix || 'zh'})`, async ({ page }) => {
+    // Any region: the first temple whose visit is missing at least one field.
+    const all = ['north', 'central', 'south', 'east'].flatMap((r) => loadRegion(lang, r));
+    const partial = all.find((t) => t.visit && VISIT_FIELDS.some((f) => !t.visit?.[f]));
+    expect(partial).toBeTruthy();
+    if (!partial?.visit) return;
+    const response = await page.goto(`${prefix}/temples/${partial.id}`);
+    expect(response?.status()).toBe(200);
+    const box = page.getByTestId('temple-visit');
+    await expect(box).toBeVisible();
+    for (const f of VISIT_FIELDS) {
+      const label = box.locator('dt', { hasText: fieldLabels[f] });
+      await expect(label).toHaveCount(partial.visit[f] ? 1 : 0);
     }
   });
 

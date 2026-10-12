@@ -1,16 +1,17 @@
 ---
 // Practical "plan your visit" box for a temple detail page. Optional per temple:
-// renders nothing when the temple has no `visit` data. Hours change, so the
-// checked date and sources are always shown with the facts.
+// renders nothing when the temple has no `visit` data. Each field is optional too:
+// a field we could not source is left out rather than filled with a guess.
+// Hours change, so the checked date and sources are always shown with the facts.
 export interface VisitSource {
   name: string;
   url: string;
 }
 
 export interface TempleVisit {
-  hours: string;
-  gettingThere: string;
-  whenToGo: string;
+  hours?: string;
+  gettingThere?: string;
+  whenToGo?: string;
   checkedAt: string;
   sources: VisitSource[];
 }
@@ -57,7 +58,7 @@ const rows = visit
       { label: t.hours, text: visit.hours },
       { label: t.gettingThere, text: visit.gettingThere },
       { label: t.whenToGo, text: visit.whenToGo },
-    ]
+    ].filter((row) => row.text)
   : [];
 ---
 

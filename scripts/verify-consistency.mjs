@@ -416,6 +416,34 @@ for (const base of templeBases) {
   }
 }
 
+// 4j. 參拜資訊（visit）：至少一欄、要有來源與查證日期；三語的欄位與來源網址要一致。
+//     每一欄都選填——查不到來源的欄位寧可留空，不要補猜的內容（2026-10-12 法華寺只有時間與交通）。
+const VISIT_FIELDS = ['hours', 'gettingThere', 'whenToGo'];
+for (const base of templeBases) {
+  const byLang = Object.fromEntries(LANGS.map((l) => [l, new Map(readJson(l, base).map((t) => [t.id, t.visit]))]));
+  for (const [id, zh] of byLang[BASE_LANG]) {
+    for (const l of LANGS) {
+      const v = byLang[l].get(id);
+      if (!zh && !v) continue;
+      if (!zh || !v) {
+        fail(`[參拜資訊] ${base}: ${id} 只有部分語系有 visit`);
+        continue;
+      }
+      const fields = VISIT_FIELDS.filter((f) => v[f]);
+      if (fields.length === 0) fail(`[參拜資訊] ${base}: ${id} (${l}) 三欄都空`);
+      if (fields.join() !== VISIT_FIELDS.filter((f) => zh[f]).join())
+        fail(`[參拜資訊] ${base}: ${id} (${l}) 有填的欄位和中文不同`);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(v.checkedAt || '')) fail(`[參拜資訊] ${base}: ${id} (${l}) 缺查證日期`);
+      const urls = (v.sources || []).map((s) => s.url);
+      if (urls.length === 0 || (v.sources || []).some((s) => !s.name || !/^https:\/\//.test(s.url))) {
+        fail(`[參拜資訊] ${base}: ${id} (${l}) 來源要有名稱與 https 網址`);
+      }
+      if (urls.join() !== (zh.sources || []).map((s) => s.url).join())
+        fail(`[參拜資訊] ${base}: ${id} (${l}) 來源網址和中文不同`);
+    }
+  }
+}
+
 // 4h. 神明頁的「靈驗宮廟」連結：名稱在廟宇資料庫裡的，頁面連到站內廟宇頁，不能再帶 url（不會顯示，只會過期）；
 //     不在資料庫的，url 只接受 4g 的地圖格式（或不填，顯示成不可點的卡片），三語相同。
 //     2026-10-11 發現神明頁有 35 個沒在用的官網連結（16 個壞掉）、FB 連結是推測出來的、開隆宮網域不存在。
