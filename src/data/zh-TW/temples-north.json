@@ -59,6 +59,17 @@
     "images": ["/assets/images/temples/temple-xingtian.png"],
     "url": "https://www.ht.org.tw",
     "googleMap": "https://maps.app.goo.gl/metg9bbR6hathxpZ8",
+    "visit": {
+      "hours": "每日 04:00–21:00",
+      "whenToGo": "農曆六月二十四關聖帝君聖誕是一年中最重要的節慶；廟方平日也提供收驚服務。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.app.goo.gl/metg9bbR6hathxpZ8"
+        }
+      ]
+    },
     "latitude": 25.0630848,
     "longitude": 121.5338448,
     "sortOrder": 1
@@ -79,6 +90,17 @@
     "images": ["/assets/images/temples/temple-baoan.png"],
     "url": "https://www.baoan.org.tw",
     "googleMap": "https://maps.app.goo.gl/LhkSuHr4Q1As3dQh8",
+    "visit": {
+      "hours": "每日 06:00–21:00",
+      "whenToGo": "農曆三月十五保生大帝聖誕前後最熱鬧，保安宮的「保生文化祭」長達兩個多月，期間有家姓戲、過火與放火獅等活動。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.app.goo.gl/LhkSuHr4Q1As3dQh8"
+        }
+      ]
+    },
     "latitude": 25.0723373,
     "longitude": 121.5155847,
     "sortOrder": 2
@@ -103,6 +125,17 @@
     "images": ["/assets/images/temples/temple-citygod.png"],
     "url": "http://www.tpecitygod.org",
     "googleMap": "https://maps.google.com/?cid=7596797163613549522",
+    "visit": {
+      "hours": "每日 07:00–19:00",
+      "whenToGo": "農曆五月十三「台北迎城隍」人潮最多，俗稱「五月十三人看人」；七夕（農曆七月七日）與 2 月 14 日情人節前後，求月老的信眾也特別多。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=7596797163613549522"
+        }
+      ]
+    },
     "latitude": 25.0556263,
     "longitude": 121.5102099,
     "sortOrder": 3
@@ -123,6 +156,17 @@
     "images": ["/assets/images/temples/temple-ciyou.png"],
     "url": "https://www.ssjyg.org.tw",
     "googleMap": "https://maps.app.goo.gl/4pQhoRnjQgDyiTzW9",
+    "visit": {
+      "hours": "每日 05:30–22:30",
+      "whenToGo": "農曆三月二十三媽祖聖誕是媽祖廟一年中最重要的日子。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.app.goo.gl/4pQhoRnjQgDyiTzW9"
+        }
+      ]
+    },
     "latitude": 25.0512927,
     "longitude": 121.5776446,
     "sortOrder": 4
@@ -143,6 +187,16 @@
     "images": ["/assets/images/temples/temple-zhinan.png"],
     "url": "https://www.chih-nan-temple.org/",
     "googleMap": "https://maps.google.com/?cid=4588651315000145868",
+    "visit": {
+      "whenToGo": "農曆四月十四呂仙祖聖誕，指南宮會舉辦祝壽法會，並有詩朗誦、書法展等文藝活動。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=4588651315000145868"
+        }
+      ]
+    },
     "latitude": 24.9796041,
     "longitude": 121.5880572,
     "sortOrder": 5
@@ -199,6 +253,17 @@
     "images": ["/assets/images/temples/temple-taipei-confucius.png"],
     "url": "https://www.tctcc.taipei",
     "googleMap": "https://maps.google.com/?cid=7269829153313436851",
+    "visit": {
+      "hours": "週二至週日 08:30–21:00，週一休息",
+      "whenToGo": "每年 9 月 28 日教師節的祭孔大典（釋奠禮）最值得專程前來。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=7269829153313436851"
+        }
+      ]
+    },
     "latitude": 25.0727013,
     "longitude": 121.5165018,
     "sortOrder": 7
@@ -218,6 +283,17 @@
     "description": "每到大考季，台北文昌宮的牆上就會掛滿一張張准考證影本，密密麻麻疊成一片，蔚為奇觀。這座位在台北市中山區、雙連捷運站旁的廟，是台北市區知名的文昌廟，主祀掌管功名的文昌帝君。來拜的人手上總提著一袋「諧音供品」——蔥求聰明、芹菜求勤奮、蘿蔔（菜頭）求好彩頭、粽子求「包中」，把對金榜題名的期待，全寄託在這些看得見的心意裡。",
     "history": "台北文昌宮的起源在日治時期：據說商人帶來的文昌帝君神像被棄置在雙連的樹林裡，後來被人尋獲供奉，1960年擴建。之後因為捷運淡水線施工，廟遷進民享公園，1992年在公園內重建。它規模雖然不大，但地處台北市中心、交通便利，再累積了長年「靈驗」的口碑，漸漸成了考生常來的文昌廟。每逢大考前夕，廟裡就湧入大批考生和家長祈求上榜，那面貼滿准考證的牆，成了獨特的文化景觀。",
     "images": ["/assets/images/temples/temple-taipei-wenchang.png"],
+    "visit": {
+      "hours": "每日 07:00–21:00",
+      "whenToGo": "大考前夕考生和家長湧入祈求上榜；農曆二月初三文昌帝君聖誕前後也常有祈福法會。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=18254476121765775052"
+        }
+      ]
+    },
     "latitude": 25.0591875,
     "longitude": 121.5210132,
     "sortOrder": 8
@@ -277,6 +353,17 @@
     "images": ["/assets/images/temples/temple-keelungdianji.png"],
     "url": "https://www.facebook.com/profile.php?id=61555934995950",
     "googleMap": "https://maps.google.com/?cid=14401796649461744893",
+    "visit": {
+      "hours": "每日 07:00–22:00",
+      "whenToGo": "農曆二月十五開漳聖王聖誕是一年中最重要的祭典。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=14401796649461744893"
+        }
+      ]
+    },
     "latitude": 25.1280744,
     "longitude": 121.743085,
     "sortOrder": 10
@@ -297,6 +384,17 @@
     "images": ["/assets/images/temples/temple-hsinchucitygod.png"],
     "url": "https://www.weiling.org.tw/",
     "googleMap": "https://maps.google.com/?cid=17492759372388554891",
+    "visit": {
+      "hours": "每日 05:00–22:00",
+      "whenToGo": "農曆七月的「竹塹中元城隍祭」最震撼，有「夯枷解厄」儀式與城隍爺出巡繞境。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=17492759372388554891"
+        }
+      ]
+    },
     "latitude": 24.8043564,
     "longitude": 120.9660651,
     "sortOrder": 11
@@ -317,6 +415,17 @@
     "images": ["/assets/images/temples/temple-taoyuanjingfu.png"],
     "url": "https://www.jingfugung.com/",
     "googleMap": "https://maps.google.com/?cid=4147780182156509096",
+    "visit": {
+      "hours": "每日 06:00–20:50",
+      "whenToGo": "農曆二月十五開漳聖王聖誕是一年中最重要的祭典。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=4147780182156509096"
+        }
+      ]
+    },
     "latitude": 24.9949833,
     "longitude": 121.3108364,
     "sortOrder": 12
@@ -337,6 +446,17 @@
     "images": ["/assets/images/temples/temple-fagushan.png"],
     "url": "https://www.ddm.org.tw",
     "googleMap": "https://maps.google.com/?cid=11848497937389221475",
+    "visit": {
+      "hours": "每日 09:00–16:00",
+      "whenToGo": "農曆四月初八佛誕日（浴佛節）是佛教重要節日，各寺院舉辦浴佛法會；平日適合來靜心走走。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=11848497937389221475"
+        }
+      ]
+    },
     "latitude": 25.2409502,
     "longitude": 121.6148125,
     "sortOrder": 13
@@ -356,6 +476,17 @@
     "history": "慈天宮的身世，和漢人開墾北埔密不可分。清道光十四年（1834年），粵人姜秀鑾與閩人周邦正合組「金廣福墾號」，向新竹東南山區拓墾——據傳廟裡供奉的觀音菩薩，就是姜秀鑾親自從中國大陸奉迎回來的。道光二十年（1840年），姜秀鑾將它改建成木造廟宇。到了同治十三年（1874年），姜秀鑾的長孫姜榮華再度大改建，增築兩廊與前殿，奠定今日「兩殿、兩廊、兩橫屋」的格局。1907年，日治時期的「北埔事件」就發生在慈天宮所在的北埔聚落。",
     "images": ["/assets/images/temples/temple-beipu-citien.png"],
     "googleMap": "https://maps.google.com/?cid=1480177471064116822",
+    "visit": {
+      "hours": "每日 06:00–19:00",
+      "whenToGo": "觀音三大紀念日（農曆二月十九、六月十九、九月十九）有誦經祈福法會；假日北埔老街遊客較多。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=1480177471064116822"
+        }
+      ]
+    },
     "latitude": 24.6997628,
     "longitude": 121.0583752,
     "sortOrder": 14
@@ -376,6 +507,17 @@
     "images": ["/assets/images/temples/temple-xinpu-yimin.png"],
     "url": "https://www.yimin.org.tw/",
     "googleMap": "https://maps.google.com/?cid=16984425093641938005",
+    "visit": {
+      "hours": "每日 06:00–19:00",
+      "whenToGo": "農曆七月二十日義民祭是一年中最盛大的日子，由桃竹地區十五大庄輪流主辦，有「賽神豬」等儀式。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=16984425093641938005"
+        }
+      ]
+    },
     "latitude": 24.8442777,
     "longitude": 121.036446,
     "sortOrder": 15
@@ -396,6 +538,17 @@
     "images": ["/assets/images/temples/temple-xinzhuangwu.png"],
     "url": "https://www.facebook.com/wusheng.org.tw",
     "googleMap": "https://maps.google.com/?cid=862564105281032633",
+    "visit": {
+      "hours": "每日 07:30–20:30",
+      "whenToGo": "農曆六月二十四關聖帝君聖誕是一年中最重要的節慶。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=862564105281032633"
+        }
+      ]
+    },
     "latitude": 25.0337842,
     "longitude": 121.4501079,
     "sortOrder": 16
@@ -420,6 +573,17 @@
     "images": ["/assets/images/temples/temple-xinzhuangdizang.png"],
     "url": "https://www.xzdza.org.tw/",
     "googleMap": "https://maps.google.com/?cid=18128714433227309511",
+    "visit": {
+      "hours": "每日 08:30–17:00",
+      "whenToGo": "農曆五月初一「新莊大拜拜」（大眾爺遶境）是一年裡最盛大的日子，有暗訪儀式與官將首陣頭；農曆七月底另有地藏王菩薩聖誕法會。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=18128714433227309511"
+        }
+      ]
+    },
     "latitude": 25.0377357,
     "longitude": 121.4568824,
     "sortOrder": 17
@@ -440,6 +604,17 @@
     "images": ["/assets/images/temples/temple-xinzhuang-guangfu.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=10283934670926035896",
+    "visit": {
+      "hours": "每日 08:00–18:00",
+      "whenToGo": "農曆二月廿五為三山國王聖誕；這座廟已少有香火，平日可從容細看清代建築。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=10283934670926035896"
+        }
+      ]
+    },
     "latitude": 25.0355685,
     "longitude": 121.4552737,
     "sortOrder": 18
@@ -495,6 +670,17 @@
     "images": ["/assets/images/temples/temple-sanxia-changfu.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=5983519490857505777",
+    "visit": {
+      "hours": "每日 05:00–22:00",
+      "whenToGo": "農曆正月初六清水祖師聖誕是最重要的節日，長福巖當天有百年以上傳統的神豬比賽。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=5983519490857505777"
+        }
+      ]
+    },
     "latitude": 24.9337902,
     "longitude": 121.3703176,
     "sortOrder": 21
@@ -515,6 +701,17 @@
     "images": ["/assets/images/temples/temple-manka-qingshui.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=13678376866519882228",
+    "visit": {
+      "hours": "每日 06:00–18:00",
+      "whenToGo": "農曆正月初六清水祖師聖誕是最重要的節日；平日廟內安靜，適合坐下來慢慢看。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=13678376866519882228"
+        }
+      ]
+    },
     "latitude": 25.0402174,
     "longitude": 121.5025954,
     "sortOrder": 22
@@ -535,6 +732,17 @@
     "images": ["/assets/images/temples/temple-tamsui-qingshui.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=13357688321990784336",
+    "visit": {
+      "hours": "每日 04:30–21:00",
+      "whenToGo": "農曆五月初六祖師得道日的祭典，就是淡水有名的「大拜拜」；農曆正月初六清水祖師聖誕也是重要節日。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=13357688321990784336"
+        }
+      ]
+    },
     "latitude": 25.1703568,
     "longitude": 121.4410754,
     "sortOrder": 23
@@ -555,6 +763,17 @@
     "images": ["/assets/images/temples/temple-tamsui-yinshan.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=11859948809437008348",
+    "visit": {
+      "hours": "每日 07:00–17:30",
+      "whenToGo": "農曆正月初六定光古佛聖誕是一年中最重要的慶典。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=11859948809437008348"
+        }
+      ]
+    },
     "latitude": 25.169174,
     "longitude": 121.448532,
     "sortOrder": 24
@@ -576,6 +795,17 @@
     "imageIsIllustration": true,
     "url": "https://www.zlskyt.com.tw",
     "googleMap": "https://maps.google.com/?cid=7194270883373393240",
+    "visit": {
+      "hours": "每日 06:00–22:00",
+      "whenToGo": "觀音三大紀念日（農曆二月十九、六月十九、九月十九）有誦經祈福法會；春天庭園有櫻花，平常日早晨最安靜。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=7194270883373393240"
+        }
+      ]
+    },
     "latitude": 25.0836731,
     "longitude": 121.3893262,
     "sortOrder": 25
@@ -596,6 +826,17 @@
     "images": ["/assets/images/temples/temple-manka-dizang.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=8053789533490894167",
+    "visit": {
+      "hours": "每日 05:00–20:30",
+      "whenToGo": "農曆七月三十日地藏王菩薩聖誕，是這座小廟一年裡最熱鬧的時候；其他時候多半安靜。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=8053789533490894167"
+        }
+      ]
+    },
     "latitude": 25.0368701,
     "longitude": 121.5006503,
     "sortOrder": 26
@@ -616,6 +857,16 @@
     "images": ["/assets/images/temples/temple-xinpu-guanghe.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=12853975680603968433",
+    "visit": {
+      "whenToGo": "農曆二月廿五三山國王聖誕是一年中最重要的祭典日。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=12853975680603968433"
+        }
+      ]
+    },
     "latitude": 24.8280843,
     "longitude": 121.0745984,
     "sortOrder": 27

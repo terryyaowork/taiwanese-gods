@@ -14,6 +14,17 @@
     "history": "故事要從明永曆十六年（1662年）說起，這座廟的創建與鄭成功來台時間相近，是台灣歷史最悠久的王爺廟之一。廟裡最傳奇的一段，是主祀的五府千歲與萬善堂「囝仔公」的「鬥法」——兩方為了同一塊風水寶地相爭不下，最後訂下共享香火的約定，至今兩者仍並立於此。現在的廟址在1817年遷建、1822年落成，此後廟宇越發壯觀，被譽為「王爺信仰總廟」。每年農曆四月下旬的進香期，全台的進香人潮湧入這裡。1985年，它被評定為古蹟，今天是國定古蹟。",
     "images": ["/assets/images/temples/temple-nankunshen.png"],
     "googleMap": "https://maps.google.com/?cid=5698524408887702393",
+    "visit": {
+      "hours": "每日 06:00–21:00",
+      "whenToGo": "每年農曆四月下旬的進香期，全台分靈廟宇的進香團與陣頭湧回祖廟，是一年中最熱鬧的時候。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=5698524408887702393"
+        }
+      ]
+    },
     "latitude": 23.2858993,
     "longitude": 120.1433204,
     "sortOrder": 0
@@ -37,6 +48,17 @@
     "history": "清康熙二十三年（1684年）前後，施琅攻台後，這座王府改為「天妃宮」；康熙五十九年（1720年）列入春秋祀典，才改稱「大天后宮」。而它腳下的這塊地，原本是明寧靖王朱術桂的府邸——王朝更迭之間，王府成了媽祖廟。因為這層官方祀典身分，建築格局莊嚴大器，正殿的媽祖金面神像端莊威儀。廟內至今保存清代御賜的「輝煌海澨」等珍貴匾額，已列為國定古蹟。而後殿那位靈驗的月老，則是一代代台南人求姻緣時最先想到的名字，也是府城最熱門的求姻緣聖地之一。",
     "images": ["/assets/images/temples/temple-tainanmazu.png"],
     "googleMap": "https://maps.google.com/?cid=3928751623246684999",
+    "visit": {
+      "hours": "每日 06:00–21:00",
+      "whenToGo": "農曆三月二十三媽祖聖誕是最重要的日子；求姻緣的人多在七夕（農曆七月七日）與 2 月 14 日情人節前後到後殿參拜月老。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=3928751623246684999"
+        }
+      ]
+    },
     "latitude": 22.9965179,
     "longitude": 120.2017095,
     "sortOrder": 1
@@ -65,6 +87,17 @@
     "images": ["/assets/images/temples/temple-tainanwu.png"],
     "url": "https://twsdwumiao.org.tw/",
     "googleMap": "https://maps.google.com/?cid=12511403035812143910",
+    "visit": {
+      "hours": "每日 06:30–21:00",
+      "whenToGo": "農曆六月二十四關聖帝君聖誕是一年中最重要的節慶；求月老的人則多在七夕與 2 月 14 日情人節前後來訪。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=12511403035812143910"
+        }
+      ]
+    },
     "latitude": 22.9965239,
     "longitude": 120.2021668,
     "sortOrder": 2
@@ -89,6 +122,17 @@
     "images": ["/assets/images/temples/temple-foguangshan.png"],
     "url": "https://www.fgs.org.tw",
     "googleMap": "https://maps.google.com/?cid=1468301486437044642",
+    "visit": {
+      "hours": "每日 09:00–17:00",
+      "whenToGo": "農曆四月初八佛誕日（浴佛節）各寺院舉辦浴佛法會；農曆十一月十七阿彌陀佛聖誕前後，佛寺常舉辦佛七法會。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=1468301486437044642"
+        }
+      ]
+    },
     "latitude": 22.750556,
     "longitude": 120.445278,
     "sortOrder": 3
@@ -112,6 +156,17 @@
     "history": "奉天宮的前身，可以追溯到康熙39年（1700年）笨港（今雲林北港一帶）的天妃廟。命運的轉折發生在嘉慶4年（1799年）：笨港溪（北港溪）氾濫，洪水沖毀了舊廟與周邊聚落，信眾只好攜著媽祖金身遷往麻園寮（今新港），嘉慶16年（1811年）新廟落成，定名「奉天宮」。也正因這段淵源，新港奉天宮與北港朝天宮之間，一直有「開台媽祖正統」之爭。廟內歷代整建留下了精美的剪黏與交趾陶。1988年起，大甲媽祖遶境進香的去程終點，正是這座奉天宮；它今天也是縣定古蹟。",
     "images": ["/assets/images/temples/temple-xingangfengtian.png"],
     "googleMap": "https://maps.google.com/?cid=2265432032953395044",
+    "visit": {
+      "hours": "每日 05:00–23:00",
+      "whenToGo": "農曆三月大甲媽祖遶境進香以這裡為去程終點，是最熱鬧的時候；農曆六月初六虎爺聖誕的儀式也特別隆重。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=2265432032953395044"
+        }
+      ]
+    },
     "latitude": 23.5567967,
     "longitude": 120.3479018,
     "sortOrder": 4
@@ -131,6 +186,17 @@
     "description": "台南天壇俗稱「天公廟」，位於台南市中西區的市中心，由官民合建，主祀至高無上的玉皇大帝。走進古樸莊嚴的正殿，抬頭會看見一塊只寫著「一」字的匾額——這是「府城三大名匾」之一，2009年指定為一般古物。原因很妙：天公最大，天下的道理再多，也大不過一個「一」字。每年農曆正月初九「天公生」，信眾備上豐盛的供品祭拜，是府城最隆重的日子之一。",
     "history": "清咸豐四年（1854年），府城的官員與紳商合力興建了這座天壇，專祀玉皇大帝；它的原址，據說是明鄭時期的祭天壇。廟內那塊「一」字匾最為人熟知，是鎮廟之寶，也是無數遊客專程前來一睹的重點。今天它是直轄市定古蹟。",
     "images": ["/assets/images/temples/temple-tainan-tiantan.png"],
+    "visit": {
+      "hours": "每日 06:00–21:00",
+      "whenToGo": "農曆正月初九「天公生」是府城最隆重的日子之一，信眾備上豐盛供品祭拜。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=458319961205529549"
+        }
+      ]
+    },
     "latitude": 22.9937209,
     "longitude": 120.2041994,
     "sortOrder": 5
@@ -150,6 +216,17 @@
     "history": "明永曆19年（1665年），鄭經採納了諮議參軍陳永華的建議，在台灣建起這座孔廟——目的很單純：要在這片新開發的土地上推廣文教、培育人才。清代，康熙皇帝曾御賜「萬世師表」匾；此後歷經多次增建與修繕，才確立了今日的規模。日治時期，它曾被當作駐屯所與公學校，1945年又遭空襲毀損。如今它是國定古蹟，也是台灣儒家文化的中心。",
     "images": ["/assets/images/temples/temple-tainanconfucius.png"],
     "googleMap": "https://maps.google.com/?cid=802303505355083921",
+    "visit": {
+      "hours": "每日 08:30–17:00",
+      "whenToGo": "每年 9 月 28 日教師節的釋奠典禮依古禮進行、有佾生跳六佾舞，是最值得前來的日子。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=802303505355083921"
+        }
+      ]
+    },
     "latitude": 22.9903049,
     "longitude": 120.2042518,
     "sortOrder": 6
@@ -169,6 +246,17 @@
     "history": "1653年，荷蘭人在此建起「普羅民遮城」。1661年，鄭成功攻下這座城，設「承天府」，赤崁樓自此換了主人。此後歷經地震與民變，城樓多已傾圮；直到清光緒年間，人們才在原址陸續興建海神廟、文昌閣與五子祠。今日所見的樣貌，多是當年重建的基礎，荷式城堡與中式樓閣層層相疊，成了台灣少見、融合兩種建築特色的歷史現場。",
     "images": ["/assets/images/temples/temple-chihkan.png"],
     "googleMap": "https://maps.google.com/?cid=17466488504101853084",
+    "visit": {
+      "hours": "每日 08:30–21:00",
+      "whenToGo": "大考前後常有考生到文昌閣祈求金榜題名；農曆二月初三為文昌帝君聖誕。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=17466488504101853084"
+        }
+      ]
+    },
     "latitude": 22.9972744,
     "longitude": 120.2027032,
     "sortOrder": 7
@@ -189,6 +277,17 @@
     "images": ["/assets/images/temples/temple-donglong.png"],
     "url": "https://www.66.org.tw/",
     "googleMap": "https://maps.google.com/?cid=15681144924228885359",
+    "visit": {
+      "hours": "每日 05:00–22:30",
+      "whenToGo": "每三年一科（丑、辰、未、戌年）的「東港迎王平安祭典」為期八天，最後一夜送王燒王船，是最多人湧入的時候。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=15681144924228885359"
+        }
+      ]
+    },
     "latitude": 22.4630682,
     "longitude": 120.4487888,
     "sortOrder": 8
@@ -209,6 +308,17 @@
     "images": ["/assets/images/temples/temple-chiayi-citygod.png"],
     "url": "https://www.cycht.org.tw/",
     "googleMap": "https://maps.google.com/?cid=4930083161119714020",
+    "visit": {
+      "hours": "每日 07:00–21:00",
+      "whenToGo": "每年農曆八月初二城隍聖誕，是嘉義最盛大的宗教活動之一。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=4930083161119714020"
+        }
+      ]
+    },
     "latitude": 23.4784142,
     "longitude": 120.454231,
     "sortOrder": 9
@@ -229,6 +339,17 @@
     "images": ["/assets/images/temples/temple-fongshanlongshan.png"],
     "url": "https://longshansi.org.tw/",
     "googleMap": "https://maps.google.com/?cid=1666344148016138627",
+    "visit": {
+      "hours": "每日 05:00–21:00",
+      "whenToGo": "觀音三大紀念日（農曆二月十九、六月十九、九月十九）有誦經祈福法會，其中二月十九聖誕最為隆重。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=1666344148016138627"
+        }
+      ]
+    },
     "latitude": 22.6206562,
     "longitude": 120.3620084,
     "sortOrder": 10
@@ -249,6 +370,17 @@
     "images": ["/assets/images/temples/temple-chechengfuan.png"],
     "url": "https://www.fuantmp.org/",
     "googleMap": "https://maps.google.com/?cid=12041559885625507963",
+    "visit": {
+      "hours": "每日 05:00–22:00",
+      "whenToGo": "新年「拜頭香」是福安宮最著名的傳統；農曆二月初二土地公聖誕也是重要日子。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=12041559885625507963"
+        }
+      ]
+    },
     "latitude": 22.070838,
     "longitude": 120.7108142,
     "sortOrder": 11
@@ -268,6 +400,17 @@
     "description": "屏東九如三山國王廟建於清乾隆四十三年（1778 年），是屏東縣定古蹟，主祀巾山、明山、獨山三位國王。正殿高懸的「威震海東」匾，落款就是建廟那一年；拜亭畫著河圖洛書，門神出自畫師潘麗水之手，牌樓面的木雕取材自《三國演義》與《隋唐演義》。這座廟的信仰跨越族群：最有名的傳說和鄰近麟洛的客家人有關，後來遷入九如的福佬人也延續了祭祀。",
     "history": "九如三山國王廟在乾隆四十三年（1778 年）完工，正殿的「威震海東」匾就是那一年留下的。同治五年（1866 年），廟在現址完成重建；1920 年代末又整修過一次，2016 年 10 月完成最近一次修復。廟前還留著一座嘉慶十二年（1807 年）的青石香爐。2004 年，屏東縣政府把它指定為縣定古蹟；左右護龍在 2012 年另外登錄為歷史建築。",
     "images": ["/assets/images/temples/temple-jiuru-sanshan.png"],
+    "visit": {
+      "hours": "每日 06:00–21:00",
+      "whenToGo": "農曆二月廿五三山國王聖誕是一年中最重要的祭典日。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=17178237001016271324"
+        }
+      ]
+    },
     "latitude": 22.7309282,
     "longitude": 120.4847171,
     "sortOrder": 12
@@ -289,6 +432,17 @@
     "imageIsIllustration": true,
     "url": "https://www.taizih.org.tw",
     "googleMap": "https://maps.google.com/?cid=309370358842796397",
+    "visit": {
+      "hours": "每日 05:30–21:00",
+      "whenToGo": "農曆九月九日太子爺聖誕前後，各地分靈的神轎與陣頭回到新營刈香，是一年中最熱鬧的時候。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=309370358842796397"
+        }
+      ]
+    },
     "latitude": 23.2951009,
     "longitude": 120.2733225,
     "sortOrder": 13

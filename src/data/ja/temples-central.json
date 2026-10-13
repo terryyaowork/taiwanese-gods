@@ -15,6 +15,17 @@
     "images": ["/assets/images/temples/temple-dajiazhenlan.png"],
     "url": "http://www.dajiamazu.org.tw/",
     "googleMap": "https://maps.google.com/?cid=13335183935644470265",
+    "visit": {
+      "hours": "毎日 3:30〜22:30",
+      "whenToGo": "毎年旧暦3月の大甲媽祖巡行（遶境進香）が一年のハイライトで、9日8晩かけて嘉義の新港奉天宮との間を往復します。出発の前後は廟の内外が大勢の人であふれます。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=13335183935644470265"
+        }
+      ]
+    },
     "latitude": 24.3452713,
     "longitude": 120.6234579,
     "sortOrder": 0
@@ -35,6 +46,17 @@
     "images": ["/assets/images/temples/temple-beigangchaotian.png"],
     "url": "https://www.matsu.org.tw/",
     "googleMap": "https://maps.google.com/?cid=8826082841404551118",
+    "visit": {
+      "hours": "毎日 4:30〜24:00",
+      "whenToGo": "毎年旧暦正月15日から3月にかけては、各地の媽祖廟が進香に訪れる最盛期で、旧暦3月23日の媽祖の誕辰前後に進香団が最も集中します。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=8826082841404551118"
+        }
+      ]
+    },
     "latitude": 23.568099,
     "longitude": 120.3046812,
     "sortOrder": 1
@@ -54,6 +76,17 @@
     "history": "鹿港天后宮は清の康熙22年（1683年）にはすでに建てられていました。雍正3年（1725年）、施世榜が土地を寄進し、廟は現在の場所へ移されて、天上聖母を主祀しました。当時の鹿港は台湾中部最大の交易港で、「一府二鹿三艋舺」という言葉がその繁栄を言い尽くしています。天后宮は老街の中心に立ち、二百年余りにわたる商いの栄枯盛衰を見届けてきました。日本統治時代の1927年からは大規模な改修が行われ、1936年に竣工して、今日の構えが定まりました。今では天后宮は鹿港老街、摸乳巷、九曲巷とひと続きの歴史街区をなし、清代台湾の港町文化を知るための最良の窓となっています。",
     "images": ["/assets/images/temples/temple-lugangmazu.png"],
     "googleMap": "https://maps.google.com/?cid=1374261103847850357",
+    "visit": {
+      "hours": "毎日 6:00〜22:00",
+      "whenToGo": "新年には光明灯や安太歳を申し込む信者が殺到し、枠が取れないこともよくあります。旧暦3月23日の媽祖の聖誕も重要な日です。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=1374261103847850357"
+        }
+      ]
+    },
     "latitude": 24.0593534,
     "longitude": 120.4313866,
     "sortOrder": 2
@@ -73,6 +106,17 @@
     "history": "乾隆年間、白沙屯の先民は軟身媽祖を民家に迎えて祀っていました。咸豊年間の末に資金を集めて廟の建設に取りかかり、同治2年（1863年）に完成します。これが拱天宮の始まりです。ここの住民は代々海で暮らしを立て、媽祖信仰は風浪に立ち向かうときの最も大切な心の支えでした。白沙屯媽祖を格別の存在にしているのは、毎年欠かさず続く「進香」の伝統です——媽祖の鑾轎が白沙屯から雲林の北港朝天宮まで徒歩で向かうもので、出発の日取りは毎年、筊（ポエ）を投げて決められ、2026年は八日七晩の道のりでした。大甲媽祖と違うのは、白沙屯媽祖の道筋は媽祖自らが決めること。鑾轎の揺れで方向を示し、毎年違う道を歩くことから、「最も個性的な媽祖」と讃えられています。鑾轎に付き従って歩く信者は年々増え、2026年の申込者は46万人を超えました。",
     "images": ["/assets/images/temples/temple-baishatun.png"],
     "googleMap": "https://maps.google.com/?cid=11486608079882747560",
+    "visit": {
+      "hours": "毎日 5:00〜21:30",
+      "whenToGo": "毎年、北港朝天宮へ徒歩で進香する期間が最も賑わいます。出発日は毎年擲筊で決まるため、事前に廟の告知を確認してください。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=11486608079882747560"
+        }
+      ]
+    },
     "latitude": 24.5714507,
     "longitude": 120.7092112,
     "sortOrder": 3
@@ -92,6 +136,17 @@
     "history": "物語の始まりは、一つの香火袋でした。清の雍正年間、楊謙という陶工が媽祖の香火袋を身につけ、人々に拝ませていたと伝えられます。霊験があらたかで信者はますます集まり、ついに乾隆3年（1738年）に南瑶宮が建てられました。道光年間の『彰化県志』には、すでに南瑶宮が毎年笨港へ進香に赴くことが記されています。その後、南瑶宮の信徒組織「媽祖会」は規模を広げ続け、その影響は中台湾一帯に及びました。一つの小さな香火袋から十の媽祖会へ——南瑶宮は、台湾の進香文化が民間信仰から、地域を結び合わせる力へと育っていく姿を見守ってきたのです。",
     "images": ["/assets/images/temples/temple-nanyao.png"],
     "googleMap": "https://maps.google.com/?cid=17722308929893834177",
+    "visit": {
+      "hours": "毎日 6:00〜21:30",
+      "whenToGo": "毎年の笨港進香は南瑶宮の伝統的な大行事です。旧暦3月23日の媽祖の聖誕も、媽祖廟にとって最も重要な日です。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=17722308929893834177"
+        }
+      ]
+    },
     "latitude": 24.0700406,
     "longitude": 120.5415971,
     "sortOrder": 4
@@ -116,6 +171,17 @@
     "images": ["/assets/images/temples/temple-lecheng.jpeg"],
     "url": "https://www.lecheng.org.tw",
     "googleMap": "https://maps.app.goo.gl/Exgy6BDDyBg3VWBG6",
+    "visit": {
+      "hours": "毎日 6:30〜22:00",
+      "whenToGo": "22日間かけて歩く旱渓媽祖の遶境十八庄が、廟の年間最大の行事です。縁結びを願う人は、七夕（旧暦7月7日）や2月14日のバレンタインデー前後に月老殿へ参拝することが多いです。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.app.goo.gl/Exgy6BDDyBg3VWBG6"
+        }
+      ]
+    },
     "latitude": 24.1407017,
     "longitude": 120.6980189,
     "sortOrder": 5
@@ -139,6 +205,17 @@
     "description": "土地公（とちこう）から六百元を「借りる」——これが竹山紫南宮（ちくざんしなんぐう）で最もよく知られていることです。南投県竹山鎮にある紫南宮は、全台湾に名の知れた「発財金を借りる」廟で、土地公を主祀します。信者は土地公から六百元を借りて「銭母（お金を生む元手）」とし、お金が絶えず増えていくよう財布に入れておきます。翌年に利益が出たら元金を返し、あわせて気持ちに応じた香油銭（お賽銭）を納めます。旧暦の春節ごとに、発財金を借りようと大勢の信者が列をなします。廟が建てた「金筍迎客」という名の公衆トイレも、思いがけず一風変わった名所になっています。",
     "history": "清の乾隆10年（1745年）、竹山一帯の住民が郷里を守る土地公を祀る小さな祠を建てました。これが紫南宮の起点です。この小さな廟の名を全台湾に広めたのは、「発財金を借りる」伝統でした——土地公から借りた銭母は格別に霊験あらたかだと言われ、噂が噂を呼んで、信者が全台湾各地から訪れるようになり、香火は年ごとに盛んになりました。廟は信者からの寄付を活かして周辺の環境や設備を改善し続け、公衆トイレまでが名所になりました。こうして土地公を祀る一つの小さな祠は、南投竹山で最も重要な観光と信仰の中心へと姿を変えたのです。",
     "images": ["/assets/images/temples/temple-zhushan-zinan.png"],
+    "visit": {
+      "hours": "毎日 7:00〜21:00",
+      "whenToGo": "旧正月の期間には発財金を借りようと大勢の信者が列を作ります。旧暦2月2日の土地公の聖誕も重要な日です。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=13466994496785747467"
+        }
+      ]
+    },
     "latitude": 23.8171482,
     "longitude": 120.7225076,
     "sortOrder": 6
@@ -159,6 +236,17 @@
     "images": ["/assets/images/temples/temple-shoutian.png"],
     "url": "https://www.shoutian.org.tw/",
     "googleMap": "https://maps.google.com/?cid=12581810184350471473",
+    "visit": {
+      "hours": "毎日 5:30〜22:00",
+      "whenToGo": "旧暦3月3日の玄天上帝の聖誕の時期には、台湾各地から進香団や陣頭が松柏嶺に押し寄せ、一年で最も賑わいます。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=12581810184350471473"
+        }
+      ]
+    },
     "latitude": 23.8392701,
     "longitude": 120.6302605,
     "sortOrder": 7
@@ -179,6 +267,17 @@
     "images": ["/assets/images/temples/temple-beigangwude.png"],
     "url": "https://www.wude.org.tw/",
     "googleMap": "https://maps.google.com/?cid=7829449288237875360",
+    "visit": {
+      "hours": "毎日 6:00〜22:00",
+      "whenToGo": "旧暦3月15日の武財神の聖誕には、各地から信者が参拝に押し寄せます。旧正月の期間に授与される「銭母」も多くの人を引きつけます。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=7829449288237875360"
+        }
+      ]
+    },
     "latitude": 23.5810159,
     "longitude": 120.2996947,
     "sortOrder": 8
@@ -229,6 +328,17 @@
     "images": ["/assets/images/temples/temple-baishatun.png"],
     "url": "https://shenbianma.tw/",
     "googleMap": "https://maps.google.com/?cid=3600538260621027501",
+    "visit": {
+      "hours": "毎日 6:00〜20:30",
+      "whenToGo": "毎年、白沙屯媽祖と同じ鑾轎に乗って北港朝天宮へ徒歩で進香する期間が最も注目を集めます。出発日は毎年擲筊で決まります。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=3600538260621027501"
+        }
+      ]
+    },
     "latitude": 24.5866621,
     "longitude": 120.7150911,
     "sortOrder": 10
@@ -248,6 +358,16 @@
     "description": "朝霧のなかに湖面が見え隠れし、湖畔には夜通し、もの悲しく遥かな祭歌が響き渡る——ここは標高約738メートルの山間盆地にある向天湖（こうてんこ）。サイシャット族の矮霊祭（Pasta'ay、パスタアイ）の南祭団の祭場で（北祭団の祭場は新竹の五峰にあります）、台湾で最も神秘的で、最も心を打つ原住民族の祭典の聖地です。四方を山々に囲まれ、景色は夢のように幻想的です。矮霊祭は二年に一度の小祭と十年に一度の大祭があり、祭典は四日三晩にわたって湖畔で夜を徹して行われます。荘厳な祭歌とゆるやかな舞の足取りで、遠い昔の矮人族の霊に悔い、感謝し、福を祈るのです。この祭典は2013年に国の重要民俗に指定されました。祭場のそばには、2004年に開館した賽夏族民俗文物館もあります。",
     "history": "伝説によれば遠い昔、体は小さいけれど力の非常に強い矮人族（ta'ay）がサイシャット族と隣り合って暮らし、農耕の技術や歌と踊りを教えてくれました。ところが矮人はのちにサイシャット族の女性たちをたびたび辱めるようになり、耐えかねた族人は、矮人の住む地へ通じる山枇杷の木の橋に細工を施します。矮人は橋を渡るときに落ちて溺れ死にました。死に際に矮人族は呪いを残し、それからサイシャット族は毎年のように不作と災いに見舞われます。霊の怨みを鎮め、豊作を祈るために、サイシャット族は矮霊祭を行うようになりました。祭典の歌は矮人が臨終の際に伝えたものといわれ、その旋律はもの悲しく遥かで、口承文学の貴重な生きた化石です。今日も向天湖の祭場はこの古い祭祀の伝統を守り続け、サイシャット族の文化を受け継ぐ大切な聖地となっています。",
     "images": ["/assets/images/temples/temple-xiangtianhu.png"],
+    "visit": {
+      "whenToGo": "矮霊祭は2年に一度の小祭と10年に一度の大祭があり、4日3晩にわたって湖畔で夜通し行われます。祭典期間外は、隣接する賽夏族民俗文物館を見学できます。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=7000304878889591884"
+        }
+      ]
+    },
     "latitude": 24.5830957,
     "longitude": 121.0340633,
     "sortOrder": 11
@@ -268,6 +388,17 @@
     "images": ["/assets/images/temples/temple-zhunan-wugu.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=13686238840636622089",
+    "visit": {
+      "hours": "毎日 5:00〜21:00",
+      "whenToGo": "旧暦4月26日の神農大帝の聖誕が、一年で最も重要な祭典です。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=13686238840636622089"
+        }
+      ]
+    },
     "latitude": 24.6885803,
     "longitude": 120.8837405,
     "sortOrder": 12
@@ -288,6 +419,17 @@
     "images": ["/assets/images/temples/temple-lugu-fenghuangshan.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=3289151911247841520",
+    "visit": {
+      "hours": "毎日 5:30〜20:00",
+      "whenToGo": "旧暦3月16日の慚愧祖師の聖誕には各地から信者が参拝に戻り、山道が最も混み合います。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=3289151911247841520"
+        }
+      ]
+    },
     "latitude": 23.7339182,
     "longitude": 120.7843578,
     "sortOrder": 13

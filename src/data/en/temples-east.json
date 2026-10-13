@@ -15,6 +15,17 @@
     "images": ["/assets/images/temples/temple-jiaoxisietian.png"],
     "url": "https://www.sttemple.org.tw/",
     "googleMap": "https://maps.google.com/?cid=2348428617193744051",
+    "visit": {
+      "hours": "Daily 4:30 AM – 10:00 PM",
+      "whenToGo": "The \"Turtle King\" rite of begging for turtles on lunar 1/13 is the liveliest; the ceremonies in the first and sixth lunar months (Guan Gong's birthday on lunar 6/24) are also grand.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=2348428617193744051"
+        }
+      ]
+    },
     "latitude": 24.8185047,
     "longitude": 121.7690905,
     "sortOrder": 0
@@ -34,6 +45,17 @@
     "history": "No one knows exactly when the temple was founded, but a standoff at sea fixed its place in history. In 1604, Wijbrand van Waerwijck, a commander of the Dutch East India Company, arrived in Penghu with two ships. Shen Yourong, a Fujian military commander, came with fifty warships to negotiate and talked the Dutch into withdrawing. The episode was carved onto a stone stele, which then lay hidden for more than three hundred years, until a renovation of the temple in 1919 brought it back to light and confirmed Penghu Tianhou Temple as the oldest temple in Taiwan and Penghu. The temple was rebuilt many times through the Ming and Qing dynasties and was renamed Tianhou Temple in 1684, the 23rd year of the Kangxi reign. The buildings still preserve a great deal of Qing craftsmanship.",
     "images": ["/assets/images/temples/temple-penghu-tianhou.png"],
     "googleMap": "https://maps.google.com/?cid=8689713124882381801",
+    "visit": {
+      "hours": "Daily 7:00 AM – 7:00 PM",
+      "whenToGo": "Mazu's birthday on lunar 3/23 is the most important day of the year at a Mazu temple.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=8689713124882381801"
+        }
+      ]
+    },
     "latitude": 23.5647115,
     "longitude": 119.5640221,
     "sortOrder": 1
@@ -53,6 +75,17 @@
     "history": "According to legend, in 1949 (the 38th year of the Republic) the Queen Mother of the West manifested around Ji'an in Hualien and watched over the area. Grateful for her answered prayers, the faithful built a temple to enshrine her there, and that was the beginning of Shen An Temple. From Hualien, worship of Mu Niang spread outward. Shen An Temple and Cihui Tang, sharing one source, branched into the Yellow-Robe and Green-Robe systems, and each spread across Taiwan. As the birthplace of the faith, Shen An Temple has been expanded many times and its halls have grown ever grander. Its annual Queen Mother procession, registered as folk cultural heritage in 2013, is still one of Hualien's major yearly events, and it keeps each new generation of worshippers mindful of how Mu Niang came down to earth.",
     "images": ["/assets/images/temples/temple-hualienshenan.png"],
     "googleMap": "https://maps.google.com/?cid=17322388269370314172",
+    "visit": {
+      "hours": "Daily 5:30 AM – 9:30 PM",
+      "whenToGo": "The annual Wangmu Niangniang procession is a major yearly event in Hualien; Wangmu Niangniang's birthday on lunar 7/18 (the Peach Banquet) is also celebrated in grand style.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=17322388269370314172"
+        }
+      ]
+    },
     "latitude": 23.9778981,
     "longitude": 121.5867689,
     "sortOrder": 2
@@ -72,6 +105,16 @@
     "history": "Hualien City God Temple was founded during the Japanese colonial era, by one account in 1934 (the 9th year of Showa), and it is the most important center of City God worship in the city. It was modest at first, with the City God as its main deity. As Hualien's population grew after the war, the temple was expanded and renovated several times, which gave it its present appearance.",
     "images": ["/assets/images/temples/temple-hualienchenghuang.png"],
     "googleMap": "https://maps.google.com/?cid=1792585756554793237",
+    "visit": {
+      "hours": "Daily 6:00 AM – 7:30 PM",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=1792585756554793237"
+        }
+      ]
+    },
     "latitude": 23.9733796,
     "longitude": 121.6057448,
     "sortOrder": 3
@@ -90,6 +133,17 @@
     "description": "Stand in front of Yilan Sanqing Temple and the whole of Meihua Lake spreads out below you. It is one of the few Taoist temples in Yilan where you can pray and look out over a lake at the same time. The temple is dedicated to the Three Pure Ones (Sanqing Daozu): Yuanshi Tianzun, Lingbao Tianzun and Daode Tianzun, and it is known as the head temple of Taoism in Taiwan. Set between the mountains and the water in quiet surroundings, Sanqing Temple is a well-known Yilan destination for both worship and sightseeing, just right if you want to pray and then take an easy walk.",
     "history": "In the 1970s, Sanqing Temple was built on a site beside Meihua Lake. The usual account is that the land was donated by the late county magistrate Chen Jindong. The temple looks out over the lake and the ring of mountains around it, and its main hall enshrines the Three Pure Ones. Every year on the fifteenth day of the second lunar month, the birthday of the Daode Tianzun, the temple holds its most important festival. Over time a full tourism area grew up around the temple, and the Meihua Lake bike path became a popular Yilan outing, making Sanqing one of the few temples where worship and leisure go hand in hand.",
     "images": ["/assets/images/temples/temple-yilan-sanqing.png"],
+    "visit": {
+      "hours": "Daily 5:00 AM – 9:00 PM (until 10:00 PM on Saturdays)",
+      "whenToGo": "Daode Tianzun's birthday on lunar 2/15 each year is the temple's most important festival.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=11371312628312859824"
+        }
+      ]
+    },
     "latitude": 24.6391621,
     "longitude": 121.7350194,
     "sortOrder": 4
@@ -113,6 +167,17 @@
     "history": "In 1917 (the 6th year of Taisho), the Japanese priest Kawabata Manji founded this mission in Hualien's Yoshino immigrant village as an outpost of Japanese Shingon Buddhism, and it became a spiritual home for the Japanese settlers of the time. Its principal image was Kobo Daishi, attended by Fudo Myoo and Bishamonten. After the Second World War the Japanese settlers were repatriated and the mission was left to decline. It was later renamed Qingxiu Yuan, rededicated to Shakyamuni Buddha and Guanyin Bodhisattva, and placed under local civilian management. In 1997 it was designated a Hualien County historic monument, and after a full restoration it reopened. Its eighty-eight stone Buddhas copy the 'eighty-eight sacred sites' of Shikoku in Japan, so that worshippers who could not make the long voyage home could still make the pilgrimage close by.",
     "images": ["/assets/images/temples/temple-qingxiuyuan.png"],
     "googleMap": "https://maps.google.com/?cid=16084543393414290365",
+    "visit": {
+      "hours": "Tuesday–Sunday 8:30 AM – 5:00 PM; closed Mondays",
+      "whenToGo": "Buddha's Birthday (the Bathing the Buddha Festival) on lunar 4/8 and Guanyin's feast days are important Buddhist days; on ordinary days the grounds are quiet, good for a slow walk.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=16084543393414290365"
+        }
+      ]
+    },
     "latitude": 23.9736033,
     "longitude": 121.5646838,
     "sortOrder": 5
@@ -133,6 +198,17 @@
     "images": ["/assets/images/temples/temple-taitungtianhou.png"],
     "url": "https://www.taitungtianhou.org.tw/",
     "googleMap": "https://maps.google.com/?cid=5023869641749829170",
+    "visit": {
+      "hours": "Daily 6:00 AM – 10:00 PM",
+      "whenToGo": "The procession of the gods and Bombing Master Handan at the Lantern Festival (lunar 1/15) are the liveliest events, drawing thousands upon thousands of people every year.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=5023869641749829170"
+        }
+      ]
+    },
     "latitude": 22.7570998,
     "longitude": 121.1551127,
     "sortOrder": 6
@@ -153,6 +229,17 @@
     "images": ["/assets/images/temples/temple-matsu-tianhou.png"],
     "url": "http://tianhou-temple.matsu.idv.tw/",
     "googleMap": "https://maps.google.com/?cid=14117555990881214823",
+    "visit": {
+      "hours": "Daily 6:30 AM – 8:30 PM",
+      "whenToGo": "The Mazu Ascension Festival on lunar 9/9 each year is the grandest religious celebration of the year in Matsu.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=14117555990881214823"
+        }
+      ]
+    },
     "latitude": 26.1583916,
     "longitude": 119.9181111,
     "sortOrder": 7
@@ -173,6 +260,16 @@
     "images": ["/assets/images/temples/temple-kinmen-citygod.png"],
     "url": "https://kinmen.travel/zh-tw/travel/attraction/811",
     "googleMap": "https://maps.google.com/?cid=12324986200684401392",
+    "visit": {
+      "whenToGo": "Welcoming the City God in Kinmen on lunar 4/12 each year is a parade that mobilizes the whole island, with floats and performance troupes stretching on without end.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=12324986200684401392"
+        }
+      ]
+    },
     "latitude": 24.4325803,
     "longitude": 118.3161057,
     "sortOrder": 8
@@ -227,6 +324,17 @@
     "description": "In Tafalong, in Guangfu Township, Hualien, lives an Amis community with a long history, one of the oldest and largest Amis settlements. Its ancestral shrine (kakita'an) is the heart of Tafalong's faith and of how its culture is passed down. The shrine's pillars are carved with fine wooden motifs that tell the Amis creation myths and the stories of the ancestors, a precious part of Taiwan's indigenous artistic heritage. The Harvest Festival (Ilisin) in July and August is the most important ceremony of the year: the whole community gathers to sing and dance and honor the ancestral spirits (kawas), giving thanks for their protection of the people and for the gifts of nature. The festival's songs and dances, its feasting and its strict age-grade system show the full shape of Amis society and culture.",
     "history": "Tafalong is one of the first large settlements the Amis founded after migrating into the East Rift Valley. In the Amis language, 'Tafalong' means 'white crab', a name said to come from the many white crabs once found in the local streams. The ancestral shrine (kakita'an) is the spiritual center of the community. The original ancestral house was destroyed by Typhoon Winnie in 1958 and was rebuilt in 2006 from drawings left by Chijiiwa Suketaro in the Japanese era; most of the carved wooden pillars that survived are held by the Institute of Ethnology at Academia Sinica. During the Japanese era, Japanese scholars carried out ethnological fieldwork in Tafalong and left valuable written records. In recent years the people of Tafalong have worked hard to revive their culture, restoring the ancestral shrine, singing the old songs again and taking up traditional crafts, and in 2023 they opened the Tafalong Cultural Artifacts Museum, making this old community a model for preserving indigenous culture in Taiwan.",
     "images": ["/assets/images/temples/temple-tafalong.png"],
+    "visit": {
+      "hours": "Daily 8:00 AM – 4:00 PM",
+      "whenToGo": "The Harvest Festival (Ilisin) in July and August each year is the community's most important ceremony of the year.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=3299427822821884226"
+        }
+      ]
+    },
     "latitude": 23.6591,
     "longitude": 121.4497,
     "sortOrder": 10
@@ -245,6 +353,17 @@
     "description": "Chenggong Tianhou Temple, also called the Xiaogang Chengguang'ao Tianhou Temple, has more than 150 years of history and is the oldest Mazu temple in Taitung County. In the Qing dynasty, Liu Jin-lai was posted to the \"back mountains\" of the east as an interpreter-official. Before setting out, he went to Lukang's Tianhou Temple to ask Mazu to travel with him for protection; once he reached Taitung safely, he enshrined her here, and the Mazu faith took root in Taitung. The temple is also a place where peoples met: its founding at first drew opposition from local Indigenous communities, until Pingpu women mediated and the two sides learned to live side by side. On the East Coast, Chengguang'ao is a stop worth making.",
     "history": "The temple moved several times before settling in Chengguang'ao, where it became the heart of local faith. When traditional religion was banned under Japanese rule, residents hid the statues in a seaside cave, and the faith survived. In 1949 the temple caught fire. Short on hands and unable to bring painters from the west coast, the rebuilders hired local Pingpu Indigenous people to paint the beams — the first time Indigenous people took part in building a Han temple. Mazu's birthday on the 23rd day of the third lunar month is the busiest day of the year.",
     "url": "https://www.eastcoast-nsa.gov.tw/zh-tw/attractions/detail/280/",
+    "visit": {
+      "hours": "Daily 6:00 AM – 8:00 PM",
+      "whenToGo": "Mazu's birthday on lunar 3/23 is the liveliest day of the year.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=18230963418483275600"
+        }
+      ]
+    },
     "latitude": 23.1598565,
     "longitude": 121.4015768,
     "sortOrder": 11,
@@ -268,6 +387,17 @@
     "images": ["/assets/images/temples/temple-yuli-xietian.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=9288293534586800899",
+    "visit": {
+      "hours": "Daily 6:30 AM – 10:00 PM",
+      "whenToGo": "Guan Gong's birthday on lunar 6/24 and the Zhongyuan Pudu on lunar 7/15 are the temple's liveliest days.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=9288293534586800899"
+        }
+      ]
+    },
     "latitude": 23.3337444,
     "longitude": 121.3160939,
     "sortOrder": 12

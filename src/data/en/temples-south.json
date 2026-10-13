@@ -14,6 +14,17 @@
     "history": "The story begins in 1662, the sixteenth year of the Ming Yongli reign — close to the time Koxinga came to Taiwan — making this one of the oldest Wangye temples on the island. Its most legendary chapter is the 'contest of magic' between the Five Royal Lords and the 'Child Lord' (Gina Gong) of Wanshan Hall. The two sides fought over the same auspicious plot of land, neither able to prevail, until they agreed to share the incense offerings — and to this day the two stand side by side on the site. The temple moved to its present location in 1817, with the new building completed in 1822, and from then on it grew ever grander, hailed as the head temple of Wangye worship. Every year in the late fourth lunar month, during the pilgrimage season, crowds of pilgrims from across Taiwan flood in. It was designated a historic site in 1985 and is today a National Monument.",
     "images": ["/assets/images/temples/temple-nankunshen.png"],
     "googleMap": "https://maps.google.com/?cid=5698524408887702393",
+    "visit": {
+      "hours": "Daily 6:00 AM – 9:00 PM",
+      "whenToGo": "During the pilgrimage season in the last third of the 4th lunar month each year, pilgrimage groups and performance troupes from branch temples all over Taiwan flood back to the head temple, making it the liveliest time of the year.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=5698524408887702393"
+        }
+      ]
+    },
     "latitude": 23.2858993,
     "longitude": 120.1433204,
     "sortOrder": 0
@@ -37,6 +48,17 @@
     "history": "Around 1684, after Shi Lang's campaign against Taiwan, this palace was turned into a 'Tianfei Temple.' In 1720 it was entered into the official spring and autumn sacrificial rites, and only then renamed the 'Grand Tianhou Temple.' The ground beneath it had once been the residence of Zhu Shugui, the Ming Prince of Ningjing — and in the turn from one dynasty to the next, a prince's palace became a home for Mazu. Thanks to its place in the official rites, the building is laid out with solemn grandeur, and the gold-faced Mazu in the main hall sits dignified and commanding. The temple still holds precious Qing imperial plaques such as 'Glory Over the Seashore' (Huihuang Haishi), and it is listed as a National Monument. As for the Yue Lao in the rear hall, generation after generation of Tainan locals have thought of him first when praying for a partner — making it one of the most popular places in the old capital to ask for love.",
     "images": ["/assets/images/temples/temple-tainanmazu.png"],
     "googleMap": "https://maps.google.com/?cid=3928751623246684999",
+    "visit": {
+      "hours": "Daily 6:00 AM – 9:00 PM",
+      "whenToGo": "Mazu's birthday on lunar 3/23 is the most important day; those seeking a match mostly come to pray to Yue Lao in the rear hall around Qixi (lunar 7/7) and Valentine's Day on February 14.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=3928751623246684999"
+        }
+      ]
+    },
     "latitude": 22.9965179,
     "longitude": 120.2017095,
     "sortOrder": 1
@@ -65,6 +87,17 @@
     "images": ["/assets/images/temples/temple-tainanwu.png"],
     "url": "https://twsdwumiao.org.tw/",
     "googleMap": "https://maps.google.com/?cid=12511403035812143910",
+    "visit": {
+      "hours": "Daily 6:30 AM – 9:00 PM",
+      "whenToGo": "Guan Gong's birthday on lunar 6/24 is the most important festival of the year; those praying to Yue Lao mostly visit around Qixi and Valentine's Day on February 14.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=12511403035812143910"
+        }
+      ]
+    },
     "latitude": 22.9965239,
     "longitude": 120.2021668,
     "sortOrder": 2
@@ -89,6 +122,17 @@
     "images": ["/assets/images/temples/temple-foguangshan.png"],
     "url": "https://www.fgs.org.tw",
     "googleMap": "https://maps.google.com/?cid=1468301486437044642",
+    "visit": {
+      "hours": "Daily 9:00 AM – 5:00 PM",
+      "whenToGo": "On Buddha's Birthday (the Bathing the Buddha Festival), lunar 4/8, monasteries hold Bathing the Buddha ceremonies; around Amitabha Buddha's birthday on lunar 11/17, Buddhist temples often hold seven-day Buddha-name recitation retreats.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=1468301486437044642"
+        }
+      ]
+    },
     "latitude": 22.750556,
     "longitude": 120.445278,
     "sortOrder": 3
@@ -112,6 +156,17 @@
     "history": "Fengtian Temple traces its origins to a Tianfei temple in Bengang (around present-day Beigang, Yunlin) in 1700. The turning point came in 1799: the Bengang River (today's Beigang River) flooded, washing away the old temple and the settlements around it, and the faithful carried Mazu's golden statue to Mayuanliao (today's Xingang). The new temple was completed in 1811 and named 'Fengtian Temple.' Because of this shared history, Xingang Fengtian Temple and Beigang Chaotian Temple have long disputed which is the true heir of the 'Mazu Who Opened Taiwan.' Generations of rebuilding have left the temple with exquisite cut-porcelain mosaics and koji pottery. Since 1988, the outbound leg of the Dajia Mazu pilgrimage has ended right here at Fengtian Temple, and today it is also a county-designated historic site.",
     "images": ["/assets/images/temples/temple-xingangfengtian.png"],
     "googleMap": "https://maps.google.com/?cid=2265432032953395044",
+    "visit": {
+      "hours": "Daily 5:00 AM – 11:00 PM",
+      "whenToGo": "This is the outbound destination of the Dajia Mazu Pilgrimage in the 3rd lunar month, the liveliest time here; the rites for the Tiger Lord's birthday on lunar 6/6 are also especially grand.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=2265432032953395044"
+        }
+      ]
+    },
     "latitude": 23.5567967,
     "longitude": 120.3479018,
     "sortOrder": 4
@@ -131,6 +186,17 @@
     "description": "Tainan Tiantan, commonly called the 'Tiangong Temple' (Temple of the Lord of Heaven), sits in the heart of Tainan's West Central District. Built jointly by officials and the townspeople, it is dedicated to the supreme Jade Emperor (Yuhuang Dadi). Step into the plain, solemn main hall and look up: a plaque hangs there bearing a single character, 'One' (一). It is one of the 'Three Famous Plaques of the Old Capital' and was designated a general antiquity in 2009. The reasoning is wonderfully clever — the Lord of Heaven is supreme, and however many principles there may be under Heaven, none is greater than the single word 'One.' Every year on the ninth day of the first lunar month, the Jade Emperor's Birthday, worshippers lay out lavish offerings — one of the most solemn days in the old capital's calendar.",
     "history": "In 1854, officials, gentry, and merchants of the old capital joined forces to build this altar devoted solely to the Jade Emperor; its site is said to have been an altar for worshipping Heaven back in the Ming Zheng period. The 'One' plaque inside is the temple's best-known feature — its great treasure, and the very thing countless visitors come specially to see. Today it is a municipality-designated historic site.",
     "images": ["/assets/images/temples/temple-tainan-tiantan.png"],
+    "visit": {
+      "hours": "Daily 6:00 AM – 9:00 PM",
+      "whenToGo": "The Jade Emperor's birthday (Tiangong Sheng) on the 9th day of the first lunar month is one of the most solemn days in Tainan, when worshippers prepare lavish offerings.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=458319961205529549"
+        }
+      ]
+    },
     "latitude": 22.9937209,
     "longitude": 120.2041994,
     "sortOrder": 5
@@ -150,6 +216,17 @@
     "history": "In 1665, the nineteenth year of the Ming Yongli reign, Zheng Jing took the advice of his counselor Chen Yonghua and built this Confucian temple in Taiwan. The aim was simple: to spread learning and cultivate talent in this newly opened land. In the Qing dynasty, the Kangxi Emperor bestowed the plaque 'Wan Shi Shi Biao' (Model Teacher for All Ages), and through many rounds of expansion and repair the temple reached the scale it has today. During the Japanese era it was used as a garrison post and a public school, and in 1945 it was damaged in air raids. Today it is a National Monument and the center of Confucian culture in Taiwan.",
     "images": ["/assets/images/temples/temple-tainanconfucius.png"],
     "googleMap": "https://maps.google.com/?cid=802303505355083921",
+    "visit": {
+      "hours": "Daily 8:30 AM – 5:00 PM",
+      "whenToGo": "The Shidian ceremony on Teachers' Day, September 28, each year follows ancient rites, with young dancers (yisheng) performing the six-row (liuyi) dance, and it is the day most worth coming.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=802303505355083921"
+        }
+      ]
+    },
     "latitude": 22.9903049,
     "longitude": 120.2042518,
     "sortOrder": 6
@@ -169,6 +246,17 @@
     "history": "In 1653, the Dutch built Fort Provintia here. In 1661, Koxinga captured the fort and established Chengtian Prefecture, and Chihkan changed hands. Over the years that followed, earthquakes and uprisings left most of the fort in ruins; it was not until the Guangxu era of the Qing dynasty that the Sea God Temple, the Wenchang Pavilion, and the Wuzi Shrine were built one by one on the old site. Much of what you see today rests on that rebuilding, with the Dutch fort and the Chinese pavilions layered one over the other — a historic site, rare in Taiwan, where two architectural traditions meet.",
     "images": ["/assets/images/temples/temple-chihkan.png"],
     "googleMap": "https://maps.google.com/?cid=17466488504101853084",
+    "visit": {
+      "hours": "Daily 8:30 AM – 9:00 PM",
+      "whenToGo": "Around major exams, students often come to the Wenchang Pavilion to pray for exam success; lunar 2/3 is Wenchang Dijun's birthday.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=17466488504101853084"
+        }
+      ]
+    },
     "latitude": 22.9972744,
     "longitude": 120.2027032,
     "sortOrder": 7
@@ -189,6 +277,17 @@
     "images": ["/assets/images/temples/temple-donglong.png"],
     "url": "https://www.66.org.tw/",
     "googleMap": "https://maps.google.com/?cid=15681144924228885359",
+    "visit": {
+      "hours": "Daily 5:00 AM – 10:30 PM",
+      "whenToGo": "The eight-day Donggang Welcoming King Peace Festival is held once every three years (in the years of the Ox, Dragon, Goat, and Dog), and the final night, when the Wangye are sent off and the King Boat is burned, draws the biggest crowds.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=15681144924228885359"
+        }
+      ]
+    },
     "latitude": 22.4630682,
     "longitude": 120.4487888,
     "sortOrder": 8
@@ -209,6 +308,17 @@
     "images": ["/assets/images/temples/temple-chiayi-citygod.png"],
     "url": "https://www.cycht.org.tw/",
     "googleMap": "https://maps.google.com/?cid=4930083161119714020",
+    "visit": {
+      "hours": "Daily 7:00 AM – 9:00 PM",
+      "whenToGo": "The City God's birthday on lunar 8/2 each year is one of Chiayi's grandest religious events.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=4930083161119714020"
+        }
+      ]
+    },
     "latitude": 23.4784142,
     "longitude": 120.454231,
     "sortOrder": 9
@@ -229,6 +339,17 @@
     "images": ["/assets/images/temples/temple-fongshanlongshan.png"],
     "url": "https://longshansi.org.tw/",
     "googleMap": "https://maps.google.com/?cid=1666344148016138627",
+    "visit": {
+      "hours": "Daily 5:00 AM – 9:00 PM",
+      "whenToGo": "Sutra-chanting and blessing ceremonies are held on Guanyin's three feast days (lunar 2/19, 6/19, and 9/19), the most solemn being her birthday on lunar 2/19.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=1666344148016138627"
+        }
+      ]
+    },
     "latitude": 22.6206562,
     "longitude": 120.3620084,
     "sortOrder": 10
@@ -249,6 +370,17 @@
     "images": ["/assets/images/temples/temple-chechengfuan.png"],
     "url": "https://www.fuantmp.org/",
     "googleMap": "https://maps.google.com/?cid=12041559885625507963",
+    "visit": {
+      "hours": "Daily 5:00 AM – 10:00 PM",
+      "whenToGo": "Offering the first incense of the New Year is Fu'an Temple's best-known tradition; the Earth God's birthday on lunar 2/2 is also an important day.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=12041559885625507963"
+        }
+      ]
+    },
     "latitude": 22.070838,
     "longitude": 120.7108142,
     "sortOrder": 11
@@ -268,6 +400,17 @@
     "description": "Pingtung Jiuru Sanshan Guowang Temple, built in 1778 (the 43rd year of the Qianlong reign), is a Pingtung County historic site dedicated to the three Kings of Jinshan, Mingshan and Dushan. The \"Wei Zhen Hai Dong\" plaque hanging high in the main hall is dated to the year the temple was built; the worship pavilion is painted with the Hetu and Luoshu diagrams, the door gods are the work of the painter Pan Li-shui, and the wood carvings on the front facade draw on Romance of the Three Kingdoms and Romance of Sui and Tang. Worship here crosses ethnic lines: the temple's most famous legend involves the Hakka of neighboring Linluo, and the Hoklo who later settled in Jiuru carried on the worship.",
     "history": "Jiuru Sanshan Guowang Temple was completed in 1778 (the 43rd year of the Qianlong reign), and the \"Wei Zhen Hai Dong\" plaque in the main hall dates from that year. In 1866 (the 5th year of the Tongzhi reign), the temple was rebuilt on its present site; it was renovated again in the late 1920s, and its most recent restoration was completed in October 2016. In front of the temple stands a bluestone incense burner from 1807 (the 12th year of the Jiaqing reign). In 2004, the Pingtung County Government designated it a county historic site, and in 2012 its left and right side wings were separately registered as historic buildings.",
     "images": ["/assets/images/temples/temple-jiuru-sanshan.png"],
+    "visit": {
+      "hours": "Daily 6:00 AM – 9:00 PM",
+      "whenToGo": "The Three Mountain Kings' birthday on lunar 2/25 is the most important ceremony day of the year.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=17178237001016271324"
+        }
+      ]
+    },
     "latitude": 22.7309282,
     "longitude": 120.4847171,
     "sortOrder": 12
@@ -289,6 +432,17 @@
     "imageIsIllustration": true,
     "url": "https://www.taizih.org.tw",
     "googleMap": "https://maps.google.com/?cid=309370358842796397",
+    "visit": {
+      "hours": "Daily 5:30 AM – 9:00 PM",
+      "whenToGo": "Around Taizi Ye's birthday on lunar 9/9, palanquins and performance troupes from branch temples everywhere return to Xinying for the incense-gathering procession, making it the liveliest time of the year.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=309370358842796397"
+        }
+      ]
+    },
     "latitude": 23.2951009,
     "longitude": 120.2733225,
     "sortOrder": 13

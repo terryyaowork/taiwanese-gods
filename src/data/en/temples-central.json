@@ -15,6 +15,17 @@
     "images": ["/assets/images/temples/temple-dajiazhenlan.png"],
     "url": "http://www.dajiamazu.org.tw/",
     "googleMap": "https://maps.google.com/?cid=13335183935644470265",
+    "visit": {
+      "hours": "Daily 3:30 AM – 10:30 PM",
+      "whenToGo": "The Dajia Mazu Pilgrimage in the 3rd lunar month each year is the highlight of the year: nine days and eight nights to Xingang Fengtian Temple in Chiayi and back, with huge crowds inside and outside the temple around the departure.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=13335183935644470265"
+        }
+      ]
+    },
     "latitude": 24.3452713,
     "longitude": 120.6234579,
     "sortOrder": 0
@@ -35,6 +46,17 @@
     "images": ["/assets/images/temples/temple-beigangchaotian.png"],
     "url": "https://www.matsu.org.tw/",
     "googleMap": "https://maps.google.com/?cid=8826082841404551118",
+    "visit": {
+      "hours": "Daily 4:30 AM – midnight",
+      "whenToGo": "From lunar 1/15 through the 3rd lunar month each year is the peak season for Mazu temples from around Taiwan to come on pilgrimage, and pilgrimage groups are most concentrated around Mazu's birthday on lunar 3/23.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=8826082841404551118"
+        }
+      ]
+    },
     "latitude": 23.568099,
     "longitude": 120.3046812,
     "sortOrder": 1
@@ -54,6 +76,17 @@
     "history": "Lugang Tianhou Temple had already been built by 1683, the 22nd year of the Qing Kangxi reign. In 1725, the third year of the Yongzheng reign, Shi Shibang donated land and the temple moved to its present site, dedicated to the Heavenly Holy Mother. Lugang was then the largest trading port in central Taiwan; the saying 'first Tainan, second Lugang, third Monga' sums up its prosperity, and Tianhou Temple stood at the heart of the old streets, watching more than two hundred years of trade rise and fall. Under Japanese rule, a large-scale restoration began in 1927 and was completed in 1936, setting the layout you see today. Now the temple, Lugang Old Street, Moru Lane, and Jiuqu Lane together form a complete historic district, one of the best windows onto the culture of a Qing dynasty Taiwanese trading port.",
     "images": ["/assets/images/temples/temple-lugangmazu.png"],
     "googleMap": "https://maps.google.com/?cid=1374261103847850357",
+    "visit": {
+      "hours": "Daily 6:00 AM – 10:00 PM",
+      "whenToGo": "During the New Year, worshippers rush to light guangming lamps and perform Tai Sui rites, and spots are often hard to get; Mazu's birthday on lunar 3/23 is also an important day.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=1374261103847850357"
+        }
+      ]
+    },
     "latitude": 24.0593534,
     "longitude": 120.4313866,
     "sortOrder": 2
@@ -73,6 +106,17 @@
     "history": "During the Qianlong reign, the early settlers of Baishatun brought a soft-bodied Mazu statue into a private home to worship. Late in the Xianfeng reign they pooled funds to build a temple, which was completed in 1863, the second year of the Tongzhi reign: the beginning of Gongtian Temple. The people here have made their living from the sea for generations, and faith in Mazu has been their most important spiritual anchor against wind and waves. What truly sets Baishatun Mazu apart is the pilgrimage that has carried on year after year: the palanquin travels on foot from Baishatun to Beigang Chaotian Temple in Yunlin, with the departure date chosen each year by casting divination blocks. In 2026 the journey took eight days and seven nights. Unlike Dajia Mazu, Baishatun Mazu decides her own route, pointing the way through the swaying of her palanquin, so the path is different every year, which is why she is hailed as 'the Mazu with the most personality.' The number of devotees following the palanquin grows every year; in 2026, registrations passed 460,000.",
     "images": ["/assets/images/temples/temple-baishatun.png"],
     "googleMap": "https://maps.google.com/?cid=11486608079882747560",
+    "visit": {
+      "hours": "Daily 5:00 AM – 9:30 PM",
+      "whenToGo": "It is liveliest during the annual walking pilgrimage to Beigang Chaotian Temple. The departure date is decided each year by casting moon blocks, so check the temple's announcements before you go.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=11486608079882747560"
+        }
+      ]
+    },
     "latitude": 24.5714507,
     "longitude": 120.7092112,
     "sortOrder": 3
@@ -92,6 +136,17 @@
     "history": "The story begins with an incense pouch. Tradition says that during the Qing Yongzheng reign, a potter named Yang Qian carried a Mazu incense pouch with him for people to pray to. Its miracles were so striking that more and more believers gathered, until in 1738, the third year of the Qianlong reign, Nanyao Temple was built. The Changhua County Gazetteer of the Daoguang reign already records Nanyao Temple making its yearly pilgrimage to Bengang. From then on, the temple's devotee organizations, the 'Mazu associations,' kept growing, and their influence spread across central Taiwan. From one small incense pouch to ten Mazu associations, Nanyao Temple shows how Taiwan's pilgrimage culture grew out of folk belief into a force that binds a community together.",
     "images": ["/assets/images/temples/temple-nanyao.png"],
     "googleMap": "https://maps.google.com/?cid=17722308929893834177",
+    "visit": {
+      "hours": "Daily 6:00 AM – 9:30 PM",
+      "whenToGo": "The annual Bengang pilgrimage is a major tradition at Nanyao Temple; Mazu's birthday on lunar 3/23 is also the most important day for a Mazu temple.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=17722308929893834177"
+        }
+      ]
+    },
     "latitude": 24.0700406,
     "longitude": 120.5415971,
     "sortOrder": 4
@@ -116,6 +171,17 @@
     "images": ["/assets/images/temples/temple-lecheng.jpeg"],
     "url": "https://www.lecheng.org.tw",
     "googleMap": "https://maps.app.goo.gl/Exgy6BDDyBg3VWBG6",
+    "visit": {
+      "hours": "Daily 6:30 AM – 10:00 PM",
+      "whenToGo": "The Hanxi Mazu procession through eighteen villages lasts 22 days and is the temple's main event of the year. Those seeking a match mostly come to pray at the Yue Lao hall around Qixi (lunar 7/7) and Valentine's Day on February 14.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.app.goo.gl/Exgy6BDDyBg3VWBG6"
+        }
+      ]
+    },
     "latitude": 24.1407017,
     "longitude": 120.6980189,
     "sortOrder": 5
@@ -139,6 +205,17 @@
     "description": "Borrow NT$600 from the Earth God: that is what Zhushan Zinan Temple is best known for. This temple in Zhushan Township, Nantou County, is dedicated to Tudigong, the Earth God, and is famous across Taiwan for 'borrowing fortune money.' Worshippers borrow 600 from the Earth God as 'mother money' and tuck it into their wallets so their money will keep multiplying. If they have made a profit by the following year, they return the principal and add whatever incense donation they wish. Every Lunar New Year, crowds line up to borrow fortune money. The temple also built a public restroom called 'Golden Bamboo Shoot Welcomes Guests,' which has unexpectedly become an attraction in its own right.",
     "history": "In 1745, the tenth year of the Qing Qianlong reign, residents around Zhushan built a small shrine to the Earth God who protected their community. That was where Zinan Temple began. What truly made this little temple famous across Taiwan was the tradition of borrowing fortune money. Word spread that mother money borrowed from the Earth God was especially effective, and as the story passed from one person to the next, worshippers came from all over Taiwan and the incense burned brighter every year. The temple has put donations to good use, steadily improving its surroundings and facilities, until even the public restroom became a sight to see. And so a small shrine to the Earth God became the most important center of tourism and faith in Zhushan, Nantou.",
     "images": ["/assets/images/temples/temple-zhushan-zinan.png"],
+    "visit": {
+      "hours": "Daily 7:00 AM – 9:00 PM",
+      "whenToGo": "During the Lunar New Year, crowds of worshippers queue to borrow fortune money; the Earth God's birthday on lunar 2/2 is also an important day.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=13466994496785747467"
+        }
+      ]
+    },
     "latitude": 23.8171482,
     "longitude": 120.7225076,
     "sortOrder": 6
@@ -159,6 +236,17 @@
     "images": ["/assets/images/temples/temple-shoutian.png"],
     "url": "https://www.shoutian.org.tw/",
     "googleMap": "https://maps.google.com/?cid=12581810184350471473",
+    "visit": {
+      "hours": "Daily 5:30 AM – 10:00 PM",
+      "whenToGo": "Around Xuantian Shangdi's birthday on lunar 3/3, pilgrimage groups and performance troupes from all over Taiwan flood up to Songboling, making it the liveliest time of the year.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=12581810184350471473"
+        }
+      ]
+    },
     "latitude": 23.8392701,
     "longitude": 120.6302605,
     "sortOrder": 7
@@ -179,6 +267,17 @@
     "images": ["/assets/images/temples/temple-beigangwude.png"],
     "url": "https://www.wude.org.tw/",
     "googleMap": "https://maps.google.com/?cid=7829449288237875360",
+    "visit": {
+      "hours": "Daily 6:00 AM – 10:00 PM",
+      "whenToGo": "On lunar 3/15, the Martial God of Wealth's birthday, worshippers from everywhere pour in; the mother coins handed out over the New Year also draw many visitors.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=7829449288237875360"
+        }
+      ]
+    },
     "latitude": 23.5810159,
     "longitude": 120.2996947,
     "sortOrder": 8
@@ -229,6 +328,17 @@
     "images": ["/assets/images/temples/temple-baishatun.png"],
     "url": "https://shenbianma.tw/",
     "googleMap": "https://maps.google.com/?cid=3600538260621027501",
+    "visit": {
+      "hours": "Daily 6:00 AM – 8:30 PM",
+      "whenToGo": "It draws the most attention during the annual pilgrimage, when it shares the palanquin with Baishatun Mazu and walks to Beigang Chaotian Temple. The departure date is decided each year by casting moon blocks.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=3600538260621027501"
+        }
+      ]
+    },
     "latitude": 24.5866621,
     "longitude": 120.7150911,
     "sortOrder": 10
@@ -248,6 +358,16 @@
     "description": "The lake drifts in and out of the morning mist, and all night long a mournful, ancient ritual song echoes along its shore. This is Xiangtianhu (Lake Facing Heaven), in a mountain basin about 738 meters above sea level: the ceremonial ground of the southern group of the Saisiyat people's Pasta'ay, the Ritual of the Short Spirits (the northern group's ground is in Wufeng, Hsinchu), and the most mysterious and moving indigenous ceremonial site in Taiwan. Ringed by mountains, the scenery feels like a dream. The Pasta'ay is held as a minor ritual every two years and a grand ritual every ten. It lasts four days and three nights and runs through the night by the lake, with solemn songs and slow dance steps offering repentance, thanks, and prayers to the spirits of the ancient short people. The ritual was designated an Important Folk Custom of Taiwan in 2013, and beside the ceremonial ground stands the Saisiyat Folklore Museum, opened in 2004.",
     "history": "Legend says that in ancient times a people of small stature but enormous strength, the ta'ay, lived alongside the Saisiyat and taught them farming, song, and dance. But the ta'ay later harassed Saisiyat women again and again, until the tribe could bear it no longer and secretly tampered with the mountain-loquat-tree bridge leading to the ta'ay's home; when the ta'ay crossed, they fell and drowned. Before they died, the ta'ay laid a curse, and from then on the Saisiyat suffered failed harvests and one disaster after another. To calm the resentment of the dead and pray for good harvests, the Saisiyat began holding the Pasta'ay. The ritual songs are said to be the very ones the ta'ay taught as they were dying, their melodies mournful and ancient, a precious living fossil of oral literature. To this day, the Xiangtianhu ceremonial ground keeps this ancient ritual tradition alive, an important sacred site for passing on Saisiyat culture.",
     "images": ["/assets/images/temples/temple-xiangtianhu.png"],
+    "visit": {
+      "whenToGo": "The Pasta'ai is held as a smaller ceremony every two years and a major one every ten years, lasting four days and three nights with all-night rites by the lake. Outside the ceremony, you can visit the Saisiyat Folk Museum next door.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=7000304878889591884"
+        }
+      ]
+    },
     "latitude": 24.5830957,
     "longitude": 121.0340633,
     "sortOrder": 11
@@ -268,6 +388,17 @@
     "images": ["/assets/images/temples/temple-zhunan-wugu.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=13686238840636622089",
+    "visit": {
+      "hours": "Daily 5:00 AM – 9:00 PM",
+      "whenToGo": "Shennong Dadi's birthday on lunar 4/26 is the most important celebration of the year.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=13686238840636622089"
+        }
+      ]
+    },
     "latitude": 24.6885803,
     "longitude": 120.8837405,
     "sortOrder": 12
@@ -288,6 +419,17 @@
     "images": ["/assets/images/temples/temple-lugu-fenghuangshan.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=3289151911247841520",
+    "visit": {
+      "hours": "Daily 5:30 AM – 8:00 PM",
+      "whenToGo": "On lunar 3/16, Cankui Zushi's birthday, worshippers from everywhere return to pay their respects, and the mountain road is at its most crowded.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=3289151911247841520"
+        }
+      ]
+    },
     "latitude": 23.7339182,
     "longitude": 120.7843578,
     "sortOrder": 13

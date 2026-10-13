@@ -59,6 +59,17 @@
     "images": ["/assets/images/temples/temple-xingtian.png"],
     "url": "https://www.ht.org.tw",
     "googleMap": "https://maps.app.goo.gl/metg9bbR6hathxpZ8",
+    "visit": {
+      "hours": "Daily 4:00 AM – 9:00 PM",
+      "whenToGo": "Guan Gong's birthday on lunar 6/24 is the most important festival of the year; the temple also offers soul-calming (shoujing) services on ordinary days.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.app.goo.gl/metg9bbR6hathxpZ8"
+        }
+      ]
+    },
     "latitude": 25.0630848,
     "longitude": 121.5338448,
     "sortOrder": 1
@@ -79,6 +90,17 @@
     "images": ["/assets/images/temples/temple-baoan.png"],
     "url": "https://www.baoan.org.tw",
     "googleMap": "https://maps.app.goo.gl/LhkSuHr4Q1As3dQh8",
+    "visit": {
+      "hours": "Daily 6:00 AM – 9:00 PM",
+      "whenToGo": "It is liveliest around Baosheng Dadi's birthday on lunar 3/15. The temple's Baosheng Cultural Festival runs for more than two months, with family-sponsored opera performances, fire walking, and fire lion displays.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.app.goo.gl/LhkSuHr4Q1As3dQh8"
+        }
+      ]
+    },
     "latitude": 25.0723373,
     "longitude": 121.5155847,
     "sortOrder": 2
@@ -103,6 +125,17 @@
     "images": ["/assets/images/temples/temple-citygod.png"],
     "url": "http://www.tpecitygod.org",
     "googleMap": "https://maps.google.com/?cid=7596797163613549522",
+    "visit": {
+      "hours": "Daily 7:00 AM – 7:00 PM",
+      "whenToGo": "Crowds peak on lunar 5/13 for Taipei's City God procession, a day known by the saying \"on 5/13, people watch people.\" Worshippers praying to Yue Lao are also especially numerous around Qixi (lunar 7/7) and Valentine's Day on February 14.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=7596797163613549522"
+        }
+      ]
+    },
     "latitude": 25.0556263,
     "longitude": 121.5102099,
     "sortOrder": 3
@@ -123,6 +156,17 @@
     "images": ["/assets/images/temples/temple-ciyou.png"],
     "url": "https://www.ssjyg.org.tw",
     "googleMap": "https://maps.app.goo.gl/4pQhoRnjQgDyiTzW9",
+    "visit": {
+      "hours": "Daily 5:30 AM – 10:30 PM",
+      "whenToGo": "Mazu's birthday on lunar 3/23 is the most important day of the year at a Mazu temple.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.app.goo.gl/4pQhoRnjQgDyiTzW9"
+        }
+      ]
+    },
     "latitude": 25.0512927,
     "longitude": 121.5776446,
     "sortOrder": 4
@@ -143,6 +187,16 @@
     "images": ["/assets/images/temples/temple-zhinan.png"],
     "url": "https://www.chih-nan-temple.org/",
     "googleMap": "https://maps.google.com/?cid=4588651315000145868",
+    "visit": {
+      "whenToGo": "On lunar 4/14, the birthday of Lü Xianzu (Lü Dongbin), Zhinan Temple holds a birthday Dharma assembly, along with cultural events such as poetry recitals and calligraphy exhibitions.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=4588651315000145868"
+        }
+      ]
+    },
     "latitude": 24.9796041,
     "longitude": 121.5880572,
     "sortOrder": 5
@@ -199,6 +253,17 @@
     "images": ["/assets/images/temples/temple-taipei-confucius.png"],
     "url": "https://www.tctcc.taipei",
     "googleMap": "https://maps.google.com/?cid=7269829153313436851",
+    "visit": {
+      "hours": "Tuesday–Sunday 8:30 AM – 9:00 PM; closed Mondays",
+      "whenToGo": "The Confucius ceremony (the Shidian rite) on Teachers' Day, September 28, each year is the day most worth a special trip.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=7269829153313436851"
+        }
+      ]
+    },
     "latitude": 25.0727013,
     "longitude": 121.5165018,
     "sortOrder": 7
@@ -218,6 +283,17 @@
     "description": "Every exam season, the walls of Taipei Wenchang Temple fill up with photocopies of exam admission tickets, layered so thickly that they become a sight in their own right. Standing beside Shuanglian MRT Station in Taipei's Zhongshan District, this is a well-known Wenchang temple in central Taipei, dedicated to Wenchang Dijun, the god in charge of scholarly success. Worshippers arrive carrying bags of punning offerings: scallions for cleverness, celery for diligence, radish (caitou) for good fortune, and zongzi rice dumplings, whose name sounds like \"sure to pass.\" All their hopes of seeing their names on the pass list are placed in these offerings they can hold in their hands.",
     "history": "Taipei Wenchang Temple's origins go back to the Japanese era. It is said that a statue of Wenchang Dijun brought over by a merchant was left in the woods at Shuanglian, and was later found and enshrined; it was expanded in 1960. Later, because of construction on the MRT Tamsui Line, the temple moved into Minxiang Park and was rebuilt inside the park in 1992. It is not large, but its location in the heart of Taipei, its easy access and its long reputation for answered prayers gradually made it a temple students visit often. On the eve of every major exam, crowds of students and parents pour in to pray for good results, and the wall covered in admission tickets has become a unique cultural sight.",
     "images": ["/assets/images/temples/temple-taipei-wenchang.png"],
+    "visit": {
+      "hours": "Daily 7:00 AM – 9:00 PM",
+      "whenToGo": "Students and parents pour in to pray for exam success on the eve of major exams, and blessing ceremonies are often held around Wenchang Dijun's birthday on lunar 2/3.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=18254476121765775052"
+        }
+      ]
+    },
     "latitude": 25.0591875,
     "longitude": 121.5210132,
     "sortOrder": 8
@@ -277,6 +353,17 @@
     "images": ["/assets/images/temples/temple-keelungdianji.png"],
     "url": "https://www.facebook.com/profile.php?id=61555934995950",
     "googleMap": "https://maps.google.com/?cid=14401796649461744893",
+    "visit": {
+      "hours": "Daily 7:00 AM – 10:00 PM",
+      "whenToGo": "Kaizhang Shengwang's birthday on lunar 2/15 is the most important ceremony of the year.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=14401796649461744893"
+        }
+      ]
+    },
     "latitude": 25.1280744,
     "longitude": 121.743085,
     "sortOrder": 10
@@ -297,6 +384,17 @@
     "images": ["/assets/images/temples/temple-hsinchucitygod.png"],
     "url": "https://www.weiling.org.tw/",
     "googleMap": "https://maps.google.com/?cid=17492759372388554891",
+    "visit": {
+      "hours": "Daily 5:00 AM – 10:00 PM",
+      "whenToGo": "The Zhuqian Zhongyuan City God Festival in the 7th lunar month is the most striking, with the ritual of carrying the cangue to dissolve misfortune and the City God's procession through the area.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=17492759372388554891"
+        }
+      ]
+    },
     "latitude": 24.8043564,
     "longitude": 120.9660651,
     "sortOrder": 11
@@ -317,6 +415,17 @@
     "images": ["/assets/images/temples/temple-taoyuanjingfu.png"],
     "url": "https://www.jingfugung.com/",
     "googleMap": "https://maps.google.com/?cid=4147780182156509096",
+    "visit": {
+      "hours": "Daily 6:00 AM – 8:50 PM",
+      "whenToGo": "Kaizhang Shengwang's birthday on lunar 2/15 is the most important ceremony of the year.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=4147780182156509096"
+        }
+      ]
+    },
     "latitude": 24.9949833,
     "longitude": 121.3108364,
     "sortOrder": 12
@@ -337,6 +446,17 @@
     "images": ["/assets/images/temples/temple-fagushan.png"],
     "url": "https://www.ddm.org.tw",
     "googleMap": "https://maps.google.com/?cid=11848497937389221475",
+    "visit": {
+      "hours": "Daily 9:00 AM – 4:00 PM",
+      "whenToGo": "Buddha's Birthday (the Bathing the Buddha Festival) on lunar 4/8 is an important Buddhist holiday, when monasteries hold Bathing the Buddha ceremonies; ordinary days are good for a quiet, contemplative walk.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=11848497937389221475"
+        }
+      ]
+    },
     "latitude": 25.2409502,
     "longitude": 121.6148125,
     "sortOrder": 13
@@ -356,6 +476,17 @@
     "history": "Citien Temple's story is bound up with the Han Chinese settlement of Beipu. In 1834, the 14th year of the Daoguang reign, Jiang Xiuluan, a settler from Guangdong, and Zhou Bangzheng, a settler from Fujian, joined forces to form the Jin Guang Fu land-reclamation company and push into the mountains southeast of Hsinchu. According to tradition, the Guanyin enshrined in the temple was brought back from mainland China by Jiang Xiuluan himself. In 1840, the 20th year of Daoguang, Jiang rebuilt the shrine as a wooden temple. In 1874, the 13th year of the Tongzhi reign, his eldest grandson Jiang Ronghua undertook another major rebuilding, adding the two corridors and the front hall and fixing the two-hall, two-corridor, two-wing layout seen today. In 1907, under Japanese rule, the Beipu Incident took place in the very Beipu settlement where Citien Temple stands.",
     "images": ["/assets/images/temples/temple-beipu-citien.png"],
     "googleMap": "https://maps.google.com/?cid=1480177471064116822",
+    "visit": {
+      "hours": "Daily 6:00 AM – 7:00 PM",
+      "whenToGo": "Sutra-chanting and blessing ceremonies are held on Guanyin's three feast days (lunar 2/19, 6/19, and 9/19); Beipu Old Street is busier with visitors on weekends and holidays.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=1480177471064116822"
+        }
+      ]
+    },
     "latitude": 24.6997628,
     "longitude": 121.0583752,
     "sortOrder": 14
@@ -376,6 +507,17 @@
     "images": ["/assets/images/temples/temple-xinpu-yimin.png"],
     "url": "https://www.yimin.org.tw/",
     "googleMap": "https://maps.google.com/?cid=16984425093641938005",
+    "visit": {
+      "hours": "Daily 6:00 AM – 7:00 PM",
+      "whenToGo": "The Yimin Festival on lunar 7/20 is the grandest day of the year. It is hosted in rotation by fifteen major villages of the Taoyuan and Hsinchu area and includes rituals such as the Divine Pig Competition.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=16984425093641938005"
+        }
+      ]
+    },
     "latitude": 24.8442777,
     "longitude": 121.036446,
     "sortOrder": 15
@@ -396,6 +538,17 @@
     "images": ["/assets/images/temples/temple-xinzhuangwu.png"],
     "url": "https://www.facebook.com/wusheng.org.tw",
     "googleMap": "https://maps.google.com/?cid=862564105281032633",
+    "visit": {
+      "hours": "Daily 7:30 AM – 8:30 PM",
+      "whenToGo": "Guan Gong's birthday on lunar 6/24 is the most important festival of the year.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=862564105281032633"
+        }
+      ]
+    },
     "latitude": 25.0337842,
     "longitude": 121.4501079,
     "sortOrder": 16
@@ -420,6 +573,17 @@
     "images": ["/assets/images/temples/temple-xinzhuangdizang.png"],
     "url": "https://www.xzdza.org.tw/",
     "googleMap": "https://maps.google.com/?cid=18128714433227309511",
+    "visit": {
+      "hours": "Daily 8:30 AM – 5:00 PM",
+      "whenToGo": "The Xinzhuang Grand Worship on lunar 5/1 (the Dazhong Ye procession) is the grandest day of the year, with a secret night patrol (anfang) and Guanjiangshou troupes; a Dharma assembly for Ksitigarbha Bodhisattva's birthday is also held at the end of the 7th lunar month.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=18128714433227309511"
+        }
+      ]
+    },
     "latitude": 25.0377357,
     "longitude": 121.4568824,
     "sortOrder": 17
@@ -440,6 +604,17 @@
     "images": ["/assets/images/temples/temple-xinzhuang-guangfu.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=10283934670926035896",
+    "visit": {
+      "hours": "Daily 8:00 AM – 6:00 PM",
+      "whenToGo": "Lunar 2/25 is the birthday of the Three Mountain Kings. Little incense burns here now, so on ordinary days you can take your time looking closely at the Qing-dynasty architecture.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=10283934670926035896"
+        }
+      ]
+    },
     "latitude": 25.0355685,
     "longitude": 121.4552737,
     "sortOrder": 18
@@ -495,6 +670,17 @@
     "images": ["/assets/images/temples/temple-sanxia-changfu.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=5983519490857505777",
+    "visit": {
+      "hours": "Daily 5:00 AM – 10:00 PM",
+      "whenToGo": "Qingshui Zushi's birthday on lunar 1/6 is the most important festival, when Changfu Temple holds its Divine Pig Competition, a tradition more than a century old.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=5983519490857505777"
+        }
+      ]
+    },
     "latitude": 24.9337902,
     "longitude": 121.3703176,
     "sortOrder": 21
@@ -515,6 +701,17 @@
     "images": ["/assets/images/temples/temple-manka-qingshui.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=13678376866519882228",
+    "visit": {
+      "hours": "Daily 6:00 AM – 6:00 PM",
+      "whenToGo": "Qingshui Zushi's birthday on lunar 1/6 is the most important festival; on ordinary days the temple is quiet, a good time to sit down and look around slowly.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=13678376866519882228"
+        }
+      ]
+    },
     "latitude": 25.0402174,
     "longitude": 121.5025954,
     "sortOrder": 22
@@ -535,6 +732,17 @@
     "images": ["/assets/images/temples/temple-tamsui-qingshui.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=13357688321990784336",
+    "visit": {
+      "hours": "Daily 4:30 AM – 9:00 PM",
+      "whenToGo": "The festival on lunar 5/6, the day the Patriarch attained the Way, is Tamsui's famous \"great worship\"; Qingshui Zushi's birthday on lunar 1/6 is also an important festival.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=13357688321990784336"
+        }
+      ]
+    },
     "latitude": 25.1703568,
     "longitude": 121.4410754,
     "sortOrder": 23
@@ -555,6 +763,17 @@
     "images": ["/assets/images/temples/temple-tamsui-yinshan.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=11859948809437008348",
+    "visit": {
+      "hours": "Daily 7:00 AM – 5:30 PM",
+      "whenToGo": "Dingguang Gufo's birthday on lunar 1/6 is the most important celebration of the year.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=11859948809437008348"
+        }
+      ]
+    },
     "latitude": 25.169174,
     "longitude": 121.448532,
     "sortOrder": 24
@@ -576,6 +795,17 @@
     "imageIsIllustration": true,
     "url": "https://www.zlskyt.com.tw",
     "googleMap": "https://maps.google.com/?cid=7194270883373393240",
+    "visit": {
+      "hours": "Daily 6:00 AM – 10:00 PM",
+      "whenToGo": "Sutra-chanting and blessing ceremonies are held on Guanyin's three feast days (lunar 2/19, 6/19, and 9/19). Cherry blossoms bloom in the garden in spring, and weekday mornings are the quietest.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=7194270883373393240"
+        }
+      ]
+    },
     "latitude": 25.0836731,
     "longitude": 121.3893262,
     "sortOrder": 25
@@ -596,6 +826,17 @@
     "images": ["/assets/images/temples/temple-manka-dizang.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=8053789533490894167",
+    "visit": {
+      "hours": "Daily 5:00 AM – 8:30 PM",
+      "whenToGo": "Ksitigarbha Bodhisattva's birthday on lunar 7/30 is the liveliest time of year at this small temple; the rest of the time it is mostly quiet.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=8053789533490894167"
+        }
+      ]
+    },
     "latitude": 25.0368701,
     "longitude": 121.5006503,
     "sortOrder": 26
@@ -616,6 +857,16 @@
     "images": ["/assets/images/temples/temple-xinpu-guanghe.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=12853975680603968433",
+    "visit": {
+      "whenToGo": "The Three Mountain Kings' birthday on lunar 2/25 is the most important ceremony day of the year.",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google Maps",
+          "url": "https://maps.google.com/?cid=12853975680603968433"
+        }
+      ]
+    },
     "latitude": 24.8280843,
     "longitude": 121.0745984,
     "sortOrder": 27

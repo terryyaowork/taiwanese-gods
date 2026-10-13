@@ -15,6 +15,17 @@
     "images": ["/assets/images/temples/temple-jiaoxisietian.png"],
     "url": "https://www.sttemple.org.tw/",
     "googleMap": "https://maps.google.com/?cid=2348428617193744051",
+    "visit": {
+      "hours": "每日 04:30–22:00",
+      "whenToGo": "農曆正月十三的「龜大王」乞龜活動最熱鬧；農曆正月與六月（六月二十四關聖帝君聖誕）的祭典也很盛大。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=2348428617193744051"
+        }
+      ]
+    },
     "latitude": 24.8185047,
     "longitude": 121.7690905,
     "sortOrder": 0
@@ -34,6 +45,17 @@
     "history": "天后宮確切的創建年代已不可考，但一段海上對峙，讓它的歷史被牢牢記下。明萬曆三十二年（1604年），荷蘭東印度公司司令官韋麻郎率兩艘船抵達澎湖，福建都司沈有容領兵船五十艘前來交涉，硬是把荷蘭人勸退。這段事蹟被刻成石碑，卻沉睡了三百多年——直到1919年廟宇整修時才重見天日，也一舉坐實了澎湖天后宮「台澎第一古廟」的地位。廟宇歷經明、清多次修建，康熙二十三年（1684年）改名天后宮，如今建築仍保留著大量清代工藝。",
     "images": ["/assets/images/temples/temple-penghu-tianhou.png"],
     "googleMap": "https://maps.google.com/?cid=8689713124882381801",
+    "visit": {
+      "hours": "每日 07:00–19:00",
+      "whenToGo": "農曆三月二十三媽祖聖誕是媽祖廟一年中最重要的日子。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=8689713124882381801"
+        }
+      ]
+    },
     "latitude": 23.5647115,
     "longitude": 119.5640221,
     "sortOrder": 1
@@ -53,6 +75,17 @@
     "history": "傳說1949年（民國38年），王母娘娘在花蓮吉安一帶顯化降世、庇佑地方，信眾感念其靈驗，於是在此建廟奉祀，這便是勝安宮的起點。此後母娘信仰由花蓮向外擴散，勝安宮與慈惠堂同源而分流，形成黃衣、青衣兩大系統，各自開枝散葉遍及全台。作為母娘信仰的發祥地，勝安宮歷經多次擴建，殿宇日益恢宏；每年的王母娘娘遶境活動（2013年登錄為民俗文化資產），依然是花蓮在地重要的年度盛事，也讓一代代信眾記得母娘降世的這段淵源。",
     "images": ["/assets/images/temples/temple-hualienshenan.png"],
     "googleMap": "https://maps.google.com/?cid=17322388269370314172",
+    "visit": {
+      "hours": "每日 05:30–21:30",
+      "whenToGo": "每年的王母娘娘遶境是花蓮重要的年度盛事；農曆七月十八王母娘娘聖誕（蟠桃會）也有盛大慶典。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=17322388269370314172"
+        }
+      ]
+    },
     "latitude": 23.9778981,
     "longitude": 121.5867689,
     "sortOrder": 2
@@ -72,6 +105,16 @@
     "history": "花蓮城隍廟創建於日治時期，一說是昭和9年（1934年），是市區最重要的城隍信仰中心。初建時規模不大，主祀城隍爺。光復後花蓮人口漸增，城隍廟幾度擴建整修，才有今日的面貌。",
     "images": ["/assets/images/temples/temple-hualienchenghuang.png"],
     "googleMap": "https://maps.google.com/?cid=1792585756554793237",
+    "visit": {
+      "hours": "每日 06:00–19:30",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=1792585756554793237"
+        }
+      ]
+    },
     "latitude": 23.9733796,
     "longitude": 121.6057448,
     "sortOrder": 3
@@ -90,6 +133,17 @@
     "description": "站在宜蘭三清宮廟前，整座梅花湖的碧波盡收眼底——這是宜蘭少見能一邊拜拜、一邊看湖的道教宮廟。它主祀三清道祖（元始天尊、靈寶天尊、道德天尊），被稱為台灣的道教總廟。三清宮依山傍水、環境清幽，是宜蘭知名的信仰與觀光勝地，想拜拜、也想放鬆走走的人，這裡剛剛好。",
     "history": "1970年代，三清宮在梅花湖畔擇地興建；一般的說法是，土地由故縣長陳進東捐出。三清宮坐擁梅花湖碧波與群山環抱的絕景，主殿供奉三清道祖；每年農曆二月十五道德天尊誕辰，是廟裡最重要的廟會。後來廟宇周邊發展出完整的觀光帶，梅花湖自行車道也成了宜蘭的熱門去處，讓三清宮成為少數能兼顧信仰與遊憩的廟宇。",
     "images": ["/assets/images/temples/temple-yilan-sanqing.png"],
+    "visit": {
+      "hours": "每日 05:00–21:00（週六到 22:00）",
+      "whenToGo": "每年農曆二月十五道德天尊誕辰，是廟裡最重要的廟會。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=11371312628312859824"
+        }
+      ]
+    },
     "latitude": 24.6391621,
     "longitude": 121.7350194,
     "sortOrder": 4
@@ -113,6 +167,17 @@
     "history": "1917年（大正6年），日籍住持川端滿二在花蓮吉野移民村創建了這座布教所，作為日本真言宗的據點，也成了當時日本移民的心靈寄託。布教所的本尊是弘法大師，不動明王與毘沙門天為脇佛。二戰結束後，日本移民被遣返，布教所一度荒廢，後來改名「慶修院」，改奉釋迦牟尼佛與觀世音菩薩，交由民間管理。1997年，它被指定為花蓮縣定古蹟，經過完整修復後重新開放。院內那八十八尊石佛，仿的是日本四國「八十八所靈場」，讓當年無法遠渡重洋的信眾也能就近巡禮參拜。",
     "images": ["/assets/images/temples/temple-qingxiuyuan.png"],
     "googleMap": "https://maps.google.com/?cid=16084543393414290365",
+    "visit": {
+      "hours": "週二至週日 08:30–17:00，週一休息",
+      "whenToGo": "農曆四月初八佛誕日（浴佛節）與觀音紀念日是佛教重要日子；平日院內安靜，適合慢慢走。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=16084543393414290365"
+        }
+      ]
+    },
     "latitude": 23.9736033,
     "longitude": 121.5646838,
     "sortOrder": 5
@@ -133,6 +198,17 @@
     "images": ["/assets/images/temples/temple-taitungtianhou.png"],
     "url": "https://www.taitungtianhou.org.tw/",
     "googleMap": "https://maps.google.com/?cid=5023869641749829170",
+    "visit": {
+      "hours": "每日 06:00–22:00",
+      "whenToGo": "元宵節（農曆正月十五）的「諸神遶境」與「炸寒單」最熱鬧，年年吸引成千上萬人湧入。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=5023869641749829170"
+        }
+      ]
+    },
     "latitude": 22.7570998,
     "longitude": 121.1551127,
     "sortOrder": 6
@@ -153,6 +229,17 @@
     "images": ["/assets/images/temples/temple-matsu-tianhou.png"],
     "url": "http://tianhou-temple.matsu.idv.tw/",
     "googleMap": "https://maps.google.com/?cid=14117555990881214823",
+    "visit": {
+      "hours": "每日 06:30–20:30",
+      "whenToGo": "每年農曆九月九日的「媽祖昇天祭」，是馬祖一年裡最盛大的宗教慶典。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=14117555990881214823"
+        }
+      ]
+    },
     "latitude": 26.1583916,
     "longitude": 119.9181111,
     "sortOrder": 7
@@ -173,6 +260,16 @@
     "images": ["/assets/images/temples/temple-kinmen-citygod.png"],
     "url": "https://kinmen.travel/zh-tw/travel/attraction/811",
     "googleMap": "https://maps.google.com/?cid=12324986200684401392",
+    "visit": {
+      "whenToGo": "每年農曆四月十二的「金門迎城隍」是全島總動員的大遊行，藝閣與陣頭綿延不絕。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=12324986200684401392"
+        }
+      ]
+    },
     "latitude": 24.4325803,
     "longitude": 118.3161057,
     "sortOrder": 8
@@ -227,6 +324,17 @@
     "description": "在花蓮光復鄉的太巴塱（Tafalong），住著一支歷史悠久的阿美族部落——這是阿美族最古老、規模最大的部落之一。部落裡的祖祠（kakita'an）是太巴塱信仰與文化傳承的核心，屋柱上刻著一幅幅精美的木雕圖騰，訴說阿美族的創世神話與祖先的故事，是台灣原住民藝術的珍貴遺產。每年七、八月的豐年祭（Ilisin），是部落一年裡最重要的祭典，全體族人齊聚歌舞，向祖靈（kawas）獻上敬意，感謝祂庇佑族人、也感謝自然萬物的恩賜。祭典中的歌舞、宴飲與嚴謹的年齡階級制度，完整展現了阿美族的社會結構與文化底蘊。",
     "history": "太巴塱是阿美族先民遷徙到花東縱谷後，最早建立的大型聚落之一。「太巴塱」（Tafalong）在阿美族語中意為「白色的螃蟹」，相傳是因為當地溪流裡曾有大量白螃蟹而得名。祖祠（kakita'an）是部落的精神核心，原本的祖屋在1958年的溫妮颱風中毀壞，2006年依日治時期千千岩助太郎留下的圖面重建；倖存的雕刻木柱，多數由中研院民族所收藏。日治時期，日本學者曾深入太巴塱進行民族學調查，留下珍貴的文獻紀錄。近年來，族人積極推動文化復振——修復祖祠、傳唱古老歌謠、重拾傳統工藝，2023年也成立了「太巴塱文物館」，讓這座古老的部落，成為台灣原住民文化保存的典範。",
     "images": ["/assets/images/temples/temple-tafalong.png"],
+    "visit": {
+      "hours": "每日 08:00–16:00",
+      "whenToGo": "每年七、八月的豐年祭（Ilisin）是部落一年裡最重要的祭典。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=3299427822821884226"
+        }
+      ]
+    },
     "latitude": 23.6591,
     "longitude": 121.4497,
     "sortOrder": 10
@@ -245,6 +353,17 @@
     "description": "成功天后宮又叫小港成廣澳天后宮，已有超過一百五十年歷史，是台東縣最古老的媽祖廟。清代時，劉進來被派到後山擔任通事。出發前，他特地到鹿港天后宮請媽祖隨行護身；平安抵達台東後，就把媽祖安置在這裡，媽祖信仰從此在台東扎根。這座廟也是不同族群相遇的地方：建廟之初曾和當地原住民起衝突，最後靠平埔族婦女居中協調，雙方才得以共存。來東海岸，成廣澳是值得停下來的一站。",
     "history": "天后宮幾經搬遷，最後落腳成廣澳，成為當地的信仰中心。日治時期禁止傳統信仰，居民把神像藏進海邊的石洞，信仰才延續下來。1949 年廟宇遭遇火災，重建時人手不足，請不到西部的彩繪師傅，便請當地平埔族原住民協助樑上的彩繪，這是原住民參與漢人廟宇興建的首例。農曆三月二十三日媽祖聖誕，是一年裡最熱鬧的日子。",
     "url": "https://www.eastcoast-nsa.gov.tw/zh-tw/attractions/detail/280/",
+    "visit": {
+      "hours": "每日 06:00–20:00",
+      "whenToGo": "農曆三月二十三日媽祖聖誕是一年裡最熱鬧的日子。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=18230963418483275600"
+        }
+      ]
+    },
     "latitude": 23.1598565,
     "longitude": 121.4015768,
     "sortOrder": 11,
@@ -268,6 +387,17 @@
     "images": ["/assets/images/temples/temple-yuli-xietian.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=9288293534586800899",
+    "visit": {
+      "hours": "每日 06:30–22:00",
+      "whenToGo": "農曆六月二十四關聖帝君誕辰與七月十五中元普渡，是廟裡最熱鬧的日子。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=9288293534586800899"
+        }
+      ]
+    },
     "latitude": 23.3337444,
     "longitude": 121.3160939,
     "sortOrder": 12

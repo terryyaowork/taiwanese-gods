@@ -59,6 +59,17 @@
     "images": ["/assets/images/temples/temple-xingtian.png"],
     "url": "https://www.ht.org.tw",
     "googleMap": "https://maps.app.goo.gl/metg9bbR6hathxpZ8",
+    "visit": {
+      "hours": "毎日 4:00〜21:00",
+      "whenToGo": "旧暦6月24日の関聖帝君の聖誕が一年で最も重要な祭日です。廟では普段から収驚も受けられます。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.app.goo.gl/metg9bbR6hathxpZ8"
+        }
+      ]
+    },
     "latitude": 25.0630848,
     "longitude": 121.5338448,
     "sortOrder": 1
@@ -79,6 +90,17 @@
     "images": ["/assets/images/temples/temple-baoan.png"],
     "url": "https://www.baoan.org.tw",
     "googleMap": "https://maps.app.goo.gl/LhkSuHr4Q1As3dQh8",
+    "visit": {
+      "hours": "毎日 6:00〜21:00",
+      "whenToGo": "旧暦3月15日の保生大帝の聖誕前後が最も賑わいます。保安宮の「保生文化祭」は2か月以上にわたって開かれ、期間中には家姓戯、過火、放火獅などの行事があります。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.app.goo.gl/LhkSuHr4Q1As3dQh8"
+        }
+      ]
+    },
     "latitude": 25.0723373,
     "longitude": 121.5155847,
     "sortOrder": 2
@@ -103,6 +125,17 @@
     "images": ["/assets/images/temples/temple-citygod.png"],
     "url": "http://www.tpecitygod.org",
     "googleMap": "https://maps.google.com/?cid=7596797163613549522",
+    "visit": {
+      "hours": "毎日 7:00〜19:00",
+      "whenToGo": "旧暦5月13日の「台北迎城隍」が最も人出が多く、「五月十三、人看人（人が人を見る）」と言われるほどです。七夕（旧暦7月7日）と2月14日のバレンタインデー前後も、月老に縁結びを願う参拝者が特に多くなります。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=7596797163613549522"
+        }
+      ]
+    },
     "latitude": 25.0556263,
     "longitude": 121.5102099,
     "sortOrder": 3
@@ -123,6 +156,17 @@
     "images": ["/assets/images/temples/temple-ciyou.png"],
     "url": "https://www.ssjyg.org.tw",
     "googleMap": "https://maps.app.goo.gl/4pQhoRnjQgDyiTzW9",
+    "visit": {
+      "hours": "毎日 5:30〜22:30",
+      "whenToGo": "旧暦3月23日の媽祖の聖誕が、媽祖廟にとって一年で最も重要な日です。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.app.goo.gl/4pQhoRnjQgDyiTzW9"
+        }
+      ]
+    },
     "latitude": 25.0512927,
     "longitude": 121.5776446,
     "sortOrder": 4
@@ -143,6 +187,16 @@
     "images": ["/assets/images/temples/temple-zhinan.png"],
     "url": "https://www.chih-nan-temple.org/",
     "googleMap": "https://maps.google.com/?cid=4588651315000145868",
+    "visit": {
+      "whenToGo": "旧暦4月14日の呂仙祖の聖誕には、指南宮で祝寿法会が営まれ、詩の朗誦や書道展などの文芸行事も開かれます。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=4588651315000145868"
+        }
+      ]
+    },
     "latitude": 24.9796041,
     "longitude": 121.5880572,
     "sortOrder": 5
@@ -199,6 +253,17 @@
     "images": ["/assets/images/temples/temple-taipei-confucius.png"],
     "url": "https://www.tctcc.taipei",
     "googleMap": "https://maps.google.com/?cid=7269829153313436851",
+    "visit": {
+      "hours": "火曜〜日曜 8:30〜21:00（月曜休み）",
+      "whenToGo": "毎年9月28日の教師節に行われる祭孔大典（釈奠礼）が、わざわざ訪れる価値のある日です。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=7269829153313436851"
+        }
+      ]
+    },
     "latitude": 25.0727013,
     "longitude": 121.5165018,
     "sortOrder": 7
@@ -218,6 +283,17 @@
     "description": "大きな試験のシーズンになると、台北文昌宮（たいほくぶんしょうぐう）の壁は受験票のコピーで埋め尽くされ、びっしりと重なり合って壮観な眺めになります。台北市中山区、MRT双連（そうれん）駅のそばにあるこの廟は、台北の市街地で知られた文昌廟で、功名を司る文昌帝君（ぶんしょうていくん）を主祀します。参拝者の手には決まって「語呂合わせの供物」の袋があります。ネギは聡明、セロリは勤勉、大根（菜頭）は幸先の良さ、ちまきは「包中」で合格と、試験合格への願いを、目に見える心づくしにすべて託すのです。",
     "history": "台北文昌宮の起こりは日本統治時代にさかのぼります。商人が持ち込んだ文昌帝君の像が双連の林に置き去りにされ、のちに見つけられて祀られるようになったと伝えられ、1960年に拡張されました。その後、MRT淡水線の工事のため民享公園の中へ移り、1992年に公園内で再建されました。規模は大きくないものの、台北市の中心にあって交通の便が良く、長年の「霊験あらたか」という評判も重なって、次第に受験生がよく訪れる文昌廟となりました。大きな試験の前になると、廟内は合格を祈る受験生と家族で溢れ、受験票が貼り尽くされたあの壁は、独特の文化の景観となっています。",
     "images": ["/assets/images/temples/temple-taipei-wenchang.png"],
+    "visit": {
+      "hours": "毎日 7:00〜21:00",
+      "whenToGo": "大きな試験の前には受験生や保護者が合格祈願に押し寄せます。旧暦2月3日の文昌帝君の聖誕前後にも、祈福法会がよく営まれます。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=18254476121765775052"
+        }
+      ]
+    },
     "latitude": 25.0591875,
     "longitude": 121.5210132,
     "sortOrder": 8
@@ -277,6 +353,17 @@
     "images": ["/assets/images/temples/temple-keelungdianji.png"],
     "url": "https://www.facebook.com/profile.php?id=61555934995950",
     "googleMap": "https://maps.google.com/?cid=14401796649461744893",
+    "visit": {
+      "hours": "毎日 7:00〜22:00",
+      "whenToGo": "旧暦2月15日の開漳聖王の聖誕が、一年で最も重要な祭典です。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=14401796649461744893"
+        }
+      ]
+    },
     "latitude": 25.1280744,
     "longitude": 121.743085,
     "sortOrder": 10
@@ -297,6 +384,17 @@
     "images": ["/assets/images/temples/temple-hsinchucitygod.png"],
     "url": "https://www.weiling.org.tw/",
     "googleMap": "https://maps.google.com/?cid=17492759372388554891",
+    "visit": {
+      "hours": "毎日 5:00〜22:00",
+      "whenToGo": "旧暦7月の「竹塹中元城隍祭」が最も迫力があり、「夯枷解厄」の儀式や城隍爺の遶境が行われます。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=17492759372388554891"
+        }
+      ]
+    },
     "latitude": 24.8043564,
     "longitude": 120.9660651,
     "sortOrder": 11
@@ -317,6 +415,17 @@
     "images": ["/assets/images/temples/temple-taoyuanjingfu.png"],
     "url": "https://www.jingfugung.com/",
     "googleMap": "https://maps.google.com/?cid=4147780182156509096",
+    "visit": {
+      "hours": "毎日 6:00〜20:50",
+      "whenToGo": "旧暦2月15日の開漳聖王の聖誕が、一年で最も重要な祭典です。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=4147780182156509096"
+        }
+      ]
+    },
     "latitude": 24.9949833,
     "longitude": 121.3108364,
     "sortOrder": 12
@@ -337,6 +446,17 @@
     "images": ["/assets/images/temples/temple-fagushan.png"],
     "url": "https://www.ddm.org.tw",
     "googleMap": "https://maps.google.com/?cid=11848497937389221475",
+    "visit": {
+      "hours": "毎日 9:00〜16:00",
+      "whenToGo": "旧暦4月8日の仏誕日（浴仏節）は仏教の大切な祭日で、各寺院で浴仏法会が営まれます。普段は心静かに散策するのに向いています。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=11848497937389221475"
+        }
+      ]
+    },
     "latitude": 25.2409502,
     "longitude": 121.6148125,
     "sortOrder": 13
@@ -356,6 +476,17 @@
     "history": "慈天宮の生い立ちは、漢人による北埔開拓と切り離せません。清の道光14年（1834年）、広東出身の姜秀鑾と福建出身の周邦正が「金広福墾号（きんこうふくこんごう）」を組み、新竹東南の山地の開墾に乗り出しました——廟に祀られる観音菩薩は、姜秀鑾が自ら中国大陸から奉迎したものと伝えられます。道光20年（1840年）、姜秀鑾はこれを木造の廟に改築します。同治13年（1874年）には姜秀鑾の長孫・姜栄華が再び大改築を行い、両廊と前殿を増築して、今日の「二殿・二廊・二横屋」の構えを定めました。1907年、日本統治時代の「北埔事件」は、慈天宮のあるこの北埔集落で起きています。",
     "images": ["/assets/images/temples/temple-beipu-citien.png"],
     "googleMap": "https://maps.google.com/?cid=1480177471064116822",
+    "visit": {
+      "hours": "毎日 6:00〜19:00",
+      "whenToGo": "観音さまの三つの記念日（旧暦2月19日・6月19日・9月19日）には読経と祈福の法会が営まれます。休日は北埔老街の観光客が多くなります。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=1480177471064116822"
+        }
+      ]
+    },
     "latitude": 24.6997628,
     "longitude": 121.0583752,
     "sortOrder": 14
@@ -376,6 +507,17 @@
     "images": ["/assets/images/temples/temple-xinpu-yimin.png"],
     "url": "https://www.yimin.org.tw/",
     "googleMap": "https://maps.google.com/?cid=16984425093641938005",
+    "visit": {
+      "hours": "毎日 6:00〜19:00",
+      "whenToGo": "旧暦7月20日の義民祭が一年で最も盛大な日で、桃園・新竹地区の十五大庄が持ち回りで主催し、「神豚コンテスト」などの儀式が行われます。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=16984425093641938005"
+        }
+      ]
+    },
     "latitude": 24.8442777,
     "longitude": 121.036446,
     "sortOrder": 15
@@ -396,6 +538,17 @@
     "images": ["/assets/images/temples/temple-xinzhuangwu.png"],
     "url": "https://www.facebook.com/wusheng.org.tw",
     "googleMap": "https://maps.google.com/?cid=862564105281032633",
+    "visit": {
+      "hours": "毎日 7:30〜20:30",
+      "whenToGo": "旧暦6月24日の関聖帝君の聖誕が一年で最も重要な祭日です。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=862564105281032633"
+        }
+      ]
+    },
     "latitude": 25.0337842,
     "longitude": 121.4501079,
     "sortOrder": 16
@@ -420,6 +573,17 @@
     "images": ["/assets/images/temples/temple-xinzhuangdizang.png"],
     "url": "https://www.xzdza.org.tw/",
     "googleMap": "https://maps.google.com/?cid=18128714433227309511",
+    "visit": {
+      "hours": "毎日 8:30〜17:00",
+      "whenToGo": "旧暦5月1日の「新荘大拝拝」（大衆爺の遶境）が一年で最も盛大な日で、暗訪の儀式や官将首の陣頭が見られます。旧暦7月末には地蔵王菩薩の聖誕法会もあります。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=18128714433227309511"
+        }
+      ]
+    },
     "latitude": 25.0377357,
     "longitude": 121.4568824,
     "sortOrder": 17
@@ -440,6 +604,17 @@
     "images": ["/assets/images/temples/temple-xinzhuang-guangfu.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=10283934670926035896",
+    "visit": {
+      "hours": "毎日 8:00〜18:00",
+      "whenToGo": "旧暦2月25日は三山国王の聖誕です。この廟は今では参拝者も少なく、普段はゆっくりと清代の建築を眺められます。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=10283934670926035896"
+        }
+      ]
+    },
     "latitude": 25.0355685,
     "longitude": 121.4552737,
     "sortOrder": 18
@@ -495,6 +670,17 @@
     "images": ["/assets/images/temples/temple-sanxia-changfu.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=5983519490857505777",
+    "visit": {
+      "hours": "毎日 5:00〜22:00",
+      "whenToGo": "旧暦正月6日の清水祖師の聖誕が最も重要な祭日で、長福巌ではこの日に百年以上の伝統を持つ神豚コンテストが行われます。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=5983519490857505777"
+        }
+      ]
+    },
     "latitude": 24.9337902,
     "longitude": 121.3703176,
     "sortOrder": 21
@@ -515,6 +701,17 @@
     "images": ["/assets/images/temples/temple-manka-qingshui.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=13678376866519882228",
+    "visit": {
+      "hours": "毎日 6:00〜18:00",
+      "whenToGo": "旧暦正月6日の清水祖師の聖誕が最も重要な祭日です。普段の廟内は静かで、腰を下ろしてゆっくり眺めるのに向いています。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=13678376866519882228"
+        }
+      ]
+    },
     "latitude": 25.0402174,
     "longitude": 121.5025954,
     "sortOrder": 22
@@ -535,6 +732,17 @@
     "images": ["/assets/images/temples/temple-tamsui-qingshui.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=13357688321990784336",
+    "visit": {
+      "hours": "毎日 4:30〜21:00",
+      "whenToGo": "旧暦5月6日の祖師得道日の祭典が、淡水で有名な「大拝拝」です。旧暦正月6日の清水祖師の聖誕も重要な祭日です。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=13357688321990784336"
+        }
+      ]
+    },
     "latitude": 25.1703568,
     "longitude": 121.4410754,
     "sortOrder": 23
@@ -555,6 +763,17 @@
     "images": ["/assets/images/temples/temple-tamsui-yinshan.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=11859948809437008348",
+    "visit": {
+      "hours": "毎日 7:00〜17:30",
+      "whenToGo": "旧暦正月6日の定光古仏の聖誕が、一年で最も重要な祭典です。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=11859948809437008348"
+        }
+      ]
+    },
     "latitude": 25.169174,
     "longitude": 121.448532,
     "sortOrder": 24
@@ -576,6 +795,17 @@
     "imageIsIllustration": true,
     "url": "https://www.zlskyt.com.tw",
     "googleMap": "https://maps.google.com/?cid=7194270883373393240",
+    "visit": {
+      "hours": "毎日 6:00〜22:00",
+      "whenToGo": "観音さまの三つの記念日（旧暦2月19日・6月19日・9月19日）には読経と祈福の法会が営まれます。春には庭園に桜が咲き、平日の朝が最も静かです。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=7194270883373393240"
+        }
+      ]
+    },
     "latitude": 25.0836731,
     "longitude": 121.3893262,
     "sortOrder": 25
@@ -596,6 +826,17 @@
     "images": ["/assets/images/temples/temple-manka-dizang.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=8053789533490894167",
+    "visit": {
+      "hours": "毎日 5:00〜20:30",
+      "whenToGo": "旧暦7月30日の地蔵王菩薩の聖誕が、この小さな廟が一年で最も賑わう時です。それ以外の時期はたいてい静かです。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=8053789533490894167"
+        }
+      ]
+    },
     "latitude": 25.0368701,
     "longitude": 121.5006503,
     "sortOrder": 26
@@ -616,6 +857,16 @@
     "images": ["/assets/images/temples/temple-xinpu-guanghe.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=12853975680603968433",
+    "visit": {
+      "whenToGo": "旧暦2月25日の三山国王の聖誕が、一年で最も重要な祭典の日です。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google マップ",
+          "url": "https://maps.google.com/?cid=12853975680603968433"
+        }
+      ]
+    },
     "latitude": 24.8280843,
     "longitude": 121.0745984,
     "sortOrder": 27

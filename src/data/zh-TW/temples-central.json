@@ -15,6 +15,17 @@
     "images": ["/assets/images/temples/temple-dajiazhenlan.png"],
     "url": "http://www.dajiamazu.org.tw/",
     "googleMap": "https://maps.google.com/?cid=13335183935644470265",
+    "visit": {
+      "hours": "每日 03:30–22:30",
+      "whenToGo": "每年農曆三月的大甲媽祖遶境進香是全年重頭戲，九天八夜往返嘉義新港奉天宮，起駕前後廟裡廟外人潮洶湧。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=13335183935644470265"
+        }
+      ]
+    },
     "latitude": 24.3452713,
     "longitude": 120.6234579,
     "sortOrder": 0
@@ -35,6 +46,17 @@
     "images": ["/assets/images/temples/temple-beigangchaotian.png"],
     "url": "https://www.matsu.org.tw/",
     "googleMap": "https://maps.google.com/?cid=8826082841404551118",
+    "visit": {
+      "hours": "每日 04:30–24:00",
+      "whenToGo": "每年農曆正月十五到三月是各地媽祖廟前來進香的旺季，農曆三月二十三媽祖誕辰前後進香團最集中。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=8826082841404551118"
+        }
+      ]
+    },
     "latitude": 23.568099,
     "longitude": 120.3046812,
     "sortOrder": 1
@@ -54,6 +76,17 @@
     "history": "鹿港天后宮在清康熙二十二年（1683年）已經建廟；雍正三年（1725年），施世榜獻地，廟才遷到現址，主祀天上聖母。當時的鹿港是台灣中部最大的通商口岸，「一府二鹿三艋舺」道盡了它的繁華，而天后宮就矗立在老街的核心，看盡兩百餘年的商貿榮衰。日治時期，廟宇在1927年起大規模重修，1936年竣工，奠定今日格局。如今天后宮與鹿港老街、摸乳巷、九曲巷連成一片完整的歷史街區，是認識清代台灣商港文化最好的一扇窗。",
     "images": ["/assets/images/temples/temple-lugangmazu.png"],
     "googleMap": "https://maps.google.com/?cid=1374261103847850357",
+    "visit": {
+      "hours": "每日 06:00–22:00",
+      "whenToGo": "新年期間信眾爭相點光明燈、安太歲，常一位難求；農曆三月二十三媽祖聖誕也是重要日子。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=1374261103847850357"
+        }
+      ]
+    },
     "latitude": 24.0593534,
     "longitude": 120.4313866,
     "sortOrder": 2
@@ -73,6 +106,17 @@
     "history": "乾隆年間，白沙屯的先民把軟身媽祖請到民宅供奉；咸豐末年集資籌建廟宇，同治二年（1863年）完工，這便是拱天宮的開端。這裡的居民世代討海為生，媽祖信仰是他們面對風浪時最重要的精神支柱。真正讓白沙屯媽祖與眾不同的，是那年年不輟的「進香」傳統——媽祖鑾轎從白沙屯徒步走到雲林北港朝天宮，出發日期每年擲筊決定，2026年走了八天七夜。與大甲媽祖不同的是，白沙屯媽祖的路線完全由自己決定，透過鑾轎的擺動指示方向，每年都走得不一樣，因而被譽為「最有個性的媽祖」。跟著鑾轎上路的信眾逐年增加，2026年的報名人數超過46萬人。",
     "images": ["/assets/images/temples/temple-baishatun.png"],
     "googleMap": "https://maps.google.com/?cid=11486608079882747560",
+    "visit": {
+      "hours": "每日 05:00–21:30",
+      "whenToGo": "每年徒步前往北港朝天宮進香期間最熱鬧，出發日期每年由擲筊決定，行前請留意廟方公告。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=11486608079882747560"
+        }
+      ]
+    },
     "latitude": 24.5714507,
     "longitude": 120.7092112,
     "sortOrder": 3
@@ -92,6 +136,17 @@
     "history": "故事的開頭，是一只香火袋。相傳清雍正年間，一名叫楊謙的陶工隨身帶著媽祖香火袋供人膜拜，因神蹟顯赫，信眾越聚越多，終於在乾隆三年（1738年）建起了南瑤宮。道光年間的《彰化縣志》，就已記載南瑤宮每年前往笨港進香。此後南瑤宮的信徒組織「媽祖會」規模越滾越大，影響力遍及中台灣。從一只小小的香火袋，到十個媽祖會，南瑤宮見證了台灣進香文化如何從民間信仰，長成一股凝聚地方的力量。",
     "images": ["/assets/images/temples/temple-nanyao.png"],
     "googleMap": "https://maps.google.com/?cid=17722308929893834177",
+    "visit": {
+      "hours": "每日 06:00–21:30",
+      "whenToGo": "每年的笨港進香是南瑤宮的傳統大事；農曆三月二十三媽祖聖誕也是媽祖廟最重要的日子。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=17722308929893834177"
+        }
+      ]
+    },
     "latitude": 24.0700406,
     "longitude": 120.5415971,
     "sortOrder": 4
@@ -116,6 +171,17 @@
     "images": ["/assets/images/temples/temple-lecheng.jpeg"],
     "url": "https://www.lecheng.org.tw",
     "googleMap": "https://maps.app.goo.gl/Exgy6BDDyBg3VWBG6",
+    "visit": {
+      "hours": "每日 06:30–22:00",
+      "whenToGo": "旱溪媽祖遶境十八庄一走 22 天，是廟裡的年度大事；求姻緣的人則多在七夕（農曆七月七日）與 2 月 14 日情人節前後到月老殿參拜。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.app.goo.gl/Exgy6BDDyBg3VWBG6"
+        }
+      ]
+    },
     "latitude": 24.1407017,
     "longitude": 120.6980189,
     "sortOrder": 5
@@ -139,6 +205,17 @@
     "description": "跟土地公「借」六百元，這是竹山紫南宮最出名的一件事。位在南投縣竹山鎮的紫南宮，是全台知名的「借發財金」廟宇，主祀土地公。信眾向土地公借六百元當「錢母」，放進皮夾裡讓錢生生不息，來年若有獲利，就歸還本金，再隨喜添香油錢。每逢農曆春節，都有大批信眾排隊借發財金。廟方還蓋了一座名為「金筍迎客」的公共廁所，意外成了另類景點。",
     "history": "清乾隆十年（1745年），竹山一帶的居民蓋起一座小祠，祭祀庇佑鄉里的土地公，這便是紫南宮的起點。真正讓這座小廟名滿全台的，是「借發財金」的傳統——據說向土地公借來的錢母格外靈驗，一傳十、十傳百，信眾從全台各地慕名而來，香火一年比一年旺。廟方善用信眾的捐獻，不斷改善周邊的環境與設施，連公共廁所都成了景點。就這樣，一座祭祀土地公的小祠，變成了南投竹山最重要的觀光與信仰中心。",
     "images": ["/assets/images/temples/temple-zhushan-zinan.png"],
+    "visit": {
+      "hours": "每日 07:00–21:00",
+      "whenToGo": "農曆春節期間有大批信眾排隊借發財金；農曆二月初二土地公聖誕也是重要日子。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=13466994496785747467"
+        }
+      ]
+    },
     "latitude": 23.8171482,
     "longitude": 120.7225076,
     "sortOrder": 6
@@ -159,6 +236,17 @@
     "images": ["/assets/images/temples/temple-shoutian.png"],
     "url": "https://www.shoutian.org.tw/",
     "googleMap": "https://maps.google.com/?cid=12581810184350471473",
+    "visit": {
+      "hours": "每日 05:30–22:00",
+      "whenToGo": "農曆三月初三玄天上帝聖誕期間，全台進香團與陣頭湧上松柏嶺，是一年中最熱鬧的時候。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=12581810184350471473"
+        }
+      ]
+    },
     "latitude": 23.8392701,
     "longitude": 120.6302605,
     "sortOrder": 7
@@ -179,6 +267,17 @@
     "images": ["/assets/images/temples/temple-beigangwude.png"],
     "url": "https://www.wude.org.tw/",
     "googleMap": "https://maps.google.com/?cid=7829449288237875360",
+    "visit": {
+      "hours": "每日 06:00–22:00",
+      "whenToGo": "農曆三月十五武財神聖誕，各地信眾湧入朝拜；過年期間發放的「錢母」也吸引不少人。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=7829449288237875360"
+        }
+      ]
+    },
     "latitude": 23.5810159,
     "longitude": 120.2996947,
     "sortOrder": 8
@@ -229,6 +328,17 @@
     "images": ["/assets/images/temples/temple-baishatun.png"],
     "url": "https://shenbianma.tw/",
     "googleMap": "https://maps.google.com/?cid=3600538260621027501",
+    "visit": {
+      "hours": "每日 06:00–20:30",
+      "whenToGo": "每年與白沙屯媽祖共乘鑾轎、徒步前往北港朝天宮進香的期間最受矚目，出發日期每年由擲筊決定。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=3600538260621027501"
+        }
+      ]
+    },
     "latitude": 24.5866621,
     "longitude": 120.7150911,
     "sortOrder": 10
@@ -248,6 +358,16 @@
     "description": "晨霧裡的湖面若隱若現，湖畔徹夜迴盪著悲涼蒼遠的祭歌——這裡是海拔約738公尺山間盆地上的向天湖，賽夏族矮靈祭（Pasta'ay）南祭團的祭場（北祭團的祭場在新竹五峰），也是台灣最神秘、最令人動容的原住民祭典聖地。四周群山環繞，景色如夢似幻。矮靈祭每兩年舉辦一次小祭、十年一次大祭，祭典為期四天三夜，在湖畔通宵進行，用莊嚴肅穆的祭歌與緩慢的舞步，向遠古的矮人族亡靈懺悔、感恩、祈福。這項祭典在2013年列為國家重要民俗；祭場旁還有2004年開館的賽夏族民俗文物館。",
     "history": "傳說遠古時代，一群身材矮小卻力大無窮的矮人族（ta'ay）與賽夏族比鄰而居，教會了賽夏族農耕的技術與歌舞。然而矮人後來屢屢欺侮賽夏族的婦女，族人忍無可忍，設計在通往矮人居地的山枇杷樹橋上動了手腳，矮人過橋時墜落溺斃。臨死前，矮人族留下詛咒，賽夏族從此連年歉收、災禍不斷。為了平息亡靈的怨恨、祈求豐收，賽夏族開始舉行矮靈祭。祭典中的歌曲，據說正是矮人臨終前所傳授，旋律悲涼蒼遠，是口傳文學珍貴的活化石。直到今天，向天湖祭場仍守著這套古老的祭祀傳統，是賽夏族文化傳承的重要聖地。",
     "images": ["/assets/images/temples/temple-xiangtianhu.png"],
+    "visit": {
+      "whenToGo": "矮靈祭每兩年舉辦一次小祭、十年一次大祭，為期四天三夜並在湖畔通宵進行；非祭典期間可參觀旁邊的賽夏族民俗文物館。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=7000304878889591884"
+        }
+      ]
+    },
     "latitude": 24.5830957,
     "longitude": 121.0340633,
     "sortOrder": 11
@@ -268,6 +388,17 @@
     "images": ["/assets/images/temples/temple-zhunan-wugu.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=13686238840636622089",
+    "visit": {
+      "hours": "每日 05:00–21:00",
+      "whenToGo": "農曆四月二十六神農大帝聖誕是一年中最重要的慶典。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=13686238840636622089"
+        }
+      ]
+    },
     "latitude": 24.6885803,
     "longitude": 120.8837405,
     "sortOrder": 12
@@ -288,6 +419,17 @@
     "images": ["/assets/images/temples/temple-lugu-fenghuangshan.webp"],
     "imageIsIllustration": true,
     "googleMap": "https://maps.google.com/?cid=3289151911247841520",
+    "visit": {
+      "hours": "每日 05:30–20:00",
+      "whenToGo": "農曆三月十六日慚愧祖師聖誕，各地信眾回來參拜，山路上人潮最多。",
+      "checkedAt": "2026-10-13",
+      "sources": [
+        {
+          "name": "Google 地圖",
+          "url": "https://maps.google.com/?cid=3289151911247841520"
+        }
+      ]
+    },
     "latitude": 23.7339182,
     "longitude": 120.7843578,
     "sortOrder": 13
