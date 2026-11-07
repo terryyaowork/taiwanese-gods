@@ -1307,8 +1307,8 @@ const serifHref = `https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@4
     bowed?: number;
   }
 
-  // 大殿服務的網址：本機開發連 wrangler dev；正式網址部署後再填，空字串時只用本機資料
-  const HALL_URL = import.meta.env.DEV ? 'http://localhost:8787' : '';
+  // 計數器的網址：本機開發連 wrangler dev，正式站連 workers/temple-hall 部署出來的網址
+  const HALL_URL = import.meta.env.DEV ? 'http://localhost:8787' : 'https://temple-hall.terry-yao-work.workers.dev';
   const STATS_KEY = 'temple:stats';
   const MINE_KEY = 'temple:mine';
   const NAME_KEY = 'temple:name';

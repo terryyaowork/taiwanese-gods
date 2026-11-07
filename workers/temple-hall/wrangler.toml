@@ -10,3 +10,13 @@ class_name = "TempleHall"
 [[migrations]]
 tag = "v1"
 new_sqlite_classes = ["TempleHall"]
+
+# 同一個 IP 每分鐘最多 30 次（正常使用每分鐘約 2 到 5 次：每 30 秒更新一次人數，加上按鈕）
+# 計數是各個 Cloudflare 機房分開算，不是全球精確值，用來擋灌請求夠用
+[[ratelimits]]
+name = "PER_IP"
+namespace_id = "1001"
+simple = { limit = 30, period = 60 }
+
+# 帳號是免費方案（2026-11-07 部署時確認）：超過額度只會停止回應，不會收費。
+# 改成付費方案時，加上 [limits] cpu_ms 限制每個請求的 CPU 用量

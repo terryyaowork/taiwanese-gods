@@ -170,8 +170,12 @@ export default {
     const headers = corsHeaders(origin);
     if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers });
 
-    const hall = env.TEMPLE_HALL.get(env.TEMPLE_HALL.idFromName('main'));
     const ip = request.headers.get('CF-Connecting-IP') || 'local';
+    // 同一個 IP 太頻繁就在這裡擋掉，不進 Durable Object，避免有人用程式灌請求、拉高用量
+    if (env.PER_IP && !(await env.PER_IP.limit({ key: ip })).success) {
+      return new Response('too many requests', { status: 429, headers });
+    }
+    const hall = env.TEMPLE_HALL.get(env.TEMPLE_HALL.idFromName('main'));
     const json = (data) =>
       new Response(JSON.stringify(data), {
         headers: { ...headers, 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
