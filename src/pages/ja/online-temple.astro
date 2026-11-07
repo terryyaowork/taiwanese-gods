@@ -1,0 +1,14 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import TempleCourtyard from '~/components/temple/OnlineTemple.astro';
+
+const metadata = {
+  title: 'オンライン廟：天公炉にお線香をあげ、静座する | 台湾の神様紹介',
+  description:
+    '廟に行けないときは、ここで天公炉にお線香を1本あげ、数分間静座できます。台湾の廟の参拝作法にならい、お線香を持って心の中で祈り、三拝してお線香を立てます。無料、ログイン不要。',
+};
+---
+
+<Layout metadata={metadata} noAds>
+  <TempleCourtyard lang="ja" />
+</Layout>

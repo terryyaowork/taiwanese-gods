@@ -10,7 +10,7 @@ const metadata = { title: 'プライバシーポリシー | 台湾の神様紹�
         プライバシーポリシー
       </h1>
       <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
-      <p class="text-gray-500 dark:text-gray-400 text-sm">最終更新日: 2025年2月</p>
+      <p class="text-gray-500 dark:text-gray-400 text-sm">最終更新日: 2026年11月</p>
     </div>
 
     <div class="space-y-8 text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -26,6 +26,15 @@ const metadata = { title: 'プライバシーポリシー | 台湾の神様紹�
           <li>メールやお問い合わせフォームでご連絡いただいた際のお名前とメールアドレス</li>
           <li>ご提出いただいたコンテンツの提案や投稿</li>
         </ul>
+        <p class="mt-3">
+          「オンライン廟」ページのお線香の数と静座の人数は、Cloudflare
+          上に設置した当サイト独自のカウンターサービスで記録しています。プログラムによる水増しを防ぐため、このサービスはお客様の
+          IP アドレスを一時的に使用します。お線香をあげたとき、IP はメモリ上に約 1
+          分間だけ保持されます。静座のときは、IP
+          をハッシュ化したコードと、ページがランダムに付けた参拝客名だけを、選んだ静座時間が終わるまで（最長 5
+          分）保存します。ハッシュ化に使うランダムな値は毎日変わります。元の IP
+          は保存せず、これらのデータでお客様を特定することもありません。
+        </p>
       </section>
 
       <section class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700">
@@ -33,7 +42,9 @@ const metadata = { title: 'プライバシーポリシー | 台湾の神様紹�
         <p class="mb-3">本サイトでは、閲覧体験を最適化するために以下の技術を使用しています：</p>
         <ul class="list-disc pl-6 space-y-1 text-gray-600 dark:text-gray-400 mb-3">
           <li><strong>必須Cookie</strong> — 言語設定（中国語/英語/日本語）とダークモード設定の記憶に使用</li>
-          <li><strong>ローカルストレージ</strong> — インタラクティブ機能（筊杯、おみくじ）の一時的な状態保存に使用</li>
+          <li>
+            <strong>ローカルストレージ</strong> — インタラクティブ機能（筊杯、おみくじ、オンライン廟のお線香の数）の一時的な状態保存に使用
+          </li>
         </ul>
         <p>
           これらの技術は個人を特定できる情報を収集しません。ブラウザの設定でCookieを管理・無効化できますが、一部の機能に影響が出る場合があります。
@@ -48,7 +59,9 @@ const metadata = { title: 'プライバシーポリシー | 台湾の神様紹�
         <ul class="list-disc pl-6 space-y-1 text-gray-600 dark:text-gray-400 mb-3">
           <li><strong>Google Analytics</strong> — 匿名のトラフィックおよび利用状況の分析に使用</li>
           <li><strong>Google Maps</strong> — 寺院の所在地のナビゲーションに使用</li>
-          <li><strong>Vercel</strong> — サイトのホスティングサービス（アクセスログを収集する場合があります）</li>
+          <li>
+            <strong>Cloudflare</strong> — サイトのホスティングとオンライン廟のカウンターサービス（アクセスログを記録する場合があります）
+          </li>
         </ul>
         <p>これらのサービスのデータ取り扱いの詳細については、各サービスのプライバシーポリシーをご確認ください。</p>
       </section>

@@ -190,13 +190,11 @@ export const headerData = {
     {
       text: {
         'zh-TW': '線上廟宇',
-        // en/ja 還沒有這一頁，不會顯示；上線時再確認用詞
         en: 'Online Temple',
         ja: 'オンライン廟',
       },
       href: getPermalink('/online-temple') + '?from=nav',
-      // 只有中文版有這一頁；整頁重新載入，避免帶著前一頁的廣告程式進來
-      langs: ['zh-TW'],
+      // 整頁重新載入，避免帶著前一頁的廣告程式進來
       reload: true,
     },
     {

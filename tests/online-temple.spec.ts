@@ -265,21 +265,23 @@ test.describe('Online temple — zh-TW', () => {
 });
 
 test.describe('線上廟宇入口', () => {
-  test('中文版選單有入口，整頁重新載入；英文、日文版沒有', async ({ page }) => {
-    await page.goto('/fortune');
-    const link = page.locator('header a[href="/online-temple?from=nav"]').first();
-    await expect(link).toHaveText('線上廟宇');
-    await expect(link).toHaveAttribute('data-astro-reload', 'true');
-    for (const lang of ['en', 'ja']) {
-      await page.goto(`/${lang}/fortune`);
-      await expect(page.locator('header a[href*="online-temple"]')).toHaveCount(0);
-    }
-  });
+  for (const [prefix, text] of [
+    ['', '線上廟宇'],
+    ['/en', 'Online Temple'],
+    ['/ja', 'オンライン廟'],
+  ]) {
+    test(`選單有入口，連到同語言的頁面，整頁重新載入（${prefix || 'zh'}）`, async ({ page }) => {
+      await page.goto(`${prefix}/fortune`);
+      const link = page.locator(`header a[href="${prefix}/online-temple?from=nav"]`).first();
+      await expect(link).toHaveText(text);
+      await expect(link).toHaveAttribute('data-astro-reload', 'true');
+    });
+  }
 
   test('桌機最窄寬度時，選單排成一列，不壓到右邊的按鈕', async ({ page }) => {
-    for (const width of [1024, 1280]) {
+    for (const [prefix, width] of ['', '/en', '/ja'].flatMap((p) => [1024, 1280].map((w) => [p, w] as const))) {
       await page.setViewportSize({ width, height: 800 });
-      await page.goto('/fortune');
+      await page.goto(`${prefix}/fortune`);
       const box = await page.evaluate(() => {
         const nav = document.querySelector('header nav')!;
         const items = [...nav.querySelector('ul')!.children].filter((li) => getComputedStyle(li).display !== 'none');
@@ -293,9 +295,54 @@ test.describe('線上廟宇入口', () => {
           iconLeft: Math.min(...icons.map((r) => r.left)),
         };
       });
-      expect(box.overflow, `${width}px`).toBe(0);
-      expect(box.rows, `${width}px`).toBe(1);
-      expect(box.lastRight, `${width}px`).toBeLessThan(box.iconLeft);
+      const where = `${prefix || 'zh'} ${width}px`;
+      expect(box.overflow, where).toBe(0);
+      expect(box.rows, where).toBe(1);
+      expect(box.lastRight, where).toBeLessThan(box.iconLeft);
     }
   });
 });
+
+for (const [lang, title, bow1, nameTag] of [
+  ['en', 'Online Temple', 'First bow', 'Pilgrim · '],
+  ['ja', 'オンライン廟', '一拝', '参拝客・'],
+] as const) {
+  test.describe(`Online temple — ${lang}`, () => {
+    test.beforeEach(async ({ page }) => {
+      await page.setViewportSize({ width: 390, height: 844 });
+      await page.addInitScript(() => {
+        if (window.top !== window || sessionStorage.getItem('test:cleared')) return;
+        localStorage.clear();
+        sessionStorage.setItem('test:cleared', '1');
+      });
+    });
+
+    test('整套參拜用這個語言，下一步連到同語言的頁面', async ({ page }) => {
+      const calls = await mockHall(page, { total: 150, today: 12, sittingNow: 0, sitToday: 0 });
+      await page.goto(`/${lang}/online-temple`);
+      await expect(page.locator('html')).toHaveAttribute('lang', lang);
+      await expect(page.locator('.hud-title')).toContainText(title);
+      await expect(page.locator('script[src*="adsbygoogle"]')).toHaveCount(0);
+      await expect(page.locator('#hud-name')).toContainText(nameTag);
+
+      await holdToLight(page);
+      await expect(burnerStep(page, 'pray')).toBeVisible();
+      await page.locator('#bow-btn').click();
+      await expect(page.locator('#stage-pop')).toHaveText(bow1);
+      await page.waitForTimeout(950);
+      for (let i = 2; i <= 3; i++) {
+        await page.locator('#bow-btn').click();
+        await expect(page.locator('#bow-btn')).toContainText(`${i} / 3`);
+        await page.waitForTimeout(950);
+      }
+      await page.locator('#plant-btn').click();
+      await expect(burnerStep(page, 'done')).toBeVisible();
+      await expect.poll(() => calls.filter((c) => c.startsWith('POST /incense')).length).toBe(1);
+      await expect(page.locator('#temple-fortune-link')).toHaveAttribute(
+        'href',
+        `/${lang}/fortune?god=yuhuang&from=temple`
+      );
+      await expect(page.locator('#temple-list-link')).toHaveAttribute('href', `/${lang}/temples?from=temple`);
+    });
+  });
+}

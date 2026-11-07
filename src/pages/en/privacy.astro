@@ -10,7 +10,7 @@ const metadata = { title: 'Privacy Policy — Taiwanese Gods', ignoreTitleTempla
         Privacy Policy
       </h1>
       <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
-      <p class="text-gray-500 dark:text-gray-400 text-sm">Last updated: February 2025</p>
+      <p class="text-gray-500 dark:text-gray-400 text-sm">Last updated: November 2026</p>
     </div>
 
     <div class="space-y-8 text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -28,6 +28,14 @@ const metadata = { title: 'Privacy Policy — Taiwanese Gods', ignoreTitleTempla
           <li>Name and email address provided when contacting us via email or contact forms</li>
           <li>Content suggestions or contributions you submit to us</li>
         </ul>
+        <p class="mt-3">
+          The incense and sitting counts on the "Online Temple" page are recorded by our own counter service, hosted on
+          Cloudflare. To stop people from inflating the numbers with scripts, this service briefly uses your IP address.
+          When you light incense, your IP stays in memory only for about 1 minute. When you sit, we keep only a hashed
+          code of your IP and the pilgrim name the page gave you at random, until the sitting time you chose ends (5
+          minutes at most). The random value used for hashing changes every day. We do not keep your original IP, and we
+          do not use this data to identify you.
+        </p>
       </section>
 
       <section class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700">
@@ -40,7 +48,7 @@ const metadata = { title: 'Privacy Policy — Taiwanese Gods', ignoreTitleTempla
           </li>
           <li>
             <strong>Local Storage</strong> — Used to store temporary states for interactive features (moon blocks, fortune
-            sticks)
+            sticks, and your incense count on the Online Temple page)
           </li>
         </ul>
         <p>
@@ -57,7 +65,9 @@ const metadata = { title: 'Privacy Policy — Taiwanese Gods', ignoreTitleTempla
         <ul class="list-disc pl-6 space-y-1 text-gray-600 dark:text-gray-400 mb-3">
           <li><strong>Google Analytics</strong> — Used for anonymous traffic and usage analytics</li>
           <li><strong>Google Maps</strong> — Used for temple location navigation</li>
-          <li><strong>Vercel</strong> — Website hosting service that may collect access logs</li>
+          <li>
+            <strong>Cloudflare</strong> — Website hosting and the Online Temple counter service, which may record access logs
+          </li>
         </ul>
         <p>
           We recommend reviewing the privacy policies of these services for details on their data handling practices.

@@ -19,7 +19,6 @@ interface Link {
 interface MenuLink extends Link {
   links?: Array<MenuLink>;
   mobileOnly?: boolean;
-  langs?: string[];
   reload?: boolean;
 }
 
@@ -106,52 +105,47 @@ const getLocalizedHref = (href: string) => {
         class="flex flex-col lg:flex-row lg:self-center w-full lg:w-auto text-base lg:text-[0.9375rem] tracking-[0.01rem] font-medium lg:justify-center"
       >
         {
-          links
-            .filter(({ langs }) => !langs || langs.includes(currentLang))
-            .map(({ text, href, links, mobileOnly, reload }) => (
-              <li class:list={[links?.length ? 'dropdown' : '', { 'lg:hidden': mobileOnly }]}>
-                {links?.length ? (
-                  <>
-                    <button
-                      type="button"
-                      class="hover:text-link dark:hover:text-white px-4 lg:px-2.5 xl:px-4 py-3 flex items-center whitespace-nowrap"
-                    >
-                      {typeof text === 'object' ? text[currentLang] : text}{' '}
-                      <Icon
-                        name="tabler:chevron-down"
-                        class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden lg:inline"
-                      />
-                    </button>
-                    <ul class="dropdown-menu lg:backdrop-blur-md dark:lg:bg-dark rounded lg:absolute pl-4 lg:pl-0 lg:hidden font-medium lg:bg-white/90 lg:min-w-[200px] drop-shadow-xl">
-                      {links.map(({ text: text2, href: href2 }) => (
-                        <li>
-                          <a
-                            class:list={[
-                              'first:rounded-t last:rounded-b lg:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap',
-                              { 'aw-link-active': href2 === currentPath },
-                            ]}
-                            href={getLocalizedHref(href2 || '#')}
-                          >
-                            {typeof text2 === 'object' ? text2[currentLang] : text2}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </>
-                ) : (
-                  <a
-                    class:list={[
-                      'hover:text-link dark:hover:text-white px-4 lg:px-2.5 xl:px-4 py-3 flex items-center whitespace-nowrap',
-                      { 'aw-link-active': href?.split('?')[0] === currentPath },
-                    ]}
-                    href={getLocalizedHref(href || '#')}
-                    data-astro-reload={reload || undefined}
+          links.map(({ text, href, links, mobileOnly, reload }) => (
+            <li class:list={[links?.length ? 'dropdown' : '', { 'lg:hidden': mobileOnly }]}>
+              {links?.length ? (
+                <>
+                  <button
+                    type="button"
+                    class="hover:text-link dark:hover:text-white px-4 lg:px-2 xl:px-4 py-3 flex items-center whitespace-nowrap"
                   >
-                    {typeof text === 'object' ? text[currentLang] : text}
-                  </a>
-                )}
-              </li>
-            ))
+                    {typeof text === 'object' ? text[currentLang] : text}{' '}
+                    <Icon name="tabler:chevron-down" class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden lg:inline" />
+                  </button>
+                  <ul class="dropdown-menu lg:backdrop-blur-md dark:lg:bg-dark rounded lg:absolute pl-4 lg:pl-0 lg:hidden font-medium lg:bg-white/90 lg:min-w-[200px] drop-shadow-xl">
+                    {links.map(({ text: text2, href: href2 }) => (
+                      <li>
+                        <a
+                          class:list={[
+                            'first:rounded-t last:rounded-b lg:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap',
+                            { 'aw-link-active': href2 === currentPath },
+                          ]}
+                          href={getLocalizedHref(href2 || '#')}
+                        >
+                          {typeof text2 === 'object' ? text2[currentLang] : text2}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : (
+                <a
+                  class:list={[
+                    'hover:text-link dark:hover:text-white px-4 lg:px-2 xl:px-4 py-3 flex items-center whitespace-nowrap',
+                    { 'aw-link-active': href?.split('?')[0] === currentPath },
+                  ]}
+                  href={getLocalizedHref(href || '#')}
+                  data-astro-reload={reload || undefined}
+                >
+                  {typeof text === 'object' ? text[currentLang] : text}
+                </a>
+              )}
+            </li>
+          ))
         }
       </ul>
     </nav>
