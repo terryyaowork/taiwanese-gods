@@ -263,3 +263,39 @@ test.describe('Online temple — zh-TW', () => {
     expect(hits).toHaveLength(1);
   });
 });
+
+test.describe('線上廟宇入口', () => {
+  test('中文版選單有入口，整頁重新載入；英文、日文版沒有', async ({ page }) => {
+    await page.goto('/fortune');
+    const link = page.locator('header a[href="/online-temple?from=nav"]').first();
+    await expect(link).toHaveText('線上廟宇');
+    await expect(link).toHaveAttribute('data-astro-reload', 'true');
+    for (const lang of ['en', 'ja']) {
+      await page.goto(`/${lang}/fortune`);
+      await expect(page.locator('header a[href*="online-temple"]')).toHaveCount(0);
+    }
+  });
+
+  test('桌機最窄寬度時，選單排成一列，不壓到右邊的按鈕', async ({ page }) => {
+    for (const width of [1024, 1280]) {
+      await page.setViewportSize({ width, height: 800 });
+      await page.goto('/fortune');
+      const box = await page.evaluate(() => {
+        const nav = document.querySelector('header nav')!;
+        const items = [...nav.querySelector('ul')!.children].filter((li) => getComputedStyle(li).display !== 'none');
+        const icons = [...nav.nextElementSibling!.querySelectorAll('button, a')]
+          .map((e) => e.getBoundingClientRect())
+          .filter((r) => r.width > 0);
+        return {
+          overflow: nav.scrollWidth - nav.clientWidth,
+          rows: new Set(items.map((li) => Math.round(li.getBoundingClientRect().top))).size,
+          lastRight: items[items.length - 1].getBoundingClientRect().right,
+          iconLeft: Math.min(...icons.map((r) => r.left)),
+        };
+      });
+      expect(box.overflow, `${width}px`).toBe(0);
+      expect(box.rows, `${width}px`).toBe(1);
+      expect(box.lastRight, `${width}px`).toBeLessThan(box.iconLeft);
+    }
+  });
+});

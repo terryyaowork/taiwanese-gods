@@ -332,7 +332,7 @@ test.describe('神明指南 CTA', () => {
       await page.goto(path);
       // 只看帶量測參數的連結（導覽列的 /temples/north 之類不算）
       const tracked = await page
-        .locator('a[href*="?from="]')
+        .locator('main a[href*="?from="]')
         .evaluateAll((els) => els.map((e) => e.getAttribute('href') ?? ''));
 
       expect(tracked.length).toBeGreaterThan(0);
