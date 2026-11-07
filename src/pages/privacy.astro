@@ -10,7 +10,7 @@ const metadata = { title: '隱私政策' };
         隱私政策
       </h1>
       <div class="w-24 h-1 bg-gold-300 mx-auto mb-6"></div>
-      <p class="text-gray-500 dark:text-gray-400 text-sm">最後更新日期：2025 年 2 月</p>
+      <p class="text-gray-500 dark:text-gray-400 text-sm">最後更新日期：2026 年 11 月</p>
     </div>
 
     <div class="space-y-8 text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -24,6 +24,12 @@ const metadata = { title: '隱私政策' };
           <li>透過聯絡表單或電子郵件與我們聯繫時提供的姓名、Email 地址</li>
           <li>您主動來信提出的內容建議或投稿資料</li>
         </ul>
+        <p class="mt-3">
+          「線上廟宇」頁面的香數與靜坐人數，由我們自己的計數服務記錄，架設在
+          Cloudflare。為了防止有人用程式灌數字，這個服務會短暫使用您的 IP 位址：上香時，IP 只放在記憶體中約 1
+          分鐘；靜坐時，只保存 IP 經過雜湊處理的代碼和頁面隨機給的香客名，保存到您選的靜坐時間結束為止，最長 5
+          分鐘。雜湊用的隨機值每天更換。我們不保存原本的 IP，也不會用這些資料辨識您是誰。
+        </p>
       </section>
 
       <section class="bg-white/80 dark:bg-gray-800/80 p-8 rounded-lg border border-gray-200 dark:border-gray-700">
@@ -31,7 +37,9 @@ const metadata = { title: '隱私政策' };
         <p class="mb-3">本網站使用以下技術來優化您的瀏覽體驗：</p>
         <ul class="list-disc pl-6 space-y-1 text-gray-600 dark:text-gray-400 mb-3">
           <li><strong>必要性 Cookie</strong>：用於記住您的語言偏好設定（繁體中文/英文/日文）及深色模式選擇</li>
-          <li><strong>本地儲存（LocalStorage）</strong>：用於儲存互動功能（如擲筊、求籤）的暫時狀態</li>
+          <li>
+            <strong>本地儲存（LocalStorage）</strong>：用於儲存互動功能（如擲筊、求籤、線上廟宇的上香次數）的暫時狀態
+          </li>
         </ul>
         <p>
           這些技術不會收集可識別個人身分的資訊。您可以在瀏覽器設定中管理或停用
@@ -45,7 +53,7 @@ const metadata = { title: '隱私政策' };
         <ul class="list-disc pl-6 space-y-1 text-gray-600 dark:text-gray-400 mb-3">
           <li><strong>Google Analytics</strong>：用於統計網站流量與使用行為分析（匿名數據）</li>
           <li><strong>Google Maps</strong>：用於廟宇位置導航</li>
-          <li><strong>Vercel</strong>：網站託管服務，可能記錄存取日誌</li>
+          <li><strong>Cloudflare</strong>：網站託管與線上廟宇的計數服務，可能記錄存取日誌</li>
         </ul>
         <p>建議您閱讀相關第三方服務的隱私政策，了解其資料處理方式。</p>
       </section>

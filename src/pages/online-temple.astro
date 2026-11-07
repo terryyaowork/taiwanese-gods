@@ -1,0 +1,14 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import TempleCourtyard from '~/components/temple/OnlineTemple.astro';
+
+const metadata = {
+  title: '線上廟宇：對著天公爐上香、靜坐 | 台灣神明信仰',
+  description:
+    '去不了廟裡的時候，在這裡對著天公爐上一炷香、靜坐幾分鐘。照台灣廟宇的參拜禮儀：舉香默念、三拜、插香。免費、不用登入。',
+};
+---
+
+<Layout metadata={metadata} noAds>
+  <TempleCourtyard lang="zh-TW" />
+</Layout>

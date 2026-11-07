@@ -1,0 +1,2117 @@
+---
+/**
+ * 線上廟宇：一次參拜，2 站。
+ *
+ * 天公爐（上香）→ 正殿（靜坐）。插完香後的結尾放分享、下一步（靜坐、求籤、廟宇清單）和打賞。
+ * 畫面下緣的圖示選單是主要導覽；左右滑、方向鍵是輔助。
+ * 正殿：正在靜坐的人畫成蒲團上的燭火，所有燭火照同一個時鐘一起呼吸。
+ * 人數來自計數器的 sittingNow／sitToday，沒有即時連線。
+ */
+import type { Lang } from '~/utils/temple-recommendations';
+
+export interface Props {
+  lang?: Lang;
+}
+
+const { lang = 'zh-TW' } = Astro.props;
+
+// 打賞連結：只用 Ko-fi 一般連結，不載入它的 widget
+const TIP_URL = 'https://ko-fi.com/taiwanesegods';
+
+// 天公爐拜的是天公（玉皇大帝），求籤接 yuhuang
+const GOD_ID = 'yuhuang';
+
+const allLabels: Record<string, Record<string, string>> = {
+  'zh-TW': {
+    pageTitle: '線上廟宇',
+    seal: '天公',
+    navBurner: '上香',
+    navHall: '靜坐',
+    totalIncense: '已經有 {n} 炷香',
+    totalAtLeast: '至少 {n} 炷香',
+    todayIncense: '今天 {n} 炷',
+    mine: '你在這裡上過 {n} 炷香',
+    share: '分享這炷香',
+    sharePalms: '分享這次參拜',
+    nameTag: '香客・{name}',
+    cardLead: '香客「{name}」在線上廟宇',
+    cardNumbered: '上了第 {n} 炷香',
+    cardIncense: '上了一炷香',
+    cardPalms: '拜了天公',
+    holdToLight: '按住點香',
+    palms: '不拿香，雙手合十',
+    hintPray: '默念姓名、生辰、住址，再說想說的事',
+    tapToBow: '點三下，行三拜',
+    plant: '插香',
+    swipeHint: '也可以把香往上滑',
+    holdHint: '按住不放，香才會點著',
+    bow1: '一拜',
+    bow2: '二拜',
+    bow3: '三拜',
+    worshipDone: '心裡的話說出口，人會輕一點',
+    again: '再拜一次',
+    sit: '坐下',
+    stand: '起身',
+    inhale: '吸氣',
+    exhale: '吐氣',
+    minutes: '分',
+    sitDone: '坐完了，慢慢轉轉肩膀',
+    sittingWith: '現在有 {n} 人和你一起坐',
+    sittingNow: '現在有 {n} 人在這裡靜坐',
+    satToday: '今天有 {n} 人在這裡坐過',
+    bowToAll: '向一起坐的人合十',
+    bowedToAll: '你向 {n} 位香客合十',
+    bowedToYou: '有 {n} 位香客向你合十',
+    sitNext: '靜坐一分鐘',
+    goFortune: '求一支籤',
+    leaveGateSub: '去台灣各地的廟',
+    tipKeeper: '請廟公喝杯茶',
+    tipKeeperSub: '支持網站維運，不是捐給宮廟（Ko-fi）',
+    aboutTitle: '關於天公爐',
+    about:
+      '走進台灣任何一間廟，第一個拜的通常不是殿裡的主神，而是廟埕最外面那座香爐——天公爐。大家面朝廟外、朝著天，向天公（玉皇大帝）稟報自己是誰、今天為什麼來。一般拿一炷或三炷香；不少廟也提倡雙手合十，一樣誠心。',
+    footnote: '線上參拜是一份心意，不取代到廟裡參拜。這個網站不是宮廟經營的，也不是宗教團體。這一頁不放廣告。',
+    prev: '上一站',
+    next: '下一站',
+  },
+};
+
+// 香客名：第一次來時隨機給一個，存在自己的瀏覽器。用台灣的花木、景色和小吃，各語言照同一個順序翻譯
+const allNames: Record<string, string[]> = {
+  'zh-TW': [
+    '晚風',
+    '山雨',
+    '桐花',
+    '月桃',
+    '相思',
+    '茶香',
+    '竹影',
+    '海潮',
+    '野薑',
+    '稻浪',
+    '雲海',
+    '星河',
+    '檜木',
+    '晨霧',
+    '燈火',
+    '木棉',
+    '樟樹',
+    '玉蘭',
+    '茉莉',
+    '鳳梨',
+    '芭樂',
+    '蓮霧',
+    '豆花',
+    '仙草',
+    '愛玉',
+    '湯圓',
+    '粉粿',
+    '麻糬',
+    '烏龍',
+    '金萱',
+  ],
+};
+
+const labels = allLabels[lang] || allLabels['zh-TW'];
+const names = allNames[lang] || allNames['zh-TW'];
+const prefix = lang === 'zh-TW' ? '' : `/${lang}`;
+const fortuneHref = `${prefix}/fortune?god=${GOD_ID}&from=temple`;
+const templesHref = `${prefix}/temples?from=temple`;
+const sitOptions = [1, 3, 5];
+
+const stations = [
+  { id: 'burner', label: labels.navBurner },
+  { id: 'hall', label: labels.navHall },
+];
+
+// 宋體只載入這一頁用到的標題字（Google Fonts text 子集），檔案很小
+const serifText = [
+  labels.pageTitle,
+  labels.seal,
+  '天',
+  labels.bow1,
+  labels.bow2,
+  labels.bow3,
+  labels.inhale,
+  labels.exhale,
+  labels.aboutTitle,
+  labels.tipKeeper,
+  '玉皇殿',
+  // 分享圖卡用的字
+  labels.cardLead,
+  ...names,
+  labels.cardNumbered,
+  labels.cardIncense,
+  labels.cardPalms,
+  '0123456789,',
+].join('');
+const serifHref = `https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&display=swap&text=${encodeURIComponent(
+  [...new Set(serifText)].join('')
+)}`;
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href={serifHref} />
+
+<div
+  id="online-temple"
+  class="online-temple"
+  data-lang={lang}
+  data-labels={JSON.stringify(labels)}
+  data-names={JSON.stringify(names)}
+>
+  <div class="temple-stage">
+    <div id="stage-sky" class="stage-sky" aria-hidden="true"></div>
+    <div class="stage-grain" aria-hidden="true"></div>
+
+    <!-- 固定在畫面上的：標題印章、人數 -->
+    <div class="stage-hud">
+      <div>
+        <h1 class="hud-title">{labels.pageTitle}<span class="hud-seal">{labels.seal}</span></h1>
+        <p id="hud-name" class="hud-name"></p>
+      </div>
+      <p id="hud-count" class="hud-count" aria-live="polite"></p>
+    </div>
+    <p id="stage-pop" class="stage-pop" aria-live="polite"></p>
+
+    <div id="stage-track" class="stage-track" tabindex="0">
+      <!-- ① 天公爐 -->
+      <section class="station" id="station-burner" data-station="burner" aria-label={labels.navBurner}>
+        <svg viewBox="0 0 400 420" class="station-art" id="burner-art" aria-hidden="true">
+          <defs>
+            <radialGradient id="crowd-light" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0" stop-color="#f0a648" stop-opacity="0.45"></stop>
+              <stop offset="1" stop-color="#f0a648" stop-opacity="0"></stop>
+            </radialGradient>
+            <linearGradient id="pillar" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0" stop-color="#f3e9d4" stop-opacity="0.5"></stop>
+              <stop offset="1" stop-color="#f3e9d4" stop-opacity="0"></stop>
+            </linearGradient>
+            <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0" stop-color="#d4a24c" stop-opacity="0.22"></stop>
+              <stop offset="1" stop-color="#d4a24c" stop-opacity="0"></stop>
+            </radialGradient>
+            <radialGradient id="lantern-light" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0" stop-color="#f0a648" stop-opacity="0.3"></stop>
+              <stop offset="1" stop-color="#f0a648" stop-opacity="0"></stop>
+            </radialGradient>
+            <radialGradient id="lantern-body" cx="0.45" cy="0.4" r="0.6">
+              <stop offset="0" stop-color="#e0623f"></stop>
+              <stop offset="1" stop-color="#7d2418"></stop>
+            </radialGradient>
+            <!-- 紅燈籠：原點在吊繩下端，各站共用 -->
+            <symbol id="lantern" overflow="visible">
+              <circle cx="0" cy="32" r="46" fill="url(#lantern-light)"></circle>
+              <rect x="-9" y="0" width="18" height="6" fill="#d4a24c"></rect>
+              <ellipse cx="0" cy="33" rx="22" ry="28" fill="url(#lantern-body)"></ellipse>
+              <g fill="none" stroke="#e9cf98" stroke-opacity="0.45" stroke-width="0.8">
+                <path d="M0 5 V61 M-11 7 Q-21 33 -11 59 M11 7 Q21 33 11 59"></path>
+              </g>
+              <rect x="-9" y="60" width="18" height="6" fill="#d4a24c"></rect>
+              <g stroke="#c2412d" stroke-width="1.2" stroke-linecap="round">
+                <path d="M-3 66 V86 M0 66 V90 M3 66 V86"></path>
+              </g>
+            </symbol>
+            <linearGradient id="gold-fill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#e2b766"></stop>
+              <stop offset="1" stop-color="#a87a2c"></stop>
+            </linearGradient>
+            <linearGradient id="flame" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0" stop-color="#c2412d"></stop>
+              <stop offset="0.55" stop-color="#f0a648"></stop>
+              <stop offset="1" stop-color="#fff1c8"></stop>
+            </linearGradient>
+            <filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
+              <feGaussianBlur stdDeviation="2.2"></feGaussianBlur>
+            </filter>
+            <pattern id="meander" width="12" height="8" patternUnits="userSpaceOnUse">
+              <path d="M1 7 V1 H9 V5 H5 V3" fill="none" stroke="#d4a24c" stroke-width="0.8"></path>
+            </pattern>
+            <mask id="bowl-cut">
+              <rect width="400" height="420" fill="white"></rect>
+              <text x="200" y="262" text-anchor="middle" class="serif-900" font-size="40" fill="black">天</text>
+              <g fill="none" stroke="black" stroke-width="2.4" stroke-linecap="round">
+                <path d="M146 232 a7 7 0 1 1 10 7 h18 a5 5 0 1 0 -4 -8"></path>
+                <path d="M254 232 a7 7 0 1 0 -10 7 h-18 a5 5 0 1 1 4 -8"></path>
+                <path d="M156 258 a5 5 0 1 1 8 4 h12"></path>
+                <path d="M244 258 a5 5 0 1 0 -8 4 h-12"></path>
+              </g>
+            </mask>
+          </defs>
+          <!-- 鏡頭拉遠才看得到的：整座廟、廟外的街 -->
+          <g id="scene-far" class="scale-layer" opacity="0" fill="none" stroke="#d4a24c">
+            <g stroke-opacity="0.22" stroke-width="1">
+              <rect x="-2400" y="-1700" width="1900" height="2500"></rect>
+              <rect x="900" y="-1700" width="1900" height="2500"></rect>
+              <rect x="-2400" y="1500" width="1900" height="1500"></rect>
+              <rect x="-200" y="1500" width="800" height="1500"></rect>
+              <rect x="900" y="1500" width="1900" height="1500"></rect>
+            </g>
+            <g stroke-width="1.2">
+              <path d="M-220 -130 Q 200 -180 620 -130 M-220 -130 q -30 -6 -46 -40 M620 -130 q 30 -6 46 -40"></path>
+              <path d="M-290 -40 Q 200 -96 690 -40"></path>
+              <path d="M-200 -40 V 120 M0 -40 V 120 M400 -40 V 120 M600 -40 V 120 M-300 120 H 700"></path>
+              <path d="M-300 120 V 900 H 120 M280 900 H 700 V 120"></path>
+              <path d="M60 860 Q 200 826 340 860 M120 852 V 960 M280 852 V 960"></path>
+              <path d="M-2600 1000 H 120 M280 1000 H 3000 M-2600 1420 H 3000" stroke-opacity="0.5"></path>
+            </g>
+          </g>
+          <ellipse
+            id="crowd-glow"
+            class="scale-layer"
+            cx="200"
+            cy="600"
+            rx="400"
+            ry="300"
+            fill="url(#crowd-light)"
+            opacity="0"></ellipse>
+          <g id="smoke-pillar" class="scale-layer" opacity="0" fill="none" stroke="url(#pillar)" stroke-linecap="round">
+            <path id="pillar-wide" stroke-opacity="0.35"></path>
+            <path id="pillar-core" stroke-opacity="0.6"></path>
+          </g>
+          <!-- 廟埕上方的紅燈籠 -->
+          <g stroke="#d4a24c" stroke-opacity="0.5" stroke-width="0.8">
+            <path d="M62 -20 V 30 M338 -20 V 30"></path>
+          </g>
+          <g class="lantern-sway"><use href="#lantern" x="62" y="30"></use></g>
+          <g class="lantern-sway lantern-sway-late"><use href="#lantern" x="338" y="30"></use></g>
+          <circle cx="200" cy="230" r="150" fill="url(#halo)"></circle>
+          <g id="burner-smoke"></g>
+          <g id="burner-sticks"></g>
+          <g>
+            <path
+              d="M128 214 C 104 210, 100 236, 118 240 C 128 242, 130 232, 122 230 M272 214 C 296 210, 300 236, 282 240 C 272 242, 270 232, 278 230"
+              fill="none"
+              stroke="#d4a24c"
+              stroke-width="1.6"
+              stroke-linecap="round"></path>
+            <path
+              d="M126 210 H274 C 272 258, 242 290, 200 290 C 158 290, 128 258, 126 210 Z"
+              fill="url(#gold-fill)"
+              mask="url(#bowl-cut)"></path>
+            <rect x="116" y="198" width="168" height="12" fill="#14121f"></rect>
+            <rect x="116" y="198" width="168" height="12" fill="url(#meander)"></rect>
+            <rect x="116" y="198" width="168" height="12" fill="none" stroke="#d4a24c" stroke-width="1.2"></rect>
+            <g fill="none" stroke="#d4a24c" stroke-width="2" stroke-linecap="round">
+              <path d="M164 280 C 160 296, 154 306, 148 312 c -4 4, 2 8, 6 4"></path>
+              <path d="M200 290 V 314 c 0 5, 6 5, 6 1"></path>
+              <path d="M236 280 C 240 296, 246 306, 252 312 c 4 4, -2 8, -6 4"></path>
+            </g>
+            <!-- 石供桌 -->
+            <path d="M74 322 H326 L314 356 H86 Z" fill="#14121f" stroke="#d4a24c" stroke-width="1.2"></path>
+            <rect x="104" y="331" width="192" height="12" fill="url(#meander)" opacity="0.55"></rect>
+            <path d="M74 322 H326" stroke="#e9cf98" stroke-opacity="0.5" stroke-width="0.8"></path>
+            <line x1="40" y1="366" x2="360" y2="366" stroke="#d4a24c" stroke-opacity="0.3" stroke-width="0.8"></line>
+          </g>
+          <!-- 今天來上香的人：從爐前往外排，人越多排得越遠 -->
+          <g id="crowd"></g>
+          <!-- 你手上的香（點著後出現） -->
+          <g id="my-incense" class="my-incense" opacity="0">
+            <!-- 香腳是紅的，上段是香身 -->
+            <g stroke="#c2412d" stroke-width="2.6" stroke-linecap="round">
+              <line x1="188" y1="480" x2="185" y2="436"></line>
+              <line x1="200" y1="480" x2="200" y2="434"></line>
+              <line x1="212" y1="480" x2="215" y2="436"></line>
+            </g>
+            <g stroke="#8a6440" stroke-width="3.4" stroke-linecap="round">
+              <line x1="185" y1="436" x2="179" y2="376"></line>
+              <line x1="200" y1="434" x2="200" y2="370"></line>
+              <line x1="215" y1="436" x2="221" y2="376"></line>
+            </g>
+            <g class="ember-glow" filter="url(#glow)">
+              <circle cx="179" cy="376" r="4.5"></circle><circle cx="200" cy="370" r="4.5"></circle><circle
+                cx="221"
+                cy="376"
+                r="4.5"></circle>
+            </g>
+            <g fill="#fff1c8">
+              <circle cx="179" cy="376" r="1.8"></circle><circle cx="200" cy="370" r="1.8"></circle><circle
+                cx="221"
+                cy="376"
+                r="1.8"></circle>
+            </g>
+          </g>
+          <!-- 在天公爐前的人（上香中、閒逛中） -->
+        </svg>
+
+        <div class="station-action" data-panel="burner">
+          <div data-step="idle">
+            <button type="button" class="hold-btn" id="hold-light" aria-label={labels.holdToLight}>
+              <svg viewBox="0 0 44 44" class="hold-ring" aria-hidden="true">
+                <circle cx="22" cy="22" r="20"></circle>
+                <circle cx="22" cy="22" r="20" class="hold-progress" pathLength="100"></circle>
+              </svg>
+              <span>{labels.holdToLight}</span>
+            </button>
+            <button type="button" class="text-btn" data-go="palms">{labels.palms}</button>
+          </div>
+          <div data-step="pray" hidden>
+            <p class="hint">{labels.hintPray}</p>
+            <button type="button" class="t-btn t-btn-gold" id="bow-btn">{labels.tapToBow}</button>
+          </div>
+          <div data-step="plant" hidden>
+            <p class="hint" id="swipe-hint" hidden>{labels.swipeHint}</p>
+            <button type="button" class="t-btn t-btn-gold" id="plant-btn">↑ {labels.plant}</button>
+          </div>
+          <div data-step="done" hidden>
+            <p class="hint">{labels.worshipDone}</p>
+            <button type="button" class="t-btn t-btn-gold" id="share-btn">{labels.share}</button>
+            <!-- 上完香的下一步：每個人都會看到導流和打賞 -->
+            <div class="next-links">
+              <button type="button" class="next-link" id="sit-next" data-go-station="1">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                  ><path d="M12 4a2 2 0 1 1 0 4a2 2 0 0 1 0-4M7 17c1-4 3-6 5-6s4 2 5 6M4 19h16"></path></svg
+                >
+                <span>{labels.sitNext}</span>
+              </button>
+              <a href={fortuneHref} id="temple-fortune-link" class="next-link">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                  ><path d="M9 10V3M12 10V2M15 10V4M7 10h10l-1 11H8z"></path></svg
+                >
+                <span>{labels.goFortune}</span>
+              </a>
+              <a href={templesHref} id="temple-list-link" class="next-link">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                  ><path d="M3 8q9-5 18 0M6 8v13M18 8v13M10 21v-6q2-2 4 0v6"></path></svg
+                >
+                <span>{labels.leaveGateSub}</span>
+              </a>
+            </div>
+            <a id="temple-tip-link" href={TIP_URL} target="_blank" rel="noopener" class="tip-link"
+              >{labels.tipKeeper}・{labels.tipKeeperSub}</a
+            >
+            <button type="button" class="text-btn" data-go="idle">{labels.again}</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ② 正殿：靜坐 -->
+      <section class="station" id="station-hall" data-station="hall" aria-label={labels.navHall}>
+        <svg viewBox="0 0 400 420" class="station-art" id="hall-art" aria-hidden="true">
+          <!-- 殿內：兩根柱子、匾額、供桌 -->
+          <g stroke="#d4a24c" fill="none" stroke-width="1.2">
+            <path d="M60 60 V 330 M340 60 V 330"></path>
+            <path d="M52 60 H 68 M332 60 H 348 M52 330 H 68 M332 330 H 348"></path>
+            <rect x="140" y="70" width="120" height="34"></rect>
+            <rect x="144" y="74" width="112" height="26" stroke-opacity="0.5"></rect>
+          </g>
+          <text x="200" y="94" text-anchor="middle" class="serif-700" font-size="16" fill="#e9cf98" letter-spacing="8"
+            >玉皇殿</text
+          >
+          <!-- 大樑與斗拱 -->
+          <g stroke="#d4a24c" fill="none" stroke-width="1.2">
+            <path d="M30 44 H 370 M30 52 H 370" stroke-opacity="0.6"></path>
+            <path d="M48 52 q 12 8 24 0 M328 52 q 12 8 24 0"></path>
+          </g>
+          <g stroke="#d4a24c" stroke-opacity="0.5" stroke-width="0.8">
+            <path d="M104 52 V 76 M296 52 V 76"></path>
+          </g>
+          <g class="lantern-sway"><use href="#lantern" x="104" y="76"></use></g>
+          <g class="lantern-sway lantern-sway-late"><use href="#lantern" x="296" y="76"></use></g>
+          <!-- 供桌：燭台、小香爐 -->
+          <path d="M116 194 H 284 V 236 H 116 Z" fill="#7d2418" fill-opacity="0.55"></path>
+          <g stroke="#d4a24c" stroke-width="1" fill="none" stroke-opacity="0.8">
+            <path d="M120 200 H 280 M128 200 V 236 M272 200 V 236 M112 194 H 288"></path>
+            <path d="M150 208 h 100 M150 226 h 100" stroke-opacity="0.4"></path>
+          </g>
+          <g fill="#c2412d">
+            <rect x="139" y="170" width="7" height="24"></rect>
+            <rect x="254" y="170" width="7" height="24"></rect>
+          </g>
+          <path d="M136 194 h 13 M251 194 h 13" stroke="#d4a24c" stroke-width="2"></path>
+          <g fill="url(#flame)">
+            <path class="temple-flame" d="M142.5 156 C 146 162, 147 166, 142.5 169 C 138 166, 139 162, 142.5 156 Z"
+            ></path>
+            <path class="temple-flame" d="M257.5 156 C 261 162, 262 166, 257.5 169 C 253 166, 254 162, 257.5 156 Z"
+            ></path>
+          </g>
+          <path d="M186 182 H 214 C 213 190, 208 194, 200 194 C 192 194, 187 190, 186 182 Z" fill="url(#gold-fill)"
+          ></path>
+          <g stroke="#9e3b2b" stroke-width="0.9">
+            <path d="M196 182 L 194 164 M200 182 V 162 M204 182 L 206 164"></path>
+          </g>
+          <!-- 呼吸光圈：坐下時出現 -->
+          <g id="breath" class="breath" opacity="0">
+            <circle cx="200" cy="290" r="46" fill="none" stroke="#d4a24c" stroke-opacity="0.35"></circle>
+            <circle id="breath-orb" cx="200" cy="290" r="46" fill="#f0a648" fill-opacity="0.18" class="breath-orb"
+            ></circle>
+            <text id="breath-text" x="200" y="296" text-anchor="middle" class="serif-700" font-size="15" fill="#e9cf98"
+            ></text>
+          </g>
+          <line x1="40" y1="372" x2="360" y2="372" stroke="#d4a24c" stroke-opacity="0.35" stroke-width="0.8"></line>
+          <!-- 蒲團與靜坐的人 -->
+          <g id="hall-cushions"></g>
+          <g id="presence-hall"></g>
+        </svg>
+
+        <div class="station-action" data-panel="hall">
+          <p id="hall-count" class="hall-count" aria-live="polite"></p>
+          <div data-step="idle">
+            <div class="chips" role="radiogroup">
+              {
+                sitOptions.map((m, i) => (
+                  <button
+                    type="button"
+                    class:list={['chip', i === 0 && 'is-active']}
+                    data-minutes={m}
+                    role="radio"
+                    aria-checked={i === 0 ? 'true' : 'false'}
+                  >
+                    {m}
+                    {labels.minutes}
+                  </button>
+                ))
+              }
+            </div>
+            <button type="button" class="t-btn t-btn-gold" id="sit-start">{labels.sit}</button>
+          </div>
+          <div data-step="sitting" hidden>
+            <p id="sit-clock" class="clock"></p>
+            <button type="button" class="t-btn" id="bow-all" hidden>{labels.bowToAll}</button>
+            <button type="button" class="text-btn" id="sit-stop">{labels.stand}</button>
+          </div>
+          <div data-step="done" hidden>
+            <p class="hint">{labels.sitDone}</p>
+            <button type="button" class="text-btn" data-go="idle">{labels.sit}</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <button type="button" class="stage-arrow stage-arrow-prev" data-step-dir="-1" aria-label={labels.prev}>‹</button>
+    <button type="button" class="stage-arrow stage-arrow-next" data-step-dir="1" aria-label={labels.next}>›</button>
+
+    <!-- 下緣的圖示選單 -->
+    <nav class="stage-nav" aria-label={labels.pageTitle}>
+      {
+        stations.map((s, i) => (
+          <button type="button" class:list={['nav-btn', i === 0 && 'is-active']} data-target={s.id}>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              {s.id === 'burner' && <path d="M8 3v9M12 2v10M16 3v9M5 12h14l-2 6H7z" />}
+              {s.id === 'hall' && <path d="M12 4a2 2 0 1 1 0 4a2 2 0 0 1 0-4M7 17c1-4 3-6 5-6s4 2 5 6M4 19h16" />}
+            </svg>
+            <span>{s.label}</span>
+          </button>
+        ))
+      }
+    </nav>
+  </div>
+
+  <!-- 往下捲：真的顯示出來的說明文字 -->
+  <section class="temple-about">
+    <h2>{labels.aboutTitle}</h2>
+    <p>{labels.about}</p>
+    <p class="about-foot">{labels.footnote}</p>
+  </section>
+</div>
+
+<style>
+  .online-temple {
+    --t-ink: #0e0d18;
+    --t-ink-2: #1a1726;
+    --t-vermilion: #b3261e;
+    --t-gold: #d4a24c;
+    --t-gold-soft: #e9cf98;
+    --t-paper: #f3e9d4;
+    --header-h: 73px;
+  }
+  .serif-700,
+  .serif-900,
+  .hud-title,
+  .stage-pop,
+  .temple-about h2 {
+    font-family: 'Noto Serif TC', serif;
+  }
+  .serif-700 {
+    font-weight: 700;
+  }
+  .serif-900 {
+    font-weight: 900;
+  }
+
+  /* ── 舞台：滿版、左右捲動 ── */
+  .temple-stage {
+    position: relative;
+    height: calc(100svh - var(--header-h));
+    min-height: 560px;
+    overflow: hidden;
+    background: radial-gradient(120% 80% at 50% 40%, var(--t-ink-2) 0%, var(--t-ink) 70%);
+    color: var(--t-paper);
+  }
+  .stage-sky {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    opacity: 0;
+    pointer-events: none;
+    background: radial-gradient(70% 55% at 50% 38%, rgba(240, 166, 72, 0.32), rgba(240, 166, 72, 0) 70%);
+    transition: opacity 1.2s;
+  }
+  .stage-grain {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    opacity: 0.12;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.6 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .stage-track {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    outline: none;
+  }
+  .stage-track::-webkit-scrollbar {
+    display: none;
+  }
+  .station {
+    position: relative;
+    flex: 0 0 100%;
+    height: 100%;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4.5rem 1rem 7.5rem;
+  }
+  .station-art {
+    width: 100%;
+    max-width: 460px;
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+  .station-action {
+    /* 按鈕區不縮，空間不夠時由上面的圖讓位 */
+    flex-shrink: 0;
+    min-height: 7.5rem;
+    width: 100%;
+    max-width: 26rem;
+    text-align: center;
+  }
+  .station-action [hidden] {
+    display: none;
+  }
+
+  /* ── 固定資訊 ── */
+  .stage-hud {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    pointer-events: none;
+  }
+  .hud-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: 0.3em;
+    color: var(--t-paper);
+  }
+  .hud-seal {
+    padding: 0.1rem 0.3rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    color: #fbe9e0;
+    background: var(--t-vermilion);
+    border-radius: 2px;
+  }
+  .hud-count {
+    max-width: 50%;
+    text-align: right;
+    font-size: 0.75rem;
+    line-height: 1.6;
+    letter-spacing: 0.12em;
+    white-space: pre-line;
+    color: var(--t-gold-soft);
+  }
+  .hud-name {
+    margin-top: 0.35rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: var(--t-gold-soft);
+  }
+  .stage-pop {
+    position: absolute;
+    top: 22%;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    text-align: center;
+    font-size: clamp(1.2rem, 5vw, 1.8rem);
+    letter-spacing: 0.6em;
+    color: var(--t-gold-soft);
+    pointer-events: none;
+  }
+  /* 一句提示用小字，不跟「一拜」一樣大 */
+  .stage-pop.is-note {
+    font-family: inherit;
+    font-size: 0.95rem;
+    letter-spacing: 0.15em;
+  }
+
+  /* ── 下緣選單 ── */
+  .stage-nav {
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    z-index: 3;
+    display: flex;
+    gap: 0.25rem;
+    padding: 0.35rem;
+    transform: translateX(-50%);
+    background: rgba(14, 13, 24, 0.72);
+    border: 1px solid rgba(212, 162, 76, 0.3);
+    border-radius: 999px;
+    backdrop-filter: blur(6px);
+  }
+  .nav-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.15rem;
+    min-width: 3.4rem;
+    padding: 0.4rem 0.5rem 0.3rem;
+    border-radius: 999px;
+    color: rgba(233, 207, 152, 0.6);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    transition:
+      color 0.25s,
+      background-color 0.25s;
+  }
+  .nav-btn svg {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .nav-btn.is-active {
+    color: #1a1408;
+    background: var(--t-gold);
+  }
+  .stage-arrow {
+    position: absolute;
+    top: 45%;
+    z-index: 3;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.75rem;
+    line-height: 1;
+    color: var(--t-gold-soft);
+    opacity: 0.5;
+    transition: opacity 0.2s;
+  }
+  .stage-arrow:hover {
+    opacity: 1;
+  }
+  .stage-arrow[disabled] {
+    visibility: hidden;
+  }
+  .stage-arrow-prev {
+    left: 0.25rem;
+  }
+  .stage-arrow-next {
+    right: 0.25rem;
+  }
+
+  /* ── 按鈕與提示 ── */
+  .t-btn {
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.2em;
+    border-radius: 2px;
+  }
+  .t-btn-gold {
+    background: var(--t-gold);
+    color: #1a1408;
+  }
+  .t-btn-gold:hover {
+    background: #e2b766;
+  }
+  .text-btn {
+    display: block;
+    margin: 0.85rem auto 0;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    color: var(--t-gold-soft);
+    opacity: 0.75;
+  }
+  .hint {
+    margin-bottom: 0.9rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    line-height: 1.7;
+    color: var(--t-paper);
+    opacity: 0.9;
+  }
+  .note {
+    font-size: 0.75rem;
+    color: var(--t-gold-soft);
+    opacity: 0.6;
+  }
+  .clock {
+    margin-bottom: 0.5rem;
+    font-variant-numeric: tabular-nums;
+    font-size: 1.6rem;
+    letter-spacing: 0.15em;
+  }
+
+  .hold-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1.4rem 0.5rem 0.6rem;
+    color: #1a1408;
+    background: var(--t-gold);
+    border-radius: 999px;
+    letter-spacing: 0.2em;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+  }
+  .hold-ring {
+    width: 34px;
+    height: 34px;
+    transform: rotate(-90deg);
+  }
+  .hold-ring circle {
+    fill: none;
+    stroke: rgba(26, 20, 8, 0.25);
+    stroke-width: 3;
+  }
+  .hold-ring .hold-progress {
+    stroke: #1a1408;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+  }
+  .hold-btn.is-holding .hold-progress {
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 1.2s linear;
+  }
+
+  .chips {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .chip {
+    padding: 0.35rem 0.9rem;
+    font-size: 0.85rem;
+    border: 1px solid rgba(233, 207, 152, 0.35);
+    color: rgba(233, 207, 152, 0.7);
+    border-radius: 2px;
+  }
+  .chip.is-active {
+    border-color: var(--t-gold);
+    color: var(--t-gold);
+  }
+
+  .next-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin: 0.9rem 0 0.5rem;
+  }
+  .next-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.7rem 0.3rem;
+    border: 1px solid rgba(233, 207, 152, 0.3);
+    border-radius: 2px;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    color: var(--t-paper);
+    transition:
+      background-color 0.25s,
+      border-color 0.25s;
+  }
+  .next-link:hover {
+    border-color: var(--t-gold);
+    background: rgba(212, 162, 76, 0.12);
+  }
+  @media (max-height: 720px) {
+    .next-link {
+      flex-direction: row;
+      justify-content: center;
+      padding: 0.5rem 0.3rem;
+    }
+  }
+  .next-link svg {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: var(--t-gold);
+    stroke-width: 1.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .tip-link {
+    display: inline-block;
+    margin: 0.2rem 0 0.3rem;
+    font-size: 0.75rem;
+    color: var(--t-gold-soft);
+    opacity: 0.8;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  /* script 產生的 SVG 元素 */
+  :global(.temple-smoke) {
+    fill: none;
+    stroke: #f3e9d4;
+    stroke-opacity: 0.3;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-dasharray: 60 140;
+    animation: smoke-flow 7s linear infinite;
+  }
+  @keyframes smoke-flow {
+    from {
+      stroke-dashoffset: 200;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  :global(.ember-glow) {
+    fill: #ff8a3d;
+    animation: ember 3.5s ease-in-out infinite;
+  }
+  @keyframes ember {
+    50% {
+      opacity: 0.45;
+    }
+  }
+  :global(.stick-new) {
+    animation: stick-in 1.4s ease-out;
+  }
+  @keyframes stick-in {
+    from {
+      opacity: 0;
+      transform: translateY(-12px);
+    }
+  }
+  .lantern-sway {
+    transform-box: fill-box;
+    transform-origin: 50% 0;
+    animation: lantern-sway 6s ease-in-out infinite;
+  }
+  .lantern-sway-late {
+    animation-delay: -2.5s;
+  }
+  @keyframes lantern-sway {
+    0%,
+    100% {
+      transform: rotate(-2deg);
+    }
+    50% {
+      transform: rotate(2deg);
+    }
+  }
+  :global(.temple-flame) {
+    transform-box: fill-box;
+    transform-origin: 50% 100%;
+    animation: flicker 2.8s ease-in-out infinite;
+  }
+  :global(.is-sitting .temple-flame) {
+    animation: breathe 10s ease-in-out infinite;
+  }
+  :global(.seat-in) {
+    animation: seat-in 1.6s ease-out;
+  }
+  /* 被合十的燭火亮一下 */
+  :global(.is-greeted) {
+    filter: brightness(1.9);
+    transition: filter 0.6s ease-out;
+  }
+  :global(.seat-name) {
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    fill: #e9cf98;
+    opacity: 0.75;
+  }
+  @keyframes seat-in {
+    from {
+      opacity: 0;
+    }
+  }
+  .hall-count {
+    min-height: 1.5em;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    color: var(--t-gold-soft);
+  }
+  @keyframes flicker {
+    50% {
+      transform: scale(0.94, 1.06);
+    }
+  }
+  :global(.hall-crowd) {
+    animation: crowd-breathe 10s ease-in-out infinite;
+  }
+  @keyframes crowd-breathe {
+    0%,
+    100% {
+      opacity: 0.45;
+    }
+    40% {
+      opacity: 1;
+    }
+  }
+  @keyframes breathe {
+    0%,
+    100% {
+      transform: scale(0.85);
+      opacity: 0.7;
+    }
+    40% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+  }
+  .my-incense {
+    transform-box: view-box;
+    transition:
+      opacity 0.6s,
+      transform 0.8s ease;
+  }
+  .my-incense.is-raised {
+    transform: translateY(-64px);
+  }
+  .my-incense.is-bowing {
+    animation: bow 0.9s ease-in-out;
+  }
+  .my-incense.is-planting {
+    transform: translateY(-190px) scale(0.6);
+    opacity: 0;
+    transition:
+      transform 0.9s ease-in,
+      opacity 0.9s 0.3s;
+  }
+  @keyframes bow {
+    50% {
+      transform: translateY(-40px);
+    }
+  }
+  .breath {
+    transition: opacity 0.8s;
+  }
+  .breath-orb {
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: scale(0.5);
+  }
+  .breath-orb.is-in {
+    transform: scale(1);
+    transition: transform 4s ease-in-out;
+  }
+  .breath-orb.is-out {
+    transform: scale(0.5);
+    transition: transform 6s ease-in-out;
+  }
+
+  /* 鏡頭拉遠時的圖層：線條粗細不跟著縮放 */
+  .scale-layer {
+    transition: opacity 1.2s;
+  }
+  #scene-far path,
+  #scene-far rect {
+    vector-effect: non-scaling-stroke;
+  }
+  :global(.crowd-twinkle) {
+    fill: #f0a648;
+    animation: twinkle 4.5s ease-in-out infinite;
+  }
+  :global(.crowd-twinkle.t1) {
+    animation-delay: -1.5s;
+  }
+  :global(.crowd-twinkle.t2) {
+    animation-delay: -3s;
+  }
+  @keyframes twinkle {
+    50% {
+      opacity: 0.4;
+    }
+  }
+
+  /* ── 下方說明 ── */
+  .temple-about {
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.25rem 3rem;
+    color: #3b3530;
+  }
+  :global(.dark) .temple-about {
+    color: #e6dccb;
+  }
+  .temple-about h2 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.35rem;
+    letter-spacing: 0.2em;
+  }
+  .temple-about p {
+    line-height: 1.95;
+  }
+  .about-foot {
+    margin-top: 2rem;
+    font-size: 0.75rem;
+    opacity: 0.7;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .stage-track {
+      scroll-behavior: auto;
+    }
+    :global(.temple-smoke),
+    :global(.ember-glow),
+    :global(.stick-new),
+    :global(.temple-flame),
+    :global(.is-sitting .temple-flame),
+    :global(.hall-crowd),
+    :global(.seat-in),
+    :global(.crowd-twinkle),
+    .lantern-sway,
+    .my-incense.is-bowing {
+      animation: none;
+    }
+    .breath-orb.is-in,
+    .breath-orb.is-out,
+    .my-incense,
+    .my-incense.is-planting {
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  type Labels = Record<string, string>;
+  // 香數：大殿服務的計數，或服務連不上時最後一次拿到的數字（atLeast）
+  interface Stats {
+    total: number;
+    today: number;
+    atLeast?: boolean;
+  }
+  // 計數器回傳的完整資料
+  interface HallReply extends Stats {
+    counted?: boolean;
+    seated?: boolean;
+    sittingNow?: number;
+    sitToday?: number;
+    others?: number[];
+    bowedToYou?: number;
+    bowed?: number;
+  }
+
+  // 大殿服務的網址：本機開發連 wrangler dev；正式網址部署後再填，空字串時只用本機資料
+  const HALL_URL = import.meta.env.DEV ? 'http://localhost:8787' : '';
+  const STATS_KEY = 'temple:stats';
+  const MINE_KEY = 'temple:mine';
+  const NAME_KEY = 'temple:name';
+  // 服務回錯誤後，這段時間內不再問服務，避免額度用完時每個訪客都一直重試
+  const DOWN_KEY = 'temple:down';
+  // 累計滿這個數字才顯示總數，之前只顯示自己的香數（不造假，只是晚一點顯示）
+  const TOTAL_MIN = 100;
+  const DOWN_MS = 5 * 60_000;
+
+  // 人潮排法：先排滿廟埕（約 1,000 人），再從廟門往街上排（到 100 萬人）
+  const COURTYARD = 1000;
+  const STREET = 1_000_000;
+  const MAX_DOTS = 500;
+  const COURTYARD_DOTS = 220;
+  const GOLDEN_ANGLE = 2.399963;
+
+  const SVG_NS = 'http://www.w3.org/2000/svg';
+  const HOLD_MS = 1200;
+  const BOW_MS = 1000;
+  const INHALE_MS = 4000;
+  const EXHALE_MS = 6000;
+  const MAX_STICKS = 60;
+  const RIM_Y = 198;
+  // 正殿的座位：前排 7 個（中間是你），後排 8 個
+  const CUSHIONS = [200, 160, 240, 120, 280, 80, 320];
+  const BACK_ROW = [180, 220, 140, 260, 100, 300, 60, 340];
+  const BREATH_MS = 10_000;
+  const HALL_POLL_MS = 30_000;
+  // 人多時拉長更新間隔，省免費方案的請求數
+  const hallPollMs = (sitting: number) => (sitting >= 500 ? 120_000 : sitting >= 50 ? 60_000 : HALL_POLL_MS);
+  // 殿裡坐滿 14 人後，往殿外的廟埕排；最多畫這麼多點，人更多時一點代表多人
+  const HALL_DOTS_MAX = 400;
+  const HALL_INSIDE = 14;
+  // 今天坐過的人滿這個數字才顯示
+  const SAT_TODAY_MIN = 10;
+
+  const svgEl = (tag: string, attrs: Record<string, string | number>) => {
+    const node = document.createElementNS(SVG_NS, tag);
+    for (const [k, v] of Object.entries(attrs)) node.setAttribute(k, String(v));
+    return node;
+  };
+
+  let audioCtx: AudioContext | null = null;
+  // 磬聲：瀏覽器合成幾個泛音、指數衰減，不用外部音檔
+  function ringBell() {
+    try {
+      audioCtx = audioCtx || new AudioContext();
+      const ctx = audioCtx;
+      const now = ctx.currentTime;
+      [
+        [523, 0.5],
+        [1318, 0.25],
+        [2093, 0.12],
+      ].forEach(([freq, gainValue]) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.frequency.value = freq;
+        gain.gain.setValueAtTime(gainValue, now);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + 5);
+        osc.connect(gain).connect(ctx.destination);
+        osc.start(now);
+        osc.stop(now + 5);
+      });
+    } catch {
+      // 沒有 Web Audio 就安靜進行
+    }
+  }
+
+  // 一個 panel 一次只顯示一個步驟
+  // GA4 自訂事件：只送事件名稱和動作種類，不送任何個人資料。
+  // 網站的 gtag 函式被包在區塊裡叫不到，所以直接推進 GA 讀的 dataLayer（要推 arguments 物件，不能推陣列）
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  function sendEvent(command: 'event', name: string, params?: Record<string, string | number>) {
+    const w = window as unknown as { dataLayer?: unknown[] };
+    w.dataLayer = w.dataLayer || [];
+    // eslint-disable-next-line prefer-rest-params
+    w.dataLayer.push(arguments);
+  }
+
+  function showStep(panel: Element | null, step: string) {
+    panel?.querySelectorAll<HTMLElement>('[data-step]').forEach((el) => {
+      el.hidden = el.dataset.step !== step;
+    });
+  }
+
+  // 一個靜坐的人：蒲團上的燭火。呼吸照同一個時鐘走，所有人一起吸氣、吐氣
+  function flame(cx: number, base: number, isYou: boolean, scale = 1) {
+    const g = svgEl('g', { class: 'is-sitting' });
+    if (scale !== 1) g.setAttribute('transform', `translate(${cx} ${base}) scale(${scale}) translate(${-cx} ${-base})`);
+    if (isYou) {
+      g.appendChild(svgEl('circle', { cx, cy: base - 8, r: 13, fill: 'none', stroke: '#d4a24c', 'stroke-width': 0.7 }));
+    }
+    g.appendChild(
+      svgEl('ellipse', { cx, cy: base - 9, rx: 7, ry: 9, fill: '#f0a648', opacity: 0.35, filter: 'url(#glow)' })
+    );
+    g.appendChild(
+      svgEl('path', {
+        d: `M${cx} ${base - 20} C ${cx + 5} ${base - 12}, ${cx + 4.5} ${base - 3}, ${cx} ${base - 2} C ${cx - 4.5} ${base - 3}, ${cx - 5} ${base - 12}, ${cx} ${base - 20} Z`,
+        fill: 'url(#flame)',
+        class: 'temple-flame',
+        style: `animation-delay: -${(Date.now() % BREATH_MS) / 1000}s`,
+      })
+    );
+    g.appendChild(
+      svgEl('path', { d: `M${cx - 7} ${base} H${cx + 7} L${cx + 4} ${base + 4} H${cx - 4} Z`, fill: '#d4a24c' })
+    );
+    return g;
+  }
+
+  const clamp01 = (v: number) => Math.max(0, Math.min(1, v));
+
+  // 第 i 個人站的位置（向日葵排法，越後來的人站得越外面）
+  function crowdSlot(i: number): [number, number] {
+    if (i < COURTYARD) {
+      const r = 480 * Math.sqrt(i / COURTYARD);
+      const t = i * GOLDEN_ANGLE;
+      return [200 + r * Math.cos(t), 345 + r * Math.abs(Math.sin(t))];
+    }
+    const j = i - COURTYARD;
+    const r = 60 + 2400 * Math.sqrt(j / STREET);
+    const t = j * GOLDEN_ANGLE;
+    return [200 + r * Math.cos(t) * 1.3, 1000 + r * Math.abs(Math.sin(t)) * 0.8];
+  }
+
+  // n 個人排出來的範圍：最下緣、左右半寬
+  function crowdExtent(n: number) {
+    if (n <= COURTYARD) {
+      const r = 480 * Math.sqrt(n / COURTYARD);
+      return { bottom: 345 + r, half: r };
+    }
+    const r = 60 + 2400 * Math.sqrt(Math.min(n - COURTYARD, STREET) / STREET);
+    return { bottom: 1000 + r * 0.8, half: Math.max(480, r * 1.3) };
+  }
+
+  // 鏡頭要拉多遠才裝得下所有人：回傳 viewBox 與縮放倍數
+  function targetView(n: number) {
+    const e = crowdExtent(n);
+    // 人一多，廟的屋頂（y 約 -200）也要進畫面
+    const top = -260 * clamp01((n - 100) / 900);
+    const z = Math.max(1, (e.bottom + 40 - top) / 420, (e.half * 2 * 1.15) / 400);
+    const w = 400 * z;
+    const h = 420 * z;
+    const y = z === 1 ? 0 : Math.min(top, e.bottom + 40 * z - h);
+    return { box: [200 - w / 2, y, w, h], z };
+  }
+
+  // 廟埕上第 0..n-1 個座位：從中間往兩邊坐，坐滿一排再往外一排。
+  // 人越多每排越寬（15 到 31 個），廟埕才不會變成又窄又長的一條；每個點稍微錯開，不像格子
+  function hallSlots(n: number): [number, number][] {
+    const cols = Math.min(31, Math.max(15, Math.ceil(Math.sqrt(n * 1.5)) | 1));
+    const row = Array.from({ length: cols }, (_, j) => (j === 0 ? 0 : Math.ceil(j / 2) * 24 * (j % 2 ? 1 : -1)));
+    return Array.from({ length: n }, (_, i): [number, number] => {
+      const k = Math.floor(i / cols);
+      const jx = ((i * 37) % 7) - 3;
+      const jy = ((i * 53) % 5) - 2;
+      return [200 + row[i % cols] + jx + (k % 2) * 12, 420 + 20 * k + jy];
+    });
+  }
+
+  // 正殿鏡頭：裝得下所有座位，殿的屋頂留在畫面上
+  function hallView(slots: [number, number][]) {
+    if (slots.length === 0) return { box: [0, 0, 400, 420], z: 1 };
+    const bottom = Math.max(...slots.map(([, y]) => y)) + 24;
+    const half = Math.max(...slots.map(([x]) => Math.abs(x - 200))) + 24;
+    const z = Math.max(1, bottom / 420, (half * 2) / 400);
+    return { box: [200 - (400 * z) / 2, 0, 400 * z, 420 * z], z };
+  }
+
+  const taipeiDay = () => new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Taipei' });
+
+  // localStorage 可能被擋（無痕視窗、隱私設定），讀寫失敗就當作沒有
+  function readJson<T>(key: string): T | null {
+    try {
+      const raw = localStorage.getItem(key);
+      return raw ? (JSON.parse(raw) as T) : null;
+    } catch {
+      return null;
+    }
+  }
+  function writeJson(key: string, value: unknown) {
+    try {
+      localStorage.setItem(key, JSON.stringify(value));
+    } catch {
+      // 存不了就算了，下次重新抓
+    }
+  }
+
+  // 分享圖卡：天公爐（用畫面上的 SVG）＋兩行字＋網址
+  async function makeCard(svg: SVGSVGElement, lead: string, line: string): Promise<Blob | null> {
+    const W = 1080;
+    const H = 1350;
+    const canvas = document.createElement('canvas');
+    canvas.width = W;
+    canvas.height = H;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return null;
+
+    const paint = async (withArt: boolean) => {
+      const bg = ctx.createLinearGradient(0, 0, 0, H);
+      bg.addColorStop(0, '#1a1726');
+      bg.addColorStop(1, '#0e0d18');
+      ctx.fillStyle = bg;
+      ctx.fillRect(0, 0, W, H);
+      if (withArt) {
+        const clone = svg.cloneNode(true) as SVGSVGElement;
+        clone.setAttribute('viewBox', '0 0 400 420');
+        clone.setAttribute('width', '800');
+        clone.setAttribute('height', '840');
+        ['#scene-far', '#crowd-glow', '#smoke-pillar', '#crowd', '#my-incense'].forEach((sel) =>
+          clone.querySelector(sel)?.remove()
+        );
+        // 圖片裡吃不到頁面 CSS，把會用到的樣式寫回屬性
+        clone.querySelectorAll('.temple-smoke').forEach((p) => {
+          p.setAttribute('fill', 'none');
+          p.setAttribute('stroke', '#f3e9d4');
+          p.setAttribute('stroke-opacity', '0.3');
+        });
+        clone.querySelectorAll('.ember-glow').forEach((p) => p.setAttribute('fill', '#ff8a3d'));
+        clone.querySelectorAll('text').forEach((t) => {
+          t.setAttribute('font-family', 'serif');
+          t.setAttribute('font-weight', '900');
+        });
+        const url = URL.createObjectURL(
+          new Blob([new XMLSerializer().serializeToString(clone)], { type: 'image/svg+xml' })
+        );
+        try {
+          const img = new Image();
+          img.src = url;
+          await img.decode();
+          ctx.drawImage(img, 140, 120, 800, 840);
+        } finally {
+          URL.revokeObjectURL(url);
+        }
+      }
+      try {
+        await document.fonts.load('700 56px "Noto Serif TC"', lead + line);
+      } catch {
+        // 字型載不到就用系統宋體
+      }
+      ctx.textAlign = 'center';
+      ctx.fillStyle = '#e9cf98';
+      ctx.font = '700 52px "Noto Serif TC", serif';
+      ctx.fillText(lead, W / 2, 1060);
+      ctx.fillStyle = '#f3e9d4';
+      ctx.font = '900 80px "Noto Serif TC", serif';
+      ctx.fillText(line, W / 2, 1170);
+      ctx.fillStyle = 'rgba(212, 162, 76, 0.8)';
+      ctx.font = '400 30px sans-serif';
+      ctx.fillText('taiwanese-gods.org/online-temple', W / 2, 1280);
+    };
+    const toBlob = () => new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, 'image/png'));
+
+    // 有些瀏覽器畫了 SVG 圖之後不准匯出，那就改出只有字的圖卡
+    try {
+      await paint(true);
+      return await toBlob();
+    } catch {
+      await paint(false);
+      return toBlob();
+    }
+  }
+
+  function initTemple() {
+    const root = document.getElementById('online-temple');
+    if (!root || root.dataset.ready) return;
+    root.dataset.ready = '1';
+    const labels: Labels = JSON.parse(root.dataset.labels || '{}');
+    const names: string[] = JSON.parse(root.dataset.names || '[]');
+    // 香客名：存不了（無痕視窗）就每次重新抽
+    let storedName = readJson<number>(NAME_KEY);
+    if (storedName === null || !(storedName >= 0 && storedName < names.length)) {
+      storedName = Math.floor(Math.random() * names.length);
+      writeJson(NAME_KEY, storedName);
+    }
+    const myName = storedName;
+    const nameOf = (i: number) => names[i] || names[0];
+    const hudName = root.querySelector<HTMLElement>('#hud-name');
+    if (hudName) hudName.textContent = labels.nameTag.replace('{name}', nameOf(myName));
+
+    const track = root.querySelector<HTMLElement>('#stage-track');
+    const pop = root.querySelector<HTMLElement>('#stage-pop');
+    const countEl = root.querySelector<HTMLElement>('#hud-count');
+    if (!track || !pop || !countEl) return;
+    const stationEls = [...root.querySelectorAll<HTMLElement>('.station')];
+    const navBtns = [...root.querySelectorAll<HTMLButtonElement>('.nav-btn')];
+    const arrows = [...root.querySelectorAll<HTMLButtonElement>('[data-step-dir]')];
+    const panel = (name: string) => root.querySelector(`[data-panel="${name}"]`);
+    let current = 0;
+    const timers: number[] = [];
+    const later = (fn: () => void, ms: number) => timers.push(window.setTimeout(fn, ms));
+
+    // ── 換站 ──
+    const goTo = (index: number) => {
+      const i = Math.max(0, Math.min(stationEls.length - 1, index));
+      track.scrollTo({ left: stationEls[i].offsetLeft });
+    };
+    const markActive = (i: number) => {
+      current = i;
+      navBtns.forEach((b, j) => {
+        b.classList.toggle('is-active', i === j);
+        b.setAttribute('aria-current', i === j ? 'true' : 'false');
+      });
+      arrows[0].disabled = i === 0;
+      arrows[1].disabled = i === stationEls.length - 1;
+    };
+    navBtns.forEach((b, i) => b.addEventListener('click', () => goTo(i)));
+    root
+      .querySelectorAll<HTMLElement>('[data-go-station]')
+      .forEach((b) => b.addEventListener('click', () => goTo(Number(b.dataset.goStation))));
+    arrows.forEach((a) => a.addEventListener('click', () => goTo(current + Number(a.dataset.stepDir))));
+    track.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') goTo(current + 1);
+      if (e.key === 'ArrowLeft') goTo(current - 1);
+    });
+    track.addEventListener('scroll', () => markActive(Math.round(track.scrollLeft / Math.max(1, track.clientWidth))), {
+      passive: true,
+    });
+    markActive(0);
+
+    // ── ① 上香：按住點香 → 默念 → 三拜 → 插香 ──
+    const burnerPanel = panel('burner');
+    const myIncense = root.querySelector<SVGGElement>('#my-incense');
+    const holdBtn = root.querySelector<HTMLButtonElement>('#hold-light');
+    let useIncense = true;
+    let holdTimer = 0;
+    let holdStart = 0;
+    const bowBtn = root.querySelector<HTMLButtonElement>('#bow-btn');
+    const shareBtn = root.querySelector<HTMLButtonElement>('#share-btn');
+
+    const startPray = (incense: boolean) => {
+      useIncense = incense;
+      if (incense) {
+        myIncense?.setAttribute('opacity', '1');
+        myIncense?.classList.add('is-raised');
+      }
+      bows = 0;
+      pop.textContent = '';
+      pop.classList.remove('is-note');
+      if (bowBtn) bowBtn.textContent = labels.tapToBow;
+      showStep(burnerPanel, 'pray');
+    };
+    const cancelHold = () => {
+      window.clearTimeout(holdTimer);
+      if (!holdBtn?.classList.contains('is-holding')) return;
+      holdBtn.classList.remove('is-holding');
+      // 只點一下就放開的人，不知道要按住
+      if (Date.now() - holdStart < HOLD_MS) {
+        pop.textContent = labels.holdHint;
+        pop.classList.add('is-note');
+        later(() => {
+          if (pop.textContent !== labels.holdHint) return;
+          pop.textContent = '';
+          pop.classList.remove('is-note');
+        }, 1800);
+      }
+    };
+    holdBtn?.addEventListener('pointerdown', (e) => {
+      e.preventDefault();
+      holdBtn.classList.add('is-holding');
+      holdStart = Date.now();
+      holdTimer = window.setTimeout(() => {
+        holdBtn.classList.remove('is-holding');
+        startPray(true);
+      }, HOLD_MS);
+    });
+    ['pointerup', 'pointerleave', 'pointercancel'].forEach((ev) => holdBtn?.addEventListener(ev, cancelHold));
+    // 鍵盤使用者：Enter / 空白鍵直接點香
+    holdBtn?.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        startPray(true);
+      }
+    });
+
+    const finishWorship = () => {
+      // 雙手合十不插香，不算進香數
+      if (useIncense) document.dispatchEvent(new CustomEvent('temple:incense'));
+      sendEvent('event', 'temple_worship', { method: useIncense ? 'incense' : 'palms' });
+      if (shareBtn) shareBtn.textContent = useIncense ? labels.share : labels.sharePalms;
+      showStep(burnerPanel, 'done');
+    };
+
+    let bows = 0;
+    bowBtn?.addEventListener('click', () => {
+      if (bows >= 3) return;
+      bows += 1;
+      pop.textContent = labels[`bow${bows}`];
+      bowBtn.textContent = `${labels.tapToBow} · ${bows} / 3`;
+      myIncense?.classList.remove('is-bowing');
+      void myIncense?.getBoundingClientRect();
+      myIncense?.classList.add('is-bowing');
+      if (bows === 3) {
+        later(() => {
+          bows = 0;
+          pop.textContent = '';
+          if (useIncense) showStep(burnerPanel, 'plant');
+          else finishWorship();
+        }, BOW_MS);
+      }
+    });
+
+    const plant = () => {
+      myIncense?.classList.add('is-planting');
+      later(() => {
+        myIncense?.classList.remove('is-raised', 'is-planting', 'is-bowing');
+        myIncense?.setAttribute('opacity', '0');
+        finishWorship();
+      }, 900);
+    };
+    root.querySelector('#plant-btn')?.addEventListener('click', plant);
+    if (window.matchMedia('(pointer: coarse)').matches)
+      root.querySelector<HTMLElement>('#swipe-hint')?.removeAttribute('hidden');
+    // 在天公爐那一站往上滑也能插香
+    let swipeY = 0;
+    const burnerStation = root.querySelector<HTMLElement>('#station-burner');
+    burnerStation?.addEventListener('touchstart', (e) => (swipeY = e.touches[0].clientY), { passive: true });
+    burnerStation?.addEventListener(
+      'touchend',
+      (e) => {
+        const plantStep = burnerPanel?.querySelector<HTMLElement>('[data-step="plant"]');
+        if (plantStep && !plantStep.hidden && swipeY - e.changedTouches[0].clientY > 60) plant();
+      },
+      { passive: true }
+    );
+    burnerPanel?.querySelector('[data-go="palms"]')?.addEventListener('click', () => startPray(false));
+    burnerPanel?.querySelector('[data-go="idle"]')?.addEventListener('click', () => showStep(burnerPanel, 'idle'));
+
+    // ── ② 靜坐 ──
+    const hallPanel = panel('hall');
+    const breath = root.querySelector('#breath');
+    const orb = root.querySelector('#breath-orb');
+    const breathText = root.querySelector('#breath-text');
+    const clock = root.querySelector<HTMLElement>('#sit-clock');
+    let minutes = Number(hallPanel?.querySelector<HTMLElement>('.chip.is-active')?.dataset.minutes) || 1;
+    let endAt = 0;
+    let tickTimer = 0;
+    let breathTimer = 0;
+
+    hallPanel?.querySelectorAll<HTMLButtonElement>('[data-minutes]').forEach((chip) => {
+      chip.addEventListener('click', () => {
+        minutes = Number(chip.dataset.minutes) || 1;
+        hallPanel.querySelectorAll<HTMLButtonElement>('[data-minutes]').forEach((c) => {
+          c.classList.toggle('is-active', c === chip);
+          c.setAttribute('aria-checked', c === chip ? 'true' : 'false');
+        });
+      });
+    });
+    const breathe = (inhale: boolean, wait = inhale ? INHALE_MS : EXHALE_MS) => {
+      orb?.classList.toggle('is-in', inhale);
+      orb?.classList.toggle('is-out', !inhale);
+      if (breathText) breathText.textContent = inhale ? labels.inhale : labels.exhale;
+      breathTimer = window.setTimeout(() => breathe(!inhale), wait);
+    };
+    const renderClock = () => {
+      const left = Math.max(0, Math.ceil((endAt - Date.now()) / 1000));
+      if (clock) {
+        clock.textContent = `${String(Math.floor(left / 60)).padStart(2, '0')}:${String(left % 60).padStart(2, '0')}`;
+      }
+      return left;
+    };
+    const stopSit = (completed: boolean) => {
+      window.clearInterval(tickTimer);
+      window.clearTimeout(breathTimer);
+      orb?.classList.remove('is-in', 'is-out');
+      breath?.setAttribute('opacity', '0');
+      ringBell();
+      void leaveSeat(completed);
+      showStep(hallPanel, completed ? 'done' : 'idle');
+    };
+    root.querySelector('#sit-start')?.addEventListener('click', () => {
+      ringBell();
+      endAt = Date.now() + minutes * 60 * 1000;
+      sendEvent('event', 'temple_sit', { minutes });
+      breath?.setAttribute('opacity', '1');
+      showStep(hallPanel, 'sitting');
+      renderClock();
+      // 照同一個時鐘從目前的段落接著呼吸，跟其他人的燭火一致
+      const phase = Date.now() % BREATH_MS;
+      if (phase < INHALE_MS) breathe(true, INHALE_MS - phase);
+      else breathe(false, BREATH_MS - phase);
+      void takeSeat(minutes);
+      // 用結束時間算剩餘秒數，分頁切到背景也不會跑慢
+      tickTimer = window.setInterval(() => {
+        if (renderClock() <= 0) stopSit(true);
+      }, 500);
+    });
+    root.querySelector('#sit-stop')?.addEventListener('click', () => stopSit(false));
+    root.querySelector('#sit-next')?.addEventListener('click', () => {
+      hallPanel?.querySelector<HTMLButtonElement>('[data-minutes="1"]')?.click();
+      later(() => root.querySelector<HTMLButtonElement>('#sit-start')?.click(), 700);
+    });
+    hallPanel?.querySelector('[data-go="idle"]')?.addEventListener('click', () => showStep(hallPanel, 'idle'));
+
+    // ── 香數與人潮：爐裡的香、鏡頭遠近、右上角的數字 ──
+    const art = root.querySelector<SVGSVGElement>('#burner-art');
+    const sticks = root.querySelector('#burner-sticks');
+    const smoke = root.querySelector('#burner-smoke');
+    const crowd = root.querySelector('#crowd');
+    const sceneFar = root.querySelector('#scene-far');
+    const skyGlow = root.querySelector<HTMLElement>('#stage-sky');
+    const crowdGlow = root.querySelector('#crowd-glow');
+    const pillar = root.querySelector('#smoke-pillar');
+    const pillarWide = root.querySelector('#pillar-wide');
+    const pillarCore = root.querySelector('#pillar-core');
+    const atHall = root.querySelector('#presence-hall');
+    const lang = root.dataset.lang || 'zh-TW';
+    const fmt = (n: number) => n.toLocaleString(lang);
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let shownSticks = 0;
+    let shownCrowd = -1;
+    let stats: Stats | null = null;
+    let sessionIncense = 0;
+    let myNumber = 0;
+    let hallNow = 0;
+    let hallToday = 0;
+    let shownOthers = 0;
+    let mySeat = false;
+    let sittingSelf = false;
+    let lastHallFetch = 0;
+    let hallOthers: number[] = [];
+    let bowedThisSit = false;
+    let lastBowedToYou = 0;
+
+    const renderSticks = (count: number) => {
+      if (!sticks || !smoke) return;
+      const target = Math.min(count, MAX_STICKS);
+      if (target < shownSticks) {
+        sticks.innerHTML = '';
+        shownSticks = 0;
+      }
+      const animateNew = shownSticks > 0;
+      for (let i = shownSticks; i < target; i++) {
+        // 每炷香的位置與角度依序號固定，重畫時不會亂跳
+        const x = 150 + ((i * 41) % 101);
+        const tilt = (((i * 17) % 13) - 6) * 0.8;
+        const tipY = RIM_Y - (46 + ((i * 11) % 22));
+        const g = svgEl('g', { transform: `rotate(${tilt} ${x} ${RIM_Y})` });
+        if (animateNew) g.setAttribute('class', 'stick-new');
+        g.appendChild(svgEl('line', { x1: x, y1: RIM_Y, x2: x, y2: tipY, stroke: '#9e3b2b', 'stroke-width': 1.3 }));
+        g.appendChild(svgEl('circle', { cx: x, cy: tipY, r: 3, class: 'ember-glow', filter: 'url(#glow)' }));
+        g.appendChild(svgEl('circle', { cx: x, cy: tipY, r: 1.1, fill: '#ffb36b' }));
+        sticks.appendChild(g);
+      }
+      shownSticks = target;
+      // 香越多煙越濃：0 到 6 縷
+      const wisps = count === 0 ? 0 : Math.min(6, 1 + Math.floor(count / 8));
+      smoke.innerHTML = '';
+      for (let i = 0; i < wisps; i++) {
+        const x = 175 + ((i * 19) % 52);
+        const sway = i % 2 === 0 ? 14 : -14;
+        smoke.appendChild(
+          svgEl('path', {
+            d: `M${x} 140 C ${x + sway} 112, ${x - sway} 92, ${x + sway / 2} 64 S ${x - sway} 30, ${x} 8`,
+            class: 'temple-smoke',
+            style: `animation-delay:${-i * 1.3}s`,
+          })
+        );
+      }
+    };
+
+    // 鏡頭平滑移到新的 viewBox（天公爐、正殿各一個）
+    const cameraStops: (() => void)[] = [];
+    const cameraFor = (svg: SVGSVGElement | null) => {
+      let viewBox = [0, 0, 400, 420];
+      let viewAnim = 0;
+      cameraStops.push(() => cancelAnimationFrame(viewAnim));
+      return (target: number[]) => {
+        if (!svg) return;
+        cancelAnimationFrame(viewAnim);
+        const from = [...viewBox];
+        const start = performance.now();
+        const duration = reduceMotion ? 0 : 1800;
+        const frame = (now: number) => {
+          const p = duration ? Math.min(1, (now - start) / duration) : 1;
+          const ease = 1 - Math.pow(1 - p, 3);
+          viewBox = from.map((v, i) => v + (target[i] - v) * ease);
+          svg.setAttribute('viewBox', viewBox.map((v) => v.toFixed(1)).join(' '));
+          if (p < 1) viewAnim = requestAnimationFrame(frame);
+        };
+        viewAnim = requestAnimationFrame(frame);
+      };
+    };
+    const moveCamera = cameraFor(art);
+    const moveHallCamera = cameraFor(root.querySelector<SVGSVGElement>('#hall-art'));
+    let hallZoom = 1;
+
+    // 今天的香數決定人潮多大、鏡頭多遠；畫面上的人最多 MAX_DOTS 個點，人更多時一點代表多人
+    const renderScale = (n: number) => {
+      if (!crowd || n === shownCrowd) return;
+      shownCrowd = n;
+      const { box, z } = targetView(n);
+      const level = Math.log10(Math.max(1, n));
+      moveCamera(box);
+      sceneFar?.setAttribute('opacity', String(clamp01((z - 1.15) / 0.8)));
+      if (skyGlow) skyGlow.style.opacity = String(clamp01((level - 2.5) / 3));
+
+      crowd.innerHTML = '';
+      const r = (2.4 * Math.pow(z, 0.85)).toFixed(2);
+      const groups = [0, 1, 2].map((k) => svgEl('g', { class: `crowd-twinkle t${k}` }));
+      let drawn = 0;
+      // 在 [from, to) 這段人裡平均挑 count 個畫出來
+      const sample = (from: number, to: number, count: number) => {
+        const step = (to - from) / Math.max(1, count);
+        for (let c = 0; c < count; c++, drawn++) {
+          const [x, y] = crowdSlot(Math.floor(from + c * step));
+          groups[drawn % 3].appendChild(svgEl('circle', { cx: x.toFixed(1), cy: y.toFixed(1), r }));
+        }
+      };
+      if (n <= COURTYARD) {
+        sample(0, n, Math.min(n, MAX_DOTS));
+      } else {
+        // 廟埕已經站滿：固定 COURTYARD_DOTS 個點，剩下的點給街上
+        sample(0, COURTYARD, COURTYARD_DOTS);
+        sample(COURTYARD, n, Math.min(n - COURTYARD, MAX_DOTS - COURTYARD_DOTS));
+      }
+      groups.forEach((g) => crowd.appendChild(g));
+
+      // 人多時點與點之間補一層暖光，看起來是一片人潮
+      const e = crowdExtent(n);
+      crowdGlow?.setAttribute('cy', String((345 + e.bottom) / 2));
+      crowdGlow?.setAttribute('rx', String(e.half * 1.1 + 40));
+      crowdGlow?.setAttribute('ry', String((e.bottom - 345) / 2 + 60));
+      crowdGlow?.setAttribute('opacity', String(clamp01((level - 2) / 3) * 0.9));
+
+      // 香火鼎盛：煙柱從爐口升到畫面上緣
+      const top = box[1] + box[3] * 0.06;
+      const width = 10 * Math.pow(z, 0.9);
+      const d = `M200 190 C 186 ${190 + (top - 190) * 0.35}, 226 ${190 + (top - 190) * 0.65}, 200 ${top}`;
+      pillarWide?.setAttribute('d', d);
+      pillarWide?.setAttribute('stroke-width', String(width * 2.4));
+      pillarCore?.setAttribute('d', d);
+      pillarCore?.setAttribute('stroke-width', String(width));
+      pillar?.setAttribute('opacity', String(clamp01((level - 1.5) / 3) * 0.8));
+    };
+
+    const renderHud = () => {
+      if (stats && stats.total >= TOTAL_MIN) {
+        const first = (stats.atLeast ? labels.totalAtLeast : labels.totalIncense).replace('{n}', fmt(stats.total));
+        // 畫面上的人潮是今天的香數，所以今天有香就一定顯示，避免和累計數字對不上
+        const second = stats.today > 0 ? labels.todayIncense.replace('{n}', fmt(stats.today)) : '';
+        countEl.textContent = second ? `${first}\n${second}` : first;
+        return;
+      }
+      const mine = readJson<number>(MINE_KEY) || 0;
+      countEl.textContent = mine > 0 ? labels.mine.replace('{n}', fmt(mine)) : '';
+    };
+
+    const applyStats = (s: Stats) => {
+      stats = s;
+      renderSticks(s.today);
+      renderScale(s.today);
+      renderHud();
+    };
+
+    const saveStats = (s: Stats) => writeJson(STATS_KEY, { total: s.total, today: s.today, day: taipeiDay() });
+    // 服務連不上：用最後一次拿到的數字，標成「至少」；連這個都沒有，就只顯示自己的
+    const useCachedStats = () => {
+      const cached = readJson<Stats & { day: string }>(STATS_KEY);
+      if (cached && cached.total > 0) {
+        applyStats({ total: cached.total, today: cached.day === taipeiDay() ? cached.today : 0, atLeast: true });
+      } else {
+        renderSticks(sessionIncense);
+        renderScale(sessionIncense);
+        renderHud();
+      }
+    };
+
+    const fetchHall = async (path: string, init?: RequestInit): Promise<HallReply | null> => {
+      if (!HALL_URL) return null;
+      if (Date.now() < (readJson<number>(DOWN_KEY) || 0)) return null;
+      try {
+        const res = await fetch(`${HALL_URL}${path}`, init);
+        if (res.ok) return (await res.json()) as HallReply;
+      } catch {
+        // 連不上和回錯誤一樣處理
+      }
+      writeJson(DOWN_KEY, Date.now() + DOWN_MS);
+      return null;
+    };
+
+    const isLocal = ['localhost', '127.0.0.1'].includes(location.hostname);
+    const demo = isLocal ? new URLSearchParams(location.search).get('demo') : null;
+
+    const loadStats = async () => {
+      const s = await fetchHall('/stats');
+      if (s) {
+        saveStats(s);
+        applyStats({ total: s.total, today: s.today });
+        applyHall(s);
+      } else useCachedStats();
+    };
+
+    // 插完香：先記在自己的瀏覽器，再送去大殿服務計數
+    const onMyIncense = async () => {
+      sessionIncense += 1;
+      myNumber = 0;
+      writeJson(MINE_KEY, (readJson<number>(MINE_KEY) || 0) + 1);
+      if (demo !== null && stats) {
+        applyStats({ ...stats, total: stats.total + 1, today: stats.today + 1 });
+        myNumber = stats.total;
+        return;
+      }
+      const s = await fetchHall('/incense', { method: 'POST' });
+      if (s) {
+        saveStats(s);
+        applyStats({ total: s.total, today: s.today });
+        // 被限流（一分鐘內第二炷）的香不算進總數，圖卡就不寫序號
+        if (s.counted) myNumber = s.total;
+      } else if (stats) {
+        applyStats({ ...stats, total: stats.total + 1, today: stats.today + 1, atLeast: true });
+      } else {
+        useCachedStats();
+      }
+    };
+
+    // ── 分享圖卡 ──
+    root.querySelector('#share-btn')?.addEventListener('click', async () => {
+      if (!art) return;
+      const line = !useIncense
+        ? labels.cardPalms
+        : myNumber > 0
+          ? labels.cardNumbered.replace('{n}', fmt(myNumber))
+          : labels.cardIncense;
+      const blob = await makeCard(art, labels.cardLead.replace('{name}', nameOf(myName)), line);
+      if (!blob) return;
+      const file = new File([blob], 'online-temple.png', { type: 'image/png' });
+      // 帶來源參數，才分得出訪客是不是從分享來的
+      const shareUrl = `${location.origin}${location.pathname}?from=share`;
+      const canShare = Boolean(navigator.canShare?.({ files: [file] }));
+      sendEvent('event', 'temple_share', {
+        method: useIncense ? 'incense' : 'palms',
+        target: canShare ? 'native' : 'download',
+      });
+      if (canShare) {
+        try {
+          await navigator.share({ files: [file], url: shareUrl });
+        } catch {
+          // 使用者取消分享
+        }
+        return;
+      }
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'online-temple.png';
+      link.click();
+      later(() => URL.revokeObjectURL(link.href), 1000);
+    });
+
+    // ── 正殿：正在靜坐的人 ──
+    const hallCount = root.querySelector<HTMLElement>('#hall-count');
+    const bowAllBtn = root.querySelector<HTMLButtonElement>('#bow-all');
+    const seatName = (cx: number, text: string) => {
+      const t = svgEl('text', { x: cx, y: 403, 'text-anchor': 'middle', class: 'seat-name' });
+      t.textContent = text;
+      return t;
+    };
+    // 合十的提示暫時寫在人數那一行，幾秒後換回人數（寫在畫面上方會蓋住匾額）
+    let noteUntil = 0;
+    const note = (text: string) => {
+      noteUntil = Date.now() + 3000;
+      if (hallCount) hallCount.textContent = text;
+      later(() => {
+        if (Date.now() >= noteUntil) renderHall();
+      }, 3000);
+    };
+    const renderHall = () => {
+      if (!atHall) return;
+      atHall.innerHTML = '';
+      const others = Math.max(0, hallNow - (mySeat ? 1 : 0));
+      // 中間的蒲團永遠留給你，別人從旁邊坐起，你坐下時別人不會換位置
+      const front = CUSHIONS.slice(1);
+      const seats: [number, number, number][] = [
+        ...front.map((cx): [number, number, number] => [cx, 382, 1]),
+        ...BACK_ROW.map((cx): [number, number, number] => [cx, 362, 0.72]),
+      ];
+      const drawn = Math.min(others, seats.length);
+      for (let i = 0; i < drawn; i++) {
+        const [cx, base, scale] = seats[i];
+        if (scale !== 1) {
+          atHall.appendChild(
+            svgEl('ellipse', {
+              cx,
+              cy: base + 5,
+              rx: 11,
+              ry: 3.2,
+              fill: '#7a1712',
+              stroke: '#d4a24c',
+              'stroke-width': 0.6,
+            })
+          );
+        }
+        const g = flame(cx, base, false, scale);
+        g.classList.add('other-seat');
+        // 新坐下的人慢慢亮起來
+        if (i >= shownOthers) g.classList.add('seat-in');
+        atHall.appendChild(g);
+        // 前排寫香客名，後排太小不寫
+        if (scale === 1 && hallOthers[i] !== undefined) atHall.appendChild(seatName(cx, nameOf(hallOthers[i])));
+      }
+      shownOthers = drawn;
+      // 殿裡坐滿了：其他人坐到殿外的廟埕，畫成一起呼吸的燭光
+      const outside = Math.max(0, others - HALL_INSIDE);
+      const slots = hallSlots(Math.min(outside, HALL_DOTS_MAX));
+      if (slots.length > 0) {
+        const g = svgEl('g', {
+          class: 'hall-crowd',
+          fill: '#f0a648',
+          style: `animation-delay: -${(Date.now() % BREATH_MS) / 1000}s`,
+        });
+        slots.forEach(([cx, cy]) => g.appendChild(svgEl('circle', { cx, cy, r: 2.6 })));
+        // 超過畫得出的點數：廟埕整片亮起來，人越多越亮
+        if (outside > HALL_DOTS_MAX) {
+          const bottom = slots[slots.length - 1][1];
+          atHall.appendChild(
+            svgEl('ellipse', {
+              cx: 200,
+              cy: (420 + bottom) / 2,
+              rx: Math.max(...slots.map(([x]) => Math.abs(x - 200))) + 30,
+              ry: (bottom - 420) / 2 + 30,
+              fill: 'url(#crowd-light)',
+              opacity: (0.25 + clamp01(Math.log10(outside / HALL_DOTS_MAX) / 2) * 0.45).toFixed(2),
+            })
+          );
+        }
+        atHall.appendChild(g);
+      }
+      const view = hallView(slots);
+      if (view.z !== hallZoom) {
+        hallZoom = view.z;
+        moveHallCamera(view.box);
+        // 呼吸光圈不跟著縮太小，往下移到供桌下方
+        const sc = Math.min(view.z, 1.4);
+        breath?.setAttribute(
+          'transform',
+          sc === 1 ? '' : `translate(200 ${236 + 46 * sc + 6}) scale(${sc}) translate(-200 -290)`
+        );
+      }
+      if (sittingSelf) {
+        atHall.appendChild(flame(CUSHIONS[0], 382, true));
+        atHall.appendChild(seatName(CUSHIONS[0], nameOf(myName)));
+      }
+      bowAllBtn?.toggleAttribute('hidden', !(sittingSelf && mySeat && others > 0 && !bowedThisSit));
+      // 現在沒有別人：蒲團上留下今天坐過的人的香灰印
+      if (others === 0 && hallToday >= SAT_TODAY_MIN) {
+        CUSHIONS.slice(sittingSelf ? 1 : 0, Math.min(hallToday, CUSHIONS.length)).forEach((cx) =>
+          atHall.appendChild(svgEl('ellipse', { cx, cy: 386, rx: 8, ry: 2.2, fill: '#e9cf98', opacity: 0.5 }))
+        );
+      }
+      let text = '';
+      if (others > 0) text = (sittingSelf ? labels.sittingWith : labels.sittingNow).replace('{n}', fmt(others));
+      else if (hallToday >= SAT_TODAY_MIN) text = labels.satToday.replace('{n}', fmt(hallToday));
+      if (hallCount && Date.now() >= noteUntil) hallCount.textContent = text;
+    };
+    const applyHall = (s: HallReply) => {
+      if (s.sittingNow === undefined) return;
+      hallNow = s.sittingNow;
+      hallToday = s.sitToday || 0;
+      hallOthers = s.others || [];
+      lastHallFetch = Date.now();
+      // 坐著的時候有人向你合十
+      const bowedToYou = s.bowedToYou || 0;
+      if (sittingSelf && bowedToYou > lastBowedToYou) note(labels.bowedToYou.replace('{n}', fmt(bowedToYou)));
+      if (sittingSelf) lastBowedToYou = bowedToYou;
+      renderHall();
+    };
+    // 坐下：告訴計數器要坐幾分鐘；連不上時只畫自己的燭火
+    const takeSeat = async (mins: number) => {
+      sittingSelf = true;
+      bowedThisSit = false;
+      lastBowedToYou = 0;
+      renderHall();
+      if (demo !== null) {
+        mySeat = true;
+        hallNow += 1;
+        hallToday += 1;
+        renderHall();
+        // 示範：過一會兒有人向你合十
+        if (hallNow > 1) {
+          later(() => {
+            if (sittingSelf) {
+              applyHall({
+                total: 0,
+                today: 0,
+                sittingNow: hallNow,
+                sitToday: hallToday,
+                others: hallOthers,
+                bowedToYou: 2,
+              });
+            }
+          }, 8000);
+        }
+        return;
+      }
+      const s = await fetchHall('/sit', { method: 'POST', body: JSON.stringify({ minutes: mins, name: myName }) });
+      if (!s) return;
+      mySeat = Boolean(s.seated);
+      applyHall(s);
+    };
+    // 起身：提早起身才通知計數器；坐滿時間的座位計數器自己會過期
+    const leaveSeat = async (completed: boolean) => {
+      sittingSelf = false;
+      const had = mySeat;
+      mySeat = false;
+      if (had) hallNow = Math.max(0, hallNow - 1);
+      renderHall();
+      if (!had || demo !== null || completed) return;
+      const s = await fetchHall('/stand', { method: 'POST' });
+      if (s) applyHall(s);
+    };
+    // 向一起坐的人合十：每次坐下一次，別人的燭火亮一下
+    bowAllBtn?.addEventListener('click', async () => {
+      bowedThisSit = true;
+      bowAllBtn.hidden = true;
+      const count = demo !== null ? hallNow - 1 : ((await fetchHall('/bow', { method: 'POST' }))?.bowed ?? 0);
+      if (count <= 0) return;
+      note(labels.bowedToAll.replace('{n}', fmt(count)));
+      sendEvent('event', 'temple_greet', { count });
+      const seats = atHall?.querySelectorAll('.other-seat') || [];
+      seats.forEach((g) => g.classList.add('is-greeted'));
+      later(() => seats.forEach((g) => g.classList.remove('is-greeted')), 1200);
+    });
+    // 坐到一半關掉頁面：試著通知計數器起身（不保證送得到）
+    const onPageHide = () => {
+      if (mySeat && HALL_URL) navigator.sendBeacon(`${HALL_URL}/stand`);
+    };
+    // 正在看正殿的人，每 30 秒更新一次人數；離開正殿或切到別的分頁就停
+    const hallPoll = window.setInterval(async () => {
+      if (demo !== null || current !== 1 || document.hidden || Date.now() - lastHallFetch < hallPollMs(hallNow)) return;
+      lastHallFetch = Date.now();
+      const s = await fetchHall('/stats');
+      if (s) applyHall(s);
+    }, 5000);
+
+    // 正殿的蒲團固定畫出來
+    CUSHIONS.forEach((cx) => {
+      root
+        .querySelector('#hall-cushions')
+        ?.appendChild(
+          svgEl('ellipse', { cx, cy: 388, rx: 15, ry: 4.5, fill: '#7a1712', stroke: '#d4a24c', 'stroke-width': 0.8 })
+        );
+    });
+
+    window.addEventListener('pagehide', onPageHide);
+    root.querySelector('#temple-tip-link')?.addEventListener('click', () => sendEvent('event', 'temple_tip'));
+    document.addEventListener('temple:incense', onMyIncense);
+    document.addEventListener(
+      'astro:before-swap',
+      () => {
+        // 在網站內點連結換頁不會觸發 pagehide，這裡也要起身
+        onPageHide();
+        window.removeEventListener('pagehide', onPageHide);
+        window.clearInterval(hallPoll);
+        document.removeEventListener('temple:incense', onMyIncense);
+        timers.forEach((t) => window.clearTimeout(t));
+        window.clearInterval(tickTimer);
+        window.clearTimeout(breathTimer);
+        cameraStops.forEach((stop) => stop());
+      },
+      { once: true }
+    );
+
+    // 本機示範：只在 localhost 生效，正式網站不會顯示假數字
+    //   ?demo        今天 23 炷
+    //   ?demo=5000   今天 5000 炷（看鏡頭拉遠）
+    //   ?demo=people 正殿有 4 人在靜坐
+    //   ?demo=hall300 正殿有 300 人在靜坐（看廟埕坐滿）
+    if (demo !== null) {
+      const today = Number(demo) > 0 ? Math.floor(Number(demo)) : 23;
+      const hallDemo = Number(/^hall(\d+)$/.exec(demo)?.[1] || 0);
+      const demoStats = { total: today * 30 + 1234, today };
+      applyStats(demoStats);
+      applyHall({
+        ...demoStats,
+        ...(hallDemo > 0
+          ? { sittingNow: hallDemo, sitToday: hallDemo * 3, others: Array.from({ length: 14 }, (_, i) => (i * 7) % 30) }
+          : demo === 'people'
+            ? { sittingNow: 4, sitToday: 37, others: [3, 17, 8, 25] }
+            : { sittingNow: 0, sitToday: 23 }),
+      });
+    } else {
+      void loadStats();
+    }
+  }
+
+  document.addEventListener('astro:page-load', initTemple);
+</script>

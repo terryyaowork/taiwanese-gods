@@ -1,0 +1,12 @@
+name = "temple-hall"
+main = "src/index.js"
+compatibility_date = "2026-05-01"
+
+[[durable_objects.bindings]]
+name = "TEMPLE_HALL"
+class_name = "TempleHall"
+
+# 免費方案只能用 SQLite 儲存的 Durable Object
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["TempleHall"]

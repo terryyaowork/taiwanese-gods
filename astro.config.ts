@@ -38,6 +38,8 @@ export default defineConfig({
       filter: (page) => {
         // Exclude /zh-TW/ duplicate pages (root paths are the canonical Chinese version)
         if (/\/zh-TW\//.test(page)) return false;
+        // 線上廟宇等 EXP-G-007 判讀（2026-11-15）後才開放收錄，避免實驗期間出現新流量
+        if (/\/online-temple(\/|$)/.test(page)) return false;
         return true;
       },
     }),

@@ -14,6 +14,7 @@ import Analytics from '~/components/common/Analytics.astro';
 import Hreflang from '~/components/common/Hreflang.astro';
 import GoTop from '~/components/common/GoTop.astro';
 import BasicScripts from '~/components/common/BasicScripts.astro';
+import AdSense from '~/components/common/AdSense.astro';
 
 // Comment the line below to disable View Transitions
 import { ClientRouter } from 'astro:transitions';
@@ -22,9 +23,11 @@ import type { MetaData as MetaDataType } from '~/types';
 
 export interface Props {
   metadata?: MetaDataType;
+  /** 不載入 AdSense（線上廟宇頁決定不放廣告） */
+  noAds?: boolean;
 }
 
-const { metadata = {} } = Astro.props;
+const { metadata = {}, noAds = false } = Astro.props;
 const { textDirection } = I18N;
 const { lang } = getPageLanguage(Astro.url.pathname);
 ---
@@ -42,8 +45,8 @@ const { lang } = getPageLanguage(Astro.url.pathname);
     <Analytics />
 
     <!-- Google AdSense preconnect -->
-    <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />
-    <link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin />
+    {!noAds && <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />}
+    {!noAds && <link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin />}
 
     <!-- Comment the line below to disable View Transitions -->
     <ClientRouter fallback="swap" />
@@ -55,15 +58,6 @@ const { lang } = getPageLanguage(Astro.url.pathname);
     <BasicScripts />
     <GoTop />
 
-    <!-- Google AdSense (deferred to avoid blocking render) -->
-    <script is:inline>
-      window.addEventListener('load', function () {
-        const s = document.createElement('script');
-        s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1194732651074855';
-        s.crossOrigin = 'anonymous';
-        s.async = true;
-        document.head.appendChild(s);
-      });
-    </script>
+    {!noAds && <AdSense />}
   </body>
 </html>
