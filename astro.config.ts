@@ -61,7 +61,8 @@ export default defineConfig({
 
     ...whenExternalScripts(() =>
       partytown({
-        config: { forward: ['dataLayer.push'] },
+        // gtag 也要轉送：頁面直接推 dataLayer 的事件，轉到背景執行緒後 GA 認不得
+        config: { forward: ['dataLayer.push', 'gtag'] },
       })
     ),
 

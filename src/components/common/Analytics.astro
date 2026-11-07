@@ -1,13 +1,19 @@
 ---
-import { GoogleAnalytics } from '@astrolib/analytics';
 import { ANALYTICS } from 'astrowind:config';
+
+// 不用 @astrolib/analytics 的 GoogleAnalytics：它的 gtag 是區域函式，放進 Partytown 背景執行緒後，
+// 頁面轉送過去的 gtag 呼叫找不到它，自訂事件（線上廟宇的上香、靜坐）就送不出去。
+// 這裡把 gtag 掛在 window 上，astro.config.ts 的 Partytown forward 才接得到。
+// gtag 一定要推 arguments 物件，GA 不認其餘參數做成的陣列。
+const id = ANALYTICS?.vendors?.googleAnalytics?.id ? String(ANALYTICS.vendors.googleAnalytics.id) : '';
+const attrs = ANALYTICS?.vendors?.googleAnalytics?.partytown ? { type: 'text/partytown' } : {};
+const init = [
+  'window.dataLayer = window.dataLayer || [];',
+  'window.gtag = function gtag() { window.dataLayer.push(arguments); };',
+  "window.gtag('js', new Date());",
+  `window.gtag('config', ${JSON.stringify(id)});`,
+].join('\n');
 ---
 
-{
-  ANALYTICS?.vendors?.googleAnalytics?.id ? (
-    <GoogleAnalytics
-      id={String(ANALYTICS.vendors.googleAnalytics.id)}
-      partytown={ANALYTICS?.vendors?.googleAnalytics?.partytown}
-    />
-  ) : null
-}
+{id && <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${id}`} {...attrs} />}
+{id && <script is:inline {...attrs} set:html={init} />}

@@ -93,11 +93,16 @@ test.describe('Online temple — zh-TW', () => {
     await page.route(/~partytown/, (route) => route.abort());
     await page.goto('/online-temple');
     await expect(page.locator('#hud-count')).toContainText('150');
-    // 網站用 Partytown 把 GA 移到背景執行緒：先放一個暫時的 push，載入後再換成轉送函式，頁面上的佇列一直是空的。
-    // 測試擋掉 Partytown 的程式，暫時的 push 就不會被換掉，再包一層會記錄的 push
+    // 網站用 Partytown 把 GA 移到背景執行緒，頁面上的 gtag 和 dataLayer.push 都是轉送函式。
+    // 測試擋掉 Partytown 的程式，再把兩個都包一層會記錄的函式（頁面有 gtag 時走 gtag，沒有才推 dataLayer）
     await page.evaluate(() => {
-      const w = window as unknown as { dataLayer?: unknown[]; __events: unknown[][] };
+      const w = window as unknown as {
+        gtag?: (...args: unknown[]) => void;
+        dataLayer?: unknown[];
+        __events: unknown[][];
+      };
       w.__events = [];
+      w.gtag = (...args: unknown[]) => void w.__events.push(args);
       w.dataLayer = w.dataLayer || [];
       const forward = w.dataLayer.push.bind(w.dataLayer);
       w.dataLayer.push = (...items: unknown[]) => {

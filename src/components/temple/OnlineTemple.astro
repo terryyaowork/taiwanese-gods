@@ -1379,10 +1379,14 @@ const serifHref = `https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@4
 
   // 一個 panel 一次只顯示一個步驟
   // GA4 自訂事件：只送事件名稱和動作種類，不送任何個人資料。
-  // 網站的 gtag 函式被包在區塊裡叫不到，所以直接推進 GA 讀的 dataLayer（要推 arguments 物件，不能推陣列）
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // GA 跑在 Partytown 的背景執行緒，要呼叫轉送過去的 gtag；直接推 dataLayer 的事件轉過去後 GA 認不得。
+  // 沒有 gtag 時（GA 被擋、還沒載入）才退回推 dataLayer（要推 arguments 物件，不能推陣列）
   function sendEvent(command: 'event', name: string, params?: Record<string, string | number>) {
-    const w = window as unknown as { dataLayer?: unknown[] };
+    const w = window as unknown as { gtag?: (...args: unknown[]) => void; dataLayer?: unknown[] };
+    if (typeof w.gtag === 'function') {
+      w.gtag(command, name, params);
+      return;
+    }
     w.dataLayer = w.dataLayer || [];
     // eslint-disable-next-line prefer-rest-params
     w.dataLayer.push(arguments);
