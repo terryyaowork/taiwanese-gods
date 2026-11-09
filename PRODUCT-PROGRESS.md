@@ -21,6 +21,15 @@
 
 ## 👉 下一步
 
+**✅ 線上廟宇上線（2026-11-07，三語）。** `/online-temple`：上香、靜坐 1/3/5 分、香客名、對一起坐的人合十，結尾導去求籤、廟宇清單和打賞。
+不放廣告（Layout `noAds`），選單入口整頁重載（`data-astro-reload`），避免從有廣告的頁面帶廣告程式進來。
+
+- 計數器：`workers/temple-hall/`，Cloudflare Worker＋Durable Object，免費方案（超過額度只停止回應、不收費），每個 IP 每分鐘 30 次。
+- 打賞：Ko-fi `ko-fi.com/taiwanesegods` 接 PayPal。用詞是「請廟公喝杯茶」，不寫 donate／捐款。
+- 量測：GA 事件 `temple_worship`（`method`）、`temple_sit`（`minutes`）、`temple_share`、`temple_greet`、`temple_tip`；入口參數 `?from=nav`、`?from=share`，往外導流 `?from=temple`。
+- **導流實驗 4 週，從 2026-11-07 起算**，看 `?from=temple` 進廟宇頁、求籤頁的次數。新功能（分享圖卡 OG image、固定共修時間）等有一週數據再決定。
+- 待使用者：GA 後台註冊自訂維度 `method`、`minutes`；手機實際走一次；看過 en/ja 譯文（還沒逐句核准）。
+
 **②祈福（線上點燈 A 版）：2026-10-11 決定先不做。** 理由：42 次 CTA 點擊有 40 次進廟宇頁，證明讀者想找真實的廟，不是想在線上做儀式動作。下一步改為強化廟宇頁（英文優先，英文頁占點擊 62%）。決策依據的數字：
 
 | 範圍                                       | 來源                 | 頁面瀏覽 | CTA 點擊                   | 點擊率 |
@@ -143,6 +152,7 @@ taiwanese.gods 帳號查詢；查完已刪除臨時建立的探索。
 | ①   | 擲筊                         | 🟢   | ✅   | ✅  | ✅  | ✅  | 同上（Divination.astro，含擲筊確認流程）                                   | 暫不量測                                                                             |
 | ①   | 「該拜哪尊神」導引           | 🟢   | ✅   | ✅  | ✅  | ✅  | `src/pages/{,en/,ja/}guide.astro` + `data/*/god-guide.json`（7 類）        | 2026-08-12 已接上真廟 CTA，量測用 `?from=guide` 與求籤分流                           |
 | ①   | 每日運勢                     | 🟢   | ⬜   | —   | —   | —   | 待建                                                                       | 7 日內回訪率；彈藥現成（60 籤），定位是回訪不是 SEO                                  |
+| ②   | 線上廟宇（上香、靜坐）       | 🔴   | ✅   | ✅  | ✅  | ✅  | `src/components/temple/OnlineTemple.astro` + `workers/temple-hall/`        | 4 週導流實驗（11-07 起）：`?from=temple` 點擊數；GA 事件見「下一步」                 |
 | ②   | 線上點燈 / 安太歲（A 版）    | 🟢   | ⏸    | —   | —   | —   | 待建                                                                       | 2026-10-11 決定暫緩：CTA 數據顯示讀者要的是真實廟宇，不是線上儀式                    |
 | ③   | 拜拜新手指南 / 供品禁忌      | 🟢   | ⬜   | —   | —   | —   | 待建                                                                       | 自然搜尋 landing 數；素材在 `culture-rituals.json`（8 條）＋ 供品需先結構化（坑 #3） |
 | ④   | 黃曆宜忌                     | 🟡   | ⬜   | —   | —   | —   | 待建                                                                       | 回訪率（**不是** SEO，見 EXP-G-004）；需外部曆法資料來源，尚未評估                   |
@@ -209,9 +219,13 @@ taiwanese.gods 帳號查詢；查完已刪除臨時建立的探索。
    ⚠ 但供品全埋在敘述文字裡、**沒有 `offerings` 結構化欄位**，所以做不了「供品速查表」「哪些神吃素」
    這類跨神明功能——而那正是 roadmap ③學拜「供品禁忌」要的。資料已經在了，只差切開（三語同步）。
    ⏸ 建議等真的要做 ③學拜 時一起處理，不要單獨動。
-4. **量測刻意保持很輕**：GA4 只有 pageview（`src/config.yaml` G-HR8L9Z4Y4E），沒有互動 event，**這是決定、不是缺口**。
-   只有 CTA 點擊靠 `?from=fortune` query 參數量（零 JS）。求籤完成率 / 擲筊次數暫不量——好奇但不影響任何決策。
+4. **量測刻意保持很輕**：GA4（`src/config.yaml` G-HR8L9Z4Y4E）全站只有 pageview，**這是決定、不是缺口**。
+   唯一例外是線上廟宇的互動事件（2026-11-07），因為它是新產品實驗，要靠這些數字決定下一步。
+   CTA 點擊靠 `?from=fortune` query 參數量（零 JS）。求籤完成率 / 擲筊次數暫不量——好奇但不影響任何決策。
    週報 pipeline 抓的是 users/sessions + GSC clicks/impressions。
+   ⚠ **GA 跑在 Partytown 背景執行緒**：自訂事件要呼叫 `window.gtag`，不能直接推 `dataLayer`（轉送後 GA 不認）。
+   GA 初始化在 `src/components/common/Analytics.astro`（自己寫，不用 `@astrolib/analytics`），Partytown forward 要有 `gtag`。
+   2026-11-07 之前線上廟宇的事件全部沒送到 GA，就是這個原因。驗證法：headless Chrome 攔 `/g/collect` 看 `en=` 參數。
 5. **多 agent 同檔 append 有 race 疑慮**：曾讓多個 agent 並行 append 同一個 JSON。下次同檔多筆寫入走「各寫獨立暫存檔、主線合併」。
 6. ~~**`verify-consistency.mjs` 已遺失**~~ **2026-08-09 重建：`npm run verify`**（`scripts/verify-consistency.mjs`）。
    一次驗兩件事：三語資料一致性（筆數 / id 順序 / **欄位齊全**）＋ 文件數字對帳（筆數表、覆蓋率、路線美食）。
@@ -233,8 +247,11 @@ npm run verify         # 見下表 — 已在 CI，會擋 push
 npm run check          # 三關：astro check + eslint + prettier — push 前必過
 npx astro build        # 頁數不減（2026-07-05 基準 736 頁）
 npm run verify         # build 之後再跑一次：有 dist 才會檢查 301 的目標頁存不存在
-npx playwright test    # tests/fortune.spec.ts（求籤／擲筊）＋ tests/temples.spec.ts（參拜資訊框）＋ tests/god-temples.spec.ts（神明頁廟宇卡片連結）
+npx playwright test    # tests/fortune.spec.ts（求籤／擲筊）＋ tests/temples.spec.ts（參拜資訊框）＋ tests/god-temples.spec.ts（神明頁廟宇卡片連結）＋ tests/online-temple.spec.ts（線上廟宇三語流程、選單版面）
 ```
+
+Windows 這台沒裝 Playwright 自己的瀏覽器：複製 `playwright.config.ts` 成暫存設定，project 加 `channel: 'chrome'` 再跑，跑完刪掉。
+加選單項目後要重跑 `tests/online-temple.spec.ts` 的 1024px 版面測試（en 最緊）。
 
 `verify` 檢查的項目（`scripts/verify-consistency.mjs`）：
 
@@ -259,13 +276,19 @@ CI 在 build 前後各跑一次 verify（2026-10-11 加上 build 之後那次）
 | 項目            | 決定日     | 為什麼                                                                                                                                               | 翻案條件                       |
 | --------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
 | 許願牆 / 祈願區 | 2026-08-09 | UGC 會破壞好不容易建立的聲音、審核成本是永久的、跟「安靜獨行」氣質不合；流量也還撐不起（W21 單週 702 users，空牆比沒牆更傷，但**這條會隨流量過期**） | 先回答「誰會用、為什麼」       |
-| 精細事件追蹤    | 2026-08-09 | 只有 CTA 點擊會影響決策，其餘量了也不會改變任何事                                                                                                    | 有一個決策真的卡在某個數字上時 |
+| 精細事件追蹤    | 2026-08-09 | 只有 CTA 點擊會影響決策，其餘量了也不會改變任何事。2026-11-07 線上廟宇依翻案條件開例外，其他頁面不變                                                 | 有一個決策真的卡在某個數字上時 |
 | 廟名字串映射層  | 2026-08-09 | `mainDeities` 已帶神明 id，反查即可，不需要映射                                                                                                      | —（技術上已無必要）            |
 
 ## 變更紀錄
 
 | 日期       | 動了什麼                                                                                                                                                                                 |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-11-09 | `fortune.spec.ts`「再抽一次」測試改成固定擲出陰筊，不再靠運氣（原本一半機率擲出聖筊，測試空等到逾時）                                                                                    |
+| 2026-11-07 | 修好線上廟宇 GA 事件送不出去（Partytown，commit `1cf2023`）                                                                                                                              |
+| 2026-11-07 | 計數器部署到 Cloudflare Worker（免費方案、每 IP 每分鐘 30 次，commit `d6a9632`）                                                                                                         |
+| 2026-11-07 | 線上廟宇英文、日文版（commit `fc953bc`）；en/ja 隱私權頁 Vercel 改 Cloudflare                                                                                                            |
+| 2026-11-07 | 選單加「線上廟宇」入口（`?from=nav`、整頁重載），開放 sitemap 收錄（commit `821e42a`）                                                                                                   |
+| 2026-11-07 | **線上廟宇中文版上線**：上香、靜坐、香客名、合十（commit `806e781`）                                                                                                                     |
 | 2026-10-13 | 參拜資訊框補齊 71 間：其餘 62 間的開放時間取自 Google 地圖（67 間有時間），「何時去」只用站內已查核的廟宇與神明資料；交通暫不放；temples.spec 的「無參拜資訊」測試在全部有資料時改為跳過 |
 | 2026-10-12 | 全站內容查核完成：巡禮路線、文化（儀式、節慶、習俗、工藝、咒語）、神明故事、神明指南都依查核修正三語；咒語本文逐字保留，只改周邊敘述                                                     |
 | 2026-10-12 | 新增 3 間主祀廟：金山慈音寺（文殊）、觸口龍隱寺（濟公）、關子嶺火王爺廟（不動明王）；沿革只有廟方來源者內文標「據寺方／廟方」；三語＋示意圖＋參拜資訊，並加進神明頁                      |

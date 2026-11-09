@@ -178,40 +178,20 @@ test.describe('Navigation from god detail to fortune', () => {
 
 test.describe('Draw Again button', () => {
   test('fail view shows Draw Again button that resets', async ({ page }) => {
+    // 固定擲出陰筊（r >= 0.75），每次都走到失敗畫面。
+    // 不固定的話有一半機率擲出聖筊，畫面停在結果，測試只能空等到逾時。
+    await page.addInitScript(() => {
+      Math.random = () => 0.9;
+    });
     await page.goto('/fortune');
-    // We may need multiple attempts since holy blocks (50%) skip the fail view
-    for (let i = 0; i < 10; i++) {
-      const btnDraw = page.locator('.btn-draw');
-      if (!(await btnDraw.isVisible())) {
-        // Reset if in mid-state
-        const btnDrawAgain = page.locator('.btn-draw-again');
-        if (await btnDrawAgain.isVisible()) {
-          await btnDrawAgain.click();
-          await page.waitForTimeout(200);
-          continue;
-        }
-        await page.waitForTimeout(2000);
-        continue;
-      }
-      await btnDraw.click();
-      // Wait for full flow: shake(1500) + stick show(1200) + confirm(800) + result(1000)
-      await page.waitForTimeout(5500);
-      const failView = page.locator('.qianshi-fail-view');
-      if (await failView.isVisible()) {
-        // Found fail view — test the draw again button
-        const btnDrawAgain = page.locator('.btn-draw-again');
-        await expect(btnDrawAgain).toBeVisible();
-        await btnDrawAgain.click();
-        // Container should be back
-        const container = page.locator('.qianshi-container-view');
-        await expect(container).toBeVisible();
-        return; // test passed
-      }
-      // If holy — wait for reset and try again
-      await page.waitForTimeout(2000);
-    }
-    // If we never hit fail after 10 tries (very unlikely), skip
-    test.skip();
+    await page.locator('.btn-draw').click();
+    // shake(1500) + stick show(1200) + confirm(800) + result(1000)
+    await expect(page.locator('.qianshi-fail-view')).toBeVisible({ timeout: 8000 });
+    const btnDrawAgain = page.locator('.btn-draw-again');
+    await expect(btnDrawAgain).toBeVisible();
+    await btnDrawAgain.click();
+    await expect(page.locator('.qianshi-container-view')).toBeVisible();
+    await expect(page.locator('.btn-draw')).toBeVisible();
   });
 });
 
