@@ -30,7 +30,8 @@
 - **導流實驗 4 週，從 2026-11-07 起算**，看 `?from=temple` 進廟宇頁、求籤頁的次數。固定共修時間等有數據再決定。
 - 求籤結果的靜坐入口（2026-11-14）：`src/components/temple/FortuneSitLink.astro`，放在「去真廟」推薦框下面，連到 `/online-temple?from=fortune#sit`（`#sit` 直接打開靜坐站）。看效果時用頁面路徑分開：`?from=fortune` 進廟宇頁是原本的 CTA，進 `/online-temple` 是這個入口。
 - 分享預覽圖（2026-11-14）：`src/assets/images/temple/og-online-temple-{zh,en,ja}.png`，從頁面畫面截出（隱藏介面、標題移到天公爐下方）。改了天公爐或標題就重截一次。
-- 第一週數字（W35，11-03～11-09，只含上線後 3 天）：上香 1、靜坐 1、分享 1、打賞按鈕 0。上香、靜坐很可能是 11-07 的 `?from=ga-check` 測試流量。
+- 第一週數字（W35，11-03～11-09，只含上線後 3 天）：上香 1、靜坐 1、分享 1、打賞按鈕 0。這些都是真人：11-14 驗證過，headless Chrome 的 User-Agent 含 `HeadlessChrome`，GA 當機器人濾掉，11-07 的測試事件一筆都沒進 GA。GA 後台 10-17～11-13 累計：上香 5、靜坐 3、分享 1、打賞 0、合十 0。
+- 11-14 用一般 User-Agent 測打賞按鈕，GA 即時報表收到 `temple_tip` 1 次（`?from=ga-check-ua`）。W36（11-10～11-16）的打賞數要扣掉這 1 次。之後要測 GA，用 headless 加一般 User-Agent。
 - GA 自訂維度 `method`、`minutes`、`target`（事件範圍）已在 2026-11-14 建好；只從這天起記錄，不回溯。
 - 待使用者：手機實際走一次；看過 en/ja 譯文（還沒逐句核准）。
 
