@@ -27,7 +27,9 @@
 - 計數器：`workers/temple-hall/`，Cloudflare Worker＋Durable Object，免費方案（超過額度只停止回應、不收費），每個 IP 每分鐘 30 次。
 - 打賞：Ko-fi `ko-fi.com/taiwanesegods` 接 PayPal。用詞是「請廟公喝杯茶」，不寫 donate／捐款。
 - 量測：GA 事件 `temple_worship`（`method`）、`temple_sit`（`minutes`）、`temple_share`、`temple_greet`、`temple_tip`；入口參數 `?from=nav`、`?from=share`，往外導流 `?from=temple`。
-- **導流實驗 4 週，從 2026-11-07 起算**，看 `?from=temple` 進廟宇頁、求籤頁的次數。新功能（分享圖卡 OG image、固定共修時間）等有一週數據再決定。
+- **導流實驗 4 週，從 2026-11-07 起算**，看 `?from=temple` 進廟宇頁、求籤頁的次數。固定共修時間等有數據再決定。
+- 分享預覽圖（2026-11-14）：`src/assets/images/temple/og-online-temple-{zh,en,ja}.png`，從頁面畫面截出（隱藏介面、標題移到天公爐下方）。改了天公爐或標題就重截一次。
+- 第一週數字（W35，11-03～11-09，只含上線後 3 天）：上香 1、靜坐 1、分享 1、打賞按鈕 0。上香、靜坐很可能是 11-07 的 `?from=ga-check` 測試流量。
 - 待使用者：GA 後台註冊自訂維度 `method`、`minutes`；手機實際走一次；看過 en/ja 譯文（還沒逐句核准）。
 
 **②祈福（線上點燈 A 版）：2026-10-11 決定先不做。** 理由：42 次 CTA 點擊有 40 次進廟宇頁，證明讀者想找真實的廟，不是想在線上做儀式動作。下一步改為強化廟宇頁（英文優先，英文頁占點擊 62%）。決策依據的數字：

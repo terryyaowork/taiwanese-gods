@@ -281,6 +281,19 @@ test.describe('線上廟宇入口', () => {
       await expect(link).toHaveText(text);
       await expect(link).toHaveAttribute('data-astro-reload', 'true');
     });
+
+    test(`分享預覽圖用這頁自己的圖，不是全站預設圖，而且載得到（${prefix || 'zh'}）`, async ({ page, request }) => {
+      await page.goto(`${prefix}/online-temple`);
+      const ogImage = await page.locator('meta[property="og:image"]').getAttribute('content');
+      const fortune = await page
+        .goto(`${prefix}/fortune`)
+        .then(() => page.locator('meta[property="og:image"]').getAttribute('content'));
+      expect(ogImage).toBeTruthy();
+      expect(ogImage).not.toBe(fortune);
+      const res = await request.get(new URL(ogImage!).pathname + new URL(ogImage!).search);
+      expect(res.status()).toBe(200);
+      expect(res.headers()['content-type']).toMatch(/^image\//);
+    });
   }
 
   test('桌機最窄寬度時，選單排成一列，不壓到右邊的按鈕', async ({ page }) => {
