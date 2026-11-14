@@ -296,6 +296,25 @@ test.describe('線上廟宇入口', () => {
     });
   }
 
+  for (const prefix of ['', '/en', '/ja']) {
+    test(`求籤結果有靜坐入口，打開後直接在靜坐站（${prefix || 'zh'}）`, async ({ page }) => {
+      await page.goto(`${prefix}/fortune`);
+      const link = page.locator('#fortune-result a[href$="/online-temple?from=fortune#sit"]');
+      await expect(link).toHaveAttribute('href', `${prefix}/online-temple?from=fortune#sit`);
+      // ClientRouter 只看屬性在不在，不看值
+      await expect(link).toHaveAttribute('data-astro-reload');
+
+      await page.goto(`${prefix}/online-temple?from=fortune#sit`);
+      await expect(page.locator('.nav-btn').nth(1)).toHaveClass(/is-active/);
+      await expect(page.locator('#station-hall')).toBeInViewport();
+    });
+  }
+
+  test('沒有 #sit 時從上香站開始', async ({ page }) => {
+    await page.goto('/online-temple');
+    await expect(page.locator('.nav-btn').nth(0)).toHaveClass(/is-active/);
+  });
+
   test('桌機最窄寬度時，選單排成一列，不壓到右邊的按鈕', async ({ page }) => {
     for (const [prefix, width] of ['', '/en', '/ja'].flatMap((p) => [1024, 1280].map((w) => [p, w] as const))) {
       await page.setViewportSize({ width, height: 800 });

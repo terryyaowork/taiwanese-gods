@@ -28,6 +28,7 @@
 - 打賞：Ko-fi `ko-fi.com/taiwanesegods` 接 PayPal。用詞是「請廟公喝杯茶」，不寫 donate／捐款。
 - 量測：GA 事件 `temple_worship`（`method`）、`temple_sit`（`minutes`）、`temple_share`、`temple_greet`、`temple_tip`；入口參數 `?from=nav`、`?from=share`，往外導流 `?from=temple`。
 - **導流實驗 4 週，從 2026-11-07 起算**，看 `?from=temple` 進廟宇頁、求籤頁的次數。固定共修時間等有數據再決定。
+- 求籤結果的靜坐入口（2026-11-14）：`src/components/temple/FortuneSitLink.astro`，放在「去真廟」推薦框下面，連到 `/online-temple?from=fortune#sit`（`#sit` 直接打開靜坐站）。看效果時用頁面路徑分開：`?from=fortune` 進廟宇頁是原本的 CTA，進 `/online-temple` 是這個入口。
 - 分享預覽圖（2026-11-14）：`src/assets/images/temple/og-online-temple-{zh,en,ja}.png`，從頁面畫面截出（隱藏介面、標題移到天公爐下方）。改了天公爐或標題就重截一次。
 - 第一週數字（W35，11-03～11-09，只含上線後 3 天）：上香 1、靜坐 1、分享 1、打賞按鈕 0。上香、靜坐很可能是 11-07 的 `?from=ga-check` 測試流量。
 - 待使用者：GA 後台註冊自訂維度 `method`、`minutes`；手機實際走一次；看過 en/ja 譯文（還沒逐句核准）。

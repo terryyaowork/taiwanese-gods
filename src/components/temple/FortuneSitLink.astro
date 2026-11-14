@@ -1,0 +1,26 @@
+---
+// 求籤結果下面的一行入口：邀請到線上廟宇靜坐（#sit 直接打開靜坐站）。
+// 放在「去真廟」推薦框下面，只用文字連結，不搶推薦框的位置。
+// 整頁重新載入：求籤頁有廣告程式，線上廟宇不放廣告。
+interface Props {
+  lang: 'zh-TW' | 'en' | 'ja';
+}
+
+const { lang } = Astro.props;
+
+const copy = {
+  'zh-TW': { lead: '想把籤詩的話想清楚？', link: '到線上廟宇靜坐一分鐘', prefix: '' },
+  en: { lead: 'Want to think the poem over?', link: 'Sit quietly for a minute at the Online Temple', prefix: '/en' },
+  ja: { lead: 'おみくじの言葉をゆっくり考えたいときは', link: 'オンライン廟で1分間静座する', prefix: '/ja' },
+}[lang];
+---
+
+<p class="fortune-sit-link px-6 pb-4 text-center text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+  {copy.lead}
+  <a
+    href={`${copy.prefix}/online-temple?from=fortune#sit`}
+    data-astro-reload
+    class="inline-block font-medium text-red-800 dark:text-red-300 underline underline-offset-4 decoration-red-300 hover:decoration-red-700"
+    >{copy.link} →</a
+  >
+</p>

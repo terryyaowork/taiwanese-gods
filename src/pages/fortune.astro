@@ -1,6 +1,7 @@
 ---
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Layout from '~/layouts/PageLayout.astro';
+import FortuneSitLink from '~/components/temple/FortuneSitLink.astro';
 import Divination from '~/components/common/Divination.astro';
 
 // Import all god data to build a lookup map
@@ -185,6 +186,8 @@ const metadata = {
             </div>
           </div>
         </div>
+
+        <FortuneSitLink lang="zh-TW" />
 
         <!-- Draw Again -->
         <div class="px-6 pb-6 text-center">

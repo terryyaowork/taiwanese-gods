@@ -1635,6 +1635,11 @@ const serifHref = `https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@4
       passive: true,
     });
     markActive(0);
+    // 網址帶 #sit 時直接打開靜坐站（求籤頁的入口用）
+    if (location.hash === '#sit') {
+      track.scrollTo({ left: stationEls[1].offsetLeft, behavior: 'instant' });
+      markActive(1);
+    }
 
     // ── ① 上香：按住點香 → 默念 → 三拜 → 插香 ──
     const burnerPanel = panel('burner');
